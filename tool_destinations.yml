@@ -1,0 +1,477 @@
+
+tools:
+    shovill:
+        rules:
+          - rule_type: file_size
+            nice_value: 0
+            lower_bound: 0
+            upper_bound: 15 MB
+            destination: pulsar-mel_small
+          - rule_type: file_size
+            nice_value: 0
+            lower_bound: 15 MB
+            upper_bound: 2 GB
+            destination: pulsar-mel_big
+            # Normally is slurm_7slots
+          - rule_type: file_size
+            nice_value: 0
+            lower_bound: 2 GB
+            upper_bound: 10 GB
+            destination: pulsar-nci_big
+          - rule_type: file_size
+            nice_value: 0
+            lower_bound: 10 GB
+            upper_bound: Infinity
+            fail_message: Too much data, shoudn't run
+            destination: fail
+        default_destination: slurm_5slots
+    spades:
+        rules:
+          - rule_type: file_size
+            nice_value: 0
+            lower_bound: 0
+            upper_bound: 15 MB
+            destination: pulsar-mel_small
+          - rule_type: file_size
+            nice_value: 0
+            lower_bound: 15 MB
+            upper_bound: 2 GB
+            destination: pulsar-mel_big
+          - rule_type: file_size
+            nice_value: 0
+            lower_bound: 2 GB
+            upper_bound: 10 GB
+            destination: pulsar-nci_big
+          - rule_type: file_size
+            nice_value: 0
+            lower_bound: 10 GB
+            upper_bound: Infinity
+            fail_message: Too much data, please don't use Spades for this
+            destination: fail
+        default_destination: slurm_5slots
+    velvet:
+        rules:
+            - rule_type: file_size
+              nice_value: 0
+              lower_bound: 0
+              upper_bound: 15 MB
+              destination: pulsar-mel_small
+            - rule_type: file_size
+              nice_value: 0
+              lower_bound: 15 MB
+              upper_bound: 1 GB
+              destination: pulsar-mel_big
+            - rule_type: file_size
+              nice_value: 0
+              lower_bound: 1 GB
+              upper_bound: Infinity
+              destination: fail
+              fail_message: Too much data, please don't use Velvet for this, it is here for training purposes only
+        default_destination: slurm_5slots
+    velvetoptimiser:
+        rules:
+            - rule_type: file_size
+              nice_value: 0
+              lower_bound: 0
+              upper_bound: 15 MB
+              destination: pulsar-mel_small
+            - rule_type: file_size
+              nice_value: 0
+              lower_bound: 15 MB
+              upper_bound: 1 GB
+              destination: pulsar-mel_big
+            - rule_type: file_size
+              nice_value: 0
+              lower_bound: 1 GB
+              upper_bound: Infinity
+              destination: fail
+              fail_message: Too much data, please don't use the Velvet Optimiser for this, it is here mainly for training purposes. Use SPAdes instead.
+        default_destination: pulsar-mel_small
+    trinity:
+        rules:
+            - rule_type: file_size
+              nice_value: 0
+              lower_bound: 0
+              upper_bound: 100 MB
+              destination: pulsar-nci_mid
+            - rule_type: file_size
+              nice_value: 0
+              lower_bound: 100 MB
+              upper_bound: 20 GB
+              destination: pulsar-nci_big_trinity
+            - rule_type: file_size
+              nice_value: 0
+              lower_bound: 20 GB
+              upper_bound: Infinity
+              destination: fail
+              fail_message: Too much data, we cannot support such large Trinity assemblies with our backend. Please use another server for your job.
+        default_destination: pulsar-nci_big_trinity
+    trinity_align_and_estimate_abundance:
+        default_destination: slurm_5slots
+    prokka:
+        rules:
+          - rule_type: file_size
+            nice_value: 0
+            lower_bound: 0
+            upper_bound: 0.3 MB
+            destination: pulsar-mel_small
+          - rule_type: file_size
+            nice_value: 0
+            lower_bound: 0.3 MB
+            upper_bound: 30 MB
+            destination: pulsar-mel_big
+            #Is normally slurm_7slots
+        default_destination: slurm_7slots
+    barrnap:
+        rules:
+            - rule_type: file_size
+              nice_value: 0
+              lower_bound: 0
+              upper_bound: 0.3 MB
+              destination: pulsar-mel_small
+        default_destination: slurm_3slots
+    fastqc:
+        rules:
+          - rule_type: file_size
+            nice_value: 0
+            lower_bound: 0
+            upper_bound: 15 MB
+            destination: pulsar-mel_small
+          - rule_type: file_size
+            nice_value: 0
+            lower_bound: 15 MB
+            upper_bound: 500 MB
+            destination: pulsar-mel_mid
+            # Is normally slurm_7slots
+        default_destination: slurm_7slots
+    iuc_pear:
+        rules:
+            - rule_type: file_size
+              nice_value: 0
+              lower_bound: 0
+              upper_bound: 15 MB
+              destination: pulsar-mel_small
+            - rule_type: file_size
+              nice_value: 0
+              lower_bound: 15 MB
+              upper_bound: 1 GB
+              destination: pulsar-mel_big
+            - rule_type: file_size
+              nice_value: 0
+              lower_bound: 1 GB
+              upper_bound: Infinity
+              destination: slurm_7slots
+        default_destination: slurm_5slots
+    trimmomatic:
+        rules:
+            - rule_type: file_size
+              nice_value: 0
+              lower_bound: 0
+              upper_bound: 15 MB
+              destination: pulsar-mel_small
+            - rule_type: file_size
+              nice_value: 0
+              lower_bound: 15 MB
+              upper_bound: 1 GB
+              destination: pulsar-mel_big
+        default_destination: slurm_5slots
+    snippy:
+        rules:
+            - rule_type: file_size
+              nice_value: 0
+              lower_bound: 0
+              upper_bound: 15 MB
+              destination: pulsar-mel_small
+            - rule_type: file_size
+              nice_value: 0
+              lower_bound: 15 MB
+              upper_bound: Infinity
+              destination: pulsar-mel_big
+        default_destination: slurm_5slots
+    bwa:
+        rules:
+            - rule_type: file_size
+              nice_value: 0
+              lower_bound: 0
+              upper_bound: 100 MB
+              destination: pulsar-mel_small
+            - rule_type: file_size
+              nice_value: 0
+              lower_bound: 100 MB
+              upper_bound: 10 GB
+              destination: pulsar-mel_big
+        default_destination: slurm_5slots
+    bwa_mem:
+        rules:
+            - rule_type: file_size
+              nice_value: 0
+              lower_bound: 0
+              upper_bound: 100 MB
+              destination: pulsar-mel_small
+            - rule_type: file_size
+              nice_value: 0
+              lower_bound: 100 MB
+              upper_bound: 10 GB
+              destination: pulsar-mel_big
+        default_destination: slurm_5slots
+    bowtie2:
+        rules:
+            - rule_type: file_size
+              nice_value: 0
+              lower_bound: 0
+              upper_bound: 100 MB
+              destination: pulsar-mel_small
+              #- rule_type: file_size
+              #nice_value: 0
+              #lower_bound: 100 MB
+              #upper_bound: Infinity
+              #destination: pulsar-mel_big
+        default_destination: slurm_5slots
+    hisat2:
+        rules:
+            - rule_type: file_size
+              nice_value: 0
+              lower_bound: 0
+              upper_bound: 100 MB
+              destination: pulsar-mel_mid
+              #- rule_type: file_size
+              #nice_value: 0
+              #lower_bound: 100 MB
+              #upper_bound: Infinity
+              #destination: pulsar-nci_mid
+        default_destination: slurm_7slots
+    tophat2:
+        rules:
+            - rule_type: file_size
+              nice_value: 0
+              lower_bound: 0
+              upper_bound: 100 MB
+              destination: pulsar-mel_small
+            - rule_type: file_size
+              nice_value: 0
+              lower_bound: 100 MB
+              upper_bound: Infinity
+              destination: slurm_9slots
+        default_destination: slurm_9slots
+    freebayes:
+        rules:
+            - rule_type: file_size
+              nice_value: 0
+              lower_bound: 0
+              upper_bound: 100 MB
+              destination: slurm_2slots
+            - rule_type: file_size
+              nice_value: 0
+              lower_bound: 100 MB
+              upper_bound: Infinity
+              destination: slurm_7slots
+        default_destination: slurm_7slots
+    htseq_count:
+        rules:
+            - rule_type: file_size
+              nice_value: 0
+              lower_bound: 0
+              upper_bound: 5 GB
+              destination: pulsar-nci_mid
+              #- rule_type: file_size
+              #nice_value: 0
+              #lower_bound: 1 GB
+              #upper_bound: 15 GB
+              #destination: pulsar-nci_big
+        default_destination: slurm_9slots
+    upload1:
+        default_destination: slurm_1slot_upload
+    fastq_groomer:
+        default_destination: slurm_2slots
+    fml_gtf2gff:
+        default_destination: slurm_3slots
+    Extract genomic DNA 1:
+        default_destination: slurm_3slots
+    snpEff:
+        default_destination: slurm_3slots
+    ncbi_makeblastdb:
+        default_destination: slurm_3slots
+    cuffmerge:
+        default_destination: slurm_3slots
+    cufflinks:
+        default_destination: slurm_3slots
+    deeptools_bam_coverage:
+        default_destination: slurm_3slots
+    deeptools_bam_compare:
+        default_destination: slurm_3slots
+    htseqsams2mxlocal:
+        rules:
+            - rule_type: file_size
+              nice_value: 0
+              lower_bound: 0
+              upper_bound: 150 MB
+              destination: slurm_2slots
+        default_destination: slurm_3slots
+    cuffdiff:
+        default_destination: slurm_5slots
+    cuffnorm:
+        default_destination: slurm_5slots
+    stringtie:
+        default_destination: slurm_5slots
+    gatk2_unified_genotyper:
+        default_destination: slurm_5slots
+    rsem_calculate_expression:
+        default_destination: slurm_5slots
+    macs2_1_peakcalling:
+        default_destination: slurm_5slots
+    macs2_callpeak:
+        default_destination: slurm_5slots
+    gatk2_variant_recalibrator:
+        default_destination: slurm_5slots
+    gatk2_unified_genotyper:
+        default_destination: slurm_5slots
+    gatk2_print_reads:
+        default_destination: slurm_5slots
+    gatk2_indel_realigner:
+        default_destination: slurm_5slots
+    gatk2_variant_eval:
+        default_destination: slurm_5slots
+    gatk2_haplotype_caller:
+        default_destination: slurm_5slots
+    gatk2_variant_validate:
+        default_destination: slurm_5slots
+    gatk2_reduce_reads:
+        default_destination: slurm_5slots
+    gatk2_realigner_target_creator:
+        default_destination: slurm_5slots
+    gatk2_depth_of_coverage:
+        default_destination: slurm_5slots
+    gatk2_variant_apply_recalibration:
+        default_destination: slurm_5slots
+    gatk2_variant_filtration:
+        default_destination: slurm_5slots
+    gatk2_base_recalibrator:
+        default_destination: slurm_5slots
+    gatk2_variant_combine:
+        default_destination: slurm_5slots
+    gatk2_variant_select:
+        default_destination: slurm_5slots
+    gatk2_variant_annotator:
+        default_destination: slurm_5slots
+    ncbi_blastn_wrapper:
+        default_destination: slurm_5slots
+    ncbi_blastp_wrapper:
+        default_destination: slurm_5slots
+    kraken:
+        rules:
+            - rule_type: file_size
+              nice_value: 0
+              lower_bound: 0
+              upper_bound: 100 MB
+              destination: pulsar-mel_small
+        default_destination: slurm_5slots
+    samtools_mpileup:
+        default_destination: slurm_5slots
+    salmon:
+        default_destination: slurm_5slots
+    jbrowse:
+        default_destination: slurm_5slots
+    unicycler:
+        default_destination: slurm_9slots
+    rna_star:
+        default_destination: slurm_9slots
+    roary:
+        default_destination: slurm_7slots
+    ncbi_blastx_wrapper:
+        default_destination: slurm_16slots
+    ncbi_tblastn_wrapper:
+        default_destination: slurm_16slots
+    ncbi_tblastx_wrapper:
+        default_destination: slurm_16slots
+    mira_4_0_mapping:
+        default_destination: slurm_16slots
+    mira_4_0_bait:
+        default_destination: slurm_16slots
+    mira_4_0_de_novo:
+        default_destination: slurm_16slots
+    phyloseq_nmds:
+        default_destination: slurm_16slots
+    phyloseq_ordinate:
+        default_destination: slurm_16slots
+    biom_filter:
+        default_destination: slurm_16slots
+    fasta-stats:
+        default_destination: dynamic_dtd
+    FROGS_clustering:
+        default_destination: slurm_7slots
+    FROGSSTAT_Phyloseq_Multivariate_Analysis_Of_Variance:
+        default_destination: slurm_7slots
+    FROGS_Tree:
+        default_destination: slurm_7slots
+    FROGS_tsv_to_biom:
+        default_destination: slurm_7slots
+    FROGS_demultiplex:
+        default_destination: slurm_7slots
+    FROGSSTAT_Phyloseq_Sample_Clustering:
+        default_destination: slurm_7slots
+    FROGS_clusters_stat:
+        default_destination: slurm_7slots
+    FROGS_biom_to_tsv:
+        default_destination: slurm_7slots
+    FROGS_affiliations_stat:
+        default_destination: slurm_7slots
+    FROGS_normalisation:
+        default_destination: slurm_7slots
+    FROGS_remove_chimera:
+        default_destination: slurm_7slots
+    FROGSSTAT_Phyloseq_Import_Data:
+        default_destination: slurm_7slots
+    FROGS_affiliation_OTU:
+        default_destination: slurm_7slots
+    FROGS_biom_to_stdBiom:
+        default_destination: slurm_7slots
+    FROGSSTAT_Phyloseq_Composition_Visualisation:
+        default_destination: slurm_7slots
+    FROGSSTAT_Phyloseq_Alpha_Diversity:
+        default_destination: slurm_7slots
+    FROGSSTAT_Phyloseq_Beta_Diversity:
+        default_destination: slurm_7slots
+    FROGS_preprocess:
+        default_destination: slurm_7slots
+    FROGSSTAT_Phyloseq_Structure_Visualisation:
+        default_destination: slurm_7slots
+    FROGS_filters:
+        default_destination: slurm_7slots
+    #
+    # Mothur tools
+    #
+    mothur_merge_files:
+        default_destination: pulsar-mel_small
+    mothur_make_group:
+        default_destination: pulsar-mel_small
+    mothur_unique_seqs:
+        default_destination: pulsar-mel_small
+    mothur_count_seqs:
+        default_destination: pulsar-mel_small
+    mothur_summary_seqs:
+        default_destination: pulsar-mel_small
+    mothur_screen_seqs:
+        default_destination: pulsar-mel_small
+    mothur_align_seqs:
+        default_destination: pulsar-mel_small
+    mothur_filter_seqs:
+        default_destination: pulsar-mel_small
+    mothur_pre_cluster:
+        default_destination: slurm_2slots
+    mothur_classify_seqs:
+        default_destination: pulsar-mel_small
+    mothur_cluster_split:
+        default_destination: pulsar-mel_small
+    mothur_make_shared:
+        default_destination: pulsar-mel_small
+    mothur_classify_otu:
+        default_destination: slurm_2slots
+    mothur_taxonomy_to_krona:
+        default_destination: pulsar-mel_small
+    krona_text:
+        default_destination: pulsar-mel_small
+default_destination: slurm_1slot
+#users:
+#  user@email.com:
+#    priority: high
+verbose: True
