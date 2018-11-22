@@ -7,9 +7,9 @@ my $pythonpath = "/Users/simongladman/miniconda3/envs/galaxy_training_material/b
 my $get_tools_command = "/Users/simongladman/miniconda3/envs/galaxy_training_material/bin/get-tool-list";
 
 my %apikeys = (
-    "https://usegalaxy.org.au" => "fcea528abc269b5768b924db2f33e138",
-    "https://galaxy-aust-dev.genome.edu.au" => "71301d49293d949d89db92bd83978591",
-    "https://galaxy-aust-staging.genome.edu.au" => "fcea528abc269b5768b924db2f33e138"
+    "https://usegalaxy.org.au" => "1a8925423f32fe02878919df4b170ef9",
+    "https://galaxy-aust-dev.genome.edu.au" => "a811534c3d566efe9e227967256bae60",
+    "https://galaxy-aust-staging.genome.edu.au" => "d90a8b1fa0d432ee48daed1ac577fb89"
     );
 
 
