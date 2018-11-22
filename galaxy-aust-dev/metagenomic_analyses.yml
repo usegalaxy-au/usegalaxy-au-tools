@@ -1,4 +1,18 @@
 tools:
+- name: phyloseq_ordination_plot
+  owner: simon-gladman
+  revisions:
+  - ae9cd53b7760
+  tool_panel_section_id: metagenomics
+  tool_panel_section_label: Metagenomic analyses
+  tool_shed_url: testtoolshed.g2.bx.psu.edu
+- name: phyloseq_filter
+  owner: simon-gladman
+  revisions:
+  - 910739de7b80
+  tool_panel_section_id: metagenomics
+  tool_panel_section_label: Metagenomic analyses
+  tool_shed_url: testtoolshed.g2.bx.psu.edu
 - name: vegan_rarefaction
   owner: iuc
   revisions:
@@ -27,20 +41,6 @@ tools:
   tool_panel_section_id: metagenomics
   tool_panel_section_label: Metagenomic analyses
   tool_shed_url: toolshed.g2.bx.psu.edu
-- name: phyloseq_filter
-  owner: simon-gladman
-  revisions:
-  - 910739de7b80
-  tool_panel_section_id: metagenomics
-  tool_panel_section_label: Metagenomic analyses
-  tool_shed_url: testtoolshed.g2.bx.psu.edu
-- name: phyloseq_ordination_plot
-  owner: simon-gladman
-  revisions:
-  - ae9cd53b7760
-  tool_panel_section_id: metagenomics
-  tool_panel_section_label: Metagenomic analyses
-  tool_shed_url: testtoolshed.g2.bx.psu.edu
 - name: frogs_2_0_0
   owner: oinizan
   revisions:
