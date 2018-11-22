@@ -5,13 +5,17 @@ use strict;
 
 my $pythonpath = "/Users/simongladman/miniconda3/envs/galaxy_training_material/bin/python";
 my $get_tools_command = "/Users/simongladman/miniconda3/envs/galaxy_training_material/bin/get-tool-list";
+my $apikey_file = "/Users/simongladman/.ssh/apikeys.txt";
 
-my %apikeys = (
-    "https://usegalaxy.org.au" => "fcea528abc269b5768b924db2f33e138",
-    "https://galaxy-aust-dev.genome.edu.au" => "71301d49293d949d89db92bd83978591",
-    "https://galaxy-aust-staging.genome.edu.au" => "fcea528abc269b5768b924db2f33e138"
-    );
+my %apikeys;
 
+unless(open IN, $apikey_file){ die "Couldn't find $apikey_file\n$!"; }
+
+while(<IN>){
+    chomp;
+    my @tmp = split /\s+/, $_;
+    $apikeys{$tmp[0]} = $tmp[1];
+}
 
 foreach my $serv (keys %apikeys){
 
