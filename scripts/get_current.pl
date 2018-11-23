@@ -14,6 +14,7 @@ unless(open IN, $apikey_file){ die "Couldn't find $apikey_file\n$!"; }
 while(<IN>){
     chomp;
     my @tmp = split /\s+/, $_;
+    print "$tmp[0] $tmp[1]\n";
     $apikeys{$tmp[0]} = $tmp[1];
 }
 
