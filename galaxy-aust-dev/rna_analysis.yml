@@ -1,4 +1,18 @@
 tools:
+- name: kallisto_pseudo
+  owner: iuc
+  revisions:
+  - 1c75aa5de15e
+  tool_panel_section_id: ngs_rna_tools
+  tool_panel_section_label: RNA Analysis
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: kallisto_quant
+  owner: iuc
+  revisions:
+  - b818b23df1e0
+  tool_panel_section_id: ngs_rna_tools
+  tool_panel_section_label: RNA Analysis
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: cuffdiff
   owner: devteam
   revisions:
