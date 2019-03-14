@@ -1,4 +1,11 @@
 tools:
+- name: mothur_chimera_vsearch
+  owner: iuc
+  revisions:
+  - d531f28e8266
+  tool_panel_section_id: mothur
+  tool_panel_section_label: Mothur
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: mothur_taxonomy_to_krona
   owner: iuc
   revisions:
@@ -887,8 +894,4 @@ tools:
   - dd533a49feed
   tool_panel_section_id: mothur
   tool_panel_section_label: Mothur
-  tool_shed_url: toolshed.g2.bx.psu.edu
-- name: mothur_chimera_vsearch
-  owner: iuc
-  tool_panel_section_id: mothur
   tool_shed_url: toolshed.g2.bx.psu.edu

@@ -1,4 +1,11 @@
 tools:
+- name: vsearch
+  owner: iuc
+  revisions:
+  - b3c7199d8786
+  tool_panel_section_id: metagenomics
+  tool_panel_section_label: Metagenomic analyses
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: phyloseq_ordination_plot
   owner: simon-gladman
   revisions:
@@ -45,14 +52,6 @@ tools:
   owner: devteam
   revisions:
   - 5bee9adae474
-  tool_panel_section_id: metagenomics
-  tool_panel_section_label: Metagenomic analyses
-  tool_shed_url: toolshed.g2.bx.psu.edu
-- name: vsearch
-  owner: iuc
-  revisions:
-  - 576963db5f1b
-  - b3c7199d8786
   tool_panel_section_id: metagenomics
   tool_panel_section_label: Metagenomic analyses
   tool_shed_url: toolshed.g2.bx.psu.edu

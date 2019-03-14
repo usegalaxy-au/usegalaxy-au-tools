@@ -1,4 +1,11 @@
 tools:
+- name: hisat2
+  owner: iuc
+  revisions:
+  - 3fb01a8c902d
+  tool_panel_section_id: ngs_rna_tools
+  tool_panel_section_label: RNA Analysis
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: kallisto_quant
   owner: iuc
   revisions:
@@ -276,13 +283,6 @@ tools:
   owner: iuc
   revisions:
   - 99b17b74a8cd
-  tool_panel_section_id: ngs_rna_tools
-  tool_panel_section_label: RNA Analysis
-  tool_shed_url: toolshed.g2.bx.psu.edu
-- name: hisat2
-  owner: iuc
-  revisions:
-  - 764756ab0eb5
   tool_panel_section_id: ngs_rna_tools
   tool_panel_section_label: RNA Analysis
   tool_shed_url: toolshed.g2.bx.psu.edu
