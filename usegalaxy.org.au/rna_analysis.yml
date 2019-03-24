@@ -34,6 +34,13 @@ tools:
   tool_panel_section_id: ngs_rna_tools
   tool_panel_section_label: RNA Analysis
   tool_shed_url: toolshed.g2.bx.psu.edu
+- name: rsem
+  owner: jjohnson
+  revisions:
+  - 14267d364365
+  tool_panel_section_id: ngs_rna_tools
+  tool_panel_section_label: RNA Analysis
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: transdecoder
   owner: iuc
   revisions:
@@ -283,13 +290,6 @@ tools:
   owner: iuc
   revisions:
   - 99b17b74a8cd
-  tool_panel_section_id: ngs_rna_tools
-  tool_panel_section_label: RNA Analysis
-  tool_shed_url: toolshed.g2.bx.psu.edu
-- name: rsem
-  owner: jjohnson
-  revisions:
-  - 14267d364365
   tool_panel_section_id: ngs_rna_tools
   tool_panel_section_label: RNA Analysis
   tool_shed_url: toolshed.g2.bx.psu.edu

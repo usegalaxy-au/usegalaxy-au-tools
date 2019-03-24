@@ -1,4 +1,11 @@
 tools:
+- name: trimmomatic
+  owner: pjbriggs
+  revisions:
+  - 51b771646466
+  tool_panel_section_id: ngs_qc
+  tool_panel_section_label: QC and manipulation
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastqc
   owner: devteam
   revisions:
@@ -6,52 +13,17 @@ tools:
   tool_panel_section_id: ngs_qc
   tool_panel_section_label: QC and manipulation
   tool_shed_url: toolshed.g2.bx.psu.edu
-- name: pear
+- name: ngsutils_bam_filter
   owner: iuc
   revisions:
-  - 2f804526f5fd
+  - aecfe10118ed
   tool_panel_section_id: ngs_qc
   tool_panel_section_label: QC and manipulation
   tool_shed_url: toolshed.g2.bx.psu.edu
-- name: multiqc
-  owner: engineson
+- name: cutadapt
+  owner: lparsons
   revisions:
-  - 5e4080791d90
-  tool_panel_section_id: ngs_qc
-  tool_panel_section_label: QC and manipulation
-  tool_shed_url: toolshed.g2.bx.psu.edu
-- name: trim_galore
-  owner: bgruening
-  revisions:
-  - 949f01671246
-  tool_panel_section_id: ngs_qc
-  tool_panel_section_label: QC and manipulation
-  tool_shed_url: toolshed.g2.bx.psu.edu
-- name: trimmomatic
-  owner: pjbriggs
-  revisions:
-  - 53af7b5b1b56
-  tool_panel_section_id: ngs_qc
-  tool_panel_section_label: QC and manipulation
-  tool_shed_url: toolshed.g2.bx.psu.edu
-- name: fastq_trimmer
-  owner: devteam
-  revisions:
-  - 2d0d13b0b0f1
-  tool_panel_section_id: ngs_qc
-  tool_panel_section_label: QC and manipulation
-  tool_shed_url: toolshed.g2.bx.psu.edu
-- name: fastq_stats
-  owner: devteam
-  revisions:
-  - e2cf940128d5
-  tool_panel_section_id: ngs_qc
-  tool_panel_section_label: QC and manipulation
-  tool_shed_url: toolshed.g2.bx.psu.edu
-- name: fastq_paired_end_joiner
-  owner: devteam
-  revisions:
-  - 822cc1e6274e
+  - 8665bcc8b847
   tool_panel_section_id: ngs_qc
   tool_panel_section_label: QC and manipulation
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -118,17 +90,45 @@ tools:
   tool_panel_section_id: ngs_qc
   tool_panel_section_label: QC and manipulation
   tool_shed_url: toolshed.g2.bx.psu.edu
-- name: ngsutils_bam_filter
+- name: pear
   owner: iuc
   revisions:
-  - aecfe10118ed
+  - 2f804526f5fd
   tool_panel_section_id: ngs_qc
   tool_panel_section_label: QC and manipulation
   tool_shed_url: toolshed.g2.bx.psu.edu
-- name: cutadapt
-  owner: lparsons
+- name: multiqc
+  owner: engineson
   revisions:
-  - 8665bcc8b847
+  - 5e4080791d90
+  tool_panel_section_id: ngs_qc
+  tool_panel_section_label: QC and manipulation
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: trim_galore
+  owner: bgruening
+  revisions:
+  - 949f01671246
+  tool_panel_section_id: ngs_qc
+  tool_panel_section_label: QC and manipulation
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: fastq_trimmer
+  owner: devteam
+  revisions:
+  - 2d0d13b0b0f1
+  tool_panel_section_id: ngs_qc
+  tool_panel_section_label: QC and manipulation
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: fastq_stats
+  owner: devteam
+  revisions:
+  - e2cf940128d5
+  tool_panel_section_id: ngs_qc
+  tool_panel_section_label: QC and manipulation
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: fastq_paired_end_joiner
+  owner: devteam
+  revisions:
+  - 822cc1e6274e
   tool_panel_section_id: ngs_qc
   tool_panel_section_label: QC and manipulation
   tool_shed_url: toolshed.g2.bx.psu.edu

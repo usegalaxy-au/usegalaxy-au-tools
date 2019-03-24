@@ -1,4 +1,18 @@
 tools:
+- name: fml_gff3togtf
+  owner: vipints
+  revisions:
+  - 5c6f33e20fcc
+  tool_panel_section_id: convert
+  tool_panel_section_label: Convert Formats
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: bam_to_fastq
+  owner: brad-chapman
+  revisions:
+  - 5a9ada9a3191
+  tool_panel_section_id: convert
+  tool_panel_section_label: Convert Formats
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: biom_convert
   owner: iuc
   revisions:
@@ -45,13 +59,6 @@ tools:
   owner: devteam
   revisions:
   - 0b4e36026794
-  tool_panel_section_id: convert
-  tool_panel_section_label: Convert Formats
-  tool_shed_url: toolshed.g2.bx.psu.edu
-- name: fml_gff3togtf
-  owner: vipints
-  revisions:
-  - 5c6f33e20fcc
   tool_panel_section_id: convert
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu

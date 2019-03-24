@@ -27,34 +27,6 @@ tools:
   tool_panel_section_id: metagenomics
   tool_panel_section_label: Metagenomic analyses
   tool_shed_url: toolshed.g2.bx.psu.edu
-- name: kraken_translate
-  owner: devteam
-  revisions:
-  - 9bdcba262627
-  tool_panel_section_id: metagenomics
-  tool_panel_section_label: Metagenomic analyses
-  tool_shed_url: toolshed.g2.bx.psu.edu
-- name: kraken_report
-  owner: devteam
-  revisions:
-  - a3a7440fc618
-  tool_panel_section_id: metagenomics
-  tool_panel_section_label: Metagenomic analyses
-  tool_shed_url: toolshed.g2.bx.psu.edu
-- name: kraken
-  owner: devteam
-  revisions:
-  - 2fdac3e78553
-  tool_panel_section_id: metagenomics
-  tool_panel_section_label: Metagenomic analyses
-  tool_shed_url: toolshed.g2.bx.psu.edu
-- name: kraken_filter
-  owner: devteam
-  revisions:
-  - 5bee9adae474
-  tool_panel_section_id: metagenomics
-  tool_panel_section_label: Metagenomic analyses
-  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: pynast
   owner: qfab
   revisions:
@@ -108,6 +80,34 @@ tools:
   owner: qfab
   revisions:
   - 88fc52f1c5db
+  tool_panel_section_id: metagenomics
+  tool_panel_section_label: Metagenomic analyses
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: kraken_translate
+  owner: devteam
+  revisions:
+  - 9bdcba262627
+  tool_panel_section_id: metagenomics
+  tool_panel_section_label: Metagenomic analyses
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: kraken_report
+  owner: devteam
+  revisions:
+  - a3a7440fc618
+  tool_panel_section_id: metagenomics
+  tool_panel_section_label: Metagenomic analyses
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: kraken_filter
+  owner: devteam
+  revisions:
+  - 5bee9adae474
+  tool_panel_section_id: metagenomics
+  tool_panel_section_label: Metagenomic analyses
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: kraken
+  owner: devteam
+  revisions:
+  - 2fdac3e78553
   tool_panel_section_id: metagenomics
   tool_panel_section_label: Metagenomic analyses
   tool_shed_url: toolshed.g2.bx.psu.edu

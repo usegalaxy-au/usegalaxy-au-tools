@@ -6,6 +6,13 @@ tools:
   tool_panel_section_id: ngs_variant_analysis
   tool_panel_section_label: Variant Calling
   tool_shed_url: toolshed.g2.bx.psu.edu
+- name: vcftools_merge
+  owner: devteam
+  revisions:
+  - 71e19ddf52f5
+  tool_panel_section_id: ngs_variant_analysis
+  tool_panel_section_label: Variant Calling
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: substitution_rates
   owner: devteam
   revisions:
@@ -59,13 +66,6 @@ tools:
   owner: devteam
   revisions:
   - bc1e0cd41241
-  tool_panel_section_id: ngs_variant_analysis
-  tool_panel_section_label: Variant Calling
-  tool_shed_url: toolshed.g2.bx.psu.edu
-- name: vcftools_merge
-  owner: devteam
-  revisions:
-  - 71e19ddf52f5
   tool_panel_section_id: ngs_variant_analysis
   tool_panel_section_label: Variant Calling
   tool_shed_url: toolshed.g2.bx.psu.edu
