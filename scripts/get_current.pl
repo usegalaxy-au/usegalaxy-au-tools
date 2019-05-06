@@ -3,9 +3,9 @@
 use warnings;
 use strict;
 
-my $pythonpath = "/Users/simongladman/miniconda3/envs/galaxy_training_material/bin/python";
-my $get_tools_command = "/Users/simongladman/miniconda3/envs/galaxy_training_material/bin/get-tool-list";
-my $apikey_file = "/Users/simongladman/.ssh/apikeys.txt";
+my $pythonpath = "/Users/sgladman/miniconda3/envs/galaxy_training_material/bin/python";
+my $get_tools_command = "/Users/sgladman/miniconda3/envs/galaxy_training_material/bin/get-tool-list";
+my $apikey_file = "/Users/sgladman/.ssh/apikeys.txt";
 
 my %apikeys;
 

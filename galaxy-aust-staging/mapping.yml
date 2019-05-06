@@ -1,4 +1,18 @@
 tools:
+- name: lastz
+  owner: devteam
+  revisions:
+  - e7f19d6a9af8
+  tool_panel_section_id: mapping
+  tool_panel_section_label: Mapping
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: bowtie2
+  owner: devteam
+  revisions:
+  - 17062a0decb7
+  tool_panel_section_id: mapping
+  tool_panel_section_label: Mapping
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: bwa
   owner: devteam
   revisions:
@@ -6,24 +20,10 @@ tools:
   tool_panel_section_id: mapping
   tool_panel_section_label: Mapping
   tool_shed_url: toolshed.g2.bx.psu.edu
-- name: bowtie2
-  owner: devteam
-  revisions:
-  - dc1639b66f12
-  tool_panel_section_id: mapping
-  tool_panel_section_label: Mapping
-  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: lastz_paired_reads
   owner: devteam
   revisions:
   - ecc974513241
-  tool_panel_section_id: mapping
-  tool_panel_section_label: Mapping
-  tool_shed_url: toolshed.g2.bx.psu.edu
-- name: lastz
-  owner: devteam
-  revisions:
-  - 60afcc2c1d05
   tool_panel_section_id: mapping
   tool_panel_section_label: Mapping
   tool_shed_url: toolshed.g2.bx.psu.edu
