@@ -1,4 +1,18 @@
 tools:
+- name: unicycler
+  owner: iuc
+  revisions:
+  - 0a3a602cd1e3
+  tool_panel_section_id: assembly
+  tool_panel_section_label: Assembly
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: busco
+  owner: iuc
+  revisions:
+  - 1440ae06552f
+  tool_panel_section_id: assembly
+  tool_panel_section_label: Assembly
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: spades
   owner: nml
   revisions:
@@ -13,13 +27,6 @@ tools:
   tool_panel_section_id: assembly
   tool_panel_section_label: Assembly
   tool_shed_url: toolshed.g2.bx.psu.edu
-- name: busco
-  owner: iuc
-  revisions:
-  - 5ecdeca79a0d
-  tool_panel_section_id: assembly
-  tool_panel_section_label: Assembly
-  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: shovill
   owner: iuc
   revisions:
@@ -30,8 +37,8 @@ tools:
 - name: velvetoptimiser
   owner: simon-gladman
   revisions:
-  - d81360ea69d8
   - 37d88f41c810
+  - d81360ea69d8
   tool_panel_section_id: assembly
   tool_panel_section_label: Assembly
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -39,13 +46,6 @@ tools:
   owner: rchikhi
   revisions:
   - 2d4b0398cbaf
-  tool_panel_section_id: assembly
-  tool_panel_section_label: Assembly
-  tool_shed_url: toolshed.g2.bx.psu.edu
-- name: unicycler
-  owner: iuc
-  revisions:
-  - e92675014ac9
   tool_panel_section_id: assembly
   tool_panel_section_label: Assembly
   tool_shed_url: toolshed.g2.bx.psu.edu
