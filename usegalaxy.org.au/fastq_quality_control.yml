@@ -41,6 +41,13 @@ tools:
   tool_panel_section_id: fastq_qc
   tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: toolshed.g2.bx.psu.edu
+- name: multiqc
+  owner: engineson
+  revisions:
+  - 5e4080791d90
+  tool_panel_section_id: fastq_qc
+  tool_panel_section_label: FASTQ Quality Control
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: trim_galore
   owner: bgruening
   revisions:
