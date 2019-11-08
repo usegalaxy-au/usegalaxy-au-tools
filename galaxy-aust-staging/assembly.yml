@@ -1,4 +1,11 @@
 tools:
+- name: canu
+  owner: bgruening
+  revisions:
+  - c5b7390290b1
+  tool_panel_section_id: assembly
+  tool_panel_section_label: Assembly
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: flye
   owner: bgruening
   revisions:
@@ -44,8 +51,8 @@ tools:
 - name: velvetoptimiser
   owner: simon-gladman
   revisions:
-  - d81360ea69d8
   - 37d88f41c810
+  - d81360ea69d8
   tool_panel_section_id: assembly
   tool_panel_section_label: Assembly
   tool_shed_url: toolshed.g2.bx.psu.edu
