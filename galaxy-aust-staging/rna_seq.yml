@@ -1,4 +1,11 @@
 tools:
+- name: trinity
+  owner: iuc
+  revisions:
+  - db1f362cca3e
+  tool_panel_section_id: rna_seq
+  tool_panel_section_label: RNA-seq
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: egsea
   owner: iuc
   revisions:
@@ -45,13 +52,6 @@ tools:
   owner: devteam
   revisions:
   - e04dbae2abe0
-  tool_panel_section_id: rna_seq
-  tool_panel_section_label: RNA-seq
-  tool_shed_url: toolshed.g2.bx.psu.edu
-- name: trinity
-  owner: iuc
-  revisions:
-  - cee61b3fcf78
   tool_panel_section_id: rna_seq
   tool_panel_section_label: RNA-seq
   tool_shed_url: toolshed.g2.bx.psu.edu

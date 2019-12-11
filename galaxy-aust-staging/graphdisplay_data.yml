@@ -1,4 +1,12 @@
 tools:
+- name: circos
+  owner: iuc
+  revisions:
+  - fd59d783248a
+  - ef5f8bbf7730
+  tool_panel_section_id: graph_display_data
+  tool_panel_section_label: Graph/Display Data
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: volcanoplot
   owner: iuc
   revisions:
@@ -31,13 +39,6 @@ tools:
   owner: iuc
   revisions:
   - fe8d4655ee10
-  tool_panel_section_id: graph_display_data
-  tool_panel_section_label: Graph/Display Data
-  tool_shed_url: toolshed.g2.bx.psu.edu
-- name: circos
-  owner: iuc
-  revisions:
-  - ef5f8bbf7730
   tool_panel_section_id: graph_display_data
   tool_panel_section_label: Graph/Display Data
   tool_shed_url: toolshed.g2.bx.psu.edu

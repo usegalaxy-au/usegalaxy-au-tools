@@ -1,15 +1,23 @@
 tools:
-- name: volcanoplot
-  owner: iuc
-  revisions:
-  - 73b8cb5bddcd
-  tool_panel_section_id: plots
-  tool_panel_section_label: Graph/Display Data
-  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: jbrowse
   owner: iuc
   revisions:
   - 2bb2e07a7a21
+  tool_panel_section_id: plots
+  tool_panel_section_label: Graph/Display Data
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: circos
+  owner: iuc
+  revisions:
+  - ef5f8bbf7730
+  - fd59d783248a
+  tool_panel_section_id: plots
+  tool_panel_section_label: Graph/Display Data
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: volcanoplot
+  owner: iuc
+  revisions:
+  - 73b8cb5bddcd
   tool_panel_section_id: plots
   tool_panel_section_label: Graph/Display Data
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -31,13 +39,6 @@ tools:
   owner: iuc
   revisions:
   - fe8d4655ee10
-  tool_panel_section_id: plots
-  tool_panel_section_label: Graph/Display Data
-  tool_shed_url: toolshed.g2.bx.psu.edu
-- name: circos
-  owner: iuc
-  revisions:
-  - ef5f8bbf7730
   tool_panel_section_id: plots
   tool_panel_section_label: Graph/Display Data
   tool_shed_url: toolshed.g2.bx.psu.edu

@@ -6,13 +6,6 @@ tools:
   tool_panel_section_id: None
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
-- name: data_manager_metaphlan2_database_downloader
-  owner: iuc
-  revisions:
-  - 9c4ad82be5bd
-  tool_panel_section_id: None
-  tool_panel_section_label: None
-  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: rnachipintegrator
   owner: pjbriggs
   revisions:
@@ -24,6 +17,20 @@ tools:
   owner: devteam
   revisions:
   - 9946bc39c834
+  tool_panel_section_id: None
+  tool_panel_section_label: None
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: data_manager_humann2_database_downloader
+  owner: iuc
+  revisions:
+  - 9244804f69a7
+  tool_panel_section_id: None
+  tool_panel_section_label: None
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: data_manager_metaphlan2_database_downloader
+  owner: iuc
+  revisions:
+  - 9c4ad82be5bd
   tool_panel_section_id: None
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
