@@ -1,0 +1,159 @@
+install_repository_dependencies: true
+install_resolver_dependencies: true
+install_tool_dependencies: false
+tools:
+- name: lipidmaps_textsearch
+  owner: fgiacomoni
+  revisions:
+  - f4e6b77c46e3
+  tool_panel_section_label: Metabolomics
+- name: w4mcorcov
+  owner: eschen42
+  revisions:
+  - 2ae2d26e3270
+  tool_panel_section_label: Metabolomics
+- name: w4mclassfilter
+  owner: eschen42
+  revisions:
+  - 9f5c0e23c205
+  tool_panel_section_label: Metabolomics
+- name: w4mjoinpn
+  owner: eschen42
+  revisions:
+  - dcfaffec48c8
+  tool_panel_section_label: Metabolomics
+- name: normalization
+  owner: marie-tremblay-metatoul
+  revisions:
+  - f9554d5bb47e
+  - 3d00a98974b7
+  tool_panel_section_label: Metabolomics
+- name: xcms_xcmsset
+  owner: lecorguille
+  revisions:
+  - 363cce459fff
+  - 3bd53dcfa438
+  tool_panel_section_label: Metabolomics
+- name: xcms_group
+  owner: lecorguille
+  revisions:
+  - 13558e8a4778
+  - fe4002ac5193
+  tool_panel_section_label: Metabolomics
+- name: xcms_retcor
+  owner: lecorguille
+  revisions:
+  - e4e0254a3c0a
+  - 7faadba7c625
+  tool_panel_section_label: Metabolomics
+- name: xcms_fillpeaks
+  owner: lecorguille
+  revisions:
+  - dcb9041cb9ea
+  - 3bc94c3abb28
+  tool_panel_section_label: Metabolomics
+- name: xcms_merge
+  owner: lecorguille
+  revisions:
+  - 3a5204f14fff
+  - a301f001835c
+  tool_panel_section_label: Metabolomics
+- name: generic_filter
+  owner: melpetera
+  revisions:
+  - 12cf1eed21f4
+  tool_panel_section_label: Metabolomics
+- name: xcms_summary
+  owner: lecorguille
+  revisions:
+  - 4c757d1ba7b4
+  - acc0a4a366c1
+  tool_panel_section_label: Metabolomics
+- name: qualitymetrics
+  owner: ethevenot
+  revisions:
+  - 596320b84315
+  - acdf51018708
+  tool_panel_section_label: Metabolomics
+- name: metams_rungc
+  owner: yguitton
+  revisions:
+  - c75532b75ba1
+  tool_panel_section_label: Metabolomics
+- name: withinvariation
+  owner: yguitton
+  revisions:
+  - 5086ad0c0992
+  tool_panel_section_label: Metabolomics
+- name: checkformat
+  owner: ethevenot
+  revisions:
+  - e7c5811ec12f
+  tool_panel_section_label: Metabolomics
+- name: batchcorrection
+  owner: melpetera
+  revisions:
+  - 73892ef177e3
+  tool_panel_section_label: Metabolomics
+- name: golm_ws_lib_search
+  owner: fgiacomoni
+  revisions:
+  - 11779b6402bc
+  - 28d579fa1718
+  tool_panel_section_label: Metabolomics
+- name: lcmsmatching
+  owner: prog
+  revisions:
+  - fb9c0409d85c
+  - f86fec07f392
+  tool_panel_section_label: Metabolomics
+- name: massbank_ws_searchspectrum
+  owner: fgiacomoni
+  revisions:
+  - 023c380900ef
+  tool_panel_section_label: Metabolomics
+- name: hmdb_ms_search
+  owner: fgiacomoni
+  revisions:
+  - 97788e4bf3fc
+  - 63ba1cb240b7
+  tool_panel_section_label: Metabolomics
+- name: probmetab
+  owner: mmonsoor
+  revisions:
+  - 52b222a626b0
+  tool_panel_section_label: Metabolomics
+- name: camera_annotate
+  owner: lecorguille
+  revisions:
+  - 6139bfcc95cb
+  - 73d82de36369
+  tool_panel_section_label: Metabolomics
+- name: camera_combinexsannos
+  owner: mmonsoor
+  revisions:
+  - 479a83f62863
+  - 961089e21ae2
+  tool_panel_section_label: Metabolomics
+- name: profia
+  owner: ethevenot
+  revisions:
+  - de9d1270a9ae
+  tool_panel_section_label: Metabolomics
+- name: nmr_bucketing
+  owner: marie-tremblay-metatoul
+  revisions:
+  - 4d5c06b46c2f
+  tool_panel_section_label: Metabolomics
+- name: nmr_preprocessing
+  owner: marie-tremblay-metatoul
+  revisions:
+  - 68e2d63bece0
+  - cbea5e9fd0b4
+  - 5b06800f3449
+  tool_panel_section_label: Metabolomics
+- name: nmr_alignment
+  owner: marie-tremblay-metatoul
+  revisions:
+  - 265ee538e120
+  tool_panel_section_label: Metabolomics
