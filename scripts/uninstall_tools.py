@@ -47,7 +47,7 @@ def uninstall_tools(galaxy_server, api_key, names, force):
     galaxy_instance = GalaxyInstance(url=galaxy_server, key=api_key)
     toolshed_client = ToolShedClient(galaxy_instance)
 
-    temp_tool_list_file = 'tmp/tool_list.yml'
+    temp_tool_list_file = 'tmp/installed_tool_list.yml'
     # TODO: Switch to using bioblend to obtain this list
     # ephemeris uses bioblend but without using ephemeris we cut out the need to for a temp file
     os.system('get-tool-list -g %s -a %s -o %s --get_all_tools' % (galaxy_server, api_key, temp_tool_list_file))

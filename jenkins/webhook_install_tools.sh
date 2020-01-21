@@ -1,6 +1,6 @@
 #! /bin/bash
 
-STAGING_URL=https://galaxy-cat.genome.edu.au ##
+STAGING_URL=https://galaxy-cat.genome.edu.au
 PRODUCTION_URL=https://cat-dev.genome.edu.au
 STAGING_TOOL_DIR=galaxy-cat
 PRODUCTION_TOOL_DIR=cat-dev
