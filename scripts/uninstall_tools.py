@@ -25,10 +25,7 @@ def main():
     parser.add_argument(
         '-f',
         '--force',
-        help=(
-            'If there are several toolshed entries for one name or name/revision entry uninstall all of them'
-            ' (the default behaviour is to not uninstall and print a warning)'
-        ),
+        help='If there are several toolshed entries for one name or name/revision entry uninstall all of them',
         action='store_true',
     )
 
