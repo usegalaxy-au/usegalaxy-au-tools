@@ -139,6 +139,7 @@ install_tools() {
 
 		echo -e "\nPushing Changes to github"
 		git commit -a -m "$COMMIT_MESSAGE"
+		git pull;
 		git push
 		echo -e "\nDone"
 	fi
@@ -172,12 +173,10 @@ test_tool() {
 	echo
 	if [ $BASH_V = 4 ]; then
 		# normal regex
-		[[ $(cat $INSTALL_LOG) =~ "Passed tool tests \((\d+)\)" ]];
+		[[ $(cat $TEST_LOG) =~ "Passed tool tests \(([0-9])\)" ]];
 		TESTS_PASSED="${BASH_REMATCH[1]}"
-		[[ $(cat $INSTALL_LOG) =~ "Failed tool tests \((\d+)\)" ]];
+		[[ $(cat $TEST_LOG) =~ "Failed tool tests \(([0-9])\)" ]];
 		TESTS_FAILED="${BASH_REMATCH[1]}"
-		echo $TESTS_PASSED
-		echo $TESTS_FAILED
 	else
 		# resort to python helper
 		TESTS_PASSED="$(python scripts/first_match_regex.py -p 'Passed tool tests \((\d+)\)' $TEST_LOG)"
