@@ -111,13 +111,13 @@ install_tools() {
 
 		# Push changes to github
 		# Add any new tool list files that have been created.
-		for $YML_FILE in $(ls $STAGING_TOOL_DIR)                                                                                                                                                 catherine@catherines-mbp
+		for YML_FILE in $(ls $STAGING_TOOL_DIR)
 	  do
-	    git add $STAGING_TOOL_DIR/$YML_FILE ||:
+	    git add $STAGING_TOOL_DIR/$YML_FILE
 	  done
-		for $YML_FILE in $(ls $PRODUCTION_TOOL_DIR)                                                                                                                                                 catherine@catherines-mbp
+		for YML_FILE in $(ls $PRODUCTION_TOOL_DIR)
 	  do
-	    git add $PRODUCTION_TOOL_DIR/$YML_FILE ||:
+	    git add $PRODUCTION_TOOL_DIR/$YML_FILE
 	  done
 
 		for FILE_NAME in $(ls $TOOL_FILE_PATH)
@@ -143,8 +143,6 @@ install_tools() {
 		echo -e "\nDone"
 	fi
 }
-
-# TODO all calls to shed-tools need to catch errors
 
 test_tool() {
 	# Positional arguments: $1 = STAGING|PRODUCTION, $2 = tool file path
@@ -290,7 +288,7 @@ install_tool() {
 				# Sanity check.  If these are not the same name, uninstall and abandon process with 'Script error'
 				python scripts/uninstall_tools.py -g $URL -a $API_KEY -n $INSTALLED_NAME;
 				log_row "Script Error"
-				exit_installation 1 ""
+				exit_installation 1 "Unexpected value for name of installed tool."
 				return 1
 			fi
 		fi
