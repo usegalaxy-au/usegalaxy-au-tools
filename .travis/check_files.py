@@ -5,7 +5,6 @@ import sys
 from bioblend import ConnectionError
 from bioblend.galaxy import GalaxyInstance
 from bioblend.galaxy.tools import ToolClient
-from bioblend.galaxy.toolshed import ToolShedClient
 from bioblend.toolshed import ToolShedInstance
 from bioblend.toolshed.repositories import ToolShedRepositoryClient
 
@@ -14,6 +13,7 @@ default_tool_shed = 'toolshed.g2.bx.psu.edu'
 mandatory_keys = ['name', 'tool_panel_section_label', 'owner']
 allowed_keys = ['tool_shed_url', 'revisions', 'ignore_test_errors']
 forbidden_keys = ['tool_panel_section_id']
+
 
 def main():
     parser = argparse.ArgumentParser(description="Lint tool input files for installation on Galaxy")
@@ -30,7 +30,7 @@ def main():
     production_url = args.production_url
     production_api_key = args.production_api_key
 
-    loaded_files = yaml_check(args.files) # load yaml and raise ParserError if yaml is incorrect
+    loaded_files = yaml_check(files)   # load yaml and raise ParserError if yaml is incorrect
     key_check(loaded_files)
     tool_list = join_lists([x['yaml']['tools'] for x in loaded_files])
     installable_errors = check_installable(tool_list)
@@ -55,7 +55,7 @@ def join_lists(list_of_lists):
 def flatten_tool_list(tool_list):
     flattened_tool_list = []
     for tool in tool_list:
-        if 'revisions' in  tool.keys():
+        if 'revisions' in tool.keys():
             for revision in tool['revisions']:
                 copy_of_tool = tool.copy()
                 copy_of_tool['revisions'] = [revision]
@@ -72,7 +72,7 @@ def yaml_check(files):
         with open(file) as file_in:
             # As a first pass, check that yaml loads
             try:
-                loaded_yml = yaml.safe_load(file_in.read()) # might throw exception here
+                loaded_yml = yaml.safe_load(file_in.read())  # might throw exception here
             except yaml.parser.ParserError as e:
                 raise e
             loaded_files.append({
@@ -81,11 +81,11 @@ def yaml_check(files):
             })
     return loaded_files
 
+
 def key_check(loaded_files):  # TODO label check in this method
-    flattened_tools = []
     for loaded_file in loaded_files:
         sys.stderr.write('Checking %s \t ' % loaded_file['filename'])
-        if not 'tools' in loaded_file['yaml'].keys():
+        if 'tools' not in loaded_file['yaml'].keys():
             sys.stderr.write('ERROR\n')
             raise Exception('Expecting .yml file with \'tools\'. Check requests/template/template.yml for an example.')
         tools = loaded_file['yaml']['tools']
@@ -93,12 +93,12 @@ def key_check(loaded_files):  # TODO label check in this method
             tools = [tools]
         for key in mandatory_keys:
             for tool in tools:
-                if not key in tool.keys():
+                if key not in tool.keys():
                     sys.stderr.write('ERROR\n')
                     raise Exception('All tool list entries must have \'%s\' specified. Check requests/template/template.yml for an example.' % key)
             if key == 'tool_panel_section_label':
-                pass # TODO: Check that section label is valid
-                #
+                pass  # TODO: Check that section label is valid
+
         sys.stderr.write('OK\n')
 
 
@@ -108,8 +108,8 @@ def check_installable(tools):
     errors = []
     tools_by_shed = {}
     for tool in tools:
-        if not 'tool_shed_url' in tool.keys():
-            tool.update({'tool_shed_url': default_tool_shed_url})
+        if 'tool_shed_url' not in tool.keys():
+            tool.update({'tool_shed_url': default_tool_shed})
         if tool['tool_shed_url'] in tools_by_shed.keys():
             tools_by_shed[tool['tool_shed_url']].append(tool)
         else:
@@ -138,9 +138,9 @@ def check_installable(tools):
                 # Raise an exception?  Ask Simon.
 
             if 'revisions' in tool.keys():  # Check that requested revisions are installable
-                for revision in revisions:
+                for revision in tool['revisions']:
                     if shed_status == 'online':
-                        if not revision in installable_revisions:
+                        if revision not in installable_revisions:
                             errors.append('% revision %s is not installable' % (tool['name'], revision))
                     tool.update({'revision_request_type': 'specific', 'shed_status': shed_status})
             else:
