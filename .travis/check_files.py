@@ -139,7 +139,6 @@ def check_installable(tools):
                 for revision in tool['revisions']:
                     if shed_status == 'online':
                         if revision not in installable_revisions:
-                            print(revision, installable_revisions)
                             errors.append('%s revision %s is not installable' % (tool['name'], revision))
                     tool.update({'revision_request_type': 'specific', 'shed_status': shed_status})
             else:
