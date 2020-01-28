@@ -7,20 +7,21 @@ export BUILD_NUMBER="$BUILD_NUMBER"
 export INSTALL_ID="$(date '+%Y%m%d%H%M%S')" # this will do for now, could incorporate jenkins build ID or git commit hash
 export LOG_DIR=~/galaxy_tool_automation
 export BASH_V="$(echo ${BASH_VERSION} | head -c 1)" # this will be "4" if the bash version is 4.x, empty otherwise
+export $(cat .env); # Environment variables such as galaxy URLs
 
 SUPPLIED_ARGS="$@"
 
 # Switch to allow the script to be run locally or remotely at stages of development
-# if RUN_LOCALLY is true, the script will only run where an .env file is present
-# The .env file is necessary for loading the API keys outside of the jenkins environment
+# if RUN_LOCALLY is true, the script will only run where a .secret.env file is present
+# The .secret.env file is necessary for loading the API keys outside of the jenkins environment
 RUN_LOCALLY=0 # (1) Disable script on jenkins (0) run script on jenkins
 export LOCAL_ENV=0
 RUN=1 # true=1, false=0
-ENV_FILE=.env
+ENV_FILE=.secret.env
 if [ -f "$ENV_FILE" ]; then
     export LOCAL_ENV=1
     export LOG_DIR=logs
-    export $(cat .env)
+    export $(cat $ENV_FILE)
     # GIT_COMMIT and GIT_PREVIOUS_COMMIT are supplied by Jenkins
     # Use HEAD and HEAD~1 when running locally
     GIT_PREVIOUS_COMMIT=HEAD~1;
