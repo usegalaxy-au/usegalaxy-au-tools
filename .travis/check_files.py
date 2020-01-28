@@ -11,8 +11,6 @@ from bioblend.toolshed.repositories import ToolShedRepositoryClient
 default_tool_shed = 'toolshed.g2.bx.psu.edu'
 
 mandatory_keys = ['name', 'tool_panel_section_label', 'owner']
-allowed_keys = ['tool_shed_url', 'revisions', 'ignore_test_errors']
-forbidden_keys = ['tool_panel_section_id']
 
 
 def main():
@@ -141,7 +139,8 @@ def check_installable(tools):
                 for revision in tool['revisions']:
                     if shed_status == 'online':
                         if revision not in installable_revisions:
-                            errors.append('% revision %s is not installable' % (tool['name'], revision))
+                            print(revision, installable_revisions)
+                            errors.append('%s revision %s is not installable' % (tool['name'], revision))
                     tool.update({'revision_request_type': 'specific', 'shed_status': shed_status})
             else:
                 if shed_status == 'online':

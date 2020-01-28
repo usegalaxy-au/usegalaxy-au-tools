@@ -181,77 +181,6 @@ install_tools() {
   echo -e "\nDone"
 }
 
-test_tool() {
-  # Positional arguments: $1 = STAGING|PRODUCTION, $2 = tool file path
-  TOOL_FILE="$2"
-  SERVER="$1"
-  if [ $SERVER = "STAGING" ]; then
-    API_KEY=$STAGING_API_KEY
-    URL=$STAGING_URL
-    TEST_JSON="$LOG_DIR"/"$INSTALL_ID"_staging_test.json
-    STEP="Staging Testing"
-  elif [ $SERVER = "PRODUCTION" ]; then
-    API_KEY=$PRODUCTION_API_KEY
-    URL=$PRODUCTION_URL
-    TEST_JSON="$LOG_DIR"/"$INSTALL_ID"_production_test.json
-    STEP="Production Testing"
-  else
-    echo "First positional argument must be STAGING or PRODUCTION.  Exiting"
-    return 1
-  fi
-
-  TEST_LOG='tmp/test_log.txt'
-  rm -f $TEST_LOG ||:;  # delete if it does not exist
-
-  command="shed-tools test -g $URL -a $API_KEY -t $TOOL_FILE --parallel_tests 4 --test_json $TEST_JSON -v --log_file $TEST_LOG"
-  echo "${command/$API_KEY/<API_KEY>}"
-  $command || return 1
-  echo
-  if [ $BASH_V = 4 ]; then
-    # normal regex
-    PATTERN="Passed tool tests \(([0-9]+)\)"
-    [[ $(cat $TEST_LOG) =~ $PATTERN ]];
-    TESTS_PASSED="${BASH_REMATCH[1]}"
-    PATTERN="Failed tool tests \(([0-9]+)\)"
-    [[ $(cat $TEST_LOG) =~ $PATTERN ]];
-    TESTS_FAILED="${BASH_REMATCH[1]}"
-  else
-    # resort to python helper
-    TESTS_PASSED="$(python scripts/first_match_regex.py -p 'Passed tool tests \((\d+)\)' $TEST_LOG)"
-    TESTS_FAILED="$(python scripts/first_match_regex.py -p 'Failed tool tests \((\d+)\)' $TEST_LOG)"
-  fi
-  [ $SERVER = "STAGING" ] && STAGING_TESTS_PASSED="$TESTS_PASSED/$(($TESTS_PASSED+$TESTS_FAILED))";
-  [ $SERVER = "PRODUCTION" ] && PRODUCTION_TESTS_PASSED="$TESTS_PASSED/$(($TESTS_PASSED+$TESTS_FAILED))";
-  if [ $TESTS_FAILED = 0 ]; then
-    if [ $TESTS_PASSED = 0 ]; then
-      echo "WARNING: There are no tests for $TOOL_NAME at revision $INSTALLED_REVISION.  Proceeding as none have failed.";
-    else
-      echo "All tests have passed for $TOOL_NAME at revision $INSTALLED_REVISION on $URL.";
-    fi
-    if [ "$SERVER" = "PRODUCTION" ]; then
-      echo "Successfully installed $TOOL_NAME on $URL\n";
-      unset STEP
-      log_row "Installed"
-      exit_installation 0 ""
-      rm $TOOL_FILE; # remove installation file in requests/pending
-      return 0
-    fi
-  else
-    echo "Failed to install: Winding back installation as some tests have failed.";
-    echo "Uninstalling on $URL";
-    python scripts/uninstall_tools.py -g $URL -a $API_KEY -n $INSTALLED_NAME;
-    if [ $SERVER = "PRODUCTION" ]; then
-      # also uninstall on staging
-      echo "Uninstalling on $STAGING_URL";
-      python scripts/uninstall_tools.py -g $STAGING_URL -a $STAGING_API_KEY -n $INSTALLED_NAME;
-    fi
-    log_row "Tests failed"
-    echo -e "Failed to install $TOOL_NAME. Tests failed on  $URL.\n" >> $ERROR_LOG
-    cat $TEST_LOG >> $ERROR_LOG; echo -e "\n\n" >> $ERROR_LOG;
-    exit_installation 1 ""
-    return 1
-  fi
-}
 
 install_tool() {
   # Positional arguments: $1 = STAGING|PRODUCTION, $2 = tool file path, $3 = repeat (default 1)
@@ -299,44 +228,129 @@ install_tool() {
     INSTALLED_NAME="${SHED_TOOLS_VALUES[1]}";
     INSTALLED_REVISION="${SHED_TOOLS_VALUES[2]}";
   fi
-  # If all three values are not null, proceed only if status is Installed,
-  # write log entry and leave otherwise
-  if [ "$INSTALLATION_STATUS" ] && [ "$INSTALLED_NAME" ] && [ "$INSTALLED_REVISION" ]; then
-    if [ ! "$TOOL_NAME" = "$INSTALLED_NAME" ]; then
-      # Sanity check.  If these are not the same name, uninstall and abandon process with 'Script error'
-      python scripts/uninstall_tools.py -g $URL -a $API_KEY -n $INSTALLED_NAME;
-      log_row "Script Error"
-      exit_installation 1 "Unexpected value for name of installed tool."
-      return 1
+  if [ ! "$INSTALLATION_STATUS" ] || [ ! "$INSTALLED_NAME" ] || [ ! "$INSTALLED_REVISION" ]; then
+    # TODO what if this is production server?  wind back staging installation?
+    log_row "Script error"
+    exit_installation 1 "Could not verify installation from shed-tools output."
+    return 1
+  fi
+  if [ ! "$TOOL_NAME" = "$INSTALLED_NAME" ]; then
+    # If these are not the same name it is probably due to this script.
+    # uninstall and abandon process with 'Script error'
+    python scripts/uninstall_tools.py -g $URL -a $API_KEY -n $INSTALLED_NAME;
+    log_row "Script Error"
+    exit_installation 1 "Unexpected value for name of installed tool.  Expecting "$TOOL_NAME", received $INSTALLED_NAME";
+    return 1
+  fi
+  # INSTALLATION_STATUS can have one of 3 values: Installed, Skipped, Errored
+  if [ $INSTALLATION_STATUS = "Errored" ]; then
+    # The tool may or may not be installed according to the API, so it needs to be
+    # uninstalled with bioblend
+    echo "Installation error.  Uninstalling $TOOL_NAME on $URL";
+    python scripts/uninstall_tools.py -g $URL -a $API_KEY -n "$INSTALLED_NAME@$INSTALLED_REVISION";
+    if [ $SERVER = "PRODUCTION" ]; then
+      # also uninstall on staging
+      echo "Uninstalling $TOOL_NAME on $STAGING_URL";
+      python scripts/uninstall_tools.py -g $STAGING_URL -a $STAGING_API_KEY -n $INSTALLED_NAME;
     fi
-    if [ ! $INSTALLATION_STATUS = "Installed" ]; then
-      if [ $INSTALLATION_STATUS = "Errored" ]; then
-        # The tool may or may not be installed according to the API, so it needs to be
-        # uninstalled with bioblend
-        echo "Installation error.  Uninstalling $TOOL_NAME on $URL";
-        python scripts/uninstall_tools.py -g $URL -a $API_KEY -n "$INSTALLED_NAME@$INSTALLED_REVISION";
-        if [ $SERVER = "PRODUCTION" ]; then
-          # also uninstall on staging
-          echo "Uninstalling $TOOL_NAME on $STAGING_URL";
-          python scripts/uninstall_tools.py -g $STAGING_URL -a $STAGING_API_KEY -n $INSTALLED_NAME;
-        fi
-      elif [ $INSTALLATION_STATUS = "Skipped" ]; then
-        # Note that linting process should prevent this scenario
-        echo "Package appears to be already installed on $URL";
-      fi
-      log_row $INSTALLATION_STATUS
-      echo -e "Failed to install $TOOL_NAME on $URL (status $INSTALLATION_STATUS)\n" >> $ERROR_LOG
-      cat $INSTALL_LOG >> $ERROR_LOG; echo -e "\n\n" >> $ERROR_LOG;
-      exit_installation 1 ""
-      return 1;
+    log_row $INSTALLATION_STATUS
+    echo -e "Failed to install $TOOL_NAME on $URL (status $INSTALLATION_STATUS)\n" >> $ERROR_LOG
+    cat $INSTALL_LOG >> $ERROR_LOG; echo -e "\n\n" >> $ERROR_LOG;
+    exit_installation 1 ""
+    return 1;
+
+  elif [ $INSTALLATION_STATUS = "Skipped" ]; then
+    # The linting process should prevent this scenario if the tool is installed on production
+    # If the tool is installed on staging, skip testing
+    echo "Package appears to be already installed on $URL";
+
+  elif [ $INSTALLATION_STATUS = "Installed" ]; then
+    echo "$TOOL_NAME has been installed on $URL";
+
+  else
+    log_row "Script error"
+    exit_installation 1 "Could not verify installation from shed-tools output."
+    return 1
+  fi
+}
+
+test_tool() {
+  # Positional arguments: $1 = STAGING|PRODUCTION, $2 = tool file path
+  TOOL_FILE="$2"
+  SERVER="$1"
+  if [ $SERVER = "STAGING" ]; then
+    API_KEY=$STAGING_API_KEY
+    URL=$STAGING_URL
+    TEST_JSON="$LOG_DIR"/"$INSTALL_ID"_staging_test.json
+    STEP="Staging Testing"
+  elif [ $SERVER = "PRODUCTION" ]; then
+    API_KEY=$PRODUCTION_API_KEY
+    URL=$PRODUCTION_URL
+    TEST_JSON="$LOG_DIR"/"$INSTALL_ID"_production_test.json
+    STEP="Production Testing"
+  else
+    echo "First positional argument must be STAGING or PRODUCTION.  Exiting"
+    return 1
+  fi
+
+  # Special case: If package is already installed on staging we skip tests and install on production
+  [ $SERVER = "STAGING" ] && [ $INSTALLATION_STATUS = "Skipped" ] && { echo "Skipping testing on $STAGING_URL"; return 0 }
+
+  TEST_LOG='tmp/test_log.txt'
+  rm -f $TEST_LOG ||:;  # delete if it does not exist
+
+  command="shed-tools test -g $URL -a $API_KEY -t $TOOL_FILE --parallel_tests 4 --test_json $TEST_JSON -v --log_file $TEST_LOG"
+  echo "${command/$API_KEY/<API_KEY>}"
+  $command || return 1
+  echo
+  if [ $BASH_V = 4 ]; then
+    # normal regex
+    PATTERN="Passed tool tests \(([0-9]+)\)"
+    [[ $(cat $TEST_LOG) =~ $PATTERN ]];
+    TESTS_PASSED="${BASH_REMATCH[1]}"
+    PATTERN="Failed tool tests \(([0-9]+)\)"
+    [[ $(cat $TEST_LOG) =~ $PATTERN ]];
+    TESTS_FAILED="${BASH_REMATCH[1]}"
+  else
+    # resort to python helper
+    TESTS_PASSED="$(python scripts/first_match_regex.py -p 'Passed tool tests \((\d+)\)' $TEST_LOG)"
+    TESTS_FAILED="$(python scripts/first_match_regex.py -p 'Failed tool tests \((\d+)\)' $TEST_LOG)"
+  fi
+
+  # Proportion of tests passed for logs
+  [ $SERVER = "STAGING" ] && STAGING_TESTS_PASSED="$TESTS_PASSED/$(($TESTS_PASSED+$TESTS_FAILED))";
+  [ $SERVER = "PRODUCTION" ] && PRODUCTION_TESTS_PASSED="$TESTS_PASSED/$(($TESTS_PASSED+$TESTS_FAILED))";
+
+  if [ $TESTS_FAILED = 0 ]; then
+    if [ $TESTS_PASSED = 0 ]; then
+      echo "WARNING: There are no tests for $TOOL_NAME at revision $INSTALLED_REVISION.  Proceeding as none have failed.";
     else
-      echo "$TOOL_NAME has been installed on $URL";
+      echo "All tests have passed for $TOOL_NAME at revision $INSTALLED_REVISION on $URL.";
     fi
-    else
-      # TODO what if this is production server?  wind back staging installation?
-      log_row "Script error"
-      exit_installation 1 "Could not verify installation from shed-tools output."
-      return 1
+    if [ "$SERVER" = "PRODUCTION" ]; then
+      echo "Successfully installed $TOOL_NAME on $URL\n";
+      unset STEP
+      log_row "Installed"
+      exit_installation 0 ""
+      # remove installation file in requests/pending.  Any files that remain in this folder will
+      # be added to a new PR opened by Jenkins
+      rm $TOOL_FILE;
+      return 0
+    fi
+  else
+    echo "Failed to install: Winding back installation as some tests have failed.";
+    echo "Uninstalling on $URL";
+    python scripts/uninstall_tools.py -g $URL -a $API_KEY -n $INSTALLED_NAME;
+    if [ $SERVER = "PRODUCTION" ]; then
+      # also uninstall on staging
+      echo "Uninstalling on $STAGING_URL";
+      python scripts/uninstall_tools.py -g $STAGING_URL -a $STAGING_API_KEY -n $INSTALLED_NAME;
+    fi
+    log_row "Tests failed"
+    echo -e "Failed to install $TOOL_NAME. Tests failed on  $URL.\n" >> $ERROR_LOG
+    cat $TEST_LOG >> $ERROR_LOG; echo -e "\n\n" >> $ERROR_LOG;
+    exit_installation 1 ""
+    return 1
   fi
 }
 
