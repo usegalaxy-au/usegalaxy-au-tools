@@ -294,7 +294,10 @@ test_tool() {
   fi
 
   # Special case: If package is already installed on staging we skip tests and install on production
-  [ $SERVER = "STAGING" ] && [ $INSTALLATION_STATUS = "Skipped" ] && { echo "Skipping testing on $STAGING_URL"; return 0 }
+  if [ $SERVER = "STAGING" ] && [ $INSTALLATION_STATUS = "Skipped" ]; then
+    echo "Skipping testing on $STAGING_URL";
+    return 0;
+  fi
 
   TEST_LOG='tmp/test_log.txt'
   rm -f $TEST_LOG ||:;  # delete if it does not exist
