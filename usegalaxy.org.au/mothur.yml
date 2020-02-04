@@ -1,18 +1,4 @@
 tools:
-- name: mothur_chimera_vsearch
-  owner: iuc
-  revisions:
-  - d531f28e8266
-  tool_panel_section_id: mothur
-  tool_panel_section_label: Mothur
-  tool_shed_url: toolshed.g2.bx.psu.edu
-- name: mothur_taxonomy_to_krona
-  owner: iuc
-  revisions:
-  - 71e7d93a593e
-  tool_panel_section_id: mothur
-  tool_panel_section_label: Mothur
-  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: mothur_align_check
   owner: iuc
   revisions:
@@ -94,6 +80,13 @@ tools:
   owner: iuc
   revisions:
   - 4e3780d096af
+  tool_panel_section_id: mothur
+  tool_panel_section_label: Mothur
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: mothur_chimera_vsearch
+  owner: iuc
+  revisions:
+  - d531f28e8266
   tool_panel_section_id: mothur
   tool_panel_section_label: Mothur
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -300,17 +293,17 @@ tools:
   tool_panel_section_id: mothur
   tool_panel_section_label: Mothur
   tool_shed_url: toolshed.g2.bx.psu.edu
-- name: mothur_get_groups
-  owner: iuc
-  revisions:
-  - b1c35f71607f
-  tool_panel_section_id: mothur
-  tool_panel_section_label: Mothur
-  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: mothur_get_group
   owner: iuc
   revisions:
   - f2b626fe7082
+  tool_panel_section_id: mothur
+  tool_panel_section_label: Mothur
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: mothur_get_groups
+  owner: iuc
+  revisions:
+  - b1c35f71607f
   tool_panel_section_id: mothur
   tool_panel_section_label: Mothur
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -843,6 +836,13 @@ tools:
   owner: iuc
   revisions:
   - 5eb0f670aa35
+  tool_panel_section_id: mothur
+  tool_panel_section_label: Mothur
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: mothur_taxonomy_to_krona
+  owner: iuc
+  revisions:
+  - 71e7d93a593e
   tool_panel_section_id: mothur
   tool_panel_section_label: Mothur
   tool_shed_url: toolshed.g2.bx.psu.edu

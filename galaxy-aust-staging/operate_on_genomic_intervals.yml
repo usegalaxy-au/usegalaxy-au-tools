@@ -1,18 +1,4 @@
 tools:
-- name: intersect
-  owner: devteam
-  revisions:
-  - 33b3f3688db4
-  tool_panel_section_id: bxops
-  tool_panel_section_label: Operate on Genomic Intervals
-  tool_shed_url: toolshed.g2.bx.psu.edu
-- name: merge
-  owner: devteam
-  revisions:
-  - 381cd27bf67a
-  tool_panel_section_id: bxops
-  tool_panel_section_label: Operate on Genomic Intervals
-  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: basecoverage
   owner: devteam
   revisions:
@@ -20,10 +6,10 @@ tools:
   tool_panel_section_id: bxops
   tool_panel_section_label: Operate on Genomic Intervals
   tool_shed_url: toolshed.g2.bx.psu.edu
-- name: coverage
+- name: cluster
   owner: devteam
   revisions:
-  - 4ef9819dc7fb
+  - 05696474ee89
   tool_panel_section_id: bxops
   tool_panel_section_label: Operate on Genomic Intervals
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -34,13 +20,6 @@ tools:
   tool_panel_section_id: bxops
   tool_panel_section_label: Operate on Genomic Intervals
   tool_shed_url: toolshed.g2.bx.psu.edu
-- name: subtract
-  owner: devteam
-  revisions:
-  - 0145969324c4
-  tool_panel_section_id: bxops
-  tool_panel_section_label: Operate on Genomic Intervals
-  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: concat
   owner: devteam
   revisions:
@@ -48,24 +27,10 @@ tools:
   tool_panel_section_id: bxops
   tool_panel_section_label: Operate on Genomic Intervals
   tool_shed_url: toolshed.g2.bx.psu.edu
-- name: join
+- name: coverage
   owner: devteam
   revisions:
-  - a10f49d9218a
-  tool_panel_section_id: bxops
-  tool_panel_section_label: Operate on Genomic Intervals
-  tool_shed_url: toolshed.g2.bx.psu.edu
-- name: subtract_query
-  owner: devteam
-  revisions:
-  - ff3901618482
-  tool_panel_section_id: bxops
-  tool_panel_section_label: Operate on Genomic Intervals
-  tool_shed_url: toolshed.g2.bx.psu.edu
-- name: get_flanks
-  owner: devteam
-  revisions:
-  - 077f404ae1bb
+  - 4ef9819dc7fb
   tool_panel_section_id: bxops
   tool_panel_section_label: Operate on Genomic Intervals
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -76,10 +41,45 @@ tools:
   tool_panel_section_id: bxops
   tool_panel_section_label: Operate on Genomic Intervals
   tool_shed_url: toolshed.g2.bx.psu.edu
-- name: cluster
+- name: get_flanks
   owner: devteam
   revisions:
-  - 05696474ee89
+  - 077f404ae1bb
+  tool_panel_section_id: bxops
+  tool_panel_section_label: Operate on Genomic Intervals
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: intersect
+  owner: devteam
+  revisions:
+  - 33b3f3688db4
+  tool_panel_section_id: bxops
+  tool_panel_section_label: Operate on Genomic Intervals
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: join
+  owner: devteam
+  revisions:
+  - a10f49d9218a
+  tool_panel_section_id: bxops
+  tool_panel_section_label: Operate on Genomic Intervals
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: merge
+  owner: devteam
+  revisions:
+  - 381cd27bf67a
+  tool_panel_section_id: bxops
+  tool_panel_section_label: Operate on Genomic Intervals
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: subtract_query
+  owner: devteam
+  revisions:
+  - ff3901618482
+  tool_panel_section_id: bxops
+  tool_panel_section_label: Operate on Genomic Intervals
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: subtract
+  owner: devteam
+  revisions:
+  - 0145969324c4
   tool_panel_section_id: bxops
   tool_panel_section_label: Operate on Genomic Intervals
   tool_shed_url: toolshed.g2.bx.psu.edu

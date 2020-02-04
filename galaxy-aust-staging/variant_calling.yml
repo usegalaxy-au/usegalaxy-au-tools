@@ -6,6 +6,13 @@ tools:
   tool_panel_section_id: variant_calling
   tool_panel_section_label: Variant Calling
   tool_shed_url: toolshed.g2.bx.psu.edu
+- name: freebayes
+  owner: devteam
+  revisions:
+  - 156b60c1530f
+  tool_panel_section_id: variant_calling
+  tool_panel_section_label: Variant Calling
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: snippy
   owner: iuc
   revisions:
@@ -20,13 +27,6 @@ tools:
   tool_panel_section_id: variant_calling
   tool_panel_section_label: Variant Calling
   tool_shed_url: toolshed.g2.bx.psu.edu
-- name: substitution_rates
-  owner: devteam
-  revisions:
-  - 3d9544198582
-  tool_panel_section_id: variant_calling
-  tool_panel_section_label: Variant Calling
-  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: snpfreq
   owner: devteam
   revisions:
@@ -34,10 +34,10 @@ tools:
   tool_panel_section_id: variant_calling
   tool_panel_section_label: Variant Calling
   tool_shed_url: toolshed.g2.bx.psu.edu
-- name: freebayes
+- name: substitution_rates
   owner: devteam
   revisions:
-  - 156b60c1530f
+  - 3d9544198582
   tool_panel_section_id: variant_calling
   tool_panel_section_label: Variant Calling
   tool_shed_url: toolshed.g2.bx.psu.edu

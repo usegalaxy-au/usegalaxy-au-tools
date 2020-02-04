@@ -53,7 +53,7 @@ def main():
     for cat in categories:
         fname = str(cat)
         good_fname = outdir + "/" + slugify(fname) + ".yml"
-        tool_yaml = {'tools': categories[cat]}
+        tool_yaml = {'tools': sorted(categories[cat], key=lambda x: x['name'] + x['owner'])}
         if args.verbose:
             print("Working on: %s" % good_fname)
         with open(good_fname, 'w') as outfile:

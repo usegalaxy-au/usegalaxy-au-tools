@@ -1,8 +1,8 @@
 tools:
-- name: phyml
-  owner: vlefort
+- name: gubbins
+  owner: iuc
   revisions:
-  - 6dd988b4b760
+  - 637ec5d5368c
   tool_panel_section_id: phylogenetics
   tool_panel_section_label: Phylogenetics
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -13,17 +13,17 @@ tools:
   tool_panel_section_id: phylogenetics
   tool_panel_section_label: Phylogenetics
   tool_shed_url: toolshed.g2.bx.psu.edu
+- name: phyml
+  owner: vlefort
+  revisions:
+  - 6dd988b4b760
+  tool_panel_section_id: phylogenetics
+  tool_panel_section_label: Phylogenetics
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: raxml
   owner: iuc
   revisions:
   - ba29b5e2a4be
-  tool_panel_section_id: phylogenetics
-  tool_panel_section_label: Phylogenetics
-  tool_shed_url: toolshed.g2.bx.psu.edu
-- name: gubbins
-  owner: iuc
-  revisions:
-  - 637ec5d5368c
   tool_panel_section_id: phylogenetics
   tool_panel_section_label: Phylogenetics
   tool_shed_url: toolshed.g2.bx.psu.edu

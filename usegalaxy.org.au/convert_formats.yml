@@ -1,36 +1,8 @@
 tools:
-- name: gffread
-  owner: devteam
-  revisions:
-  - 4dea02886337
-  tool_panel_section_id: convert
-  tool_panel_section_label: Convert Formats
-  tool_shed_url: toolshed.g2.bx.psu.edu
-- name: bp_genbank2gff3
-  owner: iuc
-  revisions:
-  - a0d092f27fdf
-  tool_panel_section_id: convert
-  tool_panel_section_label: Convert Formats
-  tool_shed_url: toolshed.g2.bx.psu.edu
-- name: fastq_to_fasta
-  owner: devteam
-  revisions:
-  - 02a5f43cd5d1
-  tool_panel_section_id: convert
-  tool_panel_section_label: Convert Formats
-  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: bam_to_fastq
   owner: brad-chapman
   revisions:
   - 5a9ada9a3191
-  tool_panel_section_id: convert
-  tool_panel_section_label: Convert Formats
-  tool_shed_url: toolshed.g2.bx.psu.edu
-- name: biom_convert
-  owner: iuc
-  revisions:
-  - 501c21cce614
   tool_panel_section_id: convert
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -41,10 +13,17 @@ tools:
   tool_panel_section_id: convert
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
-- name: fastq_to_tabular
-  owner: devteam
+- name: biom_convert
+  owner: iuc
   revisions:
-  - ccf4e1d1fcbe
+  - 501c21cce614
+  tool_panel_section_id: convert
+  tool_panel_section_label: Convert Formats
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: bp_genbank2gff3
+  owner: iuc
+  revisions:
+  - a0d092f27fdf
   tool_panel_section_id: convert
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -55,10 +34,31 @@ tools:
   tool_panel_section_id: convert
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
-- name: tabular_to_fastq
+- name: fastq_to_fasta
   owner: devteam
   revisions:
-  - b8cdc0507586
+  - 02a5f43cd5d1
+  tool_panel_section_id: convert
+  tool_panel_section_label: Convert Formats
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: fastq_to_tabular
+  owner: devteam
+  revisions:
+  - ccf4e1d1fcbe
+  tool_panel_section_id: convert
+  tool_panel_section_label: Convert Formats
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: fml_gff3togtf
+  owner: vipints
+  revisions:
+  - 5c6f33e20fcc
+  tool_panel_section_id: convert
+  tool_panel_section_label: Convert Formats
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: gffread
+  owner: devteam
+  revisions:
+  - 4dea02886337
   tool_panel_section_id: convert
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -69,10 +69,10 @@ tools:
   tool_panel_section_id: convert
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
-- name: fml_gff3togtf
-  owner: vipints
+- name: tabular_to_fastq
+  owner: devteam
   revisions:
-  - 5c6f33e20fcc
+  - b8cdc0507586
   tool_panel_section_id: convert
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
