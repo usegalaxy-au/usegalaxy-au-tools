@@ -1,23 +1,15 @@
 tools:
-- name: macs2
-  owner: iuc
+- name: diffbind
+  owner: bgruening
   revisions:
-  - 495a4173006f
-  - f5d67c722d67
+  - c97a786e8fb5
   tool_panel_section_id: chip_seq
   tool_panel_section_label: ChiP-seq
   tool_shed_url: toolshed.g2.bx.psu.edu
-- name: sicer
-  owner: devteam
+- name: idr_package
+  owner: modencode-dcc
   revisions:
-  - 74c9214cc8e6
-  tool_panel_section_id: chip_seq
-  tool_panel_section_label: ChiP-seq
-  tool_shed_url: toolshed.g2.bx.psu.edu
-- name: rnachipintegrator
-  owner: pjbriggs
-  revisions:
-  - 087d9872fb0d
+  - 6f6a9fbe264e
   tool_panel_section_id: chip_seq
   tool_panel_section_label: ChiP-seq
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -28,10 +20,25 @@ tools:
   tool_panel_section_id: chip_seq
   tool_panel_section_label: ChiP-seq
   tool_shed_url: toolshed.g2.bx.psu.edu
-- name: diffbind
-  owner: bgruening
+- name: macs2
+  owner: iuc
   revisions:
-  - c97a786e8fb5
+  - f5d67c722d67
+  - 495a4173006f
+  tool_panel_section_id: chip_seq
+  tool_panel_section_label: ChiP-seq
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: rnachipintegrator
+  owner: pjbriggs
+  revisions:
+  - 087d9872fb0d
+  tool_panel_section_id: chip_seq
+  tool_panel_section_label: ChiP-seq
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: sicer
+  owner: devteam
+  revisions:
+  - 74c9214cc8e6
   tool_panel_section_id: chip_seq
   tool_panel_section_label: ChiP-seq
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -39,13 +46,6 @@ tools:
   owner: stemcellcommons
   revisions:
   - 23b22c1692fa
-  tool_panel_section_id: chip_seq
-  tool_panel_section_label: ChiP-seq
-  tool_shed_url: toolshed.g2.bx.psu.edu
-- name: idr_package
-  owner: modencode-dcc
-  revisions:
-  - 6f6a9fbe264e
   tool_panel_section_id: chip_seq
   tool_panel_section_label: ChiP-seq
   tool_shed_url: toolshed.g2.bx.psu.edu

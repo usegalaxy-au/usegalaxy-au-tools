@@ -1,8 +1,22 @@
 tools:
+- name: abricate
+  owner: iuc
+  revisions:
+  - 78c75f134c16
+  tool_panel_section_id: annotation
+  tool_panel_section_label: Annotation
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: annotatemyids
   owner: iuc
   revisions:
   - 1aae04680c4b
+  tool_panel_section_id: annotation
+  tool_panel_section_label: Annotation
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: barrnap
+  owner: iuc
+  revisions:
+  - 7355bbf5e05f
   tool_panel_section_id: annotation
   tool_panel_section_label: Annotation
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -20,17 +34,10 @@ tools:
   tool_panel_section_id: annotation
   tool_panel_section_label: Annotation
   tool_shed_url: toolshed.g2.bx.psu.edu
-- name: barrnap
-  owner: iuc
+- name: infernal
+  owner: bgruening
   revisions:
-  - 7355bbf5e05f
-  tool_panel_section_id: annotation
-  tool_panel_section_label: Annotation
-  tool_shed_url: toolshed.g2.bx.psu.edu
-- name: abricate
-  owner: iuc
-  revisions:
-  - 78c75f134c16
+  - 477d829d3250
   tool_panel_section_id: annotation
   tool_panel_section_label: Annotation
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -41,25 +48,18 @@ tools:
   tool_panel_section_id: annotation
   tool_panel_section_label: Annotation
   tool_shed_url: toolshed.g2.bx.psu.edu
+- name: snpsift
+  owner: iuc
+  revisions:
+  - 2b3e65a4252f
+  - 09d6806c609e
+  tool_panel_section_id: annotation
+  tool_panel_section_label: Annotation
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: snptools
   owner: rreumerman
   revisions:
   - 8de0ffc2166f
-  tool_panel_section_id: annotation
-  tool_panel_section_label: Annotation
-  tool_shed_url: toolshed.g2.bx.psu.edu
-- name: snpsift
-  owner: iuc
-  revisions:
-  - 09d6806c609e
-  - 2b3e65a4252f
-  tool_panel_section_id: annotation
-  tool_panel_section_label: Annotation
-  tool_shed_url: toolshed.g2.bx.psu.edu
-- name: infernal
-  owner: bgruening
-  revisions:
-  - 477d829d3250
   tool_panel_section_id: annotation
   tool_panel_section_label: Annotation
   tool_shed_url: toolshed.g2.bx.psu.edu
