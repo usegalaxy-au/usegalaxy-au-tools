@@ -12,30 +12,30 @@ default_tool_shed = 'toolshed.g2.bx.psu.edu'
 
 mandatory_keys = ['name', 'tool_panel_section_label', 'owner']
 
-# valid_section_labels = [
-#     'Get Data', 'Send Data', 'Collection Operations', 'Text Manipulation',
-#     'Filter and Sort', 'Join, Subtract and Group', 'FASTA/FASTQ',
-#     'FASTQ Quality Control', 'SAM/BAM', 'BED', 'VCF/BCF', 'Nanopore',
-#     'Convert Formats', 'Lift-Over', 'Operate on Genomic Intervals',
-#     'Extract Features', 'Fetch Sequences/Alignments', 'Assembly', 'Annotation',
-#     'Mapping', 'Variant Detection', 'Variant Calling', 'ChiP-seq', 'RNA-seq',
-#     'Multiple Alignments', 'Bacterial Typing', 'Phylogenetics',
-#     'Genome Editing', 'Mothur', 'Metagenomic analyses', 'Proteomics',
-#     'Metabolomics', 'Picard', 'DeepTools', 'EMBOSS', 'Blast +',
-#     'GATK Tools 1.4', 'GATK Tools', 'Alignment', 'RSeQC', 'Gemini Tools',
-#     'Statistics',
-# ]
-#
-# valid_section_ids = [
-#     'getext', 'send', 'collection_operations', 'textutil', 'filter', 'group',
-#     'fasta_fastq', 'fastq_qc', 'sam_bam', 'bed', 'vcf_bcf', 'nanopore',
-#     'convert', 'liftOver', 'bxops', 'features', 'fetch_seq_align', 'assembly',
-#     'annotation', 'mapping', 'ngs_variant_detection', 'variant_calling',
-#     'chip_seq', 'rna_seq', 'multiple_alignments', 'typing', 'phylogenetics',
-#     'genome_editing', 'mothur', 'metagenomics', 'proteomics', 'metabolomics',
-#     'picard', 'deeptools', 'emboss', 'blast+', 'gatk', 'gatk2', 'alignment',
-#     'rseqc', 'gemini_tools', 'stats',
-# ]
+valid_section_labels = [
+    'Get Data', 'Send Data', 'Collection Operations', 'Text Manipulation',
+    'Filter and Sort', 'Join, Subtract and Group', 'FASTA/FASTQ',
+    'FASTQ Quality Control', 'SAM/BAM', 'BED', 'VCF/BCF', 'Nanopore',
+    'Convert Formats', 'Lift-Over', 'Operate on Genomic Intervals',
+    'Extract Features', 'Fetch Sequences/Alignments', 'Assembly', 'Annotation',
+    'Mapping', 'Variant Detection', 'Variant Calling', 'ChiP-seq', 'RNA-seq',
+    'Multiple Alignments', 'Bacterial Typing', 'Phylogenetics',
+    'Genome Editing', 'Mothur', 'Metagenomic analyses', 'Proteomics',
+    'Metabolomics', 'Picard', 'DeepTools', 'EMBOSS', 'Blast +',
+    'GATK Tools 1.4', 'GATK Tools', 'Alignment', 'RSeQC', 'Gemini Tools',
+    'Statistics',
+]
+
+valid_section_ids = [
+    'getext', 'send', 'collection_operations', 'textutil', 'filter', 'group',
+    'fasta_fastq', 'fastq_qc', 'sam_bam', 'bed', 'vcf_bcf', 'nanopore',
+    'convert', 'liftOver', 'bxops', 'features', 'fetch_seq_align', 'assembly',
+    'annotation', 'mapping', 'ngs_variant_detection', 'variant_calling',
+    'chip_seq', 'rna_seq', 'multiple_alignments', 'typing', 'phylogenetics',
+    'genome_editing', 'mothur', 'metagenomics', 'proteomics', 'metabolomics',
+    'picard', 'deeptools', 'emboss', 'blast+', 'gatk', 'gatk2', 'alignment',
+    'rseqc', 'gemini_tools', 'stats',
+]
 
 
 def main():
@@ -136,17 +136,18 @@ def key_check(loaded_files):
         sys.stderr.write('OK\n')
 
 
-# def label_check(loaded_files):
-#     for loaded_file in loaded_files:
-#         sys.stderr.write('Checking %s \t ' % loaded_file['filename'])
-#         tools = loaded_file['yaml']['tools']
-#         for tool in tools:
-#             label = tool['tool_panel_section_label']
-#             if label not in valid_section_labels:
-#                 raise Exception('Error in %s:  tool_panel_section_label %s is not valid' % (loaded_file['filename'], label))
-#             id = tool.get('tool_panel_section_label')
-#             if id and id not in valid_section_ids:
-#                 raise Exception('Error in %s:  tool_panel_section_label %s is not valid' % (loaded_file['filename'], label))
+def label_check(loaded_files):
+    for loaded_file in loaded_files:
+        sys.stderr.write('Checking %s \t ' % loaded_file['filename'])
+        tools = loaded_file['yaml']['tools']
+        for tool in tools:
+            label = tool['tool_panel_section_label']
+            if label not in valid_section_labels:
+                raise Exception('Error in %s:  tool_panel_section_label %s is not valid' % (loaded_file['filename'], label))
+            id = tool.get('tool_panel_section_label')
+            if id and id not in valid_section_ids:
+                raise Exception('Error in %s:  tool_panel_section_label %s is not valid' % (loaded_file['filename'], label))
+
 
 def check_installable(tools):
     # Go through all tool_shed_url values in request files and run get_ordered_installable_revisions
