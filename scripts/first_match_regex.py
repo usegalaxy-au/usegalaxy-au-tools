@@ -20,7 +20,7 @@ def first_match_regex(path, pattern):
     with open(path) as logfile:
         matches = compiled_pattern.findall(logfile.read())
     if len(matches) > 0:
-        match = matches[0]
+        match = matches[0] if not isinstance(matches[0], str) else [matches[0]]
         sys.stdout.write('%s' % ' '.join(match))  # value returned to shell through stdout
 
 if __name__ == "__main__": main()
