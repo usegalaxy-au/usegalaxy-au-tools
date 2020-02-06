@@ -6,6 +6,13 @@ tools:
   tool_panel_section_id: None
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
+- name: data_manager_build_kraken2_database
+  owner: iuc
+  revisions:
+  - edacc4bcd3cb
+  tool_panel_section_id: None
+  tool_panel_section_label: None
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_bwa_mem_index_builder
   owner: devteam
   revisions:
@@ -37,9 +44,9 @@ tools:
 - name: data_manager_gemini_database_downloader
   owner: iuc
   revisions:
-  - f57426daa04d
   - b4b2b284230a
   - 172815da3d41
+  - f57426daa04d
   tool_panel_section_id: None
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -54,6 +61,13 @@ tools:
   owner: iuc
   revisions:
   - 6843a0db2da0
+  tool_panel_section_id: None
+  tool_panel_section_label: None
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: data_manager_mothur_toolsuite
+  owner: iuc
+  revisions:
+  - aec831b54a5b
   tool_panel_section_id: None
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
