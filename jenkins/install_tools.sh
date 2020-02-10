@@ -67,8 +67,6 @@ install_tools() {
     exit 1
   fi
 
-  # for FILE_NAME in $TOOL_FILE_PATH/*; do
-  #   TOOL_FILE=$TOOL_FILE_PATH$FILE_NAME;
   for TOOL_FILE in $TOOL_FILE_PATH/*; do
     FILE_NAME=$(basename $TOOL_FILE)
 
@@ -98,7 +96,6 @@ install_tools() {
       test_tool "PRODUCTION" $TOOL_FILE
     }
   done
-  echo G
 
   echo -e "\n$INSTALLED_TOOL_COUNTER out of $NUM_TOOLS_TO_INSTALL tools installed."
   if [ ! "$LOG_ENTRY" ]; then
@@ -179,17 +176,22 @@ activate_virtualenv() {
   # Virtual environment in build directory has ephemeris and bioblend installed.
   # If this script is being run for the first time on the jenkins server we
   # will need to set up the virtual environment
+  # The venv is set up a level below the workspace so that we do not have
+  # to rebuild it each time the script is run
+  VIRTUALENV="../.venv"
   if [ $LOCAL_ENV = 0 ]; then
-    if [ ! -d "../.venv" ]; then
+    if [ ! -d $VIRTUALENV ]; then
       echo "creating virtual environment";
-            virtualenv $VIRTUALENV;
-      cd ..
-      pip install pyyaml
-      pip install ephemeris
-      pip install bioblend
-      cd workspace || exit 1
+      virtualenv $VIRTUALENV;
+      INSTALL_PACKAGES=1
     fi
-    . ../.venv/bin/activate
+    # shellcheck source=../.venv/bin/activate
+    . "$VIRTUALENV/bin/activate"
+    if [ $INSTALL_PACKAGES ]; then
+      pip install pyyaml
+      pip install ephemeris==0.10.4
+      pip install bioblend==0.13.0
+    fi
   fi
 }
 
@@ -410,7 +412,7 @@ update_tool_list() {
   TMP_TOOL_FILE="$TMP/tool_list.yml"
   rm -f $TMP_TOOL_FILE ||:; # remove temp file if it exists
   [ -d $TOOL_DIR ] || mkdir $TOOL_DIR  # make directory if it does not exist
-  get-tool-list -g $URL -a $API_KEY -o $TMP_TOOL_FILE --get_data_managers --include_tool_panel_id 
+  get-tool-list -g $URL -a $API_KEY -o $TMP_TOOL_FILE --get_data_managers --include_tool_panel_id
   python scripts/split_tool_yml.py -i $TMP_TOOL_FILE -o $TOOL_DIR; # Simon's script
   rm $TMP_TOOL_FILE
 }
