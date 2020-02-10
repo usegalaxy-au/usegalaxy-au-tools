@@ -11,6 +11,7 @@ from bioblend.toolshed.repositories import ToolShedRepositoryClient
 default_tool_shed = 'toolshed.g2.bx.psu.edu'
 
 mandatory_keys = ['name', 'tool_panel_section_label', 'owner']
+forbidden_keys = ['tool_panel_section_id']
 
 valid_section_labels = [
     'Get Data', 'Send Data', 'Collection Operations', 'Text Manipulation',
@@ -24,17 +25,6 @@ valid_section_labels = [
     'Metabolomics', 'Picard', 'DeepTools', 'EMBOSS', 'Blast +',
     'GATK Tools 1.4', 'GATK Tools', 'Alignment', 'RSeQC', 'Gemini Tools',
     'Statistics',
-]
-
-valid_section_ids = [
-    'getext', 'send', 'collection_operations', 'textutil', 'filter', 'group',
-    'fasta_fastq', 'fastq_qc', 'sam_bam', 'bed', 'vcf_bcf', 'nanopore',
-    'convert', 'liftOver', 'bxops', 'features', 'fetch_seq_align', 'assembly',
-    'annotation', 'mapping', 'ngs_variant_detection', 'variant_calling',
-    'chip_seq', 'rna_seq', 'multiple_alignments', 'typing', 'phylogenetics',
-    'genome_editing', 'mothur', 'metagenomics', 'proteomics', 'metabolomics',
-    'picard', 'deeptools', 'emboss', 'blast+', 'gatk', 'gatk2', 'alignment',
-    'rseqc', 'gemini_tools', 'stats',
 ]
 
 
@@ -55,7 +45,6 @@ def main():
 
     loaded_files = yaml_check(files)   # load yaml and raise ParserError if yaml is incorrect
     key_check(loaded_files)
-    # label_check(loaded_files)
     tool_list = join_lists([x['yaml']['tools'] for x in loaded_files])
     installable_errors = check_installable(tool_list)
     installed_errors_staging = check_tools_against_panel(
@@ -73,6 +62,8 @@ def main():
 
     all_warnings = installed_errors_staging  # If a tool is installed on staging but not production, do not raise an exception
     all_errors = installable_errors + installed_errors_production
+    for warning in all_warnings:
+        sys.stderr.write('Warning %s\n' % warning)
     if all_errors:
         sys.stderr.write('\n')
         for error in all_errors:
@@ -125,28 +116,17 @@ def key_check(loaded_files):
         tools = loaded_file['yaml']['tools']
         if not isinstance(tools, list):
             tools = [tools]
-        for key in mandatory_keys:
-            for tool in tools:
+        for tool in tools:
+            for key in mandatory_keys:
                 if key not in tool.keys():
                     sys.stderr.write('ERROR\n')
                     raise Exception('Error in %s: All tool list entries must have \'%s\' specified. Check requests/template/template.yml for an example.' % (loaded_file['filename'], key))
-            if key == 'tool_panel_section_label':
-                pass  # TODO: Check that section label is valid
-
-        sys.stderr.write('OK\n')
-
-
-def label_check(loaded_files):
-    for loaded_file in loaded_files:
-        sys.stderr.write('Checking %s \t ' % loaded_file['filename'])
-        tools = loaded_file['yaml']['tools']
-        for tool in tools:
+            if 'tool_panel_section_id' in tool.keys():
+                raise Exception('Error in %s: tool_panel_section_id must not be specified.  Use tool_panel_section_label only.')
             label = tool['tool_panel_section_label']
             if label not in valid_section_labels:
                 raise Exception('Error in %s:  tool_panel_section_label %s is not valid' % (loaded_file['filename'], label))
-            id = tool.get('tool_panel_section_label')
-            if id and id not in valid_section_ids:
-                raise Exception('Error in %s:  tool_panel_section_label %s is not valid' % (loaded_file['filename'], label))
+        sys.stderr.write('OK\n')
 
 
 def check_installable(tools):
@@ -177,23 +157,16 @@ def check_installable(tools):
                 if not installable_revisions:
                     errors.append('Tool with name: %s, owner: %s and tool_shed_url: %s has no installable revisions' % (tool['name'], tool['owner'], shed))
                     continue
-                shed_status = 'online'
             except ConnectionError:
                 if counter == 0:
-                    print('Could not connect to toolshed %s\n' % url)
-                shed_status = 'offline'
-                # Raise an exception?  Ask Simon.
+                    raise Exception('Could not connect to toolshed %s\n' % url)
 
             if 'revisions' in tool.keys():  # Check that requested revisions are installable
                 for revision in tool['revisions']:
-                    if shed_status == 'online':
-                        if revision not in installable_revisions:
-                            errors.append('%s revision %s is not installable' % (tool['name'], revision))
-                    tool.update({'revision_request_type': 'specific', 'shed_status': shed_status})
+                    if revision not in installable_revisions:
+                        errors.append('%s revision %s is not installable' % (tool['name'], revision))
             else:
-                if shed_status == 'online':
-                    tool.update({'revisions': [installable_revisions[0]]})
-                tool.update({'revision_request_type': 'latest', 'shed_status': shed_status})
+                tool.update({'revisions': [installable_revisions[0]]})
     return errors
 
 
@@ -215,7 +188,8 @@ def check_tools_against_panel(galaxy_url, galaxy_api_key, server, tools):
             if 'tool_shed_repository' in elem.keys():
                 repo = elem['tool_shed_repository']
                 # tool is installed if 'name', 'owner' and 'revision' all match
-                matching_tools = [tool for tool in requested_tools if tool['shed_status'] == 'online' and
+                matching_tools = [
+                    tool for tool in requested_tools if
                     (tool['name'], tool['owner'], tool['revisions'][0], tool['tool_shed_url']) ==
                     (repo['name'], repo['owner'], str(repo['changeset_revision']), repo['tool_shed'])
                 ]

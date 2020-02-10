@@ -33,7 +33,7 @@ install_tools() {
   git checkout master
   git pull
 
-  TMP="tmp/$(lower $MODE)s" # tmp/requests tmp/updates
+  TMP="tmp/$MODE" # tmp/requests tmp/updates
   [ -d $TMP ] || mkdir -p $TMP;	# Important!  Make sure this exists
 
   # Concatenate logs from unsuccessfull installations/tests to ERROR_LOG
@@ -45,12 +45,12 @@ install_tools() {
   TOOL_FILE_PATH="$TMP/pending/$BUILD_NUMBER"
   mkdir -p $TOOL_FILE_PATH
 
-  if [ "$MODE" = "REQUEST" ]; then
-    # split requests into individual yaml files in requests/pending
+  if [ "$MODE" = "install" ]; then
+    # split requests into individual yaml files in requests/pendings
     # one file per unique revision so that installation can be run sequentially and
     # failure of one installation will not affect the others
     python scripts/organise_request_files.py -f $REQUEST_FILES -o $TOOL_FILE_PATH
-  elif [ "$MODE" = "UPDATE" ]; then
+  elif [ "$MODE" = "update" ]; then
     python scripts/organise_request_files.py --update_existing -s $PRODUCTION_TOOL_DIR -o $TOOL_FILE_PATH
   fi
 
@@ -267,7 +267,7 @@ install_tool() {
     # Only log the entry in REQUEST mode, we expect to skip most tools in UPDATE mode
     echo "Package appears to be already installed on $URL";
     if [ $SERVER = "PRODUCTION" ]; then
-      if [ $MODE = "REQUEST" ]; then
+      if [ $MODE = "install" ]; then
         log_row "Already Installed"
         exit_installation 1 "Package is already installed"
       fi
@@ -368,7 +368,7 @@ log_row() {
   if [ "$LOG_ENTRY" ]; then
     LOG_ENTRY="$LOG_ENTRY\n";	# If log entry has content, add new line before new content
   fi
-  LOG_ROW="$MODE\t$BUILD_NUMBER\t$(date)\t$STATUS\t$STEP\t$STAGING_TESTS_PASSED\t$PRODUCTION_TESTS_PASSED\t$TOOL_NAME\t$OWNER\t$REQUESTED_REVISION\t$INSTALLED_REVISION\t$SECTION_LABEL\t$TOOL_SHED_URL\t$LOG_FILE"
+  LOG_ROW="$(title $MODE)\t$BUILD_NUMBER\t$(date)\t$STATUS\t$STEP\t$STAGING_TESTS_PASSED\t$PRODUCTION_TESTS_PASSED\t$TOOL_NAME\t$OWNER\t$REQUESTED_REVISION\t$INSTALLED_REVISION\t$SECTION_LABEL\t$TOOL_SHED_URL\t$LOG_FILE"
   LOG_ENTRY="$LOG_ENTRY$LOG_ROW"
   # echo -e $LOG_ROW; # Need to print this values?  Store them in multiD array? What if script stops in the middle?
 }
