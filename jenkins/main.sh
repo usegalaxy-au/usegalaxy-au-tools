@@ -8,7 +8,7 @@ LOG_DIR=~/galaxy_tool_automation
 BASH_V="$(echo ${BASH_VERSION} | head -c 1)" # this will be "4" if the bash version is 4.x, empty otherwise
 
 if [ ! "$MODE" = "install" ] && [ ! "$MODE" = "update" ]; then
-  echo "First positional argument to jenkins/main must be REQUEST or UPDATE"
+  echo "First positional argument to jenkins/main must be install or update"
   exit 1
 fi
 
@@ -47,7 +47,7 @@ export BASH_V=$BASH_V
 export MODE=$MODE
 
 jenkins_tool_installation() {
-  if [ $MODE = "REQUEST" ]; then
+  if [ $MODE = "install" ]; then
     # First check whether changed files are in the path of tool requests, that is within the requests folder but not within
     # any subfolders of requests.  If so, we run the install script.  If not we exit.
     REQUESTS_DIFF=$(git diff --name-only --diff-filter=A $GIT_PREVIOUS_COMMIT $GIT_COMMIT | cat | grep "^requests\/[^\/]*$")

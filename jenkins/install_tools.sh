@@ -20,6 +20,11 @@ install_tools() {
   echo "GIT_PREVIOUS_COMMIT = $GIT_PREVIOUS_COMMIT"
   echo -------------------------------
 
+  if [ $MODE = "install" ] && [[ ! $REQUEST_FILES ]]; then
+    echo "No files to install"
+    exit 1
+  fi
+
   # activate .venv with yaml, bioblend, ephemeris installed
   activate_virtualenv
 
@@ -42,11 +47,11 @@ install_tools() {
   rm -f $ERROR_LOG ||:
   touch $ERROR_LOG
 
-  TOOL_FILE_PATH="$TMP/pending/$BUILD_NUMBER"
+  TOOL_FILE_PATH="$TMP/$BUILD_NUMBER"
   mkdir -p $TOOL_FILE_PATH
 
   if [ "$MODE" = "install" ]; then
-    # split requests into individual yaml files in requests/pendings
+    # split requests into individual yaml files in tmp path
     # one file per unique revision so that installation can be run sequentially and
     # failure of one installation will not affect the others
     python scripts/organise_request_files.py -f $REQUEST_FILES -o $TOOL_FILE_PATH
@@ -57,6 +62,10 @@ install_tools() {
   # keep a count of successful installations
   NUM_TOOLS_TO_INSTALL=$(ls $TOOL_FILE_PATH | wc -l)
   INSTALLED_TOOL_COUNTER=0
+  if [ $NUM_TOOLS_TO_INSTALL = 0 ]; then
+    echo "Script error: nothing to install"
+    exit 1
+  fi
 
   # for FILE_NAME in $TOOL_FILE_PATH/*; do
   #   TOOL_FILE=$TOOL_FILE_PATH$FILE_NAME;
@@ -401,7 +410,7 @@ update_tool_list() {
   TMP_TOOL_FILE="$TMP/tool_list.yml"
   rm -f $TMP_TOOL_FILE ||:; # remove temp file if it exists
   [ -d $TOOL_DIR ] || mkdir $TOOL_DIR  # make directory if it does not exist
-  get-tool-list -g $URL -a $API_KEY -o $TMP_TOOL_FILE --get_data_managers
+  get-tool-list -g $URL -a $API_KEY -o $TMP_TOOL_FILE --get_data_managers --include_tool_panel_id 
   python scripts/split_tool_yml.py -i $TMP_TOOL_FILE -o $TOOL_DIR; # Simon's script
   rm $TMP_TOOL_FILE
 }

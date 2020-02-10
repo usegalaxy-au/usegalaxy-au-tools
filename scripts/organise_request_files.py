@@ -5,6 +5,7 @@ import os
 
 trusted_owners = ['iuc']
 
+
 def main():
     parser = argparse.ArgumentParser(description='Rewrite arbitrarily many tool.yml files as one file per tool revision')
     parser.add_argument('-o', '--output_path', help='Output file path')  # mandatory
@@ -40,9 +41,8 @@ def main():
             else:
                 tools_by_entry.append(content)
 
-    if update:  # only update tools with trusted owners
+    if update:  # update tools with trusted owners
         tools_by_entry = [t for t in tools_by_entry if t['owner'] in trusted_owners]
-        # further filtering just for development
         for tool in tools_by_entry:
             for key in tool.keys():  # delete extraneous keys, we want latest revision
                 if key not in ['name', 'owner', 'tool_panel_section_label', 'tool_shed_url']:
