@@ -12,6 +12,7 @@ when a tool has been installed incorrectly or when an error has occurred during
 installation causing the tool to be partially installed.
 """
 
+
 def main():
     parser = argparse.ArgumentParser(description='Uninstall tool from a galaxy instance')
     parser.add_argument('-g', '--galaxy_url', help='Galaxy server URL')
@@ -40,6 +41,7 @@ def main():
 
     uninstall_tools(galaxy_url, api_key, names, force)
 
+
 def uninstall_tools(galaxy_server, api_key, names, force):
     galaxy_instance = GalaxyInstance(url=galaxy_server, key=api_key)
     toolshed_client = ToolShedClient(galaxy_instance)
@@ -63,9 +65,9 @@ def uninstall_tools(galaxy_server, api_key, names, force):
         matching_tools = [t for t in installed_tools if t['name'] == name and (not revision or revision in t['revisions'])]
         if len(matching_tools) == 0:
             id_string = 'name %s revision %s' % (name, revision) if revision else 'name %s' % name
-            print('*** Warning: No tool with %s\n' % id_string)
+            sys.stderr.write('*** Warning: No tool with %s\n' % id_string)
         elif len(matching_tools) > 1 and not force:
-            print(
+            sys.stderr.write(
                 '*** Warning: More than one toolshed tool found for %s.  ' % name
                 + 'Not uninstalling any of these tools.  Run script with --force (-f) flag to uninstall anyway'
             )
@@ -82,10 +84,10 @@ def uninstall_tools(galaxy_server, api_key, names, force):
             owner = tool['owner']
             tool_shed_url = tool['tool_shed_url']
             revision = tool['revisions'][0]
-            print('Uninstalling %s at revision %s' % (name, revision))
+            sys.stderr.write('Uninstalling %s at revision %s' % (name, revision))
             return_value = toolshed_client.uninstall_repository_revision(name=name, owner=owner, changeset_revision=revision, tool_shed_url=tool_shed_url)
-            print(return_value)
+            sys.stderr.write(return_value)
         except KeyError as e:
-            print(e)
+            sys.stderr.write(e)
 
 if __name__ == "__main__": main()
