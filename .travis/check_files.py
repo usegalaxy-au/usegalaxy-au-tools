@@ -3,8 +3,6 @@ import yaml
 import sys
 
 from bioblend import ConnectionError
-from bioblend.galaxy import GalaxyInstance
-from bioblend.galaxy.tools import ToolClient
 from bioblend.toolshed import ToolShedInstance
 from bioblend.toolshed.repositories import ToolShedRepositoryClient
 
@@ -31,46 +29,21 @@ valid_section_labels = [
 def main():
     parser = argparse.ArgumentParser(description="Lint tool input files for installation on Galaxy")
     parser.add_argument('-f', '--files', help='Tool input files', nargs='+')
-    parser.add_argument('-u', '--staging_url', help='Galaxy staging server URL')
-    parser.add_argument('-k', '--staging_api_key', help='API key for galaxy staging server')
-    parser.add_argument('-g', '--production_url', help='Galaxy production server URL')
-    parser.add_argument('-a', '--production_api_key', help='API key for galaxy production server')
-
     args = parser.parse_args()
     files = args.files
-    staging_url = args.staging_url
-    staging_api_key = args.staging_api_key
-    production_url = args.production_url
-    production_api_key = args.production_api_key
 
     loaded_files = yaml_check(files)   # load yaml and raise ParserError if yaml is incorrect
     key_check(loaded_files)
     tool_list = join_lists([x['yaml']['tools'] for x in loaded_files])
     installable_errors = check_installable(tool_list)
-    installed_errors_staging = check_tools_against_panel(
-        staging_url,
-        staging_api_key,
-        'staging',
-        tool_list
-    )
-    installed_errors_production = check_tools_against_panel(
-        production_url,
-        production_api_key,
-        'production',
-        tool_list
-    )
 
-    all_warnings = installed_errors_staging  # If a tool is installed on staging but not production, do not raise an exception
-    all_errors = installable_errors + installed_errors_production
-    for warning in all_warnings:
-        sys.stderr.write('Warning %s\n' % warning)
-    if all_errors:
+    if installable_errors:
         sys.stderr.write('\n')
-        for error in all_errors:
+        for error in installable_errors:
             sys.stderr.write('Error %s\n' % error)
         raise Exception('Errors found')
     else:
-        sys.stderr.write('All tools are installable and not already installed on %s\n' % production_url)
+        sys.stderr.write('\nAll tests have passed.')
 
 
 def join_lists(list_of_lists):
@@ -167,39 +140,6 @@ def check_installable(tools):
                         errors.append('%s revision %s is not installable' % (tool['name'], revision))
             else:
                 tool.update({'revisions': [installable_revisions[0]]})
-    return errors
-
-
-def check_tools_against_panel(galaxy_url, galaxy_api_key, server, tools):
-    errors = []
-    galaxy_instance = GalaxyInstance(url=galaxy_url, key=galaxy_api_key)
-    tool_client = ToolClient(galaxy_instance)
-    try:
-        panel = tool_client.get_tool_panel()
-    except ConnectionError:
-        raise Exception('Unable to connect to galaxy instance %s' % galaxy_url)
-
-    requested_tools = flatten_tool_list(tools)
-
-    # the tool panel returned is a list of sections.
-    # each section is a dict, dict['elems'] is a list of installed tools
-    for section in [p for p in panel if 'elems' in p.keys()]:
-        for elem in section['elems']:
-            if 'tool_shed_repository' in elem.keys():
-                repo = elem['tool_shed_repository']
-                # tool is installed if 'name', 'owner' and 'revision' all match
-                matching_tools = [
-                    tool for tool in requested_tools if
-                    (tool['name'], tool['owner'], tool['revisions'][0], tool['tool_shed_url']) ==
-                    (repo['name'], repo['owner'], str(repo['changeset_revision']), repo['tool_shed'])
-                ]
-                if matching_tools:
-                    tool = matching_tools[0]
-                    errors.append(
-                        'Tool with name: %s, owner: %s, revision: %s, tool_shed_url: %s is already installed on %s' %
-                        (tool['name'], tool['owner'], tool['revisions'][0], tool['tool_shed_url'], galaxy_url)
-                    )
-
     return errors
 
 

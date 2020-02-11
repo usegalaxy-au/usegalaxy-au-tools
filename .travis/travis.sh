@@ -10,7 +10,6 @@ source .env  # Load non-secret enviroment variables e.g. $STAGING_URL
 
 if [[ "$@" = "local" ]]; then
   TRAVIS_BRANCH=master
-  source .secret.env;  # secret API keys
 fi
 
 echo "TRAVIS_BRANCH: $TRAVIS_BRANCH";
@@ -33,4 +32,4 @@ if [ ! "$REQUEST_FILES" ]; then
 fi
 
 # pass the requests file paths to a python script that checks the input files
-python .travis/check_files.py -f $REQUEST_FILES --staging_url $STAGING_URL --staging_api_key $STAGING_API_KEY --production_url $PRODUCTION_URL --production_api_key $PRODUCTION_API_KEY
+python .travis/check_files.py -f $REQUEST_FILES
