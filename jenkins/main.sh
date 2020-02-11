@@ -77,8 +77,7 @@ jenkins_tool_installation() {
 
   echo "Saving output to $LOG_FILE"
   if [ $LOCAL_ENV = 0 ]; then
-    bash jenkins/install_tools.sh &> $LOG_FILE
-    cat $LOG_FILE
+    bash jenkins/install_tools.sh | tee $LOG_FILE
   else
     # Do not save a log file when running locally
     bash jenkins/install_tools.sh

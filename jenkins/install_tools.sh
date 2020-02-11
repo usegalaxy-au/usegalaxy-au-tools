@@ -35,6 +35,8 @@ install_tools() {
   fi
 
   # check out master, get out of detached head
+  git config --local user.name "galaxy-au-tools-jenkins-bot"
+  git config --local user.email "galaxyaustraliatools@gmail.com"
   git checkout master
   git pull
 
@@ -410,6 +412,7 @@ update_tool_list() {
   set_url $SERVER
 
   TMP_TOOL_FILE="$TMP/tool_list.yml"
+  rm $TOOL_DIR/*
   rm -f $TMP_TOOL_FILE ||:; # remove temp file if it exists
   [ -d $TOOL_DIR ] || mkdir $TOOL_DIR  # make directory if it does not exist
   get-tool-list -g $URL -a $API_KEY -o $TMP_TOOL_FILE --get_data_managers --include_tool_panel_id

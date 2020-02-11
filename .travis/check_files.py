@@ -40,7 +40,7 @@ def main():
     if installable_errors:
         sys.stderr.write('\n')
         for error in installable_errors:
-            sys.stderr.write('Error %s\n' % error)
+            sys.stderr.write('Error: %s\n' % error)
         raise Exception('Errors found')
     else:
         sys.stderr.write('\nAll tests have passed.')
