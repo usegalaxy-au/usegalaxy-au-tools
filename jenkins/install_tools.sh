@@ -6,6 +6,11 @@ LOG_HEADER="Category\tJenkins Build Number\tDate (UTC)\tStatus\tFailing Step\tSt
 source ".env"
 [ -f ".secret.env" ] && source ".secret.env"
 
+if [ ! $STAGING_URL = "https://galaxy-cat.genome.edu.au" ] || [ ! $PRODUCTION_URL = "https://cat-dev.genome.edu.au" ]; then
+  echo "Exiting as the genuine galaxy URLs are being used instead of the test ones"
+  exit 1
+fi
+
 install_tools() {
   echo "Running automated tool installation script"
   echo --------------------------
@@ -165,7 +170,7 @@ install_tools() {
     PR_FILE="$TMP/hub_pull_request_file"
     echo -e "Jenkins $MODE build $BUILD_NUMBER errors\n\n" > $PR_FILE
     cat $ERROR_LOG >> $PR_FILE
-    hub pull-request -F $PR_FILE
+    # hub pull-request -F $PR_FILE # can no longer use hub in test environment
     rm $PR_FILE
     git checkout master
   fi
