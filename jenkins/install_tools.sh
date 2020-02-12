@@ -314,6 +314,8 @@ test_tool() {
   TEST_LOG="$TMP/test_log.txt"
   rm -f $TEST_LOG ||:;  # delete if it does not exist
 
+  sleep 30s; # Allow threads to catch up so that all files are available for testing
+
   command="shed-tools test -g $URL -a $API_KEY -t $TOOL_FILE --parallel_tests 4 --test_json $TEST_JSON -v --log_file $TEST_LOG"
   echo "${command/$API_KEY/<API_KEY>}"
   {

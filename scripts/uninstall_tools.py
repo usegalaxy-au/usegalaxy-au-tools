@@ -69,7 +69,7 @@ def uninstall_tools(galaxy_server, api_key, names, force):
         elif len(matching_tools) > 1 and not force:
             sys.stderr.write(
                 '*** Warning: More than one toolshed tool found for %s.  ' % name
-                + 'Not uninstalling any of these tools.  Run script with --force (-f) flag to uninstall anyway'
+                + 'Not uninstalling any of these tools.  Run script with --force (-f) flag to uninstall anyway\n'
             )
         else:  # Either there is only one matching tool for the name and revision, or there are many and force=True
             for tool in matching_tools:
@@ -84,10 +84,12 @@ def uninstall_tools(galaxy_server, api_key, names, force):
             owner = tool['owner']
             tool_shed_url = tool['tool_shed_url']
             revision = tool['revisions'][0]
-            sys.stderr.write('Uninstalling %s at revision %s' % (name, revision))
+            sys.stderr.write('Uninstalling %s at revision %s\n' % (name, revision))
             return_value = toolshed_client.uninstall_repository_revision(name=name, owner=owner, changeset_revision=revision, tool_shed_url=tool_shed_url)
-            sys.stderr.write(return_value)
+            sys.stderr.write(str(return_value) + '\n')
         except KeyError as e:
             sys.stderr.write(e)
 
-if __name__ == "__main__": main()
+
+if __name__ == "__main__":
+    main()
