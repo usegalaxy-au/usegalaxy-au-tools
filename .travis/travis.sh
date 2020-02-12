@@ -32,4 +32,4 @@ if [ ! "$REQUEST_FILES" ]; then
 fi
 
 # pass the requests file paths to a python script that checks the input files
-python .travis/check_files.py -f $REQUEST_FILES
+python .travis/check_files.py -f $REQUEST_FILES --staging_url $STAGING_URL --production_url $PRODUCTION_URL --staging_dir $STAGING_TOOL_DIR --production_dir $PRODUCTION_TOOL_DIR
