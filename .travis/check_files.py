@@ -1,6 +1,7 @@
 import argparse
 import yaml
 import sys
+import os
 
 from bioblend import ConnectionError
 from bioblend.toolshed import ToolShedInstance
@@ -9,7 +10,6 @@ from bioblend.toolshed.repositories import ToolShedRepositoryClient
 default_tool_shed = 'toolshed.g2.bx.psu.edu'
 
 mandatory_keys = ['name', 'tool_panel_section_label', 'owner']
-forbidden_keys = ['tool_panel_section_id']
 
 valid_section_labels = [
     'Get Data', 'Send Data', 'Collection Operations', 'Text Manipulation',
@@ -29,39 +29,41 @@ valid_section_labels = [
 def main():
     parser = argparse.ArgumentParser(description="Lint tool input files for installation on Galaxy")
     parser.add_argument('-f', '--files', help='Tool input files', nargs='+')
+    parser.add_argument('-u', '--staging_url', help='Galaxy staging server URL')
+    parser.add_argument('-g', '--production_url', help='Galaxy production server URL')
+    parser.add_argument('-s', '--staging_dir', help='Staging server tool file directory')
+    parser.add_argument('-p', '--production_dir', help='Production server tool file directory')
+
+
     args = parser.parse_args()
     files = args.files
+    staging_dir = args.staging_dir
+    production_dir = args.production_dir
+    staging_url = args.staging_url
+    production_url = args.production_url
 
     loaded_files = yaml_check(files)   # load yaml and raise ParserError if yaml is incorrect
     key_check(loaded_files)
     tool_list = join_lists([x['yaml']['tools'] for x in loaded_files])
     installable_errors = check_installable(tool_list)
+    installed_errors_staging = check_against_installed_tools(tool_list, staging_dir, staging_url)
+    installed_errors_production = check_against_installed_tools(tool_list, production_dir, production_url)
 
-    if installable_errors:
+    all_warnings = installed_errors_staging  # If a tool is installed on staging but not production, do not raise an exception
+    all_errors = installable_errors + installed_errors_production
+    for warning in all_warnings:
+        sys.stderr.write('Warning %s\n' % warning)
+    if all_errors:
         sys.stderr.write('\n')
-        for error in installable_errors:
-            sys.stderr.write('Error: %s\n' % error)
+        for error in all_errors:
+            sys.stderr.write('Error %s\n' % error)
         raise Exception('Errors found')
     else:
-        sys.stderr.write('\nAll tests have passed.')
+        sys.stderr.write('\nAll tools are installable and not already installed on %s\n' % production_url)
 
 
 def join_lists(list_of_lists):
     return [entry for list in list_of_lists for entry in list]
-
-
-def flatten_tool_list(tool_list):
-    flattened_tool_list = []
-    for tool in tool_list:
-        if 'revisions' in tool.keys():
-            for revision in tool['revisions']:
-                copy_of_tool = tool.copy()
-                copy_of_tool['revisions'] = [revision]
-                flattened_tool_list.append(copy_of_tool)
-        else:
-            copy_of_tool = tool.copy()
-            flattened_tool_list.append(copy_of_tool)
-    return flattened_tool_list
 
 
 def yaml_check(files):
@@ -95,6 +97,8 @@ def key_check(loaded_files):
                     sys.stderr.write('ERROR\n')
                     raise Exception('Error in %s: All tool list entries must have \'%s\' specified. Check requests/template/template.yml for an example.' % (loaded_file['filename'], key))
             if 'tool_panel_section_id' in tool.keys():
+                # Prevent people from having both label and id specified as this
+                # can lead to tools being installed outside of sections
                 raise Exception('Error in %s: tool_panel_section_id must not be specified.  Use tool_panel_section_label only.')
             label = tool['tool_panel_section_label']
             if label not in valid_section_labels:
@@ -126,7 +130,6 @@ def check_installable(tools):
                 if counter == 0:
                     sys.stderr.write('Connected to toolshed %s\n' % url)
                 installable_revisions = [str(r) for r in installable_revisions][::-1]  # un-unicode and list most recent first
-                # TODO make absolutely sure that the ordering is now correct
                 if not installable_revisions:
                     errors.append('Tool with name: %s, owner: %s and tool_shed_url: %s has no installable revisions' % (tool['name'], tool['owner'], shed))
                     continue
@@ -140,6 +143,26 @@ def check_installable(tools):
                         errors.append('%s revision %s is not installable' % (tool['name'], revision))
             else:
                 tool.update({'revisions': [installable_revisions[0]]})
+    return errors
+
+
+def check_against_installed_tools(tool_list, tool_dir, url):
+    errors = []
+    installed_tools = []
+    for file in os.listdir(tool_dir):
+        with open(tool_dir + '/' + file) as tool_yml:
+            installed_tools += yaml.safe_load(tool_yml.read())['tools']
+    for tool in tool_list:
+        name, owner = tool['name'], tool['owner']
+        matching_installed_tools = [t for t in installed_tools if t['name'] == name and t['owner'] == owner]
+        for installed_tool in matching_installed_tools:
+            label_mismatch = installed_tool['tool_panel_section_label'] != tool['tool_panel_section_label']
+            matching_revisions = [rev for rev in tool['revisions'] if rev in installed_tool['revisions']]
+            for revision in matching_revisions:
+                error = 'Tool %s revision %s is already installed on %s' % (name, revision, url)
+                if label_mismatch:
+                    error += ' in a different section \'%s\'' % installed_tool['tool_panel_section_label']
+                errors.append(error)
     return errors
 
 
