@@ -1,7 +1,7 @@
 #! /bin/bash
 chmod +x jenkins/install_tools.sh
 
-MODE="$1"; # Two modes possible: "REQUEST" for tool request, "UPDATE" for cron update
+MODE="$1"; # Two modes possible: "install" for tool request, "update" for cron update
 ARGS=( "$@" )
 FILE_ARGS=("${ARGS[@]:1}")
 LOG_DIR=~/galaxy_tool_automation

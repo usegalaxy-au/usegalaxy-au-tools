@@ -113,22 +113,22 @@ install_tools() {
 
   COMMIT_FILES=("$AUTOMATED_TOOL_INSTALLATION_LOG")
 
+  # Update tool .yml files to reflect current state of galaxy tools
   update_tool_list "STAGING"
   update_tool_list "PRODUCTION"
 
   # Push changes to github
-  for YML_FILE in $STAGING_TOOL_DIR/*; do
-    git add $YML_FILE
-    COMMIT_FILES+=("$YML_FILE")
+  # Add all existing .yml files to commit files list
+  for FILE in $STAGING_TOOL_DIR/* $PRODUCTION_TOOL_DIR/*; do
+    git add $FILE
+    COMMIT_FILES+=("$FILE")
   done
-  for YML_FILE in $PRODUCTION_TOOL_DIR/*; do
-    git add $YML_FILE
-    COMMIT_FILES+=("$YML_FILE")
+  # Add any deleted .yml files to the commit files list as well
+  for FILE in $(git diff --name-only --diff-filter=D $PRODUCTION_TOOL_DIR $STAGING_TOOL_DIR); do
+    COMMIT_FILES+=("$FILE")
   done
 
   # Remove files from original pull request
-
-  # for FILE in $REQUESTS_DIFF
   for FILE in $REQUEST_FILES; do
     git rm $FILE
     COMMIT_FILES+=("$FILE")
@@ -214,9 +214,8 @@ install_tool() {
     $command
   } || {
     log_row "Shed-tools error"; # well not really, more likely a connection error while running shed-tools
-    log_error $INSTALL_LOG 250
+    log_error $INSTALL_LOG 250; # limit to first 250 lines in error log
     exit_installation 1
-    echo "GETTING OUT OF HERE ABOUT TO RETURN 1 BAD SHED TOOOLS INSTALLATION"
     return 1
   }
 
@@ -252,7 +251,7 @@ install_tool() {
   if [ ! "$TOOL_NAME" = "$INSTALLED_NAME" ]; then
     # If these are not the same name it is probably due to this script.
     # uninstall and abandon process with 'Script error'
-    python scripts/uninstall_tools.py -g $URL -a $API_KEY -n $INSTALLED_NAME;
+    python scripts/uninstall_tools.py -g $URL -a $API_KEY -n "$INSTALLED_NAME@$INSTALLED_REVISION";
     log_row "Script Error"
     exit_installation 1 "Unexpected value for name of installed tool.  Expecting $TOOL_NAME, received $INSTALLED_NAME";
     return 1
@@ -267,7 +266,7 @@ install_tool() {
     if [ $SERVER = "PRODUCTION" ]; then
       # also uninstall on staging
       echo "Uninstalling $TOOL_NAME on $STAGING_URL";
-      python scripts/uninstall_tools.py -g $STAGING_URL -a $STAGING_API_KEY -n $INSTALLED_NAME;
+      python scripts/uninstall_tools.py -g $STAGING_URL -a $STAGING_API_KEY -n "$INSTALLED_NAME@$INSTALLED_REVISION";
     fi
     log_row $INSTALLATION_STATUS
     log_error $INSTALL_LOG
@@ -277,7 +276,7 @@ install_tool() {
   elif [ $INSTALLATION_STATUS = "Skipped" ]; then
     # The linting process should prevent this scenario if the tool is installed on production
     # If the tool is installed on staging, skip testing
-    # Only log the entry in REQUEST mode, we expect to skip most tools in UPDATE mode
+    # Only log the entry in 'install' mode, we expect to skip most tools when running in 'update' mode
     echo "Package appears to be already installed on $URL";
     if [ $SERVER = "PRODUCTION" ]; then
       if [ $MODE = "install" ]; then
@@ -312,7 +311,7 @@ test_tool() {
   fi
 
   TEST_LOG="$TMP/test_log.txt"
-  rm -f $TEST_LOG ||:;  # delete if it does not exist
+  rm -f $TEST_LOG ||:;  # delete file if it exists
 
   sleep 30s; # Allow threads to catch up so that all files are available for testing
 
@@ -321,7 +320,7 @@ test_tool() {
   {
     $command
   } || {
-    log_row "Shed-tools error"; # well not really, more likely a connection error while running shed-tools
+    log_row "Shed-tools error";
     log_error $TEST_LOG 250
     exit_installation 1
     return 1
@@ -364,11 +363,11 @@ test_tool() {
   else
     echo "Failed to install: Winding back installation as some tests have failed.";
     echo "Uninstalling on $URL";
-    python scripts/uninstall_tools.py -g $URL -a $API_KEY -n $INSTALLED_NAME;
+    python scripts/uninstall_tools.py -g $URL -a $API_KEY -n "$INSTALLED_NAME@$INSTALLED_REVISION";
     if [ $SERVER = "PRODUCTION" ]; then
       # also uninstall on staging
       echo "Uninstalling on $STAGING_URL";
-      python scripts/uninstall_tools.py -g $STAGING_URL -a $STAGING_API_KEY -n $INSTALLED_NAME;
+      python scripts/uninstall_tools.py -g $STAGING_URL -a $STAGING_API_KEY -n "$INSTALLED_NAME@$INSTALLED_REVISION";
     fi
     log_row "Tests failed"
     log_error $TEST_LOG
@@ -414,9 +413,9 @@ update_tool_list() {
   set_url $SERVER
 
   TMP_TOOL_FILE="$TMP/tool_list.yml"
-  rm $TOOL_DIR/*
   rm -f $TMP_TOOL_FILE ||:; # remove temp file if it exists
-  [ -d $TOOL_DIR ] || mkdir $TOOL_DIR  # make directory if it does not exist
+  [ -d $TOOL_DIR ] || mkdir $TOOL_DIR;  # make directory if it does not exist
+  rm $TOOL_DIR/*; # Delete tool files to replace them with split_tool_yml output
   get-tool-list -g $URL -a $API_KEY -o $TMP_TOOL_FILE --get_data_managers --include_tool_panel_id
   python scripts/split_tool_yml.py -i $TMP_TOOL_FILE -o $TOOL_DIR; # Simon's script
   rm $TMP_TOOL_FILE
