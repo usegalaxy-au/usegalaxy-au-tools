@@ -4,3 +4,92 @@ Install	19	Wed 12 Feb 04:20:18 UTC 2020	Tests failed	Production Testing	5/5	2/5	
 Install	23	Wed 12 Feb 05:06:39 UTC 2020	Installed		5/5	5/5	trna_prediction	 bgruening	latest	358f58401cd6	 Annotation		/var/lib/jenkins/galaxy_tool_automation/webhook_tool_installation_23
 Install	31	Wed 12 Feb 06:19:18 UTC 2020	Installed		2/2	2/2	racon	 bgruening	latest	aa39b19ca11e	 Assembly		/var/lib/jenkins/galaxy_tool_automation/webhook_tool_installation_31
 Install	31	Wed 12 Feb 06:34:43 UTC 2020	Installed		4/4	4/4	sistr_cmd	 nml	latest	5c8ff92e38a9	 Bacterial Typing		/var/lib/jenkins/galaxy_tool_automation/webhook_tool_installation_31
+Update	2	Fri 14 Feb 04:04:16 UTC 2020	Shed-tools error	Staging Testing			abricate	 iuc	latest	4efdca267d51	 Annotation	 toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/webhook_tool_installation_2
+Update	2	Fri 14 Feb 04:04:18 UTC 2020	Shed-tools error	Staging Installation			annotatemyids	 iuc	latest	4efdca267d51	 Annotation	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 04:04:19 UTC 2020	Shed-tools error	Staging Installation			barrnap	 iuc	latest	4efdca267d51	 Annotation	 toolshed.g2.bx.psu.edu	tmp/update/install_log.txt
+Update	2	Fri 14 Feb 04:04:21 UTC 2020	Shed-tools error	Staging Installation			bcftools_annotate	 iuc	latest	4efdca267d51	 VCF/BCF	 toolshed.g2.bx.psu.edu	tmp/update/install_log.txt
+Update	2	Fri 14 Feb 04:04:22 UTC 2020	Shed-tools error	Staging Installation			bcftools_call	 iuc	latest	4efdca267d51	 VCF/BCF	 toolshed.g2.bx.psu.edu	tmp/update/install_log.txt
+Update	2	Fri 14 Feb 04:04:24 UTC 2020	Shed-tools error	Staging Installation			bcftools_cnv	 iuc	latest	4efdca267d51	 VCF/BCF	 toolshed.g2.bx.psu.edu	tmp/update/install_log.txt
+Update	2	Fri 14 Feb 04:07:02 UTC 2020	Tests failed	Staging Testing	0/4		bcftools_concat	 iuc	latest	874cc12ae316	 VCF/BCF	 toolshed.g2.bx.psu.edu	tmp/update/install_log.txt
+Update	2	Fri 14 Feb 04:09:25 UTC 2020	Tests failed	Staging Testing	2/3		bcftools_consensus	 iuc	latest	e522022137f6	 VCF/BCF	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 04:20:45 UTC 2020	Installed		5/5	5/5	bcftools_convert_from_vcf	 iuc	latest	7ca6120cb2a4	 VCF/BCF	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 04:23:20 UTC 2020	Tests failed	Staging Testing	5/7		bcftools_convert_to_vcf	 iuc	latest	8bb5efd7a3dd	 VCF/BCF	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 04:25:07 UTC 2020	Tests failed	Staging Testing	1/2		bcftools_csq	 iuc	latest	f10f5b4e7854	 VCF/BCF	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 04:33:17 UTC 2020	Installed		9/9	9/9	bcftools_filter	 iuc	latest	0117c6d2ab96	 VCF/BCF	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 04:36:57 UTC 2020	Installed		1/1	1/1	bcftools_gtcheck	 iuc	latest	fd1030bc93d9	 VCF/BCF	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 04:40:52 UTC 2020	Installed		1/1	1/1	bcftools_isec	 iuc	latest	1fd4fd0c6ee3	 VCF/BCF	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 04:49:08 UTC 2020	Installed		6/6	6/6	bcftools_merge	 iuc	latest	9473302f4588	 VCF/BCF	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 04:52:01 UTC 2020	Tests failed	Staging Testing	5/6		bcftools_mpileup	 iuc	latest	f65383c7ed49	 VCF/BCF	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 04:54:34 UTC 2020	Tests failed	Staging Testing	6/7		bcftools_norm	 iuc	latest	a62e934346f5	 VCF/BCF	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 05:02:41 UTC 2020	Installed		1/1	1/1	bcftools_plugin_counts	 iuc	latest	b781fa08aa3c	 VCF/BCF	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 05:07:10 UTC 2020	Installed		1/1	1/1	bcftools_plugin_dosage	 iuc	latest	2ee1392161a6	 VCF/BCF	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 05:10:28 UTC 2020	Installed		1/1	1/1	bcftools_plugin_fill_an_ac	 iuc	latest	3bdc901c18e2	 VCF/BCF	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 05:15:08 UTC 2020	Installed		2/2	2/2	bcftools_plugin_fill_tags	 iuc	latest	cbfa272e5a6a	 VCF/BCF	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 05:18:36 UTC 2020	Installed		1/1	1/1	bcftools_plugin_fixploidy	 iuc	latest	ceb03be4f31b	 VCF/BCF	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 05:21:58 UTC 2020	Installed		1/1	1/1	bcftools_plugin_impute_info	 iuc	latest	2c53c8974cb3	 VCF/BCF	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 05:25:32 UTC 2020	Installed		2/2	2/2	bcftools_plugin_mendelian	 iuc	latest	98664595dedf	 VCF/BCF	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 05:29:01 UTC 2020	Installed		1/1	1/1	bcftools_plugin_missing2ref	 iuc	latest	5d98fe06e4ae	 VCF/BCF	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 05:32:32 UTC 2020	Installed		1/1	1/1	bcftools_plugin_setgt	 iuc	latest	76fe872413c2	 VCF/BCF	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 05:36:59 UTC 2020	Installed		1/1	1/1	bcftools_plugin_tag2tag	 iuc	latest	aa998b9898b1	 VCF/BCF	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 05:41:07 UTC 2020	Installed		1/1	1/1	bcftools_query	 iuc	latest	4eb04768cd49	 VCF/BCF	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 05:44:22 UTC 2020	Installed		1/1	1/1	bcftools_query_list_samples	 iuc	latest	242753783b68	 VCF/BCF	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 05:48:24 UTC 2020	Installed		3/3	3/3	bcftools_reheader	 iuc	latest	982bc0e518c8	 VCF/BCF	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 05:52:20 UTC 2020	Installed		2/2	2/2	bcftools_roh	 iuc	latest	cb681f21e670	 VCF/BCF	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 06:23:25 UTC 2020	Tests failed	Staging Testing	2/3		bcftools_stats	 iuc	latest	9c0028888512	 VCF/BCF	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 06:31:42 UTC 2020	Installed		11/11	11/11	bcftools_view	 iuc	latest	c4a9b38b435d	 VCF/BCF	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 06:54:57 UTC 2020	Tests failed	Staging Testing	101/104		bedtools	 iuc	latest	b28e0cfa7ba1	 BED	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 06:59:23 UTC 2020	Installed		1/1	1/1	biom_add_metadata	 iuc	latest	e3cbd2287f63	 Convert Formats	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 07:04:25 UTC 2020	Installed		3/3	3/3	biom_convert	 iuc	latest	584008e574b2	 Convert Formats	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 07:10:38 UTC 2020	Tests failed	Staging Testing	0/5		busco	 iuc	latest	1e62c28ba91d	 Assembly	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 08:15:48 UTC 2020	Errored	Production Installation	0/0		data_manager_hisat2_index_builder	 iuc	latest	8eac26f44d29	 None	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 08:18:53 UTC 2020	Installed		0/0	0/0	data_manager_snpeff	 iuc	latest	08d7998c3afb	 None	 toolshed.g2.bx.psu.edu	tmp/update/install_log.txt
+Update	2	Fri 14 Feb 08:22:57 UTC 2020	Installed		1/1	1/1	describe_samples	 iuc	latest	8bfbdb039d4e	 RNA-seq	 toolshed.g2.bx.psu.edu	tmp/update/install_log.txt
+Update	2	Fri 14 Feb 08:59:22 UTC 2020	Installed		12/12	11/11	edger	 iuc	latest	334ce9b1bac5	 RNA-seq	 toolshed.g2.bx.psu.edu	tmp/update/install_log.txt
+Update	2	Fri 14 Feb 09:13:59 UTC 2020	Installed		2/2	2/2	fasttree	 iuc	latest	ef46a404db96	 Metagenomic analyses	 toolshed.g2.bx.psu.edu	tmp/update/install_log.txt
+Update	2	Fri 14 Feb 09:16:40 UTC 2020	Tests failed	Staging Testing	2/3		featurecounts	 iuc	latest	a37612abf7f9	 RNA-seq	 toolshed.g2.bx.psu.edu	tmp/update/install_log.txt
+Update	2	Fri 14 Feb 09:19:04 UTC 2020	Tests failed	Staging Testing	0/7		gatk2	 iuc	latest	35c00763cb5c	 GATK Tools	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 09:23:13 UTC 2020	Installed		1/1	1/1	gemini_actionable_mutations	 iuc	latest	f62ed0e84665	 Gemini Tools	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 09:27:42 UTC 2020	Installed		1/1	1/1	gemini_amend	 iuc	latest	b8b120a4cef7	 Gemini Tools	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 09:31:06 UTC 2020	Tests failed	Staging Testing	9/10		gemini_annotate	 iuc	latest	567837ca5f33	 Gemini Tools	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 09:38:41 UTC 2020	Installed		5/5	5/5	gemini_burden	 iuc	latest	12112e6e5ea4	 Gemini Tools	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 09:46:06 UTC 2020	Installed		5/5	5/5	gemini_db_info	 iuc	latest	496124e09f82	 Gemini Tools	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 09:47:38 UTC 2020	Tests failed	Staging Testing	0/1		gemini_fusions	 iuc	latest	8a68d9a33023	 Gemini Tools	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 09:51:20 UTC 2020	Installed		1/1	1/1	gemini_gene_wise	 iuc	latest	4f55668547fc	 Gemini Tools	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 09:52:35 UTC 2020	Tests failed	Staging Testing	0/2		gemini_interactions	 iuc	latest	ce6db5020339	 Gemini Tools	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 09:54:40 UTC 2020	Tests failed	Staging Testing	0/10		gemini_load	 iuc	latest	64132aa2d62a	 Gemini Tools	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 09:57:55 UTC 2020	Installed		1/1	1/1	gemini_lof_sieve	 iuc	latest	295814260d95	 Gemini Tools	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 09:59:18 UTC 2020	Tests failed	Staging Testing	0/1		gemini_pathways	 iuc	latest	d5ec6384a3be	 Gemini Tools	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 10:03:06 UTC 2020	Installed		1/1	1/1	gemini_qc	 iuc	latest	137a3e07062e	 Gemini Tools	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 10:07:15 UTC 2020	Installed		1/1	1/1	gemini_query	 iuc	latest	840fb4850be3	 Gemini Tools	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 10:14:03 UTC 2020	Installed		1/1	1/1	gemini_roh	 iuc	latest	60f477e3c79b	 Gemini Tools	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 10:17:50 UTC 2020	Installed		1/1	1/1	gemini_set_somatic	 iuc	latest	3208dd1dbfe2	 Gemini Tools	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 10:22:54 UTC 2020	Installed		2/2	2/2	gemini_stats	 iuc	latest	73b103195e2a	 Gemini Tools	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 10:29:44 UTC 2020	Installed		1/1	1/1	gemini_windower	 iuc	latest	c15b615cdc3b	 Gemini Tools	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 10:33:14 UTC 2020	Tests failed	Staging Testing	6/8		gffcompare	 iuc	latest	0f710191a66d	 RNA-seq	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 10:37:46 UTC 2020	Installed		1/1	1/1	ggplot2_heatmap	 iuc	latest	de002ba2b849	 Graph/Display Data	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 10:42:38 UTC 2020	Tests failed	Staging Testing	2/16		hisat2	 iuc	latest	0c16cad5e03b	 RNA-seq	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 11:07:06 UTC 2020	Installed		5/5	5/5	iqtree	 iuc	latest	973a28be3b7f	 Phylogenetics	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 11:12:39 UTC 2020	Tests failed	Staging Testing	9/10		jbrowse	 iuc	latest	667e17248bfe	 Graph/Display Data	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 11:15:25 UTC 2020	Tests failed	Staging Testing	4/5		kallisto_pseudo	 iuc	latest	5ae5c312d718	 RNA-seq	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 11:18:27 UTC 2020	Tests failed	Staging Testing	5/7		kallisto_quant	 iuc	latest	60f888039fb2	 RNA-seq	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 11:39:27 UTC 2020	Installed		11/11	11/11	limma_voom	 iuc	latest	0921444c832d	 RNA-seq	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 15:29:51 UTC 2020	Installed		24/24	12/12	macs2	 iuc	latest	424aefbd7777	 ChiP-seq	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 15:54:40 UTC 2020	Tests failed	Staging Testing	4/5		multiqc	 iuc	latest	3d93dd18d9f8	 FASTQ Quality Control	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 16:00:49 UTC 2020	Installed		6/6	6/6	ngsutils_bam_filter	 iuc	latest	2e957d4c4b95	 FASTA/FASTQ	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 16:11:04 UTC 2020	Installed		3/3	3/3	quast	 iuc	latest	ebb0dcdb621a	 Assembly	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 16:21:16 UTC 2020	Installed		2/2	2/2	raxml	 iuc	latest	a4b71be30c3c	 Phylogenetics	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 16:25:55 UTC 2020	Tests failed	Staging Testing	9/11		rgrnastar	 iuc	latest	b9e04854e2bb	 RNA-seq	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 16:38:30 UTC 2020	Tests failed	Staging Testing	7/9		snippy	 iuc	latest	3fe8ef358d66	 Variant Calling	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 16:57:48 UTC 2020	Tests failed	Production Testing	13/13	9/10	snpeff	 iuc	latest	74aebe30fb52	 Annotation	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 17:11:15 UTC 2020	Installed		14/14	8/8	sra_tools	 iuc	latest	f5ea3ce9b9b0	 Get Data	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 17:15:56 UTC 2020	Tests failed	Staging Testing	11/12		stringtie	 iuc	latest	eba36e001f45	 RNA-seq	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 17:39:11 UTC 2020	Installed		7/7	7/7	trinity_abundance_estimates_to_matrix	 iuc	latest	59fff1388bc2	 RNA-seq	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 17:54:03 UTC 2020	Installed		4/4	5/5	trinity_align_and_estimate_abundance	 iuc	latest	56162e446004	 RNA-seq	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 18:19:07 UTC 2020	Installed		3/3	3/3	trinity_analyze_diff_expr	 iuc	latest	56ac80587187	 RNA-seq	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 18:25:57 UTC 2020	Installed		1/1	1/1	trinity_contig_exn50_statistic	 iuc	latest	62b05e565a45	 RNA-seq	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 18:41:34 UTC 2020	Installed		1/1	1/1	trinity_define_clusters_by_cutting_tree	 iuc	latest	05ab8d5e04a2	 RNA-seq	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 18:46:41 UTC 2020	Installed		3/3	3/3	trinity_filter_low_expr_transcripts	 iuc	latest	42c5172815f7	 RNA-seq	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 18:50:11 UTC 2020	Installed		1/1	1/1	trinity_gene_to_trans_map	 iuc	latest	297a1c03c702	 RNA-seq	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 18:58:34 UTC 2020	Tests failed	Production Testing	5/5	2/5	trinity	 iuc	latest	d84caa5a98ad	 RNA-seq	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 19:29:54 UTC 2020	Installed		3/3	3/3	trinity_run_de_analysis	 iuc	latest	04936df18de3	 RNA-seq	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
+Update	2	Fri 14 Feb 19:46:35 UTC 2020	Installed		1/1	1/1	trinity_samples_qccheck	 iuc	latest	7377140e39f8	 RNA-seq	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
