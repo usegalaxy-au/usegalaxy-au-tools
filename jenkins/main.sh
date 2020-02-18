@@ -43,7 +43,7 @@ fi
 [ -d $LOG_DIR ] || mkdir $LOG_DIR;
 
 export BUILD_NUMBER=$BUILD_NUMBER
-export LOG_FILE="$LOG_DIR/webhook_tool_installation_$BUILD_NUMBER"
+export LOG_FILE="${LOG_DIR}/${MODE}_build_${BUILD_NUMBER}_log.txt"
 export GIT_COMMIT=$GIT_COMMIT
 export GIT_PREVIOUS_COMMIT=$GIT_PREVIOUS_COMMIT
 export LOG_DIR=$LOG_DIR
