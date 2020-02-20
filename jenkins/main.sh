@@ -7,6 +7,9 @@ FILE_ARGS=("${ARGS[@]:1}")
 LOG_DIR=~/galaxy_tool_automation
 BASH_V="$(echo ${BASH_VERSION} | head -c 1)" # this will be "4" if the bash version is 4.x, empty otherwise
 
+FORCE=0
+[[ $GIT_COMMIT_MESSAGE == *"[FORCE]"* ]] && FORCE=1;
+
 if [ ! "$MODE" = "install" ] && [ ! "$MODE" = "update" ]; then
   echo "First positional argument to jenkins/main must be install or update"
   exit 1
@@ -45,6 +48,7 @@ export GIT_PREVIOUS_COMMIT=$GIT_PREVIOUS_COMMIT
 export LOG_DIR=$LOG_DIR
 export BASH_V=$BASH_V
 export MODE=$MODE
+export FORCE=$FORCE
 
 jenkins_tool_installation() {
   if [ $MODE = "install" ]; then
