@@ -288,7 +288,14 @@ install_tool() {
     fi
   elif [ $INSTALLATION_STATUS = "Installed" ]; then
     echo "$TOOL_NAME has been installed on $URL";
-
+    if [ $FORCE = 1 ]; then
+      echo "Successfully installed $TOOL_NAME on $URL";
+      unset STEP
+      log_row "Installed"
+      exit_installation 0 ""
+      rm $TOOL_FILE;
+      return 0
+    fi
   else
     log_row "Script error"
     exit_installation 1 "Could not verify installation from shed-tools output."
@@ -308,6 +315,9 @@ test_tool() {
   if [ $SERVER = "STAGING" ] && [ $INSTALLATION_STATUS = "Skipped" ]; then
     echo "Skipping testing on $STAGING_URL";
     return 0;
+  elif [ $FORCE = 1 ]; then
+    echo "FORCE option specified, skip tests";
+    return 0
   fi
 
   TEST_LOG="$TMP/test_log.txt"
