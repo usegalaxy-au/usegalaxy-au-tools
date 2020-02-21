@@ -49,14 +49,14 @@ def main():
     installed_errors_staging = check_against_installed_tools(tool_list, staging_dir, staging_url)
     installed_errors_production = check_against_installed_tools(tool_list, production_dir, production_url)
 
-    all_warnings = installed_errors_staging  # If a tool is installed on staging but not production, do not raise an exception
-    all_errors = installable_errors + installed_errors_production
+    all_warnings = installed_errors_staging + installed_errors_production
+    all_errors = installable_errors
     for warning in all_warnings:
-        sys.stderr.write('Warning %s\n' % warning)
+        sys.stderr.write('Warning: %s\n' % warning)
     if all_errors:
         sys.stderr.write('\n')
         for error in all_errors:
-            sys.stderr.write('Error %s\n' % error)
+            sys.stderr.write('Error: %s\n' % error)
         raise Exception('Errors found')
     else:
         sys.stderr.write('\nAll tools are installable and not already installed on %s\n' % production_url)
