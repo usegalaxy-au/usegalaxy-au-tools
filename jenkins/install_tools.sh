@@ -157,13 +157,13 @@ install_tools() {
       git add $PR_FILE
       COMMIT_PR_FILES+=("$PR_FILE")
     done
-    git commit "${COMMIT_PR_FILES[@]}" -m "Jenkins build $BUILD_NUMBER errors"
+    git commit "${COMMIT_PR_FILES[@]}" -m "Jenkins $MODE build $BUILD_NUMBER errors"
     git push --set-upstream origin $BRANCH_NAME
     # Use 'hub' command to open pull request
     # hub takes a text file where a blank line separates the PR title from
     # the PR description.
     PR_FILE="$TMP/hub_pull_request_file"
-    echo -e "Jenkins build $BUILD_NUMBER errors\n\n" > $PR_FILE
+    echo -e "Jenkins $MODE build $BUILD_NUMBER errors\n\n" > $PR_FILE
     cat $ERROR_LOG >> $PR_FILE
     hub pull-request -F $PR_FILE
     rm $PR_FILE
@@ -308,7 +308,7 @@ test_tool() {
   SERVER="$1"
   set_url $SERVER
   STEP="$(title $SERVER) Testing"; # Production Testing or Staging Testing
-  TEST_JSON="$LOG_DIR/$BUILD_NUMBER"_"$(lower $SERVER)"_test.json
+  TEST_JSON="$LOG_DIR/${MODE}_build_${BUILD_NUMBER}_$(lower $SERVER)_test.json"
 
   # Special case: If package is already installed on staging we skip tests and install on production
   if [ $SERVER = "STAGING" ] && [ $INSTALLATION_STATUS = "Skipped" ]; then
