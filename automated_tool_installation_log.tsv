@@ -98,3 +98,13 @@ Install	38	Mon 17 Feb 02:01:31 UTC 2020	Tests failed	Production Testing	1/1	0/1	
 Install	40	Mon 17 Feb 02:09:48 UTC 2020	Already Installed	Production Installation	1/1		prokka	 crs4	latest	bf68eb663bc3	 Annotation		/var/lib/jenkins/galaxy_tool_automation/webhook_tool_installation_40
 Install	48	Tue 18 Feb 03:56:16 UTC 2020	Tests failed	Production Testing	2/2	0/1	tablemerge	 melpetera	latest	e44c5246247a	 Metabolomics		/var/lib/jenkins/galaxy_tool_automation/webhook_tool_installation_48
 Install	50	Wed 19 Feb 12:05:49 UTC 2020	Installed		2/2	2/2	tablemerge	 melpetera	latest	e44c5246247a	 Metabolomics		/var/lib/jenkins/galaxy_tool_automation/webhook_tool_installation_50
+Install	52	Fri 21 Feb 00:58:16 UTC 2020	Installed		0/0	0/0	bwa	 devteam	01ac0a5fedc3	01ac0a5fedc3	 Mapping		/var/lib/jenkins/galaxy_tool_automation/webhook_tool_installation_52
+Install	52	Fri 21 Feb 01:03:12 UTC 2020	Tests failed	Staging Testing	10/11		fastp	 iuc	1d8fe9bc4cb0	1d8fe9bc4cb0	 FASTA/FASTQ		/var/lib/jenkins/galaxy_tool_automation/webhook_tool_installation_52
+Install	52	Fri 21 Feb 01:10:41 UTC 2020	Tests failed	Production Testing	8/8	5/8	fastqc	 devteam	e7b2202befea	e7b2202befea	 FASTQ Quality Control		tmp/install/test_log.txt
+Install	52	Fri 21 Feb 01:10:46 UTC 2020	Already Installed	Production Installation			minimap2	 iuc	b3eab4b67562	b3eab4b67562	 Mapping		tmp/install/test_log.txt
+Install	52	Fri 21 Feb 01:16:37 UTC 2020	Already Installed	Production Installation	4/4		multiqc	 iuc	b2f1f75d49c4	b2f1f75d49c4	 FASTQ Quality Control		tmp/install/test_log.txt
+Install	52	Fri 21 Feb 01:16:41 UTC 2020	Already Installed	Production Installation			nanoplot	 iuc	645159bcee2d	645159bcee2d	 Nanopore		tmp/install/test_log.txt
+Install	52	Fri 21 Feb 01:28:14 UTC 2020	Tests failed	Staging Testing	16/34		picard	 devteam	f6ced08779c4	f6ced08779c4	 Picard		tmp/install/test_log.txt
+Install	52	Fri 21 Feb 01:31:01 UTC 2020	Installed		3/3	0/0	samtool_filter2	 devteam	649a225999a5	649a225999a5	 SAM/BAM		tmp/install/test_log.txt
+Install	52	Fri 21 Feb 01:37:54 UTC 2020	Installed		18/18	0/0	samtools_fastx	 iuc	a8d69aee190e	a8d69aee190e	 SAM/BAM		tmp/install/test_log.txt
+Install	52	Fri 21 Feb 01:38:01 UTC 2020	Already Installed	Production Installation			sra_tools	 iuc	f5ea3ce9b9b0	f5ea3ce9b9b0	 Get Data		tmp/install/test_log.txt
