@@ -288,8 +288,7 @@ install_tool() {
     fi
   elif [ $INSTALLATION_STATUS = "Installed" ]; then
     echo "$TOOL_NAME has been installed on $URL";
-    if [ $FORCE = 1 ]; then
-      echo "Successfully installed $TOOL_NAME on $URL";
+    if [ $FORCE = 1 ] && [ $SERVER = "PRODUCTION" ]; then
       unset STEP
       log_row "Installed"
       exit_installation 0 ""
