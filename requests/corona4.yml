@@ -1,0 +1,27 @@
+tools:
+    - name: snpeff
+      owner: iuc
+      revisions:
+          - 268d162b9c49
+          - 5a29ab10dba6
+      tool_panel_section_label: Annotation
+    - name: bwa
+      owner: devteam
+      revisions:
+          - 01ac0a5fedc3
+      tool_panel_section_label: Mapping
+    - name: lofreq_viterbi
+      owner: iuc
+      revisions:
+          - ecd80c7c3886
+      tool_panel_section_label: Variant Calling
+    - name: lofreq_call
+      owner: iuc
+      revisions:
+          - 03627f24605f
+      tool_panel_section_label: Variant Calling
+    - name: snp_sift
+      owner: iuc
+      revisions:
+          - 09d6806c609e
+      tool_panel_section_label: Annotation
