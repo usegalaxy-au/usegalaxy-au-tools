@@ -3,7 +3,6 @@ import yaml
 import sys
 import os
 
-from bioblend import ConnectionError
 from bioblend.toolshed import ToolShedInstance
 from bioblend.toolshed.repositories import ToolShedRepositoryClient
 
@@ -133,9 +132,8 @@ def check_installable(tools):
                 if not installable_revisions:
                     errors.append('Tool with name: %s, owner: %s and tool_shed_url: %s has no installable revisions' % (tool['name'], tool['owner'], shed))
                     continue
-            except ConnectionError:
-                if counter == 0:
-                    raise Exception('Could not connect to toolshed %s\n' % url)
+            except Exception as e:
+                raise Exception(e)
 
             if 'revisions' in tool.keys():  # Check that requested revisions are installable
                 for revision in tool['revisions']:
