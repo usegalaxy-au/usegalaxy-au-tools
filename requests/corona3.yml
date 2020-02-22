@@ -1,0 +1,21 @@
+tools:
+    - name: ncbi_acc_download
+      revisions:
+         - 1c58de56d587
+      owner: iuc
+      tool_panel_section_label: Get Data
+    - name: picard
+      owner: devteam
+      revisions:
+         - a1f0b3f4b781
+      tool_panel_section_label: Picard
+    - name: collapse_collections
+      owner: nml
+      revisions:
+         - 33151a38533a
+      tool_panel_section_label: Collection Operations
+    - name: mafft
+      owner: rnateam
+      revisions:
+         - 15974dd17515
+      tool_panel_section_label: Multiple Alignments
