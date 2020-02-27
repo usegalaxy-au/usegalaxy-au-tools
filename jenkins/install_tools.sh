@@ -1,7 +1,7 @@
 #! /bin/bash
 
 AUTOMATED_TOOL_INSTALLATION_LOG="automated_tool_installation_log.tsv"; # version controlled
-LOG_HEADER="Category\tJenkins Build Number\tDate (UTC)\tStatus\tFailing Step\tStaging tests passed\tProduction tests passed\tName\tOwner\tRequested Revision\tInstalled Revision\tSection Label\tTool Shed URL\tLog Path"
+LOG_HEADER="Category\tBuild Num.\tDate (AEST)\tName\tNew Tool\tStatus\tOwner\tInstalled Revision\tRequested Revision\tFailing Step\tStaging tests passed\tProduction tests passed\tSection Label\tTool Shed URL\tLog Path"
 
 source ".env"
 [ -f ".secret.env" ] && source ".secret.env"
@@ -30,8 +30,10 @@ install_tools() {
     exit 1
   fi
 
-  # activate .venv with yaml, bioblend, ephemeris installed
-  activate_virtualenv
+  if [ $LOCAL_ENV = 0 ]; then
+    # activate .venv with yaml, bioblend, ephemeris installed
+    activate_virtualenv
+  fi
 
   # Ensure log file exists, create it if not
   if [ ! -f $AUTOMATED_TOOL_INSTALLATION_LOG ]; then
@@ -39,11 +41,13 @@ install_tools() {
     git add $AUTOMATED_TOOL_INSTALLATION_LOG; # this has to be a tracked file
   fi
 
-  # check out master, get out of detached head
-  git config --local user.name "galaxy-au-tools-jenkins-bot"
-  git config --local user.email "galaxyaustraliatools@gmail.com"
-  git checkout master
-  git pull
+  # check out master, get out of detached head (skip if running locally)
+  if [ $LOCAL_ENV = 0 ]; then
+    git config --local user.name "galaxy-au-tools-jenkins-bot"
+    git config --local user.email "galaxyaustraliatools@gmail.com"
+    git checkout master
+    git pull
+  fi
 
   TMP="tmp/$MODE" # tmp/requests tmp/updates
   [ -d $TMP ] || mkdir -p $TMP;	# Important!  Make sure this exists
@@ -63,7 +67,7 @@ install_tools() {
     # failure of one installation will not affect the others
     python scripts/organise_request_files.py -f $REQUEST_FILES -o $TOOL_FILE_PATH
   elif [ "$MODE" = "update" ]; then
-    python scripts/organise_request_files.py --update_existing -s $PRODUCTION_TOOL_DIR -o $TOOL_FILE_PATH
+    python scripts/organise_request_files.py --update_existing -s $PRODUCTION_TOOL_DIR -o $TOOL_FILE_PATH -g $PRODUCTION_URL -a $PRODUCTION_API_KEY
   fi
 
   # keep a count of successful installations
@@ -80,9 +84,17 @@ install_tools() {
     TOOL_REF=$(echo $FILE_NAME | cut -d'.' -f 1);
     TOOL_NAME=$(echo $TOOL_REF | cut -d '@' -f 1);
     REQUESTED_REVISION=$(echo $TOOL_REF | cut -d '@' -f 2); # TODO: Parsing from file name for revision and tool name is not good.  Fix.
-    OWNER=$(grep -oE "owner: .*$" "$TOOL_FILE" | cut -d ':' -f 2);
-    TOOL_SHED_URL=$(grep -oE "tool_shed_url: .*$" "$TOOL_FILE" | cut -d ':' -f 2);
-    SECTION_LABEL=$(grep -oE "tool_panel_section_label: .*$" "$TOOL_FILE" | cut -d ':' -f 2);
+    OWNER=$(grep -oE "owner: .*$" "$TOOL_FILE" | cut -d ':' -f 2 | xargs);
+    TOOL_SHED_URL=$(grep -oE "tool_shed_url: .*$" "$TOOL_FILE" | cut -d ':' -f 2 | xargs);
+    [ ! $TOOL_SHED_URL ] && TOOL_SHED_URL="toolshed.g2.bx.psu.edu"; # default value
+    SECTION_LABEL=$(grep -oE "tool_panel_section_label: .*$" "$TOOL_FILE" | cut -d ':' -f 2 | xargs);
+
+    # Find out whether tool/owner combination already exists on galaxy.  This makes no difference to the installation process but
+    # is useful for the log
+    TOOL_IS_NEW="False"
+    if [ $MODE == "install" ]; then
+      TOOL_IS_NEW=$(python scripts/is_tool_new.py -g $PRODUCTION_URL -a $PRODUCTION_API_KEY -n $TOOL_NAME -o $TOOL_OWNER)
+    fi
 
     unset STAGING_TESTS_PASSED PRODUCTION_TESTS_PASSED; # ensure these values do not carry over from previous iterations of the loop
 
@@ -115,6 +127,8 @@ install_tools() {
     echo "=================================================="
     echo -e $LOG_ENTRY >> $AUTOMATED_TOOL_INSTALLATION_LOG;
   fi
+
+  exit 0; # DELETE THIS LINE!!!
 
   COMMIT_FILES=("$AUTOMATED_TOOL_INSTALLATION_LOG")
 
@@ -186,20 +200,18 @@ activate_virtualenv() {
   # The venv is set up a level below the workspace so that we do not have
   # to rebuild it each time the script is run
   VIRTUALENV="../.venv"
-  if [ $LOCAL_ENV = 0 ]; then
-    if [ ! -d $VIRTUALENV ]; then
-      echo "creating virtual environment";
-      virtualenv $VIRTUALENV;
-      INSTALL_PACKAGES=1
-    fi
-    # shellcheck source=../.venv/bin/activate
-    . "$VIRTUALENV/bin/activate"
-    if [ $INSTALL_PACKAGES ]; then
-      pip install pyyaml
-      pip install ephemeris==0.10.4
-      pip install bioblend==0.13.0
-    fi
+  REQUIREMENTS_FILE="jenkins/requirements.txt"
+  CACHED_REQUIREMENTS_FILE="$VIRTUALENV/cached_requirements.txt"
+
+  [ ! -d $VIRTUALENV ] && virtualenv $VIRTUALENV
+  # shellcheck source=../.venv/bin/activate
+  . "$VIRTUALENV/bin/activate"
+
+  [ -f $CACHED_REQUIREMENTS_FILE ] && touch $CACHED_REQUIREMENTS_FILE
+  if [ "$(diff $REQUIREMENTS_FILE $CACHED_REQUIREMENTS_FILE)" ]; then
+    pip install -r $REQUIREMENTS_FILE
   fi
+  cp $REQUIREMENTS_FILE $CACHED_REQUIREMENTS_FILE
 }
 
 install_tool() {
@@ -293,7 +305,8 @@ install_tool() {
     fi
   elif [ $INSTALLATION_STATUS = "Installed" ]; then
     echo "$TOOL_NAME has been installed on $URL";
-    if [ $FORCE = 1 ] && [ $SERVER = "PRODUCTION" ]; then
+    if [ $FORCE = 1 ]; then
+      echo "Successfully installed $TOOL_NAME on $URL";
       unset STEP
       log_row "Installed"
       exit_installation 0 ""
@@ -313,7 +326,7 @@ test_tool() {
   SERVER="$1"
   set_url $SERVER
   STEP="$(title $SERVER) Testing"; # Production Testing or Staging Testing
-  TEST_JSON="$LOG_DIR/${MODE}_build_${BUILD_NUMBER}_$(lower $SERVER)_test.json"
+  TEST_JSON_LOG="$LOG_DIR/${MODE}_build_${BUILD_NUMBER}_$(lower $SERVER)_test.json"
 
   # Special case: If package is already installed on staging we skip tests and install on production
   if [ $SERVER = "STAGING" ] && [ $INSTALLATION_STATUS = "Skipped" ]; then
@@ -325,6 +338,7 @@ test_tool() {
   fi
 
   TEST_LOG="$TMP/test_log.txt"
+  TEST_JSON="$TMP/test.json"
   rm -f $TEST_LOG ||:;  # delete file if it exists
 
   sleep 30s; # Allow threads to catch up so that all files are available for testing
@@ -339,6 +353,7 @@ test_tool() {
     exit_installation 1
     return 1
   }
+  [ -f $TEST_JSON ] && pretty_json $TEST_JSON >> $TEST_JSON_LOG
 
   if [ $BASH_V = 4 ]; then
     # normal regex
@@ -391,21 +406,22 @@ test_tool() {
 }
 
 log_row() {
-  # "Category\tJenkins Build Number\tDate (UTC)\tStatus\tFailing Step\tStaging tests passed\tProduction tests passed\tName\tOwner\tRequested Revision\tInstalled Revision\tSection Label\tTool Shed URL\tLog Path"
+  # LOG_HEADER="Category\tBuild Num.\tDate (AEST)\tName\tNew Tool\tStatus\tOwner\tInstalled Revision\tRequested Revision\tFailing Step\tStaging tests passed\tProduction tests passed\tSection Label\tTool Shed URL\tLog Path"
   STATUS="$1"
   if [ "$LOG_ENTRY" ]; then
     LOG_ENTRY="$LOG_ENTRY\n";	# If log entry has content, add new line before new content
   fi
-  LOG_ROW="$(title $MODE)\t$BUILD_NUMBER\t$(date)\t$STATUS\t$STEP\t$STAGING_TESTS_PASSED\t$PRODUCTION_TESTS_PASSED\t$TOOL_NAME\t$OWNER\t$REQUESTED_REVISION\t$INSTALLED_REVISION\t$SECTION_LABEL\t$TOOL_SHED_URL\t$LOG_FILE"
+  DATE=$(env TZ="Australia/Queensland" date "+%d/%m/%y %H:%M:%S")
+  LOG_ROW="$(title $MODE)\t$BUILD_NUMBER\t$DATE\t$TOOL_NAME\t$TOOL_IS_NEW\t$STATUS\t$OWNER\t$INSTALLED_REVISION\t$REQUESTED_REVISION\t$STEP\t$STAGING_TESTS_PASSED\t$PRODUCTION_TESTS_PASSED\t$SECTION_LABEL\t$TOOL_SHED_URL\t$LOG_FILE"
   LOG_ENTRY="$LOG_ENTRY$LOG_ROW"
   # echo -e $LOG_ROW; # Need to print this values?  Store them in multiD array? What if script stops in the middle?
 }
 
 log_error() {
-  LOG_FILE="$1"
+  FILE="$1"
   LIMIT="$2"
   echo -e "Failed to install $TOOL_NAME on $URL\n" >> $ERROR_LOG
-  [ ! $LIMIT ] && cat $LOG_FILE >> $ERROR_LOG || head -n $LIMIT $LOG_FILE >> $ERROR_LOG
+  [ ! $LIMIT ] && cat $FILE >> $ERROR_LOG || head -n $LIMIT $FILE >> $ERROR_LOG
   echo -e "\n\n" >> $ERROR_LOG;
 }
 
@@ -459,6 +475,10 @@ title() {
 
 lower() {
   python -c "print('$1'.lower())"
+}
+
+pretty_json() {
+ python -mjson.tool "$1"
 }
 
 install_tools

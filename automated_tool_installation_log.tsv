@@ -1,139 +1,139 @@
-Category	Jenkins Build Number	Date (UTC)	Status	Failing Step	Staging tests passed	Production tests passed	Name	Owner	Requested Revision	Installed Revision	Section Label	Tool Shed URL	Log Path
-Install	7	Tue 11 Feb 03:30:28 UTC 2020	Installed		4/4	4/4	megahit	 iuc	latest	de387b2b2803	 Assembly		/var/lib/jenkins/galaxy_tool_automation/webhook_tool_installation_7
-Install	19	Wed 12 Feb 04:20:18 UTC 2020	Tests failed	Production Testing	5/5	2/5	trna_prediction	 bgruening	latest	358f58401cd6	 Annotation		/var/lib/jenkins/galaxy_tool_automation/webhook_tool_installation_19
-Install	23	Wed 12 Feb 05:06:39 UTC 2020	Installed		5/5	5/5	trna_prediction	 bgruening	latest	358f58401cd6	 Annotation		/var/lib/jenkins/galaxy_tool_automation/webhook_tool_installation_23
-Install	31	Wed 12 Feb 06:19:18 UTC 2020	Installed		2/2	2/2	racon	 bgruening	latest	aa39b19ca11e	 Assembly		/var/lib/jenkins/galaxy_tool_automation/webhook_tool_installation_31
-Install	31	Wed 12 Feb 06:34:43 UTC 2020	Installed		4/4	4/4	sistr_cmd	 nml	latest	5c8ff92e38a9	 Bacterial Typing		/var/lib/jenkins/galaxy_tool_automation/webhook_tool_installation_31
-Update	2	Fri 14 Feb 04:04:16 UTC 2020	Shed-tools error	Staging Testing			abricate	 iuc	latest	4efdca267d51	 Annotation	 toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/webhook_tool_installation_2
-Update	2	Fri 14 Feb 04:04:18 UTC 2020	Shed-tools error	Staging Installation			annotatemyids	 iuc	latest	4efdca267d51	 Annotation	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 04:04:19 UTC 2020	Shed-tools error	Staging Installation			barrnap	 iuc	latest	4efdca267d51	 Annotation	 toolshed.g2.bx.psu.edu	tmp/update/install_log.txt
-Update	2	Fri 14 Feb 04:04:21 UTC 2020	Shed-tools error	Staging Installation			bcftools_annotate	 iuc	latest	4efdca267d51	 VCF/BCF	 toolshed.g2.bx.psu.edu	tmp/update/install_log.txt
-Update	2	Fri 14 Feb 04:04:22 UTC 2020	Shed-tools error	Staging Installation			bcftools_call	 iuc	latest	4efdca267d51	 VCF/BCF	 toolshed.g2.bx.psu.edu	tmp/update/install_log.txt
-Update	2	Fri 14 Feb 04:04:24 UTC 2020	Shed-tools error	Staging Installation			bcftools_cnv	 iuc	latest	4efdca267d51	 VCF/BCF	 toolshed.g2.bx.psu.edu	tmp/update/install_log.txt
-Update	2	Fri 14 Feb 04:07:02 UTC 2020	Tests failed	Staging Testing	0/4		bcftools_concat	 iuc	latest	874cc12ae316	 VCF/BCF	 toolshed.g2.bx.psu.edu	tmp/update/install_log.txt
-Update	2	Fri 14 Feb 04:09:25 UTC 2020	Tests failed	Staging Testing	2/3		bcftools_consensus	 iuc	latest	e522022137f6	 VCF/BCF	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 04:20:45 UTC 2020	Installed		5/5	5/5	bcftools_convert_from_vcf	 iuc	latest	7ca6120cb2a4	 VCF/BCF	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 04:23:20 UTC 2020	Tests failed	Staging Testing	5/7		bcftools_convert_to_vcf	 iuc	latest	8bb5efd7a3dd	 VCF/BCF	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 04:25:07 UTC 2020	Tests failed	Staging Testing	1/2		bcftools_csq	 iuc	latest	f10f5b4e7854	 VCF/BCF	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 04:33:17 UTC 2020	Installed		9/9	9/9	bcftools_filter	 iuc	latest	0117c6d2ab96	 VCF/BCF	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 04:36:57 UTC 2020	Installed		1/1	1/1	bcftools_gtcheck	 iuc	latest	fd1030bc93d9	 VCF/BCF	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 04:40:52 UTC 2020	Installed		1/1	1/1	bcftools_isec	 iuc	latest	1fd4fd0c6ee3	 VCF/BCF	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 04:49:08 UTC 2020	Installed		6/6	6/6	bcftools_merge	 iuc	latest	9473302f4588	 VCF/BCF	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 04:52:01 UTC 2020	Tests failed	Staging Testing	5/6		bcftools_mpileup	 iuc	latest	f65383c7ed49	 VCF/BCF	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 04:54:34 UTC 2020	Tests failed	Staging Testing	6/7		bcftools_norm	 iuc	latest	a62e934346f5	 VCF/BCF	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 05:02:41 UTC 2020	Installed		1/1	1/1	bcftools_plugin_counts	 iuc	latest	b781fa08aa3c	 VCF/BCF	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 05:07:10 UTC 2020	Installed		1/1	1/1	bcftools_plugin_dosage	 iuc	latest	2ee1392161a6	 VCF/BCF	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 05:10:28 UTC 2020	Installed		1/1	1/1	bcftools_plugin_fill_an_ac	 iuc	latest	3bdc901c18e2	 VCF/BCF	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 05:15:08 UTC 2020	Installed		2/2	2/2	bcftools_plugin_fill_tags	 iuc	latest	cbfa272e5a6a	 VCF/BCF	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 05:18:36 UTC 2020	Installed		1/1	1/1	bcftools_plugin_fixploidy	 iuc	latest	ceb03be4f31b	 VCF/BCF	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 05:21:58 UTC 2020	Installed		1/1	1/1	bcftools_plugin_impute_info	 iuc	latest	2c53c8974cb3	 VCF/BCF	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 05:25:32 UTC 2020	Installed		2/2	2/2	bcftools_plugin_mendelian	 iuc	latest	98664595dedf	 VCF/BCF	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 05:29:01 UTC 2020	Installed		1/1	1/1	bcftools_plugin_missing2ref	 iuc	latest	5d98fe06e4ae	 VCF/BCF	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 05:32:32 UTC 2020	Installed		1/1	1/1	bcftools_plugin_setgt	 iuc	latest	76fe872413c2	 VCF/BCF	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 05:36:59 UTC 2020	Installed		1/1	1/1	bcftools_plugin_tag2tag	 iuc	latest	aa998b9898b1	 VCF/BCF	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 05:41:07 UTC 2020	Installed		1/1	1/1	bcftools_query	 iuc	latest	4eb04768cd49	 VCF/BCF	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 05:44:22 UTC 2020	Installed		1/1	1/1	bcftools_query_list_samples	 iuc	latest	242753783b68	 VCF/BCF	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 05:48:24 UTC 2020	Installed		3/3	3/3	bcftools_reheader	 iuc	latest	982bc0e518c8	 VCF/BCF	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 05:52:20 UTC 2020	Installed		2/2	2/2	bcftools_roh	 iuc	latest	cb681f21e670	 VCF/BCF	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 06:23:25 UTC 2020	Tests failed	Staging Testing	2/3		bcftools_stats	 iuc	latest	9c0028888512	 VCF/BCF	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 06:31:42 UTC 2020	Installed		11/11	11/11	bcftools_view	 iuc	latest	c4a9b38b435d	 VCF/BCF	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 06:54:57 UTC 2020	Tests failed	Staging Testing	101/104		bedtools	 iuc	latest	b28e0cfa7ba1	 BED	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 06:59:23 UTC 2020	Installed		1/1	1/1	biom_add_metadata	 iuc	latest	e3cbd2287f63	 Convert Formats	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 07:04:25 UTC 2020	Installed		3/3	3/3	biom_convert	 iuc	latest	584008e574b2	 Convert Formats	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 07:10:38 UTC 2020	Tests failed	Staging Testing	0/5		busco	 iuc	latest	1e62c28ba91d	 Assembly	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 08:15:48 UTC 2020	Errored	Production Installation	0/0		data_manager_hisat2_index_builder	 iuc	latest	8eac26f44d29	 None	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 08:18:53 UTC 2020	Installed		0/0	0/0	data_manager_snpeff	 iuc	latest	08d7998c3afb	 None	 toolshed.g2.bx.psu.edu	tmp/update/install_log.txt
-Update	2	Fri 14 Feb 08:22:57 UTC 2020	Installed		1/1	1/1	describe_samples	 iuc	latest	8bfbdb039d4e	 RNA-seq	 toolshed.g2.bx.psu.edu	tmp/update/install_log.txt
-Update	2	Fri 14 Feb 08:59:22 UTC 2020	Installed		12/12	11/11	edger	 iuc	latest	334ce9b1bac5	 RNA-seq	 toolshed.g2.bx.psu.edu	tmp/update/install_log.txt
-Update	2	Fri 14 Feb 09:13:59 UTC 2020	Installed		2/2	2/2	fasttree	 iuc	latest	ef46a404db96	 Metagenomic analyses	 toolshed.g2.bx.psu.edu	tmp/update/install_log.txt
-Update	2	Fri 14 Feb 09:16:40 UTC 2020	Tests failed	Staging Testing	2/3		featurecounts	 iuc	latest	a37612abf7f9	 RNA-seq	 toolshed.g2.bx.psu.edu	tmp/update/install_log.txt
-Update	2	Fri 14 Feb 09:19:04 UTC 2020	Tests failed	Staging Testing	0/7		gatk2	 iuc	latest	35c00763cb5c	 GATK Tools	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 09:23:13 UTC 2020	Installed		1/1	1/1	gemini_actionable_mutations	 iuc	latest	f62ed0e84665	 Gemini Tools	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 09:27:42 UTC 2020	Installed		1/1	1/1	gemini_amend	 iuc	latest	b8b120a4cef7	 Gemini Tools	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 09:31:06 UTC 2020	Tests failed	Staging Testing	9/10		gemini_annotate	 iuc	latest	567837ca5f33	 Gemini Tools	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 09:38:41 UTC 2020	Installed		5/5	5/5	gemini_burden	 iuc	latest	12112e6e5ea4	 Gemini Tools	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 09:46:06 UTC 2020	Installed		5/5	5/5	gemini_db_info	 iuc	latest	496124e09f82	 Gemini Tools	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 09:47:38 UTC 2020	Tests failed	Staging Testing	0/1		gemini_fusions	 iuc	latest	8a68d9a33023	 Gemini Tools	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 09:51:20 UTC 2020	Installed		1/1	1/1	gemini_gene_wise	 iuc	latest	4f55668547fc	 Gemini Tools	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 09:52:35 UTC 2020	Tests failed	Staging Testing	0/2		gemini_interactions	 iuc	latest	ce6db5020339	 Gemini Tools	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 09:54:40 UTC 2020	Tests failed	Staging Testing	0/10		gemini_load	 iuc	latest	64132aa2d62a	 Gemini Tools	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 09:57:55 UTC 2020	Installed		1/1	1/1	gemini_lof_sieve	 iuc	latest	295814260d95	 Gemini Tools	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 09:59:18 UTC 2020	Tests failed	Staging Testing	0/1		gemini_pathways	 iuc	latest	d5ec6384a3be	 Gemini Tools	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 10:03:06 UTC 2020	Installed		1/1	1/1	gemini_qc	 iuc	latest	137a3e07062e	 Gemini Tools	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 10:07:15 UTC 2020	Installed		1/1	1/1	gemini_query	 iuc	latest	840fb4850be3	 Gemini Tools	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 10:14:03 UTC 2020	Installed		1/1	1/1	gemini_roh	 iuc	latest	60f477e3c79b	 Gemini Tools	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 10:17:50 UTC 2020	Installed		1/1	1/1	gemini_set_somatic	 iuc	latest	3208dd1dbfe2	 Gemini Tools	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 10:22:54 UTC 2020	Installed		2/2	2/2	gemini_stats	 iuc	latest	73b103195e2a	 Gemini Tools	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 10:29:44 UTC 2020	Installed		1/1	1/1	gemini_windower	 iuc	latest	c15b615cdc3b	 Gemini Tools	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 10:33:14 UTC 2020	Tests failed	Staging Testing	6/8		gffcompare	 iuc	latest	0f710191a66d	 RNA-seq	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 10:37:46 UTC 2020	Installed		1/1	1/1	ggplot2_heatmap	 iuc	latest	de002ba2b849	 Graph/Display Data	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 10:42:38 UTC 2020	Tests failed	Staging Testing	2/16		hisat2	 iuc	latest	0c16cad5e03b	 RNA-seq	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 11:07:06 UTC 2020	Installed		5/5	5/5	iqtree	 iuc	latest	973a28be3b7f	 Phylogenetics	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 11:12:39 UTC 2020	Tests failed	Staging Testing	9/10		jbrowse	 iuc	latest	667e17248bfe	 Graph/Display Data	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 11:15:25 UTC 2020	Tests failed	Staging Testing	4/5		kallisto_pseudo	 iuc	latest	5ae5c312d718	 RNA-seq	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 11:18:27 UTC 2020	Tests failed	Staging Testing	5/7		kallisto_quant	 iuc	latest	60f888039fb2	 RNA-seq	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 11:39:27 UTC 2020	Installed		11/11	11/11	limma_voom	 iuc	latest	0921444c832d	 RNA-seq	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 15:29:51 UTC 2020	Installed		24/24	12/12	macs2	 iuc	latest	424aefbd7777	 ChiP-seq	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 15:54:40 UTC 2020	Tests failed	Staging Testing	4/5		multiqc	 iuc	latest	3d93dd18d9f8	 FASTQ Quality Control	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 16:00:49 UTC 2020	Installed		6/6	6/6	ngsutils_bam_filter	 iuc	latest	2e957d4c4b95	 FASTA/FASTQ	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 16:11:04 UTC 2020	Installed		3/3	3/3	quast	 iuc	latest	ebb0dcdb621a	 Assembly	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 16:21:16 UTC 2020	Installed		2/2	2/2	raxml	 iuc	latest	a4b71be30c3c	 Phylogenetics	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 16:25:55 UTC 2020	Tests failed	Staging Testing	9/11		rgrnastar	 iuc	latest	b9e04854e2bb	 RNA-seq	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 16:38:30 UTC 2020	Tests failed	Staging Testing	7/9		snippy	 iuc	latest	3fe8ef358d66	 Variant Calling	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 16:57:48 UTC 2020	Tests failed	Production Testing	13/13	9/10	snpeff	 iuc	latest	74aebe30fb52	 Annotation	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 17:11:15 UTC 2020	Installed		14/14	8/8	sra_tools	 iuc	latest	f5ea3ce9b9b0	 Get Data	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 17:15:56 UTC 2020	Tests failed	Staging Testing	11/12		stringtie	 iuc	latest	eba36e001f45	 RNA-seq	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 17:39:11 UTC 2020	Installed		7/7	7/7	trinity_abundance_estimates_to_matrix	 iuc	latest	59fff1388bc2	 RNA-seq	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 17:54:03 UTC 2020	Installed		4/4	5/5	trinity_align_and_estimate_abundance	 iuc	latest	56162e446004	 RNA-seq	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 18:19:07 UTC 2020	Installed		3/3	3/3	trinity_analyze_diff_expr	 iuc	latest	56ac80587187	 RNA-seq	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 18:25:57 UTC 2020	Installed		1/1	1/1	trinity_contig_exn50_statistic	 iuc	latest	62b05e565a45	 RNA-seq	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 18:41:34 UTC 2020	Installed		1/1	1/1	trinity_define_clusters_by_cutting_tree	 iuc	latest	05ab8d5e04a2	 RNA-seq	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 18:46:41 UTC 2020	Installed		3/3	3/3	trinity_filter_low_expr_transcripts	 iuc	latest	42c5172815f7	 RNA-seq	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 18:50:11 UTC 2020	Installed		1/1	1/1	trinity_gene_to_trans_map	 iuc	latest	297a1c03c702	 RNA-seq	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 18:58:34 UTC 2020	Tests failed	Production Testing	5/5	2/5	trinity	 iuc	latest	d84caa5a98ad	 RNA-seq	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 19:29:54 UTC 2020	Installed		3/3	3/3	trinity_run_de_analysis	 iuc	latest	04936df18de3	 RNA-seq	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Update	2	Fri 14 Feb 19:46:35 UTC 2020	Installed		1/1	1/1	trinity_samples_qccheck	 iuc	latest	7377140e39f8	 RNA-seq	 toolshed.g2.bx.psu.edu	tmp/update/test_log.txt
-Install	36	Mon 17 Feb 01:27:19 UTC 2020	Tests failed	Staging Testing	0/1		prokka	 crs4	latest	bf68eb663bc3	 Annotation		/var/lib/jenkins/galaxy_tool_automation/webhook_tool_installation_36
-Install	38	Mon 17 Feb 02:01:31 UTC 2020	Tests failed	Production Testing	1/1	0/1	prokka	 crs4	latest	bf68eb663bc3	 Annotation		/var/lib/jenkins/galaxy_tool_automation/webhook_tool_installation_38
-Install	40	Mon 17 Feb 02:09:48 UTC 2020	Already Installed	Production Installation	1/1		prokka	 crs4	latest	bf68eb663bc3	 Annotation		/var/lib/jenkins/galaxy_tool_automation/webhook_tool_installation_40
-Install	48	Tue 18 Feb 03:56:16 UTC 2020	Tests failed	Production Testing	2/2	0/1	tablemerge	 melpetera	latest	e44c5246247a	 Metabolomics		/var/lib/jenkins/galaxy_tool_automation/webhook_tool_installation_48
-Install	50	Wed 19 Feb 12:05:49 UTC 2020	Installed		2/2	2/2	tablemerge	 melpetera	latest	e44c5246247a	 Metabolomics		/var/lib/jenkins/galaxy_tool_automation/webhook_tool_installation_50
-Install	52	Fri 21 Feb 00:58:16 UTC 2020	Installed		0/0	0/0	bwa	 devteam	01ac0a5fedc3	01ac0a5fedc3	 Mapping		/var/lib/jenkins/galaxy_tool_automation/webhook_tool_installation_52
-Install	52	Fri 21 Feb 01:03:12 UTC 2020	Tests failed	Staging Testing	10/11		fastp	 iuc	1d8fe9bc4cb0	1d8fe9bc4cb0	 FASTA/FASTQ		/var/lib/jenkins/galaxy_tool_automation/webhook_tool_installation_52
-Install	52	Fri 21 Feb 01:10:41 UTC 2020	Tests failed	Production Testing	8/8	5/8	fastqc	 devteam	e7b2202befea	e7b2202befea	 FASTQ Quality Control		tmp/install/test_log.txt
-Install	52	Fri 21 Feb 01:10:46 UTC 2020	Already Installed	Production Installation			minimap2	 iuc	b3eab4b67562	b3eab4b67562	 Mapping		tmp/install/test_log.txt
-Install	52	Fri 21 Feb 01:16:37 UTC 2020	Already Installed	Production Installation	4/4		multiqc	 iuc	b2f1f75d49c4	b2f1f75d49c4	 FASTQ Quality Control		tmp/install/test_log.txt
-Install	52	Fri 21 Feb 01:16:41 UTC 2020	Already Installed	Production Installation			nanoplot	 iuc	645159bcee2d	645159bcee2d	 Nanopore		tmp/install/test_log.txt
-Install	52	Fri 21 Feb 01:28:14 UTC 2020	Tests failed	Staging Testing	16/34		picard	 devteam	f6ced08779c4	f6ced08779c4	 Picard		tmp/install/test_log.txt
-Install	52	Fri 21 Feb 01:31:01 UTC 2020	Installed		3/3	0/0	samtool_filter2	 devteam	649a225999a5	649a225999a5	 SAM/BAM		tmp/install/test_log.txt
-Install	52	Fri 21 Feb 01:37:54 UTC 2020	Installed		18/18	0/0	samtools_fastx	 iuc	a8d69aee190e	a8d69aee190e	 SAM/BAM		tmp/install/test_log.txt
-Install	52	Fri 21 Feb 01:38:01 UTC 2020	Already Installed	Production Installation			sra_tools	 iuc	f5ea3ce9b9b0	f5ea3ce9b9b0	 Get Data		tmp/install/test_log.txt
-Install	55	Fri 21 Feb 01:44:09 UTC 2020	Installed				fastp	 iuc	1d8fe9bc4cb0	1d8fe9bc4cb0	 FASTA/FASTQ		/var/lib/jenkins/galaxy_tool_automation/webhook_tool_installation_55
-Install	55	Fri 21 Feb 01:44:09 UTC 2020	Shed-tools error	Production Installation			fastp	 iuc	1d8fe9bc4cb0	1d8fe9bc4cb0	 FASTA/FASTQ		/var/lib/jenkins/galaxy_tool_automation/webhook_tool_installation_55
-Install	55	Fri 21 Feb 01:45:30 UTC 2020	Installed				fastqc	 devteam	e7b2202befea	e7b2202befea	 FASTQ Quality Control		tmp/install/install_log.txt
-Install	55	Fri 21 Feb 01:46:00 UTC 2020	Installed				picard	 devteam	f6ced08779c4	f6ced08779c4	 Picard		tmp/install/install_log.txt
-Install	55	Fri 21 Feb 01:46:01 UTC 2020	Shed-tools error	Production Installation			picard	 devteam	f6ced08779c4	f6ced08779c4	 Picard		tmp/install/install_log.txt
-Install	58	Fri 21 Feb 02:02:13 UTC 2020	Installed				fastp	 iuc	1d8fe9bc4cb0	1d8fe9bc4cb0	 FASTA/FASTQ		/var/lib/jenkins/galaxy_tool_automation/webhook_tool_installation_58
-Install	58	Fri 21 Feb 02:02:19 UTC 2020	Already Installed	Production Installation			fastqc	 devteam	e7b2202befea	e7b2202befea	 FASTQ Quality Control		/var/lib/jenkins/galaxy_tool_automation/webhook_tool_installation_58
-Install	58	Fri 21 Feb 02:02:23 UTC 2020	Already Installed	Production Installation			picard	 devteam	f6ced08779c4	f6ced08779c4	 Picard		/var/lib/jenkins/galaxy_tool_automation/webhook_tool_installation_58
-Install	60	Fri 21 Feb 02:40:11 UTC 2020	Tests failed	Production Testing	6/6	1/3	bandage	 iuc	b2860df42e16	b2860df42e16	 Assembly		/var/lib/jenkins/galaxy_tool_automation/webhook_tool_installation_60
-Install	60	Fri 21 Feb 02:41:55 UTC 2020	Installed		0/0	0/0	spades	 nml	b8c00ce5dfa0	b8c00ce5dfa0	 Assembly		tmp/install/test_log.txt
-Install	60	Fri 21 Feb 02:42:00 UTC 2020	Already Installed	Production Installation			unicycler	 iuc	88c240872a65	88c240872a65	 Assembly		tmp/install/test_log.txt
-Install	62	Fri 21 Feb 02:45:35 UTC 2020	Installed				bandage	 iuc	b2860df42e16	b2860df42e16	 Assembly		/var/lib/jenkins/galaxy_tool_automation/webhook_tool_installation_62
-Install	65	Sat 22 Feb 00:08:12 UTC 2020	Installed		3/3	3/3	collapse_collections	 nml	33151a38533a	33151a38533a	 Collection Operations		/var/lib/jenkins/galaxy_tool_automation/install_build_65_log.txt
-Install	65	Sat 22 Feb 00:11:23 UTC 2020	Installed		2/2	0/0	mafft	 rnateam	15974dd17515	15974dd17515	 Multiple Alignments		/var/lib/jenkins/galaxy_tool_automation/install_build_65_log.txt
-Install	65	Sat 22 Feb 00:21:58 UTC 2020	Installed		10/10	10/10	ncbi_acc_download	 iuc	1c58de56d587	1c58de56d587	 Get Data		/var/lib/jenkins/galaxy_tool_automation/install_build_65_log.txt
-Install	65	Sat 22 Feb 00:26:57 UTC 2020	Tests failed	Staging Testing	9/13		picard	 devteam	a1f0b3f4b781	a1f0b3f4b781	 Picard		/var/lib/jenkins/galaxy_tool_automation/install_build_65_log.txt
-Install	67	Sat 22 Feb 00:48:53 UTC 2020	Tests failed	Staging Testing	9/13		picard	 devteam	a1f0b3f4b781	a1f0b3f4b781	 Picard		/var/lib/jenkins/galaxy_tool_automation/install_build_67_log.txt
-Install	69	Sat 22 Feb 01:01:25 UTC 2020	Installed				picard	 devteam	a1f0b3f4b781	a1f0b3f4b781	 Picard		/var/lib/jenkins/galaxy_tool_automation/install_build_69_log.txt
-Install	71	Sat 22 Feb 02:36:04 UTC 2020	Tests failed	Staging Testing	1/2		lofreq_call	 iuc	03627f24605f	03627f24605f	 Variant Calling		/var/lib/jenkins/galaxy_tool_automation/install_build_71_log.txt
-Install	71	Sat 22 Feb 02:41:05 UTC 2020	Installed		2/2	2/2	lofreq_viterbi	 iuc	ecd80c7c3886	ecd80c7c3886	 Variant Calling		tmp/install/test_log.txt
-Install	71	Sat 22 Feb 02:52:27 UTC 2020	Installed		10/10	5/5	snpeff	 iuc	268d162b9c49	268d162b9c49	 Annotation		tmp/install/test_log.txt
-Install	71	Sat 22 Feb 02:54:13 UTC 2020	Installed		0/0	0/0	snpeff	 iuc	5a29ab10dba6	5a29ab10dba6	 Annotation		tmp/install/test_log.txt
-Install	71	Sat 22 Feb 02:54:16 UTC 2020	Shed-tools error	Staging Installation			snp_sift	 iuc	latest	5a29ab10dba6	 Annotation		tmp/install/test_log.txt
-Install	74	Sat 22 Feb 03:02:34 UTC 2020	Installed				lofreq_call	 iuc	03627f24605f	03627f24605f	 Variant Calling		/var/lib/jenkins/galaxy_tool_automation/install_build_74_log.txt
-Install	74	Sat 22 Feb 03:02:39 UTC 2020	Already Installed	Production Installation			snpsift	 iuc	09d6806c609e	09d6806c609e	 Annotation		/var/lib/jenkins/galaxy_tool_automation/install_build_74_log.txt
-Install	76	Sat 22 Feb 04:18:17 UTC 2020	Installed		0/0	0/0	emboss_5	 devteam	dba489bfcd62	dba489bfcd62	 EMBOSS		/var/lib/jenkins/galaxy_tool_automation/install_build_76_log.txt
-Install	78	Sat 22 Feb 06:40:06 UTC 2020	Tests failed	Production Testing	1/1	0/1	hyphy_absrel	 iuc	f73435dc282b	f73435dc282b	 Phylogenetics		/var/lib/jenkins/galaxy_tool_automation/install_build_78_log.txt
-Install	78	Sat 22 Feb 06:45:23 UTC 2020	Installed		1/1	1/1	hyphy_gard	 iuc	6283babe736e	6283babe736e	 Phylogenetics		tmp/install/test_log.txt
-Install	80	Sat 22 Feb 06:51:30 UTC 2020	Installed				hyphy_absrel	 iuc	f73435dc282b	f73435dc282b	 Phylogenetics		/var/lib/jenkins/galaxy_tool_automation/install_build_80_log.txt
+Category	Build Num.	Date (AEST)	Name	New Tool	Status	Owner	Installed Revision	Requested Revision	Failing Step	Staging tests passed	Production tests passed	Section Label	Tool Shed URL	Log Path
+Install	7	11/02/20 13:30:28	megahit	True	Installed	iuc	de387b2b2803	latest		4/4	4/4	Assembly	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/install_build_7_log.txt
+Install	19	12/02/20 14:20:18	trna_prediction	True	Tests failed	bgruening	358f58401cd6	latest	Production Testing	5/5	2/5	Annotation	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/install_build_19_log.txt
+Install	23	12/02/20 15:06:39	trna_prediction	True	Installed	bgruening	358f58401cd6	latest		5/5	5/5	Annotation	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/install_build_23_log.txt
+Install	31	12/02/20 16:19:18	racon	True	Installed	bgruening	aa39b19ca11e	latest		2/2	2/2	Assembly	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/install_build_31_log.txt
+Install	31	12/02/20 16:34:43	sistr_cmd	True	Installed	nml	5c8ff92e38a9	latest		4/4	4/4	Bacterial Typing	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/install_build_31_log.txt
+Update	2	14/02/20 14:04:16	abricate	False	Shed-tools error	iuc	4efdca267d51	latest	Staging Testing			Annotation	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	14/02/20 14:04:18	annotatemyids	False	Shed-tools error	iuc	4efdca267d51	latest	Staging Installation			Annotation	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	14/02/20 14:04:19	barrnap	False	Shed-tools error	iuc	4efdca267d51	latest	Staging Installation			Annotation	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	14/02/20 14:04:21	bcftools_annotate	False	Shed-tools error	iuc	4efdca267d51	latest	Staging Installation			VCF/BCF	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	14/02/20 14:04:22	bcftools_call	False	Shed-tools error	iuc	4efdca267d51	latest	Staging Installation			VCF/BCF	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	14/02/20 14:04:24	bcftools_cnv	False	Shed-tools error	iuc	4efdca267d51	latest	Staging Installation			VCF/BCF	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	14/02/20 14:07:02	bcftools_concat	False	Tests failed	iuc	874cc12ae316	latest	Staging Testing	0/4		VCF/BCF	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	14/02/20 14:09:25	bcftools_consensus	False	Tests failed	iuc	e522022137f6	latest	Staging Testing	2/3		VCF/BCF	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	14/02/20 14:20:45	bcftools_convert_from_vcf	False	Installed	iuc	7ca6120cb2a4	latest		5/5	5/5	VCF/BCF	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	14/02/20 14:23:20	bcftools_convert_to_vcf	False	Tests failed	iuc	8bb5efd7a3dd	latest	Staging Testing	5/7		VCF/BCF	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	14/02/20 14:25:07	bcftools_csq	False	Tests failed	iuc	f10f5b4e7854	latest	Staging Testing	1/2		VCF/BCF	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	14/02/20 14:33:17	bcftools_filter	False	Installed	iuc	0117c6d2ab96	latest		9/9	9/9	VCF/BCF	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	14/02/20 14:36:57	bcftools_gtcheck	False	Installed	iuc	fd1030bc93d9	latest		1/1	1/1	VCF/BCF	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	14/02/20 14:40:52	bcftools_isec	False	Installed	iuc	1fd4fd0c6ee3	latest		1/1	1/1	VCF/BCF	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	14/02/20 14:49:08	bcftools_merge	False	Installed	iuc	9473302f4588	latest		6/6	6/6	VCF/BCF	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	14/02/20 14:52:01	bcftools_mpileup	False	Tests failed	iuc	f65383c7ed49	latest	Staging Testing	5/6		VCF/BCF	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	14/02/20 14:54:34	bcftools_norm	False	Tests failed	iuc	a62e934346f5	latest	Staging Testing	6/7		VCF/BCF	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	14/02/20 15:02:41	bcftools_plugin_counts	False	Installed	iuc	b781fa08aa3c	latest		1/1	1/1	VCF/BCF	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	14/02/20 15:07:10	bcftools_plugin_dosage	False	Installed	iuc	2ee1392161a6	latest		1/1	1/1	VCF/BCF	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	14/02/20 15:10:28	bcftools_plugin_fill_an_ac	False	Installed	iuc	3bdc901c18e2	latest		1/1	1/1	VCF/BCF	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	14/02/20 15:15:08	bcftools_plugin_fill_tags	False	Installed	iuc	cbfa272e5a6a	latest		2/2	2/2	VCF/BCF	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	14/02/20 15:18:36	bcftools_plugin_fixploidy	False	Installed	iuc	ceb03be4f31b	latest		1/1	1/1	VCF/BCF	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	14/02/20 15:21:58	bcftools_plugin_impute_info	False	Installed	iuc	2c53c8974cb3	latest		1/1	1/1	VCF/BCF	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	14/02/20 15:25:32	bcftools_plugin_mendelian	False	Installed	iuc	98664595dedf	latest		2/2	2/2	VCF/BCF	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	14/02/20 15:29:01	bcftools_plugin_missing2ref	False	Installed	iuc	5d98fe06e4ae	latest		1/1	1/1	VCF/BCF	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	14/02/20 15:32:32	bcftools_plugin_setgt	False	Installed	iuc	76fe872413c2	latest		1/1	1/1	VCF/BCF	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	14/02/20 15:36:59	bcftools_plugin_tag2tag	False	Installed	iuc	aa998b9898b1	latest		1/1	1/1	VCF/BCF	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	14/02/20 15:41:07	bcftools_query	False	Installed	iuc	4eb04768cd49	latest		1/1	1/1	VCF/BCF	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	14/02/20 15:44:22	bcftools_query_list_samples	False	Installed	iuc	242753783b68	latest		1/1	1/1	VCF/BCF	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	14/02/20 15:48:24	bcftools_reheader	False	Installed	iuc	982bc0e518c8	latest		3/3	3/3	VCF/BCF	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	14/02/20 15:52:20	bcftools_roh	False	Installed	iuc	cb681f21e670	latest		2/2	2/2	VCF/BCF	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	14/02/20 16:23:25	bcftools_stats	False	Tests failed	iuc	9c0028888512	latest	Staging Testing	2/3		VCF/BCF	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	14/02/20 16:31:42	bcftools_view	False	Installed	iuc	c4a9b38b435d	latest		11/11	11/11	VCF/BCF	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	14/02/20 16:54:57	bedtools	False	Tests failed	iuc	b28e0cfa7ba1	latest	Staging Testing	101/104		BED	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	14/02/20 16:59:23	biom_add_metadata	False	Installed	iuc	e3cbd2287f63	latest		1/1	1/1	Convert Formats	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	14/02/20 17:04:25	biom_convert	False	Installed	iuc	584008e574b2	latest		3/3	3/3	Convert Formats	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	14/02/20 17:10:38	busco	False	Tests failed	iuc	1e62c28ba91d	latest	Staging Testing	0/5		Assembly	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	14/02/20 18:15:48	data_manager_hisat2_index_builder	False	Errored	iuc	8eac26f44d29	latest	Production Installation	0/0		None	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	14/02/20 18:18:53	data_manager_snpeff	False	Installed	iuc	08d7998c3afb	latest		0/0	0/0	None	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	14/02/20 18:22:57	describe_samples	False	Installed	iuc	8bfbdb039d4e	latest		1/1	1/1	RNA-seq	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	14/02/20 18:59:22	edger	False	Installed	iuc	334ce9b1bac5	latest		12/12	11/11	RNA-seq	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	14/02/20 19:13:59	fasttree	False	Installed	iuc	ef46a404db96	latest		2/2	2/2	Metagenomic analyses	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	14/02/20 19:16:40	featurecounts	False	Tests failed	iuc	a37612abf7f9	latest	Staging Testing	2/3		RNA-seq	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	14/02/20 19:19:04	gatk2	False	Tests failed	iuc	35c00763cb5c	latest	Staging Testing	0/7		GATK Tools	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	14/02/20 19:23:13	gemini_actionable_mutations	False	Installed	iuc	f62ed0e84665	latest		1/1	1/1	Gemini Tools	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	14/02/20 19:27:42	gemini_amend	False	Installed	iuc	b8b120a4cef7	latest		1/1	1/1	Gemini Tools	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	14/02/20 19:31:06	gemini_annotate	False	Tests failed	iuc	567837ca5f33	latest	Staging Testing	9/10		Gemini Tools	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	14/02/20 19:38:41	gemini_burden	False	Installed	iuc	12112e6e5ea4	latest		5/5	5/5	Gemini Tools	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	14/02/20 19:46:06	gemini_db_info	False	Installed	iuc	496124e09f82	latest		5/5	5/5	Gemini Tools	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	14/02/20 19:47:38	gemini_fusions	False	Tests failed	iuc	8a68d9a33023	latest	Staging Testing	0/1		Gemini Tools	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	14/02/20 19:51:20	gemini_gene_wise	False	Installed	iuc	4f55668547fc	latest		1/1	1/1	Gemini Tools	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	14/02/20 19:52:35	gemini_interactions	False	Tests failed	iuc	ce6db5020339	latest	Staging Testing	0/2		Gemini Tools	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	14/02/20 19:54:40	gemini_load	False	Tests failed	iuc	64132aa2d62a	latest	Staging Testing	0/10		Gemini Tools	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	14/02/20 19:57:55	gemini_lof_sieve	False	Installed	iuc	295814260d95	latest		1/1	1/1	Gemini Tools	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	14/02/20 19:59:18	gemini_pathways	False	Tests failed	iuc	d5ec6384a3be	latest	Staging Testing	0/1		Gemini Tools	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	14/02/20 20:03:06	gemini_qc	False	Installed	iuc	137a3e07062e	latest		1/1	1/1	Gemini Tools	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	14/02/20 20:07:15	gemini_query	False	Installed	iuc	840fb4850be3	latest		1/1	1/1	Gemini Tools	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	14/02/20 20:14:03	gemini_roh	False	Installed	iuc	60f477e3c79b	latest		1/1	1/1	Gemini Tools	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	14/02/20 20:17:50	gemini_set_somatic	False	Installed	iuc	3208dd1dbfe2	latest		1/1	1/1	Gemini Tools	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	14/02/20 20:22:54	gemini_stats	False	Installed	iuc	73b103195e2a	latest		2/2	2/2	Gemini Tools	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	14/02/20 20:29:44	gemini_windower	False	Installed	iuc	c15b615cdc3b	latest		1/1	1/1	Gemini Tools	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	14/02/20 20:33:14	gffcompare	False	Tests failed	iuc	0f710191a66d	latest	Staging Testing	6/8		RNA-seq	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	14/02/20 20:37:46	ggplot2_heatmap	False	Installed	iuc	de002ba2b849	latest		1/1	1/1	Graph/Display Data	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	14/02/20 20:42:38	hisat2	False	Tests failed	iuc	0c16cad5e03b	latest	Staging Testing	2/16		RNA-seq	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	14/02/20 21:07:06	iqtree	False	Installed	iuc	973a28be3b7f	latest		5/5	5/5	Phylogenetics	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	14/02/20 21:12:39	jbrowse	False	Tests failed	iuc	667e17248bfe	latest	Staging Testing	9/10		Graph/Display Data	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	14/02/20 21:15:25	kallisto_pseudo	False	Tests failed	iuc	5ae5c312d718	latest	Staging Testing	4/5		RNA-seq	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	14/02/20 21:18:27	kallisto_quant	False	Tests failed	iuc	60f888039fb2	latest	Staging Testing	5/7		RNA-seq	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	14/02/20 21:39:27	limma_voom	False	Installed	iuc	0921444c832d	latest		11/11	11/11	RNA-seq	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	15/02/20 01:29:51	macs2	False	Installed	iuc	424aefbd7777	latest		24/24	12/12	ChiP-seq	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	15/02/20 01:54:40	multiqc	False	Tests failed	iuc	3d93dd18d9f8	latest	Staging Testing	4/5		FASTQ Quality Control	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	15/02/20 02:00:49	ngsutils_bam_filter	False	Installed	iuc	2e957d4c4b95	latest		6/6	6/6	FASTA/FASTQ	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	15/02/20 02:11:04	quast	False	Installed	iuc	ebb0dcdb621a	latest		3/3	3/3	Assembly	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	15/02/20 02:21:16	raxml	False	Installed	iuc	a4b71be30c3c	latest		2/2	2/2	Phylogenetics	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	15/02/20 02:25:55	rgrnastar	False	Tests failed	iuc	b9e04854e2bb	latest	Staging Testing	9/11		RNA-seq	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	15/02/20 02:38:30	snippy	False	Tests failed	iuc	3fe8ef358d66	latest	Staging Testing	7/9		Variant Calling	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	15/02/20 02:57:48	snpeff	False	Tests failed	iuc	74aebe30fb52	latest	Production Testing	13/13	9/10	Annotation	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	15/02/20 03:11:15	sra_tools	False	Installed	iuc	f5ea3ce9b9b0	latest		14/14	8/8	Get Data	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	15/02/20 03:15:56	stringtie	False	Tests failed	iuc	eba36e001f45	latest	Staging Testing	11/12		RNA-seq	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	15/02/20 03:39:11	trinity_abundance_estimates_to_matrix	False	Installed	iuc	59fff1388bc2	latest		7/7	7/7	RNA-seq	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	15/02/20 03:54:03	trinity_align_and_estimate_abundance	False	Installed	iuc	56162e446004	latest		4/4	5/5	RNA-seq	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	15/02/20 04:19:07	trinity_analyze_diff_expr	False	Installed	iuc	56ac80587187	latest		3/3	3/3	RNA-seq	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	15/02/20 04:25:57	trinity_contig_exn50_statistic	False	Installed	iuc	62b05e565a45	latest		1/1	1/1	RNA-seq	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	15/02/20 04:41:34	trinity_define_clusters_by_cutting_tree	False	Installed	iuc	05ab8d5e04a2	latest		1/1	1/1	RNA-seq	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	15/02/20 04:46:41	trinity_filter_low_expr_transcripts	False	Installed	iuc	42c5172815f7	latest		3/3	3/3	RNA-seq	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	15/02/20 04:50:11	trinity_gene_to_trans_map	False	Installed	iuc	297a1c03c702	latest		1/1	1/1	RNA-seq	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	15/02/20 04:58:34	trinity	False	Tests failed	iuc	d84caa5a98ad	latest	Production Testing	5/5	2/5	RNA-seq	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	15/02/20 05:29:54	trinity_run_de_analysis	False	Installed	iuc	04936df18de3	latest		3/3	3/3	RNA-seq	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Update	2	15/02/20 05:46:35	trinity_samples_qccheck	False	Installed	iuc	7377140e39f8	latest		1/1	1/1	RNA-seq	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/update_build_2_log.txt
+Install	36	17/02/20 11:27:19	prokka	False	Tests failed	crs4	bf68eb663bc3	latest	Staging Testing	0/1		Annotation	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/install_build_36_log.txt
+Install	38	17/02/20 12:01:31	prokka	False	Tests failed	crs4	bf68eb663bc3	latest	Production Testing	1/1	0/1	Annotation	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/install_build_38_log.txt
+Install	40	17/02/20 12:09:48	prokka	False	Already Installed	crs4	bf68eb663bc3	latest	Production Installation	1/1		Annotation	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/install_build_40_log.txt
+Install	48	18/02/20 13:56:16	tablemerge	True	Tests failed	melpetera	e44c5246247a	latest	Production Testing	2/2	0/1	Metabolomics	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/install_build_48_log.txt
+Install	50	19/02/20 22:05:49	tablemerge	True	Installed	melpetera	e44c5246247a	latest		2/2	2/2	Metabolomics	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/install_build_50_log.txt
+Install	52	21/02/20 10:58:16	bwa	False	Installed	devteam	01ac0a5fedc3	01ac0a5fedc3		0/0	0/0	Mapping	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/install_build_52_log.txt
+Install	52	21/02/20 11:03:12	fastp	True	Tests failed	iuc	1d8fe9bc4cb0	1d8fe9bc4cb0	Staging Testing	10/11		FASTA/FASTQ	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/install_build_52_log.txt
+Install	52	21/02/20 11:10:41	fastqc	False	Tests failed	devteam	e7b2202befea	e7b2202befea	Production Testing	8/8	5/8	FASTQ Quality Control	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/install_build_52_log.txt
+Install	52	21/02/20 11:10:46	minimap2	True	Already Installed	iuc	b3eab4b67562	b3eab4b67562	Production Installation			Mapping	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/install_build_52_log.txt
+Install	52	21/02/20 11:16:37	multiqc	True	Already Installed	iuc	b2f1f75d49c4	b2f1f75d49c4	Production Installation	4/4		FASTQ Quality Control	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/install_build_52_log.txt
+Install	52	21/02/20 11:16:41	nanoplot	False	Already Installed	iuc	645159bcee2d	645159bcee2d	Production Installation			Nanopore	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/install_build_52_log.txt
+Install	52	21/02/20 11:28:14	picard	False	Tests failed	devteam	f6ced08779c4	f6ced08779c4	Staging Testing	16/34		Picard	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/install_build_52_log.txt
+Install	52	21/02/20 11:31:01	samtool_filter2	False	Installed	devteam	649a225999a5	649a225999a5		3/3	0/0	SAM/BAM	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/install_build_52_log.txt
+Install	52	21/02/20 11:37:54	samtools_fastx	True	Installed	iuc	a8d69aee190e	a8d69aee190e		18/18	0/0	SAM/BAM	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/install_build_52_log.txt
+Install	52	21/02/20 11:38:01	sra_tools	False	Already Installed	iuc	f5ea3ce9b9b0	f5ea3ce9b9b0	Production Installation			Get Data	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/install_build_52_log.txt
+Install	55	21/02/20 11:44:09	fastp	True	Installed	iuc	1d8fe9bc4cb0	1d8fe9bc4cb0				FASTA/FASTQ	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/install_build_55_log.txt
+Install	55	21/02/20 11:44:09	fastp	True	Shed-tools error	iuc	1d8fe9bc4cb0	1d8fe9bc4cb0	Production Installation			FASTA/FASTQ	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/install_build_55_log.txt
+Install	55	21/02/20 11:45:30	fastqc	False	Installed	devteam	e7b2202befea	e7b2202befea				FASTQ Quality Control	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/install_build_55_log.txt
+Install	55	21/02/20 11:46:00	picard	False	Installed	devteam	f6ced08779c4	f6ced08779c4				Picard	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/install_build_55_log.txt
+Install	55	21/02/20 11:46:01	picard	False	Shed-tools error	devteam	f6ced08779c4	f6ced08779c4	Production Installation			Picard	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/install_build_55_log.txt
+Install	58	21/02/20 12:02:13	fastp	True	Installed	iuc	1d8fe9bc4cb0	1d8fe9bc4cb0				FASTA/FASTQ	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/install_build_58_log.txt
+Install	58	21/02/20 12:02:19	fastqc	False	Already Installed	devteam	e7b2202befea	e7b2202befea	Production Installation			FASTQ Quality Control	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/install_build_58_log.txt
+Install	58	21/02/20 12:02:23	picard	False	Already Installed	devteam	f6ced08779c4	f6ced08779c4	Production Installation			Picard	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/install_build_58_log.txt
+Install	60	21/02/20 12:40:11	bandage	True	Tests failed	iuc	b2860df42e16	b2860df42e16	Production Testing	6/6	1/3	Assembly	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/install_build_60_log.txt
+Install	60	21/02/20 12:41:55	spades	False	Installed	nml	b8c00ce5dfa0	b8c00ce5dfa0		0/0	0/0	Assembly	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/install_build_60_log.txt
+Install	60	21/02/20 12:42:00	unicycler	False	Already Installed	iuc	88c240872a65	88c240872a65	Production Installation			Assembly	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/install_build_60_log.txt
+Install	62	21/02/20 12:45:35	bandage	True	Installed	iuc	b2860df42e16	b2860df42e16				Assembly	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/install_build_62_log.txt
+Install	65	22/02/20 10:08:12	collapse_collections	False	Installed	nml	33151a38533a	33151a38533a		3/3	3/3	Collection Operations	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/install_build_65_log.txt
+Install	65	22/02/20 10:11:23	mafft	False	Installed	rnateam	15974dd17515	15974dd17515		2/2	0/0	Multiple Alignments	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/install_build_65_log.txt
+Install	65	22/02/20 10:21:58	ncbi_acc_download	True	Installed	iuc	1c58de56d587	1c58de56d587		10/10	10/10	Get Data	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/install_build_65_log.txt
+Install	65	22/02/20 10:26:57	picard	False	Tests failed	devteam	a1f0b3f4b781	a1f0b3f4b781	Staging Testing	9/13		Picard	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/install_build_65_log.txt
+Install	67	22/02/20 10:48:53	picard	False	Tests failed	devteam	a1f0b3f4b781	a1f0b3f4b781	Staging Testing	9/13		Picard	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/install_build_67_log.txt
+Install	69	22/02/20 11:01:25	picard	False	Installed	devteam	a1f0b3f4b781	a1f0b3f4b781				Picard	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/install_build_69_log.txt
+Install	71	22/02/20 12:36:04	lofreq_call	True	Tests failed	iuc	03627f24605f	03627f24605f	Staging Testing	1/2		Variant Calling	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/install_build_71_log.txt
+Install	71	22/02/20 12:41:05	lofreq_viterbi	True	Installed	iuc	ecd80c7c3886	ecd80c7c3886		2/2	2/2	Variant Calling	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/install_build_71_log.txt
+Install	71	22/02/20 12:52:27	snpeff	False	Installed	iuc	268d162b9c49	268d162b9c49		10/10	5/5	Annotation	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/install_build_71_log.txt
+Install	71	22/02/20 12:54:13	snpeff	False	Installed	iuc	5a29ab10dba6	5a29ab10dba6		0/0	0/0	Annotation	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/install_build_71_log.txt
+Install	71	22/02/20 12:54:16	snp_sift	False	Shed-tools error	iuc	5a29ab10dba6	latest	Staging Installation			Annotation	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/install_build_71_log.txt
+Install	74	22/02/20 13:02:34	lofreq_call	True	Installed	iuc	03627f24605f	03627f24605f				Variant Calling	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/install_build_74_log.txt
+Install	74	22/02/20 13:02:39	snpsift	False	Already Installed	iuc	09d6806c609e	09d6806c609e	Production Installation			Annotation	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/install_build_74_log.txt
+Install	76	22/02/20 14:18:17	emboss_5	False	Installed	devteam	dba489bfcd62	dba489bfcd62		0/0	0/0	EMBOSS	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/install_build_76_log.txt
+Install	78	22/02/20 16:40:06	hyphy_absrel	True	Tests failed	iuc	f73435dc282b	f73435dc282b	Production Testing	1/1	0/1	Phylogenetics	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/install_build_78_log.txt
+Install	78	22/02/20 16:45:23	hyphy_gard	True	Installed	iuc	6283babe736e	6283babe736e		1/1	1/1	Phylogenetics	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/install_build_78_log.txt
+Install	80	22/02/20 16:51:30	hyphy_absrel	True	Installed	iuc	f73435dc282b	f73435dc282b				Phylogenetics	toolshed.g2.bx.psu.edu	/var/lib/jenkins/galaxy_tool_automation/install_build_80_log.txt
