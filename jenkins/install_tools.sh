@@ -128,8 +128,6 @@ install_tools() {
     echo -e $LOG_ENTRY >> $AUTOMATED_TOOL_INSTALLATION_LOG;
   fi
 
-  exit 0; # DELETE THIS LINE!!!
-
   COMMIT_FILES=("$AUTOMATED_TOOL_INSTALLATION_LOG")
 
   # Update tool .yml files to reflect current state of galaxy tools
