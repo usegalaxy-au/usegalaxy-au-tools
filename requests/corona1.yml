@@ -1,0 +1,52 @@
+tools:
+    - name: fastp
+      owner: iuc
+      revisions:
+          - 1d8fe9bc4cb0
+      tool_panel_section_label: FASTA/FASTQ
+    - name: sra_tools
+      owner: iuc
+      revisions:
+          - f5ea3ce9b9b0
+      tool_panel_section_label: Get Data
+    - name: nanoplot
+      owner: iuc
+      revisions:
+          - 645159bcee2d
+      tool_panel_section_label: Nanopore
+    - name: fastqc
+      owner: devteam
+      revisions:
+          - e7b2202befea
+      tool_panel_section_label: FASTQ Quality Control
+    - name: minimap2
+      owner: iuc
+      revisions:
+          - b3eab4b67562
+      tool_panel_section_label: Mapping
+    - name: multiqc
+      owner: iuc
+      revisions:
+          - b2f1f75d49c4
+      tool_panel_section_label: FASTQ Quality Control
+    - name: bwa
+      owner: devteam
+      revisions:
+          - 01ac0a5fedc3
+      tool_panel_section_label: Mapping
+    - name: samtool_filter2
+      owner: devteam
+      revisions:
+          - 649a225999a5
+      tool_panel_section_label: SAM/BAM
+    - name: picard
+      owner: devteam
+      revisions:
+          - f6ced08779c4
+      tool_panel_section_label: Picard
+    - name: samtools_fastx
+      owner: iuc
+      revisions:
+          - a8d69aee190e
+      tool_panel_section_label: SAM/BAM
+
