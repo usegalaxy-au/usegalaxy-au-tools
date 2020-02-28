@@ -308,7 +308,7 @@ test_tool() {
   SERVER="$1"
   set_url $SERVER
   STEP="$(title $SERVER) Testing"; # Production Testing or Staging Testing
-  TEST_JSON="$LOG_DIR/${MODE}_build_${BUILD_NUMBER}_$(lower $SERVER)_test.json"
+  TEST_JSON_LOG="$LOG_DIR/${MODE}_build_${BUILD_NUMBER}_$(lower $SERVER)_test.json"
 
   # Special case: If package is already installed on staging we skip tests and install on production
   if [ $SERVER = "STAGING" ] && [ $INSTALLATION_STATUS = "Skipped" ]; then
@@ -320,7 +320,8 @@ test_tool() {
   fi
 
   TEST_LOG="$TMP/test_log.txt"
-  rm -f $TEST_LOG ||:;  # delete file if it exists
+  TEST_JSON="$TMP/test.json"
+  rm -f $TEST_LOG $TEST_JSON ||:;  # delete file if it exists
 
   sleep 30s; # Allow threads to catch up so that all files are available for testing
 
@@ -334,6 +335,7 @@ test_tool() {
     exit_installation 1
     return 1
   }
+  pretty_json $TEST_JSON >> $TEST_JSON_LOG
 
   if [ $BASH_V = 4 ]; then
     # normal regex
@@ -454,6 +456,10 @@ title() {
 
 lower() {
   python -c "print('$1'.lower())"
+}
+
+pretty_json() {
+ python -mjson.tool "$1"
 }
 
 install_tools
