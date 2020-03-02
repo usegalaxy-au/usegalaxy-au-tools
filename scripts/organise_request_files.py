@@ -6,7 +6,7 @@ import os
 from bioblend.galaxy import GalaxyInstance
 from bioblend.galaxy.toolshed import ToolShedClient
 
-trusted_owners = ['iuc']
+trusted_owners = ['iuc', 'devteam', 'simon-gladman', 'nml', 'bgruening']
 
 
 def latest_revision_installed(repos, tool):
