@@ -51,6 +51,27 @@ export BASH_V=$BASH_V
 export MODE=$MODE
 export FORCE=$FORCE
 
+activate_virtualenv() {
+  # Activate the virtual environment on jenkins. If this script is being run for
+  # the first time we will need to set up the virtual environment
+  # The venv is set up a level below the workspace so that we do not have
+  # to rebuild it each time the script is run
+  VIRTUALENV="../.venv"
+  REQUIREMENTS_FILE="jenkins/requirements.txt"
+  CACHED_REQUIREMENTS_FILE="$VIRTUALENV/cached_requirements.txt"
+
+  [ ! -d $VIRTUALENV ] && virtualenv $VIRTUALENV
+  # shellcheck source=../.venv/bin/activate
+  . "$VIRTUALENV/bin/activate"
+
+  # if requirements change, reinstall requirements
+  [ ! -f $CACHED_REQUIREMENTS_FILE ] && touch $CACHED_REQUIREMENTS_FILE
+  if [ "$(diff $REQUIREMENTS_FILE $CACHED_REQUIREMENTS_FILE)" ]; then
+    pip install -r $REQUIREMENTS_FILE
+    cp $REQUIREMENTS_FILE $CACHED_REQUIREMENTS_FILE
+  fi
+}
+
 jenkins_tool_installation() {
   if [ $MODE = "install" ]; then
     # First check whether changed files are in the path of tool requests, that is within the requests folder but not within
@@ -80,8 +101,10 @@ jenkins_tool_installation() {
     fi
   fi
 
-  echo "Saving output to $LOG_FILE"
   if [ $LOCAL_ENV = 0 ]; then
+    activate_virtualenv
+
+    echo "Saving output to $LOG_FILE"
     bash jenkins/install_tools.sh | tee $LOG_FILE
   else
     # Do not save a log file when running locally
