@@ -115,5 +115,4 @@ jenkins_tool_installation() {
 # Always run locally, if running on Jenkins run only when switched on (1)
 if [ $LOCAL_ENV = 1 ] || [ $RUN_SCRIPT_ON_JENKINS = 1 ]; then
   jenkins_tool_installation "${FILE_ARGS[@]}"
-  [ $MODE = "update" ] && bash jenkins/report.sh
 fi
