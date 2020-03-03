@@ -85,7 +85,7 @@ def write_output_file(path, tool):
         path = path + '/'
     [revision] = tool['revisions'] if 'revisions' in tool.keys() else ['latest']
     file_path = '%s%s@%s.yml' % (path, tool['name'], revision)
-    sys.stderr.write('writing file ' + file_path)
+    sys.stderr.write('writing file %s\n' % file_path)
     with open(file_path, 'w') as outfile:
         outfile.write(yaml.dump({'tools': [tool]}))
 
