@@ -15,13 +15,12 @@ valid_section_labels = [
     'ChiP-seq', 'Collection Operations', 'Convert Formats', 'DeepTools',
     'EMBOSS', 'Extract Features', 'FASTA/FASTQ', 'FASTQ Quality Control',
     'Fetch Sequences/Alignments', 'Filter and Sort', 'GATK Tools',
-    'GATK Tools 1.4', 'Gemini Tools', 'Genome Editing', 'Get Data',
-    'Get scRNAseq data', 'Join, Subtract and Group', 'Lift-Over', 'Mapping',
-    'Metabolomics', 'Metagenomic analyses', 'Monocl3', 'Mothur',
+    'Gemini Tools', 'Genome Editing', 'Get Data', 'Graph/Display Data',
+    'HCA-Single Cell', 'Join, Subtract and Group', 'Mapping', 'Metabolomics',
+    'Metagenomic Analyses', 'Metagenomic analyses', 'MiModD', 'Mothur',
     'Multiple Alignments', 'Nanopore', 'Operate on Genomic Intervals',
     'Phylogenetics', 'Picard', 'Proteomics', 'RNA-seq', 'RSeQC', 'SAM/BAM',
-    'SC3', 'SCCAF', 'SCMap', 'Scanpy', 'Send Data', 'Seurat',
-    'Single Cell Utils and Viz', 'Statistics', 'Text Manipulation', 'VCF/BCF',
+    'Send Data', 'Statistics', 'Text Manipulation', 'VCF/BCF',
     'Variant Calling', 'Variant Detection',
 ]
 
