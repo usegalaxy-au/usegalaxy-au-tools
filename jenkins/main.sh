@@ -105,7 +105,7 @@ jenkins_tool_installation() {
     activate_virtualenv
 
     echo "Saving output to $LOG_FILE"
-    bash jenkins/install_tools.sh | tee $LOG_FILE
+    bash jenkins/install_tools.sh 2>&1 | tee $LOG_FILE
   else
     # Do not save a log file when running locally
     bash jenkins/install_tools.sh

@@ -4,8 +4,8 @@ VIRTUALENV="../.venv"
 . "$VIRTUALENV/bin/activate"
 
 REPORT_DATE=$(env TZ="Australia/Queensland" date "+%Y-%m-%d")
-REPORT_FILE="${REPORT_DATE}_tool_updates.md"
-BRANCH_NAME="jenkins/${REPORT_DATE}_tool_updates"
+REPORT_FILE="${REPORT_DATE}-tool-updates.md"
+BRANCH_NAME="jenkins/${REPORT_DATE}-tool-updates"
 
 command="python scripts/write_report_from_log.py -j $BUILD_NUMBER  -o $REPORT_FILE -d $REPORT_DATE"
 echo $command
