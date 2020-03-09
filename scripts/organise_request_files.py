@@ -6,16 +6,7 @@ import os
 from bioblend.galaxy import GalaxyInstance
 from bioblend.galaxy.toolshed import ToolShedClient
 
-trusted_owners = ['iuc', 'devteam', 'simon-gladman', 'nml', 'bgruening']
-
-
-def latest_revision_installed(repos, tool):
-    matching_repos = [r for r in repos if r['name'] == tool['name'] and r['owner'] == tool['owner'] and r['changeset_revision'] in tool['revisions']]
-    latest = False
-    for mr in matching_repos:
-        if mr['tool_shed_status']['latest_installable_revision'] == 'True':
-            latest = True
-    return latest
+trusted_owners_file = 'trusted_owners.yml'
 
 
 def main():
@@ -57,14 +48,19 @@ def main():
             else:
                 tools_by_entry.append(content)
 
-    if update:  # update tools with trusted owners
+    if update:  # update tools with trusted owners where updates are available
         if not production_url and production_api_key:
             raise Exception('--production_url and --production_api_key arguments are required when --update_exisiting flag is used')
+
+        with open(trusted_owners_file) as infile:
+            trusted_owners = yaml.safe_load(infile.read())['trusted_owners']
+
+        # load repository data to check which tools have updates available
         gal = GalaxyInstance(production_url, production_api_key)
         cli = ToolShedClient(gal)
         u_repos = cli.get_repositories()
 
-        tools_by_entry = [t for t in tools_by_entry if t['owner'] in trusted_owners if not latest_revision_installed(u_repos, t)]
+        tools_by_entry = [t for t in tools_by_entry if is_trusted_tool(trusted_owners, t) and not latest_revision_installed(u_repos, t)]
         for tool in tools_by_entry:
             for key in tool.keys():  # delete extraneous keys, we want latest revision
                 if key not in ['name', 'owner', 'tool_panel_section_label', 'tool_shed_url']:
@@ -78,6 +74,26 @@ def main():
                 write_output_file(path=path, tool=new_tool)
         else:
             write_output_file(path=path, tool=tool)
+
+
+def is_trusted_tool(trusted_owners, tool):
+    trusted = False
+    matching_owners = [o['owner'] for o in trusted_owners if tool['owner'] == o['owner']]
+    if matching_owners:
+        [owner] = matching_owners
+        blacklist = owner.get('blacklist')
+        if not blacklist or tool['name'] not in blacklist:
+            trusted = True
+    return trusted
+
+
+def latest_revision_installed(repos, tool):
+    matching_repos = [r for r in repos if r['name'] == tool['name'] and r['owner'] == tool['owner'] and r['changeset_revision'] in tool['revisions']]
+    latest = False
+    for mr in matching_repos:
+        if mr['tool_shed_status']['latest_installable_revision'] == 'True':
+            latest = True
+    return latest
 
 
 def write_output_file(path, tool):
