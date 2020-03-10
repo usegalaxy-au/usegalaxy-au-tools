@@ -79,7 +79,7 @@ def main(current_build_number, begin_build, end_build, report_file='report.md', 
         report.write(get_report_header(date))
         report.write('The following tools have been installed/updated on Galaxy Australia\n\n')
         for section in sorted(installed_tools.keys()):
-            report.write('### %s\n' % section)
+            report.write('\n### %s\n\n' % section)
             lines = []
             for item in sorted(installed_tools[section], key=lambda x: x['New Tool'], reverse=True):
                 shed_url = item['Tool Shed URL'] or default_tool_shed
