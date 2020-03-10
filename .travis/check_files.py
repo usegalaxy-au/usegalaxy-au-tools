@@ -18,7 +18,7 @@ valid_section_labels = [
     'Extract Features', 'Fetch Sequences/Alignments', 'Assembly', 'Annotation',
     'Mapping', 'Variant Detection', 'Variant Calling', 'ChiP-seq', 'RNA-seq',
     'Multiple Alignments', 'Bacterial Typing', 'Phylogenetics',
-    'Genome Editing', 'Mothur', 'Metagenomic analyses', 'Proteomics',
+    'Genome Editing', 'Mothur', 'Metagenomic Analysis', 'Proteomics',
     'Metabolomics', 'Picard', 'DeepTools', 'EMBOSS', 'Blast +',
     'GATK Tools 1.4', 'GATK Tools', 'Alignment', 'RSeQC', 'Gemini Tools',
     'Statistics',
