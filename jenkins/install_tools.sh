@@ -146,7 +146,7 @@ install_tools() {
   git diff --staged | cat;
 
   echo -e "\nPushing Changes to github"
-  COMMIT_MESSAGE="Jenkins build $BUILD_NUMBER."
+  COMMIT_MESSAGE="Jenkins $MODE build $BUILD_NUMBER."
   git commit "${COMMIT_FILES[@]}" -m "$COMMIT_MESSAGE"
   git pull
   git push
