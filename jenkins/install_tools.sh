@@ -307,7 +307,14 @@ test_tool() {
   TEST_JSON="$TMP/test.json"
   rm -f $TEST_LOG $TEST_JSON ||:;  # delete file if it exists
 
-  sleep 30s; # Allow threads to catch up so that all files are available for testing
+  {
+    python scripts/wait_for_tool.py -g $URL -a $API_KEY -n $TOOL_NAME -o $OWNER -r $INSTALLED_REVISION
+  } || {
+    log_row "Tool not found";
+    log_error $LOG_FILE
+    exit_installation 1
+    return 1
+  }
 
   TOOL_PARAMS="--name $TOOL_NAME --owner $OWNER --revisions $INSTALLED_REVISION --toolshed $TOOL_SHED_URL"
   command="shed-tools test -g $URL -a $API_KEY $TOOL_PARAMS --parallel_tests 4 --test_json $TEST_JSON -v --log_file $TEST_LOG"

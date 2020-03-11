@@ -6,7 +6,7 @@ from bioblend.galaxy.toolshed import ToolShedClient
 
 
 def main():
-    parser = argparse.ArgumentParser(description='Uninstall tool from a galaxy instance')
+    parser = argparse.ArgumentParser(description='Writes True to stdout if a tool/owner combination does not exist on a Galaxy instance')
     parser.add_argument('-g', '--galaxy_url', help='Galaxy server URL')
     parser.add_argument('-a', '--api_key', help='API key for galaxy server')
     parser.add_argument('-n', '--name', help='Tool name')
