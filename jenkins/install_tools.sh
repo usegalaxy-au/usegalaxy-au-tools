@@ -307,6 +307,7 @@ test_tool() {
   TEST_JSON="$TMP/test.json"
   rm -f $TEST_LOG $TEST_JSON ||:;  # delete file if it exists
 
+  sleep 60s; # March 11th 2020, it seems like the staging server needs a lot of sleep before testing
   {
     python scripts/wait_for_tool.py -g $URL -a $API_KEY -n $TOOL_NAME -o $OWNER -r $INSTALLED_REVISION
   } || {
