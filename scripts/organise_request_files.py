@@ -78,7 +78,7 @@ def main():
 
 def is_trusted_tool(trusted_owners, tool):
     trusted = False
-    matching_owners = [o['owner'] for o in trusted_owners if tool['owner'] == o['owner']]
+    matching_owners = [o for o in trusted_owners if tool['owner'] == o['owner']]
     if matching_owners:
         [owner] = matching_owners
         blacklist = owner.get('blacklist') if isinstance(owner, dict) else None
