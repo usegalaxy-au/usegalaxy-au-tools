@@ -52,7 +52,7 @@ tools:
 - name: jbrowse
   owner: iuc
   revisions:
-  - 667e17248bfe
+  - d0743cb18ed8
   tool_panel_section_id: graph_display_data
   tool_panel_section_label: Graph/Display Data
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -67,6 +67,13 @@ tools:
   owner: peterjc
   revisions:
   - d9f3d4779507
+  tool_panel_section_id: graph_display_data
+  tool_panel_section_label: Graph/Display Data
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: plotly_regression_performance_plots
+  owner: bgruening
+  revisions:
+  - 389227fa1864
   tool_panel_section_id: graph_display_data
   tool_panel_section_label: Graph/Display Data
   tool_shed_url: toolshed.g2.bx.psu.edu
