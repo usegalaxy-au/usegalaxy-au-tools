@@ -56,6 +56,13 @@ tools:
   tool_panel_section_label: FASTA/FASTQ
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fasta_stats
+  owner: iuc
+  revisions:
+  - 9c620a950d3a
+  tool_panel_section_id: fasta_fastq
+  tool_panel_section_label: FASTA/FASTQ
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: fasta_stats
   owner: simon-gladman
   revisions:
   - 20ca2574216a
