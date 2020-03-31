@@ -195,6 +195,7 @@ install_tool() {
   command="shed-tools install -g $URL -a $API_KEY -t $TOOL_FILE -v --log_file $INSTALL_LOG"
   echo "${command/$API_KEY/<API_KEY>}"; # substitute API_KEY for printing
   {
+    galaxy-wait -g $URL
     $command
   } || {
     log_row "Shed-tools error"; # well not really, more likely a connection error while running shed-tools
@@ -292,7 +293,8 @@ test_tool() {
   SERVER="$1"
   set_url $SERVER
   STEP="$(title $SERVER) Testing"; # Production Testing or Staging Testing
-  TEST_JSON_LOG="$LOG_DIR/${MODE}_build_${BUILD_NUMBER}_$(lower $SERVER)_test.json"
+  TEST_JSON="${LOG_DIR}/$(lower $SERVER)/${TOOL_NAME}@${INSTALLED_REVISION}.json"
+  # PLANEMO_TEST_OUTPUT="${LOG_DIR}/planemo/${TOOL_NAME}@${INSTALLED_REVISION}_$(lower $SERVER).html"
 
   # Special case: If package is already installed on staging we skip tests and install on production
   if [ $SERVER = "STAGING" ] && [ $INSTALLATION_STATUS = "Skipped" ]; then
@@ -304,23 +306,15 @@ test_tool() {
   fi
 
   TEST_LOG="$TMP/test_log.txt"
-  TEST_JSON="$TMP/test.json"
-  rm -f $TEST_LOG $TEST_JSON ||:;  # delete file if it exists
+  rm -f $TEST_LOG ||:;  # delete file if it exists
 
-  sleep 120s; # March 11th 2020, it seems like the staging server needs a lot of sleep before testing
-  {
-    python scripts/wait_for_tool.py -g $URL -a $API_KEY -n $TOOL_NAME -o $OWNER -r $INSTALLED_REVISION
-  } || {
-    log_row "Tool not found";
-    log_error $LOG_FILE
-    exit_installation 1
-    return 1
-  }
+  sleep 60s; # Allow time for handlers to catch up
 
   TOOL_PARAMS="--name $TOOL_NAME --owner $OWNER --revisions $INSTALLED_REVISION --toolshed $TOOL_SHED_URL"
   command="shed-tools test -g $URL -a $API_KEY $TOOL_PARAMS --parallel_tests 4 --test_json $TEST_JSON -v --log_file $TEST_LOG"
   echo "${command/$API_KEY/<API_KEY>}"
   {
+    galaxy-wait -g $URL
     $command
   } || {
     log_row "Shed-tools error";
@@ -328,7 +322,6 @@ test_tool() {
     exit_installation 1
     return 1
   }
-  pretty_json $TEST_JSON >> $TEST_JSON_LOG
 
   if [ $BASH_V = 4 ]; then
     # normal regex
@@ -374,7 +367,8 @@ test_tool() {
       python scripts/uninstall_tools.py -g $STAGING_URL -a $STAGING_API_KEY -n "$INSTALLED_NAME@$INSTALLED_REVISION";
     fi
     log_row "Tests failed"
-    log_error $TEST_JSON_LOG
+    log_error $TEST_JSON
+    # planemo test_reports $TEST_JSON --test_output $PLANEMO_TEST_OUTPUT
     exit_installation 1 ""
     return 1
   fi
@@ -447,10 +441,6 @@ title() {
 
 lower() {
   python -c "print('$1'.lower())"
-}
-
-pretty_json() {
- python -mjson.tool "$1"
 }
 
 install_tools

@@ -5,8 +5,48 @@ import os
 
 from bioblend.galaxy import GalaxyInstance
 from bioblend.galaxy.toolshed import ToolShedClient
+from bioblend.toolshed import ToolShedInstance
+from bioblend.toolshed.repositories import ToolShedRepositoryClient as bioblend_ToolShedRepositoryClient
 
 trusted_owners_file = 'trusted_owners.yml'
+
+
+class ToolShedRepositoryClient(bioblend_ToolShedRepositoryClient):
+    # Subclass bioblend object in order to access /update endpoint
+    def updates(self, name, owner, revision, hexlify=False):
+        """
+        Return a dictionary with boolean values for whether there are updates
+        available for the repository revision, newer installable revisions
+        available, the revision is the latest installable revision, and if the
+        repository is deprecated.
+
+        :type name: str
+        :param name: the name of the repository
+
+        :type owner: str
+        :param owner: the owner of the repository
+
+        :type revision: str
+        :param revision: the revision to test updatability against
+
+        :type hexlify: bool
+        :param hexlify: whether to hexlify response
+
+        :rtype: dict
+        :return: Dict containing boolean values for keys
+          'latest_installable_revision', 'revision_update', 'revision_upgrade',
+          'repository_deprecated'
+        """
+        url = self.url + '/updates'
+        params = {
+            'name': name,
+            'owner': owner,
+            'changeset_revision': revision,
+            'hexlify': hexlify,
+        }
+        r = self._get(url=url, params=params)
+
+        return r
 
 
 def main():
@@ -60,13 +100,19 @@ def main():
         cli = ToolShedClient(gal)
         u_repos = cli.get_repositories()
 
-        tools_by_entry = [t for t in tools_by_entry if is_trusted_tool(trusted_owners, t) and not latest_revision_installed(u_repos, t)]
-        for tool in tools_by_entry:
-            for key in tool.keys():  # delete extraneous keys, we want latest revision
-                if key not in ['name', 'owner', 'tool_panel_section_label', 'tool_shed_url']:
-                    del tool[key]
+        trusted_tools = [t for t in tools_by_entry if is_trusted_tool(trusted_owners, t)]
+        sys.stderr.write('Checking for updates from %d tools\n' % len(trusted_tools))
+        tools_to_update = []
+        for i, tool in enumerate(trusted_tools):
+            if i > 0 and i % 100 == 0:
+                sys.stderr.write('%d/%d\n' % (i, len(trusted_tools)))
+            if not latest_revision_installed(u_repos, tool):
+                for key in tool.keys():  # delete extraneous keys, we want latest revision
+                    if key not in ['name', 'owner', 'tool_panel_section_label', 'tool_shed_url']:
+                        del tool[key]
+                tools_to_update.append(tool)
 
-    for tool in tools_by_entry:
+    for tool in tools_to_update:
         if 'revisions' in tool.keys() and len(tool['revisions']) > 1:
             for rev in tool['revisions']:
                 new_tool = tool
@@ -89,11 +135,18 @@ def is_trusted_tool(trusted_owners, tool):
 
 def latest_revision_installed(repos, tool):
     matching_repos = [r for r in repos if r['name'] == tool['name'] and r['owner'] == tool['owner'] and r['changeset_revision'] in tool['revisions']]
-    latest = False
+    toolshed = ToolShedInstance(url='https://' + tool['tool_shed_url'])
+    repo_client = ToolShedRepositoryClient(toolshed)
+
     for mr in matching_repos:
-        if mr['tool_shed_status']['latest_installable_revision'] == 'True':
-            latest = True
-    return latest
+        try:
+            tool_shed_status = repo_client.updates(mr['name'], mr['owner'], mr['changeset_revision'])
+        except Exception as e:
+            sys.stderr.write('Skipping %s.  Error querying toolshed: %s\n' % (tool['name'], str(e)))
+            return True  # return True so that update will be skipped.
+        if tool_shed_status.get('latest_installable_revision') == 'True':
+            return True
+    return False
 
 
 def write_output_file(path, tool):
