@@ -40,10 +40,14 @@ else
     fi
 fi
 
-[ -d $LOG_DIR ] || mkdir $LOG_DIR;
+LOG_DIR=${LOG_DIR}/${MODE}_build_${BUILD_NUMBER}
+[ -d $LOG_DIR ] || mkdir -p $LOG_DIR;
+mkdir -p $LOG_DIR/staging;  # staging test json output
+mkdir -p $LOG_DIR/production;  # production test json output
+# mkdir -p $LOG_DIR/planemo;  # planemo html output tools that fail tests
 
 export BUILD_NUMBER=$BUILD_NUMBER
-export LOG_FILE="${LOG_DIR}/${MODE}_build_${BUILD_NUMBER}_log.txt"
+export LOG_FILE="${LOG_DIR}/install_log.txt"
 export GIT_COMMIT=$GIT_COMMIT
 export GIT_PREVIOUS_COMMIT=$GIT_PREVIOUS_COMMIT
 export LOG_DIR=$LOG_DIR
@@ -103,13 +107,10 @@ jenkins_tool_installation() {
 
   if [ $LOCAL_ENV = 0 ]; then
     activate_virtualenv
-
-    echo "Saving output to $LOG_FILE"
-    bash jenkins/install_tools.sh 2>&1 | tee $LOG_FILE
-  else
-    # Do not save a log file when running locally
-    bash jenkins/install_tools.sh
   fi
+
+  echo "Saving output to $LOG_FILE"
+  bash jenkins/install_tools.sh 2>&1 | tee $LOG_FILE
 }
 
 # Always run locally, if running on Jenkins run only when switched on (1)
