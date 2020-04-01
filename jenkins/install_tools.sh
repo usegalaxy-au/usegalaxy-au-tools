@@ -294,7 +294,7 @@ test_tool() {
   set_url $SERVER
   STEP="$(title $SERVER) Testing"; # Production Testing or Staging Testing
   TEST_JSON="${LOG_DIR}/$(lower $SERVER)/${TOOL_NAME}@${INSTALLED_REVISION}.json"
-  # PLANEMO_TEST_OUTPUT="${LOG_DIR}/planemo/${TOOL_NAME}@${INSTALLED_REVISION}_$(lower $SERVER).html"
+  PLANEMO_TEST_OUTPUT="${LOG_DIR}/planemo/${TOOL_NAME}@${INSTALLED_REVISION}_$(lower $SERVER).html"
 
   # Special case: If package is already installed on staging we skip tests and install on production
   if [ $SERVER = "STAGING" ] && [ $INSTALLATION_STATUS = "Skipped" ]; then
@@ -368,7 +368,7 @@ test_tool() {
     fi
     log_row "Tests failed"
     log_error $TEST_JSON
-    # planemo test_reports $TEST_JSON --test_output $PLANEMO_TEST_OUTPUT
+    planemo test_reports $TEST_JSON --test_output $PLANEMO_TEST_OUTPUT
     exit_installation 1 ""
     return 1
   fi

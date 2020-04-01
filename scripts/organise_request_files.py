@@ -107,9 +107,9 @@ def main():
             if i > 0 and i % 100 == 0:
                 sys.stderr.write('%d/%d\n' % (i, len(trusted_tools)))
             if not latest_revision_installed(u_repos, tool):
-                for key in tool.keys():  # delete extraneous keys, we want latest revision
-                    if key not in ['name', 'owner', 'tool_panel_section_label', 'tool_shed_url']:
-                        del tool[key]
+                extraneous_keys = [key for key in tool.keys() if key not in ['name', 'owner', 'tool_panel_section_label', 'tool_shed_url']]
+                for key in extraneous_keys:  # delete extraneous keys, we want latest revision
+                    del tool[key]
                 tools.append(tool)
 
     for tool in tools:
