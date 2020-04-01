@@ -12,7 +12,7 @@ trusted_owners_file = 'trusted_owners.yml'
 
 
 class ToolShedRepositoryClient(bioblend_ToolShedRepositoryClient):
-    # Subclass bioblend object in order to access /update endpoint
+    # Subclass bioblend object in order to access /updates endpoint
     def updates(self, name, owner, revision, hexlify=False):
         """
         Return a dictionary with boolean values for whether there are updates
@@ -79,14 +79,14 @@ def main():
     if source_dir and not files:
         files = ['%s/%s' % (source_dir, name) for name in os.listdir(source_dir)]
 
-    tools_by_entry = []
+    tools = []
     for file in files:
         with open(file) as input:
             content = yaml.safe_load(input.read())['tools']
             if isinstance(content, list):
-                tools_by_entry += content
+                tools += content
             else:
-                tools_by_entry.append(content)
+                tools.append(content)
 
     if update:  # update tools with trusted owners where updates are available
         if not production_url and production_api_key:
@@ -100,9 +100,9 @@ def main():
         cli = ToolShedClient(gal)
         u_repos = cli.get_repositories()
 
-        trusted_tools = [t for t in tools_by_entry if is_trusted_tool(trusted_owners, t)]
+        trusted_tools = [t for t in tools if is_trusted_tool(trusted_owners, t)]
         sys.stderr.write('Checking for updates from %d tools\n' % len(trusted_tools))
-        tools_to_update = []
+        tools = []
         for i, tool in enumerate(trusted_tools):
             if i > 0 and i % 100 == 0:
                 sys.stderr.write('%d/%d\n' % (i, len(trusted_tools)))
@@ -110,9 +110,9 @@ def main():
                 for key in tool.keys():  # delete extraneous keys, we want latest revision
                     if key not in ['name', 'owner', 'tool_panel_section_label', 'tool_shed_url']:
                         del tool[key]
-                tools_to_update.append(tool)
+                tools.append(tool)
 
-    for tool in tools_to_update:
+    for tool in tools:
         if 'revisions' in tool.keys() and len(tool['revisions']) > 1:
             for rev in tool['revisions']:
                 new_tool = tool
