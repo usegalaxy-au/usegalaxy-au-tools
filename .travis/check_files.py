@@ -21,7 +21,7 @@ valid_section_labels = [
     'Genome Editing', 'Mothur', 'Metagenomic Analysis', 'Proteomics',
     'Metabolomics', 'Picard', 'DeepTools', 'EMBOSS', 'Blast +',
     'GATK Tools 1.4', 'GATK Tools', 'Alignment', 'RSeQC', 'Gemini Tools',
-    'Statistics', 'Graph/Display Data', 'Machine Learning',
+    'Statistics', 'Graph/Display Data', 'Machine Learning', 'iVar',
 ]
 
 
