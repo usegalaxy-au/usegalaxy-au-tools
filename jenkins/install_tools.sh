@@ -308,7 +308,7 @@ test_tool() {
   TEST_LOG="$TMP/test_log.txt"
   rm -f $TEST_LOG ||:;  # delete file if it exists
 
-  sleep 60s; # Allow time for handlers to catch up
+  sleep 120s; # Allow time for handlers to catch up
 
   TOOL_PARAMS="--name $TOOL_NAME --owner $OWNER --revisions $INSTALLED_REVISION --toolshed $TOOL_SHED_URL"
   command="shed-tools test -g $URL -a $API_KEY $TOOL_PARAMS --parallel_tests 4 --test_json $TEST_JSON -v --log_file $TEST_LOG"
