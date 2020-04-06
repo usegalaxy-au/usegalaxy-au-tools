@@ -44,7 +44,7 @@ LOG_DIR=${LOG_DIR}/${MODE}_build_${BUILD_NUMBER}
 [ -d $LOG_DIR ] || mkdir -p $LOG_DIR;
 mkdir -p $LOG_DIR/staging;  # staging test json output
 mkdir -p $LOG_DIR/production;  # production test json output
-# mkdir -p $LOG_DIR/planemo;  # planemo html output tools that fail tests
+mkdir -p $LOG_DIR/planemo;  # planemo html output tools that fail tests
 
 export BUILD_NUMBER=$BUILD_NUMBER
 export LOG_FILE="${LOG_DIR}/install_log.txt"
@@ -60,12 +60,12 @@ activate_virtualenv() {
   # the first time we will need to set up the virtual environment
   # The venv is set up a level below the workspace so that we do not have
   # to rebuild it each time the script is run
-  VIRTUALENV="../.venv"
+  VIRTUALENV="../.venv3"
   REQUIREMENTS_FILE="jenkins/requirements.txt"
   CACHED_REQUIREMENTS_FILE="$VIRTUALENV/cached_requirements.txt"
 
-  [ ! -d $VIRTUALENV ] && virtualenv $VIRTUALENV
-  # shellcheck source=../.venv/bin/activate
+  [ ! -d $VIRTUALENV ] && virtualenv -p python3 $VIRTUALENV
+  # shellcheck source=../.venv3/bin/activate
   . "$VIRTUALENV/bin/activate"
 
   # if requirements change, reinstall requirements
@@ -105,10 +105,7 @@ jenkins_tool_installation() {
     fi
   fi
 
-  if [ $LOCAL_ENV = 0 ]; then
-    activate_virtualenv
-  fi
-
+  activate_virtualenv
   echo "Saving output to $LOG_FILE"
   bash jenkins/install_tools.sh 2>&1 | tee $LOG_FILE
 }
