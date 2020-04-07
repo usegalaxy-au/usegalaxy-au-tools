@@ -3,7 +3,6 @@ import argparse
 import sys
 import os
 
-
 from bioblend.galaxy import GalaxyInstance
 from bioblend.galaxy.toolshed import ToolShedClient
 from bioblend.toolshed import ToolShedInstance
