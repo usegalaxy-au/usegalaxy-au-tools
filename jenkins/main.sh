@@ -41,10 +41,6 @@ else
 fi
 
 LOG_DIR=${LOG_DIR}/${MODE}_build_${BUILD_NUMBER}
-[ -d $LOG_DIR ] || mkdir -p $LOG_DIR;
-mkdir -p $LOG_DIR/staging;  # staging test json output
-mkdir -p $LOG_DIR/production;  # production test json output
-mkdir -p $LOG_DIR/planemo;  # planemo html output tools that fail tests
 
 export BUILD_NUMBER=$BUILD_NUMBER
 export LOG_FILE="${LOG_DIR}/install_log.txt"
@@ -104,6 +100,12 @@ jenkins_tool_installation() {
       echo $REQUEST_FILES;
     fi
   fi
+
+  # Create log folder structure
+  [ -d $LOG_DIR ] || mkdir -p $LOG_DIR;
+  mkdir -p $LOG_DIR/staging;  # staging test json output
+  mkdir -p $LOG_DIR/production;  # production test json output
+  mkdir -p $LOG_DIR/planemo;  # planemo html output tools that fail tests
 
   activate_virtualenv
   echo "Saving output to $LOG_FILE"
