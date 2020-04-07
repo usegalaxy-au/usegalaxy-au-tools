@@ -21,7 +21,7 @@ def main():
     gal = GalaxyInstance(galaxy_url, api_key)
     cli = ToolShedClient(gal)
     u_repos = cli.get_repositories()
-    tools_with_name_and_owner = [t for t in u_repos if t['name'] == name and t['owner'] == owner]
+    tools_with_name_and_owner = [t for t in u_repos if t['name'] == name and t['owner'] == owner and t['status'] == 'Installed']
     if not tools_with_name_and_owner:
         sys.stdout.write('True')  # we did not find the name/owner combination so we say that the tool is new
     else:
