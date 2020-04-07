@@ -20,6 +20,20 @@ tools:
   tool_panel_section_id: sam_bam
   tool_panel_section_label: SAM/BAM
   tool_shed_url: toolshed.g2.bx.psu.edu
+- name: qualimap_bamqc
+  owner: iuc
+  revisions:
+  - e7fd6754d093
+  tool_panel_section_id: sam_bam
+  tool_panel_section_label: SAM/BAM
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: qualimap_multi_bamqc
+  owner: iuc
+  revisions:
+  - e38af83df163
+  tool_panel_section_id: sam_bam
+  tool_panel_section_label: SAM/BAM
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: sam2interval
   owner: devteam
   revisions:
