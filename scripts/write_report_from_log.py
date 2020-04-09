@@ -80,17 +80,23 @@ def main(current_build_number, begin_build, end_build, report_file='report.md', 
         report.write('The following tools have been installed/updated on Galaxy Australia\n\n')
         for section in sorted(installed_tools.keys()):
             report.write('\n### %s\n\n' % section)
-            lines = []
+            section_items = []
             for item in sorted(installed_tools[section], key=lambda x: x['New Tool'], reverse=True):
                 shed_url = item['Tool Shed URL'] or default_tool_shed
-                link = 'https://%s/view/%s/%s/%s' % (shed_url.strip(), item['Owner'].strip(), item['Name'], item['Installed Revision'])
-                if item['New Tool'] == 'True':
-                    line = ' - %s revision [%s](%s) was installed\n' % (item['Name'], item['Installed Revision'], link)
-                elif item['New Tool'] == 'False':
-                    line = ' - %s was updated to [%s](%s)\n' % (item['Name'], item['Installed Revision'], link)
-                if line not in lines:
-                    report.write(line)
-                    lines.append(line)
+                link = '[%s](https://%s/view/%s/%s/%s)' % (item['Installed Revision'], shed_url.strip(), item['Owner'].strip(), item['Name'], item['Installed Revision'])
+                matching_tools = [m for m in section_items if m['name'] == item['Name'] and m['owner'] == item['Owner']]
+                if not matching_tools:
+                    section_items.append({'name': item['Name'], 'owner': item['Owner'], 'new': item['New Tool'], 'links': [link]})
+                else:  # tool already reported, just add the revision
+                    section_item = matching_tools[0]
+                    if link not in section_item['links']:
+                        section_item['links'].append(link)
+
+            for item in section_items:
+                if item['new'] == 'True':
+                    report.write(' - %s revision %s was installed\n' % (item['name'], ', '.join(item['links'])))
+                elif item['new'] == 'False':
+                    report.write(' - %s was updated to %s\n' % (item['name'], ', '.join(item['links'])))
 
 
 if __name__ == "__main__":
