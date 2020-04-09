@@ -313,7 +313,7 @@ test_tool() {
   TEST_LOG="$TMP/test_log.txt"
   rm -f $TEST_LOG ||:;  # delete file if it exists
 
-  sleep 120s; # Allow time for handlers to catch up
+  sleep 180s; # Allow time for handlers to catch up
 
   # Ping galaxy url
   echo "Waiting for $URL";
