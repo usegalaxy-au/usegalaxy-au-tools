@@ -1,4 +1,18 @@
 tools:
+- name: anndata_import
+  owner: iuc
+  revisions:
+  - 32e547223c9e
+  tool_panel_section_id: single-cell
+  tool_panel_section_label: Single-cell
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: anndata_inspect
+  owner: iuc
+  revisions:
+  - b9fac48532eb
+  tool_panel_section_id: single-cell
+  tool_panel_section_label: Single-cell
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: anndata_manipulate
   owner: iuc
   revisions:
@@ -10,6 +24,34 @@ tools:
   owner: iuc
   revisions:
   - 37a47c4fd84d
+  tool_panel_section_id: single-cell
+  tool_panel_section_label: Single-cell
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: raceid_inspecttrajectory
+  owner: iuc
+  revisions:
+  - 69018f285aa3
+  tool_panel_section_id: single-cell
+  tool_panel_section_label: Single-cell
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: scater_filter
+  owner: iuc
+  revisions:
+  - b7ea9f09c02f
+  tool_panel_section_id: single-cell
+  tool_panel_section_label: Single-cell
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: scater_plot_dist_scatter
+  owner: iuc
+  revisions:
+  - 2e41b35b5bdd
+  tool_panel_section_id: single-cell
+  tool_panel_section_label: Single-cell
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: scater_plot_pca
+  owner: iuc
+  revisions:
+  - 46fc6751d746
   tool_panel_section_id: single-cell
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
