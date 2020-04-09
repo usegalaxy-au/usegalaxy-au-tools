@@ -191,11 +191,16 @@ install_tool() {
   INSTALL_LOG="$TMP/install_log.txt"
   rm -f $INSTALL_LOG ||:;  # delete if it already exists
 
+  # Ping galaxy url and toolshed url
+  echo "Waiting for $URL";
+  galaxy-wait -g $URL
+  echo "Waiting for https://${TOOL_SHED_URL}";
+  galaxy-wait -g "https://${TOOL_SHED_URL}"
+
   # Ephemeris install script
   command="shed-tools install -g $URL -a $API_KEY -t $TOOL_FILE -v --log_file $INSTALL_LOG"
   echo "${command/$API_KEY/<API_KEY>}"; # substitute API_KEY for printing
   {
-    galaxy-wait -g $URL
     $command
   } || {
     log_row "Shed-tools error"; # well not really, more likely a connection error while running shed-tools
@@ -308,13 +313,16 @@ test_tool() {
   TEST_LOG="$TMP/test_log.txt"
   rm -f $TEST_LOG ||:;  # delete file if it exists
 
-  sleep 120s; # Allow time for handlers to catch up
+  sleep 180s; # Allow time for handlers to catch up
+
+  # Ping galaxy url
+  echo "Waiting for $URL";
+  galaxy-wait -g $URL
 
   TOOL_PARAMS="--name $TOOL_NAME --owner $OWNER --revisions $INSTALLED_REVISION --toolshed $TOOL_SHED_URL"
   command="shed-tools test -g $URL -a $API_KEY $TOOL_PARAMS --parallel_tests 4 --test_json $TEST_JSON -v --log_file $TEST_LOG"
   echo "${command/$API_KEY/<API_KEY>}"
   {
-    galaxy-wait -g $URL
     $command
   } || {
     log_row "Shed-tools error";
