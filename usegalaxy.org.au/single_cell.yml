@@ -20,6 +20,20 @@ tools:
   tool_panel_section_id: single-cell
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
+- name: raceid_clustering
+  owner: iuc
+  revisions:
+  - 7e014059a88d
+  tool_panel_section_id: single-cell
+  tool_panel_section_label: Single-cell
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: raceid_filtnormconf
+  owner: iuc
+  revisions:
+  - 7608d5faee41
+  tool_panel_section_id: single-cell
+  tool_panel_section_label: Single-cell
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: raceid_inspectclusters
   owner: iuc
   revisions:
@@ -31,6 +45,20 @@ tools:
   owner: iuc
   revisions:
   - 69018f285aa3
+  tool_panel_section_id: single-cell
+  tool_panel_section_label: Single-cell
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: scanpy_cluster_reduce_dimension
+  owner: iuc
+  revisions:
+  - 77b91b9bdf52
+  tool_panel_section_id: single-cell
+  tool_panel_section_label: Single-cell
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: scanpy_normalize
+  owner: iuc
+  revisions:
+  - 3bcd5445cd7a
   tool_panel_section_id: single-cell
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
