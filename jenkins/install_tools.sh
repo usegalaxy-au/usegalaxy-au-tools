@@ -349,12 +349,8 @@ test_tool() {
   [ $SERVER = "STAGING" ] && STAGING_TESTS_PASSED="$TESTS_PASSED/$(($TESTS_PASSED+$TESTS_FAILED))";
   [ $SERVER = "PRODUCTION" ] && PRODUCTION_TESTS_PASSED="$TESTS_PASSED/$(($TESTS_PASSED+$TESTS_FAILED))";
 
-  if [ $TESTS_FAILED = 0 ]; then
-    if [ $TESTS_PASSED = 0 ]; then
-      echo "WARNING: There are no tests for $TOOL_NAME at revision $INSTALLED_REVISION.  Proceeding as none have failed.";
-    else
-      echo "All tests have passed for $TOOL_NAME at revision $INSTALLED_REVISION on $URL.";
-    fi
+  if [ $TESTS_FAILED = 0 ] && [ ! $TESTS_PASSED = 0 ]; then
+    echo "All tests have passed for $TOOL_NAME at revision $INSTALLED_REVISION on $URL.";
     if [ "$SERVER" = "PRODUCTION" ]; then
       echo "Successfully installed $TOOL_NAME on $URL";
       unset STEP
@@ -366,7 +362,9 @@ test_tool() {
       return 0
     fi
   else
-    echo "Failed to install: Winding back installation as some tests have failed.";
+    STATUS="Tests failed"
+    [ $TESTS_PASSED = 0 ] && [ $TESTS_FAILED = 0 ] && STATUS="No tests found"
+    echo "Failed to install: $STATUS. Winding back installation.";
     echo "Uninstalling on $URL";
     python scripts/uninstall_tools.py -g $URL -a $API_KEY -n "$INSTALLED_NAME@$INSTALLED_REVISION";
     if [ $SERVER = "PRODUCTION" ]; then
@@ -374,7 +372,7 @@ test_tool() {
       echo "Uninstalling on $STAGING_URL";
       python scripts/uninstall_tools.py -g $STAGING_URL -a $STAGING_API_KEY -n "$INSTALLED_NAME@$INSTALLED_REVISION";
     fi
-    log_row "Tests failed"
+    log_row "$STATUS"
     log_error $TEST_JSON
     planemo test_reports $TEST_JSON --test_output $PLANEMO_TEST_OUTPUT
     exit_installation 1 ""
