@@ -1,5 +1,5 @@
 #! /bin/bash
-VIRTUALENV="../.venv"
+VIRTUALENV="../.venv3"
 # shellcheck source=../.venv/bin/activate
 . "$VIRTUALENV/bin/activate"
 

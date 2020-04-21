@@ -106,6 +106,8 @@ install_tools() {
     }
   done
 
+  git pull # update repo before changing tracked files
+
   echo -e "\n$INSTALLED_TOOL_COUNTER out of $NUM_TOOLS_TO_INSTALL tools installed."
   if [ ! "$LOG_ENTRY" ]; then
     echo -e "\nWARNING: No log entry stored";
@@ -148,7 +150,6 @@ install_tools() {
   echo -e "\nPushing Changes to github"
   COMMIT_MESSAGE="Jenkins $MODE build $BUILD_NUMBER."
   git commit "${COMMIT_FILES[@]}" -m "$COMMIT_MESSAGE"
-  git pull
   git push
 
   if [[ $(ls $TOOL_FILE_PATH ) ]]; then
