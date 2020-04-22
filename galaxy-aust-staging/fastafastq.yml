@@ -244,6 +244,13 @@ tools:
   tool_panel_section_id: fasta_fastq
   tool_panel_section_label: FASTA/FASTQ
   tool_shed_url: toolshed.g2.bx.psu.edu
+- name: seqtk
+  owner: iuc
+  revisions:
+  - 58c8ece95b53
+  tool_panel_section_id: fasta_fastq
+  tool_panel_section_label: FASTA/FASTQ
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: split_paired_reads
   owner: devteam
   revisions:
