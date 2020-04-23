@@ -320,7 +320,8 @@ test_tool() {
   echo "Waiting for $URL";
   galaxy-wait -g $URL
 
-  command="shed-tools test -g $URL -a $API_KEY -t $TOOL_FILE --parallel_tests 4 --test_json $TEST_JSON -v --log_file $TEST_LOG"
+  TOOL_PARAMS="--name $TOOL_NAME --owner $OWNER --revisions $INSTALLED_REVISION --toolshed $TOOL_SHED_URL"
+  command="shed-tools test -g $URL -a $API_KEY $TOOL_PARAMS --parallel_tests 4 --test_json $TEST_JSON -v --log_file $TEST_LOG"
   echo "${command/$API_KEY/<API_KEY>}"
   {
     $command
