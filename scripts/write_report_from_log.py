@@ -19,6 +19,23 @@ parser.add_argument('-d', '--date', help='Date for report header')
 parser.add_argument('-b', '--begin_build', help='Jenkins build in log to use as first in report, i.e. install-7 or update-3')
 parser.add_argument('-e', '--end_build', help='Jenkins build in log to use as last in report, i.e. install-10 or update-6.  Default is end of file')
 
+style = """\n<style>
+  table {
+    width: 100%;
+    margin: 10px 20px;
+  }
+  table th {
+    display: none;
+  }
+  td {
+    padding: 3px 5px;
+  }
+  tr td:nth-child(1) {
+    vertical-align: top;
+    width: 25%;
+  }
+</style>\n"""
+
 
 def get_report_header(date):
     return (
@@ -41,9 +58,25 @@ def get_build_range(table, build_category, build_number):
     return (rows[0], rows[-1])
 
 
+def tool_table(tool_dict):
+    content = '| Section | Tool |\n|---------|-----|\n'
+    for section in sorted(tool_dict.keys()):
+        content += '| **%s** | %s |\n' % (
+            section,
+            '<br/>'.join(['%s %s' % (item['name'], ', '.join(item['links'])) for item in tool_dict[section]])
+        )
+    return content
+
+
+def get_tool_link(name, owner, revision, tool_shed_url):
+    return '[%s](https://%s/view/%s/%s/%s)' % (
+        revision, tool_shed_url, owner, name, revision
+    )
+
+
 def main(current_build_number, begin_build, end_build, report_file='report.md', date=''):
-    installed_tools = {}
     table = []
+    tools = []
     with open(log_file) as tsvfile:
         reader = csv.DictReader(tsvfile, dialect='excel-tab')
         for row in reader:
@@ -51,11 +84,10 @@ def main(current_build_number, begin_build, end_build, report_file='report.md', 
 
     if current_build_number:
         previous_jenkins_update_build_num = max(
-            [int(y) for y in [row['Build Num.'] for row in table if row['Category'] == 'Update'] if int(y) != int(current_build_number)]
+            [int(y) for y in [row['Build Num.'] for row in table if row['Category'] == 'Update'] if int(y) < int(current_build_number)]
         )
-        previous_build_range = get_build_range(table, 'update', previous_jenkins_update_build_num)
-        start_row = previous_build_range[1] + 1
-        finish_row = len(table) - 1
+        start_row = get_build_range(table, 'update', previous_jenkins_update_build_num)[1] + 1
+        finish_row = get_build_range(table, 'update', current_build_number)[1]
     elif begin_build and end_build:
         begin_category, begin_build_number = begin_build.split('-')
         start_row = get_build_range(table, begin_category, begin_build_number)[0]
@@ -63,40 +95,46 @@ def main(current_build_number, begin_build, end_build, report_file='report.md', 
         finish_row = get_build_range(table, end_category, end_build_number)[1]
 
     for row in table[start_row:finish_row+1]:
-        label = row['Section Label'].strip()
-        if row['Status'] == 'Installed':
-            if not label == 'None':
-                if label not in installed_tools.keys():
-                    installed_tools[label] = []
+        if row['Status'] == 'Installed' and row['Section Label'] != 'None':
+            link = get_tool_link(row['Name'], row['Owner'], row['Installed Revision'], row['Tool Shed URL'])
+            matching_tools = [tool for tool in tools if tool['owner'] == row['Owner'] and tool['name'] == row['Name']]
+            if matching_tools:
+                matching_tools[0]['links'].append(link)
+            else:
+                tools.append({
+                    'name': row['Name'],
+                    'owner': row['Owner'],
+                    'links': [link],
+                    'new': row['New Tool'] == 'True',
+                    'label': row['Section Label']
+                })
 
-                installed_tools[label].append(row)
-
-    if not installed_tools.keys():  # nothing to report
+    if not tools:  # nothing to report
         sys.stderr.write('No tools installed this week.\n')
         return
 
+    installed_tools = {}
+    updated_tools = {}
+    for tool in tools:
+        label = tool.pop('label')
+        if tool['new']:
+            if label not in installed_tools.keys():
+                installed_tools[label] = []
+            installed_tools[label].append(tool)
+        else:
+            if label not in updated_tools.keys():
+                updated_tools[label] = []
+            updated_tools[label].append(tool)
+
     with open(report_file, 'w') as report:
         report.write(get_report_header(date))
-        report.write('The following tools have been installed/updated on Galaxy Australia\n\n')
-        for section in sorted(installed_tools.keys()):
-            report.write('\n### %s\n\n' % section)
-            section_items = []
-            for item in sorted(installed_tools[section], key=lambda x: x['New Tool'], reverse=True):
-                shed_url = item['Tool Shed URL'] or default_tool_shed
-                link = '[%s](https://%s/view/%s/%s/%s)' % (item['Installed Revision'], shed_url.strip(), item['Owner'].strip(), item['Name'], item['Installed Revision'])
-                matching_tools = [m for m in section_items if m['name'] == item['Name'] and m['owner'] == item['Owner']]
-                if not matching_tools:
-                    section_items.append({'name': item['Name'], 'owner': item['Owner'], 'new': item['New Tool'], 'links': [link]})
-                else:  # tool already reported, just add the revision
-                    section_item = matching_tools[0]
-                    if link not in section_item['links']:
-                        section_item['links'].append(link)
-
-            for item in section_items:
-                if item['new'] == 'True':
-                    report.write(' - %s revision %s was installed\n' % (item['name'], ', '.join(item['links'])))
-                elif item['new'] == 'False':
-                    report.write(' - %s was updated to %s\n' % (item['name'], ', '.join(item['links'])))
+        report.write(style)
+        if installed_tools:
+            report.write('\n### Tools installed\n\n')
+            report.write(tool_table(installed_tools))
+        if updated_tools:
+            report.write('\n### Tools updated\n\n')
+            report.write(tool_table(updated_tools))
 
 
 if __name__ == "__main__":
