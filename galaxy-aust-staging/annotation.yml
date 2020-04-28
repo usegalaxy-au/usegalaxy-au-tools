@@ -48,6 +48,13 @@ tools:
   tool_panel_section_id: annotation
   tool_panel_section_label: Annotation
   tool_shed_url: toolshed.g2.bx.psu.edu
+- name: maker_map_ids
+  owner: iuc
+  revisions:
+  - 326f9c294b09
+  tool_panel_section_id: annotation
+  tool_panel_section_label: Annotation
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: prokka
   owner: crs4
   revisions:
@@ -55,19 +62,26 @@ tools:
   tool_panel_section_id: annotation
   tool_panel_section_label: Annotation
   tool_shed_url: toolshed.g2.bx.psu.edu
+- name: snap_training
+  owner: iuc
+  revisions:
+  - 2a598c0aa042
+  tool_panel_section_id: annotation
+  tool_panel_section_label: Annotation
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: snpeff
   owner: iuc
   revisions:
-  - 268d162b9c49
   - 74aebe30fb52
+  - 268d162b9c49
   tool_panel_section_id: annotation
   tool_panel_section_label: Annotation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: snpsift
   owner: iuc
   revisions:
-  - 2b3e65a4252f
   - 09d6806c609e
+  - 2b3e65a4252f
   tool_panel_section_id: annotation
   tool_panel_section_label: Annotation
   tool_shed_url: toolshed.g2.bx.psu.edu
