@@ -13,6 +13,13 @@ tools:
   tool_panel_section_id: annotation
   tool_panel_section_label: Annotation
   tool_shed_url: toolshed.g2.bx.psu.edu
+- name: augustus_training
+  owner: bgruening
+  revisions:
+  - 6519ebe25019
+  tool_panel_section_id: annotation
+  tool_panel_section_label: Annotation
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: barrnap
   owner: iuc
   revisions:
@@ -55,6 +62,13 @@ tools:
   tool_panel_section_id: annotation
   tool_panel_section_label: Annotation
   tool_shed_url: toolshed.g2.bx.psu.edu
+- name: maker
+  owner: iuc
+  revisions:
+  - 5e96efe6e6c6
+  tool_panel_section_id: annotation
+  tool_panel_section_label: Annotation
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: prokka
   owner: crs4
   revisions:
@@ -80,8 +94,8 @@ tools:
 - name: snpsift
   owner: iuc
   revisions:
-  - 09d6806c609e
   - 2b3e65a4252f
+  - 09d6806c609e
   tool_panel_section_id: annotation
   tool_panel_section_label: Annotation
   tool_shed_url: toolshed.g2.bx.psu.edu
