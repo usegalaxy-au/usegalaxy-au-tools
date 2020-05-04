@@ -320,7 +320,8 @@ test_tool() {
   echo "Waiting for $URL";
   galaxy-wait -g $URL
 
-  command="shed-tools test -g $URL -a $API_KEY -t $TOOL_FILE --parallel_tests 4 --test_json $TEST_JSON -v --log_file $TEST_LOG"
+  TOOL_PARAMS="--name $TOOL_NAME --owner $OWNER --revisions $INSTALLED_REVISION --toolshed $TOOL_SHED_URL"
+  command="shed-tools test -g $URL -a $API_KEY $TOOL_PARAMS --parallel_tests 4 --test_json $TEST_JSON -v --log_file $TEST_LOG"
   echo "${command/$API_KEY/<API_KEY>}"
   {
     $command
@@ -364,13 +365,17 @@ test_tool() {
   else
     STATUS="Tests failed"
     [ $TESTS_PASSED = 0 ] && [ $TESTS_FAILED = 0 ] && STATUS="No tests found"
-    echo "Failed to install: $STATUS. Winding back installation.";
-    echo "Uninstalling on $URL";
-    python scripts/uninstall_tools.py -g $URL -a $API_KEY -n "$INSTALLED_NAME@$INSTALLED_REVISION";
-    if [ $SERVER = "PRODUCTION" ]; then
-      # also uninstall on staging
-      echo "Uninstalling on $STAGING_URL";
-      python scripts/uninstall_tools.py -g $STAGING_URL -a $STAGING_API_KEY -n "$INSTALLED_NAME@$INSTALLED_REVISION";
+    echo "Failed to install: $STATUS";
+    # Uninstall tool if tests have failed.  If no tests are found, the tool may be a new revision
+    # without a version bump, in which case it is not safe to uninstall it
+    if [ $STATUS = "Tests failed" ]; then
+      echo "Winding back installation: Uninstalling on $URL";
+      python scripts/uninstall_tools.py -g $URL -a $API_KEY -n "$INSTALLED_NAME@$INSTALLED_REVISION";
+      if [ $SERVER = "PRODUCTION" ]; then
+        # also uninstall on staging
+        echo "Uninstalling on $STAGING_URL";
+        python scripts/uninstall_tools.py -g $STAGING_URL -a $STAGING_API_KEY -n "$INSTALLED_NAME@$INSTALLED_REVISION";
+      fi
     fi
     log_row "$STATUS"
     log_error $TEST_JSON
