@@ -14,6 +14,13 @@ tools:
   tool_panel_section_id: plots
   tool_panel_section_label: Graph/Display Data
   tool_shed_url: toolshed.g2.bx.psu.edu
+- name: export2graphlan
+  owner: iuc
+  revisions:
+  - b16989c1e3a7
+  tool_panel_section_id: plots
+  tool_panel_section_label: Graph/Display Data
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastq_quality_boxplot
   owner: devteam
   revisions:
@@ -42,6 +49,20 @@ tools:
   tool_panel_section_id: plots
   tool_panel_section_label: Graph/Display Data
   tool_shed_url: toolshed.g2.bx.psu.edu
+- name: graphlan_annotate
+  owner: iuc
+  revisions:
+  - cf1df6b2220a
+  tool_panel_section_id: plots
+  tool_panel_section_label: Graph/Display Data
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: graphlan
+  owner: iuc
+  revisions:
+  - a490b70e46fc
+  tool_panel_section_id: plots
+  tool_panel_section_label: Graph/Display Data
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: histogram
   owner: devteam
   revisions:
@@ -67,6 +88,13 @@ tools:
   owner: peterjc
   revisions:
   - d9f3d4779507
+  tool_panel_section_id: plots
+  tool_panel_section_label: Graph/Display Data
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: newick_utils
+  owner: iuc
+  revisions:
+  - b4163d2f64ab
   tool_panel_section_id: plots
   tool_panel_section_label: Graph/Display Data
   tool_shed_url: toolshed.g2.bx.psu.edu

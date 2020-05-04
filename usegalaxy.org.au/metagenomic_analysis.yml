@@ -13,6 +13,34 @@ tools:
   tool_panel_section_id: metagenomic_analysis
   tool_panel_section_label: Metagenomic Analysis
   tool_shed_url: toolshed.g2.bx.psu.edu
+- name: humann2_genefamilies_genus_level
+  owner: iuc
+  revisions:
+  - 6d364c65c946
+  tool_panel_section_id: metagenomic_analysis
+  tool_panel_section_label: Metagenomic Analysis
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: humann2_regroup_table
+  owner: iuc
+  revisions:
+  - 6aad8ca3918b
+  tool_panel_section_id: metagenomic_analysis
+  tool_panel_section_label: Metagenomic Analysis
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: humann2_renorm_table
+  owner: iuc
+  revisions:
+  - d77397f09da1
+  tool_panel_section_id: metagenomic_analysis
+  tool_panel_section_label: Metagenomic Analysis
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: humann2_unpack_pathways
+  owner: iuc
+  revisions:
+  - 7f208f1eb64f
+  tool_panel_section_id: metagenomic_analysis
+  tool_panel_section_label: Metagenomic Analysis
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: kraken2
   owner: iuc
   revisions:
@@ -37,8 +65,8 @@ tools:
 - name: kraken_report
   owner: devteam
   revisions:
-  - 6c09bed3444f
   - 1902d3de4a4f
+  - 6c09bed3444f
   tool_panel_section_id: metagenomic_analysis
   tool_panel_section_label: Metagenomic Analysis
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -53,6 +81,13 @@ tools:
   owner: devteam
   revisions:
   - aec58624706f
+  tool_panel_section_id: metagenomic_analysis
+  tool_panel_section_label: Metagenomic Analysis
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: metaphlan2krona
+  owner: iuc
+  revisions:
+  - fdbd63e92b01
   tool_panel_section_id: metagenomic_analysis
   tool_panel_section_label: Metagenomic Analysis
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -123,6 +158,13 @@ tools:
   owner: qfab
   revisions:
   - f6c468a79849
+  tool_panel_section_id: metagenomic_analysis
+  tool_panel_section_label: Metagenomic Analysis
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: staramr
+  owner: nml
+  revisions:
+  - aeaa20b96ef2
   tool_panel_section_id: metagenomic_analysis
   tool_panel_section_label: Metagenomic Analysis
   tool_shed_url: toolshed.g2.bx.psu.edu
