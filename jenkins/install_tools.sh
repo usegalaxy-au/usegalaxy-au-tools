@@ -375,7 +375,7 @@ test_tool() {
     echo "Failed to install: $STATUS";
     # Uninstall tool if tests have failed.  If no tests are found, the tool may be a new revision
     # without a version bump, in which case it is not safe to uninstall it
-    if [ $STATUS = "Tests failed" ]; then
+    if [ "$STATUS" = "Tests failed" ]; then
       echo "Winding back installation: Uninstalling on $URL";
       python scripts/uninstall_tools.py -g $URL -a $API_KEY -n "$INSTALLED_NAME@$INSTALLED_REVISION";
       if [ $SERVER = "PRODUCTION" ]; then
