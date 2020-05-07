@@ -100,6 +100,8 @@ def key_check(loaded_files):
                 # Prevent people from having both label and id specified as this
                 # can lead to tools being installed outside of sections
                 raise Exception('Error in %s: tool_panel_section_id must not be specified.  Use tool_panel_section_label only.')
+            if 'skip_tests' in tool.keys():
+                raise Exception('skip_tests option not allowed.')
             label = tool['tool_panel_section_label']
             if label not in valid_section_labels:
                 raise Exception('Error in %s:  tool_panel_section_label %s is not valid' % (loaded_file['filename'], label))

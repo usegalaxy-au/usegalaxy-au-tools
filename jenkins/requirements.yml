@@ -1,5 +1,6 @@
-
 pyyaml
 -e git+https://github.com/cat-bro/ephemeris.git@master#egg=ephemeris
 bioblend==0.13.0
 planemo==0.70.0
+# requirements for galaxy virtualenv also required here for tests to run correctly
+pysam==0.15.2
