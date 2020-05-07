@@ -55,10 +55,16 @@ install_tools() {
     # split requests into individual yaml files in tmp path
     # one file per unique revision so that installation can be run sequentially and
     # failure of one installation will not affect the others
-    python scripts/organise_request_files.py -f $REQUEST_FILES -o $TOOL_FILE_PATH
+    request_files_command="python scripts/organise_request_files.py -f $REQUEST_FILES -o $TOOL_FILE_PATH"
   elif [ "$MODE" = "update" ]; then
-    python scripts/organise_request_files.py --update_existing -s $PRODUCTION_TOOL_DIR -o $TOOL_FILE_PATH -g $PRODUCTION_URL -a $PRODUCTION_API_KEY
+    request_files_command="python scripts/organise_request_files.py --update_existing -s $PRODUCTION_TOOL_DIR -o $TOOL_FILE_PATH -g $PRODUCTION_URL -a $PRODUCTION_API_KEY"
   fi
+  {
+    $request_files_command
+  } || {
+    echo "Error in organise_request_files.py"
+    exit 1
+  }
 
   # keep a count of successful installations
   NUM_TOOLS_TO_INSTALL=$(ls $TOOL_FILE_PATH | wc -l)
@@ -78,6 +84,7 @@ install_tools() {
     TOOL_SHED_URL=$(grep -oE "tool_shed_url: .*$" "$TOOL_FILE" | cut -d ':' -f 2 | xargs);
     [ ! $TOOL_SHED_URL ] && TOOL_SHED_URL="toolshed.g2.bx.psu.edu"; # default value
     SECTION_LABEL=$(grep -oE "tool_panel_section_label: .*$" "$TOOL_FILE" | cut -d ':' -f 2 | xargs);
+    [ "$(grep '\[SKIP_TESTS\]' $TOOL_FILE)" ] && SKIP_TESTS=1 || SKIP_TESTS=0
 
     # Find out whether tool/owner combination already exists on galaxy.  This makes no difference to the installation process but
     # is useful for the log
@@ -306,8 +313,8 @@ test_tool() {
   if [ $SERVER = "STAGING" ] && [ $INSTALLATION_STATUS = "Skipped" ]; then
     echo "Skipping testing on $STAGING_URL";
     return 0;
-  elif [ $FORCE = 1 ]; then
-    echo "FORCE option specified, skip tests";
+  elif [ $FORCE = 1 ] || [ $SKIP_TESTS = 1 ]; then
+    echo "FORCE or skip_tests option specified, skipping tests";
     return 0
   fi
 

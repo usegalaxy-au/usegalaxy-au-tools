@@ -1,11 +1,12 @@
 ---
 # List of trusted tool owners.  The weekly update script will install updates for
 # any installed tools on usegalaxy.org.au with owners on this list, with the exception
-# of tools named in the blacklist for the owner.
+# of tools named in the blacklist for the owner.  A tool can be excluded by name
+# or by name and revision
 trusted_owners:
 - owner: iuc
   blacklist:
-  - gatk2
+  - name: gatk2
 - owner: simon-gladman
 - owner: nml
 - owner: bgruening
