@@ -1,5 +1,8 @@
 #! /bin/bash
-VIRTUALENV="../.venv3"
+SECRET_ENV_FILE=".secret.env"; # todo: run this script from within main.sh
+[ -f $SECRET_ENV_FILE ] && LOCAL_ENV=1 || LOCAL_ENV=0
+[ $LOCAL_ENV = 0 ] && VENV_PATH="/var/lib/jenkins/jobs_common" || VENV_PATH=".."
+VIRTUALENV="$VENV_PATH/.venv3"
 # shellcheck source=../.venv/bin/activate
 . "$VIRTUALENV/bin/activate"
 
