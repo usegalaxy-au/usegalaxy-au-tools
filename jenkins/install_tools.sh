@@ -1,6 +1,7 @@
 #! /bin/bash
 
 AUTOMATED_TOOL_INSTALLATION_LOG="automated_tool_installation_log.tsv"; # version controlled
+WORKING_INSTALLATION_LOG="${LOG_DIR}/installation_log.tsv";
 LOG_HEADER="Category\tBuild Num.\tDate (AEST)\tName\tNew Tool\tStatus\tOwner\tInstalled Revision\tRequested Revision\tFailing Step\tStaging tests passed\tProduction tests passed\tSection Label\tTool Shed URL\tLog Path"
 
 source ".env"
@@ -84,7 +85,13 @@ install_tools() {
     TOOL_SHED_URL=$(grep -oE "tool_shed_url: .*$" "$TOOL_FILE" | cut -d ':' -f 2 | xargs);
     [ ! $TOOL_SHED_URL ] && TOOL_SHED_URL="toolshed.g2.bx.psu.edu"; # default value
     SECTION_LABEL=$(grep -oE "tool_panel_section_label: .*$" "$TOOL_FILE" | cut -d ':' -f 2 | xargs);
-    [ "$(grep '\[SKIP_TESTS\]' $TOOL_FILE)" ] && SKIP_TESTS=1 || SKIP_TESTS=0
+
+    # If either [FORCE] in the commit message or [SKIP_TESTS] in the file header, skip tests for this tool
+    if [ "$(grep '\[SKIP_TESTS\]' $TOOL_FILE)" ] || [ $FORCE = 1 ]; then
+      SKIP_TESTS=1
+    else
+      SKIP_TESTS=0
+    fi
 
     # Find out whether tool/owner combination already exists on galaxy.  This makes no difference to the installation process but
     # is useful for the log
@@ -116,15 +123,15 @@ install_tools() {
   git pull # update repo before changing tracked files
 
   echo -e "\n$INSTALLED_TOOL_COUNTER out of $NUM_TOOLS_TO_INSTALL tools installed."
-  if [ ! "$LOG_ENTRY" ]; then
+  if [ ! -f $WORKING_INSTALLATION_LOG ]; then
     echo -e "\nWARNING: No log entry stored";
   else
     echo -e "\nWriting entry to $AUTOMATED_TOOL_INSTALLATION_LOG"
     echo "=================================================="
     echo -e $LOG_HEADER
-    echo -e $LOG_ENTRY
+    cat $WORKING_INSTALLATION_LOG
     echo "=================================================="
-    echo -e $LOG_ENTRY >> $AUTOMATED_TOOL_INSTALLATION_LOG;
+    cat $WORKING_INSTALLATION_LOG >> $AUTOMATED_TOOL_INSTALLATION_LOG;
   fi
 
   COMMIT_FILES=("$AUTOMATED_TOOL_INSTALLATION_LOG")
@@ -286,7 +293,7 @@ install_tool() {
     fi
   elif [ $INSTALLATION_STATUS = "Installed" ]; then
     echo "$TOOL_NAME has been installed on $URL";
-    if [ $FORCE = 1 ] && [ $SERVER = "PRODUCTION" ]; then
+    if [ $SKIP_TESTS = 1 ] && [ $SERVER = "PRODUCTION" ]; then
       unset STEP
       log_row "Installed"
       exit_installation 0 ""
@@ -313,7 +320,7 @@ test_tool() {
   if [ $SERVER = "STAGING" ] && [ $INSTALLATION_STATUS = "Skipped" ]; then
     echo "Skipping testing on $STAGING_URL";
     return 0;
-  elif [ $FORCE = 1 ] || [ $SKIP_TESTS = 1 ]; then
+  elif [ $SKIP_TESTS = 1 ]; then
     echo "FORCE or skip_tests option specified, skipping tests";
     return 0
   fi
@@ -395,13 +402,9 @@ test_tool() {
 log_row() {
   # LOG_HEADER="Category\tBuild Num.\tDate (AEST)\tName\tNew Tool\tStatus\tOwner\tInstalled Revision\tRequested Revision\tFailing Step\tStaging tests passed\tProduction tests passed\tSection Label\tTool Shed URL\tLog Path"
   STATUS="$1"
-  if [ "$LOG_ENTRY" ]; then
-    LOG_ENTRY="$LOG_ENTRY\n";	# If log entry has content, add new line before new content
-  fi
   DATE=$(env TZ="Australia/Queensland" date "+%d/%m/%y %H:%M:%S")
   LOG_ROW="$(title $MODE)\t$BUILD_NUMBER\t$DATE\t$TOOL_NAME\t$TOOL_IS_NEW\t$STATUS\t$OWNER\t$INSTALLED_REVISION\t$REQUESTED_REVISION\t$STEP\t$STAGING_TESTS_PASSED\t$PRODUCTION_TESTS_PASSED\t$SECTION_LABEL\t$TOOL_SHED_URL\t$LOG_FILE"
-  LOG_ENTRY="$LOG_ENTRY$LOG_ROW"
-  # echo -e $LOG_ROW; # Need to print this values?  Store them in multiD array? What if script stops in the middle?
+  echo -e $LOG_ROW >> $WORKING_INSTALLATION_LOG
 }
 
 log_error() {
