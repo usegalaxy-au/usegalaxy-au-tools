@@ -10,4 +10,7 @@ trusted_owners:
 - owner: simon-gladman
 - owner: nml
 - owner: bgruening
+  blacklist:
+  - name: deeptools_bam_pe_fragmentsize
+    revision: 62eb6d63f582
 - owner: devteam
