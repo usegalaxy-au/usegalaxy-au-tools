@@ -2,8 +2,8 @@ tools:
 - name: circos
   owner: iuc
   revisions:
-  - ef5f8bbf7730
   - a64dc31ab7f2
+  - ef5f8bbf7730
   tool_panel_section_id: plots
   tool_panel_section_label: Graph/Display Data
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -39,6 +39,13 @@ tools:
   owner: iuc
   revisions:
   - de002ba2b849
+  tool_panel_section_id: plots
+  tool_panel_section_label: Graph/Display Data
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: ggplot2_point
+  owner: iuc
+  revisions:
+  - 87908c76ca8d
   tool_panel_section_id: plots
   tool_panel_section_label: Graph/Display Data
   tool_shed_url: toolshed.g2.bx.psu.edu
