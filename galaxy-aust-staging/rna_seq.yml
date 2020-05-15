@@ -1,4 +1,11 @@
 tools:
+- name: blockbuster
+  owner: rnateam
+  revisions:
+  - 7c7ff7a3503f
+  tool_panel_section_id: rna_seq
+  tool_panel_section_label: RNA-seq
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: cuffcompare
   owner: devteam
   revisions:
@@ -45,6 +52,13 @@ tools:
   owner: devteam
   revisions:
   - 78fcfc04fcfe
+  tool_panel_section_id: rna_seq
+  tool_panel_section_label: RNA-seq
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: deg_annotate
+  owner: iuc
+  revisions:
+  - e98d4ab5b5bc
   tool_panel_section_id: rna_seq
   tool_panel_section_label: RNA-seq
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -122,6 +136,13 @@ tools:
   owner: iuc
   revisions:
   - 0f710191a66d
+  tool_panel_section_id: rna_seq
+  tool_panel_section_label: RNA-seq
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: heinz
+  owner: iuc
+  revisions:
+  - 704c401e0afb
   tool_panel_section_id: rna_seq
   tool_panel_section_label: RNA-seq
   tool_shed_url: toolshed.g2.bx.psu.edu
