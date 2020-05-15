@@ -23,7 +23,7 @@ valid_section_labels = [
     'Metabolomics', 'Picard', 'DeepTools', 'EMBOSS', 'Blast +',
     'GATK Tools 1.4', 'GATK Tools', 'Alignment', 'RSeQC', 'Gemini Tools',
     'Statistics', 'Graph/Display Data', 'Machine Learning', 'iVar',
-    'ChemicalToolBox', 'Qualimap', 'Single-cell', 'None',
+    'ChemicalToolBox', 'Qualimap', 'Viral Tools', 'Single-cell', 'None',
 ]
 
 
