@@ -13,10 +13,31 @@ tools:
   tool_panel_section_id: variant_calling
   tool_panel_section_label: Variant Calling
   tool_shed_url: toolshed.g2.bx.psu.edu
+- name: lofreq_alnqual
+  owner: iuc
+  revisions:
+  - 435b157bed6d
+  tool_panel_section_id: variant_calling
+  tool_panel_section_label: Variant Calling
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: lofreq_call
   owner: iuc
   revisions:
   - 3b4b2121842f
+  tool_panel_section_id: variant_calling
+  tool_panel_section_label: Variant Calling
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: lofreq_filter
+  owner: iuc
+  revisions:
+  - 9cb929f21cfa
+  tool_panel_section_id: variant_calling
+  tool_panel_section_label: Variant Calling
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: lofreq_indelqual
+  owner: iuc
+  revisions:
+  - f4473557ffc7
   tool_panel_section_id: variant_calling
   tool_panel_section_label: Variant Calling
   tool_shed_url: toolshed.g2.bx.psu.edu
