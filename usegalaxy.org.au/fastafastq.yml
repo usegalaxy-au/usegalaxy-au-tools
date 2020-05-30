@@ -48,6 +48,13 @@ tools:
   tool_panel_section_id: fasta_fastq
   tool_panel_section_label: FASTA/FASTQ
   tool_shed_url: toolshed.g2.bx.psu.edu
+- name: fasta_merge_files_and_filter_unique_sequences
+  owner: galaxyp
+  revisions:
+  - 2904d46167da
+  tool_panel_section_id: fasta_fastq
+  tool_panel_section_label: FASTA/FASTQ
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fasta_nucleotide_changer
   owner: devteam
   revisions:
