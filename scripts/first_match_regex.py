@@ -2,6 +2,13 @@ import re
 import argparse
 import sys
 
+"""
+Find the first match from a pattern in a file.  This is designed to mimic
+the functionality of bash regular expression matching.  This helper has been
+written because bash versions earlier than 4 do not support regex matching.
+"""
+
+
 def main():
     parser = argparse.ArgumentParser(description='Mimic bash pattern matching')
     parser.add_argument('-p', '--pattern', help='Pattern to match')
@@ -10,9 +17,8 @@ def main():
 
     first_match_regex(args.file_path, args.pattern)
 
+
 def first_match_regex(path, pattern):
-    # Hack to produce the same values that would be stored in BASH_REMATCH[1:] if
-    # it were working on mac.
     compiled_pattern = re.compile(
         pattern,
         re.MULTILINE,
@@ -23,4 +29,6 @@ def first_match_regex(path, pattern):
         match = matches[0] if not isinstance(matches[0], str) else [matches[0]]
         sys.stdout.write('%s' % ' '.join(match))  # value returned to shell through stdout
 
-if __name__ == "__main__": main()
+
+if __name__ == "__main__":
+    main()

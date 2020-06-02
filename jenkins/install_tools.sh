@@ -86,8 +86,9 @@ install_tools() {
     [ ! $TOOL_SHED_URL ] && TOOL_SHED_URL="toolshed.g2.bx.psu.edu"; # default value
     SECTION_LABEL=$(grep -oE "tool_panel_section_label: .*$" "$TOOL_FILE" | cut -d ':' -f 2 | xargs);
 
-    # If either [FORCE] in the commit message or [SKIP_TESTS] in the file header, skip tests for this tool
-    if [ "$(grep '\[SKIP_TESTS\]' $TOOL_FILE)" ] || [ $FORCE = 1 ]; then
+    [ "$(grep '\[VERSION_UPDATE\]' $TOOL_FILE)" ] && VERSION_UPDATE=1 || VERSION_UPDATE=0; # VERSION_UPDATE means do not uninstall under any circumstances
+    # If either [FORCE] in the commit message or [VERSION_UPDATE] in the file header, skip tests for this tool
+    if [ $VERSION_UPDATE = 1 ] || [ $FORCE = 1 ]; then
       SKIP_TESTS=1
     else
       SKIP_TESTS=0
@@ -107,16 +108,16 @@ install_tools() {
 
     {
       echo -e "\nStep (1): Installing $TOOL_NAME on staging server";
-      install_tool "STAGING" $TOOL_FILE
+      install_tool "STAGING"
     } && {
       echo -e "\nStep (2): Testing $TOOL_NAME on staging server";
-      test_tool "STAGING" $TOOL_FILE
+      test_tool "STAGING"
     } && {
       echo -e "\nStep (3): Installing $TOOL_NAME on production server";
-      install_tool "PRODUCTION" $TOOL_FILE
+      install_tool "PRODUCTION"
     } && {
       echo -e "\nStep (4): Testing $TOOL_NAME on production server";
-      test_tool "PRODUCTION" $TOOL_FILE
+      test_tool "PRODUCTION"
     }
   done
 
@@ -198,7 +199,6 @@ install_tools() {
 
 install_tool() {
   # Positional arguments: $1 = STAGING|PRODUCTION, $2 = tool file path
-  TOOL_FILE="$2"
   SERVER="$1"
   set_url $SERVER
   STEP="$(title $SERVER) Installation"; # Production Installation or Staging Installation
@@ -225,27 +225,15 @@ install_tool() {
   }
 
   # Capture the status (Installed/Skipped/Errored), name and revision hash from ephemeris output
-  if [ $BASH_V = 4 ]; then
-    PATTERN="(\w+) repositories \(1\): \[\('([^']+)',\s*u?'(\w+)'\)\]"
-    [[ $(cat $INSTALL_LOG) =~ $PATTERN ]];
-    INSTALLATION_STATUS="${BASH_REMATCH[1]}"
-    INSTALLED_NAME="${BASH_REMATCH[2]}";
-    INSTALLED_REVISION="${BASH_REMATCH[3]}";
-
-    PATTERN="Repository ([^\s]+) is already installed"
-    [[ $(cat $INSTALL_LOG) =~ $PATTERN ]];
-    ALREADY_INSTALLED="${BASH_REMATCH[1]}";
-    [ $ALREADY_INSTALLED ] && INSTALLATION_STATUS="Skipped";
-  else # the regex above does not work on my local machine using bash 3 (Mac), hence this python workaround
-    SHED_TOOLS_VALUES=($(python scripts/first_match_regex.py -p "(\w+) repositories \(1\): \[\('([^']+)',\s*u?'(\w+)'\)\]" $INSTALL_LOG));
-    if [[ "${SHED_TOOLS_VALUES[*]}" ]]; then
-      INSTALLATION_STATUS="${SHED_TOOLS_VALUES[0]}";
-      INSTALLED_NAME="${SHED_TOOLS_VALUES[1]}";
-      INSTALLED_REVISION="${SHED_TOOLS_VALUES[2]}";
-    fi
-    ALREADY_INSTALLED=$(python scripts/first_match_regex.py -p "Repository (\w+) is already installed" $INSTALL_LOG);
-    [ $ALREADY_INSTALLED ] && INSTALLATION_STATUS="Skipped";
+  SHED_TOOLS_VALUES=($(python scripts/first_match_regex.py -p "(\w+) repositories \(1\): \[\('([^']+)',\s*u?'(\w+)'\)\]" $INSTALL_LOG));
+  if [[ "${SHED_TOOLS_VALUES[*]}" ]]; then
+    INSTALLATION_STATUS="${SHED_TOOLS_VALUES[0]}";
+    INSTALLED_NAME="${SHED_TOOLS_VALUES[1]}";
+    INSTALLED_REVISION="${SHED_TOOLS_VALUES[2]}";
   fi
+  ALREADY_INSTALLED=$(python scripts/first_match_regex.py -p "Repository (\w+) is already installed" $INSTALL_LOG);
+  [ $ALREADY_INSTALLED ] && INSTALLATION_STATUS="Skipped";
+  # fi
 
   if [ ! "$INSTALLATION_STATUS" ] || [ ! "$INSTALLED_NAME" ] || [ ! "$INSTALLED_REVISION" ]; then
     # TODO what if this is production server?  wind back staging installation?
@@ -253,26 +241,13 @@ install_tool() {
     exit_installation 1 "Could not verify installation from shed-tools output."
     return 1
   fi
-  if [ ! "$TOOL_NAME" = "$INSTALLED_NAME" ]; then
-    # If these are not the same name it is probably due to this script.
-    # uninstall and abandon process with 'Script error'
-    python scripts/uninstall_tools.py -g $URL -a $API_KEY -n "$INSTALLED_NAME@$INSTALLED_REVISION";
-    log_row "Script Error"
-    exit_installation 1 "Unexpected value for name of installed tool.  Expecting $TOOL_NAME, received $INSTALLED_NAME";
-    return 1
-  fi
 
   # INSTALLATION_STATUS can have one of 3 values: Installed, Skipped, Errored
   if [ $INSTALLATION_STATUS = "Errored" ]; then
     # The tool may or may not be installed according to the API, so it needs to be
     # uninstalled with bioblend
-    echo "Installation error.  Uninstalling $TOOL_NAME on $URL";
-    python scripts/uninstall_tools.py -g $URL -a $API_KEY -n "$INSTALLED_NAME@$INSTALLED_REVISION";
-    if [ $SERVER = "PRODUCTION" ]; then
-      # also uninstall on staging
-      echo "Uninstalling $TOOL_NAME on $STAGING_URL";
-      python scripts/uninstall_tools.py -g $STAGING_URL -a $STAGING_API_KEY -n "$INSTALLED_NAME@$INSTALLED_REVISION";
-    fi
+    echo "Winding back installation due to API error."
+    uninstall_tool
     log_row $INSTALLATION_STATUS
     log_error $LOG_FILE
     exit_installation 1 ""
@@ -309,26 +284,22 @@ install_tool() {
 
 test_tool() {
   # Positional arguments: $1 = STAGING|PRODUCTION, $2 = tool file path
-  TOOL_FILE="$2"
   SERVER="$1"
   set_url $SERVER
   STEP="$(title $SERVER) Testing"; # Production Testing or Staging Testing
   TEST_JSON="${LOG_DIR}/$(lower $SERVER)/${TOOL_NAME}@${INSTALLED_REVISION}.json"
   PLANEMO_TEST_OUTPUT="${LOG_DIR}/planemo/${TOOL_NAME}@${INSTALLED_REVISION}_$(lower $SERVER).html"
 
-  # Special case: If package is already installed on staging we skip tests and install on production
-  if [ $SERVER = "STAGING" ] && [ $INSTALLATION_STATUS = "Skipped" ]; then
-    echo "Skipping testing on $STAGING_URL";
-    return 0;
-  elif [ $SKIP_TESTS = 1 ]; then
-    echo "FORCE or skip_tests option specified, skipping tests";
+  # If the tool was already installed or the SKIP_TESTS flag is set, skip tests
+  if [ $SKIP_TESTS = 1 ] || [ $INSTALLATION_STATUS = "Skipped" ]; then
+    echo "FORCE option specified or tool/version already installed. Skipping tests.";
     return 0
   fi
 
   TEST_LOG="$TMP/test_log.txt"
   rm -f $TEST_LOG ||:;  # delete file if it exists
 
-  sleep 120s; # Allow time for handlers to catch up
+  sleep 90s; # Allow time for handlers to catch up
 
   # Ping galaxy url
   echo "Waiting for $URL";
@@ -346,26 +317,18 @@ test_tool() {
     return 1
   }
 
-  if [ $BASH_V = 4 ]; then
-    # normal regex
-    PATTERN="Passed tool tests \(([0-9]+)\)"
-    [[ $(cat $TEST_LOG) =~ $PATTERN ]];
-    TESTS_PASSED="${BASH_REMATCH[1]}"
-    PATTERN="Failed tool tests \(([0-9]+)\)"
-    [[ $(cat $TEST_LOG) =~ $PATTERN ]];
-    TESTS_FAILED="${BASH_REMATCH[1]}"
-  else
-    # resort to python helper
-    TESTS_PASSED="$(python scripts/first_match_regex.py -p 'Passed tool tests \((\d+)\)' $TEST_LOG)"
-    TESTS_FAILED="$(python scripts/first_match_regex.py -p 'Failed tool tests \((\d+)\)' $TEST_LOG)"
-  fi
+  # use python regex helper to get test results from shed-tools log
+  TESTS_PASSED="$(python scripts/first_match_regex.py -p 'Passed tool tests \((\d+)\)' $TEST_LOG)"
+  TESTS_FAILED="$(python scripts/first_match_regex.py -p 'Failed tool tests \((\d+)\)' $TEST_LOG)"
 
   # Proportion of tests passed for logs
   [ $SERVER = "STAGING" ] && STAGING_TESTS_PASSED="$TESTS_PASSED/$(($TESTS_PASSED+$TESTS_FAILED))";
   [ $SERVER = "PRODUCTION" ] && PRODUCTION_TESTS_PASSED="$TESTS_PASSED/$(($TESTS_PASSED+$TESTS_FAILED))";
 
-  if [ $TESTS_FAILED = 0 ] && [ ! $TESTS_PASSED = 0 ]; then
-    echo "All tests have passed for $TOOL_NAME at revision $INSTALLED_REVISION on $URL.";
+  if [ $TESTS_FAILED = 0 ]; then
+    if [ $TESTS_PASSED = 0 ]; then
+      echo "WARNING: There are no tests for $TOOL_NAME at revision $INSTALLED_REVISION.  Proceeding as none have failed.";
+    fi
     if [ "$SERVER" = "PRODUCTION" ]; then
       echo "Successfully installed $TOOL_NAME on $URL";
       unset STEP
@@ -377,25 +340,27 @@ test_tool() {
       return 0
     fi
   else
-    STATUS="Tests failed"
-    [ $TESTS_PASSED = 0 ] && [ $TESTS_FAILED = 0 ] && STATUS="No tests found"
-    echo "Failed to install: $STATUS";
-    # Uninstall tool if tests have failed.  If no tests are found, the tool may be a new revision
-    # without a version bump, in which case it is not safe to uninstall it
-    if [ "$STATUS" = "Tests failed" ]; then
-      echo "Winding back installation: Uninstalling on $URL";
-      python scripts/uninstall_tools.py -g $URL -a $API_KEY -n "$INSTALLED_NAME@$INSTALLED_REVISION";
-      if [ $SERVER = "PRODUCTION" ]; then
-        # also uninstall on staging
-        echo "Uninstalling on $STAGING_URL";
-        python scripts/uninstall_tools.py -g $STAGING_URL -a $STAGING_API_KEY -n "$INSTALLED_NAME@$INSTALLED_REVISION";
-      fi
-    fi
-    log_row "$STATUS"
+    echo "Winding back installation as some tests have failed"
+    uninstall_tool
+    log_row "Tests failed"
     log_error $TEST_JSON
     planemo test_reports $TEST_JSON --test_output $PLANEMO_TEST_OUTPUT
     exit_installation 1 ""
     return 1
+  fi
+}
+
+uninstall_tool() {
+  if [ $VERSION_UPDATE = 1 ]; then
+    echo "This tool cannot be uninstalled as the version is already installed."
+  else
+    echo "Uninstalling on $URL";
+    python scripts/uninstall_tools.py -g $URL -a $API_KEY -n "$INSTALLED_NAME@$INSTALLED_REVISION";
+    if [ $SERVER = "PRODUCTION" ]; then
+      # also uninstall on staging
+      echo "Uninstalling on $STAGING_URL";
+      python scripts/uninstall_tools.py -g $STAGING_URL -a $STAGING_API_KEY -n "$INSTALLED_NAME@$INSTALLED_REVISION";
+    fi
   fi
 }
 

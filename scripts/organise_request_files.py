@@ -128,25 +128,25 @@ def get_new_revision(tool, repos, trusted_owners):
     installed_versions = [get_version(r['changeset_revision']) for r in matching_repos]
     if latest_revision_version is None or None in installed_versions:  # skip on errors from get_version
         return
-    skip_tests = latest_revision_version in installed_versions
-    if skip_tests:
+    version_update = latest_revision_version in installed_versions
+    if version_update:
         print('Latest revision %s of %s has version %s already installed on GA.  Skipping tests for this tool ' % (
             latest_revision, tool['name'], latest_revision_version
         ))
 
-    return {'revisions': [latest_revision], 'skip_tests': skip_tests}
+    return {'revisions': [latest_revision], 'version_update': version_update}
 
 
 def write_output_file(path, tool):
     if not path[-1] == '/':
         path = path + '/'
     [revision] = tool['revisions'] if 'revisions' in tool.keys() else ['latest']
-    skip_tests = tool.pop('skip_tests', False)
+    version_update = tool.pop('version_update', False)
     file_path = '%s%s@%s.yml' % (path, tool['name'], revision)
     print('writing file %s' % file_path)
     with open(file_path, 'w') as outfile:
-        if skip_tests:
-            outfile.write('# [SKIP_TESTS]\n')
+        if version_update:
+            outfile.write('# [VERSION_UPDATE]\n')
         outfile.write(yaml.dump({'tools': [tool]}))
 
 
