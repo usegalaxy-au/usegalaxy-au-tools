@@ -7,10 +7,38 @@ trusted_owners:
 - owner: iuc
   blacklist:
   - name: gatk2
+  - name: gemini_burden
+  - name: gemini_pathways
+  - name: gemini_interactions
+  - name: gemini_inheritance
+  - name: gemini_dump
+  - name: gemini_fusions
+  - name: gemini_set_somatic
+  - name: gemini_actionable_mutations
+  - name: gemini_qc
+  - name: gemini_de_novo
+  - name: gemini_recessive_and_dominant
+  - name: gemini_db_info
+  - name: gemini_load
+  - name: gemini_mendel_errors
+  - name: gemini_amend
+  - name: gemini_gene_wise
+  - name: gemini_roh
+  - name: gemini_lof_sieve
+  - name: gemini_stats
+  - name: gemini_region
+  - name: gemini_windower
+  - name: gemini_annotate
+  - name: gemini_query
+  - name: gemini_comp_hets
+  - name: raxml
+    revision: 73a469f7dc96
 - owner: simon-gladman
 - owner: nml
 - owner: bgruening
   blacklist:
   - name: deeptools_bam_pe_fragmentsize
     revision: 62eb6d63f582
+  - name: diffbind
+    revision: 194e3f2c1d86
 - owner: devteam
