@@ -5,7 +5,6 @@ MODE="$1"; # Two modes possible: "install" for tool request, "update" for cron u
 ARGS=( "$@" )
 FILE_ARGS=("${ARGS[@]:1}")
 LOG_DIR=~/galaxy_tool_automation
-BASH_V="$(echo ${BASH_VERSION} | head -c 1)" # this will be "4" if the bash version is 4.x, empty otherwise
 
 FORCE=0
 GIT_COMMIT_MESSAGE=$(git log --format=%B -n 1 $GIT_COMMIT | cat)
@@ -47,7 +46,6 @@ export LOG_FILE="${LOG_DIR}/install_log.txt"
 export GIT_COMMIT=$GIT_COMMIT
 export GIT_PREVIOUS_COMMIT=$GIT_PREVIOUS_COMMIT
 export LOG_DIR=$LOG_DIR
-export BASH_V=$BASH_V
 export MODE=$MODE
 export FORCE=$FORCE
 
