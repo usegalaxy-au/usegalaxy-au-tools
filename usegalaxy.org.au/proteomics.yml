@@ -62,6 +62,20 @@ tools:
   tool_panel_section_id: proteomics
   tool_panel_section_label: Proteomics
   tool_shed_url: toolshed.g2.bx.psu.edu
+- name: dia_umpire
+  owner: galaxyp
+  revisions:
+  - 2b785516abfc
+  tool_panel_section_id: proteomics
+  tool_panel_section_label: Proteomics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: flashlfq
+  owner: galaxyp
+  revisions:
+  - 92c059f90d0e
+  tool_panel_section_id: proteomics
+  tool_panel_section_label: Proteomics
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: maldi_quant_peak_detection
   owner: galaxyp
   revisions:
@@ -79,14 +93,21 @@ tools:
 - name: maxquant_mqpar
   owner: galaxyp
   revisions:
-  - 3fc2116ac6d9
+  - 2d67fb758956
   tool_panel_section_id: proteomics
   tool_panel_section_label: Proteomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: maxquant
   owner: galaxyp
   revisions:
-  - 7f432d87c82c
+  - 2133b0be850a
+  tool_panel_section_id: proteomics
+  tool_panel_section_label: Proteomics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: morpheus
+  owner: galaxyp
+  revisions:
+  - e0104a9f20f0
   tool_panel_section_id: proteomics
   tool_panel_section_label: Proteomics
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -213,6 +234,27 @@ tools:
   owner: galaxyp
   revisions:
   - bf32e0bcf554
+  tool_panel_section_id: proteomics
+  tool_panel_section_label: Proteomics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: openms_openswathassaygenerator
+  owner: galaxyp
+  revisions:
+  - 8c01da82292c
+  tool_panel_section_id: proteomics
+  tool_panel_section_label: Proteomics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: openms_openswathmzmlfilecacher
+  owner: galaxyp
+  revisions:
+  - 05ec9fb05ed1
+  tool_panel_section_id: proteomics
+  tool_panel_section_label: Proteomics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: openms_openswathrtnormalizer
+  owner: galaxyp
+  revisions:
+  - 18826fb8e5db
   tool_panel_section_id: proteomics
   tool_panel_section_label: Proteomics
   tool_shed_url: toolshed.g2.bx.psu.edu
