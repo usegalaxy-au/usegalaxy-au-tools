@@ -1,11 +1,11 @@
 ---
 # List of trusted tool owners.  The weekly update script will install updates for
 # any installed tools on usegalaxy.org.au with owners on this list, with the exception
-# of tools named in the blacklist for the owner.  A tool can be excluded by name
+# of tools listed in the skip_tools list for the owner.  A tool can be excluded by name
 # or by name and revision
 trusted_owners:
 - owner: iuc
-  blacklist:
+  skip_tools:
   - name: gatk2
   - name: gemini_burden
   - name: gemini_pathways
@@ -36,7 +36,7 @@ trusted_owners:
 - owner: simon-gladman
 - owner: nml
 - owner: bgruening
-  blacklist:
+  skip_tools:
   - name: deeptools_bam_pe_fragmentsize
     revision: 62eb6d63f582
   - name: diffbind
