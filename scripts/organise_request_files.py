@@ -93,9 +93,9 @@ def get_new_revision(tool, repos, trusted_owners):
     if not matching_owners:
         return
     [owner] = matching_owners
-    blacklist = owner.get('blacklist', []) if isinstance(owner, dict) else []
-    blacklisted_revisions = [b.get('revision', 'all') for b in blacklist if b.get('name') == tool['name']]
-    if 'all' in blacklisted_revisions:
+    skipped_tools = owner.get('skip_tools', []) if isinstance(owner, dict) else []
+    skipped_revisions = [st.get('revision', 'all') for st in skipped_tools if st.get('name') == tool['name']]
+    if 'all' in skipped_revisions:
         return
 
     toolshed = ToolShedInstance(url='https://' + tool['tool_shed_url'])
@@ -110,9 +110,9 @@ def get_new_revision(tool, repos, trusted_owners):
         print('Skipping %s.  Error querying tool revisions: %s' % (tool['name'], str(e)))
         return
 
-    blacklisted = latest_revision in blacklisted_revisions
+    skip_this_tool = latest_revision in skipped_revisions
     installed = latest_revision in [r['changeset_revision'] for r in matching_repos]
-    if blacklisted or installed:
+    if skip_this_tool or installed:
         return
 
     def get_version(revision):
