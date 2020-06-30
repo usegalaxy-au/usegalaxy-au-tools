@@ -6,6 +6,20 @@ tools:
   tool_panel_section_id: metagenomic_analysis
   tool_panel_section_label: Metagenomic Analysis
   tool_shed_url: toolshed.g2.bx.psu.edu
+- name: cat_prepare
+  owner: iuc
+  revisions:
+  - 8315b5cebb82
+  tool_panel_section_id: metagenomic_analysis
+  tool_panel_section_label: Metagenomic Analysis
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: cat_summarise
+  owner: iuc
+  revisions:
+  - 7f1aaa1932d8
+  tool_panel_section_id: metagenomic_analysis
+  tool_panel_section_label: Metagenomic Analysis
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: collector_curve
   owner: qfab
   revisions:
@@ -79,8 +93,8 @@ tools:
 - name: kraken_report
   owner: devteam
   revisions:
-  - 1902d3de4a4f
   - 6c09bed3444f
+  - 1902d3de4a4f
   tool_panel_section_id: metagenomic_analysis
   tool_panel_section_label: Metagenomic Analysis
   tool_shed_url: toolshed.g2.bx.psu.edu
