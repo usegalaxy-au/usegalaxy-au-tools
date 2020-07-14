@@ -34,8 +34,11 @@ trusted_owners:
   - name: gemini_comp_hets
   - name: raxml
     revision: 73a469f7dc96
-  - name: sra_tools # block update of sra_tools until we have galaxy 20.05
-    revision: 964579f93c54 # because it uses a data type introduced in 20.05
+  - name: sra_tools # block update of sra_tools because it uses a data type introduced in 20.05
+  - name: scanpy_inspect # test failures, CB to investigate
+    revision: 6c145a6868cc
+  - name: scanpy_plot # test failures, CB to investigate
+    revision: 7647e5cd1b8b
 - owner: simon-gladman
 - owner: nml
 - owner: bgruening
