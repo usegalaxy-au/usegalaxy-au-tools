@@ -24,7 +24,7 @@ valid_section_labels = [
     'GATK Tools 1.4', 'GATK Tools', 'Alignment', 'RSeQC', 'Gemini Tools',
     'Statistics', 'Graph/Display Data', 'Machine Learning', 'iVar',
     'ChemicalToolBox', 'Qualimap', 'Viral Tools', 'Single-cell', 'RAD-seq',
-    'None',
+    'None', 'Epigenetics', 'HiCExplorer',
 ]
 
 
