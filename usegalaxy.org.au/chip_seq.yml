@@ -13,13 +13,6 @@ tools:
   tool_panel_section_id: chip_seq
   tool_panel_section_label: ChiP-seq
   tool_shed_url: toolshed.g2.bx.psu.edu
-- name: idr_package
-  owner: modencode-dcc
-  revisions:
-  - 6f6a9fbe264e
-  tool_panel_section_id: chip_seq
-  tool_panel_section_label: ChiP-seq
-  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: macs21
   owner: pjbriggs
   revisions:
@@ -30,9 +23,9 @@ tools:
 - name: macs2
   owner: iuc
   revisions:
+  - f5d67c722d67
   - 424aefbd7777
   - 495a4173006f
-  - f5d67c722d67
   tool_panel_section_id: chip_seq
   tool_panel_section_label: ChiP-seq
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -47,13 +40,6 @@ tools:
   owner: devteam
   revisions:
   - 74c9214cc8e6
-  tool_panel_section_id: chip_seq
-  tool_panel_section_label: ChiP-seq
-  tool_shed_url: toolshed.g2.bx.psu.edu
-- name: spp_tool
-  owner: stemcellcommons
-  revisions:
-  - 23b22c1692fa
   tool_panel_section_id: chip_seq
   tool_panel_section_label: ChiP-seq
   tool_shed_url: toolshed.g2.bx.psu.edu
