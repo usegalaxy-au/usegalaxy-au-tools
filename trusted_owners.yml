@@ -7,8 +7,8 @@ trusted_owners:
 - owner: iuc
   skip_tools:
   - name: data_manager_gemini_database_downloader
-  - name: gatk2
-  - name: gemini_burden
+  - name: gatk2  # no longer supported
+  - name: gemini_burden  # gemini tools need database installed ahead of tools
   - name: gemini_pathways
   - name: gemini_interactions
   - name: gemini_inheritance
@@ -45,5 +45,14 @@ trusted_owners:
   - name: diffbind
     revision: 194e3f2c1d86
 - owner: devteam
+  skip_tools:
+  - name: cuffdiff  # no longer supported
+  - name: velvet  # temporarily skip 2020-09-08
 - owner: galaxyp
+  skip_tools:
+  - name: cardinal_data_exporter  # temporarily skip 2020-09-08
+  - name: cardinal_preprocessing  # temporarily skip 2020-09-08
+  - name: cardinal_quality_report  # temporarily skip 2020-09-08
+  - name: cardinal_segmentations  # temporarily skip 2020-09-08
+  - name: cardinal_spectra_plots  # temporarily skip 2020-09-08
 
