@@ -107,11 +107,15 @@ install_tools() {
     cat $TOOL_FILE
 
     {
-      echo -e "\nStep (1): Installing $TOOL_NAME on staging server";
-      install_tool "STAGING"
+      if [ $STAGING_URL ]; then
+        echo -e "\nStep (1): Installing $TOOL_NAME on staging server";
+        install_tool "STAGING"
+      fi
     } && {
-      echo -e "\nStep (2): Testing $TOOL_NAME on staging server";
-      test_tool "STAGING"
+      if [ $STAGING_URL ]; then
+        echo -e "\nStep (2): Testing $TOOL_NAME on staging server";
+        test_tool "STAGING"
+      fi
     } && {
       echo -e "\nStep (3): Installing $TOOL_NAME on production server";
       install_tool "PRODUCTION"
@@ -188,7 +192,7 @@ install_tools() {
     PR_FILE="$TMP/hub_pull_request_file"
     echo -e "Jenkins $MODE build $BUILD_NUMBER errors\n\n" > $PR_FILE
     cat $ERROR_LOG >> $PR_FILE
-    hub pull-request -F $PR_FILE
+    # hub pull-request -F $PR_FILE # can no longer use hub in test environment
     rm $PR_FILE
     git checkout master
   fi
@@ -398,7 +402,7 @@ update_tool_list() {
   rm -f $TMP_TOOL_FILE ||:; # remove temp file if it exists
   [ -d $TOOL_DIR ] || mkdir $TOOL_DIR;  # make directory if it does not exist
   rm $TOOL_DIR/*; # Delete tool files to replace them with split_tool_yml output
-  get-tool-list -g $URL -a $API_KEY -o $TMP_TOOL_FILE --get_data_managers --include_tool_panel_id
+  get-tool-list -g $URL -a $API_KEY -o $TMP_TOOL_FILE --get_all_tools
   python scripts/split_tool_yml.py -i $TMP_TOOL_FILE -o $TOOL_DIR; # Simon's script
   rm $TMP_TOOL_FILE
 }
