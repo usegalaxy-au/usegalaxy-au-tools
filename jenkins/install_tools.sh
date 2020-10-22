@@ -358,10 +358,14 @@ uninstall_tool() {
   if [ $VERSION_UPDATE = 1 ]; then
     echo "This tool cannot be uninstalled as the version is already installed."
   else
-    echo "Uninstalling on $URL";
+    echo "Waiting for $URL"
+    galaxy-wait -g $URL
+    echo "Uninstalling on $URL"
     python scripts/uninstall_tools.py -g $URL -a $API_KEY -n "$INSTALLED_NAME@$INSTALLED_REVISION";
     if [ $SERVER = "PRODUCTION" ]; then
       # also uninstall on staging
+      echo "Waiting for $STAGING_URL"
+      galaxy-wait -g $STAGING_URL
       echo "Uninstalling on $STAGING_URL";
       python scripts/uninstall_tools.py -g $STAGING_URL -a $STAGING_API_KEY -n "$INSTALLED_NAME@$INSTALLED_REVISION";
     fi
