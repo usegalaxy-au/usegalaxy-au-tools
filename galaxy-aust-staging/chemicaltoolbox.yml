@@ -1,4 +1,10 @@
 tools:
+- name: bio3d_pca_visualize
+  owner: chemteam
+  revisions:
+  - f61a718993fd
+  tool_panel_section_label: ChemicalToolBox
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: bio3d_pca
   owner: chemteam
   revisions:
@@ -17,18 +23,24 @@ tools:
   - 6bcb804a54c3
   tool_panel_section_label: ChemicalToolBox
   tool_shed_url: toolshed.g2.bx.psu.edu
+- name: chemical_data_sources
+  owner: bgruening
+  revisions:
+  - c2055dd1927b
+  tool_panel_section_label: ChemicalToolBox
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: ctb_frankenstein_ligand
   owner: bgruening
   revisions:
-  - 7255688c77f3
   - 8e214e52e461
+  - 7255688c77f3
   tool_panel_section_label: ChemicalToolBox
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: enumerate_charges
   owner: bgruening
   revisions:
-  - 2a868592ebcb
   - 36360fa103d6
+  - 2a868592ebcb
   tool_panel_section_label: ChemicalToolBox
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: get_pdb
@@ -37,16 +49,30 @@ tools:
   - 538790c6c21b
   tool_panel_section_label: ChemicalToolBox
   tool_shed_url: toolshed.g2.bx.psu.edu
+- name: gmx_editconf
+  owner: chemteam
+  revisions:
+  - bfb65cb551d8
+  tool_panel_section_label: ChemicalToolBox
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: gmx_em
   owner: chemteam
   revisions:
+  - 55918daa5651
   - 476cdf677b03
+  tool_panel_section_label: ChemicalToolBox
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: gmx_merge_topology_files
+  owner: chemteam
+  revisions:
+  - ced8ec975548
   tool_panel_section_label: ChemicalToolBox
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: gmx_setup
   owner: chemteam
   revisions:
   - ccdf0b30a422
+  - 4da9ee404eab
   tool_panel_section_label: ChemicalToolBox
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: gmx_sim
@@ -59,6 +85,13 @@ tools:
   owner: chemteam
   revisions:
   - 3c77d66e7fe5
+  - 27ea4e1a3f95
+  tool_panel_section_label: ChemicalToolBox
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: md_converter
+  owner: chemteam
+  revisions:
+  - 79e8ab8f1e81
   tool_panel_section_label: ChemicalToolBox
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: openbabel_compound_convert
@@ -72,24 +105,24 @@ tools:
 - name: rdock_rbcavity
   owner: bgruening
   revisions:
-  - 744a777e9f90
   - 7e5c2e4bc227
+  - 744a777e9f90
   tool_panel_section_label: ChemicalToolBox
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: rdock_rbdock
   owner: bgruening
   revisions:
-  - c362398df83b
   - a22969b08177
   - e4b7d1507a75
+  - c362398df83b
   tool_panel_section_label: ChemicalToolBox
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: sucos_max_score
   owner: bgruening
   revisions:
   - 85fad59f8168
-  - d4c67ced6abc
-  - bf99565cec1f
   - 55ac04db36aa
+  - bf99565cec1f
+  - d4c67ced6abc
   tool_panel_section_label: ChemicalToolBox
   tool_shed_url: toolshed.g2.bx.psu.edu
