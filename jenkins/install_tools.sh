@@ -406,6 +406,8 @@ update_tool_list() {
   rm -f $TMP_TOOL_FILE ||:; # remove temp file if it exists
   [ -d $TOOL_DIR ] || mkdir $TOOL_DIR;  # make directory if it does not exist
   rm $TOOL_DIR/*; # Delete tool files to replace them with split_tool_yml output
+  echo "Waiting for $URL";
+  galaxy-wait -g $URL
   get-tool-list -g $URL -a $API_KEY -o $TMP_TOOL_FILE --get_all_tools
   python scripts/split_tool_yml.py -i $TMP_TOOL_FILE -o $TOOL_DIR; # Simon's script
   rm $TMP_TOOL_FILE
