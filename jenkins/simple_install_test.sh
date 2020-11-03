@@ -10,10 +10,14 @@ if [ ! $URL ] || [ ! $API_KEY ] || [ ! $LOG_DIR ]; then
     exit 1;
 fi
 
+LOG_DIR=${LOG_DIR}/build_${BUILD_NUMBER}
+mkdir -p $LOG_DIR
+
 INSTALL_LOG=${LOG_DIR}/${SECTION}_install_log.txt
 TEST_LOG=${LOG_DIR}/${SECTION}_test_log.txt
 TEST_JSON=${LOG_DIR}/${SECTION}_test.json
 TEST_HTML=${LOG_DIR}/${SECTION}_test.html
+cp $TOOL_FILE ${LOG_DIR}/$(basename $TOOL_FILE)
 
 shed-tools install -g ${URL} -a ${API_KEY} -t ${TOOL_FILE} -v --log_file ${INSTALL_LOG}
 shed-tools test -g ${URL} -a ${API_KEY} -t ${TOOL_FILE} --parallel_tests 4 --test_json ${TEST_JSON} -v --log_file ${TEST_LOG} --test_all_versions # is parallel_tests 4 appropriate?
