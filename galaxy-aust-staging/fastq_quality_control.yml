@@ -74,8 +74,8 @@ tools:
 - name: fastq_trimmer_by_quality
   owner: devteam
   revisions:
-  - c64d534a763c
   - 8050e091e99b
+  - c64d534a763c
   tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastq_trimmer_by_quality
@@ -93,11 +93,11 @@ tools:
 - name: fastqc
   owner: devteam
   revisions:
-  - c15237684a01
-  - ff9530579d1f
   - f2e8552cf1d0
-  - 2b0c9d9fc6ca
+  - c15237684a01
   - e7b2202befea
+  - 2b0c9d9fc6ca
+  - ff9530579d1f
   tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastqc
@@ -121,10 +121,10 @@ tools:
 - name: multiqc
   owner: iuc
   revisions:
-  - b2f1f75d49c4
+  - 1c2db0054039
   - bf675f34b056
   - 3d93dd18d9f8
-  - 1c2db0054039
+  - b2f1f75d49c4
   tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: ngsutils_bam_filter
