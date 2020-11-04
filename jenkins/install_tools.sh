@@ -192,7 +192,7 @@ install_tools() {
     PR_FILE="$TMP/hub_pull_request_file"
     echo -e "Jenkins $MODE build $BUILD_NUMBER errors\n\n" > $PR_FILE
     cat $ERROR_LOG >> $PR_FILE
-    # hub pull-request -F $PR_FILE # can no longer use hub in test environment
+    hub pull-request -F $PR_FILE
     rm $PR_FILE
     git checkout master
   fi
