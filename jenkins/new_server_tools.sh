@@ -94,7 +94,7 @@ for TOOL_FILE in $TOOL_FILE_PATH/*; do
     mv $TOOL_FILE $ERROR_TOOL_PATH
   elif [ "$INSTALLATION_STATUS" = "Already Installed" ] || [ "$INSTALLATION_STATUS" = "Installed" ]; then
     # exit_installation 0 ""
-    log_row $INSTALLATION_STATUS
+    log_row "$INSTALLATION_STATUS"
     rm $TOOL_FILE;
   fi
 done
