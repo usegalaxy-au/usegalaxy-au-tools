@@ -15,11 +15,13 @@ fi
 INSTALLATION_LOG=${LOG_DIR}/installation_log.tsv
 LOG_HEADER="Build Num.\tDate (AEST)\tName\tStatus\tOwner\tInstalled Revision\tRequested Revision\tTests passed\Section Label\tTool Shed URL"
 
+TEST_PLACEHOLDER="tests_pending"
+
 log_row() {
   STATUS="$1"
   DATE=$(env TZ="Australia/Queensland" date "+%d/%m/%y %H:%M:%S")
-  LOG_ROW="$BUILD_NUMBER\t$DATE\t$TOOL_NAME\t$STATUS\t$OWNER\t$INSTALLED_REVISION\t$REQUESTED_REVISION\t$TESTS_PASSED\t$SECTION_LABEL\t$TOOL_SHED_URL"
-  echo -e $LOG_ROW >> $INSTALLATION_LOG
+  LOG_ROW="$BUILD_NUMBER\t$DATE\t$TOOL_NAME\t$STATUS\t$OWNER\t$INSTALLED_REVISION\t$REQUESTED_REVISION\t$TEST_PLACEHOLDER\t$SECTION_LABEL\t$TOOL_SHED_URL"
+  echo -e $LOG_ROW >> $LOCAL_INSTALL_TSV
 }
 
 # Ensure log file exists, create it if not
@@ -34,10 +36,13 @@ INSTALL_FILE_REF=$(echo $(basename $INSTALL_FILE) | cut -d'.' -f 1)
 # This should allow for an easy recovery if the script stops anywhere
 # keep a copy of any files with installation errors in ERROR_TOOL_PATH
 FILES_DIR=${LOG_DIR}/build_${BUILD_NUMBER}/${INSTALL_FILE_REF}
-TOOL_FILE_PATH=${FILES_DIR}/to_install
+TOOL_FILE_PATH=${FILES_DIR}/tool_files
 ERROR_TOOL_PATH=${FILES_DIR}/error
 mkdir -p $TOOL_FILE_PATH
 mkdir -p $ERROR_TOOL_PATH
+
+# keep all install info in FILES_DIR then add test results in test loop
+LOCAL_INSTALL_TSV=${FILES_DIR}/install_log.tsv
 
 python scripts/organise_request_files.py -f $INSTALL_FILE -o $TOOL_FILE_PATH
 
@@ -52,13 +57,7 @@ for TOOL_FILE in $TOOL_FILE_PATH/*; do
   [ ! $TOOL_SHED_URL ] && TOOL_SHED_URL="toolshed.g2.bx.psu.edu"; # default value
   SECTION_LABEL=$(grep -oE "tool_panel_section_label: .*$" "$TOOL_FILE" | cut -d ':' -f 2 | xargs);
 
-  unset TESTS_PASSED; # ensure these values do not carry over from previous iterations of the loop
-
-  # keep local log files for every step
-  INSTALL_LOG=${LOG_DIR}/build_${BUILD_NUMBER}/${INSTALL_FILE_REF}/${TOOL_NAME}@${REQUESTED_REVISION}_install_log.txt
-  TEST_LOG=${LOG_DIR}/build_${BUILD_NUMBER}/${INSTALL_FILE_REF}/${TOOL_NAME}@${REQUESTED_REVISION}_test_log.txt
-  TEST_JSON=${LOG_DIR}/build_${BUILD_NUMBER}/${INSTALL_FILE_REF}/${TOOL_NAME}@${REQUESTED_REVISION}_test.json
-  TEST_HTML=${LOG_DIR}/build_${BUILD_NUMBER}/${INSTALL_FILE_REF}/${TOOL_NAME}@${REQUESTED_REVISION}_test.html
+  INSTALL_LOG=${FILES_DIR}/${TOOL_NAME}@${REQUESTED_REVISION}_install_log.txt
 
   # Ping galaxy url and toolshed url
   echo -e "\nWaiting for $URL";
@@ -95,31 +94,40 @@ for TOOL_FILE in $TOOL_FILE_PATH/*; do
     mv $TOOL_FILE $ERROR_TOOL_PATH
   elif [ "$INSTALLATION_STATUS" = "Already Installed" ] || [ "$INSTALLATION_STATUS" = "Installed" ]; then
     # exit_installation 0 ""
+    log_row $INSTALLATION_STATUS
     rm $TOOL_FILE;
+  fi
+done
 
-    [ "$INSTALLATION_STATUS" = "Installed" ] && sleep 10s; # Allow time for handlers to catch up, this should be enough on an idle galaxy?
+sleep 60s
+# run tests
+cat $LOCAL_INSTALL_TSV | while read line || [[ -n $line ]]; do
+  IFS=$'\t' read -ra words <<< "$line";
+  TOOL_PARAMS="--name ${words[2]} --owner ${words[4]} --revisions ${words[6]} --toolshed ${words[9]}"
 
-    # Ping galaxy url
-    echo -e "\nWaiting for $URL";
-    galaxy-wait -g $URL
+  TEST_LOG=${FILES_DIR}/${words[2]}@${words[5]}_test_log.txt
+  TEST_JSON=${FILES_DIR}/${words[2]}@${words[5]}_test.json
 
-    TOOL_PARAMS="--name $TOOL_NAME --owner $OWNER --revisions $INSTALLED_REVISION --toolshed $TOOL_SHED_URL"
-    command="shed-tools test -g $URL -a $API_KEY $TOOL_PARAMS --parallel_tests 4 --test_json $TEST_JSON -v --log_file $TEST_LOG"
-    echo "${command/$API_KEY/<API_KEY>}"
-    {
-      $command
+  unset TESTS_PASSED; # ensure these values do not carry over from previous iterations of the loop
 
-      # use python regex helper to get test results from shed-tools log
-      TESTS_PASSED="$(python scripts/first_match_regex.py -p 'Passed tool tests \((\d+)\)' $TEST_LOG)"
-      TESTS_FAILED="$(python scripts/first_match_regex.py -p 'Failed tool tests \((\d+)\)' $TEST_LOG)"
-      TESTS_PASSED="$TESTS_PASSED/$(($TESTS_PASSED+$TESTS_FAILED))";
+  # Ping galaxy url
+  echo -e "\nWaiting for $URL";
+  galaxy-wait -g $URL
+
+  command="shed-tools test -g $URL -a $API_KEY $TOOL_PARAMS --parallel_tests 4 --test_json $TEST_JSON -v --log_file $TEST_LOG"
+  echo "${command/$API_KEY/<API_KEY>}"
+  {
+    $command
+
+    # use python regex helper to get test results from shed-tools log
+    TESTS_PASSED="$(python scripts/first_match_regex.py -p 'Passed tool tests \((\d+)\)' $TEST_LOG)"
+    TESTS_FAILED="$(python scripts/first_match_regex.py -p 'Failed tool tests \((\d+)\)' $TEST_LOG)"
+    TESTS_PASSED="$TESTS_PASSED/$(($TESTS_PASSED+$TESTS_FAILED))";
     } || {
       TESTS_PASSED="Shed-tools error"
     }
 
-    log_row "$INSTALLATION_STATUS"
-    # the end
-  fi
+    echo "${line/$TEST_PLACEHOLDER/$TESTS_PASSED}" >> $INSTALLATION_LOG
 done
 
 # consolidate all json and planemo test reports for this run
