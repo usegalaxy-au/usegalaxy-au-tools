@@ -88,8 +88,8 @@ for TOOL_FILE in $TOOL_FILE_PATH/*; do
     echo "Winding back installation due to API error."
     python scripts/uninstall_tools.py -g $URL -a $API_KEY -n "$INSTALLED_NAME@$INSTALLED_REVISION";
     # In the case of installation errors there may be conda create process running that do not terminate
-    # kill any conda create processes that are running
-    ssh jenkins_bot@$(basename $URL) "sudo ps aux | grep 'conda create' | grep -v 'grep' >> /home/jenkins_bot/killed_conda_create_processes.txt; CONDA_CREATE_PIDS=$(ps aux | grep 'conda create' | grep -v 'grep' | awk '{print $2}'); if [ \"$CONDA_CREATE_PIDS\" ]; then sudo kill -9 \"$CONDA_CREATE_PIDS\"; fi"
+    # kill any conda create processes that are running. TODO: ensure that this file exists
+    ssh jenkins_bot@$(basename $URL) "sudo bash /home/jenkins_bot/kill_conda_create.sh"
     log_row "$INSTALLATION_STATUS"
     mv $TOOL_FILE $ERROR_TOOL_PATH
   elif [ "$INSTALLATION_STATUS" = "Already Installed" ] || [ "$INSTALLATION_STATUS" = "Installed" ]; then
