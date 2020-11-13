@@ -16,6 +16,7 @@ def main():
     parser.add_argument('-f', '--files', help='Tool input files', nargs='+')  # mandatory unless --update_existing is true
     parser.add_argument('-g', '--production_url', help='Galaxy server URL')
     parser.add_argument('-a', '--production_api_key', help='API key for galaxy server')
+    parser.add_argument('--skip_list', help='List of tools to skip (one line per tool, <name>@<revision>)')
     parser.add_argument(
         '--update_existing',
         help='If there are several toolshed entries for one name or name/revision entry uninstall all of them',
@@ -78,12 +79,19 @@ def main():
                 tools.append(tool)
         print('%d tools with updates available' % len(tools))
 
+    if args.skip_list:
+        with open(args.skip_list) as handle:
+            skip_list = [line.strip().split()[0] for line in handle.readlines() if line.strip()]
+    else:
+        skip_list = None
+
     for tool in tools:
-        if 'revisions' in tool.keys() and len(tool['revisions']) > 1:
+        if 'revisions' in tool.keys():
             for rev in tool['revisions']:
                 new_tool = tool
                 new_tool['revisions'] = [rev]
-                write_output_file(path=path, tool=new_tool)
+                if not skip_list or '%s@%s' % (new_tool['name'], rev) not in skip_list:
+                    write_output_file(path=path, tool=new_tool)
         else:
             write_output_file(path=path, tool=tool)
 
