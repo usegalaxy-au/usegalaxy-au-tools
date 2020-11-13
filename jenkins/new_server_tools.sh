@@ -44,7 +44,7 @@ mkdir -p $ERROR_TOOL_PATH
 # keep all install info in FILES_DIR then add test results in test loop
 LOCAL_INSTALL_TSV=${FILES_DIR}/install_log.tsv
 
-python scripts/organise_request_files.py -f $INSTALL_FILE -o $TOOL_FILE_PATH
+python scripts/organise_request_files.py -f $INSTALL_FILE -o $TOOL_FILE_PATH --skip_list 'jenkins/new_server_tools_skip_list.txt'
 
 for TOOL_FILE in $TOOL_FILE_PATH/*; do
   FILE_NAME=$(basename $TOOL_FILE)
@@ -60,7 +60,8 @@ for TOOL_FILE in $TOOL_FILE_PATH/*; do
   INSTALL_LOG=${FILES_DIR}/${TOOL_NAME}@${REQUESTED_REVISION}_install_log.txt
 
   # Ping galaxy url and toolshed url
-  echo -e "\nWaiting for $URL";
+  echo -e "\n[$(env TZ="Australia/Queensland" date "+%d/%m/%y %H:%M:%S")]"
+  echo "Waiting for $URL";
   galaxy-wait -g $URL
   echo "Waiting for https://${TOOL_SHED_URL}";
   galaxy-wait -g "https://${TOOL_SHED_URL}"
@@ -111,7 +112,8 @@ cat $LOCAL_INSTALL_TSV | while read line || [[ -n $line ]]; do
   unset TESTS_PASSED; # ensure these values do not carry over from previous iterations of the loop
 
   # Ping galaxy url
-  echo -e "\nWaiting for $URL";
+  echo -e "\n[$(env TZ="Australia/Queensland" date "+%d/%m/%y %H:%M:%S")]"
+  echo "Waiting for $URL";
   galaxy-wait -g $URL
 
   command="shed-tools test -g $URL -a $API_KEY $TOOL_PARAMS --parallel_tests 4 --test_json $TEST_JSON -v --log_file $TEST_LOG"
