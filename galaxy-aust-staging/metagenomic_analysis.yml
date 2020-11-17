@@ -2,8 +2,8 @@ tools:
 - name: cat_bins
   owner: iuc
   revisions:
-  - 18676df0cb3a
   - 0094893f5001
+  - 18676df0cb3a
   tool_panel_section_label: Metagenomic Analysis
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: cat_prepare
@@ -76,8 +76,8 @@ tools:
 - name: kraken_filter
   owner: devteam
   revisions:
-  - fe94f318048c
   - 5bee9adae474
+  - fe94f318048c
   tool_panel_section_label: Metagenomic Analysis
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: kraken_report
@@ -92,16 +92,22 @@ tools:
 - name: kraken_translate
   owner: devteam
   revisions:
-  - b9971bca4b01
   - 9bdcba262627
+  - b9971bca4b01
   tool_panel_section_label: Metagenomic Analysis
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: kraken
   owner: devteam
   revisions:
   - 2fdac3e78553
-  - 8ba2174315aa
   - aec58624706f
+  - 8ba2174315aa
+  tool_panel_section_label: Metagenomic Analysis
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: mash
+  owner: iuc
+  revisions:
+  - f8e51626fc56
   tool_panel_section_label: Metagenomic Analysis
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: maxbin2
@@ -270,8 +276,8 @@ tools:
 - name: vsearch
   owner: iuc
   revisions:
-  - 576963db5f1b
   - 9495df9dd6ef
   - b3c7199d8786
+  - 576963db5f1b
   tool_panel_section_label: Metagenomic Analysis
   tool_shed_url: toolshed.g2.bx.psu.edu
