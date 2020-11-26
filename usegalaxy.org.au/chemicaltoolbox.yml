@@ -39,8 +39,8 @@ tools:
 - name: enumerate_charges
   owner: bgruening
   revisions:
-  - 2a868592ebcb
   - 36360fa103d6
+  - 2a868592ebcb
   tool_panel_section_label: ChemicalToolBox
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: get_pdb
@@ -59,7 +59,7 @@ tools:
   owner: chemteam
   revisions:
   - 55918daa5651
-  - 476cdf677b03
+  - eb6564a60136
   tool_panel_section_label: ChemicalToolBox
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: gmx_merge_topology_files
@@ -71,20 +71,20 @@ tools:
 - name: gmx_setup
   owner: chemteam
   revisions:
-  - ccdf0b30a422
   - 4da9ee404eab
+  - cac1886249a2
   tool_panel_section_label: ChemicalToolBox
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: gmx_sim
   owner: chemteam
   revisions:
-  - b1061cc2653a
+  - 2e219a2d9327
   tool_panel_section_label: ChemicalToolBox
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: gmx_solvate
   owner: chemteam
   revisions:
-  - 3c77d66e7fe5
+  - 1809414a9454
   - 27ea4e1a3f95
   tool_panel_section_label: ChemicalToolBox
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -97,32 +97,17 @@ tools:
 - name: openbabel_compound_convert
   owner: bgruening
   revisions:
-  - 1c66bf08f687
-  - e6011617c748
   - b59c91adeac1
-  tool_panel_section_label: ChemicalToolBox
-  tool_shed_url: toolshed.g2.bx.psu.edu
-- name: rdock_rbcavity
-  owner: bgruening
-  revisions:
-  - 744a777e9f90
-  - 7e5c2e4bc227
-  tool_panel_section_label: ChemicalToolBox
-  tool_shed_url: toolshed.g2.bx.psu.edu
-- name: rdock_rbdock
-  owner: bgruening
-  revisions:
-  - e4b7d1507a75
-  - a22969b08177
-  - c362398df83b
+  - e6011617c748
+  - e2c36f62e22f
   tool_panel_section_label: ChemicalToolBox
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: sucos_max_score
   owner: bgruening
   revisions:
+  - bf99565cec1f
   - d4c67ced6abc
   - 55ac04db36aa
-  - bf99565cec1f
   - 85fad59f8168
   tool_panel_section_label: ChemicalToolBox
   tool_shed_url: toolshed.g2.bx.psu.edu
