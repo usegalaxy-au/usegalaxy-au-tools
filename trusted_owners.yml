@@ -36,6 +36,7 @@ trusted_owners:
     revision: 6c145a6868cc
   - name: scanpy_plot # test failures, CB to investigate
     revision: 7647e5cd1b8b
+  - name: unicycler # skip until 20.09
 - owner: simon-gladman
 - owner: nml
 - owner: bgruening
@@ -50,9 +51,35 @@ trusted_owners:
   - name: velvet  # temporarily skip 2020-09-08
 - owner: galaxyp
   skip_tools:
-  - name: cardinal_data_exporter  # temporarily skip 2020-09-08
-  - name: cardinal_preprocessing  # temporarily skip 2020-09-08
-  - name: cardinal_quality_report  # temporarily skip 2020-09-08
-  - name: cardinal_segmentations  # temporarily skip 2020-09-08
-  - name: cardinal_spectra_plots  # temporarily skip 2020-09-08
-
+  - name: openms_consensusid  # skip all openms tools because they come with tests and no test data.  We need to run tests independently and force install
+  - name: openms_falsediscoveryrate
+  - name: openms_featurefindermultiplex
+  - name: openms_fidoadapter
+  - name: openms_fileconverter
+  - name: openms_filefilter
+  - name: openms_fileinfo
+  - name: openms_filemerger
+  - name: openms_highresprecursormasscorrector
+  - name: openms_idconflictresolver
+  - name: openms_idfilter
+  - name: openms_idmapper
+  - name: openms_idmerger
+  - name: openms_idposteriorerrorprobability
+  - name: openms_idscoreswitcher
+  - name: openms_msgfplusadapter
+  - name: openms_multiplexresolver
+  - name: openms_mztabexporter
+  - name: openms_openswathanalyzer
+  - name: openms_openswathassaygenerator
+  - name: openms_openswathconfidencescoring
+  - name: openms_openswathdecoygenerator
+  - name: openms_openswathdiaprescoring
+  - name: openms_openswathfilesplitter
+  - name: openms_openswathmzmlfilecacher
+  - name: openms_openswathrtnormalizer
+  - name: openms_openswathworkflow
+  - name: openms_peakpickerhires
+  - name: openms_peptideindexer
+  - name: openms_proteinquantifier
+  - name: openms_textexporter
+  - name: openms_xtandemadapter
