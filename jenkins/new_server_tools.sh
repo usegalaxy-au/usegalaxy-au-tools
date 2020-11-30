@@ -44,7 +44,8 @@ mkdir -p $ERROR_TOOL_PATH
 # keep all install info in FILES_DIR then add test results in test loop
 LOCAL_INSTALL_TSV=${FILES_DIR}/install_log.tsv
 
-python scripts/organise_request_files.py -f $INSTALL_FILE -o $TOOL_FILE_PATH --skip_list 'jenkins/new_server_tools_skip_list.txt'
+[ "$SKIP_LIST" ] && skip_list_arg="--skip_list $SKIP_LIST" || skip_list_arg=""
+python scripts/organise_request_files.py -f $INSTALL_FILE -o $TOOL_FILE_PATH $skip_list_arg
 
 for TOOL_FILE in $TOOL_FILE_PATH/*; do
   FILE_NAME=$(basename $TOOL_FILE)
