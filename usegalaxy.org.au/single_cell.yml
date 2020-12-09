@@ -2,22 +2,22 @@ tools:
 - name: anndata_import
   owner: iuc
   revisions:
-  - 00712416fdaa
   - 32e547223c9e
+  - 00712416fdaa
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: anndata_inspect
   owner: iuc
   revisions:
-  - 39e945f0b2c1
   - b9fac48532eb
+  - 39e945f0b2c1
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: anndata_manipulate
   owner: iuc
   revisions:
-  - 43cb7b5a6fe7
   - d4af736e7b83
+  - 43cb7b5a6fe7
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: dropletutils
@@ -26,41 +26,11 @@ tools:
   - cdf4443d5625
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
-- name: raceid_clustering
-  owner: iuc
-  revisions:
-  - 7e014059a88d
-  tool_panel_section_label: Single-cell
-  tool_shed_url: toolshed.g2.bx.psu.edu
-- name: raceid_filtnormconf
-  owner: iuc
-  revisions:
-  - 7608d5faee41
-  tool_panel_section_label: Single-cell
-  tool_shed_url: toolshed.g2.bx.psu.edu
-- name: raceid_inspectclusters
-  owner: iuc
-  revisions:
-  - 37a47c4fd84d
-  tool_panel_section_label: Single-cell
-  tool_shed_url: toolshed.g2.bx.psu.edu
-- name: raceid_inspecttrajectory
-  owner: iuc
-  revisions:
-  - 69018f285aa3
-  tool_panel_section_label: Single-cell
-  tool_shed_url: toolshed.g2.bx.psu.edu
-- name: raceid_trajectory
-  owner: iuc
-  revisions:
-  - 44b935f2271b
-  tool_panel_section_label: Single-cell
-  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: scanpy_cluster_reduce_dimension
   owner: iuc
   revisions:
-  - 77b91b9bdf52
   - b2df381a6004
+  - 77b91b9bdf52
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: scanpy_filter
@@ -92,8 +62,8 @@ tools:
 - name: scanpy_remove_confounders
   owner: iuc
   revisions:
-  - f2f6c703da06
   - 215733a383f2
+  - f2f6c703da06
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: scater_create_qcmetric_ready_sce
