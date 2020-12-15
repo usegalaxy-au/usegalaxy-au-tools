@@ -16,14 +16,21 @@ tools:
 - name: anndata_manipulate
   owner: iuc
   revisions:
-  - d4af736e7b83
   - 43cb7b5a6fe7
+  - d4af736e7b83
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: dropletutils
   owner: iuc
   revisions:
+  - 8855361fcfc5
   - cdf4443d5625
+  tool_panel_section_label: Single-cell
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: dropletutils
+  owner: iuc
+  revisions:
+  - 8855361fcfc5
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: raceid_clustering
@@ -79,8 +86,8 @@ tools:
 - name: scanpy_normalize
   owner: iuc
   revisions:
-  - a407e7f8bdc1
   - 3bcd5445cd7a
+  - a407e7f8bdc1
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: scanpy_plot
@@ -92,8 +99,8 @@ tools:
 - name: scanpy_remove_confounders
   owner: iuc
   revisions:
-  - f2f6c703da06
   - 215733a383f2
+  - f2f6c703da06
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: scater_create_qcmetric_ready_sce
