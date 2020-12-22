@@ -32,8 +32,8 @@ tools:
 - name: data_manager_bowtie2_index_builder
   owner: devteam
   revisions:
-  - 1586b111d2a3
   - 83da94c0e4a6
+  - 1586b111d2a3
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_build_kraken2_database
@@ -46,8 +46,8 @@ tools:
 - name: data_manager_bwa_mem_index_builder
   owner: devteam
   revisions:
-  - 46066df8813d
   - 63d5652be07a
+  - 46066df8813d
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_bwameth_index_builder
@@ -77,8 +77,8 @@ tools:
 - name: data_manager_fetch_genome_dbkeys_all_fasta
   owner: devteam
   revisions:
-  - 4d3eff1bc421
   - b1bc53e9bbc5
+  - 4d3eff1bc421
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_gatk_picard_index_builder
@@ -91,15 +91,15 @@ tools:
   owner: iuc
   revisions:
   - 172815da3d41
-  - 5bcf0e24f42c
   - b4b2b284230a
+  - 5bcf0e24f42c
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_hisat2_index_builder
   owner: iuc
   revisions:
-  - a04cebcd77f4
   - d210e1f185bd
+  - a04cebcd77f4
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_humann2_database_downloader
@@ -144,8 +144,8 @@ tools:
 - name: data_manager_star_index_builder
   owner: iuc
   revisions:
-  - d3879aceba04
   - 64deddb6a8ec
+  - d3879aceba04
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_twobit_builder
@@ -200,15 +200,15 @@ tools:
 - name: package_atlas_3_10
   owner: iuc
   revisions:
-  - 98c017ec230d
-  tool_panel_section_label: None
-  tool_shed_url: toolshed.g2.bx.psu.edu
-- name: package_atlas_3_10
-  owner: iuc
-  revisions:
   - 35d6b30ef137
   tool_panel_section_label: None
   tool_shed_url: testtoolshed.g2.bx.psu.edu
+- name: package_atlas_3_10
+  owner: iuc
+  revisions:
+  - 98c017ec230d
+  tool_panel_section_label: None
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: package_bcftools_1_3
   owner: iuc
   revisions:
@@ -332,15 +332,15 @@ tools:
 - name: package_fontconfig_2_11_1
   owner: iuc
   revisions:
-  - d88d844df0cb
-  tool_panel_section_label: None
-  tool_shed_url: toolshed.g2.bx.psu.edu
-- name: package_fontconfig_2_11_1
-  owner: iuc
-  revisions:
   - 66bcc0972d16
   tool_panel_section_label: None
   tool_shed_url: testtoolshed.g2.bx.psu.edu
+- name: package_fontconfig_2_11_1
+  owner: iuc
+  revisions:
+  - d88d844df0cb
+  tool_panel_section_label: None
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: package_freetype_2_4
   owner: iuc
   revisions:
@@ -458,15 +458,15 @@ tools:
 - name: package_libpng_1_6_7
   owner: iuc
   revisions:
-  - 588666932a32
-  tool_panel_section_label: None
-  tool_shed_url: toolshed.g2.bx.psu.edu
-- name: package_libpng_1_6_7
-  owner: iuc
-  revisions:
   - d1a409e4f67d
   tool_panel_section_label: None
   tool_shed_url: testtoolshed.g2.bx.psu.edu
+- name: package_libpng_1_6_7
+  owner: iuc
+  revisions:
+  - 588666932a32
+  tool_panel_section_label: None
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: package_libtool_2_4
   owner: iuc
   revisions:
@@ -476,15 +476,15 @@ tools:
 - name: package_libxml2_2_9_1
   owner: iuc
   revisions:
-  - 45b16a3ab504
-  tool_panel_section_label: None
-  tool_shed_url: toolshed.g2.bx.psu.edu
-- name: package_libxml2_2_9_1
-  owner: iuc
-  revisions:
   - 492a5c665b59
   tool_panel_section_label: None
   tool_shed_url: testtoolshed.g2.bx.psu.edu
+- name: package_libxml2_2_9_1
+  owner: iuc
+  revisions:
+  - 45b16a3ab504
+  tool_panel_section_label: None
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: package_matplotlib_1_2
   owner: iuc
   revisions:
@@ -506,15 +506,15 @@ tools:
 - name: package_ncurses_5_9
   owner: iuc
   revisions:
-  - 335ebf512407
-  tool_panel_section_label: None
-  tool_shed_url: toolshed.g2.bx.psu.edu
-- name: package_ncurses_5_9
-  owner: iuc
-  revisions:
   - ad27910a950c
   tool_panel_section_label: None
   tool_shed_url: testtoolshed.g2.bx.psu.edu
+- name: package_ncurses_5_9
+  owner: iuc
+  revisions:
+  - 335ebf512407
+  tool_panel_section_label: None
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: package_ncurses_6_0
   owner: iuc
   revisions:
@@ -524,15 +524,15 @@ tools:
 - name: package_numpy_1_7
   owner: iuc
   revisions:
-  - 5c489d2d630b
-  tool_panel_section_label: None
-  tool_shed_url: testtoolshed.g2.bx.psu.edu
-- name: package_numpy_1_7
-  owner: iuc
-  revisions:
   - '300877695495'
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
+- name: package_numpy_1_7
+  owner: iuc
+  revisions:
+  - 5c489d2d630b
+  tool_panel_section_label: None
+  tool_shed_url: testtoolshed.g2.bx.psu.edu
 - name: package_numpy_1_8
   owner: qfab
   revisions:
@@ -644,15 +644,15 @@ tools:
 - name: package_r_3_1_2
   owner: iuc
   revisions:
-  - 4d2fd1413b56
-  tool_panel_section_label: None
-  tool_shed_url: toolshed.g2.bx.psu.edu
-- name: package_r_3_1_2
-  owner: iuc
-  revisions:
   - 1ca39eb16186
   tool_panel_section_label: None
   tool_shed_url: testtoolshed.g2.bx.psu.edu
+- name: package_r_3_1_2
+  owner: iuc
+  revisions:
+  - 4d2fd1413b56
+  tool_panel_section_label: None
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: package_r_3_2_1
   owner: iuc
   revisions:
@@ -674,15 +674,15 @@ tools:
 - name: package_readline_6_2
   owner: iuc
   revisions:
-  - 5313ca2fbce6
-  tool_panel_section_label: None
-  tool_shed_url: toolshed.g2.bx.psu.edu
-- name: package_readline_6_2
-  owner: iuc
-  revisions:
   - 1007a3015bdb
   tool_panel_section_label: None
   tool_shed_url: testtoolshed.g2.bx.psu.edu
+- name: package_readline_6_2
+  owner: iuc
+  revisions:
+  - 5313ca2fbce6
+  tool_panel_section_label: None
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: package_readline_6_3
   owner: iuc
   revisions:
@@ -849,8 +849,8 @@ tools:
 - name: rdock_rbcavity
   owner: bgruening
   revisions:
-  - 7e5c2e4bc227
   - 744a777e9f90
+  - 7e5c2e4bc227
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: rdock_rbdock

@@ -32,8 +32,8 @@ tools:
 - name: data_manager_bowtie2_index_builder
   owner: devteam
   revisions:
-  - 1586b111d2a3
   - 83da94c0e4a6
+  - 1586b111d2a3
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_build_kraken2_database
@@ -46,8 +46,8 @@ tools:
 - name: data_manager_bwa_mem_index_builder
   owner: devteam
   revisions:
-  - 63d5652be07a
   - 46066df8813d
+  - 63d5652be07a
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_bwameth_index_builder
@@ -90,16 +90,16 @@ tools:
 - name: data_manager_gemini_database_downloader
   owner: iuc
   revisions:
-  - 5bcf0e24f42c
   - b4b2b284230a
   - 172815da3d41
+  - 5bcf0e24f42c
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_hisat2_index_builder
   owner: iuc
   revisions:
-  - d210e1f185bd
   - a04cebcd77f4
+  - d210e1f185bd
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_humann2_database_downloader
@@ -144,15 +144,15 @@ tools:
 - name: data_manager_star_index_builder
   owner: iuc
   revisions:
-  - d3879aceba04
   - 64deddb6a8ec
+  - d3879aceba04
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_twobit_builder
   owner: devteam
   revisions:
-  - 625fd9476402
   - 9946bc39c834
+  - 625fd9476402
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: emboss_datatypes
@@ -200,15 +200,15 @@ tools:
 - name: package_atlas_3_10
   owner: iuc
   revisions:
-  - 98c017ec230d
-  tool_panel_section_label: None
-  tool_shed_url: toolshed.g2.bx.psu.edu
-- name: package_atlas_3_10
-  owner: iuc
-  revisions:
   - 35d6b30ef137
   tool_panel_section_label: None
   tool_shed_url: testtoolshed.g2.bx.psu.edu
+- name: package_atlas_3_10
+  owner: iuc
+  revisions:
+  - 98c017ec230d
+  tool_panel_section_label: None
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: package_bcftools_1_3
   owner: iuc
   revisions:
@@ -416,15 +416,15 @@ tools:
 - name: package_libpng_1_6_7
   owner: iuc
   revisions:
-  - 588666932a32
-  tool_panel_section_label: None
-  tool_shed_url: toolshed.g2.bx.psu.edu
-- name: package_libpng_1_6_7
-  owner: iuc
-  revisions:
   - d1a409e4f67d
   tool_panel_section_label: None
   tool_shed_url: testtoolshed.g2.bx.psu.edu
+- name: package_libpng_1_6_7
+  owner: iuc
+  revisions:
+  - 588666932a32
+  tool_panel_section_label: None
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: package_libtool_2_4
   owner: iuc
   revisions:
