@@ -17,11 +17,11 @@ tools:
 - name: fastqc
   owner: devteam
   revisions:
+  - 9da02be9c6cc
   - f2e8552cf1d0
   - e7b2202befea
-  - ff9530579d1f
   - 2b0c9d9fc6ca
-  - 9da02be9c6cc
+  - ff9530579d1f
   tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastqe
@@ -47,11 +47,11 @@ tools:
 - name: multiqc
   owner: iuc
   revisions:
-  - bf675f34b056
   - b2f1f75d49c4
   - f7985e0479b9
-  - 3d93dd18d9f8
   - 1c2db0054039
+  - 3d93dd18d9f8
+  - bf675f34b056
   tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: trim_galore
