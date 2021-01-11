@@ -8,11 +8,11 @@ tools:
 - name: busco
   owner: iuc
   revisions:
+  - 1440ae06552f
   - 4048d82f0c88
   - 602fb8e63aa7
-  - 1440ae06552f
-  - 1e62c28ba91d
   - 5ecdeca79a0d
+  - 1e62c28ba91d
   tool_panel_section_label: Assembly
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: canu
@@ -21,12 +21,18 @@ tools:
   - c5b7390290b1
   tool_panel_section_label: Assembly
   tool_shed_url: toolshed.g2.bx.psu.edu
+- name: cap3
+  owner: artbio
+  revisions:
+  - d76a0d8a9eac
+  tool_panel_section_label: Assembly
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: flye
   owner: bgruening
   revisions:
-  - 3ee0ef312022
   - 1ce9b1d72ec3
   - de24438c9988
+  - 3ee0ef312022
   tool_panel_section_label: Assembly
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: kmergenie
@@ -38,8 +44,8 @@ tools:
 - name: megahit
   owner: iuc
   revisions:
-  - 7518ee87b53d
   - de387b2b2803
+  - 7518ee87b53d
   tool_panel_section_label: Assembly
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: metaspades
@@ -69,26 +75,26 @@ tools:
 - name: quast
   owner: iuc
   revisions:
-  - 59db8ea8c845
   - ebb0dcdb621a
   - 6fcbee531de6
+  - 59db8ea8c845
   tool_panel_section_label: Assembly
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: racon
   owner: bgruening
   revisions:
-  - a199cd7ac344
   - aa39b19ca11e
+  - a199cd7ac344
   tool_panel_section_label: Assembly
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: shovill
   owner: iuc
   revisions:
-  - d9f6a00b6db7
   - 865119fcb694
-  - 196a599ec43d
   - 83ead2be47b2
   - f698c7604b3b
+  - 196a599ec43d
+  - d9f6a00b6db7
   tool_panel_section_label: Assembly
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: spades
@@ -109,8 +115,8 @@ tools:
 - name: velvet
   owner: devteam
   revisions:
-  - 8d09f8be269e
   - 5da9a0e2fb2d
+  - 8d09f8be269e
   - 08256557922f
   tool_panel_section_label: Assembly
   tool_shed_url: toolshed.g2.bx.psu.edu
