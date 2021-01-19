@@ -28,22 +28,22 @@ tools:
 - name: bp_genbank2gff3
   owner: iuc
   revisions:
-  - 11c3eb512633
   - a0d092f27fdf
+  - 11c3eb512633
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fasta_to_tabular
   owner: devteam
   revisions:
-  - e7ed3c310b74
   - 7e801ab2b70e
+  - e7ed3c310b74
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastq_to_fasta
   owner: devteam
   revisions:
-  - e282bc27be9a
   - 186b8d913e6c
+  - e282bc27be9a
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastq_to_tabular
@@ -68,6 +68,7 @@ tools:
 - name: gffcompare_to_bed
   owner: galaxyp
   revisions:
+  - ba5368c19dbd
   - 9a4cfc910674
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -86,8 +87,8 @@ tools:
 - name: tabular_to_fasta
   owner: devteam
   revisions:
-  - 0b4e36026794
   - 0a7799698fe5
+  - 0b4e36026794
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: tabular_to_fastq
@@ -100,7 +101,7 @@ tools:
 - name: thermo_raw_file_converter
   owner: galaxyp
   revisions:
-  - 63769c4217a7
   - 26c6706bfb07
+  - 63769c4217a7
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
