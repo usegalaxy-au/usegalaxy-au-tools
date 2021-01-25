@@ -29,18 +29,24 @@ tools:
   - a87a3773d8ed
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
+- name: custom_pro_db
+  owner: galaxyp
+  revisions:
+  - 2c7df0077d28
+  tool_panel_section_label: None
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_bowtie2_index_builder
   owner: devteam
   revisions:
-  - 1586b111d2a3
   - 83da94c0e4a6
+  - 1586b111d2a3
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_build_kraken2_database
   owner: iuc
   revisions:
-  - 0eebe086fd58
   - edacc4bcd3cb
+  - 0eebe086fd58
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_bwa_mem_index_builder
@@ -90,9 +96,9 @@ tools:
 - name: data_manager_gemini_database_downloader
   owner: iuc
   revisions:
-  - b4b2b284230a
   - 172815da3d41
   - 5bcf0e24f42c
+  - b4b2b284230a
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_hisat2_index_builder
@@ -123,36 +129,36 @@ tools:
 - name: data_manager_mothur_toolsuite
   owner: iuc
   revisions:
-  - 9d09724f2bf1
   - aec831b54a5b
+  - 9d09724f2bf1
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_sam_fasta_index_builder
   owner: devteam
   revisions:
-  - 3e4d45aca422
   - 1865e693d8b2
+  - 3e4d45aca422
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_snpeff
   owner: iuc
   revisions:
-  - d107d20dc6bd
   - def511e8e005
+  - d107d20dc6bd
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_star_index_builder
   owner: iuc
   revisions:
-  - d3879aceba04
   - 64deddb6a8ec
+  - d3879aceba04
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_twobit_builder
   owner: devteam
   revisions:
-  - 625fd9476402
   - 9946bc39c834
+  - 625fd9476402
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: emboss_datatypes
