@@ -39,8 +39,8 @@ tools:
 - name: enumerate_charges
   owner: bgruening
   revisions:
-  - 2a868592ebcb
   - 36360fa103d6
+  - 2a868592ebcb
   tool_panel_section_label: ChemicalToolBox
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: get_pdb
@@ -58,8 +58,8 @@ tools:
 - name: gmx_em
   owner: chemteam
   revisions:
-  - eb6564a60136
   - 55918daa5651
+  - eb6564a60136
   tool_panel_section_label: ChemicalToolBox
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: gmx_merge_topology_files
@@ -71,8 +71,8 @@ tools:
 - name: gmx_setup
   owner: chemteam
   revisions:
-  - cac1886249a2
   - 4da9ee404eab
+  - cac1886249a2
   tool_panel_section_label: ChemicalToolBox
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: gmx_sim
@@ -97,16 +97,16 @@ tools:
 - name: openbabel_compound_convert
   owner: bgruening
   revisions:
+  - b59c91adeac1
   - 1400d1977e7b
   - e6011617c748
-  - b59c91adeac1
   tool_panel_section_label: ChemicalToolBox
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: rdock_rbcavity
   owner: bgruening
   revisions:
-  - 744a777e9f90
   - 7e5c2e4bc227
+  - 744a777e9f90
   tool_panel_section_label: ChemicalToolBox
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: rdock_rbdock
@@ -120,10 +120,10 @@ tools:
 - name: sucos_max_score
   owner: bgruening
   revisions:
-  - 85fad59f8168
-  - 55ac04db36aa
   - d4c67ced6abc
+  - 85fad59f8168
   - bf99565cec1f
+  - 55ac04db36aa
   tool_panel_section_label: ChemicalToolBox
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: vmd_hbonds
