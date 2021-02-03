@@ -2,18 +2,18 @@ tools:
 - name: abricate
   owner: iuc
   revisions:
-  - 6e9aea89e388
-  - 4efdca267d51
-  - 78c75f134c16
   - b734db305578
+  - 4efdca267d51
+  - 6e9aea89e388
+  - 78c75f134c16
   tool_panel_section_label: Annotation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: annotatemyids
   owner: iuc
   revisions:
+  - 1aae04680c4b
   - b5d8e5475247
   - 44018dd6b447
-  - 1aae04680c4b
   tool_panel_section_label: Annotation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: augustus_training
@@ -39,12 +39,6 @@ tools:
   owner: iuc
   revisions:
   - 17eb1e0d711f
-  tool_panel_section_label: Annotation
-  tool_shed_url: toolshed.g2.bx.psu.edu
-- name: find_subsequences
-  owner: bgruening
-  revisions:
-  - d882a0a75759
   tool_panel_section_label: Annotation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: gff_to_prot
@@ -93,8 +87,8 @@ tools:
   owner: iuc
   revisions:
   - 326f9c294b09
-  - f1912d5575df
   - e408aa831db3
+  - f1912d5575df
   tool_panel_section_label: Annotation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: maker
@@ -106,8 +100,8 @@ tools:
 - name: prokka
   owner: crs4
   revisions:
-  - bf68eb663bc3
   - eaee459f3d69
+  - bf68eb663bc3
   - a17498c603ec
   tool_panel_section_label: Annotation
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -120,19 +114,19 @@ tools:
 - name: snpeff
   owner: iuc
   revisions:
-  - 74aebe30fb52
   - 268d162b9c49
   - 8f92c2b26e6d
-  - 68693743661e
+  - 74aebe30fb52
   - 5a29ab10dba6
+  - 68693743661e
   tool_panel_section_label: Annotation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: snpsift
   owner: iuc
   revisions:
-  - 09d6806c609e
-  - 2e497a770bca
   - 2b3e65a4252f
+  - 2e497a770bca
+  - 09d6806c609e
   tool_panel_section_label: Annotation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: snptools
@@ -150,8 +144,8 @@ tools:
 - name: tbprofiler
   owner: iuc
   revisions:
-  - 037a11682176
   - 200c378d85f3
+  - 037a11682176
   tool_panel_section_label: Annotation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: transit_gumbel
