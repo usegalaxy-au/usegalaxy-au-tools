@@ -32,8 +32,8 @@ tools:
 - name: data_manager_bowtie2_index_builder
   owner: devteam
   revisions:
-  - 1586b111d2a3
   - 83da94c0e4a6
+  - 1586b111d2a3
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_build_kraken2_database
@@ -46,8 +46,8 @@ tools:
 - name: data_manager_bwa_mem_index_builder
   owner: devteam
   revisions:
-  - 63d5652be07a
   - 46066df8813d
+  - 63d5652be07a
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_bwameth_index_builder
@@ -77,8 +77,8 @@ tools:
 - name: data_manager_fetch_genome_dbkeys_all_fasta
   owner: devteam
   revisions:
-  - 4d3eff1bc421
   - b1bc53e9bbc5
+  - 4d3eff1bc421
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_gatk_picard_index_builder
@@ -90,9 +90,9 @@ tools:
 - name: data_manager_gemini_database_downloader
   owner: iuc
   revisions:
+  - 172815da3d41
   - b4b2b284230a
   - 5bcf0e24f42c
-  - 172815da3d41
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_hisat2_index_builder
@@ -144,8 +144,8 @@ tools:
 - name: data_manager_star_index_builder
   owner: iuc
   revisions:
-  - d3879aceba04
   - 64deddb6a8ec
+  - d3879aceba04
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_twobit_builder
@@ -195,6 +195,12 @@ tools:
   owner: lecorguille
   revisions:
   - 7800ba9a4c1e
+  tool_panel_section_label: None
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: openbabel
+  owner: bgruening
+  revisions:
+  - b52872a1755a
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: package_atlas_3_10
@@ -251,6 +257,12 @@ tools:
   - 2e9109a8924f
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
+- name: package_boost_1_55
+  owner: iuc
+  revisions:
+  - 9cc5f2bc9a9c
+  tool_panel_section_label: None
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: package_bowtie_0_12_7
   owner: devteam
   revisions:
@@ -285,6 +297,12 @@ tools:
   owner: iuc
   revisions:
   - 0a73735c3161
+  tool_panel_section_label: None
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: package_chemfp_1_1
+  owner: iuc
+  revisions:
+  - cb2b38ca9d96
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: package_cmake_3_2_3
@@ -335,6 +353,12 @@ tools:
   - 77d40d53da67
   tool_panel_section_label: None
   tool_shed_url: testtoolshed.g2.bx.psu.edu
+- name: package_freetype_2_4
+  owner: iuc
+  revisions:
+  - b32452aa80dc
+  tool_panel_section_label: None
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: package_freetype_2_5_2
   owner: devteam
   revisions:
@@ -383,6 +407,12 @@ tools:
   - 428ac4a9db59
   tool_panel_section_label: None
   tool_shed_url: testtoolshed.g2.bx.psu.edu
+- name: package_imaging_1_1_7
+  owner: iuc
+  revisions:
+  - d5f2627f4cfd
+  tool_panel_section_label: None
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: package_kraken_0_10_6_eaf8fb68
   owner: iuc
   revisions:
@@ -443,6 +473,12 @@ tools:
   - 8096e96d5076
   tool_panel_section_label: None
   tool_shed_url: testtoolshed.g2.bx.psu.edu
+- name: package_matplotlib_1_2
+  owner: iuc
+  revisions:
+  - 48020985e28c
+  tool_panel_section_label: None
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: package_mothur
   owner: qfab
   revisions:
@@ -605,6 +641,12 @@ tools:
   - 07de191649b4
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
+- name: package_rdkit_2012_12
+  owner: iuc
+  revisions:
+  - 842dd2fa4ace
+  tool_panel_section_label: None
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: package_readline_6_2
   owner: iuc
   revisions:
@@ -659,6 +701,12 @@ tools:
   - f6ae3ba3f3c1
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
+- name: package_scipy_0_12
+  owner: iuc
+  revisions:
+  - cfbbe183f8a7
+  tool_panel_section_label: None
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: package_sicer_1_1
   owner: devteam
   revisions:
@@ -695,6 +743,12 @@ tools:
   - 2c2c0ccd0f37
   tool_panel_section_label: None
   tool_shed_url: testtoolshed.g2.bx.psu.edu
+- name: package_tiff_4_0_3
+  owner: iuc
+  revisions:
+  - 1e6bcf7a8a03
+  tool_panel_section_label: None
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: package_tophat2_2_0_9
   owner: devteam
   revisions:
