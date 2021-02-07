@@ -9,7 +9,10 @@ from bioblend.toolshed.repositories import ToolShedRepositoryClient
 default_tool_shed = 'toolshed.g2.bx.psu.edu'
 
 mandatory_keys = ['name', 'tool_panel_section_label', 'owner']
-valid_keys = mandatory_keys + ['revisions', 'tool_shed_url']
+valid_keys = mandatory_keys + [
+    'revisions', 'tool_shed_url', 'install_tool_dependencies',
+    'install_resolver_dependencies', 'install_repository_dependencies',
+]
 
 valid_section_labels = [
     'Get Data', 'Send Data', 'Collection Operations', 'Text Manipulation',
