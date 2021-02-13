@@ -39,8 +39,8 @@ tools:
 - name: data_manager_build_kraken2_database
   owner: iuc
   revisions:
-  - 0eebe086fd58
   - edacc4bcd3cb
+  - 0eebe086fd58
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_bwa_mem_index_builder
@@ -90,16 +90,16 @@ tools:
 - name: data_manager_gemini_database_downloader
   owner: iuc
   revisions:
+  - b4b2b284230a
   - 5bcf0e24f42c
   - 172815da3d41
-  - b4b2b284230a
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_hisat2_index_builder
   owner: iuc
   revisions:
-  - d210e1f185bd
   - a04cebcd77f4
+  - d210e1f185bd
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_humann2_database_downloader
@@ -144,8 +144,8 @@ tools:
 - name: data_manager_star_index_builder
   owner: iuc
   revisions:
-  - d3879aceba04
   - 64deddb6a8ec
+  - d3879aceba04
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_twobit_builder
@@ -861,16 +861,16 @@ tools:
 - name: rdock_rbcavity
   owner: bgruening
   revisions:
-  - 7e5c2e4bc227
   - 744a777e9f90
+  - 7e5c2e4bc227
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: rdock_rbdock
   owner: bgruening
   revisions:
-  - c362398df83b
-  - a22969b08177
   - e4b7d1507a75
+  - a22969b08177
+  - c362398df83b
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: rsem_datatypes
