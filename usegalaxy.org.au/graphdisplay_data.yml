@@ -2,12 +2,12 @@ tools:
 - name: circos
   owner: iuc
   revisions:
-  - df7356989ac1
-  - a64dc31ab7f2
-  - 4b519282a05b
-  - ae9994cf526f
   - 740057a5126d
   - fd59d783248a
+  - a64dc31ab7f2
+  - df7356989ac1
+  - ae9994cf526f
+  - 4b519282a05b
   tool_panel_section_label: Graph/Display Data
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: draw_stacked_barplots
@@ -25,8 +25,8 @@ tools:
 - name: fastq_quality_boxplot
   owner: devteam
   revisions:
-  - 7cf5b1d072b5
   - f95284aa2946
+  - 7cf5b1d072b5
   tool_panel_section_label: Graph/Display Data
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: ggplot2_heatmap2
@@ -74,15 +74,15 @@ tools:
 - name: jbrowse
   owner: iuc
   revisions:
-  - 17359b808b01
-  - 6cd09d7b5f37
+  - ca2def38369c
   - fd5dbf0f732e
+  - 17359b808b01
   - 112eb40ba6cf
+  - 836d1aa3e89a
   - 2bb2e07a7a21
   - 667e17248bfe
-  - ca2def38369c
   - 1cfc579079a6
-  - 836d1aa3e89a
+  - 6cd09d7b5f37
   tool_panel_section_label: Graph/Display Data
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: krona_text
@@ -112,15 +112,15 @@ tools:
 - name: plotly_ml_performance_plots
   owner: bgruening
   revisions:
-  - 85da91bbdbfb
   - 62e3a4e8c54c
+  - 85da91bbdbfb
   tool_panel_section_label: Graph/Display Data
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: plotly_parallel_coordinates_plot
   owner: bgruening
   revisions:
-  - 9958188c6195
   - 7b21a9b5922f
+  - 9958188c6195
   tool_panel_section_label: Graph/Display Data
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: plotly_regression_performance_plots
@@ -138,9 +138,9 @@ tools:
 - name: pygenometracks
   owner: iuc
   revisions:
-  - 4ac4e7083b7e
-  - 2824d77cd8f8
   - 326a3db8d9d1
+  - 2824d77cd8f8
+  - 4ac4e7083b7e
   tool_panel_section_label: Graph/Display Data
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: volcanoplot
@@ -158,7 +158,6 @@ tools:
 - name: xy_plot
   owner: devteam
   revisions:
-  - 319fa5a9fc1b
   - ecb437f1d298
   tool_panel_section_label: Graph/Display Data
   tool_shed_url: toolshed.g2.bx.psu.edu
