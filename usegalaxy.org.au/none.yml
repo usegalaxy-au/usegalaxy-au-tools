@@ -29,11 +29,17 @@ tools:
   - a87a3773d8ed
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
+- name: compose_text_param
+  owner: iuc
+  revisions:
+  - e188c9826e0f
+  tool_panel_section_label: None
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_bowtie2_index_builder
   owner: devteam
   revisions:
-  - 83da94c0e4a6
   - 1586b111d2a3
+  - 83da94c0e4a6
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_build_kraken2_database
@@ -46,8 +52,8 @@ tools:
 - name: data_manager_bwa_mem_index_builder
   owner: devteam
   revisions:
-  - 63d5652be07a
   - 46066df8813d
+  - 63d5652be07a
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_bwameth_index_builder
@@ -77,8 +83,8 @@ tools:
 - name: data_manager_fetch_genome_dbkeys_all_fasta
   owner: devteam
   revisions:
-  - 4d3eff1bc421
   - b1bc53e9bbc5
+  - 4d3eff1bc421
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_gatk_picard_index_builder
@@ -90,8 +96,8 @@ tools:
 - name: data_manager_gemini_database_downloader
   owner: iuc
   revisions:
-  - 172815da3d41
   - b4b2b284230a
+  - 172815da3d41
   - 5bcf0e24f42c
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -123,8 +129,8 @@ tools:
 - name: data_manager_mothur_toolsuite
   owner: iuc
   revisions:
-  - 9d09724f2bf1
   - aec831b54a5b
+  - 9d09724f2bf1
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_sam_fasta_index_builder
@@ -151,8 +157,8 @@ tools:
 - name: data_manager_twobit_builder
   owner: devteam
   revisions:
-  - 625fd9476402
   - 9946bc39c834
+  - 625fd9476402
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: differential_count_models
@@ -861,8 +867,8 @@ tools:
 - name: rdock_rbcavity
   owner: bgruening
   revisions:
-  - 744a777e9f90
   - 7e5c2e4bc227
+  - 744a777e9f90
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: rdock_rbdock
