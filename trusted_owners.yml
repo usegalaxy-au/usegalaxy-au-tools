@@ -36,9 +36,12 @@ trusted_owners:
     revision: 6c145a6868cc
   - name: scanpy_plot # test failures, CB to investigate
     revision: 7647e5cd1b8b
-  - name: unicycler # skip until 20.09
 - owner: simon-gladman
 - owner: nml
+- owner: peterjc
+- owner: lparsons
+- owner: chemteam
+- owner: imgteam
 - owner: bgruening
   skip_tools:
   - name: deeptools_bam_pe_fragmentsize
