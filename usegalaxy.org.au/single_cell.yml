@@ -3,27 +3,27 @@ tools:
   owner: iuc
   revisions:
   - cfc3f5a57dc6
-  - ae1e5d9d8972
   - 32e547223c9e
+  - ae1e5d9d8972
   - 00712416fdaa
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: anndata_inspect
   owner: iuc
   revisions:
+  - b9fac48532eb
+  - 383dcb0500f9
   - 39e945f0b2c1
   - 038e32885fec
-  - 383dcb0500f9
-  - b9fac48532eb
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: anndata_manipulate
   owner: iuc
   revisions:
   - d4af736e7b83
+  - 43cb7b5a6fe7
   - 8db95f488f0f
   - b85871dd69f9
-  - 43cb7b5a6fe7
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: dropletutils
@@ -38,8 +38,8 @@ tools:
   owner: iuc
   revisions:
   - 77b91b9bdf52
-  - 35bc2eb568ed
   - b2df381a6004
+  - 35bc2eb568ed
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: scanpy_filter
@@ -53,31 +53,31 @@ tools:
 - name: scanpy_inspect
   owner: iuc
   revisions:
-  - 9d33775ec67d
   - 5e9171dc8244
+  - 9d33775ec67d
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: scanpy_normalize
   owner: iuc
   revisions:
-  - a407e7f8bdc1
   - 5342ce58cd1e
+  - a407e7f8bdc1
   - 3bcd5445cd7a
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: scanpy_plot
   owner: iuc
   revisions:
-  - dbbe1ea8ecb1
   - 6adf98e782f3
+  - dbbe1ea8ecb1
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: scanpy_remove_confounders
   owner: iuc
   revisions:
-  - f2f6c703da06
   - 215733a383f2
   - 80d4e2cac903
+  - f2f6c703da06
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: scater_create_qcmetric_ready_sce
