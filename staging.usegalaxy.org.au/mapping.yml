@@ -2,12 +2,12 @@ tools:
 - name: bowtie2
   owner: devteam
   revisions:
-  - 017aba02828d
-  - 937aa69e715f
   - 17062a0decb7
+  - 937aa69e715f
+  - 3ba8d4563129
+  - 017aba02828d
   - 09b2cdb7ace5
   - 749c918495f7
-  - 3ba8d4563129
   tool_panel_section_label: Mapping
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: bowtie_wrappers
@@ -19,9 +19,9 @@ tools:
 - name: bwa
   owner: devteam
   revisions:
-  - 53646aaaafef
   - 3fe632431b68
   - dfd8b7f78c37
+  - 53646aaaafef
   tool_panel_section_label: Mapping
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: lastz_paired_reads
@@ -40,19 +40,19 @@ tools:
 - name: minimap2
   owner: iuc
   revisions:
+  - f54f5baedfdd
+  - 8c6cd2650d1f
   - 53c0b7a1a0c3
   - 77b2770508f6
-  - f54f5baedfdd
   - b3eab4b67562
-  - 8c6cd2650d1f
   tool_panel_section_label: Mapping
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: rna_starsolo
   owner: iuc
   revisions:
-  - 00fbfac99d39
   - ec9cbd6b9a49
-  - e403d27e8f24
+  - 00fbfac99d39
   - 178bdbdb6d24
+  - e403d27e8f24
   tool_panel_section_label: Mapping
   tool_shed_url: toolshed.g2.bx.psu.edu
