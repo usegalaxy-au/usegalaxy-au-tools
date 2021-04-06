@@ -14,22 +14,22 @@ tools:
 - name: cuffcompare
   owner: devteam
   revisions:
-  - f648e5180e40
   - e66b9b5b8580
+  - f648e5180e40
   tool_panel_section_label: RNA-seq
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: cufflinks
   owner: devteam
   revisions:
-  - e04dbae2abe0
   - d080005cffe1
+  - e04dbae2abe0
   tool_panel_section_label: RNA-seq
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: cuffmerge
   owner: devteam
   revisions:
-  - 6a6717a5f421
   - cf747d1bd79a
+  - 6a6717a5f421
   tool_panel_section_label: RNA-seq
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: cuffnorm
@@ -60,18 +60,18 @@ tools:
 - name: describe_samples
   owner: iuc
   revisions:
-  - 0693ccd171c4
-  - 8f0181aacb7a
-  - 6d6982a1d1d0
   - 8bfbdb039d4e
+  - 0693ccd171c4
+  - 6d6982a1d1d0
+  - 8f0181aacb7a
   tool_panel_section_label: RNA-seq
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: deseq2
   owner: iuc
   revisions:
+  - 0696db066a5b
   - 24a09ca67621
   - 6a3a025714d3
-  - 0696db066a5b
   tool_panel_section_label: RNA-seq
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: dexseq
@@ -84,9 +84,9 @@ tools:
 - name: edger
   owner: iuc
   revisions:
+  - 555659de7321
   - 334ce9b1bac5
   - 9bdff28ae1b1
-  - 555659de7321
   tool_panel_section_label: RNA-seq
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: egsea
@@ -104,12 +104,12 @@ tools:
 - name: featurecounts
   owner: iuc
   revisions:
+  - e6a2a912677a
+  - ea04b737afa0
+  - 90d16db017d7
+  - af814359d244
   - a37612abf7f9
   - f3a5f075498f
-  - 90d16db017d7
-  - ea04b737afa0
-  - e6a2a912677a
-  - af814359d244
   tool_panel_section_label: RNA-seq
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: featurecounts
@@ -146,11 +146,11 @@ tools:
 - name: hisat2
   owner: iuc
   revisions:
+  - 6ab42baa56e9
+  - 26371a1df031
+  - a86e80d3c09c
   - d4b55e2beb12
   - 3fb01a8c902d
-  - 6ab42baa56e9
-  - a86e80d3c09c
-  - 26371a1df031
   tool_panel_section_label: RNA-seq
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: hisat2
@@ -168,8 +168,8 @@ tools:
 - name: htseq_count
   owner: lparsons
   revisions:
-  - 916cb26bd9d3
   - 67b0b160903a
+  - 916cb26bd9d3
   tool_panel_section_label: RNA-seq
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: htseq_count
@@ -188,15 +188,15 @@ tools:
 - name: kallisto_quant
   owner: iuc
   revisions:
-  - 10c98fab6c5a
   - 60f888039fb2
+  - 10c98fab6c5a
   tool_panel_section_label: RNA-seq
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: limma_voom
   owner: iuc
   revisions:
-  - 97e06a4c7c75
   - 0921444c832d
+  - 97e06a4c7c75
   tool_panel_section_label: RNA-seq
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: mircounts
@@ -244,13 +244,13 @@ tools:
 - name: rgrnastar
   owner: iuc
   revisions:
-  - e132e7d02a3e
-  - 5ec75f5dae3c
+  - c772497b2c32
   - 99b17b74a8cd
-  - 0a563fd2f22e
   - 7ed2edc1337f
   - b9e04854e2bb
-  - c772497b2c32
+  - e132e7d02a3e
+  - 0a563fd2f22e
+  - 5ec75f5dae3c
   tool_panel_section_label: RNA-seq
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: rgrnastar
@@ -274,18 +274,18 @@ tools:
 - name: salmon
   owner: bgruening
   revisions:
-  - cc05793bb896
+  - e3d32471da11
   - 53e9709776a0
   - 2c0ca397d302
-  - e3d32471da11
+  - cc05793bb896
   tool_panel_section_label: RNA-seq
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: stringtie
   owner: iuc
   revisions:
+  - 1ebd14235b92
   - 76d290331481
   - dd4df992d93d
-  - 1ebd14235b92
   tool_panel_section_label: RNA-seq
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: tophat2
@@ -303,9 +303,9 @@ tools:
 - name: transdecoder
   owner: iuc
   revisions:
+  - d0d4cef4f967
   - c6334cb383ff
   - 0db979fead3a
-  - d0d4cef4f967
   tool_panel_section_label: RNA-seq
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: transdecoder
@@ -317,17 +317,17 @@ tools:
 - name: trinity_abundance_estimates_to_matrix
   owner: iuc
   revisions:
-  - 81a4697677e7
   - 59fff1388bc2
   - d6a479fd4281
   - 74217fbfba4d
+  - 81a4697677e7
   tool_panel_section_label: RNA-seq
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: trinity_align_and_estimate_abundance
   owner: iuc
   revisions:
-  - 56162e446004
   - 893655fa55f9
+  - 56162e446004
   - 478f36effca1
   tool_panel_section_label: RNA-seq
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -340,26 +340,26 @@ tools:
 - name: trinity_analyze_diff_expr
   owner: iuc
   revisions:
-  - 4a816294c512
   - fab23c3b5258
+  - 4a816294c512
   - 56ac80587187
   tool_panel_section_label: RNA-seq
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: trinity_contig_exn50_statistic
   owner: iuc
   revisions:
-  - 4687ecf0eb2d
-  - 62b05e565a45
   - 34a018cbee9c
   - b1e9a0355166
+  - 4687ecf0eb2d
+  - 62b05e565a45
   tool_panel_section_label: RNA-seq
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: trinity_define_clusters_by_cutting_tree
   owner: iuc
   revisions:
   - c5fbddcac63a
-  - 33406f5a445c
   - d40101d3a2af
+  - 33406f5a445c
   - 55292a66e7c1
   - 05ab8d5e04a2
   tool_panel_section_label: RNA-seq
@@ -368,27 +368,27 @@ tools:
   owner: iuc
   revisions:
   - e406ac71165d
+  - 42c5172815f7
   - 6f0fb35b799c
   - 1007cdb58d91
-  - 42c5172815f7
   tool_panel_section_label: RNA-seq
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: trinity_gene_to_trans_map
   owner: iuc
   revisions:
-  - 297a1c03c702
-  - d80f0f1d6c9d
-  - c2c039e421af
   - 37a1129c89d2
+  - 297a1c03c702
+  - c2c039e421af
+  - d80f0f1d6c9d
   tool_panel_section_label: RNA-seq
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: trinity_run_de_analysis
   owner: iuc
   revisions:
   - bbbb39ad9a7e
-  - 04936df18de3
   - 047c22569787
   - 1d689e4e1caf
+  - 04936df18de3
   tool_panel_section_label: RNA-seq
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: trinity_samples_qccheck
@@ -396,19 +396,19 @@ tools:
   revisions:
   - 9871104ea630
   - 1812dbc5bb7b
-  - d83aa367a381
   - 7377140e39f8
+  - d83aa367a381
   tool_panel_section_label: RNA-seq
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: trinity
   owner: iuc
   revisions:
-  - 32b86cd8eb50
-  - 26d5493b20b6
-  - cee61b3fcf78
-  - c9cfec002f71
-  - db1f362cca3e
   - d84caa5a98ad
+  - 26d5493b20b6
+  - 32b86cd8eb50
+  - db1f362cca3e
+  - c9cfec002f71
+  - cee61b3fcf78
   tool_panel_section_label: RNA-seq
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: trinity
@@ -420,8 +420,8 @@ tools:
 - name: trinotate
   owner: iuc
   revisions:
-  - 9e61bc67866f
   - 4383070d29ed
+  - 9e61bc67866f
   - 6fd16fad465d
   tool_panel_section_label: RNA-seq
   tool_shed_url: toolshed.g2.bx.psu.edu
