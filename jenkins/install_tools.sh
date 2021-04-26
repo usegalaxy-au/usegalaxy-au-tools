@@ -162,10 +162,6 @@ install_tools() {
     COMMIT_FILES+=("$FILE")
   done
 
-  # log all git changes
-  git diff | cat;
-  git diff --staged | cat;
-
   echo -e "\nPushing Changes to github"
   COMMIT_MESSAGE="Jenkins $MODE build $BUILD_NUMBER."
   git commit "${COMMIT_FILES[@]}" -m "$COMMIT_MESSAGE"
