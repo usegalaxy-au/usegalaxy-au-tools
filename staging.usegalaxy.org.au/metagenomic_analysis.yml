@@ -2,8 +2,8 @@ tools:
 - name: cat_bins
   owner: iuc
   revisions:
-  - 18676df0cb3a
   - 0094893f5001
+  - 18676df0cb3a
   tool_panel_section_label: Metagenomic Analysis
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: cat_prepare
@@ -94,17 +94,17 @@ tools:
 - name: humann2_genefamilies_genus_level
   owner: iuc
   revisions:
-  - 6c84982ee6f7
   - 654548ae1357
+  - 6c84982ee6f7
   - 6d364c65c946
   tool_panel_section_label: Metagenomic Analysis
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: humann2_regroup_table
   owner: iuc
   revisions:
+  - 6aad8ca3918b
   - bd7a9c6efb10
   - e66ab198ec15
-  - 6aad8ca3918b
   tool_panel_section_label: Metagenomic Analysis
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: humann2_renorm_table
@@ -280,8 +280,8 @@ tools:
 - name: metaphlan2krona
   owner: iuc
   revisions:
-  - ebb74774457e
   - fdbd63e92b01
+  - ebb74774457e
   tool_panel_section_label: Metagenomic Analysis
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: phyloseq_filter
@@ -353,10 +353,10 @@ tools:
 - name: staramr
   owner: nml
   revisions:
+  - da787fc8b740
   - aeaa20b96ef2
   - 4b9a8031ab74
   - 2fd4d4c9c5c2
-  - da787fc8b740
   tool_panel_section_label: Metagenomic Analysis
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: usearch_cluster_otus
