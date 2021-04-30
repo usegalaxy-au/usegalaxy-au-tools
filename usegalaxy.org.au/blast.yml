@@ -1,9 +1,15 @@
 tools:
+- name: blastxml_to_gapped_gff3
+  owner: iuc
+  revisions:
+  - 561e827baa5f
+  tool_panel_section_label: Blast +
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: diamond
   owner: bgruening
   revisions:
-  - 54f751e413f4
   - 62c9df8382c2
+  - 54f751e413f4
   tool_panel_section_label: Blast +
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: ncbi_blast_plus
@@ -11,8 +17,8 @@ tools:
   revisions:
   - 2889433c7ae1
   - 5edc472ec434
-  - e25d3acf6e68
   - 6f386c5dc4fb
+  - e25d3acf6e68
   tool_panel_section_label: Blast +
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: taxonomy_krona_chart
