@@ -26,8 +26,8 @@ tools:
 - name: mafft
   owner: rnateam
   revisions:
-  - c5908940967d
   - 15974dd17515
+  - c5908940967d
   tool_panel_section_label: Multiple Alignments
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: mummer_delta_filter
@@ -40,6 +40,24 @@ tools:
   owner: iuc
   revisions:
   - 60698466facd
+  tool_panel_section_label: Multiple Alignments
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: mummer_mummer
+  owner: iuc
+  revisions:
+  - 48823c9635a4
+  tool_panel_section_label: Multiple Alignments
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: mummer_mummerplot
+  owner: iuc
+  revisions:
+  - ebe3b0f84de9
+  tool_panel_section_label: Multiple Alignments
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: mummer_nucmer
+  owner: iuc
+  revisions:
+  - 636b049e6141
   tool_panel_section_label: Multiple Alignments
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: mummer_show_coords
