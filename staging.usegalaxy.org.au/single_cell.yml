@@ -2,10 +2,10 @@ tools:
 - name: anndata_import
   owner: iuc
   revisions:
-  - 00712416fdaa
   - cfc3f5a57dc6
-  - ae1e5d9d8972
   - 32e547223c9e
+  - ae1e5d9d8972
+  - 00712416fdaa
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: anndata_import
@@ -17,10 +17,10 @@ tools:
 - name: anndata_inspect
   owner: iuc
   revisions:
-  - 39e945f0b2c1
-  - 383dcb0500f9
   - b9fac48532eb
+  - 383dcb0500f9
   - 038e32885fec
+  - 39e945f0b2c1
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: anndata_inspect
@@ -47,9 +47,9 @@ tools:
 - name: dropletutils
   owner: iuc
   revisions:
+  - cdf4443d5625
   - 8855361fcfc5
   - 2c1200fba922
-  - cdf4443d5625
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: dropletutils
@@ -91,9 +91,9 @@ tools:
 - name: scanpy_cluster_reduce_dimension
   owner: iuc
   revisions:
-  - 77b91b9bdf52
-  - b2df381a6004
   - 3e4e1cf73d98
+  - b2df381a6004
+  - 77b91b9bdf52
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: scanpy_cluster_reduce_dimension
@@ -105,8 +105,8 @@ tools:
 - name: scanpy_filter
   owner: iuc
   revisions:
-  - a97abb8cd15b
   - 3c86f71498bc
+  - a97abb8cd15b
   - 5511647110ff
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -119,10 +119,10 @@ tools:
 - name: scanpy_inspect
   owner: iuc
   revisions:
-  - 6c145a6868cc
   - 5e9171dc8244
-  - cc0deb593fc8
   - e4c99c83dfbf
+  - 6c145a6868cc
+  - cc0deb593fc8
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: scanpy_inspect
@@ -135,8 +135,8 @@ tools:
   owner: iuc
   revisions:
   - a407e7f8bdc1
-  - 51d945eab1e1
   - 3bcd5445cd7a
+  - 51d945eab1e1
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: scanpy_normalize
