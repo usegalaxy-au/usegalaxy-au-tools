@@ -2,26 +2,26 @@ tools:
 - name: bandage
   owner: iuc
   revisions:
-  - 94fe43e75ddc
   - b2860df42e16
+  - 94fe43e75ddc
   tool_panel_section_label: Assembly
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: busco
   owner: iuc
   revisions:
-  - 602fb8e63aa7
-  - 4048d82f0c88
-  - 5ecdeca79a0d
-  - 1440ae06552f
-  - cf13a1e03e5b
   - 1e62c28ba91d
+  - 5ecdeca79a0d
+  - 4048d82f0c88
+  - cf13a1e03e5b
+  - 1440ae06552f
+  - 602fb8e63aa7
   tool_panel_section_label: Assembly
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: canu
   owner: bgruening
   revisions:
-  - 5732f959936a
   - c5b7390290b1
+  - 5732f959936a
   tool_panel_section_label: Assembly
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: cap3
@@ -33,9 +33,9 @@ tools:
 - name: flye
   owner: bgruening
   revisions:
-  - 3ee0ef312022
   - 1ce9b1d72ec3
   - de24438c9988
+  - 3ee0ef312022
   tool_panel_section_label: Assembly
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: genomescope
@@ -44,18 +44,24 @@ tools:
   - b2f674562a18
   tool_panel_section_label: Assembly
   tool_shed_url: toolshed.g2.bx.psu.edu
+- name: hifiasm
+  owner: bgruening
+  revisions:
+  - 6505bd37670d
+  tool_panel_section_label: Assembly
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: megahit
   owner: iuc
   revisions:
-  - 7518ee87b53d
   - de387b2b2803
+  - 7518ee87b53d
   tool_panel_section_label: Assembly
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: metaspades
   owner: nml
   revisions:
-  - ce02f513e598
   - 2ecf5a570907
+  - ce02f513e598
   tool_panel_section_label: Assembly
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: miniasm
@@ -81,26 +87,26 @@ tools:
 - name: quast
   owner: iuc
   revisions:
-  - 59db8ea8c845
   - ebb0dcdb621a
   - 6fcbee531de6
+  - 59db8ea8c845
   tool_panel_section_label: Assembly
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: racon
   owner: bgruening
   revisions:
-  - aa39b19ca11e
   - a199cd7ac344
+  - aa39b19ca11e
   tool_panel_section_label: Assembly
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: shovill
   owner: iuc
   revisions:
-  - f698c7604b3b
   - d9f6a00b6db7
-  - 196a599ec43d
   - 83ead2be47b2
   - 865119fcb694
+  - f698c7604b3b
+  - 196a599ec43d
   tool_panel_section_label: Assembly
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: spades
@@ -121,15 +127,15 @@ tools:
 - name: velvet
   owner: devteam
   revisions:
+  - 08256557922f
   - 5da9a0e2fb2d
   - 8d09f8be269e
-  - 08256557922f
   tool_panel_section_label: Assembly
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: velvetoptimiser
   owner: simon-gladman
   revisions:
-  - 4a53b89fa703
   - 37d88f41c810
+  - 4a53b89fa703
   tool_panel_section_label: Assembly
   tool_shed_url: toolshed.g2.bx.psu.edu
