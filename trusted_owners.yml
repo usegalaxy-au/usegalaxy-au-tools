@@ -32,10 +32,6 @@ trusted_owners:
   - name: gemini_annotate
   - name: gemini_query
   - name: gemini_comp_hets
-  - name: scanpy_inspect # test failures, CB to investigate
-    revision: 6c145a6868cc
-  - name: scanpy_plot # test failures, CB to investigate
-    revision: 7647e5cd1b8b
 - owner: simon-gladman
 - owner: nml
 - owner: peterjc
@@ -51,7 +47,6 @@ trusted_owners:
 - owner: devteam
   skip_tools:
   - name: cuffdiff  # no longer supported
-  - name: velvet  # temporarily skip 2020-09-08
 - owner: galaxyp
   skip_tools:
   - name: openms_consensusid  # skip all openms tools because they come with tests and no test data.  We need to run tests independently and force install
