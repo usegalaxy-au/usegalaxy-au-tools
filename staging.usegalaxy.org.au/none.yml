@@ -45,15 +45,15 @@ tools:
 - name: data_manager_build_kraken2_database
   owner: iuc
   revisions:
-  - edacc4bcd3cb
   - 0eebe086fd58
+  - edacc4bcd3cb
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_bwa_mem_index_builder
   owner: devteam
   revisions:
-  - 46066df8813d
   - 63d5652be07a
+  - 46066df8813d
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_bwameth_index_builder
@@ -89,8 +89,8 @@ tools:
 - name: data_manager_fetch_genome_dbkeys_all_fasta
   owner: devteam
   revisions:
-  - 4d3eff1bc421
   - b1bc53e9bbc5
+  - 4d3eff1bc421
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_gatk_picard_index_builder
@@ -102,9 +102,9 @@ tools:
 - name: data_manager_gemini_database_downloader
   owner: iuc
   revisions:
-  - 5bcf0e24f42c
   - 172815da3d41
   - b4b2b284230a
+  - 5bcf0e24f42c
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_hisat2_index_builder

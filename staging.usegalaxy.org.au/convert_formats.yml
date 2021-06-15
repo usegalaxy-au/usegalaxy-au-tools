@@ -28,8 +28,8 @@ tools:
 - name: bp_genbank2gff3
   owner: iuc
   revisions:
-  - 11c3eb512633
   - a0d092f27fdf
+  - 11c3eb512633
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fasta_to_tabular
@@ -42,15 +42,15 @@ tools:
 - name: fastq_to_fasta
   owner: devteam
   revisions:
-  - e282bc27be9a
   - 186b8d913e6c
+  - e282bc27be9a
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastq_to_tabular
   owner: devteam
   revisions:
-  - 614a63f14adf
   - 4b347702c4aa
+  - 614a63f14adf
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fml_gff3togtf
@@ -62,8 +62,8 @@ tools:
 - name: gfa_to_fa
   owner: iuc
   revisions:
-  - e33c82b63727
   - 8e9d604e92f4
+  - e33c82b63727
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: gffcompare_to_bed
@@ -82,6 +82,12 @@ tools:
   owner: iuc
   revisions:
   - b026dae67fba
+  tool_panel_section_label: Convert Formats
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: intermine_galaxy_exchange
+  owner: iuc
+  revisions:
+  - c24014d80001
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: mz_to_sqlite
@@ -107,10 +113,10 @@ tools:
 - name: thermo_raw_file_converter
   owner: galaxyp
   revisions:
-  - 92ac8e086317
-  - 19e45916daf9
+  - 26c6706bfb07
   - b9b385097f13
   - 63769c4217a7
-  - 26c6706bfb07
+  - 92ac8e086317
+  - 19e45916daf9
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
