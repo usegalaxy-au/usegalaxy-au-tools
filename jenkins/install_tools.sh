@@ -213,7 +213,7 @@ install_tool() {
   galaxy-wait -g "https://${TOOL_SHED_URL}"
 
   # Ephemeris install script
-  command="shed-tools install -g $URL -a $API_KEY -t $TOOL_FILE -v --log_file $INSTALL_LOG"
+  command="shed-tools install -g $URL -a $API_KEY -t $TOOL_FILE -v --log_file $INSTALL_LOG --install_tool_dependencies"
   echo "${command/$API_KEY/<API_KEY>}"; # substitute API_KEY for printing
   {
     $command
