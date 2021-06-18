@@ -3,24 +3,30 @@ tools:
   owner: iuc
   revisions:
   - 3f3e247c053d
-  - 78c75f134c16
-  - c2ef298da409
   - 4efdca267d51
   - 6e9aea89e388
+  - 78c75f134c16
+  - c2ef298da409
   tool_panel_section_label: Annotation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: annotatemyids
   owner: iuc
   revisions:
-  - 44018dd6b447
   - b5d8e5475247
   - 1aae04680c4b
+  - 44018dd6b447
   tool_panel_section_label: Annotation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: augustus_training
   owner: bgruening
   revisions:
   - 6519ebe25019
+  tool_panel_section_label: Annotation
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: augustus
+  owner: bgruening
+  revisions:
+  - ca6d970d931c
   tool_panel_section_label: Annotation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: barrnap
@@ -63,8 +69,8 @@ tools:
 - name: goseq
   owner: iuc
   revisions:
-  - 8b3e3657034e
   - ef2ad746b589
+  - 8b3e3657034e
   tool_panel_section_label: Annotation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: goslimmer
@@ -101,9 +107,9 @@ tools:
 - name: prokka
   owner: crs4
   revisions:
-  - a17498c603ec
-  - bf68eb663bc3
   - eaee459f3d69
+  - bf68eb663bc3
+  - a17498c603ec
   tool_panel_section_label: Annotation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: snap_training
@@ -115,10 +121,10 @@ tools:
 - name: snpeff
   owner: iuc
   revisions:
+  - 5a29ab10dba6
+  - 8f92c2b26e6d
   - 74aebe30fb52
   - 68693743661e
-  - 8f92c2b26e6d
-  - 5a29ab10dba6
   - 268d162b9c49
   tool_panel_section_label: Annotation
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -152,8 +158,8 @@ tools:
   owner: iuc
   revisions:
   - e1a9d6fd258d
-  - 037a11682176
   - 200c378d85f3
+  - 037a11682176
   tool_panel_section_label: Annotation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: transit_gumbel
