@@ -3,16 +3,19 @@ import argparse
 import os
 
 from bioblend.galaxy import GalaxyInstance
-from bioblend.galaxy.toolshed import ToolShedClient
 from bioblend.toolshed import ToolShedInstance
-from bioblend.toolshed.repositories import ToolShedRepositoryClient
 
 trusted_owners_file = 'trusted_owners.yml'
 
+"""
+Preprocess files in shed-tools format, outputting one file per tool shed repository to install.  If the flag
+--update_existing is used, look for new repositories based on the current lists of installed repositories
+in --source_directory.
+"""
 
 def main():
     parser = argparse.ArgumentParser(description='Rewrite arbitrarily many tool.yml files as one file per tool revision')
-    parser.add_argument('-o', '--output_path', help='Output file path')  # mandatory
+    parser.add_argument('-o', '--output_path', help='Output directory path', required=True)
     parser.add_argument('-f', '--files', help='Tool input files', nargs='+')  # mandatory unless --update_existing is true
     parser.add_argument('-g', '--production_url', help='Galaxy server URL')
     parser.add_argument('-a', '--production_api_key', help='API key for galaxy server')
@@ -39,7 +42,7 @@ def main():
     elif files and source_dir:
         print('--files and --source_directory have both been provided.  Ignoring source_directory in favour of files\n')
     if source_dir and not files:
-        files = ['%s/%s' % (source_dir, name) for name in os.listdir(source_dir)]
+        files = [os.path.join(source_dir, name) for name in os.listdir(source_dir)]
 
     tools = []
     for file in files:
@@ -48,7 +51,7 @@ def main():
             if isinstance(content, list):
                 tools += content
             else:
-                tools.append(content)
+                tools.append(content)  # TODO: is it ever not a list?
 
     if update:  # update tools with trusted owners where updates are available
         if not production_url and production_api_key:
@@ -59,18 +62,17 @@ def main():
 
         # load repository data to check which tools have updates available
         galaxy_instance = GalaxyInstance(production_url, production_api_key)
-        toolshed_client = ToolShedClient(galaxy_instance)
-        repos = toolshed_client.get_repositories()
+        repos = galaxy_instance.toolshed.get_repositories()
         installed_repos = [r for r in repos if r['status'] == 'Installed']  # Skip deactivated repos
 
-        trusted_tools = [t for t in tools if [o for o in trusted_owners if t['owner'] == o['owner']] != []]
+        trusted_tools = [t for t in tools if t['owner'] in [entry['owner'] for entry in trusted_owners]]
         print('Checking for updates from %d tools' % len(trusted_tools))
         tools = []
         for i, tool in enumerate(trusted_tools):
             if i > 0 and i % 100 == 0:
                 print('%d/%d' % (i, len(trusted_tools)))
             new_revision_info = get_new_revision(tool, installed_repos, trusted_owners)
-            # if tool_has_new_revision(tool, installed_repos, trusted_owners):
+
             if new_revision_info:
                 extraneous_keys = [key for key in tool.keys() if key not in ['name', 'owner', 'tool_panel_section_label', 'tool_shed_url']]
                 for key in extraneous_keys:
@@ -106,14 +108,13 @@ def get_new_revision(tool, repos, trusted_owners):
     if 'all' in skipped_revisions:
         return
 
-    toolshed = ToolShedInstance(url='https://' + tool['tool_shed_url'])
-    repo_client = ToolShedRepositoryClient(toolshed)
     matching_repos = [r for r in repos if r['name'] == tool['name'] and r['owner'] == tool['owner']]
     if not matching_repos:
         return
 
+    toolshed = ToolShedInstance(url='https://' + tool['tool_shed_url'])
     try:
-        latest_revision = repo_client.get_ordered_installable_revisions(tool['name'], tool['owner'])[-1]
+        latest_revision = toolshed.repositories.get_ordered_installable_revisions(tool['name'], tool['owner'])[-1]
     except Exception as e:
         print('Skipping %s.  Error querying tool revisions: %s' % (tool['name'], str(e)))
         return
@@ -123,34 +124,38 @@ def get_new_revision(tool, repos, trusted_owners):
     if skip_this_tool or installed:
         return
 
-    def get_version(revision):
+    # Check whether the new revision updates tool versions on Galaxy.  If it does not, it will be installed
+    # in place of the current latest revision on Galaxy and needs to be flagged as a version update so that
+    # it will not be autoremoved in the instance of failing tests
+
+    def get_installable_revision_for_revision(revision):
+        # make a call to the toolshed to get a large blob of information about the repository
+        # that includes the hash of the corresponding installable revision.
         try:
-            data = repo_client.get_repository_revision_install_info(tool['name'], tool['owner'], revision)
+            data = toolshed.repositories.get_repository_revision_install_info(tool['name'], tool['owner'], revision)
             repository, metadata, install_info = data
-            version = metadata['valid_tools'][0]['version']
-            return version
-        except Exception as e:
-            print('Skipping %s.  Error querying tool revisions: %s' % (tool['name'], str(e)))
+            desc, clone_url, installable_revision, ctx_rev, owner, repo_deps, tool_deps = install_info[tool['name']]
+        except Exception as e:  # KeyError, ValueError, bioblend.ConnectionError, return None
+            print('Unexpected result querying install info for %s, %s, %s, returning None' % (tool['name'], tool['owner'], revision))
+            return None
+        return installable_revision
 
-    latest_revision_version = get_version(latest_revision)
-    installed_versions = [get_version(r['changeset_revision']) for r in matching_repos]
-    if latest_revision_version is None or None in installed_versions:  # skip on errors from get_version
-        return
-    version_update = latest_revision_version in installed_versions
+    latest_installed_revision = sorted(matching_repos, key=lambda x: int(x['ctx_rev']), reverse=True)[0]['changeset_revision']
+    latest_installed_revision_installable_revision = get_installable_revision_for_revision(latest_installed_revision)
+    if latest_installed_revision_installable_revision is None:
+        return  # skip on errors from revision query
+    version_update = latest_installed_revision_installable_revision == latest_revision
     if version_update:
-        print('Latest revision %s of %s has version %s already installed on GA.  Skipping tests for this tool ' % (
-            latest_revision, tool['name'], latest_revision_version
+        print('Latest revision %s of %s is a version update of installed revision %s.  Skipping tests for this tool ' % (
+            latest_revision, tool['name'], latest_installed_revision
         ))
-
     return {'revisions': [latest_revision], 'version_update': version_update}
 
 
 def write_output_file(path, tool):
-    if not path[-1] == '/':
-        path = path + '/'
     [revision] = tool['revisions'] if 'revisions' in tool.keys() else ['latest']
     version_update = tool.pop('version_update', False)
-    file_path = '%s%s@%s.yml' % (path, tool['name'], revision)
+    file_path = os.path.join(path, '%s@%s.yml' % (tool['name'], revision))
     print('writing file %s' % file_path)
     with open(file_path, 'w') as outfile:
         if version_update:
