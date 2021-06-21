@@ -15,7 +15,7 @@ echo $command
 $command
 
 if [ -f $REPORT_FILE ]; then
-  git clone git@github.com:galaxy-au-tools-jenkins-bot/website.git
+  git clone git@github.com:usegalaxy-au/website.git
   cd website || exit 1
 
   git config --local user.name "galaxy-au-tools-jenkins-bot"
@@ -23,7 +23,8 @@ if [ -f $REPORT_FILE ]; then
 
   REPORT_DIR="_posts"
   git checkout -b $BRANCH_NAME
-  mv ../$REPORT_FILE _posts
+  git reset --hard origin/master
+  mv ../$REPORT_FILE $REPORT_DIR
   git add $REPORT_DIR/$REPORT_FILE
   git commit $REPORT_DIR/$REPORT_FILE -m "New and updated tools $REPORT_DATE"
   git push --set-upstream origin $BRANCH_NAME
