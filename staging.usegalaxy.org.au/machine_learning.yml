@@ -11,6 +11,27 @@ tools:
   - 0c933465d70e
   tool_panel_section_label: Machine Learning
   tool_shed_url: toolshed.g2.bx.psu.edu
+- name: keras_train_and_eval
+  owner: bgruening
+  revisions:
+  - ead8f1822587
+  - f1b9a42d6809
+  tool_panel_section_label: Machine Learning
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: ml_visualization_ex
+  owner: bgruening
+  revisions:
+  - 05143043ca13
+  - 4a229a7ad638
+  tool_panel_section_label: Machine Learning
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: model_prediction
+  owner: bgruening
+  revisions:
+  - 60c726f5cc5e
+  - 83228baae3c5
+  tool_panel_section_label: Machine Learning
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: sklearn_ensemble
   owner: bgruening
   revisions:
@@ -22,25 +43,25 @@ tools:
 - name: sklearn_generalized_linear
   owner: bgruening
   revisions:
+  - 40f4447733b2
   - 91c4e3331208
   - 913bf1c4c7bb
-  - 40f4447733b2
   tool_panel_section_label: Machine Learning
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: sklearn_searchcv
   owner: bgruening
   revisions:
+  - a36a45cb96fa
   - 25ab6b4e376e
   - e5a5ad882f1f
-  - a36a45cb96fa
   tool_panel_section_label: Machine Learning
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: sklearn_svm_classifier
   owner: bgruening
   revisions:
   - 14fa42b095c4
-  - 02d2be90dedb
   - f9639b488779
+  - 02d2be90dedb
   tool_panel_section_label: Machine Learning
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: sklearn_to_categorical
