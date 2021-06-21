@@ -1,7 +1,6 @@
 import argparse
 
 from bioblend.galaxy import GalaxyInstance
-from bioblend.galaxy.toolshed import ToolShedClient
 
 """
 Uninstall tools from a galaxy instance via the API using the bioblend package.
@@ -35,8 +34,7 @@ def main():
 def uninstall_tools(galaxy_server, api_key, names, force):
     tools_to_uninstall = []
     galaxy_instance = GalaxyInstance(url=galaxy_server, key=api_key)
-    toolshed_client = ToolShedClient(galaxy_instance)
-    installed_tools = [t for t in toolshed_client.get_repositories() if t['status'] != 'Uninstalled']
+    installed_tools = [t for t in galaxy_instance.toolshed.get_repositories() if t['status'] != 'Uninstalled']
 
     for name in names:
         revision = None
@@ -59,7 +57,7 @@ def uninstall_tools(galaxy_server, api_key, names, force):
     for tool in tools_to_uninstall:
         try:
             print('Uninstalling %s at revision %s' % (tool['name'], tool['changeset_revision']))
-            return_value = toolshed_client.uninstall_repository_revision(
+            return_value = galaxy_instance.toolshed.uninstall_repository_revision(
                 name=tool['name'],
                 owner=tool['owner'],
                 changeset_revision=tool['changeset_revision'],

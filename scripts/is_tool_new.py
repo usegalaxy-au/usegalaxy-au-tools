@@ -2,7 +2,6 @@ import sys
 import argparse
 
 from bioblend.galaxy import GalaxyInstance
-from bioblend.galaxy.toolshed import ToolShedClient
 
 
 def main():
@@ -18,10 +17,9 @@ def main():
     name = args.name
     owner = args.owner
 
-    gal = GalaxyInstance(galaxy_url, api_key)
-    cli = ToolShedClient(gal)
-    u_repos = cli.get_repositories()
-    tools_with_name_and_owner = [t for t in u_repos if t['name'] == name and t['owner'] == owner and t['status'] == 'Installed']
+    galaxy_instance = GalaxyInstance(galaxy_url, api_key)
+    repos = galaxy_instance.toolshed.get_repositories()
+    tools_with_name_and_owner = [t for t in repos if t['name'] == name and t['owner'] == owner and t['status'] == 'Installed']
     if not tools_with_name_and_owner:
         sys.stdout.write('True')  # we did not find the name/owner combination so we say that the tool is new
     else:
