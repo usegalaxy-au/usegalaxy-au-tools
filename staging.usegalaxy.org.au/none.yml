@@ -8,15 +8,15 @@ tools:
 - name: bcftools_plugin_color_chrs
   owner: iuc
   revisions:
-  - 71186bb66ca2
   - c39113e2ae34
+  - 71186bb66ca2
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: bcftools_plugin_frameshifts
   owner: iuc
   revisions:
-  - 96d2000977ab
   - eb22990a2be9
+  - 96d2000977ab
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: blast_datatypes
@@ -47,8 +47,8 @@ tools:
 - name: data_manager_build_kraken2_database
   owner: iuc
   revisions:
-  - 0eebe086fd58
   - edacc4bcd3cb
+  - 0eebe086fd58
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_bwa_mem_index_builder
@@ -104,16 +104,16 @@ tools:
 - name: data_manager_gemini_database_downloader
   owner: iuc
   revisions:
-  - 172815da3d41
   - 5bcf0e24f42c
+  - 172815da3d41
   - b4b2b284230a
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_hisat2_index_builder
   owner: iuc
   revisions:
-  - a04cebcd77f4
   - d210e1f185bd
+  - a04cebcd77f4
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_humann2_database_downloader
@@ -134,11 +134,17 @@ tools:
   - 83f07f40b200
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
+- name: data_manager_metaphlan_database_downloader
+  owner: iuc
+  revisions:
+  - 9c43baa60906
+  tool_panel_section_label: None
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_mothur_toolsuite
   owner: iuc
   revisions:
-  - 9d09724f2bf1
   - aec831b54a5b
+  - 9d09724f2bf1
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_sam_fasta_index_builder
@@ -158,8 +164,8 @@ tools:
 - name: data_manager_star_index_builder
   owner: iuc
   revisions:
-  - d3879aceba04
   - 64deddb6a8ec
+  - d3879aceba04
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_twobit_builder
