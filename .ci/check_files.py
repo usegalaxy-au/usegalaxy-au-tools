@@ -28,7 +28,7 @@ valid_section_labels = [
     'Statistics', 'Graph/Display Data', 'Machine Learning', 'iVar',
     'ChemicalToolBox', 'Qualimap', 'Viral Tools', 'Single-cell', 'RAD-seq',
     'None', 'Epigenetics', 'HiCExplorer', 'Imaging', 'DNA Metabarcoding',
-    'Other Tools',
+    'Other Tools', 'Species abundance', 'Climate Analysis',
 ]
 
 
