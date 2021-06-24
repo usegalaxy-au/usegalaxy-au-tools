@@ -1,10 +1,4 @@
 tools:
-- name: pampa_presabs
-  owner: ecology
-  revisions:
-  - 07b081730994
-  tool_panel_section_label: Species abundance
-  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: pampa_communitymetrics
   owner: ecology
   revisions:
@@ -29,18 +23,21 @@ tools:
   - 5ddca052c314
   tool_panel_section_label: Species abundance
   tool_shed_url: toolshed.g2.bx.psu.edu
+- name: pampa_presabs
+  owner: ecology
+  revisions:
+  - 07b081730994
+  tool_panel_section_label: Species abundance
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: xarray_metadata_info
   owner: ecology
   revisions:
   - e8650cdf092f
   tool_panel_section_label: Species abundance
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: xarray_select
   owner: ecology
   revisions:
   - 6baac361495b
   tool_panel_section_label: Species abundance
-- name: ctsm_fates
-  owner: climate
-  revisions:
-  - b525b88bc941
-  tool_panel_section_label: Climate Analysis
+  tool_shed_url: toolshed.g2.bx.psu.edu
