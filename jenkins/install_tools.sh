@@ -28,9 +28,9 @@ install_tools() {
 
   # check out master, get out of detached head (skip if running locally)
   if [ $LOCAL_ENV = 0 ]; then
-    git config --local user.name "galaxy-au-tools-jenkins-bot"  # TODO set in .env
-    git config --local user.email "galaxyaustraliatools@gmail.com"  # TODO set in .env
-    git checkout master
+    git config --local user.name $GITHUB_ACCOUNT_NAME
+    git config --local user.email $GITHUB_ACCOUNT_EMAIL
+    git checkout $GITHUB_BRANCH
     git pull
   fi
 
@@ -50,7 +50,7 @@ install_tools() {
     # split requests into individual yaml files in tmp path
     # one file per unique revision so that installation can be run sequentially and
     # failure of one installation will not affect the others
-    request_files_command="python scripts/organise_request_files.py -f $REQUEST_FILES -o $TOOL_FILE_PATH"
+    request_files_command="python scripts/organise_request_files.py -f $REQUEST_FILES -o $TOOL_FILE_PATH -g $PRODUCTION_URL -a $PRODUCTION_API_KEY"
   elif [ "$MODE" = "update" ]; then
     request_files_command="python scripts/organise_request_files.py --update_existing -s $PRODUCTION_TOOL_DIR -o $TOOL_FILE_PATH -g $PRODUCTION_URL -a $PRODUCTION_API_KEY"
   fi
@@ -72,9 +72,10 @@ install_tools() {
   for TOOL_FILE in $TOOL_FILE_PATH/*; do
     FILE_NAME=$(basename $TOOL_FILE)
 
+    # Extract details (tool name, owner etc) from TOOL_FILE with some grepping and brute force
     TOOL_REF=$(echo $FILE_NAME | cut -d'.' -f 1);
     TOOL_NAME=$(echo $TOOL_REF | cut -d '@' -f 1);
-    REQUESTED_REVISION=$(echo $TOOL_REF | cut -d '@' -f 2); # TODO: Parsing from file name for revision and tool name is not good.  Fix.
+    REQUESTED_REVISION=$(echo $TOOL_REF | cut -d '@' -f 2);
     OWNER=$(grep -oE "owner: .*$" "$TOOL_FILE" | cut -d ':' -f 2 | xargs);
     TOOL_SHED_URL=$(grep -oE "tool_shed_url: .*$" "$TOOL_FILE" | cut -d ':' -f 2 | xargs);
     [ ! $TOOL_SHED_URL ] && TOOL_SHED_URL="toolshed.g2.bx.psu.edu"; # default value
@@ -192,7 +193,7 @@ install_tools() {
 }
 
 install_tool() {
-  # Positional arguments: $1 = STAGING|PRODUCTION, $2 = tool file path
+  # Positional argument: $1 = STAGING|PRODUCTION
   SERVER="$1"
   set_url $SERVER
   STEP="$(title $SERVER) Installation"; # Production Installation or Staging Installation
@@ -200,7 +201,7 @@ install_tool() {
   INSTALL_LOG="$TMP/install_log.txt"
   rm -f $INSTALL_LOG ||:;  # delete if it already exists
 
-  # Ping galaxy url and toolshed url
+  # Wait for galaxy and toolshed
   echo "Waiting for $URL";
   galaxy-wait -g $URL
   echo "Waiting for https://${TOOL_SHED_URL}";
@@ -230,7 +231,6 @@ install_tool() {
   # fi
 
   if [ ! "$INSTALLATION_STATUS" ] || [ ! "$INSTALLED_NAME" ] || [ ! "$INSTALLED_REVISION" ]; then
-    # TODO what if this is production server?  wind back staging installation?
     log_row "Script error"
     exit_installation 1 "Could not verify installation from shed-tools output."
     return 1
@@ -248,9 +248,7 @@ install_tool() {
     return 1;
 
   elif [ $INSTALLATION_STATUS = "Skipped" ]; then
-    # The linting process should prevent this scenario if the tool is installed on production
     # If the tool is installed on staging, skip testing
-    # Only log the entry in 'install' mode, we expect to skip most tools when running in 'update' mode
     echo "Package appears to be already installed on $URL";
     if [ $SERVER = "PRODUCTION" ]; then
       if [ $MODE = "install" ]; then
@@ -277,7 +275,7 @@ install_tool() {
 }
 
 test_tool() {
-  # Positional arguments: $1 = STAGING|PRODUCTION, $2 = tool file path
+  # Positional argument: $1 = STAGING|PRODUCTION
   SERVER="$1"
   set_url $SERVER
   STEP="$(title $SERVER) Testing"; # Production Testing or Staging Testing
@@ -293,9 +291,9 @@ test_tool() {
   TEST_LOG="$TMP/test_log.txt"
   rm -f $TEST_LOG ||:;  # delete file if it exists
 
-  sleep 60s; # Allow time for handlers to catch up
+  sleep 30s; # Allow time for handlers to catch up
 
-  # Ping galaxy url
+  # Wait for galaxy
   echo "Waiting for $URL";
   galaxy-wait -g $URL
 
@@ -328,7 +326,7 @@ test_tool() {
       unset STEP
       log_row "Installed"
       exit_installation 0 ""
-      # remove installation file in requests/pending.  Any files that remain in this folder will
+      # remove installation file from TOOL_FILE_PATH.  Any files that remain in this folder will
       # be added to a new PR opened by Jenkins
       rm $TOOL_FILE;
       return 0
@@ -420,13 +418,3 @@ set_url() {
   fi
 }
 
-# # Just use python to get titlecase and lowercase
-# title() {
-#   python -c "print('$1'.title())"
-# }
-
-# lower() {
-#   python -c "print('$1'.lower())"
-# }
-
-# install_tools
