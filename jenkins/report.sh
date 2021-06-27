@@ -1,10 +1,6 @@
 #! /bin/bash
-SECRET_ENV_FILE=".secret.env"; # todo: abstract this repeated block somehow
-[ -f $SECRET_ENV_FILE ] && LOCAL_ENV=1 || LOCAL_ENV=0
-[ $LOCAL_ENV = 0 ] && VENV_PATH="/var/lib/jenkins/jobs_common" || VENV_PATH=".."
-VIRTUALENV="$VENV_PATH/.venv3"
-# shellcheck source=$VIRTUALENV/bin/activate
-. "$VIRTUALENV/bin/activate"
+source jenkins/utils.sh
+activate_virtualenv
 
 REPORT_DATE=$(env TZ="Australia/Queensland" date "+%Y-%m-%d")
 REPORT_FILE="${REPORT_DATE}-tool-updates.md"

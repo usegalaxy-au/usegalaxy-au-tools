@@ -1,11 +1,5 @@
 #! /bin/bash
-
-AUTOMATED_TOOL_INSTALLATION_LOG="automated_tool_installation_log.tsv"; # version controlled
-WORKING_INSTALLATION_LOG="${LOG_DIR}/installation_log.tsv";
-LOG_HEADER="Category\tBuild Num.\tDate (AEST)\tName\tNew Tool\tStatus\tOwner\tInstalled Revision\tRequested Revision\tFailing Step\tStaging tests passed\tProduction tests passed\tSection Label\tTool Shed URL\tLog Path"
-
-source ".env"
-[ -f ".secret.env" ] && source ".secret.env"
+source jenkins/utils.sh
 
 install_tools() {
   echo "Running automated tool installation script"
@@ -34,8 +28,8 @@ install_tools() {
 
   # check out master, get out of detached head (skip if running locally)
   if [ $LOCAL_ENV = 0 ]; then
-    git config --local user.name "galaxy-au-tools-jenkins-bot"
-    git config --local user.email "galaxyaustraliatools@gmail.com"
+    git config --local user.name "galaxy-au-tools-jenkins-bot"  # TODO set in .env
+    git config --local user.email "galaxyaustraliatools@gmail.com"  # TODO set in .env
     git checkout master
     git pull
   fi
@@ -426,13 +420,13 @@ set_url() {
   fi
 }
 
-# Just use python to get titlecase and lowercase
-title() {
-  python -c "print('$1'.title())"
-}
+# # Just use python to get titlecase and lowercase
+# title() {
+#   python -c "print('$1'.title())"
+# }
 
-lower() {
-  python -c "print('$1'.lower())"
-}
+# lower() {
+#   python -c "print('$1'.lower())"
+# }
 
-install_tools
+# install_tools
