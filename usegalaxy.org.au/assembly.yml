@@ -3,19 +3,19 @@ tools:
   owner: iuc
   revisions:
   - 94fe43e75ddc
-  - 067592b6b312
   - b2860df42e16
+  - 067592b6b312
   tool_panel_section_label: Assembly
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: busco
   owner: iuc
   revisions:
+  - 4048d82f0c88
+  - 1e62c28ba91d
+  - 1440ae06552f
+  - 602fb8e63aa7
   - cf13a1e03e5b
   - 5ecdeca79a0d
-  - 1440ae06552f
-  - 1e62c28ba91d
-  - 602fb8e63aa7
-  - 4048d82f0c88
   tool_panel_section_label: Assembly
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: canu
@@ -34,8 +34,8 @@ tools:
 - name: flye
   owner: bgruening
   revisions:
-  - 8d4f03b5fe9d
   - 1ce9b1d72ec3
+  - 8d4f03b5fe9d
   - 3ee0ef312022
   tool_panel_section_label: Assembly
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -48,23 +48,23 @@ tools:
 - name: hifiasm
   owner: bgruening
   revisions:
+  - f3c89da3af16
   - 6505bd37670d
   - 9ef6920c3089
-  - f3c89da3af16
   tool_panel_section_label: Assembly
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: megahit
   owner: iuc
   revisions:
-  - 7518ee87b53d
   - de387b2b2803
+  - 7518ee87b53d
   tool_panel_section_label: Assembly
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: metaspades
   owner: nml
   revisions:
-  - 2ecf5a570907
   - ce02f513e598
+  - 2ecf5a570907
   tool_panel_section_label: Assembly
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: miniasm
@@ -90,26 +90,26 @@ tools:
 - name: quast
   owner: iuc
   revisions:
-  - ebb0dcdb621a
-  - 6fcbee531de6
   - 59db8ea8c845
+  - 6fcbee531de6
+  - ebb0dcdb621a
   tool_panel_section_label: Assembly
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: racon
   owner: bgruening
   revisions:
-  - a199cd7ac344
   - aa39b19ca11e
+  - a199cd7ac344
   tool_panel_section_label: Assembly
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: shovill
   owner: iuc
   revisions:
-  - 196a599ec43d
-  - f698c7604b3b
   - 865119fcb694
-  - d9f6a00b6db7
   - 83ead2be47b2
+  - f698c7604b3b
+  - d9f6a00b6db7
+  - 196a599ec43d
   tool_panel_section_label: Assembly
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: spades
@@ -119,11 +119,41 @@ tools:
   - 9006e5836729
   tool_panel_section_label: Assembly
   tool_shed_url: toolshed.g2.bx.psu.edu
+- name: trycycler_cluster
+  owner: iuc
+  revisions:
+  - 189e837009c9
+  tool_panel_section_label: Assembly
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: trycycler_consensus
+  owner: iuc
+  revisions:
+  - e59bee4565b3
+  tool_panel_section_label: Assembly
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: trycycler_partition
+  owner: iuc
+  revisions:
+  - 4688ae3b49b5
+  tool_panel_section_label: Assembly
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: trycycler_reconcile_msa
+  owner: iuc
+  revisions:
+  - b64696992ee9
+  tool_panel_section_label: Assembly
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: trycycler_subsample
+  owner: iuc
+  revisions:
+  - 383bb5ad32e2
+  tool_panel_section_label: Assembly
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: unicycler
   owner: iuc
   revisions:
-  - e92675014ac9
   - 0a3a602cd1e3
+  - e92675014ac9
   - 9e3e80cc4ad4
   tool_panel_section_label: Assembly
   tool_shed_url: toolshed.g2.bx.psu.edu

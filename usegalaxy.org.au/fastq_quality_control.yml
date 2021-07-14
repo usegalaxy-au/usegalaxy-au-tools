@@ -17,11 +17,11 @@ tools:
 - name: fastqc
   owner: devteam
   revisions:
-  - ff9530579d1f
-  - f2e8552cf1d0
-  - 9da02be9c6cc
-  - e7b2202befea
   - 2b0c9d9fc6ca
+  - ff9530579d1f
+  - e7b2202befea
+  - 9da02be9c6cc
+  - f2e8552cf1d0
   tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastqe
@@ -33,8 +33,8 @@ tools:
 - name: fastx_nucleotides_distribution
   owner: devteam
   revisions:
-  - 18a51655db17
   - ad116ae3f4d9
+  - 18a51655db17
   tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastx_quality_statistics
@@ -54,12 +54,12 @@ tools:
 - name: multiqc
   owner: iuc
   revisions:
-  - 5e33b465d8d5
-  - bf675f34b056
   - 3d93dd18d9f8
+  - 75c93c70d094
+  - 5e33b465d8d5
   - f7985e0479b9
   - b2f1f75d49c4
-  - 75c93c70d094
+  - bf675f34b056
   - 1c2db0054039
   tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: toolshed.g2.bx.psu.edu
