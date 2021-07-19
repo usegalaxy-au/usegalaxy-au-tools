@@ -51,6 +51,13 @@ def main():
     for tool in tools:
         categories[tool['tool_panel_section_label']].append(tool)
 
+    # separate data manager tools into their own file
+    if categories.get('None'):
+        data_managers = [tool for tool in categories['None'] if 'data_manager' in tool['name']]
+        categories['None'] = [tool for tool in categories['None'] if 'data_manager' not in tool['name']]
+        if data_managers:
+            categories['Data Managers'] = data_managers
+
     for cat in categories:
         fname = str(cat)
         good_fname = outdir + "/" + slugify(fname) + ".yml"
