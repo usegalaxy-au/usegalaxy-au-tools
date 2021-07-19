@@ -68,7 +68,7 @@ for TOOL_FILE in $TOOL_FILE_PATH/*; do
   galaxy-wait -g "https://${TOOL_SHED_URL}"
 
   # Ephemeris install script
-  command="shed-tools install -g $URL -a $API_KEY -t $TOOL_FILE -v --log_file $INSTALL_LOG"
+  command="shed-tools install -g $URL -a $API_KEY -t $TOOL_FILE --install_tool_dependencies -v --log_file $INSTALL_LOG"
   echo "${command/$API_KEY/<API_KEY>}"; # substitute API_KEY for printing
   $command
 
@@ -101,7 +101,7 @@ for TOOL_FILE in $TOOL_FILE_PATH/*; do
   fi
 done
 
-sleep 60s
+sleep 20s
 # run tests
 cat $LOCAL_INSTALL_TSV | while read line || [[ -n $line ]]; do
   IFS=$'\t' read -ra words <<< "$line";
