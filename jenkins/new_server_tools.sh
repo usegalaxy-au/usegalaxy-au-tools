@@ -26,7 +26,7 @@ log_row() {
 
 # Ensure log file exists, create it if not
 [ ! -d $LOG_DIR ] && mkdir -p $LOG_DIR;
-[ ! -f $AUTOMATED_TOOL_INSTALLATION_LOG ] && echo -e $LOG_HEADER > $AUTOMATED_TOOL_INSTALLATION_LOG;
+[ ! -f $INSTALLATION_LOG ] && echo -e $LOG_HEADER > $INSTALLATION_LOG;
 
 INSTALL_FILE=$1
 # This can be any yaml file, could be one per section.  This is probably the section name i.e. annotation.yml.
