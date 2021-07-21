@@ -45,6 +45,11 @@ jobs:
           COMMIT_RANGE: "HEAD~.."
         run: echo github.event.issue.body
 
+      - name: $github
+        run:   echo "$GITHUB_CONTEXT"
+        env:
+        GITHUB_CONTEXT: ${{ toJson(github) }}
+
       # # Parse the issue into yml
       # - name: Run python to parse issue
       #   env:
