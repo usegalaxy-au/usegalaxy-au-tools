@@ -1,0 +1,40 @@
+
+# reads a 
+
+name: parse tool request to yml
+
+# workflow triggered on new issue
+on:
+  issues:
+    types: [opened]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  parse:
+    if: contains(github.event.issue.body, '/toolshed.g2.bx.psu.edu'
+    
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
+      # set up python environment
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.6
+
+      # Install python dependencies for check_files script
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r .ci/parsing_requirements.txt
+  
+      # Parse the issue into yml
+      - name: Run python to parse issue
+        env:
+          COMMIT_RANGE: "HEAD~.."
+        run: python .ci/parse_issue_to_yml.py
