@@ -34,16 +34,16 @@ jobs:
           pip install -r .ci/parsing_requirements.txt
   
       # Parse the issue into yml
-      - name: test1
+      - name: printbody
+        run: echo "$ISSUE_BODY"
         env:
-          COMMIT_RANGE: "HEAD~.."
-        run: echo "hi there?"
+          ISSUE_BODY: ${{ toJson(github.event.issue.body) }}
 
       # Parse the issue into yml
-      - name: test2
-        run: echo github.event.issue.body
+      - name: printbody2
+        run: echo "$ISSUE_BODY2"
         env:
-          COMMIT_RANGE: "HEAD~.."
+          ISSUE_BODY2: ${{ github.event.issue.body }}
 
       - name: $github
         run: echo "$GITHUB_CONTEXT"
