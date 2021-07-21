@@ -45,7 +45,7 @@ def annotate_section_label(tool):
 
 
 def write_yml(tool):
-    with open(f'tool_request_{tool["name"]}.yml', 'w') as fp:
+    with open(f'requests/tool_request_{tool["name"]}.yml', 'w') as fp:
         fp.write('tools:\n')
         fp.write(f'  - name: {tool["name"]}\n')
         fp.write(f'    owner: {tool["owner"]}\n')
