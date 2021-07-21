@@ -34,7 +34,7 @@ jobs:
           pip install -r .ci/parsing_requirements.txt
   
       # Parse the issue into yml (autoannotate using eu section label)
-      - name: printbody
+      - name: parse issue to yml
         run: python .ci/parse_issue_to_yml.py "$ISSUE_BODY"
         env:
           ISSUE_BODY: ${{ toJson(github.event.issue.body) }}
