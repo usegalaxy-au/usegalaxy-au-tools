@@ -33,25 +33,12 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r .ci/parsing_requirements.txt
   
-      # Parse the issue into yml
+      # Parse the issue into yml (autoannotate using eu section label)
       - name: printbody
-        run: echo "$ISSUE_BODY"
+        run: python .ci/parse_issue_to_yml.py "$ISSUE_BODY"
         env:
           ISSUE_BODY: ${{ toJson(github.event.issue.body) }}
 
-      # Parse the issue into yml
-      - name: printbody2
-        run: echo "$ISSUE_BODY2"
-        env:
-          ISSUE_BODY2: ${{ github.event.issue.body }}
 
-      - name: $github
-        run: echo "$GITHUB_CONTEXT"
-        env:
-          GITHUB_CONTEXT: ${{ toJson(github) }}
 
-      # # Parse the issue into yml
-      # - name: Run python to parse issue
-      #   env:
-      #     COMMIT_RANGE: "HEAD~.."
-      #   run: python .ci/parse_issue_to_yml.py ${{ github.event.issue.body }}
+
