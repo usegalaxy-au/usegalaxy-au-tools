@@ -11,6 +11,7 @@ def main(argv):
     tool = format_to_tool(url)
     tool = annotate_section_label(tool)
     write_yml(tool)
+    cleanup()
 
 
 def extract_url(issue_body):
@@ -53,6 +54,10 @@ def write_yml(tool):
         fp.write(f'    tool_shed_url: {tool["tool_shed_url"]}\n')
         fp.write(f'    revisions:\n')
         fp.write(f'    - {tool["revisions"]}\n')
+
+
+def cleanup():
+    subprocess.run(['rm', 'eu_tool_list.yaml'])
 
 
 if __name__ == '__main__':
