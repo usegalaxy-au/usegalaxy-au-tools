@@ -6,12 +6,12 @@ name: parse tool request to yml
 # workflow triggered on new issue
 on:
   issues:
-    types: [opened]
+    types: opened
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   parse:
-    if: contains(github.event.issue.body, '/toolshed.g2.bx.psu.edu'
+    if: contains(github.event.issue.body, '/toolshed.g2.bx.psu.edu')
     
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
@@ -34,7 +34,13 @@ jobs:
           pip install -r .ci/parsing_requirements.txt
   
       # Parse the issue into yml
-      - name: Run python to parse issue
+      - name: test
         env:
           COMMIT_RANGE: "HEAD~.."
-        run: python .ci/parse_issue_to_yml.py
+        run: echo ${{ github.event.issue.body }}
+
+      # # Parse the issue into yml
+      # - name: Run python to parse issue
+      #   env:
+      #     COMMIT_RANGE: "HEAD~.."
+      #   run: python .ci/parse_issue_to_yml.py ${{ github.event.issue.body }}
