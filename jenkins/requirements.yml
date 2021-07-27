@@ -1,10 +1,9 @@
 arrow
 pyyaml
 pytz
--e git+https://github.com/cat-bro/ephemeris.git@release_0.10.7_plus_galaxywait_fix#egg=ephemeris
-bioblend>=0.13.0
 planemo==0.72.0
+-e git+https://github.com/cat-bro/ephemeris.git@release_0.10.7_cb_updates_20210727#egg=ephemeris
+galaxy-tool-util==21.1.2
 
 # requirements for galaxy virtualenv also required here for tests to run correctly
-pysam==0.16.0.1
 h5py==3.1.0
