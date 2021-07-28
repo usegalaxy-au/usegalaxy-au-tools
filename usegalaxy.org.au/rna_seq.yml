@@ -14,8 +14,8 @@ tools:
 - name: cuffcompare
   owner: devteam
   revisions:
-  - e66b9b5b8580
   - f648e5180e40
+  - e66b9b5b8580
   tool_panel_section_label: RNA-seq
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: cufflinks
@@ -60,18 +60,18 @@ tools:
 - name: describe_samples
   owner: iuc
   revisions:
+  - 6d6982a1d1d0
   - 0693ccd171c4
   - 8f0181aacb7a
-  - 6d6982a1d1d0
   tool_panel_section_label: RNA-seq
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: deseq2
   owner: iuc
   revisions:
   - 0696db066a5b
+  - 24a09ca67621
   - d027d1f4984e
   - 6a3a025714d3
-  - 24a09ca67621
   tool_panel_section_label: RNA-seq
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: dexseq
@@ -84,17 +84,17 @@ tools:
   owner: iuc
   revisions:
   - 3d89af8a44f0
-  - 334ce9b1bac5
-  - 555659de7321
   - 6e53e565fc6a
+  - 334ce9b1bac5
   - 9bdff28ae1b1
+  - 555659de7321
   tool_panel_section_label: RNA-seq
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: egsea
   owner: iuc
   revisions:
-  - 31ea4992b948
   - fba1660fb717
+  - 31ea4992b948
   tool_panel_section_label: RNA-seq
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: express
@@ -106,13 +106,13 @@ tools:
 - name: featurecounts
   owner: iuc
   revisions:
+  - ce44c6f2ba38
+  - af814359d244
   - e6a2a912677a
   - ea04b737afa0
-  - f3a5f075498f
   - a37612abf7f9
-  - ce44c6f2ba38
+  - f3a5f075498f
   - 90d16db017d7
-  - af814359d244
   tool_panel_section_label: RNA-seq
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: filter_transcripts_via_tracking
@@ -143,12 +143,12 @@ tools:
 - name: hisat2
   owner: iuc
   revisions:
-  - 6c19daec423d
-  - a86e80d3c09c
   - 6ab42baa56e9
   - 3fb01a8c902d
+  - a86e80d3c09c
   - d4b55e2beb12
   - 26371a1df031
+  - 6c19daec423d
   tool_panel_section_label: RNA-seq
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: htseq_bams_to_count_matrix
@@ -167,18 +167,18 @@ tools:
 - name: kallisto_pseudo
   owner: iuc
   revisions:
-  - 1c75aa5de15e
-  - 5ae5c312d718
-  - 01247aaf0a10
   - 87c11c05d238
+  - 5ae5c312d718
+  - 1c75aa5de15e
+  - 01247aaf0a10
   tool_panel_section_label: RNA-seq
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: kallisto_quant
   owner: iuc
   revisions:
   - 10c98fab6c5a
-  - 40985510cd98
   - c971db6f0fe5
+  - 40985510cd98
   tool_panel_section_label: RNA-seq
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: limma_voom
@@ -186,8 +186,8 @@ tools:
   revisions:
   - 0921444c832d
   - 97e06a4c7c75
-  - 58c35179ebf0
   - 708348a17fa1
+  - 58c35179ebf0
   tool_panel_section_label: RNA-seq
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: mircounts
@@ -199,8 +199,8 @@ tools:
 - name: mirdeep2_mapper
   owner: rnateam
   revisions:
-  - a8d24f4b6d95
   - dbbe92348c7a
+  - a8d24f4b6d95
   tool_panel_section_label: RNA-seq
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: mirdeep2_quantifier
@@ -236,14 +236,14 @@ tools:
 - name: rgrnastar
   owner: iuc
   revisions:
-  - 99b17b74a8cd
-  - e132e7d02a3e
   - 5ec75f5dae3c
-  - b9e04854e2bb
-  - c772497b2c32
   - 0a563fd2f22e
-  - 44959aa06aeb
+  - c772497b2c32
   - 7ed2edc1337f
+  - b9e04854e2bb
+  - 99b17b74a8cd
+  - 44959aa06aeb
+  - e132e7d02a3e
   tool_panel_section_label: RNA-seq
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: sailfish
@@ -256,18 +256,18 @@ tools:
   owner: bgruening
   revisions:
   - 2c0ca397d302
-  - cc05793bb896
-  - e3d32471da11
-  - 53e9709776a0
   - 49121db48873
+  - 53e9709776a0
+  - e3d32471da11
+  - cc05793bb896
   tool_panel_section_label: RNA-seq
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: stringtie
   owner: iuc
   revisions:
-  - 1ebd14235b92
   - 76d290331481
   - dd4df992d93d
+  - 1ebd14235b92
   tool_panel_section_label: RNA-seq
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: targetfinder
@@ -291,32 +291,32 @@ tools:
 - name: transdecoder
   owner: iuc
   revisions:
-  - c6334cb383ff
   - 0db979fead3a
   - d0d4cef4f967
+  - c6334cb383ff
   tool_panel_section_label: RNA-seq
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: trinity_abundance_estimates_to_matrix
   owner: iuc
   revisions:
-  - 81a4697677e7
-  - d6a479fd4281
   - 74217fbfba4d
+  - d6a479fd4281
+  - 81a4697677e7
   tool_panel_section_label: RNA-seq
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: trinity_align_and_estimate_abundance
   owner: iuc
   revisions:
   - 56162e446004
-  - 893655fa55f9
   - 478f36effca1
+  - 893655fa55f9
   tool_panel_section_label: RNA-seq
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: trinity_analyze_diff_expr
   owner: iuc
   revisions:
-  - fab23c3b5258
   - 4a816294c512
+  - fab23c3b5258
   tool_panel_section_label: RNA-seq
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: trinity_contig_exn50_statistic
@@ -330,9 +330,9 @@ tools:
 - name: trinity_define_clusters_by_cutting_tree
   owner: iuc
   revisions:
-  - d40101d3a2af
-  - 05ab8d5e04a2
   - 33406f5a445c
+  - 05ab8d5e04a2
+  - d40101d3a2af
   - c5fbddcac63a
   tool_panel_section_label: RNA-seq
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -347,43 +347,43 @@ tools:
 - name: trinity_gene_to_trans_map
   owner: iuc
   revisions:
-  - d80f0f1d6c9d
-  - 37a1129c89d2
   - c2c039e421af
+  - 37a1129c89d2
+  - d80f0f1d6c9d
   tool_panel_section_label: RNA-seq
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: trinity_run_de_analysis
   owner: iuc
   revisions:
-  - 047c22569787
   - bbbb39ad9a7e
   - 1d689e4e1caf
+  - 047c22569787
   tool_panel_section_label: RNA-seq
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: trinity_samples_qccheck
   owner: iuc
   revisions:
-  - d83aa367a381
-  - 1812dbc5bb7b
   - 9871104ea630
+  - 1812dbc5bb7b
+  - d83aa367a381
   tool_panel_section_label: RNA-seq
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: trinity
   owner: iuc
   revisions:
-  - db1f362cca3e
-  - d84caa5a98ad
-  - cee61b3fcf78
-  - 5b60313a6ce7
   - c9cfec002f71
+  - 5b60313a6ce7
+  - d84caa5a98ad
+  - db1f362cca3e
   - 32b86cd8eb50
+  - cee61b3fcf78
   tool_panel_section_label: RNA-seq
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: trinotate
   owner: iuc
   revisions:
-  - 9e61bc67866f
   - 6fd16fad465d
+  - 9e61bc67866f
   - 4383070d29ed
   tool_panel_section_label: RNA-seq
   tool_shed_url: toolshed.g2.bx.psu.edu
