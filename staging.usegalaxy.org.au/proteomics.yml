@@ -2,28 +2,28 @@ tools:
 - name: cardinal_classification
   owner: galaxyp
   revisions:
-  - b18329a8ac14
-  - 277dc652246e
-  - f28ad96b76dc
   - b574b84afc4d
   - ece627528a78
+  - 277dc652246e
+  - b18329a8ac14
+  - f28ad96b76dc
   tool_panel_section_label: Proteomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: cardinal_combine
   owner: galaxyp
   revisions:
-  - a8ecb52264c4
-  - 525f201b86c1
-  - e988563cc6e5
   - b41107d8fe89
   - e215f71d7983
+  - 525f201b86c1
+  - a8ecb52264c4
+  - e988563cc6e5
   tool_panel_section_label: Proteomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: cardinal_data_exporter
   owner: galaxyp
   revisions:
-  - 4fbffddde8cd
   - 8da3511c9467
+  - 4fbffddde8cd
   tool_panel_section_label: Proteomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: cardinal_filtering
@@ -37,18 +37,18 @@ tools:
 - name: cardinal_mz_images
   owner: galaxyp
   revisions:
-  - 25b83cbd596a
   - a69865da6f80
   - a95a82eb4d50
   - 59e85306eae5
+  - 25b83cbd596a
   tool_panel_section_label: Proteomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: cardinal_preprocessing
   owner: galaxyp
   revisions:
   - ed9ed1e6cca2
-  - f1897eb07081
   - e0669b1854b1
+  - f1897eb07081
   tool_panel_section_label: Proteomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: cardinal_quality_report
@@ -68,9 +68,9 @@ tools:
 - name: cardinal_spectra_plots
   owner: galaxyp
   revisions:
+  - 043f9c91f686
   - c5aa9fca18c6
   - 1693b2126f30
-  - 043f9c91f686
   - 10566783d718
   tool_panel_section_label: Proteomics
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -103,8 +103,8 @@ tools:
 - name: encyclopedia_walnut
   owner: galaxyp
   revisions:
-  - ce1a157a41bd
   - d6a4dfdad269
+  - ce1a157a41bd
   tool_panel_section_label: Proteomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: flashlfq
@@ -116,8 +116,8 @@ tools:
 - name: maldi_quant_peak_detection
   owner: galaxyp
   revisions:
-  - d286ff4600dd
   - e66f552a3c47
+  - d286ff4600dd
   tool_panel_section_label: Proteomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: maldi_quant_preprocessing
@@ -129,72 +129,72 @@ tools:
 - name: maxquant_mqpar
   owner: galaxyp
   revisions:
-  - 9cb7dcc07dae
   - 3fc2116ac6d9
+  - 9cb7dcc07dae
   tool_panel_section_label: Proteomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: maxquant
   owner: galaxyp
   revisions:
-  - 37d669de2828
+  - 7f432d87c82c
   - f522c08e900c
   - 2133b0be850a
-  - 7f432d87c82c
   - e42225f8a659
+  - 37d669de2828
   tool_panel_section_label: Proteomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: metaquantome_db
   owner: galaxyp
   revisions:
-  - 85b8866f06d7
   - a72ac2c7cc5b
-  - '860429737408'
   - 0ed07016d668
+  - '860429737408'
+  - 85b8866f06d7
   tool_panel_section_label: Proteomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: metaquantome_expand
   owner: galaxyp
   revisions:
   - 1974224d63c2
-  - 4187b6df1a40
   - 990b4560ead7
+  - 4187b6df1a40
   - 352b37c66d97
   tool_panel_section_label: Proteomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: metaquantome_filter
   owner: galaxyp
   revisions:
-  - a1daafbf5233
   - 99450519d727
-  - deaf035bbe9f
   - 4f359549383c
+  - a1daafbf5233
+  - deaf035bbe9f
   tool_panel_section_label: Proteomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: metaquantome_sample
   owner: galaxyp
   revisions:
-  - 40ca115438d2
+  - c7745841de24
   - e79958768a2c
   - c1343e3389ca
-  - c7745841de24
+  - 40ca115438d2
   tool_panel_section_label: Proteomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: metaquantome_stat
   owner: galaxyp
   revisions:
-  - d2eac53666f0
-  - da986f83631b
   - d46d64e7964d
   - b648e45fd3cf
+  - da986f83631b
+  - d2eac53666f0
   tool_panel_section_label: Proteomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: metaquantome_viz
   owner: galaxyp
   revisions:
   - 944b43462104
+  - 1199751329b0
   - 9bf325045235
   - eb811f3018ea
-  - 1199751329b0
   tool_panel_section_label: Proteomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: morpheus
@@ -206,8 +206,9 @@ tools:
 - name: msstats
   owner: galaxyp
   revisions:
-  - 593839e1f2c3
   - 8212e342e482
+  - 593839e1f2c3
+  - 28434abe6c5c
   tool_panel_section_label: Proteomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: openms_consensusid
@@ -227,26 +228,26 @@ tools:
 - name: openms_falsediscoveryrate
   owner: galaxyp
   revisions:
-  - f7fef900f5b2
   - 9cdf15d3cfc8
-  - c9eff69a7c62
   - 518b1730cf2a
+  - c9eff69a7c62
+  - f7fef900f5b2
   tool_panel_section_label: Proteomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: openms_featurefindermultiplex
   owner: galaxyp
   revisions:
+  - 5e948629bc73
   - ca88bd28f116
   - dff6c756eee5
-  - 5e948629bc73
   tool_panel_section_label: Proteomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: openms_fidoadapter
   owner: galaxyp
   revisions:
-  - 658494a2cb00
   - 41859bbdc16e
   - 890025d6e426
+  - 658494a2cb00
   tool_panel_section_label: Proteomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: openms_fileconverter
@@ -260,83 +261,83 @@ tools:
 - name: openms_filefilter
   owner: galaxyp
   revisions:
-  - 0bb5056cb775
-  - d6878d27f051
   - 05d5e1ddc985
+  - d6878d27f051
+  - 0bb5056cb775
   tool_panel_section_label: Proteomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: openms_fileinfo
   owner: galaxyp
   revisions:
-  - febd569ad26f
-  - 5ad830edc021
   - 52ba9695e752
+  - 5ad830edc021
+  - febd569ad26f
   tool_panel_section_label: Proteomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: openms_filemerger
   owner: galaxyp
   revisions:
-  - 39e8fde08881
   - 27cba4c5fc42
+  - 39e8fde08881
   - 92352a475eed
   tool_panel_section_label: Proteomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: openms_highresprecursormasscorrector
   owner: galaxyp
   revisions:
-  - 9e26f5c770f8
   - d413dc49d650
   - 0efbc235f314
+  - 9e26f5c770f8
   tool_panel_section_label: Proteomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: openms_idconflictresolver
   owner: galaxyp
   revisions:
+  - c28f13cab67a
   - 3720e349ba2a
   - 8a04ed1c1d1b
-  - c28f13cab67a
   tool_panel_section_label: Proteomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: openms_idfilter
   owner: galaxyp
   revisions:
-  - c427a8628cbe
-  - 382cde407f81
   - ca799a7246e7
+  - 382cde407f81
   - c55dddc5844a
+  - c427a8628cbe
   tool_panel_section_label: Proteomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: openms_idmapper
   owner: galaxyp
   revisions:
+  - b5d0905419da
   - 8ddb7bab1138
   - 39caaa778d2e
-  - b5d0905419da
   tool_panel_section_label: Proteomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: openms_idmerger
   owner: galaxyp
   revisions:
-  - 1c5f31b8d632
-  - 18f93351f8b6
   - f817513840a9
+  - 18f93351f8b6
   - 8d4db262964c
+  - 1c5f31b8d632
   tool_panel_section_label: Proteomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: openms_idposteriorerrorprobability
   owner: galaxyp
   revisions:
-  - c69f69d7867a
   - 111c3a00136d
   - 5d9f175dff81
+  - c69f69d7867a
   tool_panel_section_label: Proteomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: openms_idscoreswitcher
   owner: galaxyp
   revisions:
-  - 0e52c85f3b15
   - 476b5e296979
   - be74a8cd7d66
+  - 0e52c85f3b15
   tool_panel_section_label: Proteomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: openms_msfraggeradapter
@@ -348,16 +349,16 @@ tools:
 - name: openms_msgfplusadapter
   owner: galaxyp
   revisions:
-  - 2b2a7551a857
-  - c18d8efa4474
   - a407b6790342
+  - c18d8efa4474
+  - 2b2a7551a857
   tool_panel_section_label: Proteomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: openms_multiplexresolver
   owner: galaxyp
   revisions:
-  - d0304fb829c0
   - 4e66c4e73909
+  - d0304fb829c0
   tool_panel_section_label: Proteomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: openms_mztabexporter
@@ -371,8 +372,8 @@ tools:
 - name: openms_openswathanalyzer
   owner: galaxyp
   revisions:
-  - a2a6e9551046
   - 0ced5bc9f4dd
+  - a2a6e9551046
   tool_panel_section_label: Proteomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: openms_openswathassaygenerator
@@ -385,15 +386,15 @@ tools:
 - name: openms_openswathconfidencescoring
   owner: galaxyp
   revisions:
-  - 1bf940c18d93
   - e8f64a7dc470
+  - 1bf940c18d93
   tool_panel_section_label: Proteomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: openms_openswathdecoygenerator
   owner: galaxyp
   revisions:
-  - f861ec9fbe59
   - 9f505cd4428f
+  - f861ec9fbe59
   tool_panel_section_label: Proteomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: openms_openswathdiaprescoring
@@ -406,8 +407,8 @@ tools:
 - name: openms_openswathfilesplitter
   owner: galaxyp
   revisions:
-  - 89254095cbf6
   - 8b814eafce2c
+  - 89254095cbf6
   tool_panel_section_label: Proteomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: openms_openswathmzmlfilecacher
@@ -420,8 +421,8 @@ tools:
 - name: openms_openswathrtnormalizer
   owner: galaxyp
   revisions:
-  - 18826fb8e5db
   - 6e8cc5ed2a9b
+  - 18826fb8e5db
   tool_panel_section_label: Proteomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: openms_openswathworkflow
@@ -434,8 +435,8 @@ tools:
 - name: openms_peakpickerhires
   owner: galaxyp
   revisions:
-  - decc397c3b7e
   - 5ae104d0da6e
+  - decc397c3b7e
   - 3d8d4ada5405
   tool_panel_section_label: Proteomics
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -443,9 +444,9 @@ tools:
   owner: galaxyp
   revisions:
   - e039cc5c7aed
-  - 5182338d5e7c
-  - dd173849c3d8
   - 539a3a4dcc9e
+  - dd173849c3d8
+  - 5182338d5e7c
   tool_panel_section_label: Proteomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: openms_proteinquantifier
@@ -471,8 +472,8 @@ tools:
 - name: openms_xtandemadapter
   owner: galaxyp
   revisions:
-  - c8b225c69a7f
   - fb52e95a370c
+  - c8b225c69a7f
   - 7f6a1f27553e
   tool_panel_section_label: Proteomics
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -492,13 +493,13 @@ tools:
 - name: peptideshaker
   owner: galaxyp
   revisions:
+  - 07ff622ec007
   - 3634c90301af
-  - da885ca16cb2
+  - 1beff3ddce58
+  - 7fdd9119cc4f
   - 943a34df6047
   - a72c48001f7c
-  - 07ff622ec007
-  - 7fdd9119cc4f
-  - 1beff3ddce58
+  - da885ca16cb2
   tool_panel_section_label: Proteomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: percolator
@@ -522,7 +523,7 @@ tools:
 - name: uniprotxml_downloader
   owner: galaxyp
   revisions:
-  - 1a5690a5eedc
   - 12692567c7f9
+  - 1a5690a5eedc
   tool_panel_section_label: Proteomics
   tool_shed_url: toolshed.g2.bx.psu.edu
