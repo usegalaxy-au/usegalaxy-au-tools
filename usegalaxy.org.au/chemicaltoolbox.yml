@@ -2,12 +2,12 @@ tools:
 - name: ambertools_acpype
   owner: chemteam
   revisions:
-  - 6ca543ec1bf8
-  - c8cdde00b105
-  - 710301bc46fa
-  - 27ee142314a9
-  - da6bd1975a71
   - a0c154146234
+  - 710301bc46fa
+  - c8cdde00b105
+  - 27ee142314a9
+  - 6ca543ec1bf8
+  - da6bd1975a71
   tool_panel_section_label: ChemicalToolBox
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: bio3d_pca_visualize
@@ -43,15 +43,15 @@ tools:
 - name: ctb_frankenstein_ligand
   owner: bgruening
   revisions:
-  - 7255688c77f3
   - 8e214e52e461
+  - 7255688c77f3
   tool_panel_section_label: ChemicalToolBox
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: enumerate_charges
   owner: bgruening
   revisions:
-  - 2a868592ebcb
   - bbbf5fb356dd
+  - 2a868592ebcb
   tool_panel_section_label: ChemicalToolBox
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: get_pdb
@@ -72,51 +72,51 @@ tools:
   owner: chemteam
   revisions:
   - 55918daa5651
-  - f5d979cb4b54
-  - d532b7e5f64b
   - eb6564a60136
+  - d532b7e5f64b
+  - f5d979cb4b54
   tool_panel_section_label: ChemicalToolBox
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: gmx_energy
   owner: chemteam
   revisions:
-  - 5579659312e6
   - d2f955aea23a
+  - 5579659312e6
   - 6dbf73a62977
   tool_panel_section_label: ChemicalToolBox
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: gmx_merge_topology_files
   owner: chemteam
   revisions:
-  - 9389cd867cf2
   - 319a28774da9
+  - 9389cd867cf2
   tool_panel_section_label: ChemicalToolBox
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: gmx_setup
   owner: chemteam
   revisions:
-  - cac1886249a2
+  - 1d4dd4f908d4
   - 2c349b027a01
   - 4da9ee404eab
-  - 1d4dd4f908d4
+  - cac1886249a2
   tool_panel_section_label: ChemicalToolBox
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: gmx_sim
   owner: chemteam
   revisions:
-  - 807aa4c9293d
-  - 73008ef1f487
   - da8753545526
-  - 2e219a2d9327
   - f197e34c33a9
+  - 807aa4c9293d
+  - 2e219a2d9327
+  - 73008ef1f487
   tool_panel_section_label: ChemicalToolBox
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: gmx_solvate
   owner: chemteam
   revisions:
+  - 97b2c06ae168
   - 27ea4e1a3f95
   - 1809414a9454
-  - 97b2c06ae168
   - 2c8ed1b52bf7
   tool_panel_section_label: ChemicalToolBox
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -145,17 +145,17 @@ tools:
   owner: bgruening
   revisions:
   - e6011617c748
-  - b59c91adeac1
   - e2c36f62e22f
+  - b59c91adeac1
   tool_panel_section_label: ChemicalToolBox
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: sucos_max_score
   owner: bgruening
   revisions:
-  - 85fad59f8168
-  - d4c67ced6abc
   - bf99565cec1f
+  - d4c67ced6abc
   - 9b48456a96fe
+  - 85fad59f8168
   tool_panel_section_label: ChemicalToolBox
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: vmd_hbonds
