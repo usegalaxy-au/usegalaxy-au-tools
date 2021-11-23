@@ -25,6 +25,7 @@ if [ -f $REPORT_FILE ]; then
   git commit $REPORT_DIR/$REPORT_FILE -m "New and updated tools $REPORT_DATE"
   git push --set-upstream origin $BRANCH_NAME
   hub pull-request -m "New and updated tools $REPORT_DATE"
+  curl -X POST -d "api_token=${WEBSITE_API_TOKEN}&tool_update=true&body=$(cat $REPORT_DIR/$REPORT_FILE)" http://usegalaxy-au.neoformit.com/news/api/create
 else
   echo "No report generated for $REPORT_DATE"
 fi
