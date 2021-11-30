@@ -2,13 +2,14 @@ tools:
 - name: circos
   owner: iuc
   revisions:
-  - df7356989ac1
+  - ae9994cf526f
   - 7f13dc906cb9
   - 4b519282a05b
-  - ae9994cf526f
+  - df7356989ac1
+  - 290a11559985
+  - 740057a5126d
   - a64dc31ab7f2
   - fd59d783248a
-  - 740057a5126d
   tool_panel_section_label: Graph/Display Data
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: draw_stacked_barplots
@@ -39,12 +40,14 @@ tools:
 - name: ggplot2_heatmap
   owner: iuc
   revisions:
+  - d3a9e32672ec
   - 391a4cc45fea
   tool_panel_section_label: Graph/Display Data
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: ggplot2_point
   owner: iuc
   revisions:
+  - 1acf88921176
   - e3a675da7fd0
   tool_panel_section_label: Graph/Display Data
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -64,8 +67,8 @@ tools:
 - name: graphlan
   owner: iuc
   revisions:
-  - 8f62f666dcb6
   - a490b70e46fc
+  - 8f62f666dcb6
   tool_panel_section_label: Graph/Display Data
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: histogram
@@ -77,17 +80,17 @@ tools:
 - name: jbrowse
   owner: iuc
   revisions:
-  - 1cfc579079a6
-  - 6cd09d7b5f37
-  - 667e17248bfe
   - ca2def38369c
   - 836d1aa3e89a
-  - a6e57ff585c0
   - fd5dbf0f732e
   - 17359b808b01
-  - 112eb40ba6cf
-  - 2bb2e07a7a21
   - 4542035c1075
+  - a6e57ff585c0
+  - 1cfc579079a6
+  - 2bb2e07a7a21
+  - 112eb40ba6cf
+  - 667e17248bfe
+  - 6cd09d7b5f37
   tool_panel_section_label: Graph/Display Data
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: krona_text
@@ -117,8 +120,8 @@ tools:
 - name: plotly_ml_performance_plots
   owner: bgruening
   revisions:
-  - 85da91bbdbfb
   - 62e3a4e8c54c
+  - 85da91bbdbfb
   tool_panel_section_label: Graph/Display Data
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: plotly_parallel_coordinates_plot
@@ -151,15 +154,15 @@ tools:
   owner: iuc
   revisions:
   - 4ac4e7083b7e
-  - 326a3db8d9d1
   - 2824d77cd8f8
+  - 326a3db8d9d1
   tool_panel_section_label: Graph/Display Data
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: volcanoplot
   owner: iuc
   revisions:
-  - 73b8cb5bddcd
   - 44608d0193ed
+  - 73b8cb5bddcd
   - 83c573f2e73c
   tool_panel_section_label: Graph/Display Data
   tool_shed_url: toolshed.g2.bx.psu.edu
