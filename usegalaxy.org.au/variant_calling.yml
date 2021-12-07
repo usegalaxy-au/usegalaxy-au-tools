@@ -2,42 +2,43 @@ tools:
 - name: breseq
   owner: iuc
   revisions:
-  - 82fb5e3bb93e
   - 85c57cc9b558
+  - 82fb5e3bb93e
   tool_panel_section_label: Variant Calling
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: freebayes
   owner: devteam
   revisions:
-  - 57def2d7c093
   - ef2c525bd8cd
+  - 04fa42777df9
+  - 57def2d7c093
   - 156b60c1530f
   tool_panel_section_label: Variant Calling
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: lofreq_alnqual
   owner: iuc
   revisions:
+  - e61c9ac190ad
   - 09d6e4693887
   - 435b157bed6d
-  - e61c9ac190ad
   tool_panel_section_label: Variant Calling
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: lofreq_call
   owner: iuc
   revisions:
-  - 074d44697036
-  - 03627f24605f
-  - e1461b5c52a0
-  - dfadc322b065
   - 3b4b2121842f
+  - dfadc322b065
+  - 074d44697036
   - 65432c3abf6c
+  - e1461b5c52a0
+  - 03627f24605f
   tool_panel_section_label: Variant Calling
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: lofreq_filter
   owner: iuc
   revisions:
-  - 9cb929f21cfa
   - 701d134358ad
+  - 9cb929f21cfa
   - 7dfca164d2e3
   tool_panel_section_label: Variant Calling
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -66,11 +67,11 @@ tools:
 - name: snippy
   owner: iuc
   revisions:
-  - d220115f882b
-  - 5bbf9eada9c2
-  - 9bccc8404a3c
-  - c9a8ef2aa380
   - fa016f1eea1a
+  - 5bbf9eada9c2
+  - c9a8ef2aa380
+  - d220115f882b
+  - 9bccc8404a3c
   tool_panel_section_label: Variant Calling
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: snp_sites
@@ -122,6 +123,7 @@ tools:
   owner: iuc
   revisions:
   - a57606054bd7
+  - cf8ffc79db67
   tool_panel_section_label: Variant Calling
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: varscan_version_2
