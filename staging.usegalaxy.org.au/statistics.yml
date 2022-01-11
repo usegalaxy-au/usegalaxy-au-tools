@@ -32,8 +32,8 @@ tools:
 - name: datamash_ops
   owner: iuc
   revisions:
-  - 2f3c6f2dcf39
   - 562f3c677828
+  - 2f3c6f2dcf39
   tool_panel_section_label: Statistics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: dwt_cor_ava_perclass
@@ -60,16 +60,16 @@ tools:
 - name: dwt_var_perclass
   owner: devteam
   revisions:
-  - cb422b6f49d2
   - 781e68074f84
+  - cb422b6f49d2
   tool_panel_section_label: Statistics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: dwt_var_perfeature
   owner: devteam
   revisions:
+  - 6c29c7e347e8
   - 7a15159140d1
   - cb1c59d69557
-  - 6c29c7e347e8
   tool_panel_section_label: Statistics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: generate_pc_lda_matrix
@@ -117,9 +117,9 @@ tools:
 - name: sklearn_build_pipeline
   owner: bgruening
   revisions:
+  - 840f29aad145
   - 9c3e1d3235c8
   - 3f25f37ee3db
-  - 840f29aad145
   tool_panel_section_label: Statistics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: sklearn_estimator_attributes
@@ -139,9 +139,9 @@ tools:
 - name: sklearn_numeric_clustering
   owner: bgruening
   revisions:
-  - e13a7c05b3a4
-  - 1dd433d2c92c
   - ad7e0b4291ee
+  - 1dd433d2c92c
+  - e13a7c05b3a4
   tool_panel_section_label: Statistics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: t_test_two_samples
