@@ -2,28 +2,28 @@ tools:
 - name: medaka_consensus_pipeline
   owner: iuc
   revisions:
+  - a7228a7ea146
   - 0e9e7fcdd543
   - 72b5e9dda577
-  - a7228a7ea146
   tool_panel_section_label: Nanopore
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: medaka_consensus
   owner: iuc
   revisions:
-  - db25ec99c3ea
   - b2aae698b9d3
+  - db25ec99c3ea
   - fa11aa8103b2
   tool_panel_section_label: Nanopore
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: medaka_variant
   owner: iuc
   revisions:
-  - 222669c4afb6
-  - 2bf63b38ee9b
   - 19f3b583a9b3
+  - 2bf63b38ee9b
+  - 222669c4afb6
   - 43815fa60f3a
-  - 0f5f4a208660
   - edf6d4003fad
+  - 0f5f4a208660
   tool_panel_section_label: Nanopore
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: nanocompore_sampcomp
@@ -48,15 +48,15 @@ tools:
 - name: nanopolish_eventalign
   owner: bgruening
   revisions:
-  - d219b6d8158a
   - 85a394edc247
+  - d219b6d8158a
   tool_panel_section_label: Nanopore
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: nanopolish_methylation
   owner: bgruening
   revisions:
-  - a8d4be409446
   - be95355fef8d
+  - a8d4be409446
   tool_panel_section_label: Nanopore
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: nanopolish_polya
@@ -129,8 +129,8 @@ tools:
 - name: poretools_squiggle
   owner: iuc
   revisions:
-  - 34553d0caa5e
   - ce8af9373061
+  - 34553d0caa5e
   tool_panel_section_label: Nanopore
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: poretools_stats
