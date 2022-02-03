@@ -2,21 +2,21 @@ tools:
 - name: abyss
   owner: iuc
   revisions:
+  - 0e93176640ac
+  - fa5259cc561b
+  - 841084c5fc46
   - 553bfe8bd0b5
   - 8f1b150a2487
-  - 841084c5fc46
-  - fa5259cc561b
-  - 0e93176640ac
   - 890b794c997d
   tool_panel_section_label: Assembly
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: bandage
   owner: iuc
   revisions:
-  - b2860df42e16
   - 94fe43e75ddc
-  - b9e31c5c01c7
+  - b2860df42e16
   - 067592b6b312
+  - b9e31c5c01c7
   tool_panel_section_label: Assembly
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: bellerophon
@@ -34,15 +34,15 @@ tools:
 - name: busco
   owner: iuc
   revisions:
-  - 5ecdeca79a0d
-  - 46ae58b1d792
-  - 0d243f458b53
-  - 1440ae06552f
-  - 602fb8e63aa7
-  - 1e62c28ba91d
   - 2dd755c1c6ff
+  - 5ecdeca79a0d
   - 4048d82f0c88
+  - 1e62c28ba91d
+  - 602fb8e63aa7
+  - 1440ae06552f
+  - 46ae58b1d792
   - cf13a1e03e5b
+  - 0d243f458b53
   tool_panel_section_label: Assembly
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: canu
@@ -62,9 +62,9 @@ tools:
 - name: flye
   owner: bgruening
   revisions:
+  - 276f5d8712d5
   - 3ee0ef312022
   - e27815e82dd4
-  - 276f5d8712d5
   - 8d4f03b5fe9d
   - 1ce9b1d72ec3
   tool_panel_section_label: Assembly
@@ -79,11 +79,11 @@ tools:
 - name: hifiasm
   owner: bgruening
   revisions:
-  - 3f7be05a1597
-  - 045c7c3d8e59
-  - f3c89da3af16
   - 9ef6920c3089
   - 6505bd37670d
+  - 045c7c3d8e59
+  - f3c89da3af16
+  - 3f7be05a1597
   tool_panel_section_label: Assembly
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: masurca_simple
@@ -129,10 +129,10 @@ tools:
 - name: miniasm
   owner: iuc
   revisions:
+  - 80d1250bd5fd
+  - 8b6d0d85252b
   - 8dee0218ac7d
   - a7b889b90140
-  - 8b6d0d85252b
-  - 80d1250bd5fd
   - 73a3846701e1
   tool_panel_section_label: Assembly
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -153,11 +153,11 @@ tools:
 - name: pretext_map
   owner: iuc
   revisions:
-  - 02831bf9e95f
   - 8fef980d48b5
-  - d256a51a656b
-  - bbe19ef04a74
   - 2b16ba799da9
+  - bbe19ef04a74
+  - d256a51a656b
+  - 02831bf9e95f
   tool_panel_section_label: Assembly
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: purge_dups
@@ -171,36 +171,36 @@ tools:
   owner: iuc
   revisions:
   - 6fcbee531de6
+  - 7594365c546b
   - 342a1d1fed7b
   - ebb0dcdb621a
   - 59db8ea8c845
-  - 7594365c546b
   tool_panel_section_label: Assembly
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: racon
   owner: bgruening
   revisions:
-  - cd06929b224b
-  - a199cd7ac344
   - aa39b19ca11e
+  - cd06929b224b
   - 7c847ec300b8
+  - a199cd7ac344
   tool_panel_section_label: Assembly
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: raven
   owner: iuc
   revisions:
-  - 3edba9afc9bc
   - f11b994b7eb2
-  - f8564b2d7f63
+  - 3edba9afc9bc
   - 33b7d8481a76
+  - f8564b2d7f63
   tool_panel_section_label: Assembly
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: salsa
   owner: iuc
   revisions:
   - ba7b0f11e470
-  - f77f7a7f3b83
   - ab5b7f6b7198
+  - f77f7a7f3b83
   tool_panel_section_label: Assembly
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: shasta
@@ -212,87 +212,87 @@ tools:
 - name: shovill
   owner: iuc
   revisions:
-  - 196a599ec43d
+  - f698c7604b3b
   - d9f6a00b6db7
+  - 196a599ec43d
   - 865119fcb694
   - 83ead2be47b2
-  - f698c7604b3b
   tool_panel_section_label: Assembly
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: spades
   owner: nml
   revisions:
-  - 9006e5836729
   - b7829778729f
+  - 9006e5836729
   tool_panel_section_label: Assembly
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: trycycler_cluster
   owner: iuc
   revisions:
-  - ced385aa976d
-  - 6f4c8ad6ea01
   - 189e837009c9
+  - 6f4c8ad6ea01
   - 505a9833ab5d
+  - ced385aa976d
   tool_panel_section_label: Assembly
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: trycycler_consensus
   owner: iuc
   revisions:
-  - e59bee4565b3
-  - 9ded6109434a
   - 356afed970b4
+  - 9ded6109434a
+  - e59bee4565b3
   - d40ed4eb0c0e
   tool_panel_section_label: Assembly
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: trycycler_partition
   owner: iuc
   revisions:
-  - ebd801e712bc
-  - b23249f81bc4
-  - 4688ae3b49b5
   - 6dd935e4984b
+  - ebd801e712bc
+  - 4688ae3b49b5
+  - b23249f81bc4
   tool_panel_section_label: Assembly
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: trycycler_reconcile_msa
   owner: iuc
   revisions:
-  - 59bd28f6265d
   - b5e35a2ca4f3
-  - 937ea677d437
   - b64696992ee9
+  - 59bd28f6265d
+  - 937ea677d437
   tool_panel_section_label: Assembly
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: trycycler_subsample
   owner: iuc
   revisions:
-  - 05bd7504fdb2
   - 6015aa0303f2
-  - 383bb5ad32e2
+  - 05bd7504fdb2
   - cb4768eeca3b
+  - 383bb5ad32e2
   tool_panel_section_label: Assembly
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: unicycler
   owner: iuc
   revisions:
+  - 9e3e80cc4ad4
   - 0a3a602cd1e3
   - e92675014ac9
-  - 9e3e80cc4ad4
   tool_panel_section_label: Assembly
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: velvet
   owner: devteam
   revisions:
-  - 920677cd220f
+  - 5da9a0e2fb2d
   - 8d09f8be269e
   - 08256557922f
-  - 5da9a0e2fb2d
+  - 920677cd220f
   tool_panel_section_label: Assembly
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: velvetoptimiser
   owner: simon-gladman
   revisions:
-  - 37d88f41c810
   - 82398ba86ba7
+  - 37d88f41c810
   - 4a53b89fa703
   tool_panel_section_label: Assembly
   tool_shed_url: toolshed.g2.bx.psu.edu
