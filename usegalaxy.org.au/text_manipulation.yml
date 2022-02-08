@@ -21,13 +21,13 @@ tools:
 - name: column_maker
   owner: devteam
   revisions:
-  - 464b9305180e
-  - 02026300aa45
-  - 6e8d94597139
-  - be25c075ed54
-  - 626658afe4cb
   - 13b6f0007d9e
+  - 626658afe4cb
+  - 6e8d94597139
   - 9cd341095afd
+  - be25c075ed54
+  - 02026300aa45
+  - 464b9305180e
   tool_panel_section_label: Text Manipulation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: concatenate_multiple_datasets
@@ -58,9 +58,9 @@ tools:
 - name: filter_tabular
   owner: iuc
   revisions:
-  - 34d29339abab
-  - 4d5aae46f850
   - 37cde8134c6a
+  - 4d5aae46f850
+  - 34d29339abab
   - 9cc411a62277
   tool_panel_section_label: Text Manipulation
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -85,20 +85,20 @@ tools:
 - name: merge_cols
   owner: devteam
   revisions:
+  - f2aac0c5c60d
   - dd40b1e9eebe
   - ae7843d06f8f
-  - f2aac0c5c60d
   tool_panel_section_label: Text Manipulation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: query_tabular
   owner: iuc
   revisions:
-  - 83069b38aa85
   - cf34c344508d
-  - 33d61c89fb8d
   - 2e8f945f7285
-  - 1ea4e668bf73
   - 623f3eb7aa48
+  - 1ea4e668bf73
+  - 33d61c89fb8d
+  - 83069b38aa85
   tool_panel_section_label: Text Manipulation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: regex_find_replace
@@ -116,9 +116,9 @@ tools:
 - name: sqlite_to_tabular
   owner: iuc
   revisions:
-  - b722161a845a
-  - bce29ec10b78
   - c29d2f80a066
+  - bce29ec10b78
+  - b722161a845a
   tool_panel_section_label: Text Manipulation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: table_compute
@@ -131,11 +131,11 @@ tools:
 - name: text_processing
   owner: bgruening
   revisions:
+  - a6f147a050a2
+  - ddf54b12c295
   - 74a8bef53a00
   - 9ff72e942410
-  - a6f147a050a2
   - 0a8c6b61f0f4
   - f46f0e4f75c4
-  - ddf54b12c295
   tool_panel_section_label: Text Manipulation
   tool_shed_url: toolshed.g2.bx.psu.edu
