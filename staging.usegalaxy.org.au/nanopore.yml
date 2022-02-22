@@ -8,28 +8,28 @@ tools:
 - name: medaka_consensus_pipeline
   owner: iuc
   revisions:
-  - a7228a7ea146
   - 0e9e7fcdd543
   - 72b5e9dda577
+  - a7228a7ea146
   tool_panel_section_label: Nanopore
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: medaka_consensus
   owner: iuc
   revisions:
+  - db25ec99c3ea
   - b2aae698b9d3
   - fa11aa8103b2
-  - db25ec99c3ea
   tool_panel_section_label: Nanopore
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: medaka_variant
   owner: iuc
   revisions:
-  - 19f3b583a9b3
-  - 2bf63b38ee9b
-  - 0f5f4a208660
-  - 43815fa60f3a
   - edf6d4003fad
+  - 19f3b583a9b3
+  - 43815fa60f3a
   - 222669c4afb6
+  - 0f5f4a208660
+  - 2bf63b38ee9b
   tool_panel_section_label: Nanopore
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: nanocompore_sampcomp
@@ -47,15 +47,15 @@ tools:
 - name: nanoplot
   owner: iuc
   revisions:
-  - 645159bcee2d
   - edbb6c5028f5
+  - 645159bcee2d
   tool_panel_section_label: Nanopore
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: nanopolish_eventalign
   owner: bgruening
   revisions:
-  - d219b6d8158a
   - 85a394edc247
+  - d219b6d8158a
   tool_panel_section_label: Nanopore
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: nanopolish_methylation
@@ -115,8 +115,8 @@ tools:
 - name: poretools_occupancy
   owner: iuc
   revisions:
-  - 338d15b8d6fb
   - 336791b5665f
+  - 338d15b8d6fb
   tool_panel_section_label: Nanopore
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: poretools_qualdist
@@ -128,15 +128,15 @@ tools:
 - name: poretools_qualpos
   owner: iuc
   revisions:
-  - 2e22ebec211a
   - 4fe6b96aff72
+  - 2e22ebec211a
   tool_panel_section_label: Nanopore
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: poretools_squiggle
   owner: iuc
   revisions:
-  - ce8af9373061
   - 34553d0caa5e
+  - ce8af9373061
   tool_panel_section_label: Nanopore
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: poretools_stats
@@ -166,8 +166,8 @@ tools:
 - name: poretools_yield_plot
   owner: iuc
   revisions:
-  - 64a83664b814
   - ca22d8497db5
+  - 64a83664b814
   tool_panel_section_label: Nanopore
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: pycoqc
