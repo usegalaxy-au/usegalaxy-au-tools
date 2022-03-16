@@ -2,17 +2,17 @@ tools:
 - name: medaka_consensus_pipeline
   owner: iuc
   revisions:
-  - 0e9e7fcdd543
   - 72b5e9dda577
+  - 0e9e7fcdd543
   - a7228a7ea146
   tool_panel_section_label: Nanopore
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: medaka_consensus
   owner: iuc
   revisions:
-  - fa11aa8103b2
-  - b2aae698b9d3
   - db25ec99c3ea
+  - b2aae698b9d3
+  - fa11aa8103b2
   tool_panel_section_label: Nanopore
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: medaka_variant
@@ -20,10 +20,10 @@ tools:
   revisions:
   - 43815fa60f3a
   - 222669c4afb6
-  - 19f3b583a9b3
   - 0f5f4a208660
-  - 2bf63b38ee9b
   - edf6d4003fad
+  - 2bf63b38ee9b
+  - 19f3b583a9b3
   tool_panel_section_label: Nanopore
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: nanocompore_sampcomp
@@ -76,16 +76,16 @@ tools:
 - name: porechop
   owner: iuc
   revisions:
+  - 93d623d9979c
   - 5f76b20953e5
   - 543cbeef3949
-  - 93d623d9979c
   tool_panel_section_label: Nanopore
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: poretools_events
   owner: iuc
   revisions:
-  - 28d7819c312f
   - 1d835c691480
+  - 28d7819c312f
   tool_panel_section_label: Nanopore
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: poretools_extract
@@ -123,8 +123,8 @@ tools:
 - name: poretools_qualpos
   owner: iuc
   revisions:
-  - 2e22ebec211a
   - 4fe6b96aff72
+  - 2e22ebec211a
   tool_panel_section_label: Nanopore
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: poretools_squiggle
