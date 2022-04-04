@@ -1,4 +1,13 @@
 tools:
-- name: suite_cactus
-  owner:  galaxy-australia
+- name: cactus_export
+  owner: galaxy-australia
+  revisions:
+  - c18157c68134
   tool_panel_section_label: Multiple Alignments
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: cactus_cactus
+  owner: galaxy-australia
+  revisions:
+  - 85f68b344286
+  tool_panel_section_label: Multiple Alignments
+  tool_shed_url: toolshed.g2.bx.psu.edu
