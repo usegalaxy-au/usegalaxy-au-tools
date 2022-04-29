@@ -2,28 +2,28 @@ tools:
 - name: medaka_consensus_pipeline
   owner: iuc
   revisions:
+  - 72b5e9dda577
   - 0e9e7fcdd543
   - a7228a7ea146
-  - 72b5e9dda577
   tool_panel_section_label: Nanopore
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: medaka_consensus
   owner: iuc
   revisions:
-  - fa11aa8103b2
   - db25ec99c3ea
+  - fa11aa8103b2
   - b2aae698b9d3
   tool_panel_section_label: Nanopore
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: medaka_variant
   owner: iuc
   revisions:
-  - 19f3b583a9b3
-  - 0f5f4a208660
-  - 222669c4afb6
-  - edf6d4003fad
   - 43815fa60f3a
+  - 0f5f4a208660
+  - edf6d4003fad
+  - 222669c4afb6
   - 2bf63b38ee9b
+  - 19f3b583a9b3
   tool_panel_section_label: Nanopore
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: nanocompore_sampcomp
@@ -62,8 +62,8 @@ tools:
 - name: nanopolish_polya
   owner: bgruening
   revisions:
-  - d376944466bf
   - 449e9aeded2d
+  - d376944466bf
   tool_panel_section_label: Nanopore
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: nanopolish_variants
@@ -161,8 +161,8 @@ tools:
 - name: poretools_yield_plot
   owner: iuc
   revisions:
-  - 64a83664b814
   - ca22d8497db5
+  - 64a83664b814
   tool_panel_section_label: Nanopore
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: pycoqc
