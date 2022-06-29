@@ -2,18 +2,21 @@ tools:
 - name: basecoverage
   owner: devteam
   revisions:
+  - 9c5ff4695c97
   - 2cedec3759e4
   tool_panel_section_label: Operate on Genomic Intervals
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: cluster
   owner: devteam
   revisions:
+  - a126ec6ea0e4
   - 05696474ee89
   tool_panel_section_label: Operate on Genomic Intervals
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: complement
   owner: devteam
   revisions:
+  - 8b6c6ec55c6e
   - 38c8bb402872
   tool_panel_section_label: Operate on Genomic Intervals
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -21,18 +24,13 @@ tools:
   owner: devteam
   revisions:
   - 35a89f8cc96e
+  - 73ca13a7ec5f
   tool_panel_section_label: Operate on Genomic Intervals
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: coverage
   owner: devteam
   revisions:
-  - 4ef9819dc7fb
-  tool_panel_section_label: Operate on Genomic Intervals
-  tool_shed_url: toolshed.g2.bx.psu.edu
-- name: flanking_features
-  owner: devteam
-  revisions:
-  - a09d13b108fd
+  - e3363e087468
   tool_panel_section_label: Operate on Genomic Intervals
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: get_flanks
@@ -45,30 +43,26 @@ tools:
   owner: devteam
   revisions:
   - 33b3f3688db4
+  - 69c10b56f46d
   tool_panel_section_label: Operate on Genomic Intervals
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: join
   owner: devteam
   revisions:
-  - a10f49d9218a
+  - 718d04143c31
   tool_panel_section_label: Operate on Genomic Intervals
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: merge
   owner: devteam
   revisions:
   - 381cd27bf67a
+  - debffd27642d
   tool_panel_section_label: Operate on Genomic Intervals
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: subtract_query
   owner: devteam
   revisions:
   - ff3901618482
-  tool_panel_section_label: Operate on Genomic Intervals
-  tool_shed_url: toolshed.g2.bx.psu.edu
-- name: subtract
-  owner: devteam
-  revisions:
-  - 0145969324c4
   tool_panel_section_label: Operate on Genomic Intervals
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: translate_bed
