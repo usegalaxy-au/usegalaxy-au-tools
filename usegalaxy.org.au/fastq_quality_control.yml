@@ -2,9 +2,9 @@ tools:
 - name: fastq_quality_filter
   owner: devteam
   revisions:
-  - e41385662e5e
   - ce9cd02d5b88
   - 7b4468117008
+  - e41385662e5e
   tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastq_trimmer_by_quality
@@ -18,18 +18,18 @@ tools:
   owner: devteam
   revisions:
   - 2b0c9d9fc6ca
-  - 3d0c7bdf12f5
-  - f2e8552cf1d0
-  - ff9530579d1f
-  - 9da02be9c6cc
   - e7b2202befea
+  - ff9530579d1f
+  - f2e8552cf1d0
+  - 9da02be9c6cc
+  - 3d0c7bdf12f5
   tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastqe
   owner: iuc
   revisions:
-  - a252d8415583
   - 89d299153577
+  - a252d8415583
   tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastx_nucleotides_distribution
@@ -49,29 +49,29 @@ tools:
 - name: filtlong
   owner: iuc
   revisions:
-  - 8880fb74ef56
-  - 41b2ad601cf0
   - a72af9de6bf5
+  - 41b2ad601cf0
+  - 8880fb74ef56
   tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: multiqc
   owner: iuc
   revisions:
-  - 5e33b465d8d5
-  - 9a913cdee30e
-  - bf675f34b056
-  - 75c93c70d094
-  - 1c2db0054039
-  - b2f1f75d49c4
   - 3d93dd18d9f8
+  - 9a913cdee30e
+  - b2f1f75d49c4
   - c1a4b5f3b432
+  - bf675f34b056
+  - 1c2db0054039
+  - 5e33b465d8d5
+  - 75c93c70d094
   tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: trim_galore
   owner: bgruening
   revisions:
-  - 084bbd8ba7b8
   - 949f01671246
   - cd7e644cae1d
+  - 084bbd8ba7b8
   tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: toolshed.g2.bx.psu.edu
