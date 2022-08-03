@@ -14,17 +14,17 @@ tools:
 - name: data_manager_bowtie2_index_builder
   owner: devteam
   revisions:
+  - 1586b111d2a3
   - 83da94c0e4a6
   - 76672b83d42d
-  - 1586b111d2a3
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_build_kraken2_database
   owner: iuc
   revisions:
-  - 9002633b4737
-  - 2f27f3b86827
   - 19b6a2f0dbe2
+  - 2f27f3b86827
+  - 9002633b4737
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_bwa_mem_index_builder
@@ -49,8 +49,8 @@ tools:
 - name: data_manager_dada2
   owner: iuc
   revisions:
-  - 38ccd4589990
   - 48a42ca61006
+  - 38ccd4589990
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_diamond_database_builder
@@ -96,8 +96,8 @@ tools:
   owner: iuc
   revisions:
   - 52b6a4d98009
-  - 172815da3d41
   - b4b2b284230a
+  - 172815da3d41
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_hisat2_index_builder
@@ -146,33 +146,33 @@ tools:
 - name: data_manager_mothur_toolsuite
   owner: iuc
   revisions:
-  - aec831b54a5b
   - 9d09724f2bf1
   - 0db22932bc39
+  - aec831b54a5b
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_pangolearn
   owner: iuc
   revisions:
-  - df30a2f1db55
-  - 29c738066906
   - ed7a967cb11b
+  - df30a2f1db55
   - 6e24e79d3d69
+  - 29c738066906
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_sam_fasta_index_builder
   owner: devteam
   revisions:
+  - 3e4d45aca422
   - 1865e693d8b2
   - 3ec5c51384e6
-  - 3e4d45aca422
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_snpeff
   owner: iuc
   revisions:
-  - d107d20dc6bd
   - def511e8e005
+  - d107d20dc6bd
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_sortmerna_database_downloader
