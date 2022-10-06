@@ -16,56 +16,56 @@ tools:
 - name: freebayes
   owner: devteam
   revisions:
-  - ef2c525bd8cd
   - a5937157062f
-  - 57def2d7c093
   - 156b60c1530f
+  - 57def2d7c093
   - 04fa42777df9
+  - ef2c525bd8cd
   tool_panel_section_label: Variant Calling
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: lofreq_alnqual
   owner: iuc
   revisions:
-  - 791f73caa0c8
   - e61c9ac190ad
   - 435b157bed6d
+  - 791f73caa0c8
   - 09d6e4693887
   tool_panel_section_label: Variant Calling
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: lofreq_call
   owner: iuc
   revisions:
-  - 074d44697036
   - 3b4b2121842f
-  - 4805fe3d8fda
   - 65432c3abf6c
-  - dfadc322b065
   - 03627f24605f
+  - dfadc322b065
   - e1461b5c52a0
+  - 074d44697036
+  - 4805fe3d8fda
   tool_panel_section_label: Variant Calling
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: lofreq_filter
   owner: iuc
   revisions:
-  - 701d134358ad
   - 9cb929f21cfa
   - 7dfca164d2e3
+  - 701d134358ad
   tool_panel_section_label: Variant Calling
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: lofreq_indelqual
   owner: iuc
   revisions:
-  - c27549b9aa1f
   - f4473557ffc7
   - 426d707dfc47
+  - c27549b9aa1f
   - 971e07ca4456
   tool_panel_section_label: Variant Calling
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: lofreq_viterbi
   owner: iuc
   revisions:
-  - dbd9f2db9ed8
   - cdaab621d454
+  - dbd9f2db9ed8
   - aa35ee7f3ab2
   tool_panel_section_label: Variant Calling
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -84,8 +84,8 @@ tools:
 - name: snippy
   owner: iuc
   revisions:
-  - fa016f1eea1a
   - 5bbf9eada9c2
+  - fa016f1eea1a
   - d220115f882b
   tool_panel_section_label: Variant Calling
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -122,9 +122,9 @@ tools:
 - name: tb_variant_filter
   owner: iuc
   revisions:
-  - 3b1e7c170b10
-  - e7aff4a85df5
   - 40f0591deda0
+  - e7aff4a85df5
+  - 3b1e7c170b10
   tool_panel_section_label: Variant Calling
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: tbvcfreport
