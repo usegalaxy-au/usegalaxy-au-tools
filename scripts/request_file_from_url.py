@@ -26,7 +26,7 @@ def main():
     parser = argparse.ArgumentParser(description='Convert toolshed links to shed-tools input format')
     parser.add_argument('-o', '--output_path', help='Output file path', default='requests/new_tools.yml')
     parser.add_argument('-f', '--file', help='File containing one toolshed link per line')
-    parser.add_argument('-u', '--url', help='Toolshed link')
+    parser.add_argument('-u', '--url', nargs='+', help='Toolshed link(s)')
     parser.add_argument('-s', '--section_label', help='Tool panel section label')
 
     args = parser.parse_args()
@@ -36,7 +36,8 @@ def main():
 
     tools = []
     if args.url:
-        tools.append(tool_from_url(args.url, section_label=args.section_label))
+        for url in args.url:
+            tools.append(tool_from_url(url, section_label=args.section_label))
     elif args.file:
         with open(args.file) as handle:
             for url in [line.strip() for line in handle.readlines() if line.strip()]:
