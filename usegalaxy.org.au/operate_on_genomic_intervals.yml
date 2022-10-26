@@ -35,6 +35,12 @@ tools:
   - 077f404ae1bb
   tool_panel_section_label: Operate on Genomic Intervals
   tool_shed_url: toolshed.g2.bx.psu.edu
+- name: intersect
+  owner: devteam
+  revisions:
+  - 69c10b56f46d
+  tool_panel_section_label: Operate on Genomic Intervals
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: join
   owner: devteam
   revisions:
@@ -51,6 +57,12 @@ tools:
   owner: devteam
   revisions:
   - ff3901618482
+  tool_panel_section_label: Operate on Genomic Intervals
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: subtract
+  owner: devteam
+  revisions:
+  - 0427ca314f3d
   tool_panel_section_label: Operate on Genomic Intervals
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: translate_bed
