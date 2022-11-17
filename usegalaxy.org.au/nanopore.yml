@@ -2,33 +2,33 @@ tools:
 - name: medaka_consensus_pipeline
   owner: iuc
   revisions:
+  - 0e9e7fcdd543
+  - a7228a7ea146
   - 72b5e9dda577
   - 79e9a869f40e
   - cb34f00cc10f
-  - 0e9e7fcdd543
-  - a7228a7ea146
   tool_panel_section_label: Nanopore
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: medaka_consensus
   owner: iuc
   revisions:
-  - fa11aa8103b2
-  - 682d1e2c8be4
-  - d6cddc06aeae
   - db25ec99c3ea
+  - 682d1e2c8be4
+  - fa11aa8103b2
+  - d6cddc06aeae
   tool_panel_section_label: Nanopore
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: medaka_variant
   owner: iuc
   revisions:
-  - 43815fa60f3a
   - 222669c4afb6
-  - 19f3b583a9b3
-  - cc36773a3681
-  - 0f5f4a208660
-  - edf6d4003fad
-  - ec699520444c
   - 2bf63b38ee9b
+  - edf6d4003fad
+  - cc36773a3681
+  - 19f3b583a9b3
+  - 0f5f4a208660
+  - 43815fa60f3a
+  - ec699520444c
   tool_panel_section_label: Nanopore
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: nanocompore_sampcomp
@@ -55,8 +55,8 @@ tools:
 - name: nanopolish_eventalign
   owner: bgruening
   revisions:
-  - 85a394edc247
   - d219b6d8158a
+  - 85a394edc247
   tool_panel_section_label: Nanopore
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: nanopolish_methylation
@@ -76,8 +76,8 @@ tools:
 - name: nanopolish_variants
   owner: bgruening
   revisions:
-  - a3afc5f0a96c
   - de5b3d8f5b90
+  - a3afc5f0a96c
   tool_panel_section_label: Nanopore
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: porechop
@@ -91,8 +91,8 @@ tools:
 - name: poretools_events
   owner: iuc
   revisions:
-  - 28d7819c312f
   - 1d835c691480
+  - 28d7819c312f
   tool_panel_section_label: Nanopore
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: poretools_extract
@@ -104,8 +104,8 @@ tools:
 - name: poretools_hist
   owner: iuc
   revisions:
-  - 47936349f3e9
   - 5a82eb9e1b89
+  - 47936349f3e9
   tool_panel_section_label: Nanopore
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: poretools_nucdist
@@ -130,8 +130,8 @@ tools:
 - name: poretools_qualpos
   owner: iuc
   revisions:
-  - 4fe6b96aff72
   - 2e22ebec211a
+  - 4fe6b96aff72
   tool_panel_section_label: Nanopore
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: poretools_squiggle
