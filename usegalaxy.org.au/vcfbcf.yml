@@ -2,122 +2,122 @@ tools:
 - name: bcftools_annotate
   owner: iuc
   revisions:
-  - b7ea370b8f5d
-  - ebe5fc018e72
-  - 6a88248893c4
-  - e075b1be5abb
   - 8a2e296c07ef
+  - e075b1be5abb
+  - 6a88248893c4
   - 265fe0f9ea64
+  - ebe5fc018e72
+  - b7ea370b8f5d
   tool_panel_section_label: VCF/BCF
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: bcftools_call
   owner: iuc
   revisions:
-  - 21687e35f066
-  - 544cb432072b
   - b03984136ce4
+  - 21687e35f066
   - 0fba2c15b40d
   - 22637b1a55bf
   - c37b684e7f4e
+  - 544cb432072b
   tool_panel_section_label: VCF/BCF
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: bcftools_cnv
   owner: iuc
   revisions:
-  - 8627b2b383b4
-  - 8ca3647c90fd
-  - 01d6b7d6365e
-  - 8408bffd5616
   - 0238f68ad641
-  - bf1f4994f104
+  - 01d6b7d6365e
+  - 8ca3647c90fd
   - 3a7084316a6e
+  - 8627b2b383b4
+  - bf1f4994f104
+  - 8408bffd5616
   tool_panel_section_label: VCF/BCF
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: bcftools_concat
   owner: iuc
   revisions:
   - f430a1ec7ee4
+  - d144af39073a
+  - 9b5abbf50d23
+  - 81426b3cf18b
   - 03e0645395d2
   - 6b6c992d3a14
-  - 81426b3cf18b
-  - 9b5abbf50d23
-  - d144af39073a
   tool_panel_section_label: VCF/BCF
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: bcftools_consensus
   owner: iuc
   revisions:
+  - 2363ef414c9b
   - 1829900b5dcd
-  - e522022137f6
   - d37e313a41be
   - d3081540d175
   - 95c6f3f4c77f
-  - 2363ef414c9b
+  - e522022137f6
   tool_panel_section_label: VCF/BCF
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: bcftools_convert_from_vcf
   owner: iuc
   revisions:
+  - 09f37afb3621
+  - b14ff40958cb
+  - 1137ce8efc1e
   - 348cd212dbad
   - 92c0aff8b53e
-  - 09f37afb3621
-  - 1137ce8efc1e
   - 9b29129fb491
-  - b14ff40958cb
   tool_panel_section_label: VCF/BCF
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: bcftools_convert_to_vcf
   owner: iuc
   revisions:
-  - 367ba501b6eb
   - ecc9192912b8
-  - de68c11034f6
   - 55c0e906c14c
   - 1f2183a23823
+  - de68c11034f6
+  - 367ba501b6eb
   tool_panel_section_label: VCF/BCF
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: bcftools_csq
   owner: iuc
   revisions:
   - 039ea3f1dea9
-  - 64a8f7dae3ad
-  - 7cbf3c66d4ad
   - 6c790a091c7c
+  - 7cbf3c66d4ad
   - ae68ceb4cca3
+  - 64a8f7dae3ad
   tool_panel_section_label: VCF/BCF
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: bcftools_filter
   owner: iuc
   revisions:
-  - cdb7b4927742
-  - 33bd9301568c
-  - 6ea7170a016d
   - 277719af4dd7
+  - 6ea7170a016d
+  - cdb7b4927742
   - e7452697afd9
+  - 33bd9301568c
   - 963a3635b2e1
   tool_panel_section_label: VCF/BCF
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: bcftools_gtcheck
   owner: iuc
   revisions:
-  - a29a2f40b665
-  - a1213a0b7b66
-  - 501bfb078342
-  - 26d97cdd5410
   - b7f0f59baa7e
+  - a29a2f40b665
+  - 501bfb078342
+  - a1213a0b7b66
   - 5a321fab1fe4
+  - 26d97cdd5410
   tool_panel_section_label: VCF/BCF
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: bcftools_isec
   owner: iuc
   revisions:
-  - 709dd8291b83
+  - 5f27e814a119
   - 97d19c008d15
   - 768d04526638
-  - 5f27e814a119
-  - 81e4014fa809
-  - c803c34361e0
   - d7d1663559e9
+  - c803c34361e0
+  - 81e4014fa809
+  - 709dd8291b83
   tool_panel_section_label: VCF/BCF
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: bcftools_merge
@@ -125,163 +125,163 @@ tools:
   revisions:
   - 86296490704e
   - 2215287d5cc9
-  - 85ee7e6c4204
-  - b1eba148b35b
   - b931e65638b8
   - 7ba36babba2d
+  - b1eba148b35b
+  - 85ee7e6c4204
   tool_panel_section_label: VCF/BCF
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: bcftools_mpileup
   owner: iuc
   revisions:
-  - 31ea13dfe5e6
-  - f506df85c652
   - cf06b44624c7
-  - 37757ffb4c5f
-  - 9c711df3258d
+  - 31ea13dfe5e6
   - 5660b21a0dbd
   - ce9396ddcb2b
+  - 9c711df3258d
+  - f506df85c652
+  - 37757ffb4c5f
   tool_panel_section_label: VCF/BCF
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: bcftools_norm
   owner: iuc
   revisions:
+  - a404f786a94c
   - 6deb4d549bc9
+  - 48291658fdf6
   - 021693fdadaa
   - 19905c025d2a
-  - a404f786a94c
-  - 48291658fdf6
   tool_panel_section_label: VCF/BCF
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: bcftools_plugin_counts
   owner: iuc
   revisions:
+  - 97e8145d7e30
   - 71c78e0eea52
-  - 69d8b7567281
   - 5ad5d4243987
   - c450406f722b
   - f7879f1e77f9
-  - 97e8145d7e30
+  - 69d8b7567281
   tool_panel_section_label: VCF/BCF
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: bcftools_plugin_dosage
   owner: iuc
   revisions:
-  - 52f9e4a660e3
-  - 79f7a1acc2cd
   - 2514e684f8a3
-  - 0fe007201caf
+  - 79f7a1acc2cd
   - d31a2e310a52
+  - 52f9e4a660e3
+  - 0fe007201caf
   - cc7f9a4e186b
   tool_panel_section_label: VCF/BCF
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: bcftools_plugin_fill_an_ac
   owner: iuc
   revisions:
-  - 026a989b7cee
-  - 230e424bde67
-  - 75ddd081f608
   - 0a62420cb9cd
+  - 75ddd081f608
   - 1411bef27a75
+  - 026a989b7cee
   - 80e6e399ccd0
+  - 230e424bde67
   tool_panel_section_label: VCF/BCF
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: bcftools_plugin_fill_tags
   owner: iuc
   revisions:
-  - ba20340426fe
-  - 5acfca5a76af
   - 444e6a756c35
+  - 5acfca5a76af
   - 5808f77b2bb6
   - e493702b19eb
   - bca7ce81688f
+  - ba20340426fe
   tool_panel_section_label: VCF/BCF
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: bcftools_plugin_fixploidy
   owner: iuc
   revisions:
-  - 12152af85697
-  - 4d236c696844
-  - 157ffcdd3fa7
-  - 68fec03a63b7
-  - d52b8947b269
   - f2482aa4862e
+  - 68fec03a63b7
+  - 12152af85697
+  - 157ffcdd3fa7
+  - 4d236c696844
+  - d52b8947b269
   tool_panel_section_label: VCF/BCF
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: bcftools_plugin_impute_info
   owner: iuc
   revisions:
-  - 6f8e223f78f3
-  - 8dbce095986c
   - 29ba253e2e05
+  - 8dbce095986c
   - 0e5d11004815
   - cbe39e530cbf
   - 8f2fc0ab30fb
+  - 6f8e223f78f3
   tool_panel_section_label: VCF/BCF
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: bcftools_plugin_mendelian
   owner: iuc
   revisions:
-  - 88bb477f45f7
   - a8630d4fbaf8
+  - 9708e3086f32
   - e0a856def0b0
   - 3ff5654b4e7d
+  - 88bb477f45f7
   - a367a15c6de5
-  - 9708e3086f32
   tool_panel_section_label: VCF/BCF
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: bcftools_plugin_missing2ref
   owner: iuc
   revisions:
-  - 96d0145c041a
   - 6ce175385dd9
-  - 5c9729d54721
-  - 4ed46189d6c6
   - 03e30f06f15f
   - 31c096c6b156
+  - 5c9729d54721
+  - 96d0145c041a
+  - 4ed46189d6c6
   tool_panel_section_label: VCF/BCF
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: bcftools_plugin_setgt
   owner: iuc
   revisions:
-  - 2c4941386820
-  - 46eb13bc2c73
-  - 09f5e45a8212
-  - 40daf124be88
-  - a1aad8b559c6
   - 11af7fce71cf
+  - 46eb13bc2c73
+  - 40daf124be88
+  - 2c4941386820
+  - 09f5e45a8212
+  - a1aad8b559c6
   tool_panel_section_label: VCF/BCF
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: bcftools_plugin_tag2tag
   owner: iuc
   revisions:
-  - 8cb121b6a1d2
   - 12038f59c0f4
-  - f272b8ba0983
-  - 6cbb9c47795c
-  - 882b2e649602
   - 0594ea1417c8
+  - 882b2e649602
+  - f272b8ba0983
   - 743cd1472aeb
+  - 6cbb9c47795c
+  - 8cb121b6a1d2
   tool_panel_section_label: VCF/BCF
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: bcftools_query_list_samples
   owner: iuc
   revisions:
-  - cced6715f926
-  - adee7e8b746f
   - dba06328556a
-  - eccb508bb678
   - 238f78e38a8b
   - 18cf9de1cf73
+  - cced6715f926
+  - eccb508bb678
+  - adee7e8b746f
   tool_panel_section_label: VCF/BCF
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: bcftools_query
   owner: iuc
   revisions:
-  - c9935c9e8a24
   - e0ad88dec40d
-  - e53501abf992
   - 3ce32adc55b2
+  - c9935c9e8a24
+  - e53501abf992
   - 9f36041495a3
   - f64e7ca2efd2
   tool_panel_section_label: VCF/BCF
@@ -289,22 +289,22 @@ tools:
 - name: bcftools_reheader
   owner: iuc
   revisions:
-  - d43eb39b989e
   - 79489d5685dd
   - d68c43202172
-  - fd3539749127
   - b7be725976b6
+  - fd3539749127
   - 4db0695a6fc7
+  - d43eb39b989e
   tool_panel_section_label: VCF/BCF
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: bcftools_roh
   owner: iuc
   revisions:
-  - 78cd8b69da4c
-  - b0d39ef600a7
-  - 58091e1be01b
-  - 1ccf0e7fb4f6
   - 5296d26b0373
+  - b0d39ef600a7
+  - 1ccf0e7fb4f6
+  - 58091e1be01b
+  - 78cd8b69da4c
   - 6a636d58dfc2
   tool_panel_section_label: VCF/BCF
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -312,9 +312,9 @@ tools:
   owner: iuc
   revisions:
   - '388983871932'
-  - b17394940c7a
   - 4d3ce9dc1525
   - e8af591435d1
+  - b17394940c7a
   - b641062a2587
   - baa8823f8073
   tool_panel_section_label: VCF/BCF
@@ -322,12 +322,12 @@ tools:
 - name: bcftools_view
   owner: iuc
   revisions:
-  - e6b5cbbf449b
-  - 59fa8742285e
-  - 3a233c8eb814
-  - 38d75661c235
   - 3ca3de4e5291
   - d1f8f55f564d
+  - 59fa8742285e
+  - 3a233c8eb814
+  - e6b5cbbf449b
+  - 38d75661c235
   tool_panel_section_label: VCF/BCF
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: vcf2tsv
@@ -347,8 +347,8 @@ tools:
 - name: vcfallelicprimitives
   owner: devteam
   revisions:
-  - 57a16b310fe8
   - a8a4f94aa321
+  - 57a16b310fe8
   tool_panel_section_label: VCF/BCF
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: vcfannotate
@@ -361,22 +361,22 @@ tools:
 - name: vcfannotategenotypes
   owner: devteam
   revisions:
-  - 70bc6ced57f7
   - 84959112d9a6
+  - 70bc6ced57f7
   tool_panel_section_label: VCF/BCF
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: vcfbedintersect
   owner: devteam
   revisions:
-  - aea8e90ad788
   - 9edfe5145ba8
+  - aea8e90ad788
   tool_panel_section_label: VCF/BCF
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: vcfbreakcreatemulti
   owner: devteam
   revisions:
-  - 690b1d846263
   - 9fd5d91eb91b
+  - 690b1d846263
   tool_panel_section_label: VCF/BCF
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: vcfcheck
@@ -389,8 +389,8 @@ tools:
 - name: vcfcombine
   owner: devteam
   revisions:
-  - 1f0ba67cc85a
   - 53edb91ed051
+  - 1f0ba67cc85a
   tool_panel_section_label: VCF/BCF
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: vcfcommonsamples
@@ -403,16 +403,16 @@ tools:
 - name: vcfdistance
   owner: devteam
   revisions:
-  - 48e458c721b3
   - 5822b40f3037
+  - 48e458c721b3
   tool_panel_section_label: VCF/BCF
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: vcffilter
   owner: devteam
   revisions:
-  - eae7c08ebb6f
   - fa24bf0598f4
   - 6b935ab36d7b
+  - eae7c08ebb6f
   tool_panel_section_label: VCF/BCF
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: vcffixup
@@ -432,29 +432,29 @@ tools:
 - name: vcfgeno2haplo
   owner: devteam
   revisions:
-  - a3dea556218d
   - b890055e07bd
+  - a3dea556218d
   tool_panel_section_label: VCF/BCF
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: vcfgenotypes
   owner: devteam
   revisions:
-  - f5653ed90dfd
   - a60ae8af21a1
+  - f5653ed90dfd
   tool_panel_section_label: VCF/BCF
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: vcfhethom
   owner: devteam
   revisions:
-  - 8254e0fe7358
   - b07ef36cf7e6
+  - 8254e0fe7358
   tool_panel_section_label: VCF/BCF
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: vcfleftalign
   owner: devteam
   revisions:
-  - d2406f98a782
   - 29f9b782727e
+  - d2406f98a782
   tool_panel_section_label: VCF/BCF
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: vcfprimers
@@ -467,8 +467,8 @@ tools:
 - name: vcfrandomsample
   owner: devteam
   revisions:
-  - 12b570dd0bc5
   - 6257ee3b50d3
+  - 12b570dd0bc5
   tool_panel_section_label: VCF/BCF
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: vcfselectsamples
@@ -494,7 +494,7 @@ tools:
 - name: vcfvcfintersect
   owner: devteam
   revisions:
-  - 166c4f50525f
   - 6f6bf10618d7
+  - 166c4f50525f
   tool_panel_section_label: VCF/BCF
   tool_shed_url: toolshed.g2.bx.psu.edu
