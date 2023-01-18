@@ -6,7 +6,6 @@
 trusted_owners:
 - owner: iuc
   skip_tools:
-  - name: data_manager_gemini_database_downloader
   - name: gatk2  # no longer supported
   - name: gemini_burden  # gemini tools need database installed ahead of tools
   - name: gemini_pathways
@@ -32,6 +31,8 @@ trusted_owners:
   - name: gemini_annotate
   - name: gemini_query
   - name: gemini_comp_hets
+  - name: bakta
+    revision: debdc1469b41
 - owner: simon-gladman
 - owner: nml
 - owner: peterjc
@@ -43,11 +44,7 @@ trusted_owners:
 - owner: galaxy-australia
 - owner: rnateam
 - owner: bgruening
-  skip_tools:
-  - name: deeptools_bam_pe_fragmentsize
-    revision: 62eb6d63f582
-  - name: diffbind
-    revision: 194e3f2c1d86
+- owner: ebi-gxa
 - owner: devteam
   skip_tools:
   - name: cuffdiff  # no longer supported
