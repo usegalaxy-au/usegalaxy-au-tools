@@ -1,4 +1,10 @@
 tools:
+- name: add_line_to_file
+  owner: bgruening
+  revisions:
+  - 8e251055b1a9
+  tool_panel_section_label: Text Manipulation
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: add_value
   owner: devteam
   revisions:
@@ -21,20 +27,26 @@ tools:
 - name: column_maker
   owner: devteam
   revisions:
-  - 9cd341095afd
-  - 02026300aa45
-  - 6e8d94597139
   - 13b6f0007d9e
-  - 6595517c2dd8
   - 464b9305180e
+  - 02026300aa45
+  - 6595517c2dd8
+  - 9cd341095afd
   - be25c075ed54
+  - 6e8d94597139
+  tool_panel_section_label: Text Manipulation
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: column_remove_by_header
+  owner: iuc
+  revisions:
+  - 2040e4c2750a
   tool_panel_section_label: Text Manipulation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: concatenate_multiple_datasets
   owner: artbio
   revisions:
-  - 3a4694d4354f
   - 6f54dc6b37da
+  - 3a4694d4354f
   tool_panel_section_label: Text Manipulation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: concatenate_multiple_datasets
@@ -58,10 +70,10 @@ tools:
 - name: filter_tabular
   owner: iuc
   revisions:
-  - 4d5aae46f850
   - 34d29339abab
-  - 9cc411a62277
   - 37cde8134c6a
+  - 9cc411a62277
+  - 4d5aae46f850
   tool_panel_section_label: Text Manipulation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: gff3_rebase
@@ -92,12 +104,12 @@ tools:
 - name: query_tabular
   owner: iuc
   revisions:
-  - 623f3eb7aa48
-  - 1ea4e668bf73
   - cf34c344508d
-  - 83069b38aa85
   - 2e8f945f7285
   - 33d61c89fb8d
+  - 1ea4e668bf73
+  - 83069b38aa85
+  - 623f3eb7aa48
   tool_panel_section_label: Text Manipulation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: regex_find_replace
@@ -132,11 +144,11 @@ tools:
 - name: text_processing
   owner: bgruening
   revisions:
-  - 74a8bef53a00
-  - ddf54b12c295
-  - f46f0e4f75c4
   - 9ff72e942410
   - a6f147a050a2
+  - f46f0e4f75c4
+  - 74a8bef53a00
+  - ddf54b12c295
   - d698c222f354
   tool_panel_section_label: Text Manipulation
   tool_shed_url: toolshed.g2.bx.psu.edu
