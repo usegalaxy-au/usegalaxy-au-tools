@@ -8,35 +8,35 @@ tools:
 - name: cutadapt
   owner: lparsons
   revisions:
-  - 48f587c13075
-  - 44e2cc14f75b
-  - c5e2e5902201
-  - 5915ea1ec9b1
-  - c4b82dce8335
-  - c053d4cad713
-  - 49370cb85f0f
-  - 288f97432497
-  - 135b80fb1ac2
-  - de6cebe3c043
   - 4e5056fefd88
+  - 5915ea1ec9b1
+  - 48f587c13075
   - e4691e1589d3
-  - 8665bcc8b847
+  - c5e2e5902201
+  - 49370cb85f0f
   - 660cffd8d92a
+  - 135b80fb1ac2
+  - 44e2cc14f75b
   - 093678460093
+  - c053d4cad713
+  - 8665bcc8b847
+  - c4b82dce8335
+  - de6cebe3c043
+  - 288f97432497
   tool_panel_section_label: FASTA/FASTQ
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fasta_clipping_histogram
   owner: devteam
   revisions:
-  - 9db07fd39f85
   - f666895cbebd
+  - 9db07fd39f85
   tool_panel_section_label: FASTA/FASTQ
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fasta_compute_length
   owner: devteam
   revisions:
-  - de2db1bdfbf8
   - 7d37cfda8e00
+  - de2db1bdfbf8
   tool_panel_section_label: FASTA/FASTQ
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fasta_concatenate_by_species
@@ -68,25 +68,25 @@ tools:
 - name: fasta_nucleotide_changer
   owner: devteam
   revisions:
-  - f81d4362b6c1
   - ec0b5076173a
+  - f81d4362b6c1
   tool_panel_section_label: FASTA/FASTQ
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fasta_stats
   owner: iuc
   revisions:
-  - cd0874854f51
   - 0dbb995c7d35
   - 9c620a950d3a
   - 56022eb50bbd
+  - cd0874854f51
   tool_panel_section_label: FASTA/FASTQ
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastp
   owner: iuc
   revisions:
-  - 65b93b623c77
-  - dbf9c561ef29
   - 1d8fe9bc4cb0
+  - dbf9c561ef29
+  - 65b93b623c77
   tool_panel_section_label: FASTA/FASTQ
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastq_combiner
@@ -99,15 +99,15 @@ tools:
 - name: fastq_filter
   owner: devteam
   revisions:
-  - 10b75444feae
   - 81a9090d6df3
+  - 10b75444feae
   tool_panel_section_label: FASTA/FASTQ
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastq_groomer
   owner: devteam
   revisions:
-  - 47e5dbc3e790
   - 8611b80a14d6
+  - 47e5dbc3e790
   tool_panel_section_label: FASTA/FASTQ
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastq_manipulation
@@ -120,15 +120,15 @@ tools:
 - name: fastq_masker_by_quality
   owner: devteam
   revisions:
-  - 9282652e7234
   - 9dfda4e310ed
+  - 9282652e7234
   tool_panel_section_label: FASTA/FASTQ
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastq_paired_end_deinterlacer
   owner: devteam
   revisions:
-  - 03d57fea6482
   - f3936d0632cb
+  - 03d57fea6482
   tool_panel_section_label: FASTA/FASTQ
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastq_paired_end_interlacer
@@ -141,23 +141,23 @@ tools:
 - name: fastq_paired_end_joiner
   owner: devteam
   revisions:
-  - c885369b207b
   - 09a2199cd356
+  - c885369b207b
   tool_panel_section_label: FASTA/FASTQ
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastq_paired_end_splitter
   owner: devteam
   revisions:
-  - 35e38452bb3f
   - e39cc71d3ed6
+  - 35e38452bb3f
   - 249c8393f2d4
   tool_panel_section_label: FASTA/FASTQ
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastq_quality_converter
   owner: devteam
   revisions:
-  - 74db4cffab1f
   - 54053ea6c77e
+  - 74db4cffab1f
   tool_panel_section_label: FASTA/FASTQ
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastq_stats
@@ -184,8 +184,8 @@ tools:
   owner: devteam
   revisions:
   - d5e9e83cd3d8
-  - 567d5b3c52b1
   - 09070cacefd8
+  - 567d5b3c52b1
   tool_panel_section_label: FASTA/FASTQ
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastx_barcode_splitter
@@ -199,15 +199,15 @@ tools:
   owner: devteam
   revisions:
   - bdf1ce174e39
-  - 736b8f6ee456
   - cb1e251cac37
+  - 736b8f6ee456
   tool_panel_section_label: FASTA/FASTQ
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastx_collapser
   owner: devteam
   revisions:
-  - 7ce1891db6f5
   - 421f0af4ee95
+  - 7ce1891db6f5
   tool_panel_section_label: FASTA/FASTQ
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastx_renamer
@@ -221,17 +221,17 @@ tools:
 - name: fastx_reverse_complement
   owner: devteam
   revisions:
-  - 6027ef51ef91
   - e246088b6e34
   - 0c2907307ba4
+  - 6027ef51ef91
   tool_panel_section_label: FASTA/FASTQ
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastx_trimmer
   owner: devteam
   revisions:
-  - 61b4cedc8934
   - 377ac2829eac
   - 547e8d00f11c
+  - 61b4cedc8934
   tool_panel_section_label: FASTA/FASTQ
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: hifiadapterfilt
@@ -243,15 +243,15 @@ tools:
 - name: pear
   owner: iuc
   revisions:
-  - b4c6f054210a
   - 2f804526f5fd
+  - b4c6f054210a
   tool_panel_section_label: FASTA/FASTQ
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: seq_select_by_id
   owner: peterjc
   revisions:
-  - 8e1a90917fa7
   - 3b0a14722175
+  - 8e1a90917fa7
   tool_panel_section_label: FASTA/FASTQ
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: seqtk
@@ -277,11 +277,11 @@ tools:
 - name: umi_tools_count
   owner: iuc
   revisions:
-  - 8250ea3a1501
-  - 24013bf85a6f
-  - a535cf1e5da4
   - e654095ab143
   - b557acca0b56
+  - a535cf1e5da4
+  - 24013bf85a6f
+  - 8250ea3a1501
   tool_panel_section_label: FASTA/FASTQ
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: umi_tools_dedup
@@ -293,11 +293,11 @@ tools:
 - name: umi_tools_extract
   owner: iuc
   revisions:
-  - 7accf7407811
-  - 27ac32a22ad2
   - 6a675c3aa610
+  - 7accf7407811
   - f3759eec3018
   - 828dba98cdb4
   - 9fa7803d1c51
+  - 27ac32a22ad2
   tool_panel_section_label: FASTA/FASTQ
   tool_shed_url: toolshed.g2.bx.psu.edu
