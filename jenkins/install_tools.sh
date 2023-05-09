@@ -291,7 +291,7 @@ test_tool() {
   TEST_LOG="$TMP/test_log.txt"
   rm -f $TEST_LOG ||:;  # delete file if it exists
 
-  sleep 60s; # Allow time for handlers to catch up
+  sleep 30s; # Allow time for handlers to catch up
 
   # Wait for galaxy
   echo "Waiting for $URL";
@@ -301,9 +301,16 @@ test_tool() {
   command="shed-tools test -g $URL -a $API_KEY $TOOL_PARAMS --test_json $TEST_JSON -v --log_file $TEST_LOG"
   echo "${command/$API_KEY/<API_KEY>}"
   {
+    # Run test command twice to account for the fact that the first test with a new container typically fails.
+    # This will not be necessary when containers are available from a nearby cvmfs stratum 1 server.
+    echo "Running dummy tests to allow for failure of first test in the event of a new singularity image"
+    $command
+    # Now the real thing
+    rm -f $TEST_JSON $TEST_LOG
+    echo "Running second set of tests (this one counts)"
     $command
   } || {
-    log_row "Shed-tools error";
+    log_row "Shed-tools test error";
     log_error $LOG_FILE
     exit_installation 1
     return 1
