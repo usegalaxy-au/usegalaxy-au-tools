@@ -305,6 +305,7 @@ test_tool() {
     # This will not be necessary when containers are available from a nearby cvmfs stratum 1 server.
     echo "Running dummy tests to allow for failure of first test in the event of a new singularity image"
     $command
+    sleep 60s;
     # Now the real thing
     rm -f $TEST_JSON $TEST_LOG
     echo "Running second set of tests (this one counts)"
