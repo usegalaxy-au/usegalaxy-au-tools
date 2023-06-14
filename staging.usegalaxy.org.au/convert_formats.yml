@@ -8,33 +8,33 @@ tools:
 - name: biom_add_metadata
   owner: iuc
   revisions:
+  - 4a6ee918c13a
+  - f3a19509108a
   - a3b86937ead6
   - e3cbd2287f63
   - 367b1ed91207
   - 5e1240a87bcb
-  - f3a19509108a
-  - 4a6ee918c13a
   - 0b3c3ad92827
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: biom_convert
   owner: iuc
   revisions:
-  - e525f9ffb9ac
-  - 72ed72122deb
-  - 1b5fc03380d4
   - 584008e574b2
-  - 54ccb7e1f49a
-  - 501c21cce614
   - 33c99804a32f
+  - 72ed72122deb
   - bd46669113b9
+  - 501c21cce614
+  - e525f9ffb9ac
+  - 54ccb7e1f49a
+  - 1b5fc03380d4
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: bp_genbank2gff3
   owner: iuc
   revisions:
-  - a0d092f27fdf
   - 11c3eb512633
+  - a0d092f27fdf
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: compress_file
@@ -73,8 +73,8 @@ tools:
 - name: gfa_to_fa
   owner: iuc
   revisions:
-  - 8e9d604e92f4
   - e33c82b63727
+  - 8e9d604e92f4
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: gffcompare_to_bed
@@ -86,8 +86,8 @@ tools:
 - name: gffread
   owner: devteam
   revisions:
-  - 4dea02886337
   - 154d00cbbf2d
+  - 4dea02886337
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: gtftobed12
@@ -112,8 +112,8 @@ tools:
 - name: tabular_to_fasta
   owner: devteam
   revisions:
-  - 0a7799698fe5
   - 0b4e36026794
+  - 0a7799698fe5
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: tabular_to_fastq
@@ -126,11 +126,11 @@ tools:
 - name: thermo_raw_file_converter
   owner: galaxyp
   revisions:
+  - 63769c4217a7
+  - 92ac8e086317
   - 19e45916daf9
   - 26c6706bfb07
-  - 92ac8e086317
   - b9b385097f13
-  - 63769c4217a7
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: vcf2maf
