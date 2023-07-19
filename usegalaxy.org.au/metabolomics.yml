@@ -5,6 +5,12 @@ tools:
   - 73892ef177e3
   tool_panel_section_label: Metabolomics
   tool_shed_url: toolshed.g2.bx.psu.edu
+- name: biotransformer
+  owner: recetox
+  revisions:
+  - 90dc951da294
+  tool_panel_section_label: Metabolomics
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: camera_annotate
   owner: lecorguille
   revisions:
@@ -39,6 +45,72 @@ tools:
   owner: prog
   revisions:
   - f86fec07f392
+  tool_panel_section_label: Metabolomics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: matchms_convert
+  owner: recetox
+  revisions:
+  - b9cc12600553
+  tool_panel_section_label: Metabolomics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: matchms_filtering
+  owner: recetox
+  revisions:
+  - a177ac3c752c
+  tool_panel_section_label: Metabolomics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: matchms_fingerprint_similarity
+  owner: recetox
+  revisions:
+  - 84af792d3a78
+  tool_panel_section_label: Metabolomics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: matchms_formatter
+  owner: recetox
+  revisions:
+  - 1b09315a3f87
+  tool_panel_section_label: Metabolomics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: matchms_metadata_export
+  owner: recetox
+  revisions:
+  - f04610d25411
+  tool_panel_section_label: Metabolomics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: matchms_metadata_match
+  owner: recetox
+  revisions:
+  - 03bc9b7f40f6
+  tool_panel_section_label: Metabolomics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: matchms_networking
+  owner: recetox
+  revisions:
+  - 8147d93d372d
+  tool_panel_section_label: Metabolomics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: matchms_similarity
+  owner: recetox
+  revisions:
+  - e5010b19d64d
+  tool_panel_section_label: Metabolomics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: matchms_spectral_similarity
+  owner: recetox
+  revisions:
+  - 9ff95a1a2705
+  tool_panel_section_label: Metabolomics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: matchms_split
+  owner: recetox
+  revisions:
+  - 0cf68b536cd1
+  tool_panel_section_label: Metabolomics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: msmetaenhancer
+  owner: recetox
+  revisions:
+  - 90745ecc5e9f
   tool_panel_section_label: Metabolomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: msnbase_readmsdata
@@ -81,6 +153,66 @@ tools:
   owner: ethevenot
   revisions:
   - acdf51018708
+  tool_panel_section_label: Metabolomics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: ramclustr_define_experiment
+  owner: recetox
+  revisions:
+  - 5f2b58dadb39
+  tool_panel_section_label: Metabolomics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: recetox_aplcms_align_features
+  owner: recetox
+  revisions:
+  - 7b42ee54d757
+  tool_panel_section_label: Metabolomics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: recetox_aplcms_compute_clusters
+  owner: recetox
+  revisions:
+  - 149b9cc7499b
+  tool_panel_section_label: Metabolomics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: recetox_aplcms_compute_template
+  owner: recetox
+  revisions:
+  - 481d769e2f7a
+  tool_panel_section_label: Metabolomics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: recetox_aplcms_correct_time
+  owner: recetox
+  revisions:
+  - 02c772a49998
+  tool_panel_section_label: Metabolomics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: recetox_aplcms_generate_feature_table
+  owner: recetox
+  revisions:
+  - e7305ba0dd38
+  tool_panel_section_label: Metabolomics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: recetox_aplcms_merge_known_table
+  owner: recetox
+  revisions:
+  - dd7bbc2b99d1
+  tool_panel_section_label: Metabolomics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: recetox_aplcms_recover_weaker_signals
+  owner: recetox
+  revisions:
+  - 99d118321d5f
+  tool_panel_section_label: Metabolomics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: recetox_aplcms_remove_noise
+  owner: recetox
+  revisions:
+  - d90187b0f247
+  tool_panel_section_label: Metabolomics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: rmassbank
+  owner: recetox
+  revisions:
+  - 0b28816c1c2c
   tool_panel_section_label: Metabolomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: tablemerge
