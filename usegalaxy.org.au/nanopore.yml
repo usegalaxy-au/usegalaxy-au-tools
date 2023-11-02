@@ -2,20 +2,20 @@ tools:
 - name: medaka_consensus_pipeline
   owner: iuc
   revisions:
+  - 79e9a869f40e
   - 0e9e7fcdd543
   - a7228a7ea146
-  - 79e9a869f40e
-  - fc8804320156
   - 72b5e9dda577
   - cb34f00cc10f
+  - fc8804320156
   tool_panel_section_label: Nanopore
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: medaka_consensus
   owner: iuc
   revisions:
-  - 18505fe2bdb1
   - db25ec99c3ea
   - fa11aa8103b2
+  - 18505fe2bdb1
   - d6cddc06aeae
   tool_panel_section_label: Nanopore
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -23,14 +23,14 @@ tools:
   owner: iuc
   revisions:
   - 222669c4afb6
-  - 0f5f4a208660
-  - ec699520444c
-  - eb746fa6f514
   - 43815fa60f3a
-  - 19f3b583a9b3
-  - edf6d4003fad
-  - 2bf63b38ee9b
   - cc36773a3681
+  - ec699520444c
+  - edf6d4003fad
+  - eb746fa6f514
+  - 0f5f4a208660
+  - 19f3b583a9b3
+  - 2bf63b38ee9b
   tool_panel_section_label: Nanopore
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: nanocompore_sampcomp
@@ -49,17 +49,17 @@ tools:
 - name: nanoplot
   owner: iuc
   revisions:
-  - 0f1c34698076
   - a3c4fe6f49ab
-  - 645159bcee2d
+  - 0f1c34698076
   - edbb6c5028f5
+  - 645159bcee2d
   tool_panel_section_label: Nanopore
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: nanopolish_eventalign
   owner: bgruening
   revisions:
-  - 85a394edc247
   - d219b6d8158a
+  - 85a394edc247
   tool_panel_section_label: Nanopore
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: nanopolish_methylation
@@ -72,8 +72,8 @@ tools:
 - name: nanopolish_polya
   owner: bgruening
   revisions:
-  - d376944466bf
   - 449e9aeded2d
+  - d376944466bf
   tool_panel_section_label: Nanopore
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: nanopolish_variants
@@ -86,16 +86,16 @@ tools:
 - name: porechop
   owner: iuc
   revisions:
-  - 5f76b20953e5
-  - 93d623d9979c
   - 543cbeef3949
+  - 93d623d9979c
+  - 5f76b20953e5
   tool_panel_section_label: Nanopore
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: poretools_events
   owner: iuc
   revisions:
-  - 28d7819c312f
   - 1d835c691480
+  - 28d7819c312f
   tool_panel_section_label: Nanopore
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: poretools_extract
@@ -107,8 +107,8 @@ tools:
 - name: poretools_hist
   owner: iuc
   revisions:
-  - 5a82eb9e1b89
   - 47936349f3e9
+  - 5a82eb9e1b89
   tool_panel_section_label: Nanopore
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: poretools_nucdist
@@ -133,8 +133,8 @@ tools:
 - name: poretools_qualpos
   owner: iuc
   revisions:
-  - 4fe6b96aff72
   - 2e22ebec211a
+  - 4fe6b96aff72
   tool_panel_section_label: Nanopore
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: poretools_squiggle
@@ -171,8 +171,8 @@ tools:
 - name: poretools_yield_plot
   owner: iuc
   revisions:
-  - 64a83664b814
   - ca22d8497db5
+  - 64a83664b814
   tool_panel_section_label: Nanopore
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: pycoqc
