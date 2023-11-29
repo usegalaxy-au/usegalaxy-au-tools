@@ -8,42 +8,42 @@ tools:
 - name: medaka_consensus_pipeline
   owner: iuc
   revisions:
-  - fc8804320156
   - 79e9a869f40e
-  - 72b5e9dda577
   - 0e9e7fcdd543
+  - 72b5e9dda577
   - a7228a7ea146
   - cb34f00cc10f
+  - fc8804320156
   tool_panel_section_label: Nanopore
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: medaka_consensus
   owner: iuc
   revisions:
-  - 18505fe2bdb1
-  - d6cddc06aeae
-  - fa11aa8103b2
   - db25ec99c3ea
+  - d6cddc06aeae
+  - 18505fe2bdb1
+  - fa11aa8103b2
   tool_panel_section_label: Nanopore
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: medaka_variant
   owner: iuc
   revisions:
+  - 43815fa60f3a
+  - 222669c4afb6
   - 2bf63b38ee9b
   - edf6d4003fad
-  - 222669c4afb6
-  - ec699520444c
-  - eb746fa6f514
-  - 43815fa60f3a
   - 19f3b583a9b3
-  - cc36773a3681
   - 0f5f4a208660
+  - cc36773a3681
+  - eb746fa6f514
+  - ec699520444c
   tool_panel_section_label: Nanopore
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: nanocompore_sampcomp
   owner: iuc
   revisions:
-  - b833eff63b10
   - c0fb573c1e8d
+  - b833eff63b10
   tool_panel_section_label: Nanopore
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: nanofilt
@@ -55,9 +55,9 @@ tools:
 - name: nanoplot
   owner: iuc
   revisions:
-  - a3c4fe6f49ab
-  - edbb6c5028f5
   - 645159bcee2d
+  - edbb6c5028f5
+  - a3c4fe6f49ab
   - 0f1c34698076
   tool_panel_section_label: Nanopore
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -92,9 +92,9 @@ tools:
 - name: porechop
   owner: iuc
   revisions:
+  - 543cbeef3949
   - 93d623d9979c
   - 5f76b20953e5
-  - 543cbeef3949
   tool_panel_section_label: Nanopore
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: poretools_events
@@ -113,8 +113,8 @@ tools:
 - name: poretools_hist
   owner: iuc
   revisions:
-  - 47936349f3e9
   - 5a82eb9e1b89
+  - 47936349f3e9
   tool_panel_section_label: Nanopore
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: poretools_nucdist
@@ -146,8 +146,8 @@ tools:
 - name: poretools_squiggle
   owner: iuc
   revisions:
-  - 34553d0caa5e
   - ce8af9373061
+  - 34553d0caa5e
   tool_panel_section_label: Nanopore
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: poretools_stats
