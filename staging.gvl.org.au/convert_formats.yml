@@ -8,37 +8,37 @@ tools:
 - name: biom_add_metadata
   owner: iuc
   revisions:
-  - 5e1240a87bcb
-  - 4a6ee918c13a
-  - a3b86937ead6
-  - 367b1ed91207
-  - dad9da48a09a
-  - e3cbd2287f63
-  - f3a19509108a
   - 0b3c3ad92827
+  - 4a6ee918c13a
+  - dad9da48a09a
   - 6ef0b5664c69
+  - a3b86937ead6
+  - f3a19509108a
+  - 367b1ed91207
+  - e3cbd2287f63
+  - 5e1240a87bcb
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: biom_convert
   owner: iuc
   revisions:
-  - 584008e574b2
-  - 54ccb7e1f49a
-  - e525f9ffb9ac
-  - 33c99804a32f
   - 72ed72122deb
-  - bd46669113b9
-  - 1b5fc03380d4
-  - 501c21cce614
-  - e177a8ea0bf1
   - a4db66553a61
+  - e177a8ea0bf1
+  - 54ccb7e1f49a
+  - 33c99804a32f
+  - 584008e574b2
+  - 501c21cce614
+  - bd46669113b9
+  - e525f9ffb9ac
+  - 1b5fc03380d4
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: bp_genbank2gff3
   owner: iuc
   revisions:
-  - a0d092f27fdf
   - 11c3eb512633
+  - a0d092f27fdf
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: compress_file
@@ -50,23 +50,23 @@ tools:
 - name: fasta_to_tabular
   owner: devteam
   revisions:
-  - 7e801ab2b70e
   - e7ed3c310b74
+  - 7e801ab2b70e
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastq_to_fasta
   owner: devteam
   revisions:
+  - 186b8d913e6c
   - 8979c288aefb
   - 77b41c89d856
-  - 186b8d913e6c
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastq_to_tabular
   owner: devteam
   revisions:
-  - 614a63f14adf
   - 4b347702c4aa
+  - 614a63f14adf
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fml_gff3togtf
@@ -78,8 +78,8 @@ tools:
 - name: gfa_to_fa
   owner: iuc
   revisions:
-  - 8e9d604e92f4
   - e33c82b63727
+  - 8e9d604e92f4
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: gffcompare_to_bed
@@ -92,8 +92,8 @@ tools:
   owner: devteam
   revisions:
   - 4dea02886337
-  - 154d00cbbf2d
   - 3e436657dcd0
+  - 154d00cbbf2d
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: gtftobed12
@@ -125,18 +125,18 @@ tools:
 - name: tabular_to_fastq
   owner: devteam
   revisions:
-  - 2dcfbbf9071a
   - 68f57cc8fad0
+  - 2dcfbbf9071a
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: thermo_raw_file_converter
   owner: galaxyp
   revisions:
-  - 92ac8e086317
-  - 26c6706bfb07
-  - 63769c4217a7
   - 19e45916daf9
   - b9b385097f13
+  - 26c6706bfb07
+  - 63769c4217a7
+  - 92ac8e086317
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: vcf2maf
