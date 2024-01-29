@@ -1,0 +1,133 @@
+tools:
+- name: transit_hmm
+  owner: iuc
+  tool_panel_section_label: Annotation
+- name: transit_resampling
+  owner: iuc
+  tool_panel_section_label: Annotation
+- name: transit_tn5gaps
+  owner: iuc
+  tool_panel_section_label: Annotation
+- name: samtools_bam_to_cram
+  owner: iuc
+  tool_panel_section_label: Convert Formats
+- name: ucsc_twobittofa
+  owner: iuc
+  tool_panel_section_label: Convert Formats
+- name: ucsc_wigtobigwig
+  owner: iuc
+  tool_panel_section_label: Convert Formats
+- name: ucsc_fatovcf
+  owner: iuc
+  tool_panel_section_label: Convert Formats
+- name: umi_tools_group
+  owner: iuc
+  tool_panel_section_label: FASTA/FASTQ
+- name: umi_tools_whitelist
+  owner: iuc
+  tool_panel_section_label: FASTA/FASTQ
+- name: ggplot2_histogram
+  owner: iuc
+  tool_panel_section_label: Graph/Display Data
+- name: ggplot2_pca
+  owner: iuc
+  tool_panel_section_label: Graph/Display Data
+- name: ggplot2_violin
+  owner: iuc
+  tool_panel_section_label: Graph/Display Data
+- name: humann_associate
+  owner: iuc
+  tool_panel_section_label: Metagenomic Analysis
+- name: humann_barplot
+  owner: iuc
+  tool_panel_section_label: Metagenomic Analysis
+- name: humann_join_tables
+  owner: iuc
+  tool_panel_section_label: Metagenomic Analysis
+- name: humann_reduce_table
+  owner: iuc
+  tool_panel_section_label: Metagenomic Analysis
+- name: humann_rna_dna_norm
+  owner: iuc
+  tool_panel_section_label: Metagenomic Analysis
+- name: humann_split_table
+  owner: iuc
+  tool_panel_section_label: Metagenomic Analysis
+- name: humann_strain_profiler
+  owner: iuc
+  tool_panel_section_label: Metagenomic Analysis
+- name: kraken_taxonomy_report
+  owner: iuc
+  tool_panel_section_label: Metagenomic Analysis
+- name: krakentools_alpha_diversity
+  owner: iuc
+  tool_panel_section_label: Metagenomic Analysis
+- name: krakentools_beta_diversity
+  owner: iuc
+  tool_panel_section_label: Metagenomic Analysis
+- name: krakentools_combine_kreports
+  owner: iuc
+  tool_panel_section_label: Metagenomic Analysis
+- name: krakentools_kreport2mpa
+  owner: iuc
+  tool_panel_section_label: Metagenomic Analysis
+- name: medaka_variant_pipeline
+  owner: iuc
+  tool_panel_section_label: Nanopore
+- name: qualimap_counts
+  owner: iuc
+  tool_panel_section_label: RNA-seq
+- name: trinity_stats
+  owner: iuc
+  tool_panel_section_label: RNA-seq
+- name: trinity_super_transcripts
+  owner: iuc
+  tool_panel_section_label: RNA-seq
+- name: bamtools_split_mapped
+  owner: iuc
+  tool_panel_section_label: SAM/BAM
+- name: bamtools_split_paired
+  owner: iuc
+  tool_panel_section_label: SAM/BAM
+- name: bamtools_split_ref
+  owner: iuc
+  tool_panel_section_label: SAM/BAM
+- name: bamtools_split_tag
+  owner: iuc
+  tool_panel_section_label: SAM/BAM
+- name: samtools_ampliconclip
+  owner: iuc
+  tool_panel_section_label: SAM/BAM
+- name: samtools_coverage
+  owner: iuc
+  tool_panel_section_label: SAM/BAM
+- name: samtools_depth
+  owner: iuc
+  tool_panel_section_label: SAM/BAM
+- name: samtools_fixmate
+  owner: iuc
+  tool_panel_section_label: SAM/BAM
+- name: samtools_markdup
+  owner: iuc
+  tool_panel_section_label: SAM/BAM
+- name: anndata_export
+  owner: iuc
+  tool_panel_section_label: Single-cell
+- name: raceid_filtnormconf
+  owner: iuc
+  tool_panel_section_label: Single-cell
+- name: scater_normalize
+  owner: iuc
+  tool_panel_section_label: Single-cell
+- name: scater_plot_exprs_freq
+  owner: iuc
+  tool_panel_section_label: Single-cell
+- name: scater_plot_tsne
+  owner: iuc
+  tool_panel_section_label: Single-cell
+- name: varscan_copynumber
+  owner: iuc
+  tool_panel_section_label: Variant Calling
+- name: varscan_mpileup
+  owner: iuc
+  tool_panel_section_label: Variant Calling
