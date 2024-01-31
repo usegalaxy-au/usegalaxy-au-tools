@@ -8,30 +8,30 @@ tools:
 - name: biom_add_metadata
   owner: iuc
   revisions:
-  - dad9da48a09a
-  - 0b3c3ad92827
-  - 4a6ee918c13a
-  - 6ef0b5664c69
-  - 367b1ed91207
   - 5e1240a87bcb
-  - f3a19509108a
-  - a3b86937ead6
+  - 367b1ed91207
+  - 0b3c3ad92827
+  - dad9da48a09a
+  - 6ef0b5664c69
   - e3cbd2287f63
+  - 4a6ee918c13a
+  - a3b86937ead6
+  - f3a19509108a
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: biom_convert
   owner: iuc
   revisions:
-  - 72ed72122deb
-  - 33c99804a32f
-  - e177a8ea0bf1
-  - a4db66553a61
-  - 54ccb7e1f49a
-  - 584008e574b2
-  - 501c21cce614
-  - 1b5fc03380d4
   - e525f9ffb9ac
   - bd46669113b9
+  - 584008e574b2
+  - e177a8ea0bf1
+  - a4db66553a61
+  - 1b5fc03380d4
+  - 501c21cce614
+  - 54ccb7e1f49a
+  - 72ed72122deb
+  - 33c99804a32f
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: bp_genbank2gff3
@@ -57,9 +57,9 @@ tools:
 - name: fastq_to_fasta
   owner: devteam
   revisions:
+  - 8979c288aefb
   - 186b8d913e6c
   - 77b41c89d856
-  - 8979c288aefb
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastq_to_tabular
@@ -78,8 +78,8 @@ tools:
 - name: gfa_to_fa
   owner: iuc
   revisions:
-  - 8e9d604e92f4
   - e33c82b63727
+  - 8e9d604e92f4
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: gffcompare_to_bed
@@ -91,9 +91,9 @@ tools:
 - name: gffread
   owner: devteam
   revisions:
+  - 3e436657dcd0
   - 154d00cbbf2d
   - 4dea02886337
-  - 3e436657dcd0
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: gtftobed12
@@ -111,8 +111,8 @@ tools:
 - name: mz_to_sqlite
   owner: galaxyp
   revisions:
-  - f5c632894818
   - 8190f6083c0d
+  - f5c632894818
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: tabular_to_fasta
@@ -134,9 +134,9 @@ tools:
   revisions:
   - 63769c4217a7
   - 26c6706bfb07
-  - b9b385097f13
   - 19e45916daf9
   - 92ac8e086317
+  - b9b385097f13
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: vcf2maf
