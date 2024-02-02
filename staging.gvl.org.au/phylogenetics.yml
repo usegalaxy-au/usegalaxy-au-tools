@@ -11,6 +11,12 @@ tools:
   - b2eb9231d95d
   tool_panel_section_label: Phylogenetics
   tool_shed_url: toolshed.g2.bx.psu.edu
+- name: clipkit
+  owner: padge
+  revisions:
+  - '770695339600'
+  tool_panel_section_label: Phylogenetics
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: gblocks
   owner: earlhaminst
   revisions:
@@ -33,61 +39,61 @@ tools:
 - name: hyphy_absrel
   owner: iuc
   revisions:
-  - '841557158611'
-  - 5a7c56a5cc08
-  - cce7b18495e4
-  - f73435dc282b
-  - d7c7ef3353fe
-  - 8834daeb9892
-  - 107d3ba7024a
-  - a6619171428e
-  - f04a1264e2a2
-  - d033ffc1c161
-  - c78f3d7dd1db
-  - 3b8b5bde0bd9
-  - 3f59ebfbfe3d
   - 6a457678efcb
   - 81e66674859e
+  - 3f59ebfbfe3d
+  - d033ffc1c161
+  - 8834daeb9892
+  - 5a7c56a5cc08
   - b89cac5156ec
+  - f04a1264e2a2
+  - 3b8b5bde0bd9
+  - cce7b18495e4
+  - 107d3ba7024a
+  - f73435dc282b
+  - '841557158611'
+  - c78f3d7dd1db
   - 26de3a7b1cb9
+  - d7c7ef3353fe
+  - a6619171428e
   tool_panel_section_label: Phylogenetics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: hyphy_gard
   owner: iuc
   revisions:
-  - a185b079b095
-  - 5fcd1ece3a6e
   - df47d4845b62
-  - 5b777002c2de
-  - 02b8758214b0
-  - b0af57c1a968
-  - 6223845127ea
-  - e75442c7f4da
-  - 3b96e92e8ec3
-  - 659517798cc4
+  - 5fcd1ece3a6e
   - aa8cc71438cf
-  - 4755f52427c4
-  - 7a2092844346
   - 6283babe736e
   - 88c4aa435ded
+  - 02b8758214b0
+  - 5b777002c2de
+  - 6223845127ea
+  - 7a2092844346
+  - e75442c7f4da
+  - 3b96e92e8ec3
+  - b0af57c1a968
+  - 4755f52427c4
+  - a185b079b095
   - 6a726db04d4b
+  - 659517798cc4
   tool_panel_section_label: Phylogenetics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: iqtree
   owner: iuc
   revisions:
   - 524d31add34a
-  - d1c340a5664b
-  - 9b892d7f82cc
   - b8476e82ac20
+  - d1c340a5664b
   - f97743d52b87
+  - 9b892d7f82cc
   tool_panel_section_label: Phylogenetics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: nextclade
   owner: iuc
   revisions:
-  - 9e10ba792be2
   - 128ba8da994f
+  - 9e10ba792be2
   - feb40665d7cd
   - daddf188c13f
   tool_panel_section_label: Phylogenetics
@@ -101,53 +107,53 @@ tools:
 - name: pangolin
   owner: iuc
   revisions:
-  - 36912871ccdc
-  - 2fa9d4f1b48f
-  - 42a174224817
-  - 7bb8726be37c
+  - 14ae456b8cc5
+  - 03ed9524dcd1
+  - 9d61d3fa046c
   - ca337cce3888
-  - 3a43c3982401
+  - 437e28791761
+  - 81804a978fc0
+  - 42a174224817
+  - 2fa9d4f1b48f
+  - a2099fb98cdb
   - b7e297c2ede6
   - b6abccb1f25b
-  - ca0d8cf80567
-  - 437e28791761
-  - a2099fb98cdb
   - 5f8727ff21e7
-  - abf6dbe8c9d7
-  - 14ae456b8cc5
-  - 83a69484cb87
+  - ca0d8cf80567
   - 2f1019071464
-  - 9d61d3fa046c
-  - 81804a978fc0
-  - 03ed9524dcd1
+  - abf6dbe8c9d7
+  - 7bb8726be37c
+  - 36912871ccdc
+  - 3a43c3982401
+  - 83a69484cb87
   tool_panel_section_label: Phylogenetics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: phyml
   owner: iuc
   revisions:
-  - 7157a5b34a68
   - 2bf47d57ebb5
+  - 7157a5b34a68
   tool_panel_section_label: Phylogenetics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: raxml
   owner: iuc
   revisions:
-  - 29ff6a849eac
   - 73a469f7dc96
-  - ba29b5e2a4be
+  - 29ff6a849eac
+  - a4b71be30c3c
   - b1e68bbe4cef
   - ea30d3089354
-  - a4b71be30c3c
+  - ba29b5e2a4be
   tool_panel_section_label: Phylogenetics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: roary
   owner: iuc
   revisions:
-  - dbe2b2204555
-  - f1ccc8a6eb05
-  - 809e42326fc2
   - 91887494eb97
-  - e88a7de55d6e
+  - f1ccc8a6eb05
   - 15ac71df11a0
+  - dbe2b2204555
+  - e88a7de55d6e
+  - 809e42326fc2
   tool_panel_section_label: Phylogenetics
   tool_shed_url: toolshed.g2.bx.psu.edu
