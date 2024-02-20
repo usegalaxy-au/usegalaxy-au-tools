@@ -8,30 +8,30 @@ tools:
 - name: biom_add_metadata
   owner: iuc
   revisions:
-  - 6ef0b5664c69
-  - a3b86937ead6
-  - 367b1ed91207
-  - 0b3c3ad92827
   - 5e1240a87bcb
-  - e3cbd2287f63
+  - 6ef0b5664c69
   - 3b6f97e7094c
+  - 0b3c3ad92827
+  - e3cbd2287f63
+  - 367b1ed91207
   - 4a6ee918c13a
+  - a3b86937ead6
   - f3a19509108a
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: biom_convert
   owner: iuc
   revisions:
-  - 584008e574b2
   - 501c21cce614
-  - e177a8ea0bf1
-  - 1b5fc03380d4
-  - 091bb5922a82
   - 33c99804a32f
-  - bd46669113b9
-  - 54ccb7e1f49a
-  - e525f9ffb9ac
+  - 1b5fc03380d4
   - 72ed72122deb
+  - e525f9ffb9ac
+  - 091bb5922a82
+  - bd46669113b9
+  - e177a8ea0bf1
+  - 584008e574b2
+  - 54ccb7e1f49a
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: bp_genbank2gff3
@@ -71,8 +71,8 @@ tools:
 - name: gfa_to_fa
   owner: iuc
   revisions:
-  - e33c82b63727
   - 8e9d604e92f4
+  - e33c82b63727
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: gffcompare_to_bed
@@ -104,8 +104,14 @@ tools:
 - name: mz_to_sqlite
   owner: galaxyp
   revisions:
-  - 8190f6083c0d
   - f5c632894818
+  - 8190f6083c0d
+  tool_panel_section_label: Convert Formats
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: samtools_bam_to_cram
+  owner: iuc
+  revisions:
+  - b9ea85dfaf45
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: tabular_to_fasta
@@ -117,18 +123,18 @@ tools:
 - name: tabular_to_fastq
   owner: devteam
   revisions:
-  - 2dcfbbf9071a
   - 68f57cc8fad0
+  - 2dcfbbf9071a
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: thermo_raw_file_converter
   owner: galaxyp
   revisions:
-  - b9b385097f13
   - 92ac8e086317
-  - 63769c4217a7
-  - 26c6706bfb07
   - 19e45916daf9
+  - 26c6706bfb07
+  - 63769c4217a7
+  - b9b385097f13
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: ucsc_twobittofa
