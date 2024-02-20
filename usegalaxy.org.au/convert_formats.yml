@@ -8,30 +8,30 @@ tools:
 - name: biom_add_metadata
   owner: iuc
   revisions:
-  - 3b6f97e7094c
   - 0b3c3ad92827
-  - f3a19509108a
+  - 4a6ee918c13a
   - 367b1ed91207
+  - f3a19509108a
   - e3cbd2287f63
   - 6ef0b5664c69
-  - 5e1240a87bcb
+  - 3b6f97e7094c
   - a3b86937ead6
-  - 4a6ee918c13a
+  - 5e1240a87bcb
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: biom_convert
   owner: iuc
   revisions:
-  - bd46669113b9
   - 501c21cce614
+  - 584008e574b2
+  - 091bb5922a82
+  - 72ed72122deb
+  - e177a8ea0bf1
+  - 33c99804a32f
+  - bd46669113b9
   - e525f9ffb9ac
   - 1b5fc03380d4
-  - e177a8ea0bf1
-  - 091bb5922a82
-  - 33c99804a32f
-  - 584008e574b2
   - 54ccb7e1f49a
-  - 72ed72122deb
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: bp_genbank2gff3
@@ -49,16 +49,16 @@ tools:
 - name: fasta_to_tabular
   owner: devteam
   revisions:
-  - e7ed3c310b74
   - 7e801ab2b70e
+  - e7ed3c310b74
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastq_to_fasta
   owner: devteam
   revisions:
-  - 186b8d913e6c
-  - 8979c288aefb
   - 77b41c89d856
+  - 8979c288aefb
+  - 186b8d913e6c
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastq_to_tabular
@@ -85,8 +85,8 @@ tools:
   owner: devteam
   revisions:
   - 154d00cbbf2d
-  - 3e436657dcd0
   - 4dea02886337
+  - 3e436657dcd0
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: gtftobed12
@@ -123,18 +123,18 @@ tools:
 - name: tabular_to_fastq
   owner: devteam
   revisions:
-  - 2dcfbbf9071a
   - 68f57cc8fad0
+  - 2dcfbbf9071a
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: thermo_raw_file_converter
   owner: galaxyp
   revisions:
   - b9b385097f13
-  - 26c6706bfb07
+  - 63769c4217a7
   - 19e45916daf9
   - 92ac8e086317
-  - 63769c4217a7
+  - 26c6706bfb07
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: ucsc_twobittofa
