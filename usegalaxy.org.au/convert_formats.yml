@@ -9,13 +9,13 @@ tools:
   owner: iuc
   revisions:
   - a3b86937ead6
-  - 0b3c3ad92827
-  - 5e1240a87bcb
-  - e3cbd2287f63
   - 6ef0b5664c69
+  - 0b3c3ad92827
+  - 367b1ed91207
   - 3b6f97e7094c
   - 4a6ee918c13a
-  - 367b1ed91207
+  - e3cbd2287f63
+  - 5e1240a87bcb
   - f3a19509108a
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -23,15 +23,15 @@ tools:
   owner: iuc
   revisions:
   - 1b5fc03380d4
-  - 33c99804a32f
-  - 54ccb7e1f49a
-  - 091bb5922a82
-  - bd46669113b9
-  - 584008e574b2
-  - 501c21cce614
-  - e525f9ffb9ac
   - e177a8ea0bf1
+  - bd46669113b9
   - 72ed72122deb
+  - 54ccb7e1f49a
+  - 33c99804a32f
+  - 501c21cce614
+  - 584008e574b2
+  - 091bb5922a82
+  - e525f9ffb9ac
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: bp_genbank2gff3
@@ -56,9 +56,9 @@ tools:
 - name: fastq_to_fasta
   owner: devteam
   revisions:
-  - 186b8d913e6c
   - 77b41c89d856
   - 8979c288aefb
+  - 186b8d913e6c
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastq_to_tabular
@@ -104,8 +104,8 @@ tools:
 - name: mz_to_sqlite
   owner: galaxyp
   revisions:
-  - f5c632894818
   - 8190f6083c0d
+  - f5c632894818
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: samtools_bam_to_cram
@@ -130,11 +130,11 @@ tools:
 - name: thermo_raw_file_converter
   owner: galaxyp
   revisions:
-  - 63769c4217a7
-  - b9b385097f13
-  - 26c6706bfb07
   - 92ac8e086317
   - 19e45916daf9
+  - b9b385097f13
+  - 26c6706bfb07
+  - 63769c4217a7
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: ucsc_twobittofa
