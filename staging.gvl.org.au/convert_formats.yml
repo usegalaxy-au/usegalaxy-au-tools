@@ -8,30 +8,30 @@ tools:
 - name: biom_add_metadata
   owner: iuc
   revisions:
-  - 0b3c3ad92827
-  - 5e1240a87bcb
-  - 3b6f97e7094c
   - 4a6ee918c13a
   - f3a19509108a
+  - 0b3c3ad92827
+  - 3b6f97e7094c
+  - a3b86937ead6
   - e3cbd2287f63
   - 6ef0b5664c69
+  - 5e1240a87bcb
   - 367b1ed91207
-  - a3b86937ead6
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: biom_convert
   owner: iuc
   revisions:
-  - 33c99804a32f
-  - e177a8ea0bf1
   - e525f9ffb9ac
-  - 1b5fc03380d4
   - 091bb5922a82
-  - 54ccb7e1f49a
-  - 584008e574b2
-  - 72ed72122deb
   - bd46669113b9
+  - 72ed72122deb
+  - 54ccb7e1f49a
+  - 1b5fc03380d4
   - 501c21cce614
+  - e177a8ea0bf1
+  - 584008e574b2
+  - 33c99804a32f
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: bp_genbank2gff3
@@ -57,16 +57,16 @@ tools:
 - name: fastq_to_fasta
   owner: devteam
   revisions:
-  - 77b41c89d856
-  - 8979c288aefb
   - 186b8d913e6c
+  - 8979c288aefb
+  - 77b41c89d856
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastq_to_tabular
   owner: devteam
   revisions:
-  - 4b347702c4aa
   - 614a63f14adf
+  - 4b347702c4aa
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fml_gff3togtf
@@ -78,8 +78,8 @@ tools:
 - name: gfa_to_fa
   owner: iuc
   revisions:
-  - e33c82b63727
   - 8e9d604e92f4
+  - e33c82b63727
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: gffcompare_to_bed
@@ -91,9 +91,9 @@ tools:
 - name: gffread
   owner: devteam
   revisions:
+  - 154d00cbbf2d
   - 3e436657dcd0
   - 4dea02886337
-  - 154d00cbbf2d
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: gtftobed12
@@ -111,6 +111,7 @@ tools:
 - name: mz_to_sqlite
   owner: galaxyp
   revisions:
+  - 705821bf30d2
   - f5c632894818
   - 8190f6083c0d
   tool_panel_section_label: Convert Formats
@@ -124,8 +125,8 @@ tools:
 - name: tabular_to_fasta
   owner: devteam
   revisions:
-  - 0a7799698fe5
   - 0b4e36026794
+  - 0a7799698fe5
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: tabular_to_fastq
@@ -138,9 +139,9 @@ tools:
 - name: thermo_raw_file_converter
   owner: galaxyp
   revisions:
+  - 92ac8e086317
   - 63769c4217a7
   - b9b385097f13
-  - 92ac8e086317
   - 26c6706bfb07
   - 19e45916daf9
   tool_panel_section_label: Convert Formats
