@@ -8,8 +8,8 @@ tools:
 - name: add_value
   owner: devteam
   revisions:
-  - 745871c0b055
   - 023f0a3760b3
+  - 745871c0b055
   tool_panel_section_label: Text Manipulation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: collection_element_identifiers
@@ -21,20 +21,20 @@ tools:
 - name: column_arrange_by_header
   owner: bgruening
   revisions:
-  - f18f67056946
   - 6c6d26ff01ff
+  - f18f67056946
   tool_panel_section_label: Text Manipulation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: column_maker
   owner: devteam
   revisions:
-  - 626658afe4cb
   - 6e8d94597139
-  - 02026300aa45
-  - 6595517c2dd8
+  - 626658afe4cb
+  - 464b9305180e
   - 13b6f0007d9e
   - be25c075ed54
-  - 464b9305180e
+  - 02026300aa45
+  - 6595517c2dd8
   - 9cd341095afd
   tool_panel_section_label: Text Manipulation
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -47,8 +47,8 @@ tools:
 - name: concatenate_multiple_datasets
   owner: artbio
   revisions:
-  - 6f54dc6b37da
   - 3a4694d4354f
+  - 6f54dc6b37da
   tool_panel_section_label: Text Manipulation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: concatenate_multiple_datasets
@@ -72,10 +72,10 @@ tools:
 - name: filter_tabular
   owner: iuc
   revisions:
+  - 9cc411a62277
+  - 34d29339abab
   - 557ec8d7087d
   - 37cde8134c6a
-  - 34d29339abab
-  - 9cc411a62277
   tool_panel_section_label: Text Manipulation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: gff3_rebase
@@ -100,19 +100,19 @@ tools:
   owner: devteam
   revisions:
   - f2aac0c5c60d
-  - dd40b1e9eebe
   - ae7843d06f8f
+  - dd40b1e9eebe
   tool_panel_section_label: Text Manipulation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: query_tabular
   owner: iuc
   revisions:
-  - 2e8f945f7285
-  - cf34c344508d
   - 33d61c89fb8d
+  - 3a6b78c39dca
   - 623f3eb7aa48
   - 1ea4e668bf73
-  - 3a6b78c39dca
+  - cf34c344508d
+  - 2e8f945f7285
   - 83069b38aa85
   tool_panel_section_label: Text Manipulation
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -120,8 +120,8 @@ tools:
   owner: galaxyp
   revisions:
   - 399da6b5ec21
-  - 503bcd6ebe4b
   - ae8c4b2488e7
+  - 503bcd6ebe4b
   tool_panel_section_label: Text Manipulation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: replace_column_by_key_value_file
@@ -133,9 +133,9 @@ tools:
 - name: sqlite_to_tabular
   owner: iuc
   revisions:
+  - b722161a845a
   - bce29ec10b78
   - f768f6183386
-  - b722161a845a
   tool_panel_section_label: Text Manipulation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: table_compute
@@ -150,11 +150,11 @@ tools:
   revisions:
   - 12615d397df7
   - 9ff72e942410
-  - d698c222f354
   - 0a8c6b61f0f4
   - a6f147a050a2
-  - 74a8bef53a00
-  - ddf54b12c295
   - f46f0e4f75c4
+  - d698c222f354
+  - ddf54b12c295
+  - 74a8bef53a00
   tool_panel_section_label: Text Manipulation
   tool_shed_url: toolshed.g2.bx.psu.edu
