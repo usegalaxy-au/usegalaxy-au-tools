@@ -34,9 +34,9 @@ tools:
 - name: data_manager_bowtie2_index_builder
   owner: devteam
   revisions:
-  - 1586b111d2a3
   - 83da94c0e4a6
   - 9dd107db92c2
+  - 1586b111d2a3
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_build_bracken_database
@@ -48,17 +48,17 @@ tools:
 - name: data_manager_build_kraken2_database
   owner: iuc
   revisions:
-  - e4b4837f06f5
   - 2f27f3b86827
-  - ed1518ce2237
   - 19b6a2f0dbe2
+  - ed1518ce2237
+  - e4b4837f06f5
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_bwa_mem_index_builder
   owner: devteam
   revisions:
-  - 46066df8813d
   - 9e993022c762
+  - 46066df8813d
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_bwameth_index_builder
@@ -85,29 +85,29 @@ tools:
 - name: data_manager_diamond_database_builder
   owner: bgruening
   revisions:
-  - 4a08b7b76b78
   - 5a0d0bee4f8d
+  - 4a08b7b76b78
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_eggnog_mapper_abspath
   owner: galaxyp
   revisions:
-  - fcb8bdd124f4
   - 81a286e4c5a2
+  - fcb8bdd124f4
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_fetch_busco
   owner: iuc
   revisions:
-  - 2b4526fdf7fb
   - 15b97817550a
+  - 2b4526fdf7fb
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_fetch_genome_dbkeys_all_fasta
   owner: devteam
   revisions:
-  - 4d3eff1bc421
   - b1bc53e9bbc5
+  - 4d3eff1bc421
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_funannotate
@@ -119,17 +119,17 @@ tools:
 - name: data_manager_gatk_picard_index_builder
   owner: devteam
   revisions:
-  - 9a40272f56d0
   - 6287d0ee459e
+  - 9a40272f56d0
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_gemini_database_downloader
   owner: iuc
   revisions:
-  - b4b2b284230a
-  - 27a6a256cd23
   - 172815da3d41
   - 52b6a4d98009
+  - 27a6a256cd23
+  - b4b2b284230a
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_gtdbtk_database_installer
@@ -154,9 +154,9 @@ tools:
 - name: data_manager_humann_database_downloader
   owner: iuc
   revisions:
+  - 19bbd19b74b3
   - fea85c467896
   - 87febc68b45b
-  - 19bbd19b74b3
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_interproscan
@@ -187,9 +187,9 @@ tools:
 - name: data_manager_metaphlan_database_downloader
   owner: iuc
   revisions:
-  - 0cb27ea69dc1
   - 5fe20c915fa6
   - 4ba60cb14cb0
+  - 0cb27ea69dc1
   - 9c43baa60906
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -202,18 +202,18 @@ tools:
 - name: data_manager_mothur_toolsuite
   owner: iuc
   revisions:
-  - 0db22932bc39
-  - 9d09724f2bf1
   - aec831b54a5b
+  - 9d09724f2bf1
+  - 0db22932bc39
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_pangolearn
   owner: iuc
   revisions:
-  - 29c738066906
   - ed7a967cb11b
-  - df30a2f1db55
   - 6e24e79d3d69
+  - df30a2f1db55
+  - 29c738066906
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_pharokka
@@ -225,9 +225,9 @@ tools:
 - name: data_manager_sam_fasta_index_builder
   owner: devteam
   revisions:
-  - ad90c2da4f38
-  - 1865e693d8b2
   - 3e4d45aca422
+  - 1865e693d8b2
+  - ad90c2da4f38
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_snpeff
@@ -254,8 +254,8 @@ tools:
 - name: data_manager_twobit_builder
   owner: devteam
   revisions:
-  - 94a50db37d1a
   - 9946bc39c834
+  - 94a50db37d1a
   - 625fd9476402
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -755,8 +755,8 @@ tools:
 - name: rdata_xcms_datatypes
   owner: lecorguille
   revisions:
-  - 544f6d2329ac
   - d64562a4ebb3
+  - 544f6d2329ac
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: rsem_datatypes

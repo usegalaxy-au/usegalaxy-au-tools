@@ -8,39 +8,39 @@ tools:
 - name: biom_add_metadata
   owner: iuc
   revisions:
-  - e3cbd2287f63
-  - a3b86937ead6
-  - 5e1240a87bcb
-  - 367b1ed91207
+  - f3a19509108a
   - 3b6f97e7094c
-  - 6ef0b5664c69
   - 4a6ee918c13a
   - ab9350a8ab4d
-  - f3a19509108a
+  - 5e1240a87bcb
   - 0b3c3ad92827
+  - 6ef0b5664c69
+  - e3cbd2287f63
+  - 367b1ed91207
+  - a3b86937ead6
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: biom_convert
   owner: iuc
   revisions:
   - 501c21cce614
-  - 1b5fc03380d4
-  - 584008e574b2
-  - e525f9ffb9ac
-  - 33c99804a32f
-  - 091bb5922a82
-  - d4d4e9febf5c
-  - 54ccb7e1f49a
-  - bd46669113b9
   - e177a8ea0bf1
+  - 584008e574b2
+  - 091bb5922a82
+  - bd46669113b9
+  - 54ccb7e1f49a
+  - 1b5fc03380d4
+  - 33c99804a32f
+  - d4d4e9febf5c
+  - e525f9ffb9ac
   - 72ed72122deb
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: bp_genbank2gff3
   owner: iuc
   revisions:
-  - a0d092f27fdf
   - 11c3eb512633
+  - a0d092f27fdf
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: compress_file
@@ -59,9 +59,9 @@ tools:
 - name: fastq_to_fasta
   owner: devteam
   revisions:
+  - 77b41c89d856
   - 8979c288aefb
   - 186b8d913e6c
-  - 77b41c89d856
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastq_to_tabular
@@ -93,9 +93,9 @@ tools:
 - name: gffread
   owner: devteam
   revisions:
+  - 4dea02886337
   - 154d00cbbf2d
   - 3e436657dcd0
-  - 4dea02886337
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: gtftobed12
