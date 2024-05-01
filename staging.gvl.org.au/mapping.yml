@@ -2,16 +2,16 @@ tools:
 - name: bowtie2
   owner: devteam
   revisions:
-  - 3ba8d4563129
-  - 17062a0decb7
-  - a6d65b0c67af
-  - cd659e8cc5fa
-  - 749c918495f7
   - f6877ad76b00
-  - 0d4acadabb04
-  - 937aa69e715f
   - 03e9b2fbc005
+  - 749c918495f7
+  - 3ba8d4563129
+  - a6d65b0c67af
+  - 937aa69e715f
   - 017aba02828d
+  - 0d4acadabb04
+  - cd659e8cc5fa
+  - 17062a0decb7
   tool_panel_section_label: Mapping
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: bowtie_wrappers
@@ -30,11 +30,11 @@ tools:
 - name: bwa
   owner: devteam
   revisions:
-  - 3fe632431b68
-  - e188dc7a68e6
-  - 64f11cf59c6e
-  - 53646aaaafef
   - dfd8b7f78c37
+  - 53646aaaafef
+  - e188dc7a68e6
+  - 3fe632431b68
+  - 64f11cf59c6e
   tool_panel_section_label: Mapping
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: lastz_paired_reads
@@ -46,44 +46,44 @@ tools:
 - name: lastz
   owner: devteam
   revisions:
+  - 60afcc2c1d05
+  - 3e1ea2facca6
   - 37b497aa133f
   - 2ff111fac1d7
-  - 3e1ea2facca6
   - e7f19d6a9af8
-  - 60afcc2c1d05
   tool_panel_section_label: Mapping
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: minimap2
   owner: iuc
   revisions:
-  - 11a0d50a54e6
-  - f54f5baedfdd
-  - 6b1e195506a3
   - be1d967337e4
+  - 6b1e195506a3
+  - 11a0d50a54e6
+  - 77b2770508f6
+  - 3f4d6399997b
+  - 53c0b7a1a0c3
   - b3eab4b67562
   - 09b53c1d4ab1
-  - 53c0b7a1a0c3
-  - 3f4d6399997b
-  - 8c6cd2650d1f
-  - 77b2770508f6
   - c0c2d0941de8
+  - 8c6cd2650d1f
+  - f54f5baedfdd
   - 037c6e54df11
   tool_panel_section_label: Mapping
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: rna_starsolo
   owner: iuc
   revisions:
-  - 5ef7ec16b04f
-  - 79b885ce78d7
   - ec9cbd6b9a49
-  - 00fbfac99d39
-  - e403d27e8f24
-  - 42ce70172b72
   - b8f5f6e87f5c
-  - 1cd2511a396e
+  - 79b885ce78d7
+  - 00fbfac99d39
   - 178bdbdb6d24
   - 9ee34ba73ebf
   - 13022c3d3076
+  - e403d27e8f24
+  - 1cd2511a396e
+  - 5ef7ec16b04f
+  - 42ce70172b72
   tool_panel_section_label: Mapping
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: star_fusion
