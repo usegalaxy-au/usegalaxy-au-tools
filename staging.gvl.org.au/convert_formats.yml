@@ -8,32 +8,32 @@ tools:
 - name: biom_add_metadata
   owner: iuc
   revisions:
-  - 4a6ee918c13a
-  - a3b86937ead6
-  - ab9350a8ab4d
-  - 5e1240a87bcb
-  - 367b1ed91207
   - 3b6f97e7094c
-  - 0b3c3ad92827
-  - f3a19509108a
   - e3cbd2287f63
+  - f3a19509108a
+  - 367b1ed91207
+  - 5e1240a87bcb
+  - 4a6ee918c13a
+  - ab9350a8ab4d
   - 6ef0b5664c69
+  - 0b3c3ad92827
+  - a3b86937ead6
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: biom_convert
   owner: iuc
   revisions:
-  - 54ccb7e1f49a
-  - 501c21cce614
-  - 72ed72122deb
-  - bd46669113b9
-  - 33c99804a32f
-  - e177a8ea0bf1
-  - d4d4e9febf5c
-  - 1b5fc03380d4
   - 584008e574b2
   - 091bb5922a82
+  - 1b5fc03380d4
+  - 33c99804a32f
+  - e177a8ea0bf1
+  - 501c21cce614
+  - 54ccb7e1f49a
+  - d4d4e9febf5c
+  - bd46669113b9
   - e525f9ffb9ac
+  - 72ed72122deb
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: bp_genbank2gff3
@@ -52,16 +52,16 @@ tools:
 - name: fasta_to_tabular
   owner: devteam
   revisions:
-  - e7ed3c310b74
   - 7e801ab2b70e
+  - e7ed3c310b74
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastq_to_fasta
   owner: devteam
   revisions:
+  - 186b8d913e6c
   - 77b41c89d856
   - 8979c288aefb
-  - 186b8d913e6c
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastq_to_tabular
@@ -80,8 +80,8 @@ tools:
 - name: gfa_to_fa
   owner: iuc
   revisions:
-  - e33c82b63727
   - 8e9d604e92f4
+  - e33c82b63727
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: gffcompare_to_bed
@@ -126,15 +126,15 @@ tools:
 - name: tabular_to_fasta
   owner: devteam
   revisions:
-  - 0b4e36026794
   - 0a7799698fe5
+  - 0b4e36026794
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: tabular_to_fastq
   owner: devteam
   revisions:
-  - 2dcfbbf9071a
   - 68f57cc8fad0
+  - 2dcfbbf9071a
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: thermo_raw_file_converter
@@ -142,8 +142,8 @@ tools:
   revisions:
   - b9b385097f13
   - 26c6706bfb07
-  - 92ac8e086317
   - 19e45916daf9
+  - 92ac8e086317
   - 63769c4217a7
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
