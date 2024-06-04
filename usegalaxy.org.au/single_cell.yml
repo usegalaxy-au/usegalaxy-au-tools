@@ -8,34 +8,34 @@ tools:
 - name: anndata_import
   owner: iuc
   revisions:
-  - cfc3f5a57dc6
-  - 93dd15e13e6a
-  - fb9e030ffae4
-  - 55e35e9203cf
   - 00712416fdaa
   - 32e547223c9e
+  - 55e35e9203cf
+  - 93dd15e13e6a
+  - cfc3f5a57dc6
+  - fb9e030ffae4
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: anndata_inspect
   owner: iuc
   revisions:
   - b9fac48532eb
-  - 038e32885fec
-  - 6f0d0c784f09
   - 39e945f0b2c1
   - ee98d611afc6
+  - 6f0d0c784f09
   - 688357ad5e61
+  - 038e32885fec
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: anndata_manipulate
   owner: iuc
   revisions:
-  - 43cb7b5a6fe7
-  - d4af736e7b83
-  - ed4996a16f7f
   - b85871dd69f9
-  - 3d748954434b
   - 9bd945a03d7b
+  - 3d748954434b
+  - 43cb7b5a6fe7
+  - ed4996a16f7f
+  - d4af736e7b83
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: anndata_ops
@@ -49,10 +49,10 @@ tools:
 - name: dropletutils
   owner: iuc
   revisions:
+  - 2c1200fba922
+  - cdf4443d5625
   - 8855361fcfc5
   - a9caad671439
-  - cdf4443d5625
-  - 2c1200fba922
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: music_compare
@@ -71,15 +71,15 @@ tools:
 - name: music_deconvolution
   owner: bgruening
   revisions:
-  - 56371b5a2da9
   - 2ba99a52bd44
+  - 56371b5a2da9
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: music_inspect_eset
   owner: bgruening
   revisions:
-  - 8c64a2da3869
   - 7705cc75ac18
+  - 8c64a2da3869
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: music_manipulate_eset
@@ -91,8 +91,8 @@ tools:
 - name: raceid_clustering
   owner: iuc
   revisions:
-  - f911a64454fb
   - 0bff0ee0683a
+  - f911a64454fb
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: raceid_filtnormconf
@@ -118,27 +118,27 @@ tools:
 - name: raceid_trajectory
   owner: iuc
   revisions:
-  - 2af7c5086a96
   - c92d0f9338c5
+  - 2af7c5086a96
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: scanpy_cluster_reduce_dimension
   owner: iuc
   revisions:
-  - 6f83f8fd381f
-  - 6acb08931836
   - b2df381a6004
-  - aaa5da8e73a9
+  - 6acb08931836
   - 77b91b9bdf52
+  - 6f83f8fd381f
+  - aaa5da8e73a9
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: scanpy_filter
   owner: iuc
   revisions:
-  - 3c86f71498bc
   - 277313130da5
-  - a03ff8633507
+  - 3c86f71498bc
   - b409c2486353
+  - a03ff8633507
   - a97abb8cd15b
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -146,41 +146,41 @@ tools:
   owner: iuc
   revisions:
   - 6bd82ed14acd
-  - 3081ff5c84a3
   - c5d3684f7c4c
-  - 5c3ebe2adc77
   - 5e9171dc8244
+  - 3081ff5c84a3
+  - 5c3ebe2adc77
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: scanpy_normalize
   owner: iuc
   revisions:
-  - a407e7f8bdc1
   - 3bcd5445cd7a
+  - a407e7f8bdc1
   - 94c19fb1281c
-  - ab55fe8030b6
   - 7b9fafe32c86
+  - ab55fe8030b6
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: scanpy_plot
   owner: iuc
   revisions:
-  - 9b0cdb8cf6be
-  - 6f5349dd5c49
+  - dbbe1ea8ecb1
   - 6adf98e782f3
   - aa0c474463c2
-  - dbbe1ea8ecb1
+  - 9b0cdb8cf6be
+  - 6f5349dd5c49
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: scanpy_remove_confounders
   owner: iuc
   revisions:
+  - d18e7a6e5cd4
+  - 73ab2ac53d06
   - 458e8f43a775
+  - bf2017df9837
   - f2f6c703da06
   - 215733a383f2
-  - 73ab2ac53d06
-  - d18e7a6e5cd4
-  - bf2017df9837
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: scater_create_qcmetric_ready_sce
@@ -194,9 +194,9 @@ tools:
 - name: scater_filter
   owner: iuc
   revisions:
-  - b7ea9f09c02f
-  - 652923ce664f
   - 7a365ec81b52
+  - 652923ce664f
+  - b7ea9f09c02f
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: scater_plot_dist_scatter
