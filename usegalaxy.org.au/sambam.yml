@@ -1,4 +1,21 @@
 tools:
+- name: bamtools_split_mapped
+  owner: iuc
+  revisions:
+  - 2ed961caae0a
+  - 6dbef7ea2253
+  - fa7b5520ae53
+  tool_panel_section_label: SAM/BAM
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: samtools_coverage
+  owner: iuc
+  revisions:
+  - 8a477224dfee
+  - 90f2dd176d80
+  - ae36fab06bc2
+  - c4ff13d2aab3
+  tool_panel_section_label: SAM/BAM
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: bam_to_sam
   owner: devteam
   revisions:
