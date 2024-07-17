@@ -15,8 +15,8 @@ tools:
 - name: cat_summarise
   owner: iuc
   revisions:
-  - a8216def322b
   - 7f1aaa1932d8
+  - a8216def322b
   tool_panel_section_label: Metagenomic Analysis
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: combine_metaphlan2_humann2
@@ -28,9 +28,9 @@ tools:
 - name: dada2_assigntaxonomyaddspecies
   owner: iuc
   revisions:
+  - 5b5a7af9fbb4
   - 63f86089423e
   - 76d3d2b10738
-  - 5b5a7af9fbb4
   - 7c2100246a2f
   tool_panel_section_label: Metagenomic Analysis
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -38,8 +38,8 @@ tools:
   owner: iuc
   revisions:
   - 84fd33a60b35
-  - 18a502a9d287
   - 1c35dadbe76f
+  - 18a502a9d287
   - 00f5005840fa
   - 96336c6a2bb7
   tool_panel_section_label: Metagenomic Analysis
@@ -47,81 +47,81 @@ tools:
 - name: dada2_filterandtrim
   owner: iuc
   revisions:
-  - a9f4a217dcd6
-  - addaf9d22850
-  - e8fba04706d3
   - 34e55239e68b
+  - a9f4a217dcd6
+  - e8fba04706d3
   - f732237754fc
+  - addaf9d22850
   tool_panel_section_label: Metagenomic Analysis
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: dada2_learnerrors
   owner: iuc
   revisions:
-  - 5fe3edf19b9c
   - 8c202e741d68
-  - 0776d824d896
   - 04c15826a0b8
   - 75403243703a
+  - 5fe3edf19b9c
+  - 0776d824d896
   tool_panel_section_label: Metagenomic Analysis
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: dada2_makesequencetable
   owner: iuc
   revisions:
-  - 8470de786d47
-  - 43c99742158b
   - e96bbb9e24ea
+  - 8470de786d47
   - 75c8945b0da2
+  - 43c99742158b
   - 1c9b3bcd4261
   tool_panel_section_label: Metagenomic Analysis
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: dada2_mergepairs
   owner: iuc
   revisions:
-  - 5c865a382933
-  - 1d75bd0595e2
-  - 84743da21318
-  - 306a40d4bb8f
   - 35176674168c
+  - 84743da21318
+  - 1d75bd0595e2
+  - 5c865a382933
+  - 306a40d4bb8f
   tool_panel_section_label: Metagenomic Analysis
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: dada2_plotcomplexity
   owner: iuc
   revisions:
-  - 78faebd0879c
-  - ac72310b038a
-  - 555ccac8a4c5
-  - 8daf4564ccda
   - 32c9ea835770
+  - ac72310b038a
+  - 8daf4564ccda
+  - 555ccac8a4c5
+  - 78faebd0879c
   tool_panel_section_label: Metagenomic Analysis
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: dada2_plotqualityprofile
   owner: iuc
   revisions:
+  - a58e4a43f49c
   - d60df8727f59
   - cae017b76acb
-  - f947b4bb5107
   - 7b8cb2b02978
-  - a58e4a43f49c
+  - f947b4bb5107
   tool_panel_section_label: Metagenomic Analysis
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: dada2_removebimeradenovo
   owner: iuc
   revisions:
-  - 1bc3657cd694
-  - 7136e9ab70db
-  - 7f3b59dee073
   - 073608a50ac3
+  - 1bc3657cd694
+  - 7f3b59dee073
+  - 7136e9ab70db
   - 04144473e59e
   tool_panel_section_label: Metagenomic Analysis
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: dada2_seqcounts
   owner: iuc
   revisions:
-  - 19299bb1c6af
-  - 0a1224c4b781
+  - 9058d8943303
   - a7817705348e
   - d943081510da
-  - 9058d8943303
+  - 0a1224c4b781
+  - 19299bb1c6af
   tool_panel_section_label: Metagenomic Analysis
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fasttree
@@ -136,9 +136,9 @@ tools:
   revisions:
   - f8f56dd6449f
   - 65d52c693b8e
+  - dbf1798c0dcc
   - a68b985913ab
   - c4db8c4de66f
-  - dbf1798c0dcc
   tool_panel_section_label: Metagenomic Analysis
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: hifiasm_meta
@@ -151,9 +151,9 @@ tools:
 - name: humann2_genefamilies_genus_level
   owner: iuc
   revisions:
+  - 654548ae1357
   - 6c84982ee6f7
   - 6d364c65c946
-  - 654548ae1357
   tool_panel_section_label: Metagenomic Analysis
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: humann2_join_tables
@@ -165,25 +165,25 @@ tools:
 - name: humann2_regroup_table
   owner: iuc
   revisions:
-  - bd7a9c6efb10
-  - e66ab198ec15
   - 6aad8ca3918b
+  - e66ab198ec15
+  - bd7a9c6efb10
   tool_panel_section_label: Metagenomic Analysis
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: humann2_renorm_table
   owner: iuc
   revisions:
-  - b084117133af
-  - d77397f09da1
   - c6676a890f50
+  - d77397f09da1
+  - b084117133af
   tool_panel_section_label: Metagenomic Analysis
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: humann2_unpack_pathways
   owner: iuc
   revisions:
   - 9704f1a3b32d
-  - 7f208f1eb64f
   - cad93abecac9
+  - 7f208f1eb64f
   tool_panel_section_label: Metagenomic Analysis
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: humann2
@@ -219,41 +219,41 @@ tools:
 - name: humann_regroup_table
   owner: iuc
   revisions:
+  - c409a495841f
   - 79706f10d680
   - e88b731dad59
   - 31c6d107e7a5
-  - c409a495841f
   tool_panel_section_label: Metagenomic Analysis
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: humann_rename_table
   owner: iuc
   revisions:
   - d24841f5c3d2
-  - 714d5a28cc5c
-  - 71ea608ddfa3
   - 094ad9c068af
+  - 71ea608ddfa3
   - 172920f67a84
+  - 714d5a28cc5c
   tool_panel_section_label: Metagenomic Analysis
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: humann_renorm_table
   owner: iuc
   revisions:
-  - d7e9a3c41657
   - a293a742194f
-  - 12fb63b5f63f
-  - 4137b492233e
   - a4d7148ccee4
+  - d7e9a3c41657
+  - 4137b492233e
+  - 12fb63b5f63f
   tool_panel_section_label: Metagenomic Analysis
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: humann_split_stratified_table
   owner: iuc
   revisions:
   - 6fcb8ac37a3e
-  - cf87759761eb
-  - 75bedfb2078b
+  - 64bc7acc22a9
   - 97f7bb0851e7
   - e2c71b852aba
-  - 64bc7acc22a9
+  - cf87759761eb
+  - 75bedfb2078b
   tool_panel_section_label: Metagenomic Analysis
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: humann_split_table
@@ -271,27 +271,27 @@ tools:
 - name: humann_unpack_pathways
   owner: iuc
   revisions:
-  - 4033827c76b8
-  - 2d35528d2141
-  - c82508e76ad1
-  - 080ea153677c
   - 5e5a999ffaa9
+  - 080ea153677c
+  - 2d35528d2141
+  - 4033827c76b8
+  - c82508e76ad1
   tool_panel_section_label: Metagenomic Analysis
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: humann
   owner: iuc
   revisions:
+  - 2cd76b089570
   - 6b7622dda516
   - fc6c328c292f
-  - 2cd76b089570
   - 95bf7479d53c
   tool_panel_section_label: Metagenomic Analysis
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: jellyfish
   owner: iuc
   revisions:
-  - 11658afb8c87
   - dcd30574a456
+  - 11658afb8c87
   tool_panel_section_label: Metagenomic Analysis
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: khmer_abundance_distribution_single
@@ -345,9 +345,9 @@ tools:
 - name: kraken2
   owner: iuc
   revisions:
-  - 328c607150ff
-  - 4a9da2b6c2e3
   - 20e2f64aa1fe
+  - 4a9da2b6c2e3
+  - 328c607150ff
   tool_panel_section_label: Metagenomic Analysis
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: kraken2tax
@@ -366,8 +366,8 @@ tools:
 - name: kraken_filter
   owner: devteam
   revisions:
-  - 5bee9adae474
   - 67236d921e83
+  - 5bee9adae474
   tool_panel_section_label: Metagenomic Analysis
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: kraken_report
@@ -393,8 +393,8 @@ tools:
 - name: kraken
   owner: devteam
   revisions:
-  - 8ba2174315aa
   - 766d5f63b0f4
+  - 8ba2174315aa
   tool_panel_section_label: Metagenomic Analysis
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: krakentools_alpha_diversity
@@ -456,19 +456,19 @@ tools:
   owner: iuc
   revisions:
   - 4fd3b5d8706b
-  - 7f5d7b0e9884
+  - 0270541aaf46
   - e073891b2afc
+  - 327d9f4cc95f
   - 27250f92a01a
   - 2cff76cf35c6
-  - 327d9f4cc95f
-  - 0270541aaf46
+  - 7f5d7b0e9884
   tool_panel_section_label: Metagenomic Analysis
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: metabat2
   owner: iuc
   revisions:
-  - 708abf08a626
   - 76bc4efa1aeb
+  - 708abf08a626
   - eb50e7eca3dc
   tool_panel_section_label: Metagenomic Analysis
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -535,29 +535,29 @@ tools:
 - name: metaphlan2krona
   owner: iuc
   revisions:
-  - fdbd63e92b01
   - ebb74774457e
+  - fdbd63e92b01
   tool_panel_section_label: Metagenomic Analysis
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: metaphlan
   owner: iuc
   revisions:
+  - 1a6cdf55390f
   - b89b0765695d
   - 6dee4abadccb
   - a16313517e55
-  - 2131d7dca455
-  - fd69c607b43f
-  - 1a6cdf55390f
   - 289b3807e80c
+  - 2131d7dca455
   - ff8f55893e7d
   - a92a632c4d9b
+  - fd69c607b43f
   tool_panel_section_label: Metagenomic Analysis
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: metawrapmg_binning
   owner: galaxy-australia
   revisions:
-  - 2a8bc1d26d06
   - e3a64a1d2a6e
+  - 2a8bc1d26d06
   tool_panel_section_label: Metagenomic Analysis
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: phyloseq_filter
@@ -661,12 +661,12 @@ tools:
 - name: staramr
   owner: nml
   revisions:
-  - be818ae858e4
-  - 141afacabcfa
-  - 4d83eccf5f81
-  - 2fd4d4c9c5c2
   - aeaa20b96ef2
+  - 4d83eccf5f81
+  - 141afacabcfa
+  - 2fd4d4c9c5c2
   - 4b9a8031ab74
+  - be818ae858e4
   - 3b22de20bd4b
   tool_panel_section_label: Metagenomic Analysis
   tool_shed_url: toolshed.g2.bx.psu.edu
