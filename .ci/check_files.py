@@ -179,7 +179,7 @@ def check_against_installed_tools(tool_list, tool_dir, url):
                 warning = 'Tool %s revision %s is already installed on %s' % (name, revision, url)
                 warnings.append(warning)
         if label_mismatch:
-            error += "Tool %s is already installed  in a different section '%s'" % (
+            error = "Tool %s is already installed  in a different section '%s'" % (
                 name, installed_tool["tool_panel_section_label"]
             )
             errors.append(error)
