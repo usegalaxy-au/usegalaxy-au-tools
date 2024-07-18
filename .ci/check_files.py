@@ -51,12 +51,14 @@ def main():
     loaded_files = yaml_check(files)   # load yaml and raise ParserError if yaml is incorrect
     key_check(loaded_files)
     tool_list = join_lists([x['yaml']['tools'] for x in loaded_files])
-    installable_errors = check_installable(tool_list)
-    installed_errors_staging = check_against_installed_tools(tool_list, staging_dir, staging_url)
-    installed_errors_production = check_against_installed_tools(tool_list, production_dir, production_url)
+    installable_warnings, installable_errors = check_installable(tool_list)
+    installed_warnings_staging, installed_errors_staging = check_against_installed_tools(tool_list, staging_dir, staging_url)
+    installed_warnings_production, installed_errors_production = check_against_installed_tools(tool_list, production_dir, production_url)
 
-    all_warnings = installed_errors_staging + installed_errors_production
-    all_errors = installable_errors
+    all_warnings = (
+        installed_warnings_staging + installed_errors_staging + installed_errors_production + installable_warnings
+    )
+    all_errors = installable_errors + installed_errors_production
     for warning in all_warnings:
         sys.stderr.write('Warning: %s\n' % warning)
     if all_errors:
@@ -119,6 +121,7 @@ def check_installable(tools):
     # Go through all tool_shed_url values in request files and run get_ordered_installable_revisions
     # to ascertain whether the specified revision is installable
     errors = []
+    warnings = []
     tools_by_shed = {}
     for tool in tools:
         if 'tool_shed_url' not in tool.keys():
@@ -146,32 +149,41 @@ def check_installable(tools):
                 raise Exception(e)
 
             if 'revisions' in tool.keys():  # Check that requested revisions are installable
+                # 18/07/24: Downgrade this to a warning. Galaxy will either install the next installable revision or skip because it's already there
                 for revision in tool['revisions']:
                     if revision not in installable_revisions:
-                        errors.append('%s revision %s is not installable' % (tool['name'], revision))
+                        warnings.append('%s revision %s is not installable' % (tool['name'], revision))
             else:
                 tool.update({'revisions': [installable_revisions[0]]})
-    return errors
+    return warnings, errors
 
 
 def check_against_installed_tools(tool_list, tool_dir, url):
     errors = []
+    warnings = []
     installed_tools = []
     for file in os.listdir(tool_dir):
         with open(tool_dir + '/' + file) as tool_yml:
             installed_tools += yaml.safe_load(tool_yml.read())['tools']
     for tool in tool_list:
+        label_mismatch = False
+        mismatched_labels = []
         name, owner = tool['name'], tool['owner']
         matching_installed_tools = [t for t in installed_tools if t['name'] == name and t['owner'] == owner]
         for installed_tool in matching_installed_tools:
             label_mismatch = installed_tool['tool_panel_section_label'] != tool['tool_panel_section_label']
+            if label_mismatch:
+                mismatched_labels.append(installed_tool["tool_panel_section_label"])
             matching_revisions = [rev for rev in tool['revisions'] if rev in installed_tool['revisions']]
             for revision in matching_revisions:
-                error = 'Tool %s revision %s is already installed on %s' % (name, revision, url)
-                if label_mismatch:
-                    error += ' in a different section \'%s\'' % installed_tool['tool_panel_section_label']
-                errors.append(error)
-    return errors
+                warning = 'Tool %s revision %s is already installed on %s' % (name, revision, url)
+                warnings.append(warning)
+        if label_mismatch:
+            error += "Tool %s is already installed  in a different section '%s'" % (
+                name, installed_tool["tool_panel_section_label"]
+            )
+            errors.append(error)
+    return warnings, errors
 
 
 if __name__ == "__main__":
