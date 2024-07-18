@@ -52,11 +52,10 @@ def main():
     key_check(loaded_files)
     tool_list = join_lists([x['yaml']['tools'] for x in loaded_files])
     installable_warnings, installable_errors = check_installable(tool_list)
-    installed_warnings_staging, installed_errors_staging = check_against_installed_tools(tool_list, staging_dir, staging_url)
     installed_warnings_production, installed_errors_production = check_against_installed_tools(tool_list, production_dir, production_url)
 
     all_warnings = (
-        installed_warnings_staging + installed_errors_staging + installed_errors_production + installable_warnings
+        installed_warnings_production + installable_warnings
     )
     all_errors = installable_errors + installed_errors_production
     for warning in all_warnings:
