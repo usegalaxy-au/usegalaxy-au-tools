@@ -348,12 +348,6 @@ tools:
   revisions:
   - 8f605643ccfd
   tool_panel_section_label: Single-cell
-- name: salmon_kallisto_mtx_to_10x
-  owner: ebi-gxa
-  revisions:
-  - 88f5a0a6a818
-  - e42c217a450f
-  tool_panel_section_label: Single-cell
 - name: dropletutils_read_10x
   owner: ebi-gxa
   revisions:
@@ -368,17 +362,6 @@ tools:
   owner: ebi-gxa
   revisions:
   - f62bc418173f
-  tool_panel_section_label: Single-cell
-- name: retrieve_scxa
-  owner: ebi-gxa
-  revisions:
-  - 72b6e1747e37
-  tool_panel_section_label: Single-cell
-- name: scanpy_regress_variable
-  owner: ebi-gxa
-  revisions:
-  - 0bab2ae44e7a
-  - 1200b55768ce
   tool_panel_section_label: Single-cell
 - name: music_construct_eset
   owner: bgruening
@@ -502,31 +485,6 @@ tools:
   revisions:
   - 95d79f1134f0
   tool_panel_section_label: Single-cell
-- name: scanpy_integrate_bbknn
-  owner: ebi-gxa
-  revisions:
-  - c9da9192eee5
-  tool_panel_section_label: Single-cell
-- name: scanpy_integrate_combat
-  owner: ebi-gxa
-  revisions:
-  - 3c47bc560688
-  tool_panel_section_label: Single-cell
-- name: scanpy_integrate_mnn
-  owner: ebi-gxa
-  revisions:
-  - ff6decc0f432
-  tool_panel_section_label: Single-cell
-- name: scanpy_plot_scrublet
-  owner: ebi-gxa
-  revisions:
-  - 6f5509cf3176
-  tool_panel_section_label: Single-cell
-- name: scanpy_multiplet_scrublet
-  owner: ebi-gxa
-  revisions:
-  - 53ce0e336840
-  tool_panel_section_label: Single-cell
 - name: seurat_run_umap
   owner: ebi-gxa
   revisions:
@@ -602,11 +560,6 @@ tools:
   revisions:
   - c72fa6cb8817
   tool_panel_section_label: Single-cell
-- name: hicexplorer_hicbuildmatrix
-  owner: bgruening
-  revisions:
-  - ed2cca6b5de4
-  tool_panel_section_label: Single-cell
 - name: hicexplorer_hiccomparematrices
   owner: bgruening
   revisions:
@@ -647,11 +600,6 @@ tools:
   revisions:
   - 6c5097f6d41e
   tool_panel_section_label: Single-cell
-- name: hicexplorer_hicfindtads
-  owner: bgruening
-  revisions:
-  - ec4b948dc6f0
-  tool_panel_section_label: Single-cell
 - name: hicexplorer_hichyperoptdetectloops
   owner: bgruening
   revisions:
@@ -677,20 +625,10 @@ tools:
   revisions:
   - 1511a8ebe906
   tool_panel_section_label: Single-cell
-- name: hicexplorer_hicmergematrixbins
-  owner: bgruening
-  revisions:
-  - 977dc15add20
-  tool_panel_section_label: Single-cell
 - name: hicexplorer_hicnormalize
   owner: bgruening
   revisions:
   - 6d042c96aceb
-  tool_panel_section_label: Single-cell
-- name: hicexplorer_hicpca
-  owner: bgruening
-  revisions:
-  - 77919cc3618e
   tool_panel_section_label: Single-cell
 - name: hicexplorer_hicplotaverageregions
   owner: bgruening
@@ -701,11 +639,6 @@ tools:
   owner: bgruening
   revisions:
   - 6326cd29c1c3
-  tool_panel_section_label: Single-cell
-- name: hicexplorer_hicplotmatrix
-  owner: bgruening
-  revisions:
-  - b63363075c2e
   tool_panel_section_label: Single-cell
 - name: hicexplorer_hicplotsvl
   owner: bgruening
