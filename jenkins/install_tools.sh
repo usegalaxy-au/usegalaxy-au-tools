@@ -114,6 +114,11 @@ install_tools() {
     } && {
       echo -e "\nStep (3): Installing $TOOL_NAME on production server";
       install_tool "PRODUCTION"
+    } && {
+      if [ ! $SKIP_PRODUCTION_TESTS = 1 ]
+        echo -e "\nStep (4): Testing $TOOL_NAME on production server";
+        test_tool "PRODUCTION"
+      fi
     }
   done
 
