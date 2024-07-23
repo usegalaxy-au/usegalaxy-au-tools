@@ -112,7 +112,6 @@ install_tools() {
         test_tool "STAGING"
       fi
     } && {
-      [ $SKIP_PRODUCTION_TESTS = 1 ] && SKIP_TESTS=1
       echo -e "\nStep (3): Installing $TOOL_NAME on production server";
       install_tool "PRODUCTION"
     } && {
@@ -261,7 +260,7 @@ install_tool() {
     fi
   elif [ $INSTALLATION_STATUS = "Installed" ]; then
     echo "$TOOL_NAME has been installed on $URL";
-    if [ $SKIP_TESTS = 1 ] && [ $SERVER = "PRODUCTION" ]; then
+    if { [ $SKIP_TESTS = 1 ] || [ $SKIP_PRODUCTION_TESTS = 1 ]; } && [ $SERVER = "PRODUCTION" ]; then
       unset STEP
       log_row "Installed"
       exit_installation 0 ""
@@ -284,7 +283,7 @@ test_tool() {
   PLANEMO_TEST_OUTPUT="${LOG_DIR}/planemo/${TOOL_NAME}@${INSTALLED_REVISION}_$(lower $SERVER).html"
 
   # If the tool was already installed or the SKIP_TESTS flag is set, skip tests
-  if [ $SKIP_TESTS = 1 ] || [ $INSTALLATION_STATUS = "Skipped" ]; then
+  if [ $SKIP_TESTS = 1 ] || [ $INSTALLATION_STATUS = "Skipped" ] || { [ $SKIP_PRODUCTION_TESTS = 1 ] && [ $SERVER = "PRODUCTION" ]; }; then
     echo "FORCE option specified or tool/version already installed. Skipping tests.";
     return 0
   fi
