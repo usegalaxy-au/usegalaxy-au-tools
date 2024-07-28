@@ -8,32 +8,32 @@ tools:
 - name: biom_add_metadata
   owner: iuc
   revisions:
-  - a3b86937ead6
   - ab9350a8ab4d
+  - 367b1ed91207
+  - a3b86937ead6
   - 5e1240a87bcb
-  - 4a6ee918c13a
-  - f3a19509108a
   - 0b3c3ad92827
   - e3cbd2287f63
-  - 367b1ed91207
+  - 4a6ee918c13a
   - 6ef0b5664c69
   - 3b6f97e7094c
+  - f3a19509108a
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: biom_convert
   owner: iuc
   revisions:
-  - d4d4e9febf5c
-  - bd46669113b9
   - e177a8ea0bf1
-  - e525f9ffb9ac
-  - 584008e574b2
-  - 54ccb7e1f49a
-  - 72ed72122deb
   - 1b5fc03380d4
-  - 501c21cce614
-  - 33c99804a32f
+  - d4d4e9febf5c
   - 091bb5922a82
+  - 584008e574b2
+  - 501c21cce614
+  - 72ed72122deb
+  - 33c99804a32f
+  - bd46669113b9
+  - 54ccb7e1f49a
+  - e525f9ffb9ac
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: bp_genbank2gff3
@@ -93,8 +93,8 @@ tools:
 - name: gffread
   owner: devteam
   revisions:
-  - 4dea02886337
   - 3e436657dcd0
+  - 4dea02886337
   - 154d00cbbf2d
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -113,8 +113,8 @@ tools:
 - name: mz_to_sqlite
   owner: galaxyp
   revisions:
-  - 705821bf30d2
   - f5c632894818
+  - 705821bf30d2
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: samtools_bam_to_cram
@@ -126,8 +126,8 @@ tools:
 - name: tabular_to_fasta
   owner: devteam
   revisions:
-  - 0b4e36026794
   - 0a7799698fe5
+  - 0b4e36026794
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: tabular_to_fastq
@@ -140,11 +140,11 @@ tools:
 - name: thermo_raw_file_converter
   owner: galaxyp
   revisions:
-  - b9b385097f13
+  - 26c6706bfb07
   - 19e45916daf9
   - 92ac8e086317
-  - 26c6706bfb07
   - 63769c4217a7
+  - b9b385097f13
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: ucsc_fatovcf
