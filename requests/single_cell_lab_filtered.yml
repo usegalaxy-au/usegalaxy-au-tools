@@ -1,0 +1,621 @@
+install_resolver_dependencies: false
+install_tool_dependencies: false
+tools:
+- name: modify_loom
+  owner: iuc
+  revisions:
+  - 4b0adaa31c95
+  - 59be31ac9dc3
+  - 7784821452ac
+  - e98619de2776
+  - eeab712b0b99
+  tool_panel_section_label: Single-cell
+- name: dropletutils
+  owner: iuc
+  revisions:
+  - 2c1200fba922
+  - a9caad671439
+  - cdf4443d5625
+  - cfe1e6c28d95
+  tool_panel_section_label: Single-cell
+- name: raceid_clustering
+  owner: iuc
+  revisions:
+  - 0bff0ee0683a
+  - 7e014059a88d
+  - a4b734cd253b
+  - c4f39bf4a068
+  tool_panel_section_label: Single-cell
+- name: raceid_filtnormconf
+  owner: iuc
+  revisions:
+  - 43c146e25a43
+  - 7608d5faee41
+  - b83fbc90161e
+  - d45f092caf24
+  tool_panel_section_label: Single-cell
+- name: raceid_inspectclusters
+  owner: iuc
+  revisions:
+  - 37a47c4fd84d
+  - 41f34e925bd5
+  - be4646256624
+  - f3eb2291da05
+  tool_panel_section_label: Single-cell
+- name: raceid_inspecttrajectory
+  owner: iuc
+  revisions:
+  - 3478133d0f6f
+  - 69018f285aa3
+  - a6821f856a1e
+  - c8434a623268
+  tool_panel_section_label: Single-cell
+- name: raceid_trajectory
+  owner: iuc
+  revisions:
+  - 2af7c5086a96
+  - 44b935f2271b
+  - 72979cac22b2
+  - e93b008c637a
+  tool_panel_section_label: Single-cell
+- name: alevin
+  owner: bgruening
+  revisions:
+  - 04b494623f8e
+  - c9944a2600f1
+  - e32b215b7c04
+  - e4c01dcece8b
+  - f2000bc73102
+  tool_panel_section_label: Single-cell
+- name: droplet_barcode_plot
+  owner: ebi-gxa
+  revisions:
+  - 8f605643ccfd
+  tool_panel_section_label: Single-cell
+- name: dropletutils_read_10x
+  owner: ebi-gxa
+  revisions:
+  - ca62f52e0d7f
+  tool_panel_section_label: Single-cell
+- name: dropletutils_empty_drops
+  owner: ebi-gxa
+  revisions:
+  - fa662ca7ae7f
+  tool_panel_section_label: Single-cell
+- name: sceasy_convert
+  owner: ebi-gxa
+  revisions:
+  - f62bc418173f
+  tool_panel_section_label: Single-cell
+- name: music_construct_eset
+  owner: bgruening
+  revisions:
+  - 282819d09a4f
+  - 2cfd0db49bbc
+  - 7ffaa0968da3
+  tool_panel_section_label: Single-cell
+- name: music_inspect_eset
+  owner: bgruening
+  revisions:
+  - 7705cc75ac18
+  - 8c64a2da3869
+  tool_panel_section_label: Single-cell
+- name: music_manipulate_eset
+  owner: bgruening
+  revisions:
+  - 22232092be53
+  tool_panel_section_label: Single-cell
+- name: music_deconvolution
+  owner: bgruening
+  revisions:
+  - 2ba99a52bd44
+  - 56371b5a2da9
+  tool_panel_section_label: Single-cell
+- name: music_compare
+  owner: bgruening
+  revisions:
+  - 4447ed460308
+  tool_panel_section_label: Single-cell
+- name: episcanpy_build_matrix
+  owner: iuc
+  revisions:
+  - 31a21ba2c5ea
+  tool_panel_section_label: Single-cell
+- name: episcanpy_preprocess
+  owner: iuc
+  revisions:
+  - 29f5f25b9935
+  tool_panel_section_label: Single-cell
+- name: sinto_barcode
+  owner: iuc
+  revisions:
+  - d1b34ac42b8f
+  tool_panel_section_label: Single-cell
+- name: sinto_fragments
+  owner: iuc
+  revisions:
+  - 29e6bfb2cf49
+  tool_panel_section_label: Single-cell
+- name: baredsc_1d
+  owner: iuc
+  revisions:
+  - 02b1fe7aed76
+  - 0e70b2dfe4be
+  - 4fff5a293013
+  - 769d815e4b0d
+  tool_panel_section_label: Single-cell
+- name: baredsc_2d
+  owner: iuc
+  revisions:
+  - 344c2af50552
+  - a90f8efe08b4
+  - aa4a6f0916b4
+  - c29e7bb492bf
+  tool_panel_section_label: Single-cell
+- name: baredsc_combine_1d
+  owner: iuc
+  revisions:
+  - 050cf43887d3
+  - 5b7c81b35b89
+  - b13d3e4c48e1
+  - c32347702e12
+  tool_panel_section_label: Single-cell
+- name: baredsc_combine_2d
+  owner: iuc
+  revisions:
+  - 02fc39c8610d
+  - 1d77986f9ddc
+  - 239193b96d72
+  - ae969fdb8442
+  tool_panel_section_label: Single-cell
+- name: cite_seq_count
+  owner: iuc
+  revisions:
+  - 3df3d1b51110
+  tool_panel_section_label: Single-cell
+- name: velocyto_cli
+  owner: iuc
+  revisions:
+  - 883c33ef3372
+  - 90e95e9ee190
+  tool_panel_section_label: Single-cell
+- name: gsc_scran_normalize
+  owner: artbio
+  revisions:
+  - 6864acb21714
+  tool_panel_section_label: Single-cell
+- name: snapatac2_clustering
+  owner: iuc
+  revisions:
+  - 8f8bef61fd0b
+  tool_panel_section_label: Single-cell
+- name: snapatac2_peaks_and_motif
+  owner: iuc
+  revisions:
+  - 588c811fdd48
+  tool_panel_section_label: Single-cell
+- name: snapatac2_plotting
+  owner: iuc
+  revisions:
+  - fecf9664c885
+  tool_panel_section_label: Single-cell
+- name: snapatac2_preprocessing
+  owner: iuc
+  revisions:
+  - cec3e76eaf05
+  tool_panel_section_label: Single-cell
+- name: seurat_plot
+  owner: ebi-gxa
+  revisions:
+  - 95d79f1134f0
+  tool_panel_section_label: Single-cell
+- name: seurat_run_umap
+  owner: ebi-gxa
+  revisions:
+  - b9424c715a0d
+  tool_panel_section_label: Single-cell
+- name: hicexplorer_chicaggregatestatistic
+  owner: bgruening
+  revisions:
+  - 01c37e54e86e
+  tool_panel_section_label: Single-cell
+- name: hicexplorer_chicdifferentialtest
+  owner: bgruening
+  revisions:
+  - 9d42a6133690
+  tool_panel_section_label: Single-cell
+- name: hicexplorer_chicexportdata
+  owner: bgruening
+  revisions:
+  - 23b8d6b8960c
+  tool_panel_section_label: Single-cell
+- name: hicexplorer_chicplotviewpoint
+  owner: bgruening
+  revisions:
+  - 013e53ccc7ac
+  tool_panel_section_label: Single-cell
+- name: hicexplorer_chicqualitycontrol
+  owner: bgruening
+  revisions:
+  - b892fa1fcaec
+  tool_panel_section_label: Single-cell
+- name: hicexplorer_chicsignificantinteractions
+  owner: bgruening
+  revisions:
+  - 640e0e45518a
+  tool_panel_section_label: Single-cell
+- name: hicexplorer_chicviewpoint
+  owner: bgruening
+  revisions:
+  - f881c94fb3b3
+  tool_panel_section_label: Single-cell
+- name: hicexplorer_chicqualitycontrol
+  owner: bgruening
+  revisions:
+  - b892fa1fcaec
+  tool_panel_section_label: Single-cell
+- name: hicexplorer_chicsignificantinteractions
+  owner: bgruening
+  revisions:
+  - 640e0e45518a
+  tool_panel_section_label: Single-cell
+- name: hicexplorer_chicviewpoint
+  owner: bgruening
+  revisions:
+  - f881c94fb3b3
+  tool_panel_section_label: Single-cell
+- name: hicexplorer_chicviewpointbackgroundmodel
+  owner: bgruening
+  revisions:
+  - 9d02f1819e81
+  tool_panel_section_label: Single-cell
+- name: hicexplorer_hicadjustmatrix
+  owner: bgruening
+  revisions:
+  - 2dccb6bb0add
+  tool_panel_section_label: Single-cell
+- name: hicexplorer_hicaggregatecontacts
+  owner: bgruening
+  revisions:
+  - f0216498a666
+  tool_panel_section_label: Single-cell
+- name: hicexplorer_hicaverageregions
+  owner: bgruening
+  revisions:
+  - c72fa6cb8817
+  tool_panel_section_label: Single-cell
+- name: hicexplorer_hiccomparematrices
+  owner: bgruening
+  revisions:
+  - 3ee5332bf57c
+  tool_panel_section_label: Single-cell
+- name: hicexplorer_hiccompartmentspolarization
+  owner: bgruening
+  revisions:
+  - 3a6a5381db36
+  tool_panel_section_label: Single-cell
+- name: hicexplorer_hicconvertformat
+  owner: bgruening
+  revisions:
+  - c0737631eea1
+  tool_panel_section_label: Single-cell
+- name: hicexplorer_hiccorrectmatrix
+  owner: bgruening
+  revisions:
+  - ea19190ce5e0
+  tool_panel_section_label: Single-cell
+- name: hicexplorer_hiccorrelate
+  owner: bgruening
+  revisions:
+  - 2b4d6a8dab36
+  tool_panel_section_label: Single-cell
+- name: hicexplorer_hicdetectloops
+  owner: bgruening
+  revisions:
+  - 0410b6aada45
+  tool_panel_section_label: Single-cell
+- name: hicexplorer_hicdifferentialtad
+  owner: bgruening
+  revisions:
+  - 77d8e0fd162a
+  tool_panel_section_label: Single-cell
+- name: hicexplorer_hicfindrestrictionsites
+  owner: bgruening
+  revisions:
+  - 6c5097f6d41e
+  tool_panel_section_label: Single-cell
+- name: hicexplorer_hichyperoptdetectloops
+  owner: bgruening
+  revisions:
+  - 7f7c6ead2d0d
+  tool_panel_section_label: Single-cell
+- name: hicexplorer_hicinfo
+  owner: bgruening
+  revisions:
+  - e4f8fceab96a
+  tool_panel_section_label: Single-cell
+- name: hicexplorer_hicinterintratad
+  owner: bgruening
+  revisions:
+  - 55b013e59018
+  tool_panel_section_label: Single-cell
+- name: hicexplorer_hicmergedomains
+  owner: bgruening
+  revisions:
+  - b376ef118807
+  tool_panel_section_label: Single-cell
+- name: hicexplorer_hicmergeloops
+  owner: bgruening
+  revisions:
+  - 1511a8ebe906
+  tool_panel_section_label: Single-cell
+- name: hicexplorer_hicnormalize
+  owner: bgruening
+  revisions:
+  - 6d042c96aceb
+  tool_panel_section_label: Single-cell
+- name: hicexplorer_hicplotaverageregions
+  owner: bgruening
+  revisions:
+  - ea5d67ec94ab
+  tool_panel_section_label: Single-cell
+- name: hicexplorer_hicplotdistvscounts
+  owner: bgruening
+  revisions:
+  - 6326cd29c1c3
+  tool_panel_section_label: Single-cell
+- name: hicexplorer_hicplotsvl
+  owner: bgruening
+  revisions:
+  - b4e780e93c91
+  tool_panel_section_label: Single-cell
+- name: hicexplorer_hicplotviewpoint
+  owner: bgruening
+  revisions:
+  - 58de3c7c8e89
+  tool_panel_section_label: Single-cell
+- name: hicexplorer_hicquickqc
+  owner: bgruening
+  revisions:
+  - 21d859ad4502
+  tool_panel_section_label: Single-cell
+- name: hicexplorer_hicsummatrices
+  owner: bgruening
+  revisions:
+  - 36dfa2825a59
+  tool_panel_section_label: Single-cell
+- name: hicexplorer_hictadclassifier
+  owner: bgruening
+  revisions:
+  - 887d203233e5
+  tool_panel_section_label: Single-cell
+- name: hicexplorer_hictraintadclassifier
+  owner: bgruening
+  revisions:
+  - 1ff19476c5a5
+  tool_panel_section_label: Single-cell
+- name: hicexplorer_hictransform
+  owner: bgruening
+  revisions:
+  - f36828ebdc54
+  tool_panel_section_label: Single-cell
+- name: hicexplorer_hicvalidatelocations
+  owner: bgruening
+  revisions:
+  - 1d201e8378b3
+  tool_panel_section_label: Single-cell
+- name: schicexplorer_schicadjustmatrix
+  owner: iuc
+  revisions:
+  - 2e773e00ceb0
+  tool_panel_section_label: Single-cell
+- name: schicexplorer_schiccluster
+  owner: iuc
+  revisions:
+  - baa3ae7ac42c
+  tool_panel_section_label: Single-cell
+- name: schicexplorer_schicclustercompartments
+  owner: iuc
+  revisions:
+  - 54b6cef88a7f
+  tool_panel_section_label: Single-cell
+- name: schicexplorer_schicclusterminhash
+  owner: iuc
+  revisions:
+  - 3048283ee054
+  tool_panel_section_label: Single-cell
+- name: schicexplorer_schicclustersvl
+  owner: iuc
+  revisions:
+  - e6ec3914a076
+  tool_panel_section_label: Single-cell
+- name: schicexplorer_schicconsensusmatrices
+  owner: iuc
+  revisions:
+  - 33b1c99cc709
+  tool_panel_section_label: Single-cell
+- name: schicexplorer_schiccorrectmatrices
+  owner: iuc
+  revisions:
+  - 295558e266d0
+  tool_panel_section_label: Single-cell
+- name: schicexplorer_schiccreatebulkmatrix
+  owner: iuc
+  revisions:
+  - acb3ed49109e
+  tool_panel_section_label: Single-cell
+- name: schicexplorer_schicdemultiplex
+  owner: iuc
+  revisions:
+  - f224fc9af1d3
+  tool_panel_section_label: Single-cell
+- name: schicexplorer_schicinfo
+  owner: iuc
+  revisions:
+  - 41b415c410e3
+  tool_panel_section_label: Single-cell
+- name: schicexplorer_schicmergematrixbins
+  owner: iuc
+  revisions:
+  - 47ef02546fe9
+  tool_panel_section_label: Single-cell
+- name: schicexplorer_schicmergetoscool
+  owner: iuc
+  revisions:
+  - 70a13d0a950f
+  tool_panel_section_label: Single-cell
+- name: schicexplorer_schicnormalize
+  owner: iuc
+  revisions:
+  - 66e96c3d3c5d
+  tool_panel_section_label: Single-cell
+- name: schicexplorer_schicplotclusterprofiles
+  owner: iuc
+  revisions:
+  - 65f2f5d29947
+  tool_panel_section_label: Single-cell
+- name: schicexplorer_schicplotconsensusmatrices
+  owner: iuc
+  revisions:
+  - 95b1216e1e70
+  tool_panel_section_label: Single-cell
+- name: schicexplorer_schicqualitycontrol
+  owner: iuc
+  revisions:
+  - 4a841ab67e3b
+  tool_panel_section_label: Single-cell
+- name: quantification
+  owner: perssond
+  revisions:
+  - 3a916c4e9f5f
+  tool_panel_section_label: Single-cell
+- name: cell_intensity_processing
+  owner: goeckslab
+  revisions:
+  - 5d541df02496
+  tool_panel_section_label: Single-cell
+- name: s3segmenter
+  owner: perssond
+  revisions:
+  - 96d0d969ebc9
+  tool_panel_section_label: Single-cell
+- name: slice_image
+  owner: imgteam
+  revisions:
+  - a72590196440
+  tool_panel_section_label: Single-cell
+- name: squidpy
+  owner: goeckslab
+  revisions:
+  - d30ef0613122
+  tool_panel_section_label: Single-cell
+- name: vitessce_spatial
+  owner: goeckslab
+  revisions:
+  - 7cc457aa78b1
+  tool_panel_section_label: Single-cell
+- name: run_sccaf
+  owner: ebi-gxa
+  revisions:
+  - 647d34f125bc
+  tool_panel_section_label: Single-cell
+- name: sccaf_asses
+  owner: ebi-gxa
+  revisions:
+  - 37a4c22f600b
+  tool_panel_section_label: Single-cell
+- name: sccaf_asses_merger
+  owner: ebi-gxa
+  revisions:
+  - 99d15ded4d5f
+  tool_panel_section_label: Single-cell
+- name: sccaf_regress_out
+  owner: ebi-gxa
+  revisions:
+  - 5ef0610e9f50
+  tool_panel_section_label: Single-cell
+- name: episcanpy_cluster_embed
+  owner: iuc
+  revisions:
+  - f4713992f23a
+  tool_panel_section_label: Single-cell
+- name: 10x_bamtofastq
+  owner: bgruening
+  revisions:
+  - f71fd828c126
+  tool_panel_section_label: Single-cell
+- name: scater_read_10x_results
+  owner: ebi-gxa
+  revisions:
+  - da3f394039b5
+  tool_panel_section_label: Single-cell
+- name: gsc_scran_normalize
+  owner: artbio
+  revisions:
+  - 6864acb21714
+  tool_panel_section_label: Single-cell
+- name: seurat_create_seurat_object
+  owner: ebi-gxa
+  revisions:
+  - f8865ae30723
+  tool_panel_section_label: Single-cell
+- name: seurat_export_cellbrowser
+  owner: ebi-gxa
+  revisions:
+  - 36221da750e8
+  tool_panel_section_label: Single-cell
+- name: seurat_filter_cells
+  owner: ebi-gxa
+  revisions:
+  - cd9f564bd63f
+  tool_panel_section_label: Single-cell
+- name: seurat_find_clusters
+  owner: ebi-gxa
+  revisions:
+  - d541e9e62beb
+  tool_panel_section_label: Single-cell
+- name: seurat_find_markers
+  owner: ebi-gxa
+  revisions:
+  - 07fc9f4841b3
+  tool_panel_section_label: Single-cell
+- name: seurat_find_neighbours
+  owner: ebi-gxa
+  revisions:
+  - ba897c57bdd9
+  tool_panel_section_label: Single-cell
+- name: seurat_find_variable_genes
+  owner: ebi-gxa
+  revisions:
+  - 948fc0276b4f
+  tool_panel_section_label: Single-cell
+- name: seurat_normalise_data
+  owner: ebi-gxa
+  revisions:
+  - 3f49bc9c9213
+  tool_panel_section_label: Single-cell
+- name: seurat_dim_plot
+  owner: ebi-gxa
+  revisions:
+  - 64174ac50d78
+  tool_panel_section_label: Single-cell
+- name: seurat_read10x
+  owner: ebi-gxa
+  revisions:
+  - f5db0e853f57
+  tool_panel_section_label: Single-cell
+- name: seurat_run_pca
+  owner: ebi-gxa
+  revisions:
+  - 8ded486b0014
+  tool_panel_section_label: Single-cell
+- name: seurat_run_tsne
+  owner: ebi-gxa
+  revisions:
+  - 0db997e4a81d
+  tool_panel_section_label: Single-cell
+- name: seurat_scale_data
+  owner: ebi-gxa
+  revisions:
+  - 5e9ba303f9e1
+  tool_panel_section_label: Single-cell
