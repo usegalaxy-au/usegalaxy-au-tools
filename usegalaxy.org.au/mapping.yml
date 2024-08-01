@@ -2,17 +2,17 @@ tools:
 - name: bowtie2
   owner: devteam
   revisions:
-  - 3ba8d4563129
-  - a6d65b0c67af
+  - 749c918495f7
   - f6877ad76b00
-  - 03e9b2fbc005
+  - a6d65b0c67af
   - 937aa69e715f
   - 0d4acadabb04
-  - d5ceb9f3c25b
   - 17062a0decb7
-  - 749c918495f7
   - cd659e8cc5fa
+  - 03e9b2fbc005
   - 017aba02828d
+  - 3ba8d4563129
+  - d5ceb9f3c25b
   tool_panel_section_label: Mapping
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: bowtie_wrappers
@@ -24,19 +24,19 @@ tools:
 - name: bwa_mem2
   owner: iuc
   revisions:
-  - b4a22d90cce9
   - bfaa0d22c2e4
+  - b4a22d90cce9
   tool_panel_section_label: Mapping
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: bwa
   owner: devteam
   revisions:
-  - 53646aaaafef
-  - dfd8b7f78c37
-  - e188dc7a68e6
-  - 2477830927ec
   - 3fe632431b68
   - 64f11cf59c6e
+  - 2477830927ec
+  - e188dc7a68e6
+  - dfd8b7f78c37
+  - 53646aaaafef
   tool_panel_section_label: Mapping
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: lastz_paired_reads
@@ -49,43 +49,43 @@ tools:
   owner: devteam
   revisions:
   - 2ff111fac1d7
-  - e7f19d6a9af8
+  - 3e1ea2facca6
   - 37b497aa133f
   - 60afcc2c1d05
-  - 3e1ea2facca6
+  - e7f19d6a9af8
   tool_panel_section_label: Mapping
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: minimap2
   owner: iuc
   revisions:
-  - 11a0d50a54e6
-  - f54f5baedfdd
-  - 037c6e54df11
-  - 77b2770508f6
-  - 09b53c1d4ab1
+  - be1d967337e4
   - 6b1e195506a3
   - b3eab4b67562
-  - be1d967337e4
   - 3f4d6399997b
+  - 77b2770508f6
+  - f54f5baedfdd
   - 8c6cd2650d1f
-  - c0c2d0941de8
   - 53c0b7a1a0c3
+  - 09b53c1d4ab1
+  - 11a0d50a54e6
+  - 037c6e54df11
+  - c0c2d0941de8
   tool_panel_section_label: Mapping
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: rna_starsolo
   owner: iuc
   revisions:
-  - ec9cbd6b9a49
-  - 9ee34ba73ebf
   - 1cd2511a396e
+  - b8f5f6e87f5c
+  - 00fbfac99d39
+  - ec9cbd6b9a49
+  - e403d27e8f24
+  - 79b885ce78d7
   - 178bdbdb6d24
   - 42ce70172b72
-  - e403d27e8f24
-  - 13022c3d3076
-  - 79b885ce78d7
   - 5ef7ec16b04f
-  - 00fbfac99d39
-  - b8f5f6e87f5c
+  - 13022c3d3076
+  - 9ee34ba73ebf
   tool_panel_section_label: Mapping
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: star_fusion
