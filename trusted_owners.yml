@@ -80,3 +80,19 @@ trusted_owners:
   - name: openms_proteinquantifier
   - name: openms_textexporter
   - name: openms_xtandemadapter
+- owner: recetox
+  skip_tools: # skip these tools as they are suites or tools that are more on the experimental side
+  - name: biotransformer
+  - name: filter_compounds
+  - name: matchms_similarity
+  - name: msp_merge
+  - name: msp_split
+  - name: rcx_tk
+  - name: rmassbank
+  - name: recetox_aplcms_unsupervised
+  - name: recetox_aplcms_hybrid
+  - name: recetox_aplcms_two_step_hybrid
+  - name: suite_matchms
+  - name: suite_qcxms
+  - name: suite_recetox_aplcms
+  - name: suite_spec2vec
