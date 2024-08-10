@@ -1,4 +1,10 @@
 tools:
+- name: assign_ri_from_comment
+  owner: recetox
+  revisions:
+  - 97ccdb1ba47c
+  tool_panel_section_label: Metabolomics
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: batchcorrection
   owner: melpetera
   revisions:
@@ -29,6 +35,12 @@ tools:
   - e7c5811ec12f
   tool_panel_section_label: Metabolomics
   tool_shed_url: toolshed.g2.bx.psu.edu
+- name: gc_derivatization
+  owner: recetox
+  revisions:
+  - 600b391827e3
+  tool_panel_section_label: Metabolomics
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: generic_filter
   owner: melpetera
   revisions:
@@ -41,10 +53,22 @@ tools:
   - 453fbe98925a
   tool_panel_section_label: Metabolomics
   tool_shed_url: toolshed.g2.bx.psu.edu
+- name: isolib
+  owner: recetox
+  revisions:
+  - 6b0fef8a77c0
+  tool_panel_section_label: Metabolomics
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: lcmsmatching
   owner: prog
   revisions:
   - f86fec07f392
+  tool_panel_section_label: Metabolomics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: matchms_add_key
+  owner: recetox
+  revisions:
+  - 1d10d32fa3b3
   tool_panel_section_label: Metabolomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: matchms_convert
@@ -83,10 +107,28 @@ tools:
   - 03bc9b7f40f6
   tool_panel_section_label: Metabolomics
   tool_shed_url: toolshed.g2.bx.psu.edu
+- name: matchms_metadata_merge
+  owner: recetox
+  revisions:
+  - 84ead993862c
+  tool_panel_section_label: Metabolomics
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: matchms_networking
   owner: recetox
   revisions:
   - 8147d93d372d
+  tool_panel_section_label: Metabolomics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: matchms_remove_key
+  owner: recetox
+  revisions:
+  - 9d1b01d3fedd
+  tool_panel_section_label: Metabolomics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: matchms_remove_spectra
+  owner: recetox
+  revisions:
+  - fbe335d27d25
   tool_panel_section_label: Metabolomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: matchms_similarity
@@ -105,6 +147,12 @@ tools:
   owner: recetox
   revisions:
   - 0cf68b536cd1
+  tool_panel_section_label: Metabolomics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: matchms_subsetting
+  owner: recetox
+  revisions:
+  - 6d2f2c565431
   tool_panel_section_label: Metabolomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: msmetaenhancer
@@ -215,10 +263,22 @@ tools:
   - d90187b0f247
   tool_panel_section_label: Metabolomics
   tool_shed_url: toolshed.g2.bx.psu.edu
+- name: recetox_msfinder
+  owner: recetox
+  revisions:
+  - e7eff0c9baa3
+  tool_panel_section_label: Metabolomics
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: recetox_xmsannotator_advanced
   owner: recetox
   revisions:
   - 2c6fa447f6a0
+  tool_panel_section_label: Metabolomics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: rename_annotated_feature
+  owner: recetox
+  revisions:
+  - 268fcec93d9c
   tool_panel_section_label: Metabolomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: riassigner
@@ -233,6 +293,18 @@ tools:
   - 0b28816c1c2c
   tool_panel_section_label: Metabolomics
   tool_shed_url: toolshed.g2.bx.psu.edu
+- name: spec2vec_similarity
+  owner: recetox
+  revisions:
+  - 721a4e666191
+  tool_panel_section_label: Metabolomics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: spec2vec_training
+  owner: recetox
+  revisions:
+  - 9d917de87cca
+  tool_panel_section_label: Metabolomics
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: tablemerge
   owner: melpetera
   revisions:
@@ -243,6 +315,12 @@ tools:
   owner: ethevenot
   revisions:
   - 5687435b182c
+  tool_panel_section_label: Metabolomics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: use_theoretical_mz_annotations
+  owner: recetox
+  revisions:
+  - e0cac9994a72
   tool_panel_section_label: Metabolomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: w4mclassfilter
@@ -261,6 +339,12 @@ tools:
   owner: eschen42
   revisions:
   - dcfaffec48c8
+  tool_panel_section_label: Metabolomics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: waveica
+  owner: recetox
+  revisions:
+  - bf32ae95a06f
   tool_panel_section_label: Metabolomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: withinvariation
@@ -297,6 +381,18 @@ tools:
   owner: lecorguille
   revisions:
   - 271c9d5f0d10
+  tool_panel_section_label: Metabolomics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: xcms_plot_eic
+  owner: workflow4metabolomics
+  revisions:
+  - 51015f22fcb7
+  tool_panel_section_label: Metabolomics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: xcms_plot_raw
+  owner: workflow4metabolomics
+  revisions:
+  - 520448a32548
   tool_panel_section_label: Metabolomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: xcms_retcor
