@@ -80,3 +80,6 @@ trusted_owners:
   - name: openms_proteinquantifier
   - name: openms_textexporter
   - name: openms_xtandemadapter
+- owner: recetox
+  skip_tools:
+  - name: matchms_similarity
