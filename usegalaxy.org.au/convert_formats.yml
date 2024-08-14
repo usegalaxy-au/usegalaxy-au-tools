@@ -14,32 +14,32 @@ tools:
 - name: biom_add_metadata
   owner: iuc
   revisions:
-  - 3b6f97e7094c
-  - 367b1ed91207
-  - e3cbd2287f63
-  - 4a6ee918c13a
-  - ab9350a8ab4d
-  - f3a19509108a
-  - 5e1240a87bcb
-  - a3b86937ead6
   - 0b3c3ad92827
+  - 367b1ed91207
+  - ab9350a8ab4d
+  - 3b6f97e7094c
+  - 4a6ee918c13a
+  - f3a19509108a
+  - e3cbd2287f63
+  - 5e1240a87bcb
   - 6ef0b5664c69
+  - a3b86937ead6
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: biom_convert
   owner: iuc
   revisions:
-  - d4d4e9febf5c
-  - 584008e574b2
-  - e525f9ffb9ac
+  - 1b5fc03380d4
   - bd46669113b9
   - 54ccb7e1f49a
   - e177a8ea0bf1
-  - 501c21cce614
+  - 584008e574b2
   - 72ed72122deb
-  - 1b5fc03380d4
   - 33c99804a32f
   - 091bb5922a82
+  - 501c21cce614
+  - e525f9ffb9ac
+  - d4d4e9febf5c
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: bp_genbank2gff3
@@ -72,15 +72,15 @@ tools:
 - name: fastq_to_tabular
   owner: devteam
   revisions:
-  - 4b347702c4aa
   - 614a63f14adf
+  - 4b347702c4aa
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: gfa_to_fa
   owner: iuc
   revisions:
-  - 8e9d604e92f4
   - e33c82b63727
+  - 8e9d604e92f4
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: gffcompare_to_bed
@@ -92,9 +92,9 @@ tools:
 - name: gffread
   owner: devteam
   revisions:
+  - 3e436657dcd0
   - 4dea02886337
   - 154d00cbbf2d
-  - 3e436657dcd0
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: gtftobed12
@@ -112,8 +112,8 @@ tools:
 - name: mz_to_sqlite
   owner: galaxyp
   revisions:
-  - f5c632894818
   - 705821bf30d2
+  - f5c632894818
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: samtools_bam_to_cram
@@ -139,10 +139,10 @@ tools:
   owner: galaxyp
   revisions:
   - b9b385097f13
-  - 19e45916daf9
-  - 63769c4217a7
   - 26c6706bfb07
+  - 19e45916daf9
   - 92ac8e086317
+  - 63769c4217a7
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: ucsc_fatovcf
