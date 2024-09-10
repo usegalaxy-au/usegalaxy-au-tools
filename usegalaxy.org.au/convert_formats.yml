@@ -15,28 +15,28 @@ tools:
 - name: biom_add_metadata
   owner: iuc
   revisions:
-  - 0b3c3ad92827
-  - 5e1240a87bcb
-  - ab9350a8ab4d
-  - 4a6ee918c13a
-  - e3cbd2287f63
-  - a3b86937ead6
-  - f3a19509108a
-  - 367b1ed91207
   - 6ef0b5664c69
+  - a3b86937ead6
+  - ab9350a8ab4d
   - 3b6f97e7094c
+  - e3cbd2287f63
+  - 0b3c3ad92827
+  - 367b1ed91207
+  - 4a6ee918c13a
+  - f3a19509108a
+  - 5e1240a87bcb
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: biom_convert
   owner: iuc
   revisions:
-  - 584008e574b2
+  - 501c21cce614
   - 54ccb7e1f49a
   - d4d4e9febf5c
   - 33c99804a32f
-  - 72ed72122deb
   - 1b5fc03380d4
-  - 501c21cce614
+  - 584008e574b2
+  - 72ed72122deb
   - e177a8ea0bf1
   - e525f9ffb9ac
   - 091bb5922a82
@@ -66,8 +66,8 @@ tools:
   owner: devteam
   revisions:
   - 77b41c89d856
-  - 8979c288aefb
   - 186b8d913e6c
+  - 8979c288aefb
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastq_to_tabular
@@ -80,8 +80,8 @@ tools:
 - name: gfa_to_fa
   owner: iuc
   revisions:
-  - 8e9d604e92f4
   - e33c82b63727
+  - 8e9d604e92f4
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: gffcompare_to_bed
@@ -93,9 +93,9 @@ tools:
 - name: gffread
   owner: devteam
   revisions:
+  - 4dea02886337
   - 154d00cbbf2d
   - 3e436657dcd0
-  - 4dea02886337
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: gtftobed12
@@ -113,8 +113,8 @@ tools:
 - name: mz_to_sqlite
   owner: galaxyp
   revisions:
-  - f5c632894818
   - 705821bf30d2
+  - f5c632894818
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: samtools_bam_to_cram
@@ -139,11 +139,11 @@ tools:
 - name: thermo_raw_file_converter
   owner: galaxyp
   revisions:
-  - b9b385097f13
   - 26c6706bfb07
+  - 63769c4217a7
+  - b9b385097f13
   - 19e45916daf9
   - 92ac8e086317
-  - 63769c4217a7
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: ucsc_fatovcf
