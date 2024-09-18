@@ -2,18 +2,24 @@ tools:
 - name: bbtools_bbduk
   owner: iuc
   revisions:
-  - 159b04e36791
-  - 7beb76ffbc0f
-  - d1f62024a08b
-  - 1c427e24fb79
   - a9c9d768b751
   - 0840ba83860c
   - 204a131e47db
+  - d1f62024a08b
+  - 1c427e24fb79
+  - 159b04e36791
+  - 7beb76ffbc0f
   tool_panel_section_label: BB Tools
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: bbtools_bbmerge
   owner: iuc
   revisions:
   - cab19c0452c4
+  tool_panel_section_label: BB Tools
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: bbtools_tadpole
+  owner: iuc
+  revisions:
+  - 0ddf147d1897
   tool_panel_section_label: BB Tools
   tool_shed_url: toolshed.g2.bx.psu.edu
