@@ -26,4 +26,4 @@ There is also an [example yaml file](requests/template/example.yml) in this repo
 
 ![Automated process for installing tools on Galaxy Australia](/images/installation_process_flow_chart.png)
 
-The log file [automated_tool_installation_log.tsv](automated_tool_installation_log.tsv) contains a record of tools installations.  Jenkins edits this file once the installation process is complete .
+The log file [automated_tool_installation_log.tsv](automated_tool_installation_log.tsv) contains a record of tools installations.  Jenkins edits this file once the installation process is complete.
