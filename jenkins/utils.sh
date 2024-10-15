@@ -14,7 +14,7 @@ activate_virtualenv() {
   CACHED_REQUIREMENTS_FILE="$VIRTUALENV/cached_requirements.yml"
 
   [ ! -d $VENV_PATH ] && mkdir $VENV_PATH
-  [ ! -d $VIRTUALENV ] && virtualenv -p python3 $VIRTUALENV
+  [ ! -d $VIRTUALENV ] && virtualenv -p python311 $VIRTUALENV
   # shellcheck source=../.venv3/bin/activate
   . "$VIRTUALENV/bin/activate"
 
