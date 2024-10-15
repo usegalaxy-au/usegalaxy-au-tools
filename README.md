@@ -1,4 +1,4 @@
-## usegalaxy-au-tools
+## usegalaxy-au-toolss
 
 This repository consists of .yml files or tools installed on Galaxy Australia and scripts for Travis CI and and Jenkins automated tool installation process.  The .yml files are maintained by the Jenkins process and should not be edited directly.
 
