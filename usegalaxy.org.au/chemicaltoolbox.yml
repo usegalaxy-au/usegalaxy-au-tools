@@ -9,11 +9,11 @@ tools:
   owner: chemteam
   revisions:
   - 710301bc46fa
+  - da6bd1975a71
   - 6ca543ec1bf8
   - 27ee142314a9
-  - da6bd1975a71
-  - 095ad4d096d1
   - c8cdde00b105
+  - 095ad4d096d1
   - f4230f116196
   tool_panel_section_label: ChemicalToolBox
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -130,39 +130,39 @@ tools:
 - name: gmx_editconf
   owner: chemteam
   revisions:
-  - 88076940fa94
+  - bfb65cb551d8
   - 79cfd9ead848
   - 3b8a9d5ced85
-  - bfb65cb551d8
+  - 88076940fa94
   - 0fac8e2afc13
   tool_panel_section_label: ChemicalToolBox
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: gmx_em
   owner: chemteam
   revisions:
-  - 715cd0e87781
-  - f5d979cb4b54
   - eb6564a60136
+  - f5d979cb4b54
+  - 715cd0e87781
   - 55918daa5651
-  - b46d4b4d995c
   - d532b7e5f64b
+  - b46d4b4d995c
   tool_panel_section_label: ChemicalToolBox
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: gmx_energy
   owner: chemteam
   revisions:
   - fdf2cc80adb5
+  - 5579659312e6
   - d2f955aea23a
   - f26afd1b7104
   - dae135dfd519
-  - 5579659312e6
   tool_panel_section_label: ChemicalToolBox
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: gmx_merge_topology_files
   owner: chemteam
   revisions:
-  - 319a28774da9
   - d1d0efda35c0
+  - 319a28774da9
   - bc31d02be922
   tool_panel_section_label: ChemicalToolBox
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -170,34 +170,34 @@ tools:
   owner: chemteam
   revisions:
   - 070e3ecc3fda
-  - ed736e6eee39
-  - cac1886249a2
   - 4da9ee404eab
+  - cac1886249a2
+  - ed736e6eee39
   - 2c349b027a01
   tool_panel_section_label: ChemicalToolBox
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: gmx_sim
   owner: chemteam
   revisions:
-  - f197e34c33a9
-  - 525ca7c8065f
   - 2e219a2d9327
-  - d1f803b5943c
-  - c0c9a5024177
-  - 807aa4c9293d
+  - f197e34c33a9
   - da8753545526
+  - c0c9a5024177
+  - d1f803b5943c
+  - 525ca7c8065f
+  - 807aa4c9293d
   - 73008ef1f487
   tool_panel_section_label: ChemicalToolBox
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: gmx_solvate
   owner: chemteam
   revisions:
-  - 7568ae18908a
-  - 1809414a9454
-  - 61094e01eff9
   - 27ea4e1a3f95
   - c4fbab8e03c5
+  - 1809414a9454
+  - 7568ae18908a
   - 2c8ed1b52bf7
+  - 61094e01eff9
   tool_panel_section_label: ChemicalToolBox
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: gmx_trj
@@ -209,18 +209,18 @@ tools:
 - name: md_converter
   owner: chemteam
   revisions:
-  - 730ef07b90ae
-  - d7ec25187599
-  - 79e8ab8f1e81
   - ba83f0923369
+  - d7ec25187599
+  - 730ef07b90ae
   - ccfbd956a2d3
+  - 79e8ab8f1e81
   tool_panel_section_label: ChemicalToolBox
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: mdanalysis_cosine_analysis
   owner: chemteam
   revisions:
-  - 48d6a6eb438b
   - 9a3a1f698fc6
+  - 48d6a6eb438b
   tool_panel_section_label: ChemicalToolBox
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: mdanalysis_dihedral
@@ -268,10 +268,10 @@ tools:
 - name: openbabel_compound_convert
   owner: bgruening
   revisions:
-  - e2c36f62e22f
-  - b59c91adeac1
   - e6011617c748
   - 4242b4d68e9c
+  - b59c91adeac1
+  - e2c36f62e22f
   tool_panel_section_label: ChemicalToolBox
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: openbabel_remduplicates
@@ -283,19 +283,21 @@ tools:
 - name: openbabel_svg_depiction
   owner: bgruening
   revisions:
-  - 75ee9c410951
   - 7672039a0bb0
+  - 75ee9c410951
   tool_panel_section_label: ChemicalToolBox
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qcxms_getres
   owner: recetox
   revisions:
+  - 89b026d67e9f
   - 53dce0e49af7
   tool_panel_section_label: ChemicalToolBox
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qcxms_neutral_run
   owner: recetox
   revisions:
+  - 33b7a99b6de3
   - 8f465c0c3b6c
   tool_panel_section_label: ChemicalToolBox
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -303,6 +305,7 @@ tools:
   owner: recetox
   revisions:
   - e97bfe7ac906
+  - 356f7916ac07
   tool_panel_section_label: ChemicalToolBox
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qed
@@ -351,8 +354,8 @@ tools:
   owner: bgruening
   revisions:
   - bf99565cec1f
-  - 85fad59f8168
   - d4c67ced6abc
+  - 85fad59f8168
   - 9b48456a96fe
   tool_panel_section_label: ChemicalToolBox
   tool_shed_url: toolshed.g2.bx.psu.edu
