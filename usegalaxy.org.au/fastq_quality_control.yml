@@ -2,38 +2,38 @@ tools:
 - name: fastq_quality_filter
   owner: devteam
   revisions:
-  - 7b4468117008
-  - ce9cd02d5b88
   - 64e9a6afdd0c
+  - ce9cd02d5b88
+  - 7b4468117008
   - e41385662e5e
   tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastq_trimmer_by_quality
   owner: devteam
   revisions:
-  - 8050e091e99b
   - c64d534a763c
+  - 8050e091e99b
   tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastqc
   owner: devteam
   revisions:
-  - e7b2202befea
-  - 2b0c9d9fc6ca
-  - 9da02be9c6cc
-  - 5ec9f6bceaee
-  - f2e8552cf1d0
-  - 3d0c7bdf12f5
   - 2c64fded1286
+  - 3d0c7bdf12f5
+  - 5ec9f6bceaee
   - ff9530579d1f
+  - 2b0c9d9fc6ca
+  - e7b2202befea
+  - 9da02be9c6cc
+  - f2e8552cf1d0
   tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastqe
   owner: iuc
   revisions:
-  - a252d8415583
   - 89d299153577
   - c1a33f603da2
+  - a252d8415583
   tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastx_nucleotides_distribution
@@ -47,39 +47,39 @@ tools:
 - name: fastx_quality_statistics
   owner: devteam
   revisions:
-  - 7306ec78632a
   - 59003d0543cd
   - cc0fd298cc17
+  - 7306ec78632a
   tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: filtlong
   owner: iuc
   revisions:
+  - a72af9de6bf5
   - 8880fb74ef56
   - 1f296803dfa3
-  - a72af9de6bf5
   tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: multiqc
   owner: iuc
   revisions:
-  - 3d93dd18d9f8
+  - 5e33b465d8d5
+  - 75c93c70d094
   - c1a4b5f3b432
-  - f7e2f1eb3a16
-  - b2f1f75d49c4
-  - abfd8a6544d7
   - 9a913cdee30e
   - 1c2db0054039
   - bf675f34b056
-  - 5e33b465d8d5
-  - 75c93c70d094
+  - b2f1f75d49c4
+  - abfd8a6544d7
+  - 3d93dd18d9f8
+  - f7e2f1eb3a16
   tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: trim_galore
   owner: bgruening
   revisions:
-  - 084bbd8ba7b8
   - cd7e644cae1d
+  - 084bbd8ba7b8
   - 949f01671246
   tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: toolshed.g2.bx.psu.edu
