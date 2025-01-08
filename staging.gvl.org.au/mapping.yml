@@ -2,17 +2,17 @@ tools:
 - name: bowtie2
   owner: devteam
   revisions:
-  - 749c918495f7
-  - 17062a0decb7
-  - 937aa69e715f
-  - 03e9b2fbc005
-  - d5ceb9f3c25b
-  - a6d65b0c67af
-  - 017aba02828d
-  - cd659e8cc5fa
   - 0d4acadabb04
   - f6877ad76b00
+  - 937aa69e715f
+  - d5ceb9f3c25b
   - 3ba8d4563129
+  - cd659e8cc5fa
+  - 17062a0decb7
+  - 749c918495f7
+  - 017aba02828d
+  - a6d65b0c67af
+  - 03e9b2fbc005
   tool_panel_section_label: Mapping
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: bowtie_wrappers
@@ -31,11 +31,11 @@ tools:
 - name: bwa
   owner: devteam
   revisions:
-  - 2477830927ec
   - 64f11cf59c6e
-  - e188dc7a68e6
-  - dfd8b7f78c37
+  - 2477830927ec
   - 3fe632431b68
+  - dfd8b7f78c37
+  - e188dc7a68e6
   - 53646aaaafef
   tool_panel_section_label: Mapping
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -48,46 +48,46 @@ tools:
 - name: lastz
   owner: devteam
   revisions:
-  - e7f19d6a9af8
-  - 37b497aa133f
-  - 2ff111fac1d7
   - 60afcc2c1d05
   - 3e1ea2facca6
+  - 37b497aa133f
+  - 2ff111fac1d7
+  - e7f19d6a9af8
   tool_panel_section_label: Mapping
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: minimap2
   owner: iuc
   revisions:
-  - 6b1e195506a3
-  - be1d967337e4
-  - 5cc34c3f440d
   - 09b53c1d4ab1
-  - 77b2770508f6
-  - b3eab4b67562
-  - 8c6cd2650d1f
-  - 53c0b7a1a0c3
-  - 11a0d50a54e6
+  - 5cc34c3f440d
   - c0c2d0941de8
   - 037c6e54df11
-  - 3f4d6399997b
   - f54f5baedfdd
+  - 11a0d50a54e6
+  - be1d967337e4
+  - 6b1e195506a3
+  - 77b2770508f6
+  - b3eab4b67562
+  - 3f4d6399997b
+  - 53c0b7a1a0c3
+  - 8c6cd2650d1f
   tool_panel_section_label: Mapping
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: rna_starsolo
   owner: iuc
   revisions:
   - 00fbfac99d39
-  - e403d27e8f24
+  - 381a32c51141
+  - ec9cbd6b9a49
+  - 178bdbdb6d24
   - b8f5f6e87f5c
   - 5ef7ec16b04f
   - 9ee34ba73ebf
+  - 1cd2511a396e
   - 13022c3d3076
+  - e403d27e8f24
   - 42ce70172b72
   - 79b885ce78d7
-  - 178bdbdb6d24
-  - ec9cbd6b9a49
-  - 1cd2511a396e
-  - 381a32c51141
   tool_panel_section_label: Mapping
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: star_fusion
