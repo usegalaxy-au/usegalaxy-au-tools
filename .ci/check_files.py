@@ -22,6 +22,7 @@ valid_section_labels = [
     "BED",
     "Bacterial Typing",
     "Blast +",
+    "Built-in Converters",
     "ChemicalToolBox",
     "ChiP-seq",
     "Climate Analysis",
