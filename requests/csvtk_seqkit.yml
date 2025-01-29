@@ -1,4 +1,16 @@
 tools:
+- name: seqkit_locate
+  owner: iuc
+  revisions:
+  - 95ef41cc06f7
+  tool_panel_section_label: FASTA/FASTQ
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: seqkit_translate
+  owner: iuc
+  revisions:
+  - 1936d097808a
+  tool_panel_section_label: FASTA/FASTQ
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: seqkit_fx2tab
   owner: iuc
   revisions:
