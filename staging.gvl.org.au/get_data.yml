@@ -2,8 +2,8 @@ tools:
 - name: dbbuilder
   owner: galaxyp
   revisions:
-  - b39347891609
   - c1b437242fee
+  - b39347891609
   - 983bf725dfc2
   - e9df53a75f3c
   tool_panel_section_label: Get Data
@@ -14,56 +14,62 @@ tools:
   - 7d87a9d58aa1
   tool_panel_section_label: Get Data
   tool_shed_url: toolshed.g2.bx.psu.edu
+- name: iedb_api
+  owner: iuc
+  revisions:
+  - 7ed6dda64a81
+  tool_panel_section_label: Get Data
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: ncbi_acc_download
   owner: iuc
   revisions:
-  - 28587613264f
   - 1c58de56d587
+  - 28587613264f
   - e063168e0a81
   tool_panel_section_label: Get Data
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: sra_tools
   owner: iuc
   revisions:
+  - 734abc7ac21d
+  - f8054ea1c365
+  - 6ea73833cf67
+  - 5e6237d58b0c
+  - 1790dcf3c32d
+  - 1ec814014652
+  - 516a54ddf218
+  - 4317d3cb6cba
+  - 83c7d564b128
+  - 6591f049cf7e
+  - aad3885b3216
+  - 4df8de2d0e48
+  - c441583adae5
+  - 653e89d73fc4
+  - 69ebb7f46e45
+  - ba931a59dd59
   - 7068f48d0ef9
   - 9a776b080193
-  - 653e89d73fc4
-  - 1790dcf3c32d
-  - 6ea73833cf67
-  - 8848455c0270
-  - 516a54ddf218
-  - 83c7d564b128
-  - 4317d3cb6cba
-  - ba931a59dd59
-  - f5ea3ce9b9b0
-  - 4df8de2d0e48
   - e08a7ad4378b
   - e407b9da183a
-  - 1ec814014652
-  - 6591f049cf7e
-  - 69ebb7f46e45
-  - aad3885b3216
-  - f8054ea1c365
-  - c441583adae5
-  - 5e6237d58b0c
-  - 734abc7ac21d
+  - f5ea3ce9b9b0
+  - 8848455c0270
   tool_panel_section_label: Get Data
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: unipept
   owner: galaxyp
   revisions:
-  - 75b3b3d0adbf
   - 34758ab8aaa4
-  - 21a560af5913
   - 9aaa46d45472
+  - 21a560af5913
+  - 75b3b3d0adbf
   tool_panel_section_label: Get Data
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: uniprot_rest_interface
   owner: bgruening
   revisions:
-  - 054483e27a35
   - 468c71dac78a
   - bfdc6a7ffd3a
+  - 054483e27a35
   - af5eccf83605
   tool_panel_section_label: Get Data
   tool_shed_url: toolshed.g2.bx.psu.edu
