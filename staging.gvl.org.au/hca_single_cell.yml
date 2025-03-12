@@ -8,8 +8,8 @@ tools:
 - name: gtf2gene_list
   owner: ebi-gxa
   revisions:
-  - 1a642de6db01
   - 14b3f2a4523b
+  - 1a642de6db01
   tool_panel_section_label: HCA Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: retrieve_scxa
@@ -28,18 +28,18 @@ tools:
 - name: scanpy_compute_graph
   owner: ebi-gxa
   revisions:
-  - bc9e8de21efb
-  - 7779b9dcf040
   - 22bd5861706d
   - 6417cccad133
+  - bc9e8de21efb
+  - 7779b9dcf040
   tool_panel_section_label: HCA Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: scanpy_filter_cells
   owner: ebi-gxa
   revisions:
   - 55ccc0a121bc
-  - e9283529cba1
   - 361608369dda
+  - e9283529cba1
   - bf1e0bdec1db
   tool_panel_section_label: HCA Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -47,36 +47,36 @@ tools:
   owner: ebi-gxa
   revisions:
   - da611a744112
-  - cc64914b0cf4
   - 474a69c47184
+  - cc64914b0cf4
   - 23d838d1569d
   tool_panel_section_label: HCA Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: scanpy_find_cluster
   owner: ebi-gxa
   revisions:
-  - 36735850e461
   - ad6995afd2e6
   - 2ccd9f9e2cd0
   - fc4b3b46dc9d
+  - 36735850e461
   tool_panel_section_label: HCA Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: scanpy_find_markers
   owner: ebi-gxa
   revisions:
+  - 81c34e67f262
+  - d8f5224005bb
   - 0a8e527d1517
   - 49653e680ea4
-  - d8f5224005bb
-  - 81c34e67f262
   tool_panel_section_label: HCA Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: scanpy_find_variable_genes
   owner: ebi-gxa
   revisions:
-  - 79da59a0b180
-  - 4667fe07bd68
   - 2861ca3bfe4d
+  - 4667fe07bd68
   - 64dd8bb151e1
+  - 79da59a0b180
   tool_panel_section_label: HCA Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: scanpy_integrate_bbknn
@@ -96,62 +96,62 @@ tools:
 - name: scanpy_integrate_harmony
   owner: ebi-gxa
   revisions:
-  - 6903bc865d63
   - c354af93f567
+  - 6903bc865d63
   tool_panel_section_label: HCA Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: scanpy_integrate_mnn
   owner: ebi-gxa
   revisions:
-  - 9a2f72d7dbd2
-  - 94697510d55f
   - ff6decc0f432
+  - 94697510d55f
+  - 9a2f72d7dbd2
   tool_panel_section_label: HCA Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: scanpy_multiplet_scrublet
   owner: ebi-gxa
   revisions:
-  - 53ce0e336840
   - 70cb0596ffef
+  - 53ce0e336840
   tool_panel_section_label: HCA Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: scanpy_normalise_data
   owner: ebi-gxa
   revisions:
-  - 8d9c22419c56
-  - 28b1546857b0
   - 3027cb62adbd
   - 6b97ffba31da
+  - 8d9c22419c56
+  - 28b1546857b0
   tool_panel_section_label: HCA Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: scanpy_parameter_iterator
   owner: ebi-gxa
   revisions:
-  - 73d43034c860
   - d4c9061c8fef
+  - 73d43034c860
   tool_panel_section_label: HCA Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: scanpy_plot_embed
   owner: ebi-gxa
   revisions:
-  - 7d5c97823f8b
-  - 1be0fc4d8654
   - 56d22aa6cb3b
   - 35f6611fb8c3
+  - 7d5c97823f8b
+  - 1be0fc4d8654
   tool_panel_section_label: HCA Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: scanpy_plot_scrublet
   owner: ebi-gxa
   revisions:
-  - 4a74b45c1ce4
   - 6f5509cf3176
+  - 4a74b45c1ce4
   tool_panel_section_label: HCA Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: scanpy_plot_trajectory
   owner: ebi-gxa
   revisions:
-  - d3df472a21dc
   - cb1992d1804b
+  - d3df472a21dc
   tool_panel_section_label: HCA Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: scanpy_read_10x
@@ -164,16 +164,16 @@ tools:
 - name: scanpy_regress_variable
   owner: ebi-gxa
   revisions:
-  - d18ed15697bb
   - 36daab33aecf
   - 0bab2ae44e7a
+  - d18ed15697bb
   tool_panel_section_label: HCA Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: scanpy_run_diffmap
   owner: ebi-gxa
   revisions:
-  - 79cc06a557b0
   - 6a6364b488db
+  - 79cc06a557b0
   tool_panel_section_label: HCA Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: scanpy_run_dpt
@@ -186,8 +186,8 @@ tools:
 - name: scanpy_run_fdg
   owner: ebi-gxa
   revisions:
-  - be019b069e31
   - 65c3ec07502b
+  - be019b069e31
   tool_panel_section_label: HCA Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: scanpy_run_paga
@@ -200,10 +200,10 @@ tools:
 - name: scanpy_run_pca
   owner: ebi-gxa
   revisions:
-  - 3ee74b58c72d
-  - 4428dba93375
   - 59028945c857
   - 0cf90e01d9f8
+  - 4428dba93375
+  - 3ee74b58c72d
   tool_panel_section_label: HCA Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: scanpy_run_tsne
@@ -219,18 +219,18 @@ tools:
   owner: ebi-gxa
   revisions:
   - 767a675b5254
-  - ea91cfd0444e
-  - fe562424a0a6
   - bd4a244faeb8
+  - ea91cfd0444e
   - 0f98603d0116
+  - fe562424a0a6
   tool_panel_section_label: HCA Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: scanpy_scale_data
   owner: ebi-gxa
   revisions:
-  - e2d0dc8a50ca
-  - 4cc9362782b4
-  - f86b2c3bc459
   - 5605f8452eb3
+  - e2d0dc8a50ca
+  - f86b2c3bc459
+  - 4cc9362782b4
   tool_panel_section_label: HCA Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
