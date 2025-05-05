@@ -34,10 +34,10 @@ tools:
 - name: scanpy_compute_graph
   owner: ebi-gxa
   revisions:
-  - 6417cccad133
   - bc9e8de21efb
-  - 22bd5861706d
   - 7779b9dcf040
+  - 22bd5861706d
+  - 6417cccad133
   tool_panel_section_label: HCA Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: scanpy_filter_cells
@@ -52,37 +52,37 @@ tools:
 - name: scanpy_filter_genes
   owner: ebi-gxa
   revisions:
-  - 23d838d1569d
-  - cc64914b0cf4
   - da611a744112
+  - cc64914b0cf4
   - 474a69c47184
+  - 23d838d1569d
   tool_panel_section_label: HCA Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: scanpy_find_cluster
   owner: ebi-gxa
   revisions:
-  - 36735850e461
   - 2ccd9f9e2cd0
-  - ad6995afd2e6
+  - 36735850e461
   - fc4b3b46dc9d
+  - ad6995afd2e6
   tool_panel_section_label: HCA Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: scanpy_find_markers
   owner: ebi-gxa
   revisions:
-  - d8f5224005bb
   - 0a8e527d1517
-  - 81c34e67f262
   - 49653e680ea4
+  - d8f5224005bb
+  - 81c34e67f262
   tool_panel_section_label: HCA Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: scanpy_find_variable_genes
   owner: ebi-gxa
   revisions:
-  - 64dd8bb151e1
-  - 79da59a0b180
   - 4667fe07bd68
+  - 64dd8bb151e1
   - 2861ca3bfe4d
+  - 79da59a0b180
   tool_panel_section_label: HCA Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: scanpy_integrate_bbknn
@@ -110,24 +110,24 @@ tools:
   owner: ebi-gxa
   revisions:
   - 94697510d55f
-  - 9a2f72d7dbd2
   - ff6decc0f432
+  - 9a2f72d7dbd2
   tool_panel_section_label: HCA Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: scanpy_multiplet_scrublet
   owner: ebi-gxa
   revisions:
-  - 53ce0e336840
   - 70cb0596ffef
+  - 53ce0e336840
   tool_panel_section_label: HCA Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: scanpy_normalise_data
   owner: ebi-gxa
   revisions:
-  - 6b97ffba31da
-  - 8d9c22419c56
   - 3027cb62adbd
+  - 6b97ffba31da
   - 28b1546857b0
+  - 8d9c22419c56
   tool_panel_section_label: HCA Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: scanpy_parameter_iterator
@@ -140,10 +140,10 @@ tools:
 - name: scanpy_plot_embed
   owner: ebi-gxa
   revisions:
-  - 1be0fc4d8654
-  - 56d22aa6cb3b
-  - 35f6611fb8c3
   - 7d5c97823f8b
+  - 56d22aa6cb3b
+  - 1be0fc4d8654
+  - 35f6611fb8c3
   tool_panel_section_label: HCA Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: scanpy_plot_scrublet
@@ -163,15 +163,15 @@ tools:
 - name: scanpy_read_10x
   owner: ebi-gxa
   revisions:
-  - 287503c35cb4
   - 078aa23c9374
+  - 287503c35cb4
   tool_panel_section_label: HCA Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: scanpy_regress_variable
   owner: ebi-gxa
   revisions:
-  - 0bab2ae44e7a
   - 36daab33aecf
+  - 0bab2ae44e7a
   - d18ed15697bb
   tool_panel_section_label: HCA Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -185,8 +185,8 @@ tools:
 - name: scanpy_run_dpt
   owner: ebi-gxa
   revisions:
-  - 03921aa8b29c
   - 12f67b0c1a94
+  - 03921aa8b29c
   tool_panel_section_label: HCA Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: scanpy_run_fdg
@@ -199,36 +199,36 @@ tools:
 - name: scanpy_run_paga
   owner: ebi-gxa
   revisions:
-  - 6d4f88995e40
   - b2768cae00a1
+  - 6d4f88995e40
   tool_panel_section_label: HCA Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: scanpy_run_pca
   owner: ebi-gxa
   revisions:
+  - 0cf90e01d9f8
+  - 4428dba93375
   - 59028945c857
   - 3ee74b58c72d
-  - 4428dba93375
-  - 0cf90e01d9f8
   tool_panel_section_label: HCA Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: scanpy_run_tsne
   owner: ebi-gxa
   revisions:
   - 181d61d2f3cd
+  - 3fb53f5e46ea
   - abdb61e4afa3
   - 8b0d6f6f44c8
-  - 3fb53f5e46ea
   tool_panel_section_label: HCA Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: scanpy_run_umap
   owner: ebi-gxa
   revisions:
+  - bd4a244faeb8
   - ea91cfd0444e
-  - fe562424a0a6
   - 0f98603d0116
   - 767a675b5254
-  - bd4a244faeb8
+  - fe562424a0a6
   tool_panel_section_label: HCA Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: scanpy_scale_data
