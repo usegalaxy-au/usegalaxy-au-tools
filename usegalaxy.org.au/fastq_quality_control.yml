@@ -2,30 +2,30 @@ tools:
 - name: fastq_quality_filter
   owner: devteam
   revisions:
+  - e41385662e5e
   - 7b4468117008
   - ce9cd02d5b88
-  - e41385662e5e
   - b1e332a385f1
   tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastq_trimmer_by_quality
   owner: devteam
   revisions:
-  - c64d534a763c
   - 8050e091e99b
+  - c64d534a763c
   tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastqc
   owner: devteam
   revisions:
-  - ff9530579d1f
   - 9da02be9c6cc
-  - f2e8552cf1d0
   - 2b0c9d9fc6ca
-  - 5ec9f6bceaee
+  - ff9530579d1f
   - 3d0c7bdf12f5
   - e7b2202befea
+  - f2e8552cf1d0
   - 2c64fded1286
+  - 5ec9f6bceaee
   tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastqe
@@ -47,8 +47,8 @@ tools:
 - name: fastx_quality_statistics
   owner: devteam
   revisions:
-  - 7306ec78632a
   - 59003d0543cd
+  - 7306ec78632a
   - 48c943a0290a
   tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -56,34 +56,34 @@ tools:
   owner: iuc
   revisions:
   - 1f296803dfa3
-  - 8880fb74ef56
   - a72af9de6bf5
+  - 8880fb74ef56
   tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: multiqc
   owner: iuc
   revisions:
-  - abfd8a6544d7
-  - bf675f34b056
-  - 1c2db0054039
-  - 5e33b465d8d5
-  - 75c93c70d094
-  - d2aaac19f42f
-  - c1a4b5f3b432
-  - 9a913cdee30e
-  - b2f1f75d49c4
-  - a7e081ceb76a
-  - f7e2f1eb3a16
   - 3d93dd18d9f8
+  - abfd8a6544d7
+  - d2aaac19f42f
+  - b2f1f75d49c4
+  - bf675f34b056
   - 31c42a2c02d3
+  - 9a913cdee30e
+  - 5e33b465d8d5
+  - a7e081ceb76a
+  - 1c2db0054039
+  - c1a4b5f3b432
+  - f7e2f1eb3a16
+  - 75c93c70d094
   tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: trim_galore
   owner: bgruening
   revisions:
-  - 084bbd8ba7b8
-  - 949f01671246
-  - eefb644655a5
   - cd7e644cae1d
+  - 949f01671246
+  - 084bbd8ba7b8
+  - eefb644655a5
   tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: toolshed.g2.bx.psu.edu
