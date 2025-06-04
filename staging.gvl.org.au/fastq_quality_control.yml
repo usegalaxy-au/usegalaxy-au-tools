@@ -11,44 +11,44 @@ tools:
 - name: fastq_trimmer_by_quality
   owner: devteam
   revisions:
-  - c64d534a763c
   - 8050e091e99b
+  - c64d534a763c
   tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastqc
   owner: devteam
   revisions:
   - 2c64fded1286
-  - 5ec9f6bceaee
-  - f2e8552cf1d0
-  - e7b2202befea
-  - 9da02be9c6cc
   - ff9530579d1f
-  - 2b0c9d9fc6ca
+  - f2e8552cf1d0
   - 3d0c7bdf12f5
+  - 9da02be9c6cc
+  - 2b0c9d9fc6ca
+  - 5ec9f6bceaee
+  - e7b2202befea
   tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastqe
   owner: iuc
   revisions:
-  - 89d299153577
   - a252d8415583
+  - 89d299153577
   tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastx_nucleotides_distribution
   owner: devteam
   revisions:
+  - ad116ae3f4d9
   - 751878fa37e5
   - 18a51655db17
-  - ad116ae3f4d9
   tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastx_quality_statistics
   owner: devteam
   revisions:
   - 59003d0543cd
-  - 7306ec78632a
   - 48c943a0290a
+  - 7306ec78632a
   tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: filtlong
@@ -62,27 +62,28 @@ tools:
 - name: multiqc
   owner: iuc
   revisions:
-  - 31c42a2c02d3
-  - a7e081ceb76a
-  - b2f1f75d49c4
   - 9a913cdee30e
-  - bf675f34b056
-  - 1c2db0054039
   - 3d93dd18d9f8
-  - 75c93c70d094
-  - d2aaac19f42f
+  - a7e081ceb76a
   - f7985e0479b9
+  - b2f1f75d49c4
+  - 31c42a2c02d3
+  - 1c2db0054039
   - f7e2f1eb3a16
-  - abfd8a6544d7
+  - d2aaac19f42f
   - 5e33b465d8d5
+  - 75c93c70d094
+  - bf675f34b056
+  - abfd8a6544d7
   tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: trim_galore
   owner: bgruening
   revisions:
   - cd7e644cae1d
-  - eefb644655a5
-  - 084bbd8ba7b8
   - 949f01671246
+  - b94789823aad
+  - 084bbd8ba7b8
+  - eefb644655a5
   tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: toolshed.g2.bx.psu.edu
