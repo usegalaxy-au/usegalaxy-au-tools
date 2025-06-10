@@ -31,7 +31,6 @@ trusted_owners:
   - name: gemini_annotate
   - name: gemini_query
   - name: gemini_comp_hets
-  - name: msconvert
   - name: qualimap_rnaseq
 - owner: simon-gladman
 - owner: nml
@@ -49,6 +48,7 @@ trusted_owners:
   - name: cuffdiff  # no longer supported
 - owner: galaxyp
   skip_tools:
+  - name: msconvert
   - name: openms_consensusid  # skip all openms tools because they come with tests and no test data.  We need to run tests independently and force install
   - name: openms_falsediscoveryrate
   - name: openms_featurefindermultiplex
