@@ -3,9 +3,9 @@ tools:
   owner: devteam
   revisions:
   - b1e332a385f1
-  - 7b4468117008
   - ce9cd02d5b88
   - e41385662e5e
+  - 7b4468117008
   tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastq_trimmer_by_quality
@@ -18,73 +18,73 @@ tools:
 - name: fastqc
   owner: devteam
   revisions:
-  - 5ec9f6bceaee
-  - f2e8552cf1d0
-  - e7b2202befea
-  - 2b0c9d9fc6ca
-  - 3d0c7bdf12f5
-  - 9da02be9c6cc
   - 2c64fded1286
+  - f2e8552cf1d0
+  - 9da02be9c6cc
+  - e7b2202befea
+  - 5ec9f6bceaee
   - ff9530579d1f
+  - 3d0c7bdf12f5
+  - 2b0c9d9fc6ca
   tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastqe
   owner: iuc
   revisions:
+  - c1a33f603da2
   - a252d8415583
   - 89d299153577
-  - c1a33f603da2
   tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastx_nucleotides_distribution
   owner: devteam
   revisions:
-  - 18a51655db17
   - ad116ae3f4d9
   - 751878fa37e5
+  - 18a51655db17
   tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastx_quality_statistics
   owner: devteam
   revisions:
-  - 7306ec78632a
   - 59003d0543cd
+  - 7306ec78632a
   - 48c943a0290a
   tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: filtlong
   owner: iuc
   revisions:
+  - 8880fb74ef56
   - 1f296803dfa3
   - a72af9de6bf5
-  - 8880fb74ef56
   tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: multiqc
   owner: iuc
   revisions:
-  - 1c2db0054039
-  - 3d93dd18d9f8
-  - bf675f34b056
   - 5e33b465d8d5
-  - b2f1f75d49c4
-  - 31c42a2c02d3
-  - abfd8a6544d7
-  - d2aaac19f42f
+  - bf675f34b056
   - 9a913cdee30e
-  - f7e2f1eb3a16
-  - 75c93c70d094
   - a7e081ceb76a
   - c1a4b5f3b432
+  - 75c93c70d094
+  - 1c2db0054039
+  - abfd8a6544d7
+  - f7e2f1eb3a16
+  - b2f1f75d49c4
+  - d2aaac19f42f
+  - 3d93dd18d9f8
+  - 31c42a2c02d3
   tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: trim_galore
   owner: bgruening
   revisions:
+  - eefb644655a5
+  - b94789823aad
+  - 084bbd8ba7b8
   - cd7e644cae1d
   - 949f01671246
-  - 084bbd8ba7b8
-  - b94789823aad
-  - eefb644655a5
   tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: toolshed.g2.bx.psu.edu
