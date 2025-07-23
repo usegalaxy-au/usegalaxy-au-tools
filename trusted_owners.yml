@@ -6,6 +6,8 @@
 trusted_owners:
 - owner: iuc
   skip_tools:
+  - name: funannotate_predict
+    revision: 3cc3ef448854
   - name: gatk2  # no longer supported
   - name: gemini_burden  # gemini tools need database installed ahead of tools
   - name: gemini_pathways
