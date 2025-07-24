@@ -6,6 +6,8 @@
 trusted_owners:
 - owner: iuc
   skip_tools:
+  - name: funannotate_annotate
+    revision: 0b8d49d3742d
   - name: funannotate_predict
     revision: 3cc3ef448854
   - name: gatk2  # no longer supported
