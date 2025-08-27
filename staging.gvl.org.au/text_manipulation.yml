@@ -1,0 +1,181 @@
+tools:
+- name: add_input_name_as_column
+  owner: mvdbeek
+  revisions:
+  - 3284b72eef56
+  tool_panel_section_label: Text Manipulation
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: add_line_to_file
+  owner: bgruening
+  revisions:
+  - 8e251055b1a9
+  tool_panel_section_label: Text Manipulation
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: add_value
+  owner: devteam
+  revisions:
+  - 023f0a3760b3
+  - 745871c0b055
+  tool_panel_section_label: Text Manipulation
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: collection_element_identifiers
+  owner: iuc
+  revisions:
+  - d3c07d270a50
+  tool_panel_section_label: Text Manipulation
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: column_arrange_by_header
+  owner: bgruening
+  revisions:
+  - 6c6d26ff01ff
+  - f18f67056946
+  tool_panel_section_label: Text Manipulation
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: column_maker
+  owner: devteam
+  revisions:
+  - 464b9305180e
+  - 626658afe4cb
+  - 9cd341095afd
+  - 6e8d94597139
+  - aff5135563c6
+  - be25c075ed54
+  - 6595517c2dd8
+  - 02026300aa45
+  - 13b6f0007d9e
+  tool_panel_section_label: Text Manipulation
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: column_remove_by_header
+  owner: iuc
+  revisions:
+  - 2040e4c2750a
+  tool_panel_section_label: Text Manipulation
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: concatenate_multiple_datasets
+  owner: artbio
+  revisions:
+  - 6f54dc6b37da
+  - 3a4694d4354f
+  tool_panel_section_label: Text Manipulation
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: concatenate_multiple_datasets
+  owner: mvdbeek
+  revisions:
+  - 201c568972c3
+  tool_panel_section_label: Text Manipulation
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: condense_characters
+  owner: devteam
+  revisions:
+  - 381ed54c5e39
+  tool_panel_section_label: Text Manipulation
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: cut_include_exclude
+  owner: r-lannes
+  revisions:
+  - d28ee835a561
+  tool_panel_section_label: Text Manipulation
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: diff
+  owner: bgruening
+  revisions:
+  - be2d899bf34a
+  tool_panel_section_label: Text Manipulation
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: filter_tabular
+  owner: iuc
+  revisions:
+  - 557ec8d7087d
+  - 37cde8134c6a
+  - 34d29339abab
+  - 9cc411a62277
+  - 90f657745fea
+  tool_panel_section_label: Text Manipulation
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: gff3_rebase
+  owner: iuc
+  revisions:
+  - f7ad5e69aa60
+  tool_panel_section_label: Text Manipulation
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: join_files_on_column_fuzzy
+  owner: bgruening
+  revisions:
+  - 22ec3c1a20cd
+  tool_panel_section_label: Text Manipulation
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: jq
+  owner: iuc
+  revisions:
+  - 5ff75eb1a893
+  tool_panel_section_label: Text Manipulation
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: merge_cols
+  owner: devteam
+  revisions:
+  - ae7843d06f8f
+  - f2aac0c5c60d
+  - dd40b1e9eebe
+  tool_panel_section_label: Text Manipulation
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: query_tabular
+  owner: iuc
+  revisions:
+  - 83069b38aa85
+  - 623f3eb7aa48
+  - 1ea4e668bf73
+  - cf4397560712
+  - 2e8f945f7285
+  - 33d61c89fb8d
+  - cf34c344508d
+  - 3a6b78c39dca
+  tool_panel_section_label: Text Manipulation
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: regex_find_replace
+  owner: galaxyp
+  revisions:
+  - 399da6b5ec21
+  - 503bcd6ebe4b
+  - ae8c4b2488e7
+  tool_panel_section_label: Text Manipulation
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: replace_column_by_key_value_file
+  owner: bgruening
+  revisions:
+  - d533e4b75800
+  tool_panel_section_label: Text Manipulation
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: sqlite_to_tabular
+  owner: iuc
+  revisions:
+  - c4d18aa4ec4a
+  - f768f6183386
+  - b722161a845a
+  - bce29ec10b78
+  tool_panel_section_label: Text Manipulation
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: table_compute
+  owner: iuc
+  revisions:
+  - 56a8da1f2243
+  - 3bf5661c0280
+  - 60ff16842fcd
+  tool_panel_section_label: Text Manipulation
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: text_processing
+  owner: bgruening
+  revisions:
+  - 12615d397df7
+  - 0a8c6b61f0f4
+  - 74a8bef53a00
+  - 86755160afbf
+  - ddf54b12c295
+  - 3dc70b59608c
+  - 6073bb457ec0
+  - d698c222f354
+  - 9ff72e942410
+  - a6f147a050a2
+  - fbf99087e067
+  - f46f0e4f75c4
+  tool_panel_section_label: Text Manipulation
+  tool_shed_url: toolshed.g2.bx.psu.edu
