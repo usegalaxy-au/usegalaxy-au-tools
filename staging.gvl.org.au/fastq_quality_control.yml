@@ -2,10 +2,10 @@ tools:
 - name: fastq_quality_filter
   owner: devteam
   revisions:
-  - b1e332a385f1
   - 7b4468117008
-  - ce9cd02d5b88
+  - b1e332a385f1
   - e41385662e5e
+  - ce9cd02d5b88
   tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastq_trimmer_by_quality
@@ -18,14 +18,14 @@ tools:
 - name: fastqc
   owner: devteam
   revisions:
-  - 2b0c9d9fc6ca
-  - 5ec9f6bceaee
-  - 2c64fded1286
-  - f2e8552cf1d0
-  - 3d0c7bdf12f5
   - e7b2202befea
   - 9da02be9c6cc
+  - f2e8552cf1d0
   - ff9530579d1f
+  - 2b0c9d9fc6ca
+  - 2c64fded1286
+  - 5ec9f6bceaee
+  - 3d0c7bdf12f5
   tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastqe
@@ -46,45 +46,45 @@ tools:
 - name: fastx_quality_statistics
   owner: devteam
   revisions:
+  - 7306ec78632a
   - 59003d0543cd
   - 48c943a0290a
-  - 7306ec78632a
   tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: filtlong
   owner: iuc
   revisions:
-  - 1dfbdcbf604b
-  - a72af9de6bf5
   - 8880fb74ef56
   - 1f296803dfa3
+  - 1dfbdcbf604b
+  - a72af9de6bf5
   tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: multiqc
   owner: iuc
   revisions:
-  - abfd8a6544d7
-  - 31c42a2c02d3
-  - f7985e0479b9
-  - 5e33b465d8d5
-  - 1c2db0054039
-  - a7e081ceb76a
+  - b2f1f75d49c4
+  - d2aaac19f42f
   - 3d93dd18d9f8
+  - f7985e0479b9
   - f7e2f1eb3a16
   - 9a913cdee30e
-  - d2aaac19f42f
   - 75c93c70d094
-  - b2f1f75d49c4
+  - 5e33b465d8d5
+  - a7e081ceb76a
   - bf675f34b056
+  - abfd8a6544d7
+  - 31c42a2c02d3
+  - 1c2db0054039
   tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: trim_galore
   owner: bgruening
   revisions:
-  - eefb644655a5
-  - 084bbd8ba7b8
-  - 949f01671246
-  - cd7e644cae1d
   - b94789823aad
+  - 084bbd8ba7b8
+  - cd7e644cae1d
+  - eefb644655a5
+  - 949f01671246
   tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: toolshed.g2.bx.psu.edu
