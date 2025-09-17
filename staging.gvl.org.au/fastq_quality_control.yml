@@ -4,8 +4,8 @@ tools:
   revisions:
   - 7b4468117008
   - ce9cd02d5b88
-  - b1e332a385f1
   - e41385662e5e
+  - b1e332a385f1
   tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastq_trimmer_by_quality
@@ -18,13 +18,13 @@ tools:
 - name: fastqc
   owner: devteam
   revisions:
-  - 3d0c7bdf12f5
-  - 2c64fded1286
   - e7b2202befea
-  - 5ec9f6bceaee
-  - ff9530579d1f
-  - 2b0c9d9fc6ca
   - f2e8552cf1d0
+  - 2c64fded1286
+  - 2b0c9d9fc6ca
+  - 3d0c7bdf12f5
+  - ff9530579d1f
+  - 5ec9f6bceaee
   - 9da02be9c6cc
   tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -38,53 +38,53 @@ tools:
 - name: fastx_nucleotides_distribution
   owner: devteam
   revisions:
-  - 18a51655db17
   - ad116ae3f4d9
+  - 18a51655db17
   - 751878fa37e5
   tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastx_quality_statistics
   owner: devteam
   revisions:
+  - 59003d0543cd
   - 7306ec78632a
   - 48c943a0290a
-  - 59003d0543cd
   tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: filtlong
   owner: iuc
   revisions:
+  - 8880fb74ef56
+  - 1f296803dfa3
   - 1dfbdcbf604b
   - a72af9de6bf5
-  - 1f296803dfa3
-  - 8880fb74ef56
   tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: multiqc
   owner: iuc
   revisions:
-  - 5e33b465d8d5
-  - 1c2db0054039
   - a7e081ceb76a
-  - f7e2f1eb3a16
-  - bf675f34b056
-  - d2aaac19f42f
-  - 31c42a2c02d3
   - f7985e0479b9
+  - 9a913cdee30e
+  - 1c2db0054039
+  - 31c42a2c02d3
   - abfd8a6544d7
+  - 75c93c70d094
+  - bf675f34b056
   - b2f1f75d49c4
   - 3d93dd18d9f8
-  - 75c93c70d094
-  - 9a913cdee30e
+  - f7e2f1eb3a16
+  - 5e33b465d8d5
+  - d2aaac19f42f
   tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: trim_galore
   owner: bgruening
   revisions:
+  - cd7e644cae1d
   - eefb644655a5
   - 949f01671246
-  - 084bbd8ba7b8
-  - cd7e644cae1d
   - b94789823aad
+  - 084bbd8ba7b8
   tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: toolshed.g2.bx.psu.edu
