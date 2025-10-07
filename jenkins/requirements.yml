@@ -1,9 +1,12 @@
+setuptools==59.6.0
 arrow
 pyyaml
 pytz
-planemo==0.72.0
--e git+https://github.com/cat-bro/ephemeris.git@release_0.10.7_cb_updates_20210727#egg=ephemeris
-galaxy-tool-util==21.1.2
-
+planemo==0.75.24
+ephemeris>=0.10.8
+#galaxy-util==23.1.4
+galaxy-tool-util==24.1.1
 # requirements for galaxy virtualenv also required here for tests to run correctly
-h5py==3.1.0
+h5py==3.11.0
+tifffile==2023.7.10
+pillow==10.3.0

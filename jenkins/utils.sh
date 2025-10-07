@@ -7,14 +7,14 @@ activate_virtualenv() {
   # the first time we will need to set up the virtual environment
   # The venv is set up in Jenkins' home directory so that we do not have
   # to rebuild it each time and multiple jobs can share it
-  [ ! $VENV_PATH ] && VENV_PATH=".."
-  [ $LOCAL_ENV = 1 ] && VENV_PATH=".."
+  VENV_PATH=${VENV_PATH:-..}
+  [ "${LOCAL_ENV:-0}" = "1" ] && VENV_PATH=".."
   VIRTUALENV="$VENV_PATH/.venv3"
   REQUIREMENTS_FILE="jenkins/requirements.yml"
   CACHED_REQUIREMENTS_FILE="$VIRTUALENV/cached_requirements.yml"
 
   [ ! -d $VENV_PATH ] && mkdir $VENV_PATH
-  [ ! -d $VIRTUALENV ] && virtualenv -p python3 $VIRTUALENV
+  [ ! -d $VIRTUALENV ] && virtualenv -p python311 $VIRTUALENV
   # shellcheck source=../.venv3/bin/activate
   . "$VIRTUALENV/bin/activate"
 

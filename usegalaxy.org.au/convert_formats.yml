@@ -1,4 +1,18 @@
 tools:
+- name: agat
+  owner: bgruening
+  revisions:
+  - d6ede73082da
+  - e7449b2c14bf
+  - abba05ead5d7
+  tool_panel_section_label: Convert Formats
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: bam2fastx
+  owner: iuc
+  revisions:
+  - 43fd2ba63c16
+  tool_panel_section_label: Convert Formats
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: bed_to_protein_map
   owner: galaxyp
   revisions:
@@ -8,25 +22,31 @@ tools:
 - name: biom_add_metadata
   owner: iuc
   revisions:
-  - f3a19509108a
-  - 5e1240a87bcb
-  - a3b86937ead6
-  - 367b1ed91207
   - 4a6ee918c13a
+  - 5e1240a87bcb
+  - ab9350a8ab4d
+  - 3b6f97e7094c
   - e3cbd2287f63
   - 0b3c3ad92827
+  - f3a19509108a
+  - 367b1ed91207
+  - 6ef0b5664c69
+  - a3b86937ead6
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: biom_convert
   owner: iuc
   revisions:
-  - 584008e574b2
-  - 501c21cce614
   - 1b5fc03380d4
+  - 091bb5922a82
+  - e177a8ea0bf1
+  - 584008e574b2
+  - d4d4e9febf5c
   - 33c99804a32f
-  - bd46669113b9
-  - e525f9ffb9ac
   - 54ccb7e1f49a
+  - 501c21cce614
+  - e525f9ffb9ac
+  - bd46669113b9
   - 72ed72122deb
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -42,25 +62,63 @@ tools:
   - 09ea79f9f260
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
+- name: csvtk_concat
+  owner: nml
+  revisions:
+  - cd31fe25d6ac
+  tool_panel_section_label: Convert Formats
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: csvtk_cut
+  owner: nml
+  revisions:
+  - 5b5330a8dfac
+  tool_panel_section_label: Convert Formats
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: csvtk_join
+  owner: nml
+  revisions:
+  - 31442b046269
+  tool_panel_section_label: Convert Formats
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: csvtk_mutate
+  owner: nml
+  revisions:
+  - 452fd1614f09
+  tool_panel_section_label: Convert Formats
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: csvtk_split
+  owner: nml
+  revisions:
+  - 92509cf500a4
+  tool_panel_section_label: Convert Formats
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: csvtk_summary
+  owner: nml
+  revisions:
+  - ceb70f0dd898
+  tool_panel_section_label: Convert Formats
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fasta_to_tabular
   owner: devteam
   revisions:
-  - 7e801ab2b70e
   - e7ed3c310b74
+  - 7e801ab2b70e
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastq_to_fasta
   owner: devteam
   revisions:
-  - e282bc27be9a
+  - 191e43b329f6
   - 186b8d913e6c
+  - 8979c288aefb
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastq_to_tabular
   owner: devteam
   revisions:
-  - 614a63f14adf
   - 4b347702c4aa
+  - 614a63f14adf
+  - 43807a65369f
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: gfa_to_fa
@@ -79,8 +137,9 @@ tools:
 - name: gffread
   owner: devteam
   revisions:
-  - 4dea02886337
+  - 3e436657dcd0
   - 154d00cbbf2d
+  - 4dea02886337
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: gtftobed12
@@ -92,14 +151,22 @@ tools:
 - name: intermine_galaxy_exchange
   owner: iuc
   revisions:
-  - c24014d80001
+  - faef2b1622a3
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: mz_to_sqlite
   owner: galaxyp
   revisions:
-  - 8190f6083c0d
+  - 705821bf30d2
   - f5c632894818
+  tool_panel_section_label: Convert Formats
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: samtools_bam_to_cram
+  owner: iuc
+  revisions:
+  - b9ea85dfaf45
+  - 85a38dffb93d
+  - 18dbde5680c0
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: tabular_to_fasta
@@ -112,17 +179,45 @@ tools:
   owner: devteam
   revisions:
   - 2dcfbbf9071a
+  - 78fb18899c99
   - 68f57cc8fad0
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: thermo_raw_file_converter
   owner: galaxyp
   revisions:
-  - b9b385097f13
+  - 5c04f9decc01
   - 92ac8e086317
-  - 19e45916daf9
   - 63769c4217a7
+  - b9b385097f13
+  - 19e45916daf9
   - 26c6706bfb07
+  tool_panel_section_label: Convert Formats
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: ucsc_fatovcf
+  owner: iuc
+  revisions:
+  - 98c227b9be71
+  - a40dd4fd3096
+  - 3c19c84fbce2
+  tool_panel_section_label: Convert Formats
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: ucsc_twobittofa
+  owner: iuc
+  revisions:
+  - e9bbe2f71784
+  - 6e1aa95afa75
+  - 8067dfa00ed2
+  - 3c6f9e8a4c17
+  tool_panel_section_label: Convert Formats
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: ucsc_wigtobigwig
+  owner: iuc
+  revisions:
+  - a2f83a375bf2
+  - 0dcdef015deb
+  - fa49730d1d4b
+  - 98704d357ede
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: vcf2maf

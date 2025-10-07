@@ -6,6 +6,10 @@
 trusted_owners:
 - owner: iuc
   skip_tools:
+  - name: funannotate_annotate
+    revision: 0b8d49d3742d
+  - name: funannotate_predict
+    revision: 3cc3ef448854
   - name: gatk2  # no longer supported
   - name: gemini_burden  # gemini tools need database installed ahead of tools
   - name: gemini_pathways
@@ -31,7 +35,7 @@ trusted_owners:
   - name: gemini_annotate
   - name: gemini_query
   - name: gemini_comp_hets
-  - name: bakta  # Note: keep an eye on new revisions and ask BG
+  - name: qualimap_rnaseq
 - owner: simon-gladman
 - owner: nml
 - owner: peterjc
@@ -48,6 +52,7 @@ trusted_owners:
   - name: cuffdiff  # no longer supported
 - owner: galaxyp
   skip_tools:
+  - name: msconvert
   - name: openms_consensusid  # skip all openms tools because they come with tests and no test data.  We need to run tests independently and force install
   - name: openms_falsediscoveryrate
   - name: openms_featurefindermultiplex
@@ -80,3 +85,7 @@ trusted_owners:
   - name: openms_proteinquantifier
   - name: openms_textexporter
   - name: openms_xtandemadapter
+- owner: recetox
+  skip_tools:
+  - name: matchms_similarity
+- owner: nilesh
