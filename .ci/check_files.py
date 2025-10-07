@@ -62,6 +62,7 @@ valid_section_labels = [
     "Other Tools",
     "Phylogenetics",
     "Picard",
+    "pRESTO",
     "Proteomic AI",
     "Proteomics",
     "QIIME 2",
