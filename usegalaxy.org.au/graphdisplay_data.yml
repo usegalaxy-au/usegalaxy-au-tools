@@ -2,15 +2,15 @@ tools:
 - name: circos
   owner: iuc
   revisions:
-  - 740057a5126d
-  - a64dc31ab7f2
-  - 7f13dc906cb9
   - 290a11559985
-  - 4b519282a05b
-  - fd59d783248a
-  - df7356989ac1
-  - ae9994cf526f
+  - 740057a5126d
   - c4bde687c846
+  - ae9994cf526f
+  - fd59d783248a
+  - 7f13dc906cb9
+  - df7356989ac1
+  - a64dc31ab7f2
+  - 4b519282a05b
   tool_panel_section_label: Graph/Display Data
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: draw_stacked_barplots
@@ -28,9 +28,9 @@ tools:
 - name: fastq_quality_boxplot
   owner: devteam
   revisions:
-  - 7cf5b1d072b5
-  - 47df89f900a4
   - f95284aa2946
+  - 47df89f900a4
+  - 7cf5b1d072b5
   tool_panel_section_label: Graph/Display Data
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: geneiobio
@@ -42,61 +42,61 @@ tools:
 - name: ggplot2_heatmap2
   owner: iuc
   revisions:
-  - 374e9062d874
-  - ca7cb0eaad62
   - 51c6ccaace7e
-  - 53460afd5115
   - '566197475670'
+  - 374e9062d874
   - 3b37b1b1c3a7
   - 48b42ee61bc5
+  - 53460afd5115
+  - ca7cb0eaad62
   tool_panel_section_label: Graph/Display Data
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: ggplot2_heatmap
   owner: iuc
   revisions:
-  - da4c086cff5b
-  - 1a72f938213e
-  - 3d059e9c2fba
+  - 15cebddc6dba
   - d3a9e32672ec
   - 10515715c940
+  - 3d059e9c2fba
+  - 1a72f938213e
   - 391a4cc45fea
-  - 15cebddc6dba
+  - da4c086cff5b
   tool_panel_section_label: Graph/Display Data
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: ggplot2_histogram
   owner: iuc
   revisions:
-  - b0d96516e6a5
-  - 6fc8bab811da
   - 6b9816a913de
+  - 6fc8bab811da
+  - b0d96516e6a5
   tool_panel_section_label: Graph/Display Data
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: ggplot2_pca
   owner: iuc
   revisions:
-  - b1268b7544d3
   - ae344ccf9d62
+  - b1268b7544d3
   - 1df3b30325dd
   tool_panel_section_label: Graph/Display Data
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: ggplot2_point
   owner: iuc
   revisions:
-  - 1acf88921176
-  - e3a675da7fd0
-  - 299307abd804
   - d0fc8b746d57
+  - 299307abd804
   - f87634b12749
   - 5fe1dc76176e
+  - 1acf88921176
+  - e3a675da7fd0
   - 5298e06f14f9
   tool_panel_section_label: Graph/Display Data
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: ggplot2_violin
   owner: iuc
   revisions:
-  - 0e7290688b50
-  - 63d211052ffb
   - 17b666467c32
+  - 63d211052ffb
+  - 0e7290688b50
   tool_panel_section_label: Graph/Display Data
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: gmaj
@@ -135,17 +135,17 @@ tools:
 - name: jbrowse
   owner: iuc
   revisions:
-  - 6cd09d7b5f37
-  - 17359b808b01
-  - 2bb2e07a7a21
-  - a6e57ff585c0
-  - ca2def38369c
-  - 1cfc579079a6
-  - 836d1aa3e89a
   - fd5dbf0f732e
-  - 4542035c1075
   - 667e17248bfe
   - 112eb40ba6cf
+  - 17359b808b01
+  - 6cd09d7b5f37
+  - 2bb2e07a7a21
+  - 4542035c1075
+  - 836d1aa3e89a
+  - 1cfc579079a6
+  - a6e57ff585c0
+  - ca2def38369c
   tool_panel_section_label: Graph/Display Data
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: krona_text
@@ -164,8 +164,8 @@ tools:
   owner: iuc
   revisions:
   - f1691de443a7
-  - fe154a7af404
   - 03c13085aecc
+  - fe154a7af404
   tool_panel_section_label: Graph/Display Data
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: pe_histogram
@@ -178,16 +178,16 @@ tools:
 - name: plot_ragtag_paf
   owner: galaxy-australia
   revisions:
-  - e3ca8deb9e49
   - c1bed78b9ed5
   - 501dcf66c0ce
+  - e3ca8deb9e49
   tool_panel_section_label: Graph/Display Data
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: plotly_ml_performance_plots
   owner: bgruening
   revisions:
-  - 62e3a4e8c54c
   - 1c5dcef5ce0f
+  - 62e3a4e8c54c
   - 85da91bbdbfb
   - f234e2e59d76
   tool_panel_section_label: Graph/Display Data
@@ -195,8 +195,8 @@ tools:
 - name: plotly_parallel_coordinates_plot
   owner: bgruening
   revisions:
-  - 9958188c6195
   - 7b21a9b5922f
+  - 9958188c6195
   tool_panel_section_label: Graph/Display Data
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: plotly_regression_performance_plots
@@ -208,11 +208,11 @@ tools:
 - name: pretext_snapshot
   owner: iuc
   revisions:
+  - 26f2fe7e53a1
   - 9ec9c22767c8
   - 6c571966cfb9
-  - 44c66e8d21e6
   - 7c9417381ad5
-  - 26f2fe7e53a1
+  - 44c66e8d21e6
   tool_panel_section_label: Graph/Display Data
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: prop_venn
@@ -224,27 +224,27 @@ tools:
 - name: pygenometracks
   owner: iuc
   revisions:
-  - 326a3db8d9d1
-  - 7dd841a32245
   - 36b848d5f3ec
-  - 2824d77cd8f8
-  - 360df4999907
   - 4ac4e7083b7e
-  - a1abfa420d9d
+  - 360df4999907
+  - 326a3db8d9d1
   - 14e7c35f3d00
+  - 7dd841a32245
   - 86d0ebe09628
+  - 2824d77cd8f8
+  - a1abfa420d9d
   tool_panel_section_label: Graph/Display Data
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: volcanoplot
   owner: iuc
   revisions:
-  - cfb0595f9842
-  - 99ace6c1ff57
-  - 11c344627e52
-  - 5e08a1e22dbc
-  - 44608d0193ed
-  - 73b8cb5bddcd
   - 83c573f2e73c
+  - 5e08a1e22dbc
+  - 99ace6c1ff57
+  - 73b8cb5bddcd
+  - 11c344627e52
+  - cfb0595f9842
+  - 44608d0193ed
   tool_panel_section_label: Graph/Display Data
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: weblogo3
@@ -256,8 +256,8 @@ tools:
 - name: wordcloud
   owner: bgruening
   revisions:
-  - b98bcfdec481
   - 57e3de4b3b0d
+  - b98bcfdec481
   - 7b583659453b
   tool_panel_section_label: Graph/Display Data
   tool_shed_url: toolshed.g2.bx.psu.edu
