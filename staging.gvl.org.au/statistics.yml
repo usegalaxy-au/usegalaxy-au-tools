@@ -1,0 +1,168 @@
+tools:
+- name: categorize_elements_satisfying_criteria
+  owner: devteam
+  revisions:
+  - 586c1f0e1515
+  tool_panel_section_label: Statistics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: compute_motif_frequencies_for_all_motifs
+  owner: devteam
+  revisions:
+  - 5319efa51514
+  tool_panel_section_label: Statistics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: compute_motifs_frequency
+  owner: devteam
+  revisions:
+  - 1f8ee7f9701b
+  tool_panel_section_label: Statistics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: correlation
+  owner: devteam
+  revisions:
+  - 24e01abf9e34
+  tool_panel_section_label: Statistics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: count_gff_features
+  owner: devteam
+  revisions:
+  - 188392a0d0a8
+  tool_panel_section_label: Statistics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: datamash_ops
+  owner: iuc
+  revisions:
+  - 4c07ddedc198
+  - 419027d822d6
+  - 61e2aa6bb55d
+  - 562f3c677828
+  - 2f3c6f2dcf39
+  - 746e8e4bf929
+  tool_panel_section_label: Statistics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: dwt_cor_ava_perclass
+  owner: devteam
+  revisions:
+  - a0defff5cf89
+  - b87bbe6bc044
+  tool_panel_section_label: Statistics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: dwt_cor_avb_all
+  owner: devteam
+  revisions:
+  - e01e8a9a82f4
+  - 8564f6927b87
+  tool_panel_section_label: Statistics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: dwt_ivc_all
+  owner: devteam
+  revisions:
+  - 506ae7b0d85d
+  - 0b89b03ad760
+  tool_panel_section_label: Statistics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: dwt_var_perclass
+  owner: devteam
+  revisions:
+  - 781e68074f84
+  - cb422b6f49d2
+  tool_panel_section_label: Statistics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: dwt_var_perfeature
+  owner: devteam
+  revisions:
+  - 7a15159140d1
+  - cb1c59d69557
+  - 6c29c7e347e8
+  tool_panel_section_label: Statistics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: generate_pc_lda_matrix
+  owner: devteam
+  revisions:
+  - 04cdbd00dcec
+  tool_panel_section_label: Statistics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: iwtomics_loadandplot
+  owner: iuc
+  revisions:
+  - ce633cc8f5f9
+  tool_panel_section_label: Statistics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: iwtomics_plotwithscale
+  owner: iuc
+  revisions:
+  - 1bc9150ed125
+  tool_panel_section_label: Statistics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: iwtomics_testandplot
+  owner: iuc
+  revisions:
+  - 94965e369be4
+  tool_panel_section_label: Statistics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: plot_from_lda
+  owner: devteam
+  revisions:
+  - 08affc5d2aef
+  tool_panel_section_label: Statistics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: poisson2test
+  owner: devteam
+  revisions:
+  - 5ff18ec88181
+  tool_panel_section_label: Statistics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: row_means
+  owner: simon-gladman
+  revisions:
+  - 33493e25c51c
+  tool_panel_section_label: Statistics
+  tool_shed_url: testtoolshed.g2.bx.psu.edu
+- name: sklearn_build_pipeline
+  owner: bgruening
+  revisions:
+  - aef56d0e7a61
+  - 9c3e1d3235c8
+  - 7442b94d6a1e
+  - 840f29aad145
+  - 4c4ec859c31a
+  - b1eda492f063
+  tool_panel_section_label: Statistics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: sklearn_estimator_attributes
+  owner: bgruening
+  revisions:
+  - 375bbd555f4a
+  - 30d21a6041f6
+  - 07843f917990
+  - d0352e8b4c10
+  - 9fda0b82f419
+  tool_panel_section_label: Statistics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: sklearn_nn_classifier
+  owner: bgruening
+  revisions:
+  - 8b1b2b91f8d0
+  - 7ae443e6217d
+  - cd02bf168d23
+  - 2c58b83c9bad
+  - 4cc980df6265
+  tool_panel_section_label: Statistics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: sklearn_numeric_clustering
+  owner: bgruening
+  revisions:
+  - ad7e0b4291ee
+  - 7dd3fb35904f
+  - 4bbaf77573ef
+  - e10e776f2109
+  - bb9fc9d46ea4
+  - 1dd433d2c92c
+  tool_panel_section_label: Statistics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: t_test_two_samples
+  owner: devteam
+  revisions:
+  - c2ffc9885b5a
+  tool_panel_section_label: Statistics
+  tool_shed_url: toolshed.g2.bx.psu.edu
