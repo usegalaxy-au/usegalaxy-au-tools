@@ -32,12 +32,12 @@ tools:
 - name: datamash_ops
   owner: iuc
   revisions:
+  - 746e8e4bf929
+  - 4c07ddedc198
+  - 61e2aa6bb55d
+  - 2f3c6f2dcf39
   - 562f3c677828
   - 419027d822d6
-  - 61e2aa6bb55d
-  - 4c07ddedc198
-  - 2f3c6f2dcf39
-  - 746e8e4bf929
   tool_panel_section_label: Statistics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: dwt_cor_ava_perclass
@@ -50,15 +50,15 @@ tools:
 - name: dwt_cor_avb_all
   owner: devteam
   revisions:
-  - 8564f6927b87
   - e01e8a9a82f4
+  - 8564f6927b87
   tool_panel_section_label: Statistics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: dwt_ivc_all
   owner: devteam
   revisions:
-  - 0b89b03ad760
   - 506ae7b0d85d
+  - 0b89b03ad760
   tool_panel_section_label: Statistics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: dwt_var_perclass
@@ -115,12 +115,12 @@ tools:
 - name: sklearn_build_pipeline
   owner: bgruening
   revisions:
-  - aef56d0e7a61
-  - 4c4ec859c31a
-  - b1eda492f063
   - 9c3e1d3235c8
-  - 840f29aad145
   - 7442b94d6a1e
+  - aef56d0e7a61
+  - b1eda492f063
+  - 840f29aad145
+  - 4c4ec859c31a
   tool_panel_section_label: Statistics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: sklearn_estimator_attributes
@@ -136,22 +136,22 @@ tools:
 - name: sklearn_nn_classifier
   owner: bgruening
   revisions:
-  - cd02bf168d23
   - 8b1b2b91f8d0
-  - 2c58b83c9bad
   - 7ae443e6217d
   - 4cc980df6265
+  - cd02bf168d23
+  - 2c58b83c9bad
   tool_panel_section_label: Statistics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: sklearn_numeric_clustering
   owner: bgruening
   revisions:
-  - 4bbaf77573ef
-  - e10e776f2109
+  - bb9fc9d46ea4
   - 7dd3fb35904f
   - 1dd433d2c92c
   - ad7e0b4291ee
-  - bb9fc9d46ea4
+  - 4bbaf77573ef
+  - e10e776f2109
   tool_panel_section_label: Statistics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: t_test_two_samples
