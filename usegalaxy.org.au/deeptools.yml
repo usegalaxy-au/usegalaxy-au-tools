@@ -2,48 +2,48 @@ tools:
 - name: deeptools_bam_compare
   owner: bgruening
   revisions:
-  - 29451af70c52
-  - 268e91e540ee
-  - c929a006727f
-  - e821645ef8fc
   - a1ca9bccc7f2
   - de72ba3ed6f2
+  - 29451af70c52
   - 5f6d123679f4
+  - 268e91e540ee
+  - e821645ef8fc
+  - c929a006727f
   tool_panel_section_label: DeepTools
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: deeptools_bam_coverage
   owner: bgruening
   revisions:
-  - 7a7fd0f5f15d
+  - 0e49b109abc2
   - bb1e4f63e0e6
-  - 12af64f93288
   - 5d11599b8a7d
   - 2d2cf5c1ea8a
-  - 0e49b109abc2
+  - 12af64f93288
   - 0e143b4c3987
+  - 7a7fd0f5f15d
   tool_panel_section_label: DeepTools
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: deeptools_bam_pe_fragmentsize
   owner: bgruening
   revisions:
-  - 1d848bc4585f
-  - 7c1beb6d6eca
-  - dc059492a995
   - 195e98217334
-  - 81b1e3e1fc6c
   - c06951d10364
+  - 1d848bc4585f
+  - dc059492a995
+  - 7c1beb6d6eca
+  - 81b1e3e1fc6c
   tool_panel_section_label: DeepTools
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: deeptools_bigwig_compare
   owner: bgruening
   revisions:
-  - 93eb012d9eed
+  - 26e7304d6737
   - a67ac707496a
+  - 3d211717a775
+  - 71aa86af6762
   - 07418a30ed01
   - bfff7454b59a
-  - 71aa86af6762
-  - 26e7304d6737
-  - 3d211717a775
+  - 93eb012d9eed
   tool_panel_section_label: DeepTools
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: deeptools_compute_gc_bias
@@ -51,9 +51,9 @@ tools:
   revisions:
   - 5be24eba848d
   - 26983857c91a
-  - 56d5b797ce84
   - b8858746dc1f
   - dd0b7398bb96
+  - 56d5b797ce84
   - 29fcfd36e90a
   - 2bc10a9ca58b
   tool_panel_section_label: DeepTools
@@ -61,146 +61,146 @@ tools:
 - name: deeptools_compute_matrix_operations
   owner: bgruening
   revisions:
+  - e6d0bff01239
+  - 9384cd033f30
+  - 7ef978dc1b8a
+  - 7e6bcd2e5128
   - 72bfafe3330b
   - c3e012dfe21f
-  - 7e6bcd2e5128
-  - 9384cd033f30
   - ee3a1b0f45f1
-  - 7ef978dc1b8a
-  - e6d0bff01239
   tool_panel_section_label: DeepTools
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: deeptools_compute_matrix
   owner: bgruening
   revisions:
-  - fb9cf9c97ec4
-  - d9a637e83828
-  - 514fa53b5efb
-  - 167788df3b46
-  - 9470f29702f8
   - a60c359ec43c
-  - fd1275e01605
   - b73e213add0c
+  - d9a637e83828
+  - 167788df3b46
+  - 514fa53b5efb
+  - fb9cf9c97ec4
+  - fd1275e01605
+  - 9470f29702f8
   tool_panel_section_label: DeepTools
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: deeptools_correct_gc_bias
   owner: bgruening
   revisions:
-  - c34d11ea4ba6
+  - a02cfa31e9cb
   - ca0616bb2cdf
   - e479c7ca5570
-  - 2c37ce318bc3
-  - 86febdcc4283
-  - a02cfa31e9cb
   - 5bffaa8354a1
+  - c34d11ea4ba6
+  - 86febdcc4283
+  - 2c37ce318bc3
   tool_panel_section_label: DeepTools
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: deeptools_multi_bam_summary
   owner: bgruening
   revisions:
-  - 69a8621ca2f0
   - 192ef85c0b0b
-  - 1fcb7adc39b8
+  - 01fb6a7654e6
+  - 2d466b530754
+  - 69a8621ca2f0
   - 78f405266706
   - 004aea905d4d
-  - 2d466b530754
-  - 01fb6a7654e6
+  - 1fcb7adc39b8
   tool_panel_section_label: DeepTools
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: deeptools_multi_bigwig_summary
   owner: bgruening
   revisions:
-  - 3c9f0c486cca
-  - d580d6acd1df
-  - d9ce4897dbb2
-  - 9ecba5e225a6
-  - 137c4beed34b
   - 2f9e4843f480
   - db940c262830
   - 459cfa861f0b
+  - 9ecba5e225a6
+  - 137c4beed34b
+  - 3c9f0c486cca
+  - d580d6acd1df
+  - d9ce4897dbb2
   tool_panel_section_label: DeepTools
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: deeptools_plot_correlation
   owner: bgruening
   revisions:
-  - fd408d755394
-  - f264afa9fa6f
+  - bd7db9e2f2cb
   - 2c66e43f1c86
   - bad3ca889618
+  - f264afa9fa6f
   - 32e451def88c
+  - fd408d755394
   - fbe773640707
-  - bd7db9e2f2cb
   tool_panel_section_label: DeepTools
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: deeptools_plot_coverage
   owner: bgruening
   revisions:
-  - 7e361d147872
-  - 7fda5607e777
   - 3b9d990a0a0e
-  - 56bce3c82278
-  - 231994413f89
-  - 4e12ea27f788
   - 9368fbc49c8b
+  - 7fda5607e777
+  - 7e361d147872
+  - 56bce3c82278
+  - 4e12ea27f788
+  - 231994413f89
   tool_panel_section_label: DeepTools
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: deeptools_plot_enrichment
   owner: bgruening
   revisions:
+  - d9114ef1c8a5
+  - c03c3384cd81
   - 4431f39ede55
   - 94ca68515826
-  - d9114ef1c8a5
   - ce4ce3316f74
-  - e65d16fb2724
   - b1779366c8e9
-  - c03c3384cd81
+  - e65d16fb2724
   tool_panel_section_label: DeepTools
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: deeptools_plot_fingerprint
   owner: bgruening
   revisions:
+  - 2da482e408b8
   - 23f7c5f1fdaf
-  - f8fc4e5aff9d
-  - d57251071381
-  - 4ed32329e0ed
   - 793665fff0f8
   - b88ebb3672a1
-  - 2da482e408b8
+  - d57251071381
+  - f8fc4e5aff9d
+  - 4ed32329e0ed
   tool_panel_section_label: DeepTools
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: deeptools_plot_heatmap
   owner: bgruening
   revisions:
   - 010e58e9d822
-  - e4c7985d4585
-  - c60570fa602f
-  - 25d830337d31
-  - a4dfb122e52b
-  - 512155688d98
-  - a7849312d328
   - ba6efa77fb79
+  - e4c7985d4585
+  - a7849312d328
+  - 512155688d98
+  - a4dfb122e52b
+  - 25d830337d31
+  - c60570fa602f
   tool_panel_section_label: DeepTools
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: deeptools_plot_pca
   owner: bgruening
   revisions:
-  - 443d9a9d6d11
   - 00d869ea03a1
-  - aa200e4f3939
   - c899e0ccff8c
-  - 38e3f226248b
   - 4d678170d29b
+  - 38e3f226248b
+  - aa200e4f3939
+  - 443d9a9d6d11
   - 69264da0ce77
   tool_panel_section_label: DeepTools
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: deeptools_plot_profile
   owner: bgruening
   revisions:
-  - 10301d137111
   - c361b12d207a
-  - 6662b1a8d326
-  - a2d70c4fd406
-  - aac8444d6681
+  - 10301d137111
   - d806504e96d9
+  - aac8444d6681
+  - a2d70c4fd406
+  - 6662b1a8d326
   tool_panel_section_label: DeepTools
   tool_shed_url: toolshed.g2.bx.psu.edu
