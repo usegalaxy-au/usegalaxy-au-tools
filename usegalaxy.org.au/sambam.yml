@@ -2,20 +2,21 @@ tools:
 - name: bam_to_sam
   owner: devteam
   revisions:
-  - 69aa7277b44c
-  - 10184eaa85fc
   - 2b7acdca5fe1
-  - 3c661e57a88f
+  - 132036f92aa3
+  - 69aa7277b44c
   - 88eedb4abea0
+  - 10184eaa85fc
+  - 3c661e57a88f
   tool_panel_section_label: SAM/BAM
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: bamtools_filter
   owner: devteam
   revisions:
-  - 993b19f20c76
-  - 1dfd95ee241e
-  - 108db6635177
   - 62e4d6cdbaa7
+  - 108db6635177
+  - 1dfd95ee241e
+  - 993b19f20c76
   - cb20f99fd45b
   tool_panel_section_label: SAM/BAM
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -41,8 +42,8 @@ tools:
 - name: bamtools_split_tag
   owner: iuc
   revisions:
-  - e9b9c489aacc
   - e30af4e78cd3
+  - e9b9c489aacc
   tool_panel_section_label: SAM/BAM
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: bamtools
@@ -61,8 +62,8 @@ tools:
 - name: mosdepth
   owner: iuc
   revisions:
-  - 5854d0da92b4
   - b1a8d09e5a82
+  - 5854d0da92b4
   tool_panel_section_label: SAM/BAM
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: ngsutils_bam_filter
@@ -86,17 +87,17 @@ tools:
 - name: qualimap_bamqc
   owner: iuc
   revisions:
-  - 5f8e69cc4c6e
-  - 30a201c9c310
   - 19ece8afbaab
   - e7fd6754d093
+  - 30a201c9c310
+  - 5f8e69cc4c6e
   tool_panel_section_label: SAM/BAM
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qualimap_multi_bamqc
   owner: iuc
   revisions:
-  - 17b35d23731f
   - e38af83df163
+  - 17b35d23731f
   tool_panel_section_label: SAM/BAM
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: sam2interval
@@ -114,16 +115,16 @@ tools:
 - name: sam_pileup
   owner: devteam
   revisions:
-  - a3b4ad6858ff
   - 890d97772e2a
+  - a3b4ad6858ff
   tool_panel_section_label: SAM/BAM
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: sam_to_bam
   owner: devteam
   revisions:
   - 0e60e2dd20af
-  - cf1ffd88f895
   - 72b8a3614802
+  - cf1ffd88f895
   tool_panel_section_label: SAM/BAM
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: sambamba
@@ -135,56 +136,61 @@ tools:
 - name: samtool_filter2
   owner: devteam
   revisions:
-  - 56c31114ad4a
   - 649a225999a5
+  - 56c31114ad4a
   tool_panel_section_label: SAM/BAM
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: samtools_bedcov
   owner: devteam
   revisions:
   - 46c6639921f1
-  - 9149ad20699a
-  - 762f63d4e25d
   - 6856f8a01905
+  - cc01c0658f6c
+  - 9149ad20699a
   - 09652022e285
+  - 762f63d4e25d
   - 12749212f61b
   tool_panel_section_label: SAM/BAM
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: samtools_calmd
   owner: devteam
   revisions:
-  - 92ec40abcdcf
-  - 3d5853a84711
+  - 26a85f18dc69
   - 22c2ab33cec9
-  - 26b4f9f98aca
   - 33208952b99d
+  - 3d5853a84711
+  - 26b4f9f98aca
   - 06dc50b7b711
+  - 92ec40abcdcf
   tool_panel_section_label: SAM/BAM
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: samtools_coverage
   owner: iuc
   revisions:
-  - ddbd49b892e5
   - f4f7f632815d
+  - 5160be5d088f
+  - ddbd49b892e5
   - c4ff13d2aab3
   tool_panel_section_label: SAM/BAM
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: samtools_depth
   owner: iuc
   revisions:
-  - 971dc85e9441
   - '772919943459'
+  - 971dc85e9441
+  - fb6d5ffc365f
   tool_panel_section_label: SAM/BAM
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: samtools_fastx
   owner: iuc
   revisions:
-  - 9038311ed624
-  - b3d99709fe1a
-  - a8d69aee190e
-  - 66e23b11feae
   - b906586a6596
+  - a8d69aee190e
   - 720217c23995
+  - 491037bfc0d2
+  - b3d99709fe1a
+  - 66e23b11feae
+  - 9038311ed624
   tool_panel_section_label: SAM/BAM
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: samtools_fixmate
@@ -198,44 +204,47 @@ tools:
 - name: samtools_flagstat
   owner: devteam
   revisions:
-  - fe34990e5ce7
   - 22970df7a40e
-  - fefd89ab563c
-  - cc61ade70eb8
-  - db17d5321bad
   - fbc6c28a5b14
+  - fefd89ab563c
+  - db17d5321bad
+  - a0d8e49a018c
   - 3ed3e1146308
+  - cc61ade70eb8
+  - fe34990e5ce7
   tool_panel_section_label: SAM/BAM
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: samtools_idxstats
   owner: devteam
   revisions:
+  - 13aad5cb9be4
+  - 5c25c98e2a88
+  - fa5d3e61e429
+  - 811fc2d75ad4
+  - 7a6034296ae9
+  - c9d9f721a568
   - 7def34e6cf4d
   - 88b8c2916784
-  - 811fc2d75ad4
-  - fa5d3e61e429
-  - c9d9f721a568
-  - 5c25c98e2a88
-  - 7a6034296ae9
   tool_panel_section_label: SAM/BAM
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: samtools_markdup
   owner: iuc
   revisions:
   - 229ba92a3b55
-  - 40fa6c240105
   - a389f74c3630
+  - 40fa6c240105
   tool_panel_section_label: SAM/BAM
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: samtools_merge
   owner: iuc
   revisions:
-  - cae2794d2deb
-  - a7617eb92baf
   - 740ce0a18f0d
+  - cae2794d2deb
   - 65a38e8c8e2a
-  - b40e2d865d52
   - 36677f429310
+  - c8bc9d08b0e3
+  - b40e2d865d52
+  - a7617eb92baf
   tool_panel_section_label: SAM/BAM
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: samtools_mpileup
@@ -243,11 +252,12 @@ tools:
   revisions:
   - 329deb17a9f7
   - 583abf29fc8e
-  - b61f5d6a7f25
-  - 32f6fffbc3e9
-  - 8da515fbc1bf
   - 9da0311ab1dd
+  - 0668270db5ba
   - 7df230bec125
+  - 8da515fbc1bf
+  - 32f6fffbc3e9
+  - b61f5d6a7f25
   tool_panel_section_label: SAM/BAM
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: samtools_phase
@@ -255,17 +265,19 @@ tools:
   revisions:
   - 1e5880498f52
   - b5c3b1856370
+  - 2f901e9402dd
   tool_panel_section_label: SAM/BAM
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: samtools_reheader
   owner: devteam
   revisions:
+  - 30388d878f81
+  - db000c6007a0
   - bb8cfc6f6e0c
   - 85e38b31e8b3
-  - db000c6007a0
-  - 30388d878f81
   - 2899e5b8c52a
   - 2d7f0d455ad4
+  - df41198e970c
   tool_panel_section_label: SAM/BAM
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: samtools_rmdup
@@ -277,61 +289,65 @@ tools:
 - name: samtools_slice_bam
   owner: devteam
   revisions:
-  - a4a10c7924d1
-  - b8beef827165
-  - fea1a167b822
   - adc4ed59d82b
   - 344fc91e1bfd
+  - fea1a167b822
+  - b8beef827165
+  - 32e29dd08b1a
+  - a4a10c7924d1
   tool_panel_section_label: SAM/BAM
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: samtools_sort
   owner: devteam
   revisions:
-  - d54a4df48867
+  - cab3f8d35989
+  - f2f2650aeade
+  - 9ede25e390ff
   - e613c1ad4c4c
   - 6c2c1836728b
-  - 9ede25e390ff
-  - f2f2650aeade
-  - cab3f8d35989
+  - 69dca890852c
+  - d54a4df48867
   tool_panel_section_label: SAM/BAM
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: samtools_split
   owner: devteam
   revisions:
-  - 5d9ae78f34d3
   - 135c85f4cfaf
-  - bd850490c7f1
-  - 818030fa6bbf
-  - b7f7826ef1cd
+  - 3d9c6d1d0b9c
   - bcedabb53ddf
+  - bd850490c7f1
+  - b7f7826ef1cd
+  - 818030fa6bbf
+  - 5d9ae78f34d3
   tool_panel_section_label: SAM/BAM
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: samtools_stats
   owner: devteam
   revisions:
-  - 1ed8ed887035
-  - 541082d03bef
-  - 24c5d43cb545
+  - 3a0efe14891f
   - 145f6d74ff5e
   - 1cc79f49b8d5
-  - 5a08c09b9311
+  - 1ed8ed887035
+  - 24c5d43cb545
+  - 541082d03bef
   - e221fe58c2f5
-  - 3a0efe14891f
+  - 5a08c09b9311
+  - 57934e90e27c
   tool_panel_section_label: SAM/BAM
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: samtools_view
   owner: iuc
   revisions:
-  - b72793637686
-  - 6be888be75f9
   - 48bbbcb692ce
-  - b01db2684fa5
-  - 0dbf49c414ae
-  - 32dc5f781059
-  - 2dce91e11ca7
-  - c370440f901e
-  - bf328cec6a42
+  - b72793637686
   - 5826298f6a73
   - 350bbc5c2ffd
+  - bf328cec6a42
+  - 6be888be75f9
+  - 0dbf49c414ae
+  - 2dce91e11ca7
+  - 32dc5f781059
+  - b01db2684fa5
+  - c370440f901e
   tool_panel_section_label: SAM/BAM
   tool_shed_url: toolshed.g2.bx.psu.edu
