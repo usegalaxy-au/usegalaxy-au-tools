@@ -1,0 +1,55 @@
+tools:
+- name: necat
+  owner: iuc
+  tool_panel_section_label: Assembly
+- name: tgsgapcloser
+  owner: bgruening
+  tool_panel_section_label: Assembly
+- name: prinseq
+  owner: iuc
+  tool_panel_section_label: FASTQ Quality Control
+- name: genomad_end_to_end
+  owner: ufz
+  tool_panel_section_label: Metagenomic Analysis
+- name: mmseqs2_taxonomy_assignment
+  owner: iuc
+  tool_panel_section_label: Metagenomic Analysis
+- name: kaiju_addtaxonnames
+  owner: iuc
+  tool_panel_section_label: Metagenomic Analysis
+- name: kaiju_mergeoutputs
+  owner: iuc
+  tool_panel_section_label: Metagenomic Analysis
+- name: kaiju_kaiju
+  owner: iuc
+  tool_panel_section_label: Metagenomic Analysis
+- name: mmseqs2_easy_linclust_clustering
+  owner: iuc
+  tool_panel_section_label: Metagenomic Analysis
+- name: kaiju_kaiju2table
+  owner: iuc
+  tool_panel_section_label: Metagenomic Analysis
+- name: metabuli_classify
+  owner: iuc
+  tool_panel_section_label: Metagenomic Analysis
+- name: mapseq
+  owner: iuc
+  tool_panel_section_label: Metagenomic Analysis
+- name: fastk_fastk
+  owner: iuc
+  tool_panel_section_label: Assembly
+- name: fastk_histex
+  owner: iuc
+  tool_panel_section_label: Assembly
+- name: fastk_logex
+  owner: iuc
+  tool_panel_section_label: Assembly
+- name: ncbi_egapx
+  owner: richard-burhans
+  tool_panel_section_label: Annotation
+- name: ebi_search_rest_results
+  owner: iuc
+  tool_panel_section_label: Get Data
+- name: kaiju_kaiju2krona
+  owner: iuc
+  tool_panel_section_label: Metagenomic Analysis
