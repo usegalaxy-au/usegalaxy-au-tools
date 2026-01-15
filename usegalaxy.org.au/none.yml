@@ -27,19 +27,19 @@ tools:
 - name: data_manager_bakta
   owner: iuc
   revisions:
-  - 97b1b5ad1cda
-  - d74850cf4e42
   - adfd6bf710bd
+  - 97b1b5ad1cda
   - baceff842902
+  - d74850cf4e42
   - 3e73c97f025d
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_bowtie2_index_builder
   owner: devteam
   revisions:
+  - 1586b111d2a3
   - 9dd107db92c2
   - 83da94c0e4a6
-  - 1586b111d2a3
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_build_bracken_database
@@ -51,16 +51,16 @@ tools:
 - name: data_manager_build_kraken2_database
   owner: iuc
   revisions:
-  - e9ee4d074d5d
   - 8c533e19b697
-  - 19b6a2f0dbe2
+  - ed1518ce2237
   - 13851aefa67a
+  - 19b6a2f0dbe2
   - 201eff2131d6
   - 54871a78828e
   - 2f27f3b86827
-  - e4b4837f06f5
-  - ed1518ce2237
   - 1e34d2e3d285
+  - e9ee4d074d5d
+  - e4b4837f06f5
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_bwa_mem2_index_builder
@@ -94,41 +94,41 @@ tools:
 - name: data_manager_dada2
   owner: iuc
   revisions:
-  - 0181efacb40a
   - 5711fc06a63e
-  - 48a42ca61006
   - 38ccd4589990
+  - 0181efacb40a
+  - 48a42ca61006
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_diamond_database_builder
   owner: bgruening
   revisions:
-  - 5a0d0bee4f8d
   - 4a08b7b76b78
+  - 5a0d0bee4f8d
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_eggnog_mapper_abspath
   owner: galaxyp
   revisions:
-  - fcb8bdd124f4
   - 81a286e4c5a2
+  - fcb8bdd124f4
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_fetch_busco
   owner: iuc
   revisions:
   - 304873c2530b
+  - 2b4526fdf7fb
   - 15b97817550a
   - 709faa13c793
-  - 2b4526fdf7fb
   - 8ef19ca5d289
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_fetch_genome_dbkeys_all_fasta
   owner: devteam
   revisions:
-  - b1bc53e9bbc5
   - 4d3eff1bc421
+  - b1bc53e9bbc5
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_funannotate
@@ -140,32 +140,32 @@ tools:
 - name: data_manager_gatk_picard_index_builder
   owner: devteam
   revisions:
-  - 6287d0ee459e
   - 9a40272f56d0
+  - 6287d0ee459e
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_gemini_database_downloader
   owner: iuc
   revisions:
   - 52b6a4d98009
-  - b4b2b284230a
   - 27a6a256cd23
   - 172815da3d41
+  - b4b2b284230a
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_gtdbtk_database_installer
   owner: iuc
   revisions:
-  - df84aaed4769
   - 3248e43703e7
+  - df84aaed4769
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_hisat2_index_builder
   owner: iuc
   revisions:
   - d74c740bdb25
-  - e4f36467bb51
   - d210e1f185bd
+  - e4f36467bb51
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_humann2_database_downloader
@@ -177,8 +177,8 @@ tools:
 - name: data_manager_humann_database_downloader
   owner: iuc
   revisions:
-  - 19bbd19b74b3
   - 87febc68b45b
+  - 19bbd19b74b3
   - fea85c467896
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -192,8 +192,8 @@ tools:
 - name: data_manager_kallisto_index_builder
   owner: iuc
   revisions:
-  - 4c7ebbad42cf
   - 15c2fc266540
+  - 4c7ebbad42cf
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_mash_sketch_builder
@@ -211,13 +211,13 @@ tools:
 - name: data_manager_metaphlan_database_downloader
   owner: iuc
   revisions:
-  - d8dc037e3c13
-  - 2c22b676ec46
-  - 0cb27ea69dc1
-  - 4ba60cb14cb0
   - 9c43baa60906
+  - d8dc037e3c13
   - 2c61c30a57e7
   - 5fe20c915fa6
+  - 0cb27ea69dc1
+  - 4ba60cb14cb0
+  - 2c22b676ec46
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_mitos
@@ -238,10 +238,10 @@ tools:
 - name: data_manager_pangolearn
   owner: iuc
   revisions:
-  - ed7a967cb11b
-  - df30a2f1db55
-  - 29c738066906
   - 6e24e79d3d69
+  - ed7a967cb11b
+  - 29c738066906
+  - df30a2f1db55
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_pharokka
@@ -259,17 +259,17 @@ tools:
 - name: data_manager_sam_fasta_index_builder
   owner: devteam
   revisions:
-  - ad90c2da4f38
-  - defd3e9ddd2d
-  - 1865e693d8b2
   - 3e4d45aca422
+  - ad90c2da4f38
+  - 1865e693d8b2
+  - defd3e9ddd2d
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_snpeff
   owner: iuc
   revisions:
-  - d107d20dc6bd
   - def511e8e005
+  - d107d20dc6bd
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_sortmerna_database_downloader
@@ -281,18 +281,18 @@ tools:
 - name: data_manager_star_index_builder
   owner: iuc
   revisions:
-  - 64deddb6a8ec
-  - 71c994a11f71
-  - d63c1442407f
   - c520a52b5174
+  - d63c1442407f
+  - 71c994a11f71
+  - 64deddb6a8ec
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_twobit_builder
   owner: devteam
   revisions:
-  - 94a50db37d1a
   - 9946bc39c834
   - 625fd9476402
+  - 94a50db37d1a
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_vep_cache_downloader
@@ -803,8 +803,8 @@ tools:
 - name: rdata_xcms_datatypes
   owner: lecorguille
   revisions:
-  - 544f6d2329ac
   - d64562a4ebb3
+  - 544f6d2329ac
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: rsem_datatypes
@@ -816,11 +816,11 @@ tools:
 - name: salsa
   owner: iuc
   revisions:
-  - ab5b7f6b7198
-  - 58a870ef434c
-  - 9a22227bb6d0
-  - f77f7a7f3b83
   - ba7b0f11e470
+  - 58a870ef434c
+  - ab5b7f6b7198
+  - f77f7a7f3b83
+  - 9a22227bb6d0
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: samtools_ampliconclip
