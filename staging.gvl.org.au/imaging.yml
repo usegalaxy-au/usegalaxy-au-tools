@@ -2,20 +2,20 @@ tools:
 - name: 2d_auto_threshold
   owner: imgteam
   revisions:
-  - 0c777d708acc
-  - 8bccb36e055a
+  - 81f0cbca04a7
   - 7db4fc31dbee
   - 3df9f0a4bf34
-  - 81f0cbca04a7
-  - 50fa6150e340
   - 699a5e9146b3
+  - 50fa6150e340
+  - 0c777d708acc
+  - 8bccb36e055a
   tool_panel_section_label: Imaging
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: 2d_feature_extraction
   owner: imgteam
   revisions:
-  - 5791a7f65275
   - 0a53256b48c6
+  - 5791a7f65275
   - 6a2b26c297a4
   - 2436a8807ad1
   tool_panel_section_label: Imaging
@@ -23,45 +23,45 @@ tools:
 - name: 2d_filter_segmentation_by_features
   owner: imgteam
   revisions:
-  - 9d47aabda459
-  - 6ad1d3cfdea1
   - e576b73a2e2f
+  - 6ad1d3cfdea1
+  - 9d47aabda459
   tool_panel_section_label: Imaging
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: 2d_histogram_equalization
   owner: imgteam
   revisions:
-  - 70316d792fc9
   - 77f7159d775a
   - b1c2c210813c
+  - 70316d792fc9
   tool_panel_section_label: Imaging
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: 2d_simple_filter
   owner: imgteam
   revisions:
-  - d51310ab328a
-  - dba87c4b32d3
-  - 1b7e67168732
   - f70b215d155c
+  - 1b7e67168732
+  - dba87c4b32d3
+  - d51310ab328a
   tool_panel_section_label: Imaging
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: bfconvert
   owner: imgteam
   revisions:
-  - b07f4839ca77
-  - f3360fbeda64
-  - 10eed33aa9b2
-  - 85edbb7a436b
   - fcadded98e61
+  - 10eed33aa9b2
+  - f3360fbeda64
+  - 85edbb7a436b
+  - b07f4839ca77
   tool_panel_section_label: Imaging
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: binary2labelimage
   owner: imgteam
   revisions:
   - 7f8102bdbfa1
+  - 6e65fd971e13
   - 984358e43242
   - 364e235bf378
-  - 6e65fd971e13
   tool_panel_section_label: Imaging
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: bioimage_inference
@@ -74,15 +74,15 @@ tools:
   owner: bgruening
   revisions:
   - 5251ce4c4a11
-  - 32153c43126c
   - 9186100e75b5
+  - 32153c43126c
   tool_panel_section_label: Imaging
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: count_objects
   owner: imgteam
   revisions:
-  - b58447a2eed2
   - 664232d2a3f7
+  - b58447a2eed2
   - 5bf8eb50b280
   tool_panel_section_label: Imaging
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -90,8 +90,8 @@ tools:
   owner: bgruening
   revisions:
   - e917a2424690
-  - eb6c08714244
   - 0e4dccaafef5
+  - eb6c08714244
   tool_panel_section_label: Imaging
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: cp_color_to_gray
@@ -104,9 +104,9 @@ tools:
 - name: cp_common
   owner: bgruening
   revisions:
+  - 6070780813d9
   - e7273daa5ae2
   - 670975e92458
-  - 6070780813d9
   tool_panel_section_label: Imaging
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: cp_convert_objects_to_image
@@ -120,48 +120,48 @@ tools:
 - name: cp_display_data_on_image
   owner: bgruening
   revisions:
-  - 2484086dee41
   - 6a7da2e5f696
+  - 2484086dee41
   - 5d28ac336861
   tool_panel_section_label: Imaging
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: cp_enhance_or_suppress_features
   owner: bgruening
   revisions:
-  - bace5a93a97c
   - 11f177b1a59e
+  - bace5a93a97c
   - f2ed92b011a9
   tool_panel_section_label: Imaging
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: cp_export_to_spreadsheet
   owner: bgruening
   revisions:
-  - d0178bdcd00e
   - f8fa0f6718a3
+  - d0178bdcd00e
   - f24c370e5ea4
   tool_panel_section_label: Imaging
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: cp_gray_to_color
   owner: bgruening
   revisions:
-  - 3245681b2f6d
   - 31d195bedf6d
   - ad271f78a87a
+  - 3245681b2f6d
   tool_panel_section_label: Imaging
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: cp_identify_primary_objects
   owner: bgruening
   revisions:
+  - 87d4d92d7487
   - b6eec6087271
   - 993faa34333b
-  - 87d4d92d7487
   tool_panel_section_label: Imaging
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: cp_image_math
   owner: bgruening
   revisions:
-  - c09dcda1143f
   - ff1a86a87364
+  - c09dcda1143f
   - 6100a22bf4f2
   tool_panel_section_label: Imaging
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -176,57 +176,57 @@ tools:
 - name: cp_measure_granularity
   owner: bgruening
   revisions:
-  - 2564f461de62
   - ac5bea85a391
   - a1a961c46d4b
+  - 2564f461de62
   tool_panel_section_label: Imaging
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: cp_measure_image_area_occupied
   owner: bgruening
   revisions:
-  - a32c3f810ade
   - 91e03287f285
+  - a32c3f810ade
   - 20dbb1f7ec7b
   tool_panel_section_label: Imaging
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: cp_measure_image_intensity
   owner: bgruening
   revisions:
-  - 5499dc6f8ac1
   - 8536b1ae0254
+  - 5499dc6f8ac1
   - b64af54c5c09
   tool_panel_section_label: Imaging
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: cp_measure_image_quality
   owner: bgruening
   revisions:
-  - e972e07c7845
   - 6f4715b8540a
+  - e972e07c7845
   - d3890df07463
   tool_panel_section_label: Imaging
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: cp_measure_object_intensity
   owner: bgruening
   revisions:
+  - 980aed9e8fd5
   - 407925835dd9
   - e52c75a28c4b
-  - 980aed9e8fd5
   tool_panel_section_label: Imaging
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: cp_measure_object_size_shape
   owner: bgruening
   revisions:
   - acf3aa487283
-  - 79e10d12d90a
   - d85f11570109
+  - 79e10d12d90a
   tool_panel_section_label: Imaging
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: cp_measure_texture
   owner: bgruening
   revisions:
   - b76841ee5560
-  - 80b200ae516b
   - 035a58c7f54a
+  - 80b200ae516b
   tool_panel_section_label: Imaging
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: cp_overlay_outlines
@@ -238,17 +238,17 @@ tools:
 - name: cp_relate_objects
   owner: bgruening
   revisions:
-  - 3a3033222f61
   - 48102a685037
+  - 3a3033222f61
   - 8083a87d2fdf
   tool_panel_section_label: Imaging
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: cp_save_images
   owner: bgruening
   revisions:
-  - 33f4fa1413fb
-  - 4ecf93628f97
   - 27edbb90ab2b
+  - 4ecf93628f97
+  - 33f4fa1413fb
   tool_panel_section_label: Imaging
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: cp_tile
@@ -267,16 +267,16 @@ tools:
 - name: idr_download_by_ids
   owner: iuc
   revisions:
-  - 4b794652dcdc
   - f92941d1a85e
+  - 4b794652dcdc
   tool_panel_section_label: Imaging
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: image_info
   owner: imgteam
   revisions:
-  - 236ec78b2e53
-  - f8b4eada923c
   - 7b6d9412c7f8
+  - f8b4eada923c
+  - 236ec78b2e53
   tool_panel_section_label: Imaging
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: image_math
@@ -288,14 +288,14 @@ tools:
 - name: overlay_images
   owner: imgteam
   revisions:
-  - ca362a9bfa20
   - bc4cf90cfc3b
+  - ca362a9bfa20
   tool_panel_section_label: Imaging
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: overlay_segmentation_mask
   owner: imgteam
   revisions:
-  - 22e573b7dcb1
   - 8ad39f493587
+  - 22e573b7dcb1
   tool_panel_section_label: Imaging
   tool_shed_url: toolshed.g2.bx.psu.edu
