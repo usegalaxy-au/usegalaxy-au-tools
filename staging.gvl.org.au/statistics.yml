@@ -32,33 +32,33 @@ tools:
 - name: datamash_ops
   owner: iuc
   revisions:
-  - 419027d822d6
-  - 4c07ddedc198
   - 746e8e4bf929
-  - 2f3c6f2dcf39
-  - 562f3c677828
   - d642efa5cbd7
+  - 562f3c677828
+  - 4c07ddedc198
+  - 2f3c6f2dcf39
+  - 419027d822d6
   tool_panel_section_label: Statistics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: dwt_cor_ava_perclass
   owner: devteam
   revisions:
-  - a0defff5cf89
   - b87bbe6bc044
+  - a0defff5cf89
   tool_panel_section_label: Statistics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: dwt_cor_avb_all
   owner: devteam
   revisions:
-  - 8564f6927b87
   - e01e8a9a82f4
+  - 8564f6927b87
   tool_panel_section_label: Statistics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: dwt_ivc_all
   owner: devteam
   revisions:
-  - 0b89b03ad760
   - 506ae7b0d85d
+  - 0b89b03ad760
   tool_panel_section_label: Statistics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: dwt_var_perclass
@@ -71,9 +71,9 @@ tools:
 - name: dwt_var_perfeature
   owner: devteam
   revisions:
-  - 6c29c7e347e8
-  - cb1c59d69557
   - 7a15159140d1
+  - cb1c59d69557
+  - 6c29c7e347e8
   tool_panel_section_label: Statistics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: generate_pc_lda_matrix
@@ -121,20 +121,20 @@ tools:
 - name: sklearn_build_pipeline
   owner: bgruening
   revisions:
-  - b1eda492f063
   - 7442b94d6a1e
-  - 9c3e1d3235c8
+  - 4c4ec859c31a
   - aef56d0e7a61
   - 840f29aad145
-  - 4c4ec859c31a
+  - b1eda492f063
+  - 9c3e1d3235c8
   tool_panel_section_label: Statistics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: sklearn_estimator_attributes
   owner: bgruening
   revisions:
-  - 30d21a6041f6
   - 9fda0b82f419
   - d0352e8b4c10
+  - 30d21a6041f6
   - 375bbd555f4a
   - 07843f917990
   tool_panel_section_label: Statistics
@@ -142,22 +142,22 @@ tools:
 - name: sklearn_nn_classifier
   owner: bgruening
   revisions:
+  - 2c58b83c9bad
+  - 7ae443e6217d
+  - 4cc980df6265
   - cd02bf168d23
   - 8b1b2b91f8d0
-  - 7ae443e6217d
-  - 2c58b83c9bad
-  - 4cc980df6265
   tool_panel_section_label: Statistics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: sklearn_numeric_clustering
   owner: bgruening
   revisions:
   - e10e776f2109
-  - 4bbaf77573ef
-  - bb9fc9d46ea4
   - 1dd433d2c92c
-  - ad7e0b4291ee
+  - bb9fc9d46ea4
   - 7dd3fb35904f
+  - 4bbaf77573ef
+  - ad7e0b4291ee
   tool_panel_section_label: Statistics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: t_test_two_samples

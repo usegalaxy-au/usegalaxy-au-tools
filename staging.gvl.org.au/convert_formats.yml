@@ -3,8 +3,8 @@ tools:
   owner: bgruening
   revisions:
   - e7449b2c14bf
-  - d6ede73082da
   - abba05ead5d7
+  - d6ede73082da
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: bam2fastx
@@ -23,31 +23,31 @@ tools:
   owner: iuc
   revisions:
   - e3cbd2287f63
-  - 0b3c3ad92827
-  - ab9350a8ab4d
-  - f3a19509108a
-  - 3b6f97e7094c
+  - 5e1240a87bcb
   - 6ef0b5664c69
+  - ab9350a8ab4d
+  - 3b6f97e7094c
   - a3b86937ead6
   - 4a6ee918c13a
+  - 0b3c3ad92827
   - 367b1ed91207
-  - 5e1240a87bcb
+  - f3a19509108a
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: biom_convert
   owner: iuc
   revisions:
-  - e525f9ffb9ac
-  - d4d4e9febf5c
-  - 33c99804a32f
+  - 1b5fc03380d4
   - 584008e574b2
-  - 54ccb7e1f49a
   - 501c21cce614
   - e177a8ea0bf1
-  - bd46669113b9
   - 091bb5922a82
+  - bd46669113b9
+  - e525f9ffb9ac
+  - d4d4e9febf5c
+  - 54ccb7e1f49a
+  - 33c99804a32f
   - 72ed72122deb
-  - 1b5fc03380d4
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: bp_genbank2gff3
@@ -78,8 +78,8 @@ tools:
 - name: fasta_to_tabular
   owner: devteam
   revisions:
-  - 7e801ab2b70e
   - e7ed3c310b74
+  - 7e801ab2b70e
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastq_to_fasta
@@ -93,8 +93,8 @@ tools:
 - name: fastq_to_tabular
   owner: devteam
   revisions:
-  - 4b347702c4aa
   - 43807a65369f
+  - 4b347702c4aa
   - 614a63f14adf
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -148,9 +148,9 @@ tools:
   owner: iuc
   revisions:
   - 85a38dffb93d
-  - 18dbde5680c0
   - b9ea85dfaf45
   - 3a2d8de89c73
+  - 18dbde5680c0
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: tabular_to_fasta
@@ -163,45 +163,45 @@ tools:
 - name: tabular_to_fastq
   owner: devteam
   revisions:
+  - 68f57cc8fad0
   - 2dcfbbf9071a
   - 78fb18899c99
-  - 68f57cc8fad0
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: thermo_raw_file_converter
   owner: galaxyp
   revisions:
-  - 19e45916daf9
+  - 63769c4217a7
   - 92ac8e086317
+  - 19e45916daf9
   - 26c6706bfb07
   - 5c04f9decc01
   - b9b385097f13
-  - 63769c4217a7
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: ucsc_fatovcf
   owner: iuc
   revisions:
-  - 3c19c84fbce2
   - a40dd4fd3096
+  - 3c19c84fbce2
   - 98c227b9be71
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: ucsc_twobittofa
   owner: iuc
   revisions:
+  - 3c6f9e8a4c17
   - e9bbe2f71784
   - 8067dfa00ed2
-  - 3c6f9e8a4c17
   - 6e1aa95afa75
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: ucsc_wigtobigwig
   owner: iuc
   revisions:
+  - 98704d357ede
   - a2f83a375bf2
   - fa49730d1d4b
-  - 98704d357ede
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: vcf2maf
