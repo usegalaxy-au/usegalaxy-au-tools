@@ -32,12 +32,12 @@ tools:
 - name: datamash_ops
   owner: iuc
   revisions:
-  - 746e8e4bf929
-  - 2f3c6f2dcf39
-  - 562f3c677828
   - d642efa5cbd7
-  - 4c07ddedc198
   - 419027d822d6
+  - 4c07ddedc198
+  - 2f3c6f2dcf39
+  - 746e8e4bf929
+  - 562f3c677828
   tool_panel_section_label: Statistics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: dwt_cor_ava_perclass
@@ -50,8 +50,8 @@ tools:
 - name: dwt_cor_avb_all
   owner: devteam
   revisions:
-  - e01e8a9a82f4
   - 8564f6927b87
+  - e01e8a9a82f4
   tool_panel_section_label: Statistics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: dwt_ivc_all
@@ -64,8 +64,8 @@ tools:
 - name: dwt_var_perclass
   owner: devteam
   revisions:
-  - 781e68074f84
   - cb422b6f49d2
+  - 781e68074f84
   tool_panel_section_label: Statistics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: dwt_var_perfeature
@@ -115,43 +115,43 @@ tools:
 - name: sklearn_build_pipeline
   owner: bgruening
   revisions:
-  - 7442b94d6a1e
-  - 9c3e1d3235c8
-  - b1eda492f063
   - 840f29aad145
   - 4c4ec859c31a
+  - 9c3e1d3235c8
+  - 7442b94d6a1e
+  - b1eda492f063
   - aef56d0e7a61
   tool_panel_section_label: Statistics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: sklearn_estimator_attributes
   owner: bgruening
   revisions:
-  - d0352e8b4c10
-  - 30d21a6041f6
   - 375bbd555f4a
+  - 30d21a6041f6
   - 07843f917990
   - 9fda0b82f419
+  - d0352e8b4c10
   tool_panel_section_label: Statistics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: sklearn_nn_classifier
   owner: bgruening
   revisions:
   - 7ae443e6217d
-  - cd02bf168d23
   - 4cc980df6265
-  - 8b1b2b91f8d0
   - 2c58b83c9bad
+  - 8b1b2b91f8d0
+  - cd02bf168d23
   tool_panel_section_label: Statistics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: sklearn_numeric_clustering
   owner: bgruening
   revisions:
-  - e10e776f2109
-  - 7dd3fb35904f
-  - ad7e0b4291ee
-  - bb9fc9d46ea4
-  - 1dd433d2c92c
   - 4bbaf77573ef
+  - e10e776f2109
+  - 1dd433d2c92c
+  - bb9fc9d46ea4
+  - ad7e0b4291ee
+  - 7dd3fb35904f
   tool_panel_section_label: Statistics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: t_test_two_samples
