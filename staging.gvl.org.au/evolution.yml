@@ -1,9 +1,13 @@
 tools:
-- name: structure
-  owner: iuc
-  tool_panel_section_label: Evolution
-  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: structureharvester
   owner: iuc
+  revisions:
+  - 28b9809c4002
+  tool_panel_section_label: Evolution
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: structure
+  owner: iuc
+  revisions:
+  - 4bd5e5dbc6c5
   tool_panel_section_label: Evolution
   tool_shed_url: toolshed.g2.bx.psu.edu
