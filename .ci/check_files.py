@@ -34,6 +34,7 @@ valid_section_labels = [
     "Epigenetics",
     "Expression Tools",
     "Extract Features",
+    "Evolution",
     "FASTA/FASTQ",
     "FASTQ Quality Control",
     "Fetch Sequences/Alignments",
