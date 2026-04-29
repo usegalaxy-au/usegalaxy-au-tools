@@ -39,119 +39,120 @@ tools:
 - name: hyphy_absrel
   owner: iuc
   revisions:
-  - 5a7c56a5cc08
-  - 26de3a7b1cb9
-  - c78f3d7dd1db
-  - 3f8261f0a826
-  - 6a457678efcb
   - cce7b18495e4
+  - c78f3d7dd1db
   - 3f59ebfbfe3d
-  - 8834daeb9892
   - 106a316b5313
-  - 8db8d509d51b
-  - d033ffc1c161
-  - b89cac5156ec
-  - f73435dc282b
+  - 5a7c56a5cc08
   - 3b8b5bde0bd9
   - '841557158611'
+  - 81e66674859e
+  - 3f8261f0a826
+  - b89cac5156ec
+  - f73435dc282b
+  - d7c7ef3353fe
+  - 26de3a7b1cb9
+  - d033ffc1c161
+  - f04a1264e2a2
+  - 6a457678efcb
+  - 8db8d509d51b
   - 180523b637d5
   - 107d3ba7024a
-  - f04a1264e2a2
   - a6619171428e
-  - d7c7ef3353fe
-  - 81e66674859e
+  - 8834daeb9892
   tool_panel_section_label: Phylogenetics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: hyphy_gard
   owner: iuc
   revisions:
-  - 88c4aa435ded
-  - 6a726db04d4b
-  - 5b777002c2de
   - 6223845127ea
-  - aa8cc71438cf
-  - a77524294da2
-  - 7a2092844346
-  - 724630cdd122
-  - 9127799ac97e
-  - 6283babe736e
-  - 3b96e92e8ec3
-  - e75442c7f4da
-  - a185b079b095
-  - 02b8758214b0
-  - 5fcd1ece3a6e
-  - 659517798cc4
-  - df47d4845b62
-  - 6b8fd7d6b0ad
-  - 4755f52427c4
   - b0af57c1a968
+  - 659517798cc4
+  - 9127799ac97e
+  - e75442c7f4da
+  - 88c4aa435ded
+  - 3b96e92e8ec3
+  - aa8cc71438cf
+  - 6283babe736e
+  - 02b8758214b0
+  - df47d4845b62
+  - 4755f52427c4
+  - 6b8fd7d6b0ad
+  - 724630cdd122
+  - 5b777002c2de
+  - a77524294da2
+  - a185b079b095
+  - 5fcd1ece3a6e
+  - 6a726db04d4b
+  - 7a2092844346
   tool_panel_section_label: Phylogenetics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: iqtree
   owner: iuc
   revisions:
-  - 18a61a9c1601
-  - 6bbd30d58cf4
   - 24d024316465
-  - 70acec670c30
-  - 524d31add34a
-  - 111bd54f6bc4
   - b8476e82ac20
+  - 6bbd30d58cf4
+  - 111bd54f6bc4
   - f97743d52b87
-  - d1c340a5664b
+  - e727e82945af
+  - 18a61a9c1601
+  - 524d31add34a
   - f87ac61981f0
+  - 70acec670c30
+  - d1c340a5664b
   tool_panel_section_label: Phylogenetics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: nextclade
   owner: iuc
   revisions:
-  - 9e10ba792be2
-  - feb40665d7cd
   - 4f6349228462
   - daddf188c13f
+  - 9e10ba792be2
+  - feb40665d7cd
   tool_panel_section_label: Phylogenetics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: orthofinder_onlygroups
   owner: iuc
   revisions:
-  - b6ec80429d54
   - b3d25fae5389
+  - b6ec80429d54
   tool_panel_section_label: Phylogenetics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: pangolin
   owner: iuc
   revisions:
-  - 03ed9524dcd1
-  - 36912871ccdc
-  - 2fa9d4f1b48f
-  - 3f9d938000b8
-  - ca337cce3888
-  - ca0d8cf80567
-  - 3a43c3982401
-  - 437e28791761
-  - 14ae456b8cc5
-  - ef10c1e741c3
-  - 2f1019071464
-  - abf6dbe8c9d7
-  - c12c7d0e067b
-  - 83a69484cb87
-  - 7bb8726be37c
-  - c092a2f58013
-  - 5f8727ff21e7
-  - 42a174224817
   - 9d61d3fa046c
-  - b6abccb1f25b
-  - a2099fb98cdb
-  - b7e297c2ede6
+  - 437e28791761
+  - abf6dbe8c9d7
   - 8ad84c5753ea
+  - 2fa9d4f1b48f
+  - 36912871ccdc
+  - a2099fb98cdb
+  - 83a69484cb87
+  - c092a2f58013
   - 81804a978fc0
+  - ca337cce3888
+  - 7bb8726be37c
+  - ca0d8cf80567
+  - b7e297c2ede6
+  - 03ed9524dcd1
+  - 14ae456b8cc5
+  - b6abccb1f25b
+  - 5f8727ff21e7
+  - 3a43c3982401
+  - 42a174224817
+  - c12c7d0e067b
+  - ef10c1e741c3
+  - 3f9d938000b8
+  - 2f1019071464
   tool_panel_section_label: Phylogenetics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: phyml
   owner: iuc
   revisions:
-  - 2bf47d57ebb5
   - 7157a5b34a68
+  - 2bf47d57ebb5
   tool_panel_section_label: Phylogenetics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: rapidnj
@@ -163,23 +164,23 @@ tools:
 - name: raxml
   owner: iuc
   revisions:
-  - 29ff6a849eac
   - ea30d3089354
-  - ba29b5e2a4be
-  - a4b71be30c3c
   - b1e68bbe4cef
+  - a4b71be30c3c
+  - ba29b5e2a4be
+  - 29ff6a849eac
   - 73a469f7dc96
   tool_panel_section_label: Phylogenetics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: roary
   owner: iuc
   revisions:
+  - f1ccc8a6eb05
+  - e88a7de55d6e
+  - dbe2b2204555
   - 15ac71df11a0
   - 91887494eb97
-  - e88a7de55d6e
-  - f1ccc8a6eb05
   - 9b2b122d0415
   - 809e42326fc2
-  - dbe2b2204555
   tool_panel_section_label: Phylogenetics
   tool_shed_url: toolshed.g2.bx.psu.edu
