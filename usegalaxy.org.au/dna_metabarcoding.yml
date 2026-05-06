@@ -2,45 +2,49 @@ tools:
 - name: obi_annotate
   owner: iuc
   revisions:
+  - 6c19e0d33cf6
+  - c96ce8ed191c
+  - 1b8f9a62811b
   - 3021b9f5809f
   - d50dc96e3ce9
-  - 6c19e0d33cf6
-  - 1b8f9a62811b
   tool_panel_section_label: DNA Metabarcoding
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: obi_clean
   owner: iuc
   revisions:
-  - 6fa6df09d606
   - 816cbd8f4e6e
-  - 7d16de45c021
+  - 6fa6df09d606
   - 656858ba54ea
+  - 7d16de45c021
+  - f5e899be558b
   tool_panel_section_label: DNA Metabarcoding
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: obi_convert
   owner: iuc
   revisions:
   - ce363293cb55
-  - e328ced6cf0a
   - dce297ace751
+  - e328ced6cf0a
   - 4d705e3443a7
+  - deaac9e831a4
   tool_panel_section_label: DNA Metabarcoding
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: obi_grep
   owner: iuc
   revisions:
+  - 98bec443b342
   - d16990a72638
+  - be475ac055b2
   - 02bab5ff7c37
   - e9e49cf06b42
-  - be475ac055b2
   tool_panel_section_label: DNA Metabarcoding
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: obi_illumina_pairend
   owner: iuc
   revisions:
+  - 8cb6bd511879
   - a829941376bd
   - 94f412098ac8
-  - 8cb6bd511879
   tool_panel_section_label: DNA Metabarcoding
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: obi_ngsfilter
@@ -53,15 +57,15 @@ tools:
 - name: obi_sort
   owner: iuc
   revisions:
-  - b6d9ea2fb41b
   - 12b9e285ca1c
+  - b6d9ea2fb41b
   tool_panel_section_label: DNA Metabarcoding
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: obi_stat
   owner: iuc
   revisions:
-  - 5f4544915893
   - 39320fee9d70
+  - 5f4544915893
   tool_panel_section_label: DNA Metabarcoding
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: obi_tab
@@ -75,8 +79,9 @@ tools:
   owner: iuc
   revisions:
   - cb91d030d8ba
-  - c0f7b58b4ce4
   - c89bb0ef8f25
+  - c0f7b58b4ce4
+  - 9eded74a3d03
   - d4bea99366f9
   tool_panel_section_label: DNA Metabarcoding
   tool_shed_url: toolshed.g2.bx.psu.edu
