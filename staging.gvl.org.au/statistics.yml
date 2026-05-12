@@ -32,19 +32,19 @@ tools:
 - name: datamash_ops
   owner: iuc
   revisions:
-  - 562f3c677828
-  - 419027d822d6
-  - aaafc0ac4dd2
   - 746e8e4bf929
-  - 2f3c6f2dcf39
   - 4c07ddedc198
+  - 419027d822d6
+  - 2f3c6f2dcf39
+  - aaafc0ac4dd2
+  - 562f3c677828
   tool_panel_section_label: Statistics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: dwt_cor_ava_perclass
   owner: devteam
   revisions:
-  - b87bbe6bc044
   - a0defff5cf89
+  - b87bbe6bc044
   tool_panel_section_label: Statistics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: dwt_cor_avb_all
@@ -57,8 +57,8 @@ tools:
 - name: dwt_ivc_all
   owner: devteam
   revisions:
-  - 506ae7b0d85d
   - 0b89b03ad760
+  - 506ae7b0d85d
   tool_panel_section_label: Statistics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: dwt_var_perclass
@@ -71,8 +71,8 @@ tools:
 - name: dwt_var_perfeature
   owner: devteam
   revisions:
-  - 7a15159140d1
   - 6c29c7e347e8
+  - 7a15159140d1
   - cb1c59d69557
   tool_panel_section_label: Statistics
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -121,51 +121,51 @@ tools:
 - name: sklearn_build_pipeline
   owner: bgruening
   revisions:
-  - 7442b94d6a1e
-  - 43a859a0fab5
-  - 840f29aad145
-  - 1ed23c988ff6
-  - bc0117538945
   - b1eda492f063
+  - bc0117538945
+  - 7442b94d6a1e
+  - 1ed23c988ff6
+  - 840f29aad145
   - 9c3e1d3235c8
+  - 43a859a0fab5
   - aef56d0e7a61
   tool_panel_section_label: Statistics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: sklearn_estimator_attributes
   owner: bgruening
   revisions:
-  - 3881482e568e
-  - 07843f917990
-  - d0352e8b4c10
-  - 0a43c856e1d8
-  - 9fda0b82f419
-  - 375bbd555f4a
   - e19359b23e54
+  - 9fda0b82f419
+  - 3881482e568e
+  - d0352e8b4c10
+  - 375bbd555f4a
+  - 0a43c856e1d8
+  - 07843f917990
   tool_panel_section_label: Statistics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: sklearn_nn_classifier
   owner: bgruening
   revisions:
+  - 2c58b83c9bad
+  - 187226dceb22
+  - 900c42c3eef4
+  - 4cc980df6265
   - cd02bf168d23
   - 7ae443e6217d
-  - 900c42c3eef4
   - 672327583f74
-  - 187226dceb22
-  - 2c58b83c9bad
-  - 4cc980df6265
   tool_panel_section_label: Statistics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: sklearn_numeric_clustering
   owner: bgruening
   revisions:
-  - 1dd433d2c92c
+  - 981a0328d6bb
   - 86d4c2b66e16
+  - 7dd3fb35904f
   - bb9fc9d46ea4
   - 4bbaf77573ef
-  - 7dd3fb35904f
+  - 1dd433d2c92c
   - ad7e0b4291ee
   - 1bdac8249aa1
-  - 981a0328d6bb
   tool_panel_section_label: Statistics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: t_test_two_samples
