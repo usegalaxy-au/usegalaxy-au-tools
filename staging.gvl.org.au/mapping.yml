@@ -2,19 +2,19 @@ tools:
 - name: bowtie2
   owner: devteam
   revisions:
-  - 0d4acadabb04
-  - 017aba02828d
-  - a6d65b0c67af
-  - 17062a0decb7
-  - 3ba8d4563129
-  - a470b376503d
-  - cd659e8cc5fa
-  - d5ceb9f3c25b
+  - f76cbb84d67f
   - f6877ad76b00
   - 749c918495f7
-  - 03e9b2fbc005
-  - f76cbb84d67f
+  - 0d4acadabb04
+  - 3ba8d4563129
+  - 17062a0decb7
+  - cd659e8cc5fa
   - 937aa69e715f
+  - d5ceb9f3c25b
+  - 03e9b2fbc005
+  - a6d65b0c67af
+  - 017aba02828d
+  - a470b376503d
   tool_panel_section_label: Mapping
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: bowtie_wrappers
@@ -26,23 +26,23 @@ tools:
 - name: bwa_mem2
   owner: iuc
   revisions:
-  - bfaa0d22c2e4
-  - af91699b8d4c
-  - d3e88507ee64
-  - bec6ba059ded
   - b4a22d90cce9
+  - bfaa0d22c2e4
+  - d3e88507ee64
+  - af91699b8d4c
+  - bec6ba059ded
   tool_panel_section_label: Mapping
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: bwa
   owner: devteam
   revisions:
-  - 2477830927ec
   - 64f11cf59c6e
-  - 53646aaaafef
-  - 1dfc975b48d5
-  - dfd8b7f78c37
   - e188dc7a68e6
   - 3fe632431b68
+  - dfd8b7f78c37
+  - 1dfc975b48d5
+  - 2477830927ec
+  - 53646aaaafef
   tool_panel_section_label: Mapping
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: lastz_paired_reads
@@ -54,51 +54,51 @@ tools:
 - name: lastz
   owner: devteam
   revisions:
-  - 60afcc2c1d05
-  - bf107d23242b
   - 2ff111fac1d7
-  - 48d39ee9eb30
   - 3e1ea2facca6
+  - 60afcc2c1d05
+  - 48d39ee9eb30
   - e7f19d6a9af8
+  - bf107d23242b
   tool_panel_section_label: Mapping
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: minimap2
   owner: iuc
   revisions:
-  - 09b53c1d4ab1
   - 037c6e54df11
+  - c0c2d0941de8
   - 66367287b4e6
   - 11a0d50a54e6
+  - b3eab4b67562
+  - f54f5baedfdd
   - 53c0b7a1a0c3
-  - 5cc34c3f440d
-  - 8c6cd2650d1f
   - 539de907fd99
+  - 8c6cd2650d1f
+  - 09b53c1d4ab1
+  - be1d967337e4
   - 3f4d6399997b
   - 6b1e195506a3
-  - be1d967337e4
+  - 5cc34c3f440d
   - 77b2770508f6
-  - b3eab4b67562
-  - c0c2d0941de8
-  - f54f5baedfdd
   tool_panel_section_label: Mapping
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: rna_starsolo
   owner: iuc
   revisions:
   - 1cd2511a396e
-  - 178bdbdb6d24
-  - 13022c3d3076
-  - 381a32c51141
-  - 9ee34ba73ebf
-  - b8f5f6e87f5c
-  - 002713edc2a1
-  - a00cceb45700
   - 00fbfac99d39
-  - 79b885ce78d7
-  - 42ce70172b72
-  - e403d27e8f24
+  - 178bdbdb6d24
+  - b8f5f6e87f5c
+  - 381a32c51141
   - 5ef7ec16b04f
+  - 42ce70172b72
   - ec9cbd6b9a49
+  - 9ee34ba73ebf
+  - a00cceb45700
+  - e403d27e8f24
+  - 13022c3d3076
+  - 002713edc2a1
+  - 79b885ce78d7
   tool_panel_section_label: Mapping
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: star_fusion
