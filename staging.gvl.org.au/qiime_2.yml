@@ -2,8 +2,8 @@ tools:
 - name: qiime2__alignment__mafft_add
   owner: q2d2
   revisions:
-  - 3c8af46b66c9
   - 442d1a046fa6
+  - 3c8af46b66c9
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__alignment__mafft
@@ -16,8 +16,8 @@ tools:
 - name: qiime2__alignment__mask
   owner: q2d2
   revisions:
-  - e8bee857dc0d
   - 4facd8fa09a6
+  - e8bee857dc0d
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__composition__add_pseudocount
@@ -37,8 +37,8 @@ tools:
 - name: qiime2__composition__ancom
   owner: q2d2
   revisions:
-  - 6114b42d3e92
   - e3a9e7cb7b77
+  - 6114b42d3e92
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__composition__tabulate
@@ -72,16 +72,16 @@ tools:
 - name: qiime2__cutadapt__trim_single
   owner: q2d2
   revisions:
-  - 5a9171c06d72
   - 42cd76be2cbf
+  - 5a9171c06d72
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__dada2__denoise_ccs
   owner: q2d2
   revisions:
+  - d777f76179b6
   - 312e59448469
   - c0de44a3c93f
-  - d777f76179b6
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__dada2__denoise_paired
@@ -94,8 +94,8 @@ tools:
 - name: qiime2__dada2__denoise_pyro
   owner: q2d2
   revisions:
-  - 72a77c0fc44b
   - 377a0bd6edd4
+  - 72a77c0fc44b
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__dada2__denoise_single
@@ -108,22 +108,22 @@ tools:
 - name: qiime2__deblur__denoise_16s
   owner: q2d2
   revisions:
-  - b883cbea5623
   - 9f0d6eb2339d
+  - b883cbea5623
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__deblur__denoise_other
   owner: q2d2
   revisions:
-  - 61ee71aacf1c
   - caba6b5c3f31
+  - 61ee71aacf1c
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__deblur__visualize_stats
   owner: q2d2
   revisions:
-  - 3459b9ebf363
   - 0be892a57bfe
+  - 3459b9ebf363
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__demux__emp_paired
@@ -164,22 +164,22 @@ tools:
 - name: qiime2__demux__summarize
   owner: q2d2
   revisions:
-  - d8a9f74f1a6d
   - 9d4d7f37ba01
+  - d8a9f74f1a6d
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__diversity__adonis
   owner: q2d2
   revisions:
-  - 82f9bc0feff3
   - edd438e4c215
+  - 82f9bc0feff3
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__diversity__alpha_correlation
   owner: q2d2
   revisions:
-  - 5850f79a2b9f
   - 534ac3cdb7ef
+  - 5850f79a2b9f
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__diversity__alpha_group_significance
@@ -262,8 +262,8 @@ tools:
 - name: qiime2__diversity__core_metrics
   owner: q2d2
   revisions:
-  - d491f7ce7eeb
   - 9602903a0fbd
+  - d491f7ce7eeb
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__diversity__filter_alpha_diversity
@@ -275,22 +275,22 @@ tools:
 - name: qiime2__diversity__filter_distance_matrix
   owner: q2d2
   revisions:
-  - f26b195f8717
   - a53b321e6821
+  - f26b195f8717
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__diversity__mantel
   owner: q2d2
   revisions:
-  - '196948449667'
   - eb9651cfc29f
+  - '196948449667'
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__diversity__pcoa_biplot
   owner: q2d2
   revisions:
-  - 606be038dfca
   - 0b649d0fe617
+  - 606be038dfca
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__diversity__pcoa
@@ -310,8 +310,8 @@ tools:
 - name: qiime2__diversity__tsne
   owner: q2d2
   revisions:
-  - 2d64681c0e6c
   - 70d6cf1e8db0
+  - 2d64681c0e6c
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__diversity__umap
@@ -324,15 +324,15 @@ tools:
 - name: qiime2__diversity_lib__alpha_passthrough
   owner: q2d2
   revisions:
-  - 98ae2621b590
   - 9cdb84be991a
+  - 98ae2621b590
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__diversity_lib__beta_passthrough
   owner: q2d2
   revisions:
-  - 38a55b074008
   - a592ae004989
+  - 38a55b074008
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__diversity_lib__beta_phylogenetic_meta_passthrough
@@ -345,8 +345,8 @@ tools:
 - name: qiime2__diversity_lib__beta_phylogenetic_passthrough
   owner: q2d2
   revisions:
-  - 954538b42388
   - fcbeb4dc4b81
+  - 954538b42388
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__diversity_lib__bray_curtis
@@ -366,8 +366,8 @@ tools:
 - name: qiime2__diversity_lib__jaccard
   owner: q2d2
   revisions:
-  - cf5fc36069f5
   - 4cc70acceb6a
+  - cf5fc36069f5
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__diversity_lib__observed_features
@@ -380,8 +380,8 @@ tools:
 - name: qiime2__diversity_lib__pielou_evenness
   owner: q2d2
   revisions:
-  - 02d2141ff634
   - 07d9546f3c0f
+  - 02d2141ff634
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__diversity_lib__shannon_entropy
@@ -394,43 +394,43 @@ tools:
 - name: qiime2__diversity_lib__unweighted_unifrac
   owner: q2d2
   revisions:
-  - 89423965acba
   - 2f6249bb5bb3
+  - 89423965acba
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__diversity_lib__weighted_unifrac
   owner: q2d2
   revisions:
-  - 0e3cc7583efc
   - f6f101a1e428
+  - 0e3cc7583efc
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__emperor__biplot
   owner: q2d2
   revisions:
-  - 953ddf320293
   - c7d25d15856f
+  - 953ddf320293
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__emperor__plot
   owner: q2d2
   revisions:
-  - 5142eb50d0f1
   - bc3a80afa08d
+  - 5142eb50d0f1
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__emperor__procrustes_plot
   owner: q2d2
   revisions:
-  - ccc4efc2be20
   - ec2a0e6d9baf
+  - ccc4efc2be20
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__feature_classifier__blast
   owner: q2d2
   revisions:
-  - a35a5a93a0de
   - 778c23c7bcf3
+  - a35a5a93a0de
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__feature_classifier__classify_consensus_blast
@@ -450,8 +450,8 @@ tools:
 - name: qiime2__feature_classifier__classify_hybrid_vsearch_sklearn
   owner: q2d2
   revisions:
-  - abdf08c37b16
   - b57e9ec6c7cb
+  - abdf08c37b16
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__feature_classifier__classify_sklearn
@@ -464,8 +464,8 @@ tools:
 - name: qiime2__feature_classifier__extract_reads
   owner: q2d2
   revisions:
-  - f3b56adfed5f
   - 59cc917e6c43
+  - f3b56adfed5f
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__feature_classifier__find_consensus_annotation
@@ -485,22 +485,22 @@ tools:
 - name: qiime2__feature_classifier__fit_classifier_sklearn
   owner: q2d2
   revisions:
-  - 651c5518951f
   - 8f538ba984d6
+  - 651c5518951f
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__feature_classifier__vsearch_global
   owner: q2d2
   revisions:
-  - c7bde9e4638d
   - 22e1ea2e7868
+  - c7bde9e4638d
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__feature_table__core_features
   owner: q2d2
   revisions:
-  - 13e8049936ee
   - 99489fb3ebae
+  - 13e8049936ee
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__feature_table__filter_features_conditionally
@@ -513,15 +513,15 @@ tools:
 - name: qiime2__feature_table__filter_features
   owner: q2d2
   revisions:
-  - 80aaf563ad41
   - b2df7f8e4a07
+  - 80aaf563ad41
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__feature_table__filter_samples
   owner: q2d2
   revisions:
-  - 540707a41f82
   - 7f1f03544164
+  - 540707a41f82
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__feature_table__filter_seqs
@@ -534,8 +534,8 @@ tools:
 - name: qiime2__feature_table__group
   owner: q2d2
   revisions:
-  - 9cdbe2131ba2
   - a27ceaf4cfc2
+  - 9cdbe2131ba2
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__feature_table__heatmap
@@ -555,22 +555,22 @@ tools:
 - name: qiime2__feature_table__merge_taxa
   owner: q2d2
   revisions:
-  - ebd22a31a6ca
   - a0c16a5250e4
+  - ebd22a31a6ca
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__feature_table__merge
   owner: q2d2
   revisions:
-  - bf3727f84b09
   - 4c2751c8cc0d
+  - bf3727f84b09
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__feature_table__presence_absence
   owner: q2d2
   revisions:
-  - aa33dec8fd70
   - 88e8fe4e5593
+  - aa33dec8fd70
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__feature_table__rarefy
@@ -583,15 +583,15 @@ tools:
 - name: qiime2__feature_table__relative_frequency
   owner: q2d2
   revisions:
-  - bee177d272d6
   - 580e1edc91d7
+  - bee177d272d6
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__feature_table__rename_ids
   owner: q2d2
   revisions:
-  - 4e756c17f673
   - a213286d3a38
+  - 4e756c17f673
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__feature_table__subsample
@@ -603,8 +603,8 @@ tools:
 - name: qiime2__feature_table__summarize
   owner: q2d2
   revisions:
-  - 41e9af5ca46b
   - 365ce7a8e641
+  - 41e9af5ca46b
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__feature_table__tabulate_seqs
@@ -700,8 +700,8 @@ tools:
 - name: qiime2__longitudinal__feature_volatility
   owner: q2d2
   revisions:
-  - 5a619fceee59
   - ba818c170b06
+  - 5a619fceee59
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__longitudinal__first_differences
@@ -714,15 +714,15 @@ tools:
 - name: qiime2__longitudinal__first_distances
   owner: q2d2
   revisions:
-  - 607a63ad9e92
   - 27d6ec9e6cf7
+  - 607a63ad9e92
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__longitudinal__linear_mixed_effects
   owner: q2d2
   revisions:
-  - 6253ca844c62
   - dfa1b9145676
+  - 6253ca844c62
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__longitudinal__maturity_index
@@ -735,8 +735,8 @@ tools:
 - name: qiime2__longitudinal__nmit
   owner: q2d2
   revisions:
-  - 7df235e8ffee
   - 87412f607999
+  - 7df235e8ffee
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__longitudinal__pairwise_differences
@@ -756,57 +756,57 @@ tools:
 - name: qiime2__longitudinal__plot_feature_volatility
   owner: q2d2
   revisions:
-  - 11730a5ad81b
   - 01cff64c80d4
+  - 11730a5ad81b
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__longitudinal__volatility
   owner: q2d2
   revisions:
-  - 9bd79ac5d5a9
   - 0e3d1b6523e2
+  - 9bd79ac5d5a9
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__metadata__distance_matrix
   owner: q2d2
   revisions:
-  - 8a43985a8f35
   - '489568308331'
+  - 8a43985a8f35
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__metadata__shuffle_groups
   owner: q2d2
   revisions:
-  - c40e092b597b
   - 99fb88cf7a12
+  - c40e092b597b
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__metadata__tabulate
   owner: q2d2
   revisions:
-  - d6e1b976c373
   - 92bb3663bb96
+  - d6e1b976c373
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__phylogeny__align_to_tree_mafft_fasttree
   owner: q2d2
   revisions:
-  - 2a9461620d5e
   - 1eae9d13a91e
+  - 2a9461620d5e
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__phylogeny__align_to_tree_mafft_iqtree
   owner: q2d2
   revisions:
-  - 23d03d969e3f
   - 25daaf299138
+  - 23d03d969e3f
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__phylogeny__align_to_tree_mafft_raxml
   owner: q2d2
   revisions:
-  - 9af151e32f0e
   - dd2f2e2a78dd
+  - 9af151e32f0e
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__phylogeny__fasttree
@@ -819,15 +819,15 @@ tools:
 - name: qiime2__phylogeny__filter_table
   owner: q2d2
   revisions:
-  - 05d29a3294de
   - 1483617982b9
+  - 05d29a3294de
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__phylogeny__filter_tree
   owner: q2d2
   revisions:
-  - 2a19e706b950
   - 97716f0bd25b
+  - 2a19e706b950
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__phylogeny__iqtree_ultrafast_bootstrap
@@ -854,8 +854,8 @@ tools:
 - name: qiime2__phylogeny__raxml_rapid_bootstrap
   owner: q2d2
   revisions:
-  - b75fbaa44819
   - 1de3a5758b8c
+  - b75fbaa44819
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__phylogeny__raxml
@@ -889,29 +889,29 @@ tools:
 - name: qiime2__quality_control__evaluate_seqs
   owner: q2d2
   revisions:
-  - b219a5f076a9
   - 4bb288dbd04c
+  - b219a5f076a9
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__quality_control__evaluate_taxonomy
   owner: q2d2
   revisions:
-  - 13f0559220c2
   - 77d8e3a550c9
+  - 13f0559220c2
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__quality_control__exclude_seqs
   owner: q2d2
   revisions:
-  - cf4229cd0a05
   - 03c51a04d74c
+  - cf4229cd0a05
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__quality_control__filter_reads
   owner: q2d2
   revisions:
-  - afa26637a1b8
   - 08d08d22d92b
+  - afa26637a1b8
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__quality_filter__q_score
@@ -942,8 +942,8 @@ tools:
 - name: qiime2__sample_classifier__classify_samples_from_dist
   owner: q2d2
   revisions:
-  - aeb2a22548a5
   - a4fd6a2a6e80
+  - aeb2a22548a5
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__sample_classifier__classify_samples_ncv
@@ -963,8 +963,8 @@ tools:
 - name: qiime2__sample_classifier__confusion_matrix
   owner: q2d2
   revisions:
-  - e0a29b2a35a8
   - 350ccc095dab
+  - e0a29b2a35a8
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__sample_classifier__fit_classifier
@@ -984,15 +984,15 @@ tools:
 - name: qiime2__sample_classifier__heatmap
   owner: q2d2
   revisions:
-  - 9d8119a198b0
   - 5ceed9008edb
+  - 9d8119a198b0
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__sample_classifier__metatable
   owner: q2d2
   revisions:
-  - 9e75d09f0dd7
   - 30cdc8cb01d0
+  - 9e75d09f0dd7
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__sample_classifier__predict_classification
@@ -1005,22 +1005,22 @@ tools:
 - name: qiime2__sample_classifier__predict_regression
   owner: q2d2
   revisions:
-  - f7c33b0adf29
   - 87023c8f07e2
+  - f7c33b0adf29
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__sample_classifier__regress_samples_ncv
   owner: q2d2
   revisions:
-  - e6d86f57fe1a
   - b6363d2b0758
+  - e6d86f57fe1a
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__sample_classifier__regress_samples
   owner: q2d2
   revisions:
-  - f1c047f2736b
   - 09981e91ac53
+  - f1c047f2736b
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__sample_classifier__scatterplot
@@ -1033,15 +1033,15 @@ tools:
 - name: qiime2__sample_classifier__split_table
   owner: q2d2
   revisions:
-  - a80604576ca2
   - e14a0ee1d000
+  - a80604576ca2
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__sample_classifier__summarize
   owner: q2d2
   revisions:
-  - d2cd82660ab6
   - b85f0fe49b56
+  - d2cd82660ab6
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__stats__collate_stats
@@ -1117,8 +1117,8 @@ tools:
 - name: qiime2__vsearch__cluster_features_closed_reference
   owner: q2d2
   revisions:
-  - dd4ab267d0b1
   - 99f3bb0084fe
+  - dd4ab267d0b1
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__vsearch__cluster_features_de_novo
@@ -1131,15 +1131,15 @@ tools:
 - name: qiime2__vsearch__cluster_features_open_reference
   owner: q2d2
   revisions:
-  - d62c0266f393
   - 83c4484cf95e
+  - d62c0266f393
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__vsearch__dereplicate_sequences
   owner: q2d2
   revisions:
-  - 4fb2b5e9beba
   - 94ea97eb8d17
+  - 4fb2b5e9beba
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__vsearch__fastq_stats
@@ -1159,8 +1159,8 @@ tools:
 - name: qiime2__vsearch__uchime_denovo
   owner: q2d2
   revisions:
-  - 2ecd644cdfcf
   - b46134de0e4e
+  - 2ecd644cdfcf
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2__vsearch__uchime_ref
@@ -1173,8 +1173,8 @@ tools:
 - name: qiime2_core__tools__export
   owner: q2d2
   revisions:
-  - f47ed6c69f5d
   - b6e4d26e4e7a
+  - f47ed6c69f5d
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime2_core__tools__import_fastq
@@ -1187,8 +1187,8 @@ tools:
   owner: q2d2
   revisions:
   - 95475922280e
-  - 10447a4b0cc3
   - 18c6b2b6740f
+  - 10447a4b0cc3
   tool_panel_section_label: QIIME 2
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: qiime_extract_viz

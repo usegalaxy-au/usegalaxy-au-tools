@@ -34,10 +34,10 @@ tools:
   revisions:
   - 4c07ddedc198
   - 2f3c6f2dcf39
-  - 419027d822d6
   - aaafc0ac4dd2
-  - 746e8e4bf929
   - 562f3c677828
+  - 746e8e4bf929
+  - 419027d822d6
   tool_panel_section_label: Statistics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: dwt_cor_ava_perclass
@@ -50,8 +50,8 @@ tools:
 - name: dwt_cor_avb_all
   owner: devteam
   revisions:
-  - e01e8a9a82f4
   - 8564f6927b87
+  - e01e8a9a82f4
   tool_panel_section_label: Statistics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: dwt_ivc_all
@@ -71,9 +71,9 @@ tools:
 - name: dwt_var_perfeature
   owner: devteam
   revisions:
-  - 6c29c7e347e8
   - 7a15159140d1
   - cb1c59d69557
+  - 6c29c7e347e8
   tool_panel_section_label: Statistics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: generate_pc_lda_matrix
@@ -115,51 +115,51 @@ tools:
 - name: sklearn_build_pipeline
   owner: bgruening
   revisions:
-  - 840f29aad145
-  - b1eda492f063
-  - 7442b94d6a1e
-  - 9c3e1d3235c8
+  - aef56d0e7a61
   - 43a859a0fab5
   - 1ed23c988ff6
-  - aef56d0e7a61
+  - 7442b94d6a1e
+  - b1eda492f063
+  - 840f29aad145
+  - 9c3e1d3235c8
   - bc0117538945
   tool_panel_section_label: Statistics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: sklearn_estimator_attributes
   owner: bgruening
   revisions:
-  - 0a43c856e1d8
+  - 375bbd555f4a
   - d0352e8b4c10
+  - 3881482e568e
+  - 0a43c856e1d8
+  - 07843f917990
   - 9fda0b82f419
   - e19359b23e54
-  - 375bbd555f4a
-  - 07843f917990
-  - 3881482e568e
   tool_panel_section_label: Statistics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: sklearn_nn_classifier
   owner: bgruening
   revisions:
-  - 7ae443e6217d
-  - 2c58b83c9bad
-  - 187226dceb22
-  - cd02bf168d23
-  - 900c42c3eef4
-  - 4cc980df6265
   - 672327583f74
+  - 900c42c3eef4
+  - 2c58b83c9bad
+  - 4cc980df6265
+  - 187226dceb22
+  - 7ae443e6217d
+  - cd02bf168d23
   tool_panel_section_label: Statistics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: sklearn_numeric_clustering
   owner: bgruening
   revisions:
-  - 1dd433d2c92c
-  - 981a0328d6bb
   - ad7e0b4291ee
+  - 1dd433d2c92c
+  - 86d4c2b66e16
+  - 981a0328d6bb
   - 1bdac8249aa1
   - 4bbaf77573ef
-  - 7dd3fb35904f
-  - 86d4c2b66e16
   - bb9fc9d46ea4
+  - 7dd3fb35904f
   tool_panel_section_label: Statistics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: t_test_two_samples
