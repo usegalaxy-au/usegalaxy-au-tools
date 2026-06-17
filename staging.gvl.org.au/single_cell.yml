@@ -8,39 +8,39 @@ tools:
 - name: alevin
   owner: bgruening
   revisions:
-  - e32b215b7c04
-  - b0fe3e482cb7
-  - e4c01dcece8b
-  - '528052085629'
   - ecb9ea6269ee
+  - '528052085629'
   - f2000bc73102
+  - b0fe3e482cb7
+  - e32b215b7c04
+  - e4c01dcece8b
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: anndata_export
   owner: iuc
   revisions:
-  - 7a6655aa6eb2
-  - f843b9afd94e
-  - 8b9bf8b5157a
-  - 707023fa62fe
-  - 4009b2de324d
   - c0b037b12765
+  - 8b9bf8b5157a
+  - 4009b2de324d
+  - 707023fa62fe
   - e1c3c2f2a834
+  - f843b9afd94e
+  - 7a6655aa6eb2
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: anndata_import
   owner: iuc
   revisions:
-  - 00712416fdaa
-  - d0a337ddf062
-  - fb9e030ffae4
+  - 13cf83ced60c
   - 32e547223c9e
-  - 55e35e9203cf
   - 3701d29f7105
   - cfc3f5a57dc6
-  - 93dd15e13e6a
-  - 13cf83ced60c
+  - 55e35e9203cf
+  - d0a337ddf062
+  - 00712416fdaa
+  - fb9e030ffae4
   - 6f143dfe902a
+  - 93dd15e13e6a
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: anndata_import
@@ -53,15 +53,15 @@ tools:
   owner: iuc
   revisions:
   - 9301df6f892d
+  - a54b3bac44aa
+  - 6f0d0c784f09
   - ee98d611afc6
+  - 038e32885fec
   - 14c576ea6148
   - b9fac48532eb
-  - 038e32885fec
-  - 688357ad5e61
-  - a54b3bac44aa
   - 39e945f0b2c1
+  - 688357ad5e61
   - afe044e6bc93
-  - 6f0d0c784f09
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: anndata_inspect
@@ -73,16 +73,16 @@ tools:
 - name: anndata_manipulate
   owner: iuc
   revisions:
-  - c4209ea387d4
-  - b85871dd69f9
-  - 9bd945a03d7b
-  - d9948b3dd270
-  - be1fdce914c6
   - d4af736e7b83
-  - 3d748954434b
+  - b85871dd69f9
   - e6a8d5fdca85
-  - ed4996a16f7f
+  - 3d748954434b
   - 43cb7b5a6fe7
+  - be1fdce914c6
+  - c4209ea387d4
+  - d9948b3dd270
+  - ed4996a16f7f
+  - 9bd945a03d7b
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: anndata_manipulate
@@ -94,46 +94,46 @@ tools:
 - name: anndata_ops
   owner: ebi-gxa
   revisions:
-  - 2e8022f1923c
-  - a4774b7b2e85
-  - fe75d2414dc0
-  - 7ebc22f77d86
   - 890fb06a2893
+  - fe75d2414dc0
+  - a4774b7b2e85
+  - 7ebc22f77d86
+  - 2e8022f1923c
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: baredsc_1d
   owner: iuc
   revisions:
   - 0e70b2dfe4be
-  - 769d815e4b0d
-  - 4fff5a293013
   - 02b1fe7aed76
+  - 4fff5a293013
+  - 769d815e4b0d
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: baredsc_2d
   owner: iuc
   revisions:
   - a90f8efe08b4
-  - c29e7bb492bf
   - aa4a6f0916b4
   - 344c2af50552
+  - c29e7bb492bf
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: baredsc_combine_1d
   owner: iuc
   revisions:
-  - c32347702e12
   - 050cf43887d3
-  - b13d3e4c48e1
   - 5b7c81b35b89
+  - b13d3e4c48e1
+  - c32347702e12
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: baredsc_combine_2d
   owner: iuc
   revisions:
-  - ae969fdb8442
-  - 239193b96d72
   - 02fc39c8610d
+  - 239193b96d72
+  - ae969fdb8442
   - 1d77986f9ddc
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -170,10 +170,10 @@ tools:
 - name: dropletutils
   owner: iuc
   revisions:
-  - 2c1200fba922
-  - cfe1e6c28d95
   - 8855361fcfc5
+  - cfe1e6c28d95
   - cdf4443d5625
+  - 2c1200fba922
   - a9caad671439
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -210,27 +210,27 @@ tools:
 - name: hicexplorer_chicaggregatestatistic
   owner: bgruening
   revisions:
+  - 65fc9fc648f4
+  - fb7068d30ec9
   - 01c37e54e86e
   - 952abbc4b1de
-  - fb7068d30ec9
-  - 65fc9fc648f4
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: hicexplorer_chicdifferentialtest
   owner: bgruening
   revisions:
+  - 7157e98ec11a
   - f1c35f3f310d
   - 57aeaf6b237d
   - 9d42a6133690
-  - 7157e98ec11a
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: hicexplorer_chicexportdata
   owner: bgruening
   revisions:
   - 23b8d6b8960c
-  - cab616fe7e64
   - 0671a38a29d5
+  - cab616fe7e64
   - 163fd744e235
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -238,188 +238,188 @@ tools:
   owner: bgruening
   revisions:
   - b9ab56aecd18
+  - 009ea872cdf5
   - 013e53ccc7ac
   - f47ac4a0b337
-  - 009ea872cdf5
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: hicexplorer_chicqualitycontrol
   owner: bgruening
   revisions:
+  - b892fa1fcaec
+  - a63e9713c39d
   - 853c072bbb11
   - 9ea228a9afc8
-  - a63e9713c39d
-  - b892fa1fcaec
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: hicexplorer_chicsignificantinteractions
   owner: bgruening
   revisions:
-  - 45a386d18509
+  - 640e0e45518a
   - e9cf8387e386
   - f8320df1866b
-  - 640e0e45518a
+  - 45a386d18509
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: hicexplorer_chicviewpointbackgroundmodel
   owner: bgruening
   revisions:
-  - f963c251ac77
-  - 9d02f1819e81
   - fdb67db6d500
+  - 9d02f1819e81
+  - f963c251ac77
   - c354255ff705
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: hicexplorer_chicviewpoint
   owner: bgruening
   revisions:
-  - c4ed35f4f77f
   - 90d52ca89318
-  - f881c94fb3b3
   - 40fee49bc6c3
+  - c4ed35f4f77f
+  - f881c94fb3b3
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: hicexplorer_hicadjustmatrix
   owner: bgruening
   revisions:
   - e06265d204f6
-  - 2dccb6bb0add
   - 782bdcb775fb
   - 733162fae8b0
+  - 2dccb6bb0add
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: hicexplorer_hicaggregatecontacts
   owner: bgruening
   revisions:
   - 9c004f11ebe4
-  - 63c8377c58b3
   - f0216498a666
+  - 63c8377c58b3
   - b05f662f9f35
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: hicexplorer_hicaverageregions
   owner: bgruening
   revisions:
-  - fe3aa71590d5
-  - 8a11d70b6cd8
   - c72fa6cb8817
+  - 8a11d70b6cd8
   - 0ec8d77d1833
+  - fe3aa71590d5
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: hicexplorer_hiccomparematrices
   owner: bgruening
   revisions:
-  - 3ee5332bf57c
-  - 4f9305d3bb34
   - e03780179ee5
+  - 4f9305d3bb34
   - 6f078762ff7f
+  - 3ee5332bf57c
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: hicexplorer_hiccompartmentspolarization
   owner: bgruening
   revisions:
-  - 4630448a0d88
   - 4401ed529d2c
-  - a315574104c6
+  - 4630448a0d88
   - 3a6a5381db36
+  - a315574104c6
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: hicexplorer_hicconvertformat
   owner: bgruening
   revisions:
   - a83732c79949
-  - c0737631eea1
   - 2ba6cee8e4db
+  - c0737631eea1
   - 0d0c6092cc43
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: hicexplorer_hiccorrectmatrix
   owner: bgruening
   revisions:
-  - ea19190ce5e0
-  - 62b720dceb56
-  - c5ce0cbf73dc
   - 30d7390bc918
+  - ea19190ce5e0
+  - c5ce0cbf73dc
+  - 62b720dceb56
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: hicexplorer_hiccorrelate
   owner: bgruening
   revisions:
-  - 2786a931cad2
   - cd40ca76865a
-  - 5faa9d3839d0
   - 2b4d6a8dab36
+  - 2786a931cad2
+  - 5faa9d3839d0
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: hicexplorer_hicdetectloops
   owner: bgruening
   revisions:
+  - bf9379529c3e
   - 0410b6aada45
   - 18bf75bf5d67
-  - bf9379529c3e
   - ffc33339cd3e
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: hicexplorer_hicdifferentialtad
   owner: bgruening
   revisions:
-  - 5dfba24d7bdd
+  - 5b245b3ded3f
   - 07dd436ea686
   - 77d8e0fd162a
-  - 5b245b3ded3f
+  - 5dfba24d7bdd
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: hicexplorer_hicfindrestrictionsites
   owner: bgruening
   revisions:
   - 6c5097f6d41e
-  - 430acc59e883
   - 972dcccb5bbc
+  - 430acc59e883
   - f1b3902f8baf
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: hicexplorer_hichyperoptdetectloops
   owner: bgruening
   revisions:
-  - 409396ea5cf0
-  - 1fa29fabe773
-  - 7f7c6ead2d0d
   - bb8849fca57c
+  - 409396ea5cf0
+  - 7f7c6ead2d0d
+  - 1fa29fabe773
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: hicexplorer_hicinfo
   owner: bgruening
   revisions:
-  - 51e40e9b6c3c
-  - 58293f858e2d
   - e4f8fceab96a
+  - 58293f858e2d
+  - 51e40e9b6c3c
   - b0f33533181d
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: hicexplorer_hicinterintratad
   owner: bgruening
   revisions:
+  - eddb1f249f6c
+  - 55b013e59018
   - 32173084d53f
   - c261b6b05ee3
-  - 55b013e59018
-  - eddb1f249f6c
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: hicexplorer_hicmergedomains
   owner: bgruening
   revisions:
-  - 4b194e675916
   - b376ef118807
-  - b6b8c8672756
   - ee33791e32dc
+  - b6b8c8672756
+  - 4b194e675916
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: hicexplorer_hicmergeloops
   owner: bgruening
   revisions:
-  - 7f88b2b4662d
   - 1511a8ebe906
   - 910c6a1c3a27
+  - 7f88b2b4662d
   - ed900cd4a0a9
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -427,36 +427,36 @@ tools:
   owner: bgruening
   revisions:
   - f34ab9882252
-  - b1815cb2b298
   - 2aa5b6b65197
+  - b1815cb2b298
   - 6d042c96aceb
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: hicexplorer_hicplotaverageregions
   owner: bgruening
   revisions:
+  - ea5d67ec94ab
   - 16a8d1688c65
   - dd9988943f53
   - 9b383d429659
-  - ea5d67ec94ab
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: hicexplorer_hicplotdistvscounts
   owner: bgruening
   revisions:
-  - 06ced663d24f
-  - 9f0578013f9b
   - 6326cd29c1c3
   - 11f39d7f6c64
+  - 9f0578013f9b
+  - 06ced663d24f
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: hicexplorer_hicplotsvl
   owner: bgruening
   revisions:
-  - 337705015ee8
   - beb5b5917d2f
   - ff9f5d335041
   - b4e780e93c91
+  - 337705015ee8
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: hicexplorer_hicplotviewpoint
@@ -464,25 +464,25 @@ tools:
   revisions:
   - bb9e080ae77b
   - 8d203e74869b
-  - 58de3c7c8e89
   - e285920f8585
+  - 58de3c7c8e89
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: hicexplorer_hicquickqc
   owner: bgruening
   revisions:
-  - b13e7a200525
-  - 5cbd7a902a8d
-  - 0a134c0bdb39
   - ea8fb5e899e8
+  - 5cbd7a902a8d
   - 21d859ad4502
+  - 0a134c0bdb39
+  - b13e7a200525
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: hicexplorer_hicsummatrices
   owner: bgruening
   revisions:
-  - 86958f9bec1b
   - 36dfa2825a59
+  - 86958f9bec1b
   - f81750434d70
   - 1d6af10874d5
   tool_panel_section_label: Single-cell
@@ -502,9 +502,9 @@ tools:
 - name: hicexplorer_hictransform
   owner: bgruening
   revisions:
+  - 1de2276f633f
   - 27fe5cd1729c
   - f36828ebdc54
-  - 1de2276f633f
   - a4b4bb07ed14
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -520,15 +520,15 @@ tools:
 - name: modify_loom
   owner: iuc
   revisions:
-  - 4c9fa3c63d9e
-  - 7784821452ac
-  - 4b0adaa31c95
-  - eeab712b0b99
   - 70228646a181
+  - 59be31ac9dc3
+  - eeab712b0b99
+  - 4b0adaa31c95
+  - 4c9fa3c63d9e
+  - db575b4c8b22
   - e98619de2776
   - c822c5c1feef
-  - db575b4c8b22
-  - 59be31ac9dc3
+  - 7784821452ac
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: music_compare
@@ -540,23 +540,23 @@ tools:
 - name: music_construct_eset
   owner: bgruening
   revisions:
-  - 7ffaa0968da3
   - 2cfd0db49bbc
   - 48f0fb3061b1
+  - 7ffaa0968da3
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: music_deconvolution
   owner: bgruening
   revisions:
-  - 56371b5a2da9
   - 8cd2ecfa2e61
+  - 56371b5a2da9
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: music_inspect_eset
   owner: bgruening
   revisions:
-  - fde4c972e7c5
   - 8c64a2da3869
+  - fde4c972e7c5
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: music_manipulate_eset
@@ -574,12 +574,12 @@ tools:
 - name: raceid_clustering
   owner: iuc
   revisions:
-  - 7e014059a88d
-  - 14ac9a11465e
-  - f911a64454fb
-  - a4b734cd253b
   - 49776718ae90
   - c4f39bf4a068
+  - f911a64454fb
+  - 14ac9a11465e
+  - 7e014059a88d
+  - a4b734cd253b
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: raceid_clustering
@@ -591,11 +591,11 @@ tools:
 - name: raceid_filtnormconf
   owner: iuc
   revisions:
-  - 43c146e25a43
   - 8b917923f7d4
+  - 7608d5faee41
   - d45f092caf24
   - 4d69676e6af2
-  - 7608d5faee41
+  - 43c146e25a43
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: raceid_filtnormconf
@@ -607,9 +607,9 @@ tools:
 - name: raceid_inspectclusters
   owner: iuc
   revisions:
-  - 53d889b0a2c9
   - c7ddb719554d
   - 37a47c4fd84d
+  - 53d889b0a2c9
   - 2b0d3e2f402a
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -622,10 +622,10 @@ tools:
 - name: raceid_inspecttrajectory
   owner: iuc
   revisions:
+  - df8e4e54d367
   - 69018f285aa3
   - 6e90c8adf84f
   - 9606d2385547
-  - df8e4e54d367
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: raceid_inspecttrajectory
@@ -637,12 +637,12 @@ tools:
 - name: raceid_trajectory
   owner: iuc
   revisions:
-  - c92d0f9338c5
-  - fe9bf1aa669e
-  - 72979cac22b2
   - 44b935f2271b
-  - 2bfd55b87af3
+  - 72979cac22b2
+  - fe9bf1aa669e
   - e93b008c637a
+  - c92d0f9338c5
+  - 2bfd55b87af3
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: raceid_trajectory
@@ -666,19 +666,19 @@ tools:
 - name: scanpy_cluster_reduce_dimension
   owner: iuc
   revisions:
-  - b2df381a6004
-  - 6f83f8fd381f
-  - a84a73471be7
-  - edec35114f72
-  - 795751257d82
-  - 38db3fef7aad
   - f9353ee6a0d4
+  - b2df381a6004
   - cb43c5d3acd3
-  - 4d8f983cd751
+  - 795751257d82
   - 6acb08931836
+  - a84a73471be7
   - 77b91b9bdf52
+  - 38db3fef7aad
+  - edec35114f72
   - aaa5da8e73a9
   - 49ce1315722c
+  - 4d8f983cd751
+  - 6f83f8fd381f
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: scanpy_cluster_reduce_dimension
@@ -690,18 +690,18 @@ tools:
 - name: scanpy_filter
   owner: iuc
   revisions:
-  - 92a189c299d4
-  - 8cb783c81905
-  - d636ce5cde16
-  - a03ff8633507
-  - a97abb8cd15b
-  - 3c86f71498bc
-  - 72a6bebab2a5
-  - 64388be6d510
-  - b409c2486353
-  - 277313130da5
   - 2e6029e47eb5
+  - 3c86f71498bc
+  - 92a189c299d4
+  - 64388be6d510
   - fc0321c000a3
+  - 72a6bebab2a5
+  - 8cb783c81905
+  - a03ff8633507
+  - b409c2486353
+  - d636ce5cde16
+  - 277313130da5
+  - a97abb8cd15b
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: scanpy_filter
@@ -713,20 +713,20 @@ tools:
 - name: scanpy_inspect
   owner: iuc
   revisions:
-  - d86cb2ce311b
-  - f54f0f0598ad
-  - cc0deb593fc8
-  - 6c145a6868cc
   - 5c3ebe2adc77
-  - 5e9171dc8244
-  - 6bd82ed14acd
-  - 18262103fa61
-  - c5d3684f7c4c
-  - c0a80a16560f
-  - 3b5ef3b00cdd
-  - a8d291df615d
   - 3081ff5c84a3
+  - 6c145a6868cc
+  - c5d3684f7c4c
+  - d86cb2ce311b
+  - 3b5ef3b00cdd
+  - f54f0f0598ad
+  - a8d291df615d
   - 27c054e8d949
+  - 5e9171dc8244
+  - cc0deb593fc8
+  - c0a80a16560f
+  - 18262103fa61
+  - 6bd82ed14acd
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: scanpy_inspect
@@ -738,18 +738,18 @@ tools:
 - name: scanpy_normalize
   owner: iuc
   revisions:
-  - 4766556db52c
-  - 56c0d4acef02
-  - 94c19fb1281c
-  - a407e7f8bdc1
-  - 9f354c7c8c92
   - 7b9fafe32c86
+  - a407e7f8bdc1
   - 3bcd5445cd7a
-  - c9cb76cf8d6c
-  - 146ae5d70b47
-  - d844935c906c
-  - ab55fe8030b6
+  - 9f354c7c8c92
+  - 94c19fb1281c
   - 2b6498d4c8c6
+  - 146ae5d70b47
+  - 4766556db52c
+  - ab55fe8030b6
+  - 56c0d4acef02
+  - c9cb76cf8d6c
+  - d844935c906c
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: scanpy_normalize
@@ -761,20 +761,20 @@ tools:
 - name: scanpy_plot
   owner: iuc
   revisions:
-  - 95777145cb92
+  - 0185bd174ea0
   - 6adf98e782f3
-  - dbbe1ea8ecb1
-  - 40812a65a78b
   - 16a1c3122996
   - 7647e5cd1b8b
-  - 5a5468c0d26f
-  - 6f5349dd5c49
-  - f7446fd8d5e7
-  - 7f478b3258ec
-  - 0185bd174ea0
-  - 9b0cdb8cf6be
-  - aa0c474463c2
   - 1072ce66b426
+  - dbbe1ea8ecb1
+  - 95777145cb92
+  - aa0c474463c2
+  - 6f5349dd5c49
+  - 7f478b3258ec
+  - 40812a65a78b
+  - f7446fd8d5e7
+  - 9b0cdb8cf6be
+  - 5a5468c0d26f
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: scanpy_plot
@@ -786,19 +786,19 @@ tools:
 - name: scanpy_remove_confounders
   owner: iuc
   revisions:
-  - 9fb627495ec2
-  - 458d4ab0f894
-  - a39040ae0a38
-  - d18e7a6e5cd4
-  - c65fce500915
-  - fe8f16c594ec
-  - 73ab2ac53d06
-  - f2f6c703da06
-  - 458e8f43a775
-  - bf2017df9837
   - be0d45c46e97
-  - 80fe16f87825
+  - fe8f16c594ec
+  - a39040ae0a38
+  - 9fb627495ec2
+  - 73ab2ac53d06
+  - 458e8f43a775
+  - c65fce500915
+  - bf2017df9837
+  - d18e7a6e5cd4
   - 215733a383f2
+  - 458d4ab0f894
+  - f2f6c703da06
+  - 80fe16f87825
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: scanpy_remove_confounders
@@ -810,9 +810,9 @@ tools:
 - name: scater_create_qcmetric_ready_sce
   owner: iuc
   revisions:
-  - fd808de478b1
   - 8f333f90d8d6
   - b834074a9aff
+  - fd808de478b1
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: scater_create_qcmetric_ready_sce
@@ -824,8 +824,8 @@ tools:
 - name: scater_filter
   owner: iuc
   revisions:
-  - b7ea9f09c02f
   - 652923ce664f
+  - b7ea9f09c02f
   - 7a365ec81b52
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -844,9 +844,9 @@ tools:
 - name: scater_plot_dist_scatter
   owner: iuc
   revisions:
-  - 2e41b35b5bdd
   - 81e5bdff4853
   - ef4c80837bc5
+  - 2e41b35b5bdd
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: scater_plot_dist_scatter
@@ -864,9 +864,9 @@ tools:
 - name: scater_plot_pca
   owner: iuc
   revisions:
-  - c99ba278dfa9
-  - 46fc6751d746
   - 9e5c0bb18d08
+  - 46fc6751d746
+  - c99ba278dfa9
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: scater_plot_pca
@@ -998,10 +998,10 @@ tools:
 - name: seurat_clustering
   owner: iuc
   revisions:
+  - 8156af6b430c
   - b70382a113e1
   - 51eb02d9b17a
   - 0db84eba4b55
-  - 8156af6b430c
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: seurat_create_seurat_object
@@ -1013,18 +1013,18 @@ tools:
 - name: seurat_create
   owner: iuc
   revisions:
-  - ac5f8c583cba
   - a7af4acac32c
-  - d24aa399eca0
-  - b9e7b804ec67
   - af8bdeb89691
+  - d24aa399eca0
+  - ac5f8c583cba
+  - b9e7b804ec67
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: seurat_data
   owner: iuc
   revisions:
-  - dde965aee073
   - 4ec52a83ec82
+  - dde965aee073
   - 228ac6864e64
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -1074,8 +1074,8 @@ tools:
   owner: iuc
   revisions:
   - 7704fb998596
-  - 74fa68f4e579
   - 2e2401b443cf
+  - 74fa68f4e579
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: seurat_normalise_data
@@ -1093,15 +1093,15 @@ tools:
 - name: seurat_plot
   owner: iuc
   revisions:
-  - fee4b4eb0ef5
   - c520f64ffd57
+  - fee4b4eb0ef5
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: seurat_preprocessing
   owner: iuc
   revisions:
-  - 5d5fe5659252
   - 6bccf5f85f92
+  - 5d5fe5659252
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: seurat_read10x
@@ -1113,10 +1113,10 @@ tools:
 - name: seurat_reduce_dimension
   owner: iuc
   revisions:
-  - 58fc93d11a9f
-  - c15978515ff0
   - 46ed93e8da30
   - 54ee3884e7ca
+  - c15978515ff0
+  - 58fc93d11a9f
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: seurat_run_pca
@@ -1153,8 +1153,8 @@ tools:
 - name: sinto_fragments
   owner: iuc
   revisions:
-  - 29e6bfb2cf49
   - 6f66f523a9b7
+  - 29e6bfb2cf49
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: slice_image
@@ -1166,33 +1166,33 @@ tools:
 - name: snapatac2_clustering
   owner: iuc
   revisions:
-  - d3ea0ba3d066
   - 8f8bef61fd0b
   - d258720d9a42
+  - d3ea0ba3d066
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: snapatac2_peaks_and_motif
   owner: iuc
   revisions:
   - 02a7162fc510
-  - 64fa083411f1
   - 588c811fdd48
+  - 64fa083411f1
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: snapatac2_plotting
   owner: iuc
   revisions:
+  - fecf9664c885
   - 1ac4a5f05f33
   - 05bd4db20227
-  - fecf9664c885
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: snapatac2_preprocessing
   owner: iuc
   revisions:
-  - c5c94e01a1b5
-  - 20c4011e1458
   - cec3e76eaf05
+  - 20c4011e1458
+  - c5c94e01a1b5
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: squidpy
@@ -1204,9 +1204,9 @@ tools:
 - name: velocyto_cli
   owner: iuc
   revisions:
+  - 90e95e9ee190
   - 883c33ef3372
   - f66590d0d3af
-  - 90e95e9ee190
   tool_panel_section_label: Single-cell
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: vitessce_spatial
