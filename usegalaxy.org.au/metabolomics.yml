@@ -16,9 +16,9 @@ tools:
   owner: recetox
   revisions:
   - 0f1b15d51801
+  - 6cd2a9e6ac49
   - 200c5c982dba
   - 90dc951da294
-  - 6cd2a9e6ac49
   tool_panel_section_label: Metabolomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: camera_annotate
@@ -103,11 +103,11 @@ tools:
   owner: recetox
   revisions:
   - 6b0fef8a77c0
-  - f0fe957df1cc
   - 06f2d0d6d107
-  - 2b1118bce0b1
   - 964b4559eb1b
   - a0a6127a7a69
+  - 2b1118bce0b1
+  - f0fe957df1cc
   tool_panel_section_label: Metabolomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: lcmsmatching
@@ -119,14 +119,16 @@ tools:
 - name: matchms_add_key
   owner: recetox
   revisions:
-  - d5a50ec6035d
   - a5d41764722d
+  - d5a50ec6035d
+  - 69b568a0dab1
   tool_panel_section_label: Metabolomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: matchms_convert
   owner: recetox
   revisions:
   - 9e83636da9d3
+  - d95450eba471
   - b9cc12600553
   - 5611c132f607
   - 50836782d36f
@@ -138,65 +140,74 @@ tools:
   - 83c4b4359ac4
   - 3f7790b73906
   - a177ac3c752c
+  - a26afcf352fd
   tool_panel_section_label: Metabolomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: matchms_fingerprint_similarity
   owner: recetox
   revisions:
+  - 1ffbd537984f
   - 84af792d3a78
   - fd890f162ce6
-  - 1ffbd537984f
+  - a465cb84a388
   tool_panel_section_label: Metabolomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: matchms_formatter
   owner: recetox
   revisions:
-  - a5a5b147da70
-  - 5fa29e292e12
   - 1b09315a3f87
+  - 5fa29e292e12
+  - 5ab06f9104ec
+  - a5a5b147da70
   tool_panel_section_label: Metabolomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: matchms_metadata_export
   owner: recetox
   revisions:
-  - 8832425b1ff6
+  - 67b885502624
   - 86727e1d0866
+  - 8832425b1ff6
   - f04610d25411
   tool_panel_section_label: Metabolomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: matchms_metadata_match
   owner: recetox
   revisions:
-  - 5c379988b7ea
   - 330b0dfae8da
+  - 5c379988b7ea
+  - 9c9af0df1754
   - 03bc9b7f40f6
   tool_panel_section_label: Metabolomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: matchms_metadata_merge
   owner: recetox
   revisions:
-  - 1fd950c5586a
   - e052eac8be4a
+  - 1fd950c5586a
+  - fda20b5ff8ed
   tool_panel_section_label: Metabolomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: matchms_networking
   owner: recetox
   revisions:
-  - f04b378325e5
+  - ad859b8036ad
   - 8147d93d372d
+  - f04b378325e5
   - c42b977ec884
   tool_panel_section_label: Metabolomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: matchms_remove_key
   owner: recetox
   revisions:
-  - ef233c08112e
+  - 9843a619e9be
   - fbdb2ae524df
+  - ef233c08112e
   tool_panel_section_label: Metabolomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: matchms_remove_spectra
   owner: recetox
   revisions:
+  - 27e068d0d89a
   - c7be8e58a6af
   - d50ce2f51fc0
   tool_panel_section_label: Metabolomics
@@ -210,23 +221,26 @@ tools:
 - name: matchms_spectral_similarity
   owner: recetox
   revisions:
+  - b2c7b7705734
+  - 931cce430163
   - 9ff95a1a2705
   - 7ba589b01dbc
-  - b2c7b7705734
   tool_panel_section_label: Metabolomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: matchms_split
   owner: recetox
   revisions:
-  - 0cf68b536cd1
   - 7676700d7c4f
   - ea6c5636c0cf
+  - 0cf68b536cd1
   - 6864944b00fd
+  - 9e931f6fc8cd
   tool_panel_section_label: Metabolomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: matchms_subsetting
   owner: recetox
   revisions:
+  - 0da72f66ff79
   - 5bbd1a8404f5
   - 8f5a1e44b15c
   tool_panel_section_label: Metabolomics
@@ -234,12 +248,12 @@ tools:
 - name: msmetaenhancer
   owner: recetox
   revisions:
+  - 560053b805d2
+  - 646ef66527da
+  - 3b402610c6dc
+  - b5467dead5b1
   - cfa9638fe182
   - 90745ecc5e9f
-  - 646ef66527da
-  - b5467dead5b1
-  - 560053b805d2
-  - 3b402610c6dc
   tool_panel_section_label: Metabolomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: msnbase_readmsdata
@@ -287,63 +301,63 @@ tools:
 - name: ramclustr_define_experiment
   owner: recetox
   revisions:
-  - ef3cbcdf5f5d
   - 5f2b58dadb39
+  - ef3cbcdf5f5d
   tool_panel_section_label: Metabolomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: ramclustr
   owner: recetox
   revisions:
-  - 9b716db0a786
   - da7722f665f4
+  - 9b716db0a786
   - f52181a205d3
   tool_panel_section_label: Metabolomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: recetox_aplcms_align_features
   owner: recetox
   revisions:
-  - 79ad928a0dae
-  - ec196e27a61a
   - 7b42ee54d757
   - c53a97599181
+  - 79ad928a0dae
+  - ec196e27a61a
   tool_panel_section_label: Metabolomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: recetox_aplcms_compute_clusters
   owner: recetox
   revisions:
+  - 149b9cc7499b
+  - 59c393d35e0e
   - 18ec7635bac6
   - f3a18e020cdd
-  - 59c393d35e0e
-  - 149b9cc7499b
   tool_panel_section_label: Metabolomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: recetox_aplcms_compute_template
   owner: recetox
   revisions:
-  - 134be5abb208
   - dfebc82ba1f0
   - 50b9918aeff2
   - 481d769e2f7a
+  - 134be5abb208
   tool_panel_section_label: Metabolomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: recetox_aplcms_correct_time
   owner: recetox
   revisions:
-  - 30bf4e35da3e
   - 02c772a49998
-  - 501a232f3cd5
-  - a82db010c53e
-  - 9064aecc78a7
   - 51332c2520c7
+  - 9064aecc78a7
+  - 30bf4e35da3e
+  - a82db010c53e
+  - 501a232f3cd5
   tool_panel_section_label: Metabolomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: recetox_aplcms_generate_feature_table
   owner: recetox
   revisions:
-  - b341cfd4baf8
   - e7305ba0dd38
-  - 89178a72388a
+  - b341cfd4baf8
   - b3413f335327
+  - 89178a72388a
   tool_panel_section_label: Metabolomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: recetox_aplcms_merge_known_table
@@ -358,19 +372,19 @@ tools:
 - name: recetox_aplcms_recover_weaker_signals
   owner: recetox
   revisions:
-  - f92b1b64da93
   - 99d118321d5f
-  - d7f5878a98c3
+  - f92b1b64da93
   - 24278c6b6d1c
+  - d7f5878a98c3
   tool_panel_section_label: Metabolomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: recetox_aplcms_remove_noise
   owner: recetox
   revisions:
-  - 7acd11ddc061
   - ea0758b41473
-  - ffbabefbd2e2
   - d90187b0f247
+  - 7acd11ddc061
+  - ffbabefbd2e2
   tool_panel_section_label: Metabolomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: recetox_msfinder
@@ -383,8 +397,8 @@ tools:
 - name: recetox_xmsannotator_advanced
   owner: recetox
   revisions:
-  - 6b5dec818827
   - 2c6fa447f6a0
+  - 6b5dec818827
   tool_panel_section_label: Metabolomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: rename_annotated_feature
@@ -396,8 +410,8 @@ tools:
 - name: riassigner
   owner: recetox
   revisions:
-  - af25aa61c611
   - 9b2fe4c49ecb
+  - af25aa61c611
   - 984d5fa7acf5
   tool_panel_section_label: Metabolomics
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -405,8 +419,8 @@ tools:
   owner: recetox
   revisions:
   - 5a6bb93ec656
-  - 60c2da112839
   - 0b28816c1c2c
+  - 60c2da112839
   tool_panel_section_label: Metabolomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: spec2vec_similarity
@@ -436,9 +450,9 @@ tools:
 - name: use_theoretical_mz_annotations
   owner: recetox
   revisions:
+  - c68193aed29e
   - 34d6b282ab6a
   - ddd192ac60fe
-  - c68193aed29e
   tool_panel_section_label: Metabolomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: w4mclassfilter
@@ -463,8 +477,8 @@ tools:
   owner: recetox
   revisions:
   - bf28a0fc0db6
-  - 6fc9f6dbcef5
   - bf32ae95a06f
+  - 6fc9f6dbcef5
   tool_panel_section_label: Metabolomics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: withinvariation
