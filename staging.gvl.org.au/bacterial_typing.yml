@@ -8,10 +8,10 @@ tools:
 - name: integron_finder
   owner: iuc
   revisions:
-  - 392f100eebcd
   - bfd290fe1588
-  - 1ae00120dd24
   - 4768f7f8e93f
+  - 392f100eebcd
+  - 1ae00120dd24
   - 5429646e486d
   tool_panel_section_label: Bacterial Typing
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -21,13 +21,19 @@ tools:
   - 7cb1fb9b582e
   tool_panel_section_label: Bacterial Typing
   tool_shed_url: toolshed.g2.bx.psu.edu
+- name: kaptive_assembly
+  owner: galaxy-australia
+  revisions:
+  - 06827e1f92e2
+  tool_panel_section_label: Bacterial Typing
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: mlst
   owner: iuc
   revisions:
-  - 31812e7a1315
   - ded48b36f3b7
-  - 1f5641a52664
   - 8e8dc9a1e3e5
+  - 31812e7a1315
+  - 1f5641a52664
   tool_panel_section_label: Bacterial Typing
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: phastest
@@ -39,9 +45,9 @@ tools:
 - name: sistr_cmd
   owner: nml
   revisions:
-  - 5c8ff92e38a9
   - 24a7a95867b0
-  - cf767360ede1
   - 17fcac7ddf54
+  - cf767360ede1
+  - 5c8ff92e38a9
   tool_panel_section_label: Bacterial Typing
   tool_shed_url: toolshed.g2.bx.psu.edu
