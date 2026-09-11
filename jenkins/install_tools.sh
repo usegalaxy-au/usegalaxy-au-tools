@@ -203,7 +203,7 @@ install_tool() {
 
   # Wait for galaxy and toolshed
   echo "Waiting for $URL";
-  galaxy-wait -g $URL
+  galaxy-wait -g $URL -a $API_KEY
   echo "Waiting for https://${TOOL_SHED_URL}";
   galaxy-wait -g "https://${TOOL_SHED_URL}"
 
@@ -295,7 +295,7 @@ test_tool() {
 
   # Wait for galaxy
   echo "Waiting for $URL";
-  galaxy-wait -g $URL
+  galaxy-wait -g $URL -a $API_KEY
 
   TOOL_PARAMS="--name $TOOL_NAME --owner $OWNER --revisions $INSTALLED_REVISION --toolshed $TOOL_SHED_URL"
   command="shed-tools test -g $URL -a $API_KEY $TOOL_PARAMS --test_json $TEST_JSON -v --log_file $TEST_LOG"
@@ -347,13 +347,13 @@ uninstall_tool() {
     echo "This tool cannot be uninstalled as the version is already installed."
   else
     echo "Waiting for $URL"
-    galaxy-wait -g $URL
+    galaxy-wait -g $URL -a $API_KEY
     echo "Uninstalling on $URL"
     python scripts/uninstall_tools.py -g $URL -a $API_KEY -n "$INSTALLED_NAME@$INSTALLED_REVISION";
     if [ $SERVER = "PRODUCTION" ]; then
       # also uninstall on staging
       echo "Waiting for $STAGING_URL"
-      galaxy-wait -g $STAGING_URL
+      galaxy-wait -g $STAGING_URL -a $STAGING_API_KEY
       echo "Uninstalling on $STAGING_URL";
       python scripts/uninstall_tools.py -g $STAGING_URL -a $STAGING_API_KEY -n "$INSTALLED_NAME@$INSTALLED_REVISION";
     fi
@@ -395,7 +395,7 @@ update_tool_list() {
   [ -d $TOOL_DIR ] || mkdir $TOOL_DIR;  # make directory if it does not exist
   rm $TOOL_DIR/*; # Delete tool files to replace them with split_tool_yml output
   echo "Waiting for $URL";
-  galaxy-wait -g $URL
+  galaxy-wait -g $URL -a $API_KEY
   get-tool-list -g $URL -a $API_KEY -o $TMP_TOOL_FILE --get_all_tools
   python scripts/split_tool_yml.py -i $TMP_TOOL_FILE -o $TOOL_DIR; # Simon's script
   rm $TMP_TOOL_FILE
