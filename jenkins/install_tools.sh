@@ -93,6 +93,7 @@ install_tools() {
     # is useful for the log
     TOOL_IS_NEW="False"
     if [ $MODE == "install" ]; then
+      galaxy-wait -g $PRODUCTION_URL
       TOOL_IS_NEW=$(python scripts/is_tool_new.py -g $PRODUCTION_URL -a $PRODUCTION_API_KEY -n $TOOL_NAME -o $OWNER)
     fi
 
