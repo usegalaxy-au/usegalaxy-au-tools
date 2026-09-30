@@ -2,8 +2,8 @@ tools:
 - name: clair3
   owner: iuc
   revisions:
-  - 3843a30053ee
   - c9218b9dc7f0
+  - 3843a30053ee
   tool_panel_section_label: Nanopore
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: dorado_demux
@@ -21,28 +21,28 @@ tools:
 - name: dorado_pod5_convert
   owner: galaxy-australia
   revisions:
-  - 9aa9d92c3c51
-  - b40270c0495e
+  - 18a8d140ec6f
   - 7c47b3c9e493
   - 28928576e1ea
-  - 18a8d140ec6f
+  - b40270c0495e
+  - 9aa9d92c3c51
   tool_panel_section_label: Nanopore
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: dorado_trimming
   owner: galaxy-australia
   revisions:
-  - f094b85d0b4f
   - 7ff7680fa713
+  - f094b85d0b4f
   tool_panel_section_label: Nanopore
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: dorado
   owner: galaxy-australia
   revisions:
   - 6942f170cc43
-  - fc5b6491cf78
-  - 63d8ecfcfab1
-  - 34e128a6a6ed
   - 5e67ea368004
+  - fc5b6491cf78
+  - 34e128a6a6ed
+  - 63d8ecfcfab1
   tool_panel_section_label: Nanopore
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: guppy_basecaller
@@ -54,22 +54,22 @@ tools:
 - name: medaka_consensus_pipeline
   owner: iuc
   revisions:
-  - d9b6a4615626
   - 72b5e9dda577
+  - a7228a7ea146
+  - d9b6a4615626
+  - 0e9e7fcdd543
   - fc8804320156
   - 79e9a869f40e
   - cb34f00cc10f
-  - 0e9e7fcdd543
-  - a7228a7ea146
   tool_panel_section_label: Nanopore
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: medaka_consensus
   owner: iuc
   revisions:
-  - d6cddc06aeae
-  - fc1f197b33ec
-  - fa11aa8103b2
   - 18505fe2bdb1
+  - d6cddc06aeae
+  - fa11aa8103b2
+  - fc1f197b33ec
   - db25ec99c3ea
   tool_panel_section_label: Nanopore
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -82,15 +82,15 @@ tools:
 - name: medaka_variant
   owner: iuc
   revisions:
-  - 19f3b583a9b3
-  - ec699520444c
-  - cc36773a3681
-  - 0f5f4a208660
-  - 222669c4afb6
-  - eb746fa6f514
   - edf6d4003fad
-  - 2bf63b38ee9b
   - 43815fa60f3a
+  - 222669c4afb6
+  - ec699520444c
+  - eb746fa6f514
+  - cc36773a3681
+  - 2bf63b38ee9b
+  - 19f3b583a9b3
+  - 0f5f4a208660
   tool_panel_section_label: Nanopore
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: nanocomp
@@ -115,52 +115,52 @@ tools:
 - name: nanoplot
   owner: iuc
   revisions:
-  - 025139097795
-  - 90818f7835f3
-  - a02b8b3f5a0c
-  - 3d8c0b287c51
-  - 0f1c34698076
-  - edbb6c5028f5
-  - 2a9afed42353
-  - 7b379e98b9a9
-  - 9eab750c367d
-  - 645159bcee2d
   - a3c4fe6f49ab
-  - 640e4eeab4e2
-  - 8de9d54f7a96
+  - 90818f7835f3
+  - 3d8c0b287c51
+  - 2a9afed42353
+  - edbb6c5028f5
   - a38bdcec9e4c
+  - a02b8b3f5a0c
+  - 8de9d54f7a96
+  - 9eab750c367d
+  - 640e4eeab4e2
+  - 025139097795
+  - 7b379e98b9a9
+  - 0f1c34698076
+  - 645159bcee2d
   tool_panel_section_label: Nanopore
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: nanopolish_eventalign
   owner: bgruening
   revisions:
   - 3b6f94fc7e1d
-  - d219b6d8158a
   - 85a394edc247
+  - d219b6d8158a
   tool_panel_section_label: Nanopore
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: nanopolish_methylation
   owner: bgruening
   revisions:
+  - be95355fef8d
   - 90a922f32523
   - a8d4be409446
-  - be95355fef8d
   tool_panel_section_label: Nanopore
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: nanopolish_polya
   owner: bgruening
   revisions:
   - 4857d5bcce52
-  - d376944466bf
   - 449e9aeded2d
+  - d376944466bf
   tool_panel_section_label: Nanopore
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: nanopolish_variants
   owner: bgruening
   revisions:
-  - bec636361cfd
   - de5b3d8f5b90
   - a3afc5f0a96c
+  - bec636361cfd
   tool_panel_section_label: Nanopore
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: porechop
@@ -175,8 +175,8 @@ tools:
 - name: poretools_events
   owner: iuc
   revisions:
-  - daf8518d243a
   - 1d835c691480
+  - daf8518d243a
   tool_panel_section_label: Nanopore
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: poretools_extract
@@ -201,8 +201,8 @@ tools:
 - name: poretools_occupancy
   owner: iuc
   revisions:
-  - 0433aad600e9
   - 336791b5665f
+  - 0433aad600e9
   tool_panel_section_label: Nanopore
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: poretools_qualdist
