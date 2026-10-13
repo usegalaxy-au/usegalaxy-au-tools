@@ -2,38 +2,38 @@ tools:
 - name: abricate
   owner: iuc
   revisions:
-  - 4efdca267d51
-  - 78c75f134c16
-  - 3f3e247c053d
-  - c2ef298da409
-  - 6e9aea89e388
   - 31f58ec0459a
+  - 4efdca267d51
+  - 6e9aea89e388
+  - c2ef298da409
+  - 3f3e247c053d
   - d8b0de0554a9
+  - 78c75f134c16
   tool_panel_section_label: Annotation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: abritamr
   owner: iuc
   revisions:
-  - 3e8233ce0b99
-  - ca5d51152817
-  - 468fd92deaaa
-  - ce54031c2235
   - e17bbe564242
+  - ce54031c2235
+  - 3e8233ce0b99
+  - 468fd92deaaa
+  - ca5d51152817
   tool_panel_section_label: Annotation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: aegean_canongff3
   owner: iuc
   revisions:
-  - c45c9dd066e2
-  - a95f8ab1e24f
   - 3f438bf5475d
+  - a95f8ab1e24f
+  - c45c9dd066e2
   tool_panel_section_label: Annotation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: aegean_gaeval
   owner: iuc
   revisions:
-  - 1dd7adc21b6d
   - 8dc7512c9dc9
+  - 1dd7adc21b6d
   tool_panel_section_label: Annotation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: aegean_locuspocus
@@ -47,23 +47,23 @@ tools:
   owner: iuc
   revisions:
   - 1b52f0c8ad7f
-  - c8faf125cfa3
   - d6c074a93c51
+  - c8faf125cfa3
   tool_panel_section_label: Annotation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: annotatemyids
   owner: iuc
   revisions:
+  - cd2480f35935
+  - f29602ae449e
   - 3e1f6f6d557e
+  - fe3ca740a485
   - a79ee60b6926
   - 4f2967b27e67
-  - fe3ca740a485
-  - f29602ae449e
-  - 1aae04680c4b
-  - cd2480f35935
   - 44018dd6b447
-  - b5d8e5475247
   - 133f36c29579
+  - 1aae04680c4b
+  - b5d8e5475247
   tool_panel_section_label: Annotation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: antismash
@@ -76,22 +76,22 @@ tools:
 - name: augustus_training
   owner: bgruening
   revisions:
-  - aada0deea587
   - f1e653756174
   - dc027fa56d55
+  - 2fdc599f2814
+  - aada0deea587
   - 6519ebe25019
   - 7be22100e5e1
-  - 2fdc599f2814
   tool_panel_section_label: Annotation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: augustus
   owner: bgruening
   revisions:
-  - 09855551d713
-  - 0fc0f9cf035a
   - bd0e53f3a891
   - 534814b64234
   - ca6d970d931c
+  - 0fc0f9cf035a
+  - 09855551d713
   - 28433faa6e42
   tool_panel_section_label: Annotation
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -99,11 +99,11 @@ tools:
   owner: iuc
   revisions:
   - 1942e86e2ee1
-  - d77802fe76f7
   - 728dacaf08a9
-  - 292eea8defa7
-  - da5f1924bb2e
+  - d77802fe76f7
   - 92eee5f31117
+  - da5f1924bb2e
+  - 292eea8defa7
   tool_panel_section_label: Annotation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: barrnap
@@ -132,19 +132,19 @@ tools:
 - name: compleasm
   owner: iuc
   revisions:
-  - fc7334661489
-  - 7109a27a11db
   - 2b9b64614d0c
-  - f421fd0c42ea
-  - 8f20a5b9b282
   - 0b833dc20f00
+  - 8f20a5b9b282
+  - fc7334661489
+  - f421fd0c42ea
+  - 7109a27a11db
   tool_panel_section_label: Annotation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: cpat
   owner: bgruening
   revisions:
-  - 1ac12c0cc7a0
   - 7ccc6234b54e
+  - 1ac12c0cc7a0
   - 8e9e228c54c4
   tool_panel_section_label: Annotation
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -165,8 +165,14 @@ tools:
   revisions:
   - 9d1fbff733cf
   - 63662ae295d6
-  - d9c3016f7283
   - 02439eb2b37d
+  - d9c3016f7283
+  tool_panel_section_label: Annotation
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: evidencemodeler
+  owner: iuc
+  revisions:
+  - 82aeab1ae0a1
   tool_panel_section_label: Annotation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: exonerate
@@ -196,63 +202,63 @@ tools:
 - name: funannotate_annotate
   owner: iuc
   revisions:
-  - 9f2455341fac
-  - 756376aeb1ae
-  - 3bbe70fef6df
-  - b6b5cd37f2a2
   - 0b8d49d3742d
+  - 3bbe70fef6df
+  - 9f2455341fac
+  - b6b5cd37f2a2
   - 582fd74dc2a1
   - 14f588312c56
+  - 756376aeb1ae
   tool_panel_section_label: Annotation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: funannotate_clean
   owner: iuc
   revisions:
+  - a230ea445788
+  - 73428a792541
+  - 30fb23d4c31c
   - 1691af4a0d17
   - 19ddd5557b4f
-  - 8e1ace8f77c6
-  - 30fb23d4c31c
-  - 73428a792541
   - 0ffe5be70caf
   - 989f7c061f35
-  - a230ea445788
+  - 8e1ace8f77c6
   tool_panel_section_label: Annotation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: funannotate_compare
   owner: iuc
   revisions:
-  - 57c6718cbfcc
-  - 30f08d74024f
-  - 5a5ae61da69c
   - 7f8f38e27dee
   - e94187d661df
+  - 5a5ae61da69c
   - 494f0bb4a993
+  - 57c6718cbfcc
+  - 30f08d74024f
   - 563a19373357
   tool_panel_section_label: Annotation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: funannotate_predict
   owner: iuc
   revisions:
-  - f77d7b685bb3
-  - 3cc3ef448854
   - d6c7106b7b2e
-  - f31125bb85ea
-  - 7abc5f6dd595
-  - 2bba2ff070d9
+  - 3cc3ef448854
   - 1bc5a03faf2e
+  - 2bba2ff070d9
+  - f77d7b685bb3
+  - 7abc5f6dd595
+  - f31125bb85ea
   tool_panel_section_label: Annotation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: funannotate_sort
   owner: iuc
   revisions:
-  - 52af33194019
-  - d3af38b9c7e1
-  - 54961e026fe4
-  - d77fdcca400e
-  - fed64e676186
-  - 520e30695ec3
   - 0346aad0d6dd
+  - 520e30695ec3
+  - d3af38b9c7e1
+  - 52af33194019
   - b3cf4684e9c7
+  - 54961e026fe4
+  - fed64e676186
+  - d77fdcca400e
   tool_panel_section_label: Annotation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: get_orfs_or_cdss
@@ -264,10 +270,10 @@ tools:
 - name: gff_to_prot
   owner: iuc
   revisions:
-  - 07d7991bf205
-  - 79261884facd
-  - 661c164268cc
   - 2aea122fbd25
+  - 07d7991bf205
+  - 661c164268cc
+  - 79261884facd
   tool_panel_section_label: Annotation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: goenrichment
@@ -294,8 +300,8 @@ tools:
 - name: helixer
   owner: genouest
   revisions:
-  - 7bc75dd0f782
   - ec1a90b97047
+  - 7bc75dd0f782
   - c2fc4ac35199
   tool_panel_section_label: Annotation
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -308,17 +314,17 @@ tools:
 - name: infernal
   owner: bgruening
   revisions:
+  - 3711f654044e
   - c9e29ac5d099
   - 477d829d3250
-  - 3711f654044e
   tool_panel_section_label: Annotation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: interproscan
   owner: bgruening
   revisions:
-  - c55643c3d813
-  - 74810db257cc
   - 98cafcbd2578
+  - 74810db257cc
+  - c55643c3d813
   tool_panel_section_label: Annotation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: jcvi_gff_stats
@@ -342,8 +348,8 @@ tools:
 - name: maker_map_ids
   owner: iuc
   revisions:
-  - 326f9c294b09
   - e906fa778440
+  - 326f9c294b09
   tool_panel_section_label: Annotation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: maker
@@ -354,22 +360,34 @@ tools:
   - 3c1a01127868
   tool_panel_section_label: Annotation
   tool_shed_url: toolshed.g2.bx.psu.edu
+- name: miniprot_index
+  owner: iuc
+  revisions:
+  - e64445f727cd
+  tool_panel_section_label: Annotation
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: miniprot
+  owner: iuc
+  revisions:
+  - 20d725740701
+  tool_panel_section_label: Annotation
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: mitos2
   owner: iuc
   revisions:
-  - c8ac28e8ac44
-  - 624606f7c996
-  - b815ec682418
-  - 033755194fe9
-  - e95d52d295d7
   - 59c8717f6925
+  - c8ac28e8ac44
+  - e95d52d295d7
+  - 033755194fe9
+  - b815ec682418
+  - 624606f7c996
   tool_panel_section_label: Annotation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: mob_suite
   owner: nml
   revisions:
-  - '179497074102'
   - 93ba63eaf394
+  - '179497074102'
   tool_panel_section_label: Annotation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: multigsea
@@ -430,12 +448,12 @@ tools:
 - name: prokka
   owner: crs4
   revisions:
-  - d643e3b03500
+  - bf68eb663bc3
   - a17498c603ec
   - c105b66eaab1
-  - bf68eb663bc3
-  - eaee459f3d69
   - 8a22554cdde2
+  - eaee459f3d69
+  - d643e3b03500
   tool_panel_section_label: Annotation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: red
@@ -454,8 +472,8 @@ tools:
 - name: repeatmodeler
   owner: csbl
   revisions:
-  - 41bfbaf3c959
   - 8661b2607b7e
+  - 41bfbaf3c959
   tool_panel_section_label: Annotation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: sanntis_marine
@@ -479,24 +497,24 @@ tools:
 - name: snpeff
   owner: iuc
   revisions:
-  - 268d162b9c49
   - 5a29ab10dba6
-  - 5b80f544c67f
   - 5c7b70713fb5
-  - 6322be79bd8e
-  - cfcf33df7fc0
-  - 68693743661e
-  - c7275bd8b4d6
+  - 5b80f544c67f
+  - 268d162b9c49
   - 8f92c2b26e6d
+  - cfcf33df7fc0
+  - c7275bd8b4d6
+  - 6322be79bd8e
+  - 68693743661e
   tool_panel_section_label: Annotation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: snpsift
   owner: iuc
   revisions:
   - 5fab4f81391d
-  - 0abc5513f795
-  - 09d6806c609e
   - 2b3e65a4252f
+  - 09d6806c609e
+  - 0abc5513f795
   tool_panel_section_label: Annotation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: snptools
@@ -534,19 +552,19 @@ tools:
 - name: tbprofiler
   owner: iuc
   revisions:
-  - 45083d070fb8
-  - 37213cf56392
-  - 60a1dad331ec
-  - ac8250086ac3
-  - e1a9d6fd258d
-  - ba6f87115e13
-  - 037a11682176
-  - 4839e590cb26
-  - 51dd22484644
   - 809dfc93d593
-  - 200c378d85f3
-  - 8cb134b8c1a5
+  - e1a9d6fd258d
+  - 037a11682176
+  - 60a1dad331ec
+  - ba6f87115e13
+  - 45083d070fb8
+  - 51dd22484644
+  - 37213cf56392
   - d03af1c7002c
+  - 200c378d85f3
+  - ac8250086ac3
+  - 4839e590cb26
+  - 8cb134b8c1a5
   tool_panel_section_label: Annotation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: tiberius
@@ -560,29 +578,29 @@ tools:
   owner: iuc
   revisions:
   - f50807720df1
-  - a6c8b6e47c51
   - 8fc50fe60127
+  - a6c8b6e47c51
   tool_panel_section_label: Annotation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: transit_hmm
   owner: iuc
   revisions:
-  - 7db455b6434b
   - d6b029a6de63
+  - 7db455b6434b
   tool_panel_section_label: Annotation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: transit_resampling
   owner: iuc
   revisions:
-  - a05b6a392ff0
   - 885459e1c83b
+  - a05b6a392ff0
   tool_panel_section_label: Annotation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: transit_tn5gaps
   owner: iuc
   revisions:
-  - 3f5fc4b09496
   - d516fc63b6e5
+  - 3f5fc4b09496
   tool_panel_section_label: Annotation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: trna_prediction
