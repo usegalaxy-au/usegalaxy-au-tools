@@ -2,53 +2,53 @@ tools:
 - name: keras_model_builder
   owner: bgruening
   revisions:
-  - e4af79bffd57
-  - beeeda757eba
-  - fe0e82a7d0ee
-  - 98aeca624881
   - 772e0e89fc68
-  - 66d7efc06000
   - ad11e219bd5a
+  - fe0e82a7d0ee
+  - beeeda757eba
+  - 98aeca624881
+  - 66d7efc06000
+  - e4af79bffd57
   tool_panel_section_label: Machine Learning
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: keras_model_config
   owner: bgruening
   revisions:
+  - 00d1889e9ecc
   - 08b52ffcd2b4
   - 01131463df86
-  - 00b2ee48b412
-  - 8a794e6d3388
-  - f22a9297440f
-  - 00d1889e9ecc
   - fb731872d453
+  - f22a9297440f
+  - 8a794e6d3388
+  - 00b2ee48b412
   tool_panel_section_label: Machine Learning
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: keras_train_and_eval
   owner: bgruening
   revisions:
-  - e1317b5502fa
   - 31f6bf2382dc
-  - aeee74692508
-  - f1b9a42d6809
   - efa16475990a
-  - 19407b7f815c
-  - b6ef6d0cb6b7
-  - 818f9b69d8a0
+  - f1b9a42d6809
   - 6ecb3d77d46e
+  - 818f9b69d8a0
+  - aeee74692508
+  - b6ef6d0cb6b7
+  - 19407b7f815c
+  - e1317b5502fa
   tool_panel_section_label: Machine Learning
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: ml_visualization_ex
   owner: bgruening
   revisions:
-  - 21730620a849
-  - 05143043ca13
   - 553b147da4e9
-  - 9276346ed061
+  - 21730620a849
+  - 1d2a478bb514
+  - 947c2eacccb8
   - 1588f9076e32
   - c80db5d6fd8c
-  - 947c2eacccb8
   - 5f9c0e99016f
-  - 1d2a478bb514
+  - 05143043ca13
+  - 9276346ed061
   tool_panel_section_label: Machine Learning
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: model_prediction
@@ -56,85 +56,85 @@ tools:
   revisions:
   - 8ef3ef591dc8
   - 1552b8cb4a94
-  - 9991c4ddde14
-  - b6c2289292fa
-  - 475b5171945f
-  - eae46976fbb8
   - 29e4122c90de
-  - 3dd539570a60
   - 83228baae3c5
+  - 9991c4ddde14
+  - 475b5171945f
+  - b6c2289292fa
+  - eae46976fbb8
+  - 3dd539570a60
   tool_panel_section_label: Machine Learning
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: sklearn_ensemble
   owner: bgruening
   revisions:
-  - 841a6cc5fc58
-  - 00f01f713c3c
-  - 398c7e90ded2
-  - 0dd932943362
-  - 0b98933cf0f7
   - f3dfa4bdf87e
-  - 1a53edc4b438
+  - 398c7e90ded2
+  - 00f01f713c3c
+  - 0dd932943362
   - a07ab242b0b5
   - cab63604ca1d
+  - 841a6cc5fc58
   - 53616c8b0865
+  - 1a53edc4b438
+  - 0b98933cf0f7
   tool_panel_section_label: Machine Learning
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: sklearn_generalized_linear
   owner: bgruening
   revisions:
-  - 2fc89dcd41c8
-  - 40f4447733b2
-  - a3495337ab56
-  - 927586a18553
-  - d3fe6fcc6bf4
-  - fd703ccdab66
-  - 57938c2f6ef5
   - dc4b5fd604a6
-  - 91c4e3331208
+  - 57938c2f6ef5
+  - d3fe6fcc6bf4
   - 84dad16ed802
+  - a3495337ab56
+  - 2fc89dcd41c8
+  - 927586a18553
+  - 40f4447733b2
+  - 91c4e3331208
+  - fd703ccdab66
   tool_panel_section_label: Machine Learning
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: sklearn_searchcv
   owner: bgruening
   revisions:
-  - e5a5ad882f1f
-  - 25ab6b4e376e
-  - 301e07345c93
-  - 9a01835cdead
-  - 69c44aab684e
-  - c6ae57f774c6
   - 8eb081549c98
+  - 9a01835cdead
   - 5023535e9f8b
   - 36e8d6d5d01b
+  - 69c44aab684e
+  - c6ae57f774c6
+  - 301e07345c93
+  - e5a5ad882f1f
   - f484f41ea0dd
+  - 25ab6b4e376e
   tool_panel_section_label: Machine Learning
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: sklearn_svm_classifier
   owner: bgruening
   revisions:
-  - 02d2be90dedb
   - 8797bedbba8e
-  - f9639b488779
-  - 4aa3666b66fa
-  - 61461e52c923
-  - df690bb42687
   - 0630258dcf35
   - 4ed102b922cb
+  - 4aa3666b66fa
   - b7c3e9a3b954
   - de94341feadb
+  - 61461e52c923
+  - 02d2be90dedb
+  - df690bb42687
+  - f9639b488779
   tool_panel_section_label: Machine Learning
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: sklearn_to_categorical
   owner: bgruening
   revisions:
-  - 722379be2338
-  - f86c0419af43
   - 61634a87efc7
-  - ec69cbe34b73
-  - 6b59e9b96071
-  - 14180f9c831e
+  - 722379be2338
   - 791fa244e44d
+  - 14180f9c831e
+  - ec69cbe34b73
   - 89f11e2b0673
+  - 6b59e9b96071
+  - f86c0419af43
   tool_panel_section_label: Machine Learning
   tool_shed_url: toolshed.g2.bx.psu.edu
