@@ -39,116 +39,116 @@ tools:
 - name: hyphy_absrel
   owner: iuc
   revisions:
-  - 180523b637d5
-  - 8834daeb9892
   - 3b8b5bde0bd9
-  - 3f59ebfbfe3d
-  - f73435dc282b
+  - cce7b18495e4
+  - 106a316b5313
+  - f04a1264e2a2
+  - 3f8261f0a826
+  - '841557158611'
+  - 26de3a7b1cb9
+  - b89cac5156ec
+  - 8834daeb9892
   - 5a7c56a5cc08
   - 8db8d509d51b
   - a6619171428e
-  - 106a316b5313
-  - d7c7ef3353fe
-  - cce7b18495e4
-  - 3f8261f0a826
-  - '841557158611'
-  - 6a457678efcb
-  - f04a1264e2a2
-  - 26de3a7b1cb9
   - 107d3ba7024a
   - 81e66674859e
+  - 6a457678efcb
+  - 3f59ebfbfe3d
   - c78f3d7dd1db
+  - 180523b637d5
+  - d7c7ef3353fe
+  - f73435dc282b
   - d033ffc1c161
-  - b89cac5156ec
   tool_panel_section_label: Phylogenetics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: hyphy_gard
   owner: iuc
   revisions:
-  - a185b079b095
-  - 5fcd1ece3a6e
-  - 3b96e92e8ec3
-  - 6b8fd7d6b0ad
-  - 7a2092844346
-  - 88c4aa435ded
+  - aa8cc71438cf
   - 6283babe736e
-  - 6a726db04d4b
-  - 5b777002c2de
-  - b0af57c1a968
-  - e75442c7f4da
+  - 7a2092844346
   - 9127799ac97e
   - 02b8758214b0
-  - aa8cc71438cf
-  - 4755f52427c4
-  - df47d4845b62
-  - 659517798cc4
-  - 6223845127ea
   - 724630cdd122
+  - 6a726db04d4b
+  - df47d4845b62
+  - 5fcd1ece3a6e
+  - 3b96e92e8ec3
+  - 4755f52427c4
+  - 6b8fd7d6b0ad
+  - 659517798cc4
+  - b0af57c1a968
+  - a185b079b095
   - a77524294da2
+  - e75442c7f4da
+  - 5b777002c2de
+  - 6223845127ea
+  - 88c4aa435ded
   tool_panel_section_label: Phylogenetics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: iqtree
   owner: iuc
   revisions:
   - 18a61a9c1601
-  - 241108ef3506
-  - b8476e82ac20
   - 70acec670c30
-  - e727e82945af
-  - 524d31add34a
-  - 24d024316465
-  - d1c340a5664b
-  - '856173762903'
   - f97743d52b87
-  - f87ac61981f0
+  - b8476e82ac20
   - 6bbd30d58cf4
   - 111bd54f6bc4
+  - 524d31add34a
+  - e727e82945af
+  - d1c340a5664b
+  - 241108ef3506
+  - '856173762903'
+  - f87ac61981f0
+  - 24d024316465
   tool_panel_section_label: Phylogenetics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: nextclade
   owner: iuc
   revisions:
   - daddf188c13f
-  - 4f6349228462
   - feb40665d7cd
   - 9e10ba792be2
+  - 4f6349228462
   tool_panel_section_label: Phylogenetics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: orthofinder_onlygroups
   owner: iuc
   revisions:
-  - 27dc25864cb7
   - b6ec80429d54
+  - 27dc25864cb7
   - b3d25fae5389
   tool_panel_section_label: Phylogenetics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: pangolin
   owner: iuc
   revisions:
-  - a2099fb98cdb
-  - 81804a978fc0
-  - ef10c1e741c3
-  - b7e297c2ede6
-  - 03ed9524dcd1
-  - 83a69484cb87
-  - 3f9d938000b8
-  - 7bb8726be37c
-  - abf6dbe8c9d7
-  - 8ad84c5753ea
-  - 42a174224817
-  - 5f8727ff21e7
-  - 3a43c3982401
-  - b6abccb1f25b
-  - 14ae456b8cc5
-  - ca0d8cf80567
-  - c12c7d0e067b
-  - 2fa9d4f1b48f
   - 9d61d3fa046c
+  - 81804a978fc0
+  - c092a2f58013
+  - b7e297c2ede6
+  - 3f9d938000b8
+  - 42a174224817
+  - a2099fb98cdb
+  - 83a69484cb87
+  - 7bb8726be37c
+  - ca0d8cf80567
+  - 2fa9d4f1b48f
+  - 8ad84c5753ea
+  - c12c7d0e067b
+  - 3a43c3982401
   - 36912871ccdc
   - 2f1019071464
+  - 5f8727ff21e7
+  - 14ae456b8cc5
   - ca337cce3888
   - 437e28791761
-  - c092a2f58013
+  - 03ed9524dcd1
+  - abf6dbe8c9d7
+  - ef10c1e741c3
+  - b6abccb1f25b
   tool_panel_section_label: Phylogenetics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: phyml
@@ -167,26 +167,26 @@ tools:
 - name: raxml
   owner: iuc
   revisions:
-  - a4b71be30c3c
-  - 0811b19b117a
-  - ba29b5e2a4be
   - dc97e1b45938
+  - a4b71be30c3c
+  - ea30d3089354
   - b1e68bbe4cef
   - 29ff6a849eac
-  - ea30d3089354
+  - 0811b19b117a
+  - ba29b5e2a4be
   - 73a469f7dc96
   tool_panel_section_label: Phylogenetics
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: roary
   owner: iuc
   revisions:
+  - dbe2b2204555
+  - 91887494eb97
+  - e88a7de55d6e
+  - 15ac71df11a0
   - 809e42326fc2
   - f1ccc8a6eb05
-  - 15ac71df11a0
-  - 91887494eb97
-  - 3f12675edf68
   - 9b2b122d0415
-  - dbe2b2204555
-  - e88a7de55d6e
+  - 3f12675edf68
   tool_panel_section_label: Phylogenetics
   tool_shed_url: toolshed.g2.bx.psu.edu
