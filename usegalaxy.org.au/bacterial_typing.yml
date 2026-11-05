@@ -1,4 +1,10 @@
 tools:
+- name: cdiphtheriae_typing
+  owner: tinustk
+  revisions:
+  - 80f2bf9e7a13
+  tool_panel_section_label: Bacterial Typing
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: emmtyper
   owner: maxlcummins
   revisions:
@@ -8,11 +14,11 @@ tools:
 - name: integron_finder
   owner: iuc
   revisions:
+  - 1ae00120dd24
   - 4768f7f8e93f
   - bfd290fe1588
   - 392f100eebcd
   - 5429646e486d
-  - 1ae00120dd24
   tool_panel_section_label: Bacterial Typing
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: kaptive_assembly
@@ -24,17 +30,23 @@ tools:
 - name: mlst
   owner: iuc
   revisions:
-  - ef1966bcece3
-  - 1f5641a52664
   - ded48b36f3b7
+  - 1f5641a52664
   - 8e8dc9a1e3e5
   - 578b60b1279d
+  - ef1966bcece3
   tool_panel_section_label: Bacterial Typing
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: phastest
   owner: galaxy-australia
   revisions:
   - cb06960a0eba
+  tool_panel_section_label: Bacterial Typing
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: shigella_typing
+  owner: tinustk
+  revisions:
+  - 61ce74f15f7e
   tool_panel_section_label: Bacterial Typing
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: sistr_cmd
