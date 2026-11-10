@@ -2,19 +2,19 @@ tools:
 - name: artic_guppyplex
   owner: iuc
   revisions:
-  - 00e20a06ff1e
-  - c23737f9714f
   - e92767bd4412
+  - 00e20a06ff1e
   - 311d11c4a68b
+  - c23737f9714f
   tool_panel_section_label: Variant Calling
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: artic_minion
   owner: iuc
   revisions:
-  - 93cfe7df7f8a
-  - 7021ed347f7e
   - c218cc6bf765
   - 468b90c41cde
+  - 93cfe7df7f8a
+  - 7021ed347f7e
   tool_panel_section_label: Variant Calling
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: beacon2_analyses
@@ -110,8 +110,8 @@ tools:
 - name: breseq
   owner: iuc
   revisions:
-  - 85c57cc9b558
   - 0d18a3ba2d1c
+  - 85c57cc9b558
   - 82fb5e3bb93e
   tool_panel_section_label: Variant Calling
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -138,36 +138,36 @@ tools:
 - name: cnvkit_autobin
   owner: iuc
   revisions:
-  - 1b46c875128f
   - 33ceac9ae827
+  - 1b46c875128f
   tool_panel_section_label: Variant Calling
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: cnvkit_batch
   owner: iuc
   revisions:
-  - d9741a570506
   - e806f882a413
+  - d9741a570506
   tool_panel_section_label: Variant Calling
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: cnvkit_breaks
   owner: iuc
   revisions:
-  - d889cf77ec0d
   - b77e9ce643a6
+  - d889cf77ec0d
   tool_panel_section_label: Variant Calling
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: cnvkit_call
   owner: iuc
   revisions:
-  - 79b2add55e02
   - 58328c8e37df
+  - 79b2add55e02
   tool_panel_section_label: Variant Calling
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: cnvkit_coverage
   owner: iuc
   revisions:
-  - 5170090eaf4e
   - 9410f163f2e7
+  - 5170090eaf4e
   tool_panel_section_label: Variant Calling
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: cnvkit_diagram
@@ -194,8 +194,8 @@ tools:
 - name: cnvkit_export_jtv
   owner: iuc
   revisions:
-  - 4b642500d45b
   - 6617cb1fcbcc
+  - 4b642500d45b
   tool_panel_section_label: Variant Calling
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: cnvkit_export_nexus_basic
@@ -215,15 +215,15 @@ tools:
 - name: cnvkit_export_seg
   owner: iuc
   revisions:
-  - 40918fee953b
   - 4e4aac27becc
+  - 40918fee953b
   tool_panel_section_label: Variant Calling
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: cnvkit_export_vcf
   owner: iuc
   revisions:
-  - afcd55fabf38
   - d50130b48076
+  - afcd55fabf38
   tool_panel_section_label: Variant Calling
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: cnvkit_fix
@@ -236,8 +236,8 @@ tools:
 - name: cnvkit_genemetrics
   owner: iuc
   revisions:
-  - aafd56f1b0f7
   - bb5dc90e2ef1
+  - aafd56f1b0f7
   tool_panel_section_label: Variant Calling
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: cnvkit_heatmap
@@ -264,8 +264,8 @@ tools:
 - name: cnvkit_segment
   owner: iuc
   revisions:
-  - bdd0e8e05933
   - bb1c663a9c46
+  - bdd0e8e05933
   tool_panel_section_label: Variant Calling
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: cnvkit_segmetrics
@@ -278,8 +278,8 @@ tools:
 - name: cnvkit_sex
   owner: iuc
   revisions:
-  - 9f300faccb88
   - 27b32e5dd963
+  - 9f300faccb88
   tool_panel_section_label: Variant Calling
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: cnvkit_target
@@ -299,79 +299,79 @@ tools:
 - name: control_freec
   owner: iuc
   revisions:
-  - 8e25f5d7a4fc
   - f923c54a17ee
+  - 8e25f5d7a4fc
   tool_panel_section_label: Variant Calling
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: cutesv
   owner: iuc
   revisions:
-  - 23d7e75d850e
-  - cb441f258c37
   - 278efc44f61a
-  - ccc439243918
   - c0f8fe52948e
+  - 23d7e75d850e
+  - ccc439243918
+  - cb441f258c37
   tool_panel_section_label: Variant Calling
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: freebayes
   owner: devteam
   revisions:
+  - 1e1291983bc7
   - ae2f044f7b1c
-  - 85dc96ebc770
-  - e698621cca1f
+  - 57def2d7c093
   - a5937157062f
   - 156b60c1530f
-  - ef2c525bd8cd
+  - e698621cca1f
   - 3e954e7125bf
+  - ef2c525bd8cd
   - 04fa42777df9
-  - 57def2d7c093
-  - 1e1291983bc7
+  - 85dc96ebc770
   tool_panel_section_label: Variant Calling
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: lofreq_alnqual
   owner: iuc
   revisions:
+  - 435b157bed6d
   - e61c9ac190ad
   - 4e7fc9795034
   - 09d6e4693887
-  - 435b157bed6d
   tool_panel_section_label: Variant Calling
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: lofreq_call
   owner: iuc
   revisions:
   - 03627f24605f
-  - 72d76a5adbc9
-  - 3b4b2121842f
   - 4805fe3d8fda
   - 65432c3abf6c
-  - e1461b5c52a0
   - 074d44697036
   - dfadc322b065
+  - 3b4b2121842f
+  - e1461b5c52a0
+  - 72d76a5adbc9
   tool_panel_section_label: Variant Calling
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: lofreq_filter
   owner: iuc
   revisions:
+  - 701d134358ad
   - 9cb929f21cfa
   - 3e0e44d971d5
-  - 701d134358ad
   tool_panel_section_label: Variant Calling
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: lofreq_indelqual
   owner: iuc
   revisions:
-  - 426d707dfc47
-  - 07cd2a0e530d
   - c27549b9aa1f
   - f4473557ffc7
+  - 07cd2a0e530d
+  - 426d707dfc47
   tool_panel_section_label: Variant Calling
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: lofreq_viterbi
   owner: iuc
   revisions:
-  - cdaab621d454
   - dbd9f2db9ed8
+  - cdaab621d454
   - facfecd498e4
   tool_panel_section_label: Variant Calling
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -384,8 +384,8 @@ tools:
 - name: plink
   owner: iuc
   revisions:
-  - 9c48485bf664
   - 2c0ac05fe240
+  - 9c48485bf664
   tool_panel_section_label: Variant Calling
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: sniffles
@@ -400,9 +400,9 @@ tools:
   owner: iuc
   revisions:
   - fa016f1eea1a
-  - 5bbf9eada9c2
-  - c3b0d50d1b53
   - 08d22d220254
+  - c3b0d50d1b53
+  - 5bbf9eada9c2
   tool_panel_section_label: Variant Calling
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: snp_dists
@@ -420,8 +420,8 @@ tools:
 - name: snpeff_sars_cov_2
   owner: iuc
   revisions:
-  - 2a3a00c1fa0a
   - b68ff9393fb6
+  - 2a3a00c1fa0a
   tool_panel_section_label: Variant Calling
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: snpfreq
@@ -439,18 +439,18 @@ tools:
 - name: tb_variant_filter
   owner: iuc
   revisions:
-  - 3b1e7c170b10
   - ee4a90760848
-  - 40f0591deda0
   - 32f14a2723ec
+  - 3b1e7c170b10
   - e7aff4a85df5
+  - 40f0591deda0
   tool_panel_section_label: Variant Calling
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: tbvcfreport
   owner: iuc
   revisions:
-  - adc0645b945c
   - 4934c0ac6197
+  - adc0645b945c
   - 42818629ec4c
   - 9793bc5d741b
   - 02d81b994ef5
