@@ -2,139 +2,139 @@ tools:
 - name: keras_model_builder
   owner: bgruening
   revisions:
-  - 98aeca624881
   - 66d7efc06000
+  - fe0e82a7d0ee
+  - 98aeca624881
+  - beeeda757eba
+  - e4af79bffd57
   - 772e0e89fc68
   - ad11e219bd5a
-  - e4af79bffd57
-  - beeeda757eba
-  - fe0e82a7d0ee
   tool_panel_section_label: Machine Learning
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: keras_model_config
   owner: bgruening
   revisions:
-  - f22a9297440f
+  - 8a794e6d3388
   - fb731872d453
+  - 00b2ee48b412
   - 01131463df86
+  - f22a9297440f
   - 08b52ffcd2b4
   - 00d1889e9ecc
-  - 00b2ee48b412
-  - 8a794e6d3388
   tool_panel_section_label: Machine Learning
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: keras_train_and_eval
   owner: bgruening
   revisions:
-  - 6ecb3d77d46e
-  - aeee74692508
-  - efa16475990a
-  - 19407b7f815c
   - f1b9a42d6809
-  - e1317b5502fa
-  - b6ef6d0cb6b7
   - 31f6bf2382dc
+  - aeee74692508
   - 818f9b69d8a0
+  - 6ecb3d77d46e
+  - e1317b5502fa
+  - 19407b7f815c
+  - efa16475990a
+  - b6ef6d0cb6b7
   tool_panel_section_label: Machine Learning
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: ml_visualization_ex
   owner: bgruening
   revisions:
-  - 1d2a478bb514
   - 1588f9076e32
+  - 1d2a478bb514
+  - 21730620a849
   - c80db5d6fd8c
+  - 947c2eacccb8
   - 9276346ed061
   - 5f9c0e99016f
-  - 947c2eacccb8
-  - 21730620a849
-  - 553b147da4e9
   - 05143043ca13
+  - 553b147da4e9
   tool_panel_section_label: Machine Learning
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: model_prediction
   owner: bgruening
   revisions:
-  - 1552b8cb4a94
+  - 9991c4ddde14
+  - 3dd539570a60
+  - b6c2289292fa
   - 475b5171945f
-  - 8ef3ef591dc8
+  - 1552b8cb4a94
   - 29e4122c90de
   - 83228baae3c5
-  - b6c2289292fa
-  - 3dd539570a60
-  - 9991c4ddde14
+  - 8ef3ef591dc8
   - eae46976fbb8
   tool_panel_section_label: Machine Learning
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: sklearn_ensemble
   owner: bgruening
   revisions:
+  - 841a6cc5fc58
+  - 0dd932943362
   - 398c7e90ded2
+  - 0b98933cf0f7
   - 1a53edc4b438
   - 53616c8b0865
-  - a07ab242b0b5
-  - 841a6cc5fc58
   - 00f01f713c3c
-  - 0dd932943362
   - cab63604ca1d
-  - 0b98933cf0f7
   - f3dfa4bdf87e
+  - a07ab242b0b5
   tool_panel_section_label: Machine Learning
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: sklearn_generalized_linear
   owner: bgruening
   revisions:
-  - 57938c2f6ef5
-  - 927586a18553
-  - a3495337ab56
-  - 2fc89dcd41c8
-  - d3fe6fcc6bf4
-  - fd703ccdab66
   - dc4b5fd604a6
-  - 40f4447733b2
+  - 927586a18553
+  - 2fc89dcd41c8
+  - fd703ccdab66
   - 84dad16ed802
+  - 57938c2f6ef5
+  - 40f4447733b2
+  - a3495337ab56
+  - d3fe6fcc6bf4
   - 91c4e3331208
   tool_panel_section_label: Machine Learning
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: sklearn_searchcv
   owner: bgruening
   revisions:
-  - e5a5ad882f1f
-  - 5023535e9f8b
-  - 8eb081549c98
-  - 301e07345c93
-  - c6ae57f774c6
-  - f484f41ea0dd
   - 25ab6b4e376e
-  - 36e8d6d5d01b
-  - 69c44aab684e
   - 9a01835cdead
+  - 301e07345c93
+  - 69c44aab684e
+  - 8eb081549c98
+  - f484f41ea0dd
+  - 5023535e9f8b
+  - 36e8d6d5d01b
+  - e5a5ad882f1f
+  - c6ae57f774c6
   tool_panel_section_label: Machine Learning
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: sklearn_svm_classifier
   owner: bgruening
   revisions:
-  - b7c3e9a3b954
+  - 0630258dcf35
+  - de94341feadb
+  - f9639b488779
+  - df690bb42687
   - 8797bedbba8e
   - 4ed102b922cb
-  - df690bb42687
-  - 4aa3666b66fa
-  - 0630258dcf35
   - 02d2be90dedb
   - 61461e52c923
-  - f9639b488779
-  - de94341feadb
+  - 4aa3666b66fa
+  - b7c3e9a3b954
   tool_panel_section_label: Machine Learning
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: sklearn_to_categorical
   owner: bgruening
   revisions:
-  - f86c0419af43
-  - 61634a87efc7
-  - 89f11e2b0673
   - 791fa244e44d
-  - ec69cbe34b73
   - 14180f9c831e
+  - ec69cbe34b73
+  - 61634a87efc7
+  - f86c0419af43
   - 6b59e9b96071
+  - 89f11e2b0673
   - 722379be2338
   tool_panel_section_label: Machine Learning
   tool_shed_url: toolshed.g2.bx.psu.edu
