@@ -1,0 +1,46 @@
+# Updates for three bacterial typing tools owned by tinustk, all already
+# installed on usegalaxy.org.au in the Bacterial Typing section.
+#
+# Revisions are pinned rather than left to default, and each was confirmed
+# against the Tool Shed API on 2026-11-21 as that repository's latest
+# installable revision.
+tools:
+  # Installed: 1.0.0+galaxy2 (80f2bf9e7a13). This is 1.2.0+galaxy0, which adds
+  # an "MLST allele layout" option (seven loci one per column, ALLELE1..ALLELE7,
+  # instead of a single profile column), updates the BIGSdb-Pasteur database to
+  # Pasteur_2026-10b, and makes the notes column say how a novel allele differs
+  # from the closest known one and whether the tox gene found looks intact. The
+  # output columns are unchanged. Requirements unchanged, so the same
+  # BioContainer. Revision confirmed against the Tool Shed API on 2026-11-24.
+  - name: cdiphtheriae_typing
+    owner: tinustk
+    tool_panel_section_label: Bacterial Typing
+    tool_shed_url: toolshed.g2.bx.psu.edu
+    revisions:
+      - 99d90d7ecdbf
+
+  # Installed: 0.5.0+galaxy0 (2d89b0dde08e). This is 0.5.0+galaxy1, a
+  # wrapper-only change: the tool page now cites the tool itself and links its
+  # source. No change to the tool, its databases or its results.
+  - name: mlst_typing
+    owner: tinustk
+    tool_panel_section_label: Bacterial Typing
+    tool_shed_url: toolshed.g2.bx.psu.edu
+    revisions:
+      - 6bd529dff556
+
+  # Installed: 1.0.2+galaxy0 (61ce74f15f7e). This is 1.0.2+galaxy1, a
+  # wrapper-only change: all three tool pages now cite the tool itself and link
+  # its source. No change to the tools, the bundled panels or any result.
+  - name: shigella_typing
+    owner: tinustk
+    tool_panel_section_label: Bacterial Typing
+    tool_shed_url: toolshed.g2.bx.psu.edu
+    revisions:
+      - 876b14d8a8c0
+
+  # Add latest version of spyogenes_typing by tinustk
+  - name: spyogenes_typing
+    owner: tinustk
+    tool_panel_section_label: Bacterial Typing
+
